@@ -9,3 +9,26 @@ xetex
 metafont
 mfware
 # Dependencies for xbeamer
+# Dependencies for documentation
+alphalph
+amsfonts
+amsmath
+booktabs
+colortbl
+csquotes
+ec
+enumitem
+fancyvrb
+graphics
+hologo
+hypdoc
+hyperref
+iftex
+infwarerr
+kvoptions
+pdftexcmds
+psnfss
+tools
+underscore
+# Indexing (needed to compile docs)
+makeindex

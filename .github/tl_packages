@@ -9,6 +9,7 @@ xetex
 metafont
 mfware
 # Dependencies for xbeamer
+geometry
 relsize
 # Dependencies for documentation
 alphalph

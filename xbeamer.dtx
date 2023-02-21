@@ -87,12 +87,23 @@
 \cs_generate_variant:Nn \hook_gput_code:nnn { nnx }
 %    \end{macrocode}
 %
+% \subsection{Scratch space}
+%
+% \begin{macro}{\@@_tmp:w}
+%   For one-off processing
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_tmp:w { }
+%    \end{macrocode}
+% \end{macro}
+%
 % \subsection{Option handling}
 %
-% \begin{variable}{\l_@@_fontsize_dim}
+% \begin{variable}{\l_@@_apsect_ratio_str, \l_@@_fontsize_dim}
 %    \begin{macrocode}
 \keys_define:nn { xbeamer }
   {
+    aspect-ratio .str_set:N =
+      \l_@@_apsect_ratio_str ,
     font-size .dim_set:N =
       \l_@@_fontsize_dim ,
     unknown .code:n =
@@ -112,7 +123,8 @@
 %    \begin{macrocode}
 \keys_define:nn { xbeamer }
   {
-    font-size .usage:n = load
+    aspect-ratio .usage:n = load ,
+    font-size    .usage:n = load
   }
 %    \end{macrocode}
 %
@@ -120,7 +132,8 @@
 %    \begin{macrocode}
 \keys_set:nn { xbeamer }
   {
-    font-size = 11pt
+    aspect-ratio = 16:9 ,
+    font-size    = 11pt
   }
 %    \end{macrocode}
 %
@@ -137,7 +150,7 @@
 \ProcessKeyOptions
 %    \end{macrocode}
 %
-% \subsection{Setting up the font-size}
+% \subsection{Setting up}
 %
 %  Load the font size setup if available, otherwise fall back on scaling.
 %    \begin{macrocode}
@@ -149,6 +162,56 @@
       { \exp_not:N \relsize { \fp_eval:n { \l_@@_fontsize_dim / 10pt } } }
   }
 %    \end{macrocode}
+%
+% \begin{variable}{\c_@@_paper_height_dim, \c_@@_paper_width_dim}
+%   As \pkg{geometry} is being used to set the paper size with no previous
+%   value, we have to use the optional argument rather than waiting to
+%   apply \cs{geometry}.
+%    \begin{macrocode}
+\str_case:VnF \l_@@_apsect_ratio_str
+  {
+    { 16:10 }
+      {
+        \dim_const:Nn \c_@@_paper_height_dim { 100mm }
+        \dim_const:Nn \c_@@_paper_width_dim  { 160mm }
+      }
+    { 16:9 }
+      {
+        \dim_const:Nn \c_@@_paper_height_dim {  90mm }
+        \dim_const:Nn \c_@@_paper_width_dim  { 160mm }
+      }
+  }
+  {
+    \use:x
+      {
+        \cs_set_protected:Npn \exp_not:N \@@_tmp:w
+          ##1 \tl_to_str:n { : } ##2 \tl_to_str:n { : } ##3 \exp_not:N \q_stop
+          {
+            \dim_const:Nn \exp_not:N \c_@@_paper_height_dim { 96mm }
+            \dim_const:Nn \exp_not:N \c_@@_paper_width_dim
+              {
+                \exp_not:N \fp_to_dim:n
+                  { (##1 / ##2) * \exp_not:N \c_@@_paper_height_dim }
+              }
+          }
+        \@@_tmp:w \l_@@_apsect_ratio_str
+          \tl_to_str:n { : } 100 \exp_not:N \q_stop
+      }
+  }
+\use:x
+  {
+    \exp_not:N \RequirePackage
+      [
+        papersize =
+          {
+            \dim_use:N \c_@@_paper_width_dim  ,
+            \dim_use:N \c_@@_paper_height_dim
+          }
+      ]
+      { geometry }
+  }
+%    \end{macrocode}
+% \end{variable}
 %
 %    \begin{macrocode}
 %</class>

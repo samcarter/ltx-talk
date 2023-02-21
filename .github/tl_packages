@@ -1,0 +1,11 @@
+# The test framework itself
+l3build
+# Core LaTeX format support
+latex-bin
+tex
+xetex
+# Assuming a 'basic' font set up, metafont is required to avoid
+# warnings with some packages and errors with others
+metafont
+mfware
+# Dependencies for xbeamer

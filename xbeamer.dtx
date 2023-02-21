@@ -81,6 +81,75 @@
   {A class for typesetting presentations}
 %    \end{macrocode}
 %
+% \subsection{Extra variants}
+%
+%    \begin{macrocode}
+\cs_generate_variant:Nn \hook_gput_code:nnn { nnx }
+%    \end{macrocode}
+%
+% \subsection{Option handling}
+%
+% \begin{variable}{\l_@@_fontsize_dim}
+%    \begin{macrocode}
+\keys_define:nn { xbeamer }
+  {
+    font-size .dim_set:N =
+      \l_@@_fontsize_dim ,
+    unknown .code:n =
+      {
+        \tl_if_blank:nTF {#1}
+          { \dim_set:Nn \l_@@_fontsize_dim { \l_keys_key_str } }
+          {
+            \msg_error:nnx { xbeamer } { unknown-class-option }
+              { \l_keys_key_str = \tl_to_str:n {#1} }
+          }
+      }
+  }
+%    \end{macrocode}
+% \end{variable}
+%
+% Scope for options.
+%    \begin{macrocode}
+\keys_define:nn { xbeamer }
+  {
+    font-size .usage:n = load
+  }
+%    \end{macrocode}
+%
+% Initial values
+%    \begin{macrocode}
+\keys_set:nn { xbeamer }
+  {
+    font-size = 11pt
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\msg_new:nnnn { xbeamer } { unknown-class-option }
+  { Unknown~class~option~"#1". }
+  {
+    The~xbeamer~class~received~the~key-value~option~"#1",~
+    but~this~is~not~recognised.
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\ProcessKeyOptions
+%    \end{macrocode}
+%
+% \subsection{Setting up the font-size}
+%
+%  Load the font size setup if available, otherwise fall back on scaling.
+%    \begin{macrocode}
+\file_if_exist_input:nF { size \dim_to_decimal:n \l_@@_fontsize_dim .clo }
+  {
+    \file_input:n { size10.clo }
+    \RequirePackage { relsize }
+    \hook_gput_code:nnx { begindocument } { xbeamer }
+      { \exp_not:N \relsize { \fp_eval:n { \l_@@_fontsize_dim / 10pt } } }
+  }
+%    \end{macrocode}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

@@ -14,7 +14,7 @@ docfiledir = "./doc"
 typesetfiles = {"xbeamer.tex"}
 
 -- Detail how to set the tag automatically
-tagfiles = {"CHANGELOG.md","xbeamer.dtx","xbeamer.tex"}
+tagfiles = {"CHANGELOG.md","*.dtx","xbeamer.tex"}
 
 function update_tag(file,content,tagname,tagdate)
   tagname = string.gsub(tagname, "^v", "")

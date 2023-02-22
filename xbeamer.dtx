@@ -98,12 +98,12 @@
 %
 % \subsection{Option handling}
 %
-% \begin{variable}{\l_@@_apsect_ratio_str, \l_@@_fontsize_dim}
+% \begin{variable}{\l_@@_aspect_ratio_str, \l_@@_fontsize_dim}
 %    \begin{macrocode}
 \keys_define:nn { xbeamer }
   {
     aspect-ratio .str_set:N =
-      \l_@@_apsect_ratio_str ,
+      \l_@@_aspect_ratio_str ,
     font-size .dim_set:N =
       \l_@@_fontsize_dim ,
     unknown .code:n =
@@ -168,7 +168,7 @@
 %   value, we have to use the optional argument rather than waiting to
 %   apply \cs{geometry}.
 %    \begin{macrocode}
-\str_case:VnF \l_@@_apsect_ratio_str
+\str_case:VnF \l_@@_aspect_ratio_str
   {
     { 16:10 }
       {
@@ -194,7 +194,7 @@
                   { (##1 / ##2) * \exp_not:N \c_@@_paper_height_dim }
               }
           }
-        \@@_tmp:w \l_@@_apsect_ratio_str
+        \@@_tmp:w \l_@@_aspect_ratio_str
           \tl_to_str:n { : } 100 \exp_not:N \q_stop
       }
   }

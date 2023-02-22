@@ -109,7 +109,7 @@
     unknown .code:n =
       {
         \msg_error:nnx { xbeamer } { unknown-class-option }
-          { \l_keys_key_str \tl_if_blank:nF {#1} { = \tl_to_str:n {#1} } }
+          { \l_keys_key_str \tl_if_empty:nF {#1} { = \tl_to_str:n {#1} } }
       }
   }
 %    \end{macrocode}

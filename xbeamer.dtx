@@ -108,12 +108,8 @@
       \l_@@_fontsize_dim ,
     unknown .code:n =
       {
-        \tl_if_blank:nTF {#1}
-          { \dim_set:Nn \l_@@_fontsize_dim { \l_keys_key_str } }
-          {
-            \msg_error:nnx { xbeamer } { unknown-class-option }
-              { \l_keys_key_str = \tl_to_str:n {#1} }
-          }
+        \msg_error:nnx { xbeamer } { unknown-class-option }
+          { \l_keys_key_str = \tl_to_str:n {#1} }
       }
   }
 %    \end{macrocode}

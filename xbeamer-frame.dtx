@@ -123,27 +123,27 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_align_bottom:n #1
   {
-     \skip_vertical:n { 0pt~plus~1fil }
-     #1
-     \skip_vertical:n { 0pt }
+    \skip_vertical:n { 0pt~plus~1fil }
+    #1
+    \skip_vertical:n { 0pt }
   }
 \cs_new_protected:Npn \@@_slide_align_center:n #1
   {
     \skip_vertical:n { 0pt~plus~0.5fil }
-     #1
-     \skip_vertical:n { 0pt~plus~0.5fil }
+    #1
+    \skip_vertical:n { 0pt~plus~0.5fil }
   }
 \cs_new_protected:Npn \@@_slide_align_stretch:n #1
   {
-     \skip_vertical:n { 0pt }
-     #1
-     \skip_vertical:n { 0pt }
+    \skip_vertical:n { 0pt }
+    #1
+    \skip_vertical:n { 0pt }
   }
 \cs_new_protected:Npn \@@_slide_align_top:n #1
   {
     \skip_vertical:n { 0pt }
-     #1
-     \skip_vertical:n { 0pt plus 1fil }
+    #1
+    \skip_vertical:n { 0pt~plus~1fil }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -183,7 +183,7 @@
 % \end{macro}
 %
 % \begin{macro}{\@@_frame_process:n}
-%   Here, the frame content is recevied as the argument.
+%   Here, the frame content is received as the argument.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_frame_process:n #1
   { \@@_slide:n {#1} }

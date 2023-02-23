@@ -2,7 +2,7 @@
 
 ## using LaTeX's standard shipout routine and box
 - set the margins of the document to cover the style elements, such that the
-    text block (`\textheight` and `\textwidth`) really just cover the content
+    text block (`\textheight` and `\textwidth`) really just covers the content
     area of a frame
 - use `shipout/background` and `shipout/foreground` to draw the current style's
     elements, frame title, etc.

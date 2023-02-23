@@ -103,11 +103,74 @@
   {
     \vbox_set_end:
     \vbox_set_to_ht:Nnn \l_@@_slide_box { \textheight }
-      { \vbox_unpack_drop:N \l_@@_slide_box }
+      {
+        \use:c { @@_slide_align_ \l_@@_frame_alignment_tl :n}
+          { \vbox_unpack_drop:N \l_@@_slide_box }
+      }
     \box_use_drop:N \l_@@_slide_box
   }
 %    \end{macrocode}
 % \end{macro}
+%
+% \begin{macro}
+%   {
+%     \@@_slide_align_bottom:n  ,
+%     \@@_slide_align_center:n  ,
+%     \@@_slide_align_stretch:n ,
+%     \@@_slide_align_top:n
+%   }
+%   A pretty standard abstraction: we make sure there are always two skips.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide_align_bottom:n #1
+  {
+     \skip_vertical:n { 0pt~plus~1fill }
+     #1
+     \skip_vertical:n { 0pt }
+  }
+\cs_new_protected:Npn \@@_slide_align_center:n #1
+  {
+    \skip_vertical:n { 0pt~plus~0.5fill }
+     #1
+     \skip_vertical:n { 0pt~plus~0.5fill }
+  }
+\cs_new_protected:Npn \@@_slide_align_stretch:n #1
+  {
+     \skip_vertical:n { 0pt }
+     #1
+     \skip_vertical:n { 0pt }
+  }
+\cs_new_protected:Npn \@@_slide_align_top:n #1
+  {
+    \skip_vertical:n { 0pt }
+     #1
+     \skip_vertical:n { 0pt plus 1 fill }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Frame options}
+%
+% \begin{variable}{\l_@@_frame_alignment_tl}
+%    \begin{macrocode}
+\tl_new:N \l_@@_frame_alignment_tl
+%    \end{macrocode}
+% \end{variable}
+%
+%    \begin{macrocode}
+\keys_define:nn { xbeamer / frame }
+  {
+    vertical-alignment .choices:nn =
+      { bottom , center , stretch , top }
+      {
+        \tl_set_eq:NN \l_@@_frame_alignment_tl
+          \l_keys_value_tl
+      }
+  }
+\keys_set:nn { xbeamer / frame }
+  {
+    vertical-alignment = center
+  }
+%    \end{macrocode}
 %
 % \subsection{The \texttt{frame} environment}
 %
@@ -130,7 +193,10 @@
 % \begin{macro}{frame}
 %    \begin{macrocode}
 \RenewDocumentEnvironment { frame } { D <> { all } O { } +b }
-  { \@@_frame_process:n {#3} }
+  {
+    \keys_set:nn { xbeamer / frame } {#2}
+    \@@_frame_process:n {#3}
+  }
   { }
 %    \end{macrocode}
 % \end{macro}

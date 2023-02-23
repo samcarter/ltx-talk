@@ -73,6 +73,68 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
+% \subsection{Slides in frames}
+%
+% \begin{variable}{\l_@@_slide_box}
+%    \begin{macrocode}
+\box_new:N \l_@@_slide_box
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\@@_slide:n}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide:n #1
+  {
+    \@@_slide_begin:
+      #1
+    \@@_slide_end:
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_slide_begin:, \@@_slide_end:}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide_begin:
+  {
+    \vbox_set:Nw \l_@@_slide_box
+      \RenewCommandCopy \frame \@@_latexe_frame:n
+  }
+\cs_new_protected:Npn \@@_slide_end:
+  {
+    \vbox_set_end:
+    \vbox_set_to_ht:Nnn \l_@@_slide_box { \textheight }
+      { \vbox_unpack_drop:N \l_@@_slide_box }
+    \box_use_drop:N \l_@@_slide_box
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{The \texttt{frame} environment}
+%
+% \begin{macro}{\@@_latexe_frame:n}
+%   As we will need to re-define \cs{frame} but have it available inside
+%   frames, a copy is made here.
+%    \begin{macrocode}
+\NewCommandCopy \@@_latexe_frame:n \frame
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_frame_process:n}
+%   Here, the frame content is recevied as the argument.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_frame_process:n #1
+  { \@@_slide:n {#1} }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{frame}
+%    \begin{macrocode}
+\RenewDocumentEnvironment { frame } { D <> { all } O { } +b }
+  { \@@_frame_process:n {#3} }
+  { }
+%    \end{macrocode}
+% \end{macro}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

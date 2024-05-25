@@ -165,21 +165,21 @@
 %   apply \cs{geometry}.
 %    \begin{macrocode}
 \dim_const:Nn \c_@@_paper_height_dim { 100mm }
-\use:x
+\use:e
   {
     \cs_set_protected:Npn \exp_not:N \@@_tmp:w
-      ##1 \tl_to_str:n { : } ##2 \tl_to_str:n { : } ##3 \exp_not:N \q_stop
+      #1 \tl_to_str:n { : } #2 \tl_to_str:n { : } #3 \exp_not:N \q_stop
       {
         \dim_const:Nn \exp_not:N \c_@@_paper_width_dim
           {
             \exp_not:N \fp_to_dim:n
-              { (##1 / ##2) * \exp_not:N \c_@@_paper_height_dim }
+              { (#1 / #2) * \exp_not:N \c_@@_paper_height_dim }
           }
       }
-    \@@_tmp:w \l_@@_aspect_ratio_str
+    \exp_not:N \@@_tmp:w \l_@@_aspect_ratio_str
       \tl_to_str:n { : } 100 \exp_not:N \q_stop
   }
-\use:x
+\use:e
   {
     \exp_not:N \RequirePackage
       [

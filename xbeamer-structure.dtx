@@ -83,8 +83,23 @@
 % \end{macro}
 %
 % \begin{macro}{\frametitle}
+%   As a interim approach, make frame titles section commands: this will allow
+%   tagging but does leave the question of how to handle this longer-term.
+%   The values are those from \cls{article} at the moment: this will need to
+%   be templated later.
 %    \begin{macrocode}
-\NewDocumentCommand \frametitle { d<> O{#3} m } { }
+\NewDocumentCommand \frametitle { d<> O{#3} m }
+  {
+    \@startsection
+      { section }
+      { 1 }
+      { 0pt }
+      { -3.5ex plus -1ex minus -0.2ex }
+      {  2.3ex plus 0.2ex }
+      { \normalfont \Large \bfseries }
+      {#3}
+  }
+\setcounter { secnumdepth } { -1 }
 %    \end{macrocode}
 % \end{macro}
 %

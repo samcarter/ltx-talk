@@ -76,9 +76,9 @@
 % \begin{macro}{\section, \subsection, \subsubsection}
 %   At present stub commands: quite what needs to happen here is unclear.
 %    \begin{macrocode}
-\NewDocumentCommand \section { s O{#3} m } { }
-\NewDocumentCommand \subsection { s O{#3} m } { }
-\NewDocumentCommand \subsubsection { s O{#3} m } { }
+\NewDocumentCommand \section { s O { #3 } m } { }
+\NewDocumentCommand \subsection { s O { #3 } m } { }
+\NewDocumentCommand \subsubsection { s O { #3 } m } { }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -88,7 +88,7 @@
 %   The values are those from \cls{article} at the moment: this will need to
 %   be templated later.
 %    \begin{macrocode}
-\NewDocumentCommand \frametitle { d<> O{#3} m }
+\NewDocumentCommand \frametitle { d<> O { #3 } m }
   {
     \@startsection
       { section }

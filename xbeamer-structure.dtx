@@ -88,7 +88,7 @@
 %   The values are those from \cls{article} at the moment: this will need to
 %   be templated later.
 %    \begin{macrocode}
-\NewDocumentCommand \frametitle { d<> O { #3 } m }
+\NewDocumentCommand \frametitle { D <> { all } O { #3 } m }
   {
     \@startsection
       { section }

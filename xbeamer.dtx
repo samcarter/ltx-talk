@@ -84,7 +84,7 @@
 % \subsection{Extra variants}
 %
 %    \begin{macrocode}
-\cs_generate_variant:Nn \hook_gput_code:nnn { nnx }
+\cs_generate_variant:Nn \hook_gput_code:nnn { nne }
 %    \end{macrocode}
 %
 % \subsection{Scratch space}
@@ -154,7 +154,7 @@
   {
     \file_input:n { size10.clo }
     \RequirePackage { relsize }
-    \hook_gput_code:nnx { begindocument } { xbeamer }
+    \hook_gput_code:nne { begindocument } { xbeamer }
       { \exp_not:N \relsize { \fp_eval:n { \l_@@_fontsize_dim / 10pt } } }
   }
 %    \end{macrocode}

@@ -124,7 +124,19 @@
 %
 % \begin{macro}{\block}
 %    \begin{macrocode}
-\NewDocumentEnvironment { block } { D <> { all } m }
+\NewDocumentEnvironment { block } { D <> { all } } { } { }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\blocktitle}
+%   As a interim approach, make block titles subsection commands.
+%   The values are those from \cls{article} at the moment: this definitely needs
+%   to be completely re-worked! Like \cs{frametitle}, we presumably want this
+%   command to save the data, which is then typeset by a suitable template.
+%   The latter will likely need to be triggered in the end-of-block code
+%   as only then is the title available.
+%    \begin{macrocode}
+\NewDocumentCommand \blocktitle { m }
   {
     \@startsection
       { subsection }
@@ -133,9 +145,8 @@
       { -3.25ex plus -1ex minus -0.2ex }
       {  1.5ex plus 0.2ex }
       { \normalfont \large \bfseries }
-      {#2}
+      {#1}
   }
-  { }
 %    \end{macrocode}
 % \end{macro}
 %

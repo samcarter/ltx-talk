@@ -122,6 +122,23 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{macro}{\block}
+%    \begin{macrocode}
+\NewDocumentEnvironment { block } { D <> { all } m }
+  {
+    \@startsection
+      { subsection }
+      { 2 }
+      { 0pt }
+      { -3.25ex plus -1ex minus -0.2ex }
+      {  1.5ex plus 0.2ex }
+      { \normalfont \large \bfseries }
+      {#2}
+  }
+  { }
+%    \end{macrocode}
+% \end{macro}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

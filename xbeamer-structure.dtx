@@ -136,7 +136,7 @@
 %   The latter will likely need to be triggered in the end-of-block code
 %   as only then is the title available.
 %    \begin{macrocode}
-\NewDocumentCommand \blocktitle { m }
+\NewDocumentCommand \blocktitle { D <> { all } m }
   {
     \@startsection
       { subsection }
@@ -145,7 +145,7 @@
       { -3.25ex plus -1ex minus -0.2ex }
       {  1.5ex plus 0.2ex }
       { \normalfont \large \bfseries }
-      {#1}
+      {#2}
   }
 %    \end{macrocode}
 % \end{macro}

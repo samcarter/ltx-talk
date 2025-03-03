@@ -281,7 +281,7 @@
       } % (
     \token_if_eq_meaning:NNTF #2 )
       { \@@_decode_overlay_offset:n {#1} }
-      { \@@_decode_overlay_offset:nN {#1#2} } 
+      { \@@_decode_overlay_offset:nN {#1#2} }
   }
 %    \end{macrocode}
 %   Overlay values can never be negative: this is enforced here.
@@ -301,7 +301,6 @@
 % \end{macro}
 %
 % \begin{macro}{\@@_decode_check:}
-% \begin{macro}{\@@_decode_check_star:}
 % \begin{macro}{\@@_decode_check:w}
 % \begin{macro}{\@@_decode_check_single:n}
 % \begin{macro}{\@@_decode_check_range:nn}
@@ -314,17 +313,12 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_check:
   {
-    \clist_map_inline:Nn \l_@@_decode_overlays_clist
+    \clist_if_in:NnTF \l_@@_decode_overlays_clist { * }
+      { \bool_set_true:N \l_@@_decode_result_bool }
       {
-        \str_if_eq:nnTF {##1} { * }
-          { \@@_decode_check_star: }
+        \clist_map_inline:Nn \l_@@_decode_overlays_clist
           { \@@_decode_check:w 0 ##1 - - \q_stop }
       }
-  }
-\cs_new_protected:Npn \@@_decode_check_star:
-  {
-    \bool_set_true:N \l_@@_decode_result_bool
-    \clist_map_break:
   }
 %    \end{macrocode}
 %   If |#3| is empty, both of the \enquote{filler} |-| tokens were consumed: we
@@ -354,22 +348,23 @@
           { \bool_gset_true:N \g_@@_slide_continue_bool }
       }
   }
+%    \end{macrocode}
+%   TODO: In the following we might want to add a check whether the range was
+%   given with |#1| being smaller than |#2|, to be decided upon.
+%    \begin{macrocode}
 \cs_set_protected:Npn \@@_decode_check_range:nn #1#2
   {
-    \bool_lazy_or:nnTF
-      { \int_compare_p:nNn \g_@@_slide_int < {#1} }
-      { \int_compare_p:nNn \g_@@_slide_int > {#2} }
+    \int_compare:nNnF \g_@@_slide_int > {#2}
       {
-        \int_comparse:nNnT {#2} > \g_@@_slide_int
+        \int_compare:nNnTF \g_@@_slide_int < {#1}
           { \bool_gset_true:N \g_@@_slide_continue_bool }
-      }
-      {
-        \bool_set_true:N \l_@@_decode_result_bool
-        \clist_map_break:
+          {
+            \bool_set_true:N \l_@@_decode_result_bool
+            \clist_map_break:
+          }
       }
   }
 %    \end{macrocode}
-% \end{macro}
 % \end{macro}
 % \end{macro}
 % \end{macro}

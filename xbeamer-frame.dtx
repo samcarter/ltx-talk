@@ -114,12 +114,12 @@
     \group_begin:
       \int_gset:Nn \g_@@_slide_int { 1 }
       \int_gset:Nn \g_@@_decode_int { 1 }
-      \bool_gset_false:N \g_@@_slide_continue_bool
       \RenewCommandCopy \frame \@@_latexe_frame:n
       \@@_slide_begin_aux:
   }
 \cs_new_protected:Npn \@@_slide_begin_aux:
   {
+    \bool_gset_false:N \g_@@_slide_continue_bool
     \vbox_set:Nw \l_@@_slide_box
   }
 \cs_new_protected:Npn \@@_slide_end:

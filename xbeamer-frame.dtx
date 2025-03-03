@@ -100,43 +100,38 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide:n #1
   {
-    \@@_slide_begin:
-      #1
-    \@@_slide_end:
+    \group_begin:
+      \int_gzero:N \g_@@_slide_int
+      \int_gset:Nn \g_@@_decode_int { 1 }
+      \bool_gset_false:N \g_@@_slide_continue_bool
+      \RenewCommandCopy \frame \@@_latexe_frame:n
+      \bool_do_while:Nn \g_@@_slide_continue_bool
+        {
+          \int_gincr:N \g_@@_slide_int
+          \@@_slide_begin:
+            #1
+          \@@_slide_end:
+        }
+    \group_end:
   }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_slide_begin:, \@@_slide_begin_aux: \@@_slide_end:}
+% \begin{macro}{\@@_slide_begin:, \@@_slide_end:}
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_begin:
   {
-    \group_begin:
-      \int_gset:Nn \g_@@_slide_int { 1 }
-      \int_gset:Nn \g_@@_decode_int { 1 }
-      \RenewCommandCopy \frame \@@_latexe_frame:n
-      \@@_slide_begin_aux:
-  }
-\cs_new_protected:Npn \@@_slide_begin_aux:
-  {
-    \bool_gset_false:N \g_@@_slide_continue_bool
     \vbox_set:Nw \l_@@_slide_box
   }
 \cs_new_protected:Npn \@@_slide_end:
   {
-      \vbox_set_end:
-      \vbox_set_to_ht:Nnn \l_@@_slide_box { \textheight }
-        {
-          \use:c { @@_slide_align_ \l_@@_frame_alignment_tl :n }
-            { \vbox_unpack_drop:N \l_@@_slide_box }
-        }
-      \box_use_drop:N \l_@@_slide_box
-      \bool_if:NT \g_@@_slide_continue_bool
-        {
-          \int_gadd:Nn \g_@@_slide_int { 1 }
-          \vbox_set:Nw \l_@@_slide_box
-        }
-    \group_end:
+    \vbox_set_end:
+    \vbox_set_to_ht:Nnn \l_@@_slide_box { \textheight }
+      {
+        \use:c { @@_slide_align_ \l_@@_frame_alignment_tl :n }
+          { \vbox_unpack_drop:N \l_@@_slide_box }
+      }
+    \box_use_drop:N \l_@@_slide_box
   }
 %    \end{macrocode}
 % \end{macro}

@@ -73,6 +73,317 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
+% \begin{variable}{\l_@@_decode_result_bool}
+%   The result from decoding: are we on the current slide. This may well be
+%   better handled by moving to a |TF| signature: to be explored.
+%    \begin{macrocode}
+\bool_new:N \l_@@_decode_result_bool
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{variable}{\g_@@_decode_int}
+%   The automatically-incremented value for the relative overlay value.
+%    \begin{macrocode}
+\int_new:N \g_@@_decode_int
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{variable}{\l_@@_decode_step_bool}
+%   Tracks whether to step \cs{g_@@_decode_int}.
+%    \begin{macrocode}
+\bool_new:N \l_@@_decode_step_bool
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\l_@@_decode_arg_str}
+%   For error usage.
+%    \begin{macrocode}
+\str_new:N \l_@@_decode_arg_str
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\l_@@_decode_overlays_clist}
+%   The decoded overlay specification: will have only absolute slide numbers
+%   present, potentially along with ranges.
+%    \begin{macrocode}
+\str_new:N \l_@@_decode_overlays_clist
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}
+%   {
+%     \l_@@_decode_action_str,
+%     \l_@@_decode_mode_str
+%   }
+%    \begin{macrocode}
+\str_new:N \l_@@_decode_action_str
+\str_new:N \l_@@_decode_mode_str
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_decode_parse:n, \@@_decode_parse_aux:n}
+% \begin{macro}{\@@_decode_parse:w}
+%   First a simple check for an entirely blank argument: if that's the case,
+%   there is no additional overlay to consider. Then deal with any category code
+%   issues before splitting at a \verb"|", if present. If there is, we have an
+%   action specification as |#2|. Otherwise, there might be one as |#1|, so
+%   there is a check for that.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_decode_parse:n #1
+  {
+    \bool_set_false:N \l_@@_decode_result_bool
+    \tl_if_blank:nF {#1}
+      {
+        \str_set:Nn \l_@@_decode_arg_str {#1}
+        \clist_clear:N \l_@@_decode_overlays_clist
+        \exp_args:Ne \@@_decode_parse_aux:n { \tl_to_str:n {#1} }
+      }
+  }
+\cs_new_protected:Npn \@@_decode_parse_aux:n #1
+  { \@@_decode_parse:w #1 | | \q_@@_stop }
+\cs_new_protected:Npn \@@_decode_parse:w #1 | #2 | #3 \q_@@_stop
+  {
+    \tl_if_blank:nTF {#2}
+      {
+        \tl_if_in:nnTF {#1} { @ }
+          { \@@_decode_action:n {#1} }
+          { \@@_decode_mode:n {#1} }
+      }
+      {
+        \@@_decode_mode:n {#1}
+        \@@_decode_action:n {#2}
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{variable}{\c_@@_modes_clist}
+%   The possible modes: detokenized as that is applied up-front in decoding.
+%    \begin{macrocode}
+\clist_const:Ne \c_@@_modes_clist
+  {
+    \tl_to_str:n { all }       ,
+    \tl_to_str:n { handout }   ,
+    \tl_to_str:n { projector }
+  }
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\@@_decode_mode:n}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_decode_mode:n #1
+  {
+    \clist_if_in:NnTF \c_@@_modes_clist {#1}
+      { \str_set:Nn \l_@@_decode_mode_str {#1} }
+      { \@@_decode_overlays:n {#1} }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{variable}{\c_@@_actions_clist}
+%    \begin{macrocode}
+\clist_const:Ne \c_@@_actions_clist
+  {
+    \tl_to_str:n { alert }     ,
+    \tl_to_str:n { invisible } ,
+    \tl_to_str:n { uncover }
+  }
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\@@_decode_action:n}
+% \begin{macro}{\@@_decode_action:w}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_decode_action:n #1
+  { \@@_decode_action:w #1 @ @ \q_@@_stop }
+\cs_new_protected:Npn \@@_decode_action:w #1 @ #2 @ #3 \q_@@_stop
+  {
+    \clist_if_in:nTF {#1} \c_@@_actions_clist
+      {
+        \str_set:Nn \l_@@_decode_action_str {#1}
+        \tl_if_blank:nF {#2}
+          { \@@_decode_overlays:n {#1} }
+      }
+      {
+        \msg_error:nnV { xbeamer } { bad-overlay-spec }
+          \l_@@_decode_arg_str
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\@@_decode_overlays:n}
+% \begin{macro}{\@@_decode_overlays:N}
+% \begin{macro}{\@_decode_overlay_+:w, \@@_decode_overlay_.:w}
+% \begin{macro}{\@@_decode_overlay_aux:N}
+% \begin{macro}{\@@_decode_overlay_offset:nN}
+% \begin{macro}{\@@_decode_overlay_offset:n}
+%   The loop here needs to replace all |+| and |.| characters by the current
+%   automatic value, allowing for any offsets. This step also needs to track
+%   whether to increment the automatic value: true if a |+| is seen, false
+%   otherwise.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_decode_overlays:n #1
+  {
+    \bool_set_false:N \l_@@_decode_step_bool
+    \@@_decode_overlays:N #1 \q_recursion_tail \q_recursion_stop
+    \bool_if:NT \l_@@_decode_step_bool
+      { \int_gincr:N \g_@@_decode_int }
+    \@@_decode_check:
+  }
+\cs_new_protected:Npn \@@_decode_overlays:N #1
+  {
+    \quark_if_recursion_tail_stop:N #1
+    \cs_if_exist_use:cF { @@_decode_overlay_ #1 :w }
+      {
+        \clist_put_right:Nn \l_@@_decode_overlays_clist {#1}
+        \@@_decode_overlays:N
+      }
+  }
+\cs_new_protected:cpn { @@_decode_overlay_+:w }
+  {
+    \bool_set_true:N \l_@@_decode_step_bool
+    \@@_decode_overlay_aux:N
+  }
+\cs_new_protected:cpn { @@_decode_overlay_.:w }
+  { \@@_decode_overlay_aux:N }
+%    \end{macrocode}
+%   The look-ahead for an offset to a relative specification. If the
+%   end-of-loop is reached, the value still needs to be inserted: to
+%   share auxiliaries, that is done by using the same function as elsewhere,
+%   so the end-of-loop markers are re-inserted. Otherwise, there is a check
+%   to see if the next token is a |(|.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_decode_overlay_aux:N #1
+  {
+    \quark_if_recursion_tail_stop_do:Nn #1
+      {
+        \@@_decode_overlay_offset:n { 0 }
+        \q_recursion_tail \q_recursion_stop
+      }
+    \token_if_eq_meaning:NNTF #1 ( % )
+      { \@@_decode_overlay_offset:nN { } }
+      { \@@_decode_overlay_offset:n { 0 } #1 }
+  }
+%    \end{macrocode}
+%   For the end of an offset, any valid overlay specification must have a
+%   closing |)|, so this time the end-of-loop case is an error. Otherwise
+%   simply collect up tokens until the closing |)| is found.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_decode_overlay_offset:nN #1#2
+  {
+    \quark_if_recursion_tail_stop_do:Nn #2
+      {
+        \msg_error:nnV { xbeamer } { bad-overlay-spec }
+          \l_@@_decode_arg_str
+      } % (
+    \token_if_eq_meaning:NNTF #2 )
+      { \@@_decode_overlay_offset:n {#1} }
+      { \@@_decode_overlay_offset:nN {#1#2} } 
+  }
+%    \end{macrocode}
+%   Overlay values can never be negative: this is enforced here.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_decode_overlay_offset:n #1
+  {
+    \clist_put_right:Ne \l_@@_decode_overlays_clist
+      { \int_max:nn { 0 } { #1 + \g_@@_decode_int } }
+    \@@_decode_overlays:N
+  }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\@@_decode_check:}
+% \begin{macro}{\@@_decode_check_star:}
+% \begin{macro}{\@@_decode_check:w}
+% \begin{macro}{\@@_decode_check_single:n}
+% \begin{macro}{\@@_decode_check_range:nn}
+%   At this stage we have a fully \enquote{written out} overlay specification,
+%   and need to work out if the current slide is included. We need to look at
+%   each entry in the comma-separated list to sort this out. First we filter
+%   out the case of a |*|, then it's a question of working out whether each
+%   entry is a single number or a range, and if the latter, whether it's
+%   open at either the start or the end.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_decode_check:
+  {
+    \clist_map_inline:Nn \l_@@_decode_overlays_clist
+      {
+        \str_if_eq:nnTF {##1} { * }
+          { \@@_decode_check_star: }
+          { \@@_decode_check:w 0 ##1 - - \q_stop }
+      }
+  }
+\cs_new_protected:Npn \@@_decode_check_star:
+  {
+    \bool_set_true:N \l_@@_decode_result_bool
+    \clist_map_break:
+  }
+%    \end{macrocode}
+%   If |#3| is empty, both of the \enquote{filler} |-| tokens were consumed: we
+%   have a single value. Otherwise there is a range: the setup above ensures
+%   that there will be starting value in all cases, but there may not be an
+%   end one.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_decode_check:w #1 - #2 - #3 \q_stop
+  {
+    \tl_if_blank:nTF {#3}
+      { \@@_decode_check_single:n {#1} }
+      {
+        \tl_if_blank:nTF {#2}
+          { \@@_decode_check_range:nn {#1} { \c_max_int } }
+          { \@@_decode_check_range:nn {#1} {#2} }
+      }
+  }
+\cs_set_protected:Npn \@@_decode_check_single:n #1
+  {
+    \int_compare:nNnTF \g_@@_slide_int = {#1}
+      {
+        \bool_set_true:N \l_@@_decode_result_bool
+        \clist_map_break:
+      }
+      {
+        \int_compare:nNnT {#1} > \g_@@_slide_int
+          { \bool_gset_true:N \g_@@_slide_continue_bool }
+      }
+  }
+\cs_set_protected:Npn \@@_decode_check_range:nn #1#2
+  {
+    \bool_lazy_or:nnTF
+      { \int_compare_p:nNn \g_@@_slide_int < {#1} }
+      { \int_compare_p:nNn \g_@@_slide_int > {#2} }
+      {
+        \int_comparse:nNnT {#2} > \g_@@_slide_int
+          { \bool_gset_true:N \g_@@_slide_continue_bool }
+      }
+      {
+        \bool_set_true:N \l_@@_decode_result_bool
+        \clist_map_break:
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+%    \begin{macrocode}
+\msg_new:nnnn { xbeamer } { bad-overlay-spec }
+  { Bad~overlay~specification~"#1". }
+  {
+    The~overlay~specification~given~doesn't~follow~the~pattern~described~in~
+    the~xbeamer~manual:~it~has~been~ignored.
+  }
+%    \end{macrocode}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

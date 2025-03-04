@@ -105,7 +105,6 @@
       \RenewCommandCopy \frame \@@_latexe_frame:n
       \bool_do_while:Nn \g_@@_slide_continue_bool
         {
-          \int_gincr:N \g_@@_slide_int
           \@@_slide_begin:
             #1
           \@@_slide_end:
@@ -119,6 +118,7 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_begin:
   {
+    \int_gincr:N \g_@@_slide_int
     \int_gset:Nn \g_@@_decode_int { 1 }
     \bool_gset_false:N \g_@@_slide_continue_bool
     \vbox_set:Nw \l_@@_slide_box

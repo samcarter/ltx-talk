@@ -144,13 +144,9 @@
 \cs_new_protected:Npn \@@_decode_parse:w #1 | #2 | #3 \q_@@_stop
   {
     \tl_if_blank:nTF {#2}
+      { \@@_decode_mode:n {#1} }
       {
-        \tl_if_in:nnTF {#1} { @ }
-          { \@@_decode_action:n {#1} }
-          { \@@_decode_mode:n {#1} }
-      }
-      {
-        \@@_decode_mode:n {#1}
+        \@@_decode_overlays:n {#1}
         \@@_decode_action:n {#2}
       }
   }
@@ -171,12 +167,22 @@
 % \end{variable}
 %
 % \begin{macro}{\@@_decode_mode:n}
+%   Check if the mode is known and current.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_mode:n #1
   {
     \clist_if_in:NnTF \c_@@_modes_clist {#1}
-      { \str_set:Nn \l_@@_decode_mode_str {#1} }
-      { \@@_decode_overlays:n {#1} }
+      {
+        \bool_lazy_or:nnTF
+          { \str_if_eq_p:nV {#1} \g_@@_mode_str }
+          { \str_if_eq_p:nn {#1} { all } }
+          { \bool_set_true:N \l_@@_decode_result_bool }
+          { \bool_set_false:N \l_@@_decode_result_bool }
+      }
+      {
+        \msg_error:nnV { xbeamer } { bad-overlay-spec }
+          \l_@@_decode_arg_str
+      }
   }
 %    \end{macrocode}
 % \end{macro}

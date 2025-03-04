@@ -102,7 +102,6 @@
   {
     \group_begin:
       \int_gzero:N \g_@@_slide_int
-      \bool_gset_false:N \g_@@_slide_continue_bool
       \RenewCommandCopy \frame \@@_latexe_frame:n
       \bool_do_while:Nn \g_@@_slide_continue_bool
         {
@@ -121,6 +120,7 @@
 \cs_new_protected:Npn \@@_slide_begin:
   {
     \int_gset:Nn \g_@@_decode_int { 1 }
+    \bool_gset_false:N \g_@@_slide_continue_bool
     \vbox_set:Nw \l_@@_slide_box
   }
 \cs_new_protected:Npn \@@_slide_end:

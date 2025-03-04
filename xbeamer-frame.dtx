@@ -219,7 +219,11 @@
 \RenewDocumentEnvironment { frame } { D <> { all } O { } +b }
   {
     \keys_set:nn { xbeamer / frame } {#2}
-    \@@_frame_process:n {#3}
+    \@@_decode_parse:n {#1}
+    \bool_lazy_or:nnT
+      { \l_@@_decode_result_bool }
+      { \tl_if_blank_p:n {#1} }
+      { \@@_frame_process:n {#3} }
   }
   { }
 %    \end{macrocode}

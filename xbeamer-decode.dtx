@@ -126,9 +126,10 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_parse:n #1
   {
-    \bool_set_false:N \l_@@_decode_result_bool
-    \tl_if_blank:nF {#1}
+    \tl_if_blank:nTF {#1}
+      { \bool_set_true:N \l_@@_decode_result_bool }
       {
+        \bool_set_false:N \l_@@_decode_result_bool
         \str_set:Nn \l_@@_decode_arg_str {#1}
         \clist_clear:N \l_@@_decode_overlays_clist
         \exp_args:Ne \@@_decode_parse_aux:n { \tl_to_str:n {#1} }

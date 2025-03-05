@@ -102,11 +102,12 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\l_@@_decode_overlays_clist}
+% \begin{macro}{\l_@@_decode_overlays_str, \l_@@_decode_overlays_clist}
 %   The decoded overlay specification: will have only absolute slide numbers
 %   present, potentially along with ranges.
 %    \begin{macrocode}
-\str_new:N \l_@@_decode_overlays_clist
+\str_new:N \l_@@_decode_overlays_str
+\clist_new:N \l_@@_decode_overlays_clist
 %    \end{macrocode}
 % \end{macro}
 %
@@ -131,8 +132,8 @@
       {
         \bool_set_false:N \l_@@_decode_result_bool
         \str_set:Nn \l_@@_decode_arg_str {#1}
-        \clist_clear:N \l_@@_decode_overlays_clist
-        \exp_args:Ne \@@_decode_parse_aux:n { \tl_to_str:n {#1} }
+        \str_clear:N \l_@@_decode_overlays_str
+        \exp_args:No \@@_decode_parse_aux:n { \l_@@_decode_arg_str }
       }
   }
 \cs_new_protected:Npn \@@_decode_parse_aux:n #1
@@ -201,7 +202,7 @@
   { \@@_decode_action:w #1 @ @ \q_@@_stop }
 \cs_new_protected:Npn \@@_decode_action:w #1 @ #2 @ #3 \q_@@_stop
   {
-    \clist_if_in:nTF {#1} \c_@@_actions_clist
+    \clist_if_in:NnTF \c_@@_actions_clist {#1}
       {
         \str_set:Nn \l_@@_decode_action_str {#1}
         \tl_if_blank:nF {#2}
@@ -240,7 +241,7 @@
     \quark_if_recursion_tail_stop:N #1
     \cs_if_exist_use:cF { @@_decode_overlay_ #1 :w }
       {
-        \clist_put_right:Nn \l_@@_decode_overlays_clist {#1}
+        \str_put_right:Nn \l_@@_decode_overlays_str {#1}
         \@@_decode_overlays:N
       }
   }
@@ -290,7 +291,7 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_overlay_offset:n #1
   {
-    \clist_put_right:Ne \l_@@_decode_overlays_clist
+    \str_put_right:Ne \l_@@_decode_overlays_str
       { \int_max:nn { 0 } { #1 + \g_@@_decode_int } }
     \@@_decode_overlays:N
   }
@@ -315,6 +316,7 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_check:
   {
+    \clist_set:NV \l_@@_decode_overlays_clist \l_@@_decode_overlays_str
     \clist_if_in:NnTF \l_@@_decode_overlays_clist { * }
       { \bool_set_true:N \l_@@_decode_result_bool }
       {

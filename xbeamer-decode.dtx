@@ -178,10 +178,7 @@
           { \bool_set_true:N \l_@@_decode_result_bool }
           { \bool_set_false:N \l_@@_decode_result_bool }
       }
-      {
-        \msg_error:nnV { xbeamer } { bad-overlay-spec }
-          \l_@@_decode_arg_str
-      }
+      { \@@_decode_overlays:n {#1} }
   }
 %    \end{macrocode}
 % \end{macro}

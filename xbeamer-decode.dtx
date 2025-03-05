@@ -364,6 +364,10 @@
           { \bool_gset_true:N \g_@@_slide_continue_bool }
           {
             \bool_set_true:N \l_@@_decode_result_bool
+            \bool_lazy_and:nnT
+              { \int_compare_p:nNn \g_@@_slide_int < {#2} }
+              { \int_compare_p:nNn {#2} < \c_max_int }
+              { \bool_gset_true:N \g_@@_slide_continue_bool }
             \clist_map_break:
           }
       }

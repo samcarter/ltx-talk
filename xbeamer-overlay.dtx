@@ -73,9 +73,36 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
+% \begin{macro}[T, TF]{\@@_overlay:n}
+%    \begin{macrocode}
+\prg_new_protected_conditional:Npnn \@@_overlay:n #1 { T , TF }
+  {
+    \@@_decode_parse:n {#1}
+    \bool_if:NTF \l_@@_decode_result_bool
+      \prg_return_true:
+      \prg_return_false:
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\only}
+%    \begin{macrocode}
+\NewDocumentCommand \only { D <> { all } +m }
+  {
+    \@@_overlay:nT {#1}
+      {#2}
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 % \begin{macro}{\uncover}
 %    \begin{macrocode}
-\NewDocumentCommand \uncover { D <> { all } +m } {#2}
+\NewDocumentCommand \uncover { D <> { all } +m }
+  {
+    \@@_overlay:nTF {#1}
+      {#2}
+      { }
+  }
 %    \end{macrocode}
 % \end{macro}
 %

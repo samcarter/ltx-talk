@@ -220,9 +220,9 @@
 % \begin{macro}{\@@_decode_overlays:n}
 % \begin{macro}{\@@_decode_overlays:N}
 % \begin{macro}{\@_decode_overlay_+:w, \@@_decode_overlay_.:w}
-% \begin{macro}{\@@_decode_overlay_aux:N}
-% \begin{macro}{\@@_decode_overlay_offset:nN}
-% \begin{macro}{\@@_decode_overlay_offset:n}
+% \begin{macro}{\@@_decode_overlay_aux:NN}
+% \begin{macro}{\@@_decode_overlay_offset:NnN}
+% \begin{macro}{\@@_decode_overlay_offset:Nn}
 %   The loop here needs to replace all |+| and |.| characters by the current
 %   automatic value, allowing for any offsets. This step also needs to track
 %   whether to increment the automatic value: true if a |+| is seen, false
@@ -248,10 +248,10 @@
 \cs_new_protected:cpn { @@_decode_overlay_+:w }
   {
     \bool_set_true:N \l_@@_decode_step_bool
-    \@@_decode_overlay_aux:N
+    \@@_decode_overlay_aux:NN 0
   }
 \cs_new_protected:cpn { @@_decode_overlay_.:w }
-  { \@@_decode_overlay_aux:N }
+  { \@@_decode_overlay_aux:NN 1 }
 %    \end{macrocode}
 %   The look-ahead for an offset to a relative specification. If the
 %   end-of-loop is reached, the value still needs to be inserted: to
@@ -259,40 +259,40 @@
 %   so the end-of-loop markers are re-inserted. Otherwise, there is a check
 %   to see if the next token is a |(|.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_decode_overlay_aux:N #1
+\cs_new_protected:Npn \@@_decode_overlay_aux:NN #1#2
   {
-    \quark_if_recursion_tail_stop_do:Nn #1
+    \quark_if_recursion_tail_stop_do:Nn #2
       {
-        \@@_decode_overlay_offset:n { 0 }
+        \@@_decode_overlay_offset:Nn 0 { 0 }
         \q_recursion_tail \q_recursion_stop
       }
-    \token_if_eq_meaning:NNTF #1 ( % )
-      { \@@_decode_overlay_offset:nN { } }
-      { \@@_decode_overlay_offset:n { 0 } #1 }
+    \token_if_eq_meaning:NNTF #2 ( % )
+      { \@@_decode_overlay_offset:NnN #1 { } }
+      { \@@_decode_overlay_offset:Nn #1 { 0 } #2 }
   }
 %    \end{macrocode}
 %   For the end of an offset, any valid overlay specification must have a
 %   closing |)|, so this time the end-of-loop case is an error. Otherwise
 %   simply collect up tokens until the closing |)| is found.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_decode_overlay_offset:nN #1#2
+\cs_new_protected:Npn \@@_decode_overlay_offset:NnN #1#2#3
   {
-    \quark_if_recursion_tail_stop_do:Nn #2
+    \quark_if_recursion_tail_stop_do:Nn #3
       {
         \msg_error:nnV { xbeamer } { bad-overlay-spec }
           \l_@@_decode_arg_str
       } % (
-    \token_if_eq_meaning:NNTF #2 )
-      { \@@_decode_overlay_offset:n {#1} }
-      { \@@_decode_overlay_offset:nN {#1#2} }
+    \token_if_eq_meaning:NNTF #3 )
+      { \@@_decode_overlay_offset:Nn #1 {#2} }
+      { \@@_decode_overlay_offset:NnN #1 {#2#3} }
   }
 %    \end{macrocode}
 %   Overlay values can never be negative: this is enforced here.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_decode_overlay_offset:n #1
+\cs_new_protected:Npn \@@_decode_overlay_offset:Nn #1#2
   {
     \str_put_right:Ne \l_@@_decode_overlays_str
-      { \int_max:nn { 0 } { #1 + \g_@@_decode_int } }
+      { \int_max:nn { 0 } { #2 + \g_@@_decode_int - #1 } }
     \@@_decode_overlays:N
   }
 %    \end{macrocode}

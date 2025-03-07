@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% File: xbeamer-overlay.dtx Copyright (C) 2024 Joseph Wright
+% File: xbeamer-overlay.dtx Copyright (C) 2024,2025 Joseph Wright
 %
 % It may be distributed and/or modified under the conditions of the
 % LaTeX Project Public License (LPPL), either version 1.3c of this
@@ -73,6 +73,10 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
+%    \begin{macrocode}
+\RequirePackage { l3draw }
+%    \end{macrocode}
+%
 % \begin{macro}[T, TF]{\@@_overlay:n}
 %    \begin{macrocode}
 \prg_new_protected_conditional:Npnn \@@_overlay:n #1 { T , TF }
@@ -101,7 +105,11 @@
   {
     \@@_overlay:nTF {#1}
       {#2}
-      { }
+      {
+        \draw_hidden_begin:
+        #2
+        \draw_hidden_end:
+      }
   }
 %    \end{macrocode}
 % \end{macro}

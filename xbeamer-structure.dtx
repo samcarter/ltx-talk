@@ -124,7 +124,14 @@
 %
 % \begin{macro}{\block}
 %    \begin{macrocode}
-\NewDocumentEnvironment { block } { D <> { all } } { } { \par }
+\NewDocumentEnvironment { block } { D <> { all } }
+  {
+    \vbox_set:Nw \l_@@_tmp_box
+  }
+  {
+    \vbox_set_end:
+    \box_use:N \l_@@_tmp_box
+  }
 %    \end{macrocode}
 % \end{macro}
 %

@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% File: xbeamer.dtx Copyright (C) 2023,2024 Joseph Wright
+% File: xbeamer.dtx Copyright (C) 2023-2025 Joseph Wright
 %
 % It may be distributed and/or modified under the conditions of the
 % LaTeX Project Public License (LPPL), either version 1.3c of this
@@ -95,6 +95,12 @@
 \cs_new_protected:Npn \@@_tmp:w { }
 %    \end{macrocode}
 % \end{macro}
+%
+% \begin{variable}{\l_@@_tmp_box}
+%    \begin{macrocode}
+\box_new:N \l_@@_tmp_box
+%    \end{macrocode}
+% \end{variable}
 %
 % \subsection{Option handling}
 %

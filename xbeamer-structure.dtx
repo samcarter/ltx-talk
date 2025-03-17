@@ -187,6 +187,40 @@
 \newcommand\labelitemfont { \normalfont }
 %    \end{macrocode}
 %
+% List design settings: once again temproary and taken from the standard
+% classes.
+%    \begin{macrocode}
+\setlength \leftmargini   { 2em }
+\setlength \leftmarginii  { 2em }
+\setlength \leftmarginiii { 2em }
+\setlength  \labelsep  { 0.5em }
+\setlength  \labelwidth { \leftmargini }
+\addtolength \labelwidth { -\labelsep }
+\def \@listi
+  {
+    \leftmargin \leftmargini
+    \topsep 3pt plus 2pt minus 2.5pt
+    \parsep 0pt
+    \itemsep3pt plus 2pt minus 3pt
+  }
+\let \@listI \@listi
+\def \@listii
+  {
+    \leftmargin\leftmarginii
+    \topsep    2pt plus 1pt minus 2pt
+    \parsep    0pt plus pt
+    \itemsep   \parsep
+  }
+\def \@listiii 
+  {
+    \leftmargin\leftmarginiii
+    \topsep    2pt plus 1pt minus 2pt
+    \parsep    0pt plus pt
+    \itemsep   \parsep
+  }
+\setlength \partopsep { 0pt }
+%    \end{macrocode}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

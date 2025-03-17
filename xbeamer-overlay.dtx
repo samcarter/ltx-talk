@@ -89,14 +89,22 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{macro}{\alt}
 % \begin{macro}{\only}
 %    \begin{macrocode}
+\NewDocumentCommand \alt { D <> { all } +m +m }
+  {
+    \@@_overlay:nTF {#1}
+      {#2}
+      {#3}
+  }
 \NewDocumentCommand \only { D <> { all } +m }
   {
     \@@_overlay:nT {#1}
       {#2}
   }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 %
 % \begin{macro}{\uncover}

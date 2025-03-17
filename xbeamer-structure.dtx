@@ -157,6 +157,20 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{macro}{\alert}
+%   We will likely want more flexibility here: for the moment, hard-code
+%   something.
+%    \begin{macrocode}
+\NewDocumentCommand \alert { D <> { all } +m }
+  {
+    \@@_overlay:nTF {#1}
+      { \textcolor { red } }
+      { \textcolor { . } }
+        {#2}
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 % Again temporary code: allow us to have some useful result for lists, and in
 % particular let them interface with tagging (without this, you cannot load the
 % tagging code).

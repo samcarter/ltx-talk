@@ -109,6 +109,8 @@
 % \end{macro}
 %
 % \begin{macro}{\uncover}
+%   Almost certainly we will need to add an operation into the true branches
+%   here to keep spacing correct.
 %    \begin{macrocode}
 \NewDocumentCommand \uncover { D <> { all } +m }
   {
@@ -122,6 +124,23 @@
   }
 %    \end{macrocode}
 % \end{macro}
+% \begin{environment}{uncoverenv}
+%   We could parse only once here: but this was we don't need more global
+%   data structures.
+%    \begin{macrocode}
+\NewDocumentEnvironment { uncoverenv } { D <> { all } }
+  {
+    \@@_overlay:nTF {#1}
+      { }
+      { \draw_hidden_begin: }
+  }
+  {
+    \@@_overlay:nTF {#1}
+      { }
+      { \draw_hidden_end: }
+  }
+%    \end{macrocode}
+% \end{environment}
 %
 %    \begin{macrocode}
 %</class>

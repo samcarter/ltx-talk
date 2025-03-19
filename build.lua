@@ -7,11 +7,11 @@ module = "xbeamer"
 -- Release a TDS-style zip
 packtdszip = true
 
--- Typeset only the main documentation file
-typesetfiles = {"xbeamer.tex"}
+-- Typeset .tex files
+typesetfiles = {"*.tex"}
 
 -- Detail how to set the tag automatically
-tagfiles = {"CHANGELOG.md","*.dtx","xbeamer.tex"}
+tagfiles = {"CHANGELOG.md", "*.dtx", "*.tex"}
 
 function update_tag(file,content,tagname,tagdate)
   tagname = string.gsub(tagname, "^v", "")

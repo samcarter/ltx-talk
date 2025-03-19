@@ -164,7 +164,8 @@
 % \end{variable}
 %
 % \begin{macro}{\@@_decode_mode:n}
-%   Check if the mode is known and current.
+%   Check if the mode is known and current. At present, we only consider
+%   overlays for presentations.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_mode:n #1
   {
@@ -179,7 +180,11 @@
           { \bool_set_true:N \l_@@_decode_result_bool }
           { \bool_set_false:N \l_@@_decode_result_bool }
       }
-      { \@@_decode_overlays:n {#1} }
+      {
+        \str_if_eq:VnTF \l_@@_mode_str { presentation }
+          { \@@_decode_overlays:n {#1} }
+          { \bool_set_true:N \l_@@_decode_result_bool }
+      }
   }
 %    \end{macrocode}
 % \end{macro}

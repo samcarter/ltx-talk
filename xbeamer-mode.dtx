@@ -73,13 +73,6 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
-% \begin{macro}{\g_@@_mode_str}
-%    \begin{macrocode}
-\str_new:N \g_@@_mode_str
-\str_gset:Nn \g_@@_mode_str { presentation }
-%    \end{macrocode}
-% \end{macro}
-%
 % \begin{macro}{\mode}
 %   A simplified version of \cs{mode}: only deal with the argument form,
 %   only check the entire overlay spec as a string.
@@ -88,7 +81,7 @@
   {
     \bool_lazy_or:nnT
       { \str_if_eq_p:nn {#1} { all } }
-      { \str_if_eq_p:Vn \g_@@_mode_str {#1} }
+      { \str_if_eq_p:Vn \l_@@_mode_str {#1} }
       {#2}
   }
 %    \end{macrocode}

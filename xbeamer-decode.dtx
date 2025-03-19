@@ -173,8 +173,8 @@
         \bool_lazy_any:nTF
           {
             { \str_if_eq_p:nn {#1} { all } }
-            { \str_if_eq_p:Vn \g_@@_mode_str {#1} }
-            { \str_if_eq_p:Vn \g_@@_mode_str { all } }
+            { \str_if_eq_p:Vn \l_@@_mode_str {#1} }
+            { \str_if_eq_p:Vn \l_@@_mode_str { all } }
           }
           { \bool_set_true:N \l_@@_decode_result_bool }
           { \bool_set_false:N \l_@@_decode_result_bool }

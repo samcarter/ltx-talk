@@ -181,7 +181,7 @@
           { \bool_set_false:N \l_@@_decode_result_bool }
       }
       {
-        \str_if_eq:VnTF \l_@@_mode_str { presentation }
+        \str_if_eq:VnTF \l_@@_mode_str { projector }
           { \@@_decode_overlays:n {#1} }
           { \bool_set_true:N \l_@@_decode_result_bool }
       }

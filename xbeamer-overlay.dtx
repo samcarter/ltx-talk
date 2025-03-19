@@ -130,13 +130,11 @@
 %    \begin{macrocode}
 \NewDocumentEnvironment { uncoverenv } { D <> { } }
   {
-    \@@_overlay:nTF {#1}
-      { }
+    \@@_overlay:nF {#1}
       { \draw_hidden_begin: }
   }
   {
-    \@@_overlay:nTF {#1}
-      { }
+    \@@_overlay:nF {#1}
       { \draw_hidden_end: }
   }
 %    \end{macrocode}

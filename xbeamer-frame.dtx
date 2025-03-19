@@ -216,7 +216,7 @@
 %
 % \begin{macro}{frame}
 %    \begin{macrocode}
-\RenewDocumentEnvironment { frame } { D <> { } O { } +b }
+\RenewDocumentEnvironment { frame } { D <> { all } O { } +b }
   {
     \keys_set:nn { xbeamer / frame } {#2}
     \@@_decode_parse:n {#1}

@@ -151,24 +151,39 @@
 % \end{macro}
 % \end{macro}
 %
+% \begin{variable}{\c_@@_modes_clist}
+%   The possible modes: detokenized as that is applied up-front in decoding.
+%    \begin{macrocode}
+\clist_const:Ne \c_@@_modes_clist
+  {
+    \tl_to_str:n { all }       ,
+    \tl_to_str:n { handout }   ,
+    \tl_to_str:n { projector }
+  }
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{macro}{\@@_decode_mode:n}
 %   Check if the mode is known and current. At present, we only consider
-%   overlays for projector mode.
+%   overlays for presentations.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_mode:n #1
   {
-    \bool_lazy_or:nnTF
-      { \tl_if_blank_p:n {#1} }
+    \clist_if_in:NnTF \c_@@_modes_clist {#1}
       {
-        \bool_lazy_and_p:nn
-          { \str_if_eq_p:nn {#1} { projector } }
-          { \str_if_eq_p:Vn \l_@@_mode_str { projector } }
-      }
-      { \@@_decode_overlays:n {#1} }
-      {
-        \str_if_eq:VnTF \l_@@_mode_str {#1}
+        \bool_lazy_any:nTF
+          {
+            { \str_if_eq_p:nn {#1} { all } }
+            { \str_if_eq_p:Vn \l_@@_mode_str {#1} }
+            { \str_if_eq_p:Vn \l_@@_mode_str { all } }
+          }
           { \bool_set_true:N \l_@@_decode_result_bool }
           { \bool_set_false:N \l_@@_decode_result_bool }
+      }
+      {
+        \str_if_eq:VnTF \l_@@_mode_str { presentation }
+          { \@@_decode_overlays:n {#1} }
+          { \bool_set_true:N \l_@@_decode_result_bool }
       }
   }
 %    \end{macrocode}

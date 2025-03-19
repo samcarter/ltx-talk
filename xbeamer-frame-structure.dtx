@@ -73,6 +73,60 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
+% \begin{environment}{columns}
+%    \begin{macrocode}
+\NewDocumentEnvironment { columns } { D <> { all } }
+  {
+    \hbox_set_to_wd:Nnw \l_@@_tmp_box { \textwidth }
+      \ignorespaces
+  }
+  {
+      \unskip
+    \hbox_set_end:
+    \box_use:N \l_@@_tmp_box
+  }
+%    \end{macrocode}
+% \end{environment}
+%
+% \begin{variable}{\l_@@_column_alignment_tl}
+%    \begin{macrocode}
+\keys_define:nn { xbeamer / column }
+  {
+    vertical-alignment .choices:nn =
+      { bottom , center , stretch , top }
+      {
+        \tl_set_eq:NN \l_@@_column_alignment_tl
+          \l_keys_value_tl
+      }
+  }
+\keys_set:nn { xbeamer / column }
+  {
+    vertical-alignment = center
+  }
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{environment}{column}
+%    \begin{macrocode}
+\NewDocumentEnvironment { column } { D <> { all } O { } m }
+  {
+    \keys_set:nn { xbeamer / column } {#2}
+    \use:e
+      {
+        \exp_not:N \begin { minipage }
+          [ \tl_head:V \l_@@_column_alignment_tl ]
+      }
+        {#3}
+      \leavevmode
+      \raggedright
+      \ignorespaces
+  }
+  {
+    \end { minipage }
+  }
+%    \end{macrocode}
+% \end{environment}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

@@ -73,17 +73,27 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
-% \begin{macro}{\mode}
+% \begin{macro}{\@@_mode:nT}
 %   A simplified version of \cs{mode}: only deal with the argument form,
 %   only check the entire overlay spec as a string.
 %    \begin{macrocode}
-\NewDocumentCommand \mode { D <> { all } +m }
+\prg_new_protected_conditional:Npnn \@@_mode:n #1 { T }
   {
-    \bool_lazy_or:nnT
+    \bool_lazy_or:nnTF
       { \str_if_eq_p:nn {#1} { all } }
       { \str_if_eq_p:Vn \l_@@_mode_str {#1} }
-      {#2}
+      \prg_return_true:
+      \prg_return_false:
   }
+%    \end{macrocode}
+% \end{macro}
+
+%
+% \begin{macro}{\mode}
+
+%    \begin{macrocode}
+\NewDocumentCommand \mode { D <> { all } +m }
+  { \@@_mode:nT {#1} {#2} }
 %    \end{macrocode}
 % \end{macro}
 %

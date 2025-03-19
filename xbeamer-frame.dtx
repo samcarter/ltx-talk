@@ -220,7 +220,7 @@
   {
     \keys_set:nn { xbeamer / frame } {#2}
     \@@_decode_parse:n {#1}
-    \bool_if:NT \l_@@_decode_result_bool
+    \@@_overlay:nT
       { \@@_frame_process:n {#3} }
   }
   { }

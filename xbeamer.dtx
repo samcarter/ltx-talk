@@ -122,7 +122,7 @@
       { \str_set:NV \l_@@_mode_str \l_keys_choice_tl } ,
     unknown .code:n =
       {
-        \msg_error:nnx { xbeamer } { unknown-class-option }
+        \msg_error:nne { xbeamer } { unknown-class-option }
           { \l_keys_key_str \tl_if_empty:nF {#1} { = \tl_to_str:n {#1} } }
       }
   }

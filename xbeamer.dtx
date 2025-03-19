@@ -235,6 +235,31 @@
 \setlength \fboxrule { 0.4pt }
 %    \end{macrocode}
 %
+% \subsection{Font selection}
+%
+% The aim here is to minimize change from the standard font setup but at the
+% same time provide a sanserif default. Since \pkg{beamer} was released,
+% better sanserif math mode fonts have become available. For OpenType engines,
+% requiring \pkg{unicode-math} is the most sensible approach. The New Computer
+% Modern font provides a reasonable initial set of glyphs. It comes with a
+% wrapper package, but that does various other things: if the user wants these,
+% they can choose to load themselves. For 8-bit engines, switching the text
+% font to be sanserif is easy. For math mode, the \pkg{sansmathfonts} package
+% does a good job: here, using the package rather than  adjusting directly is
+% the sensible option.
+%    \begin{macrocode}
+\sys_if_engine_opentype:TF
+  {
+    \usepackage { unicode-math }
+    \setmainfont { NewCMSans10-Regular.otf }
+    \setmathfont { NewCMSansMath-Regular.otf }
+  }
+  {
+    \usepackage { sansmathfonts }
+    \cs_set_eq:NN \rmdefault \sfdefault
+  }
+%    \end{macrocode}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

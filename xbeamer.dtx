@@ -117,8 +117,9 @@
       \l_@@_aspect_ratio_str ,
     font-size .dim_set:N =
       \l_@@_fontsize_dim ,
-    mode .str_set:N =
-      \l_@@_mode_str ,
+    mode .choices:nn =
+      { all , handout , presentation , projector }
+      { \str_set:NV \l_@@_mode_str \l_keys_choice_tl } ,
     unknown .code:n =
       {
         \msg_error:nnx { xbeamer } { unknown-class-option }

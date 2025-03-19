@@ -93,13 +93,13 @@
 % \begin{macro}{\only}
 %   Simple wrappers around the internal switch.
 %    \begin{macrocode}
-\NewDocumentCommand \alt { D <> { all } +m +m }
+\NewDocumentCommand \alt { D <> { } +m +m }
   {
     \@@_overlay:nTF {#1}
       {#2}
       {#3}
   }
-\NewDocumentCommand \only { D <> { all } +m }
+\NewDocumentCommand \only { D <> { } +m }
   {
     \@@_overlay:nT {#1}
       {#2}
@@ -112,7 +112,7 @@
 %   Almost certainly we will need to add an operation into the true branches
 %   here to keep spacing correct.
 %    \begin{macrocode}
-\NewDocumentCommand \uncover { D <> { all } +m }
+\NewDocumentCommand \uncover { D <> { } +m }
   {
     \@@_overlay:nTF {#1}
       {#2}
@@ -128,7 +128,7 @@
 %   We could parse only once here: but this was we don't need more global
 %   data structures.
 %    \begin{macrocode}
-\NewDocumentEnvironment { uncoverenv } { D <> { all } }
+\NewDocumentEnvironment { uncoverenv } { D <> { } }
   {
     \@@_overlay:nTF {#1}
       { }

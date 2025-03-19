@@ -88,7 +88,7 @@
 %   The values are those from \cls{article} at the moment: this will need to
 %   be templated later.
 %    \begin{macrocode}
-\NewDocumentCommand \frametitle { D <> { all } O { #3 } m }
+\NewDocumentCommand \frametitle { D <> { } O { #3 } m }
   {
     \@startsection
       { section }
@@ -124,7 +124,7 @@
 %
 % \begin{macro}{\block}
 %    \begin{macrocode}
-\NewDocumentEnvironment { block } { D <> { all } }
+\NewDocumentEnvironment { block } { D <> { } }
   {
     \vbox_set:Nw \l_@@_tmp_box
   }
@@ -143,7 +143,7 @@
 %   The latter will likely need to be triggered in the end-of-block code
 %   as only then is the title available.
 %    \begin{macrocode}
-\NewDocumentCommand \blocktitle { D <> { all } m }
+\NewDocumentCommand \blocktitle { D <> { } m }
   {
     \@startsection
       { subsection }
@@ -161,7 +161,7 @@
 %   We will likely want more flexibility here: for the moment, hard-code
 %   something.
 %    \begin{macrocode}
-\NewDocumentCommand \alert { D <> { all } +m }
+\NewDocumentCommand \alert { D <> { } +m }
   {
     \@@_overlay:nTF {#1}
       { \textcolor { red } }

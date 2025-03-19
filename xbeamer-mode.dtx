@@ -77,10 +77,10 @@
 %   A simplified version of \cs{mode}: only deal with the argument form,
 %   only check the entire overlay spec as a string.
 %    \begin{macrocode}
-\NewDocumentCommand \mode { D <> { all } +m }
+\NewDocumentCommand \mode { D <> { } +m }
   {
     \bool_lazy_or:nnT
-      { \str_if_eq_p:nn {#1} { all } }
+      { \str_if_empty_p:n {#1} }
       { \str_if_eq_p:Vn \l_@@_mode_str {#1} }
       {#2}
   }

@@ -173,7 +173,6 @@
 %
 % \begin{macro}{\item}
 % \begin{macro}{\@@_item_parse_spec:n}
-% \begin{macro}{\__kernel_list_item_end:}
 %   Again, add the additional argument: here, we have to do a little gymnastics.
 %    \begin{macrocode}
 \AddToHook { begindocument / before }
@@ -181,6 +180,9 @@
     \NewCommandCopy \stditem \item
     \RenewDocumentCommand \item { d <> = { label } o }
       {
+        \IfNoValueTF {#2}
+          { \stditem }
+          { \stditem [ #2 ] }
         \IfNoValueTF {#1}
           {
             \tl_if_empty:NF \l_@@_block_inner_spec_tl
@@ -190,9 +192,6 @@
               }
           }
           { \@@_item_parse_spec:n {#1} }
-        \IfNoValueTF {#2}
-          { \stditem }
-          { \stditem [ #2 ] }
       }
   }
 %    \end{macrocode}
@@ -206,21 +205,14 @@
     \@@_overlay:nF {#1}
       {
         \tl_gset:Nn \g_@@_list_end_tl
-          { \draw_hidden_end: }
+          {
+            \draw_hidden_end:
+            \tl_gclear:N \g_@@_list_end_tl
+          }
         \draw_hidden_begin:
       }
   }
 %    \end{macrocode}
-%   No hook at present so we have to hard-code a redefinition.
-%    \begin{macrocode}
-\cs_gset_protected:Npe \__kernel_list_item_end:
-  {
-    \exp_not:N \g_@@_list_end_tl
-    \tl_gclear:N \exp_not:N \g_@@_list_end_tl
-    \exp_not:o { \__kernel_list_item_end: }
-  }
-%    \end{macrocode}
-% \end{macro}
 % \end{macro}
 % \end{macro}
 % \begin{variable}{\tl_new:N \g_@@_list_end_tl}
@@ -228,6 +220,21 @@
 \tl_new:N \g_@@_list_end_tl
 %    \end{macrocode}
 % \end{variable}
+%  \begin{macro}{\__block_list_item_end:, \__block_list_end:}
+%    Currently no hook for this, so we have to do internal patching.
+%    \begin{macrocode}
+\cs_set:Npe \__block_list_item_end:
+  {
+    \exp_not:N \g_@@_list_end_tl
+    \exp_not:o \__block_list_item_end:
+  }
+\cs_set:Npe \__block_list_end:
+  {
+    \exp_not:N \g_@@_list_end_tl
+    \exp_not:o \__block_list_end:
+  }
+%    \end{macrocode}
+%  \end{macro}
 %
 % \begin{variable}{\l_@@_block_inner_spec_tl}
 %   Add an overlay key to the \texttt{block} template.  Placed here, it applies

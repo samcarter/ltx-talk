@@ -29,6 +29,20 @@ for those people who are interested.
 \documentclass{l3doc}
 
 % Commands needed in this document
+\ExplSyntaxOn
+\makeatletter
+\NewDocumentCommand \acro { m }
+  {
+    \textsc
+      {
+        \exp_args:NV \tl_if_head_eq_charcode:nNTF \f@series { m }
+          { \text_lowercase:n }
+          { \use:n }
+            {#1}
+      }
+  }
+\makeatother
+\ExplSyntaxOff
 \NewDocumentCommand\email{m}{\href{mailto:#1}{\nolinkurl{#1}}}
 
 % As we are dealing with a class, this has to be done manually
@@ -57,6 +71,109 @@ for those people who are interested.
 \tableofcontents
 
 \begin{documentation}
+
+\section{Introduction}
+
+The \pkg{beamer} class was first released in 2003, and rapidly became the
+most populat method for producing presentations in \LaTeX{}. As detailed in
+the \pkg{beamer} manual
+\begin{quotation}
+  Till Tantau created \pkg{beamer} mainly in his spare time. Many other people
+  have helped by sending him emails containing suggestions for improvement or
+  corrections or patches or whole new themes (by now, this amounts to over a
+  thousand emails concerning \pkg{beamer}). Indeed, most of the development was
+  only initiated by feature requests and bug reports. Without this feedback,
+  \pkg{beamer} would still be what it was originally intended to be: a small
+  private collection of macros that make using the \pkg{seminar} class easier.
+  Till created the first version of \pkg{beamer} for his PhD defense
+  presentation in February 2003. A month later, he put the package on
+  \acro{ctan} at the request of some colleagues. After that, things somehow got
+  out of hand.
+\end{quotation}
+
+The effort which Till put in over the time he was developing \pkg{beamer}
+cannot be underestimated. However, there are several challenges which confront
+us today
+\begin{enumerate}
+  \item The document interface is flexible but in places deviates from normal
+    \LaTeX{} conventions
+  \item Internally, the code shows that Till was learning \LaTeX{} programming
+    as he wrote \pkg{beamer}, and was coding whatever was needed to get the
+    visual results
+  \item Till made few comments in the code or in commit messages in the code
+    history
+  \item The underlying box structure of a \pkg{beamer} document is very
+    different from the standard \LaTeX{} model, and a lot of material is
+    boxed up multiple times
+\end{enumerate}
+These all feed into an issue addressing a major requirement today:
+accessibility. Broadly, the internal structure (and to some extend the user
+interface) of \pkg{beamer} mean that it is not possible to \enquote{retrofit}
+PDF tagging into the class.
+
+Instead, the approach is to develop a new class, currently called
+\pkg{xbeamer}, which takes ideas from \pkg{beamer} but with tagging and
+accessibility of structure as a design aim from the beginning. In contrast to
+work by the \LaTeX{} Project Team on making the core classes accessible, the
+expectation for \pkg{xbeamer} is that users \emph{will} need to change their
+sources. Unlike other documents, presentations tend to be \enquote{single use}:
+revised and adjusted each time they are used. The need to look edit sources
+should therefore not be an insurmountable barrier.
+
+At present, this code is \emph{highly} experimental: only a (small) subset of
+\pkg{beamer} functionality is implemented, some things are being done
+differently, almost everything is still subject to discussion.
+
+\section{Simple example documents}
+
+Currently, \pkg{xbeamer} \emph{absolutely requires} the use of the
+\cs{DocumentMetadata} command \emph{and} the \texttt{testphase} code for new
+document structures. As such, the most basic \pkg{xbeamer} document is
+\begin{verbatim}
+  \DocumentMetadata{testphase = latest}
+  \documentclass{xbeamer}
+  \begin{document}
+  \begin{frame}
+    Some content here
+  \end{frame}
+  \end{document}
+\end{verbatim}
+
+A slightly more useful version, which generates multiple slides and shows some
+(current) features, is
+\begin{verbatim}
+  \DocumentMetadata{testphase = latest}
+  \documentclass{xbeamer}
+  \begin{document}
+  \begin{frame}
+    \frametitle{An example frame}
+    \begin{itemize}[overlay-spec = +-]
+      \item This will be on slide one onward
+      \item This will be on slide two onward
+      \item<.-> So will this
+      \item But this will only appear on slide three
+    \end{itemize}
+  \end{frame}
+  \end{document}
+\end{verbatim}
+
+Tagging is activated for the standard (projector) output of \pkg{xbeamer}, but
+it is more useful in handout mode, which is activated using a class option.
+\begin{verbatim}
+  \DocumentMetadata{testphase = latest}
+  \documentclass[mode = handout]{xbeamer}
+  \begin{document}
+  \begin{frame}
+    \frametitle{An example frame}
+    \begin{itemize}[overlay-spec = +-]
+      \item This will be on slide one onward
+      \item This will be on slide two onward
+      \item<.-> So will this
+      \item But this will only appear on slide three
+    \end{itemize}
+  \end{frame}
+  \end{document}
+\end{verbatim}
 
 \end{documentation}
 

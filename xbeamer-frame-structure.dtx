@@ -74,9 +74,14 @@
 %    \end{macrocode}
 %
 % \begin{environment}{columns}
+%   We leave vertical mode here as otherwise there is an issue with tagging
+%   due to box nesting: see
+%   \url{https://github.com/latex3/tagging-project/issues/54}. That contrasts
+%   with \pkg{beamer}: may need to revisit later.
 %    \begin{macrocode}
 \NewDocumentEnvironment { columns } { D <> { all } }
   {
+    \mode_leave_vertical:
     \hbox_set_to_wd:Nnw \l_@@_tmp_box { \textwidth }
       \ignorespaces
   }

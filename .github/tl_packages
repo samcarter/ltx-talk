@@ -33,6 +33,7 @@ pdfmanagement-testphase
 pdftexcmds
 psnfss
 siunitx
+tagpdf
 tools
 underscore
 # Indexing (needed to compile docs)

@@ -213,6 +213,29 @@ carry forward from \pkg{beamer}.
 
 \subsection{The frame environment}
 
+\DescribeEnv{frame}
+A presentation consists of a series of frames. Each frame consists of a series
+of slides. You create a frame using |frame| environment. All of the text that
+is not tagged by overlay specifications is shown on all slides of the frame.
+(Overlay specifications are explained in more detail in later sections. For the
+moment, let's just say that an overlay specification is a list of numbers or
+number ranges in pointed brackets that is put after certain commands as in
+|\uncover<1,2>{Text}|.) If a frame contains commands that have an overlay
+specification, the frame will contain multiple slides; otherwise it contains
+only one slide.
+
+\begin{syntax}
+  \cs{begin}\marg{frame}\oarg{options}
+  ...
+  \cs{end}\marg{frame}
+\end{syntax}
+\begin{verbatim}
+  \begin{frame}
+    \frametitle{A title}
+    Some content
+  \end{frame}
+\end{verbatim}
+
 \subsection{Frame and margin size}
 
 \subsection{Restricting the slides of a frame}

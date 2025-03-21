@@ -28,6 +28,8 @@ for those people who are interested.
 
 \documentclass{l3doc}
 
+\usepackage{siunitx}
+
 % Commands needed in this document
 \ExplSyntaxOn
 \makeatletter
@@ -72,7 +74,8 @@ for those people who are interested.
 
 \begin{documentation}
 
-\section{Introduction}
+\section{Introduction%
+  \label{sec:intro}}
 
 The \pkg{beamer} class was first released in 2003, and rapidly became the
 most populat method for producing presentations in \LaTeX{}. As detailed in
@@ -176,6 +179,25 @@ it is more useful in handout mode, which is activated using a class option.
   \end{frame}
   \end{document}
 \end{verbatim}
+
+\section{Class structure and design decisions}
+
+As covered in Section~\ref{sec:intro}, the \pkg{xbeamer} class is currently
+highly experimental. Active discussion is ongoing around many aspects of the
+way that things should work, and very little is therefore at all stable. That
+said, some decisions have been made: some of this is re-stating ideas which
+carry forward from \pkg{beamer}.
+\begin{itemize}
+  \item The basic structure of a presentation is made up of \texttt{frame}
+    environments, which are made up of one or more slides.
+  \item Variable content is indicated by an \emph{overlay specficiation}, given
+    in optional angle brackets (\texttt{< ... >}).
+  \item Slides have a \emph{fixed} height (the height itself is not yet
+    decided, but is likely to be either \qty{96}{\mm} or \qty{100}{\mm}).
+  \item The default font will be sanserif using established standard
+    implementations (currently \pkg{sansmathfonts} for \pdfTeX{} and New
+    Computer Modern for OpenType engines).
+\end{itemize}
 
 \end{documentation}
 

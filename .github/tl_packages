@@ -29,6 +29,7 @@ iftex
 infwarerr
 latex-lab
 kvoptions
+pdfmanagement-testphase
 pdftexcmds
 psnfss
 siunitx

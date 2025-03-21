@@ -88,12 +88,13 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\g_@@_slide_int, \c@slide}
+% \begin{variable}{\g_@@_slide_int, \c@slide \theslide}
 %   The slide number inside the current frame: needed to know which overlays
 %   are active. We also provide \LaTeX{} counter-style access.
 %    \begin{macrocode}
 \int_new:N \g_@@_slide_int
 \cs_new_eq:NN \c@slide \g_@@_slide_int
+\cs_new:Npn \theslide { \@arabic \c@slide }
 %    \end{macrocode}
 % \end{variable}
 %
@@ -199,11 +200,12 @@
 %
 % \subsection{The \texttt{frame} environment}
 %
-% \begin{variable}{\g_@@_frame_int, \c@frame}
+% \begin{variable}{\g_@@_frame_int, \c@frame, \theframe}
 %   The overall frame number, including \LaTeX{} counter-like access.
 %    \begin{macrocode}
 \int_new:N \g_@@_frame_int
 \cs_new_eq:NN \c@frame \g_@@_frame_int
+\cs_new:Npn \theframe { \@arabic \c@frame }
 %    \end{macrocode}
 % \end{variable}
 %

@@ -88,11 +88,12 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\g_@@_slide_int}
+% \begin{variable}{\g_@@_slide_int, \c@slide}
 %   The slide number inside the current frame: needed to know which overlays
-%   are active.
+%   are active. We also provide \LaTeX{} counter-style access.
 %    \begin{macrocode}
 \int_new:N \g_@@_slide_int
+\cs_new_eq:NN \c@slide \g_@@_slide_int
 %    \end{macrocode}
 % \end{variable}
 %

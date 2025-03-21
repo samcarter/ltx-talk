@@ -251,12 +251,12 @@
 %    \begin{macrocode}
 \sys_if_engine_opentype:TF
   {
-    \usepackage { unicode-math }
+    \RequirePackage { unicode-math }
     \setmainfont { NewCMSans10-Regular.otf }
     \setmathfont { NewCMSansMath-Regular.otf }
   }
   {
-    \usepackage { sansmathfonts }
+    \RequirePackage { sansmathfonts }
     \cs_set_eq:NN \rmdefault \sfdefault
   }
 %    \end{macrocode}

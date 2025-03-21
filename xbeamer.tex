@@ -237,6 +237,11 @@ only one slide.
 
 \subsection{Restricting the slides of a frame}
 
+The number of slides in a frame is automatically calculated. If the largest
+number mentioned in any overlay specification inside the frame is 4, four
+slides are introduced (despite the fact that a specification like |<4->| might
+suggest that more than four slides would be possible).
+
 \section{Creating overlays}
 
 \subsection{The general concept of overlay specifications}

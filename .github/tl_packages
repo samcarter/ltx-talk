@@ -30,6 +30,7 @@ infwarerr
 kvoptions
 pdftexcmds
 psnfss
+siunitx
 tools
 underscore
 # Indexing (needed to compile docs)

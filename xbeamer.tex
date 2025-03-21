@@ -47,11 +47,13 @@ for those people who are interested.
   }
 \makeatother
 \ExplSyntaxOff
+\NewDocumentCommand\foreign{m}{\textit{#1}}
 \NewDocumentCommand\email{m}{\href{mailto:#1}{\nolinkurl{#1}}}
 % Tidy up the above in bookmarks
 \makeatletter
 \pdfstringdefDisableCommands{%
   \let\acro\@firstofone
+  \let\foreign\@firstofone
 }
 \makeatother
 
@@ -251,6 +253,11 @@ only one slide.
 \subsection{Dynamically changing text or images}
 
 \section{Structuring a presentation: the local structure}
+
+\LaTeX{} provides different commands for structuring text \enquote{locally},
+for example, \foreign{via} the |itemize| environment. These environments are
+also available in the \pkg{xbeamer} class, although their appearance has been
+slightly changed.
 
 \subsection{Itemizations, enumerations and descriptions}
 

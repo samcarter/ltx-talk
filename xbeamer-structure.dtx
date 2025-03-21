@@ -173,7 +173,11 @@
 %
 % \begin{macro}{\item}
 % \begin{macro}{\@@_item_parse_spec:n}
-%   Again, add the additional argument: here, we have to do a little gymnastics.
+%   Again, add the additional argument: here, we have to do a little
+%   gymnastics. The test for an overlay has to come after the standard item
+%   definition: in a list, items have to \emph{close} the structure before
+%   them first, so if we test too early, we'd end up covering then uncovering
+%   straight away!
 %    \begin{macrocode}
 \AddToHook { begindocument / before }
   {

@@ -98,14 +98,6 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\g_@@_slide_abs_int}
-%   We also track the absolute slide number, as this is used for internal
-%   purposes.
-%    \begin{macrocode}
-\int_new:N \g_@@_slide_abs_int
-%    \end{macrocode}
-% \end{variable}
-%
 % \begin{macro}{\@@_slide:n}
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide:n #1
@@ -129,7 +121,6 @@
 \cs_new_protected:Npn \@@_slide_begin:
   {
     \int_gincr:N \g_@@_slide_int
-    \int_gincr:N \g_@@_slide_abs_int
     \int_gset:Nn \g_@@_decode_int { 1 }
     \bool_gset_false:N \g_@@_slide_continue_bool
     \vbox_set:Nw \l_@@_slide_box

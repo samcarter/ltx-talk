@@ -98,6 +98,18 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{macro}[EXP]{\@@_frame_slide:}
+%   For refering to the slide-in-the-frame.
+%    \begin{macrocode}
+\cs_new:Npn \@@_frame_slide:
+  {
+    \int_use:N \g_@@_frame_int
+    .
+    \int_use:N \g_@@_slide_int
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 % \begin{macro}{\@@_slide:n}
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide:n #1
@@ -123,6 +135,11 @@
     \int_gincr:N \g_@@_slide_int
     \int_gset:Nn \g_@@_decode_int { 1 }
     \bool_gset_false:N \g_@@_slide_continue_bool
+    \tag_struct_begin:e
+      {
+        tag   = slide , 
+        title = Slide ~ \@@_frame_slide:
+      }      
     \vbox_set:Nw \l_@@_slide_box
   }
 \cs_new_protected:Npn \@@_slide_end:
@@ -134,6 +151,7 @@
           { \vbox_unpack_drop:N \l_@@_slide_box }
       }
     \box_use_drop:N \l_@@_slide_box
+    \tag_struct_end:
   }
 %    \end{macrocode}
 % \end{macro}
@@ -222,8 +240,10 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_frame_process:n #1
   {
+    \tag_struct_begin:n { tag = frame }
     \int_gincr:N \g_@@_frame_int
     \@@_slide:n {#1}
+    \tag_struct_end:
   }
 %    \end{macrocode}
 % \end{macro}

@@ -83,21 +83,32 @@
 % \end{macro}
 %
 % \begin{macro}{\frametitle}
-%   As a interim approach, make frame titles section commands: this will allow
-%   tagging but does leave the question of how to handle this longer-term.
-%   The values are those from \cls{article} at the moment: this will need to
-%   be templated later.
+%   As a interim approach, we hard-code formatting here but do tag.
 %    \begin{macrocode}
 \NewDocumentCommand \frametitle { D <> { all } O {#3} m }
   {
-    \@startsection
-      { section }
-      { 1 }
-      { 0pt }
-      { -3.5ex plus -1ex minus -0.2ex }
-      {  2.3ex plus 0.2ex }
-      { \normalfont \Large \bfseries }
-      {#3}
+    \tag_struct_begin:n { tag = frametitle , title = #3 }
+    \tag_mc_begin:n { }
+    \MakeLinkTarget * { slide . \@@_frame_slide: }
+    \bookmark
+      [
+        dest     = \@currentHref ,
+        keeplevel ,
+        rellevel = 1
+      ]
+      {
+        #3 ~ 
+        ( Slide ~ \@@_frame_slide: )
+      }
+    \group_begin:
+      \tagpdfparaOff
+      \normalfont \Large \bfseries
+      #3
+      \par
+      \bigskip
+    \group_end:
+    \tag_mc_end:
+    \tag_struct_end:
   }
 %    \end{macrocode}
 % \end{macro}
@@ -136,23 +147,18 @@
 % \end{macro}
 %
 % \begin{macro}{\blocktitle}
-%   As a interim approach, make block titles subsection commands.
-%   The values are those from \cls{article} at the moment: this definitely needs
-%   to be completely re-worked! Like \cs{frametitle}, we presumably want this
-%   command to save the data, which is then typeset by a suitable template.
-%   The latter will likely need to be triggered in the end-of-block code
-%   as only then is the title available.
+%   As a interim approach, hard code block title formatting: tagging here
+%   needs to be woked out.
 %    \begin{macrocode}
 \NewDocumentCommand \blocktitle { D <> { all } m }
   {
-    \@startsection
-      { subsection }
-      { 2 }
-      { 0pt }
-      { -3.25ex plus -1ex minus -0.2ex }
-      {  1.5ex plus 0.2ex }
-      { \normalfont \large \bfseries }
-      {#2}
+    \group_begin:
+      \medskip
+      \normalfont \large \bfseries
+      #2
+      \par
+      \medskip
+    \group_end:
   }
 %    \end{macrocode}
 % \end{macro}

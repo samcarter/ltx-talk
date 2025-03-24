@@ -167,12 +167,9 @@
 % \end{macro}
 %
 % Temporary code needed to allow frame titles to look like normal sections:
-% this will all need to go later. In particular, \cls{beamer} does not
-% define \cs{thepage} as it does not have pages; the lower-level \cs{c@page}
-% is used instead.
+% this will all need to go later.
 %    \begin{macrocode}
 \setcounter { secnumdepth } { -1 }
-\newcommand \thepage { \csname @arabic\endcsname \c@page }
 %    \end{macrocode}
 %
 % \begin{environment}{description, quote, quotation, verse}

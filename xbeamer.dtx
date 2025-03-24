@@ -236,6 +236,14 @@
 \setlength \fboxrule { 0.4pt }
 %    \end{macrocode}
 %
+% \begin{variable}{\thepage}
+%   We also define \cs{thepage} here: this is needed by third-party packages
+%   and is therefore a standard requirement.
+%    \begin{macrocode}
+\cs_new:Npn \thepage { \@arabic \c@page }
+%    \end{macrocode}
+% \end{variable}
+%
 % \subsection{Font selection}
 %
 % The aim here is to minimize change from the standard font setup but at the

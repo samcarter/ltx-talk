@@ -78,6 +78,7 @@
 %    \end{macrocode}
 %
 % \begin{macro}[TF]{\@@_overlay:n}
+% \begin{macro}{\@@_overlay_arg:n}
 %    \begin{macrocode}
 \prg_new_protected_conditional:Npnn \@@_overlay:n #1 { T , F , TF }
   {
@@ -85,6 +86,16 @@
     \bool_if:NTF \l_@@_decode_result_bool
       \prg_return_true:
       \prg_return_false:
+  }
+%    \end{macrocode}
+%   A macro processor variant of the check that always results in an |N|-type
+%   bool.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_overlay_arg:n #1
+  {
+    \@@_overlay:nTF {#1}
+      { \cs_set:Npn \ProcessedArgument { \c_true_bool } }
+      { \cs_set:Npn \ProcessedArgument { \c_false_bool } }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -151,16 +162,14 @@
 %    \end{macrocode}
 % \end{macro}
 % \begin{environment}{uncoverenv}
-%   We could parse only once here: but this was we don't need more global
-%   data structures.
 %    \begin{macrocode}
-\NewDocumentEnvironment { uncoverenv } { D <> { all } }
+\NewDocumentEnvironment { uncoverenv } { >{ \@@_overlay_arg:n } D <> { all } }
   {
-    \@@_overlay:nF {#1}
+    \bool_if:NF #1
       { \draw_hidden_begin: }
   }
   {
-    \@@_overlay:nF {#1}
+    \bool_if:NF #1
       { \draw_hidden_end: }
   }
 %    \end{macrocode}

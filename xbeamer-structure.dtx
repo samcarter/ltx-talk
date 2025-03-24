@@ -124,7 +124,7 @@
             \exp_not:N \tl_use:N
             \exp_not:c { l_@@_ #1 _tl }
           }
-        \NewDocumentCommand \exp_not:c {#1} 
+        \NewDocumentCommand \exp_not:c {#1}
           { D <> { all } s O {##4} m }
           {
             \exp_not:N \refstepcounter {#1}
@@ -140,7 +140,7 @@
                   \exp_not:n
                     {
                       slide .
-                      \int_eval:n { \g_@@_frame_int + 1 } . 1
+                      \int_eval:n { \g_@@_frame_int + \c_one_int } . 1
                     }
               ]
               {##3}
@@ -154,11 +154,11 @@
 % \end{macro}
 %
 % \begin{macro}{\frametitle}
-%   As a interim approach, we hard-code formatting here but do tag.
+%   As an interim approach, we hard-code formatting here but do tag.
 %    \begin{macrocode}
 \NewDocumentCommand \frametitle { D <> { all } O {#3} m }
   {
-    \tag_struct_begin:n { tag = frametitle , title = #3 }
+    \tag_struct_begin:n { tag = frametitle , title = {#3} }
     \tag_mc_begin:n { }
     \MakeLinkTarget * { slide . \@@_frame_slide: }
     \bookmark
@@ -168,7 +168,7 @@
         rellevel = 1
       ]
       {
-        #3 ~ 
+        #3 ~
         ( Slide ~ \@@_frame_slide: )
       }
     \group_begin:
@@ -209,8 +209,8 @@
 % \end{macro}
 %
 % \begin{macro}{\blocktitle}
-%   As a interim approach, hard code block title formatting: tagging here
-%   needs to be woked out.
+%   As an interim approach, hard code block title formatting: tagging here
+%   needs to be worked out.
 %    \begin{macrocode}
 \NewDocumentCommand \blocktitle { D <> { all } m }
   {
@@ -267,7 +267,7 @@
       }
   }
 %    \end{macrocode}
-%   Parsing the spec is a separate function here has there are a couple of
+%   Parsing the spec is a separate function here as there are a couple of
 %   routes to get here. At present we only have a \texttt{false} branch, but
 %   for spacing we likely will need to add something to the \texttt{true}
 %   branch too.
@@ -359,7 +359,7 @@
     \parsep    0pt plus pt
     \itemsep   \parsep
   }
-\def \@listiii 
+\def \@listiii
   {
     \leftmargin\leftmarginiii
     \topsep    2pt plus 1pt minus 2pt

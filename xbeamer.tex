@@ -88,7 +88,7 @@ for those people who are interested.
   \label{sec:intro}}
 
 The \pkg{beamer} class was first released in 2003, and rapidly became the
-most populat method for producing presentations in \LaTeX{}. As detailed in
+most popular method for producing presentations in \LaTeX{}. As detailed in
 the \pkg{beamer} manual
 \begin{quotation}
   Till Tantau created \pkg{beamer} mainly in his spare time. Many other people
@@ -130,7 +130,7 @@ accessibility of structure as a design aim from the beginning. In contrast to
 work by the \LaTeX{} Project Team on making the core classes accessible, the
 expectation for \pkg{xbeamer} is that users \emph{will} need to change their
 sources. Unlike other documents, presentations tend to be \enquote{single use}:
-revised and adjusted each time they are used. The need to look edit sources
+revised and adjusted each time they are used. The need to edit sources
 should therefore not be an insurmountable barrier.
 
 At present, this code is \emph{highly} experimental: only a (small) subset of
@@ -208,8 +208,6 @@ carry forward from \pkg{beamer}.
     Computer Modern for OpenType engines).
 \end{itemize}
 
-\end{documentation}
-
 \section{Creating frames}
 
 \subsection{The frame environment}
@@ -220,7 +218,7 @@ of slides. You create a frame using |frame| environment. All of the text that
 is not tagged by overlay specifications is shown on all slides of the frame.
 (Overlay specifications are explained in more detail in later sections. For the
 moment, let's just say that an overlay specification is a list of numbers or
-number ranges in pointed brackets that is put after certain commands as in
+number ranges in angle brackets that is put after certain commands as in
 |\uncover<1,2>{Text}|.) If a frame contains commands that have an overlay
 specification, the frame will contain multiple slides; otherwise it contains
 only one slide.
@@ -332,6 +330,8 @@ slightly changed.
 \subsection{Block environments}
 
 \subsection{Splitting a frame into multiple columns}
+
+\end{documentation}
 
 \PrintIndex
 

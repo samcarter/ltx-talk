@@ -87,6 +87,22 @@
 % \end{variable}
 %
 % \begin{macro}{\section, \subsection, \subsubsection}
+% \begin{macro}{\thesection, \thesubsection, \thesubsubsection}
+%  Here, we need full \LaTeX{} counters, so create them using the appropriate
+%  mechanism: that also means we can sort out counter dependency and the
+%  appearance (using the same setup as in \pkg{article}).
+%    \begin{macrocode}
+\newcounter { section }
+\newcounter { subsection } [ section ]
+\newcounter { subsubsection } [ subsection ]
+\cs_gset:Npn \thesection { \@arabic \c@section }
+\cs_gset:Npn \thesubsection { \thesection . \@arabic \c@subsection }
+\cs_gset:Npn \thesubsubsection { \thesubsection . \@arabic \c@subsubsection }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\section, \subsection, \subsubsection}
 % \begin{macro}
 %   {
 %     \insertsection       ,
@@ -111,6 +127,7 @@
         \NewDocumentCommand \exp_not:c {#1} 
           { D <> { all } s O {##4} m }
           {
+            \exp_not:N \refstepcounter {#1}
             \tag_tool:n { sec-start = #1 }
             \tl_set:Nn \exp_not:c { l_@@_ #1 _tl } {##4}
             \str_if_eq:nnT {#1} { section }

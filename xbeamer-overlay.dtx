@@ -108,6 +108,28 @@
 % \end{macro}
 % \end{macro}
 %
+% \begin{macro}{\onslide}
+%   As with \cs{uncover}, we likely need something for spacing in the visible
+%   branch.
+%    \begin{macrocode}
+\NewDocumentCommand \onslide { D <> { all } }
+  {
+    \tl_use:N \g_@@_onslide_tl
+    \@@_overlay:nTF {#1}
+      { \tl_gclear:N \g_@@_onslide_tl }
+      {
+        \draw_hidden_begin:
+        \tl_gset:Nn \g_@@_onslide_tl { \draw_hidden_end: }
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+% \begin{variable}{\g_@@_onslide_tl}
+%    \begin{macrocode}
+\tl_new:N \g_@@_onslide_tl
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{macro}{\uncover}
 %   Almost certainly we will need to add an operation into the true branches
 %   here to keep spacing correct.

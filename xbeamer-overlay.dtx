@@ -109,10 +109,13 @@
 % \end{macro}
 %
 % \begin{macro}{\onslide}
+% \begin{macro}{\@@_onslide:n}
 %   As with \cs{uncover}, we likely need something for spacing in the visible
 %   branch.
 %    \begin{macrocode}
 \NewDocumentCommand \onslide { D <> { all } }
+  { \@@_onslide:n {#1} }
+\cs_new_protected:Npn \@@_onslide:n #1
   {
     \tl_use:N \g_@@_onslide_tl
     \@@_overlay:nTF {#1}
@@ -123,6 +126,7 @@
       }
   }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 % \begin{variable}{\g_@@_onslide_tl}
 %    \begin{macrocode}
@@ -161,6 +165,19 @@
   }
 %    \end{macrocode}
 % \end{environment}
+%
+% \begin{macro}{\pause}
+%   A thin wrapper.
+%    \begin{macrocode}
+\NewDocumentCommand \pause { o }
+  {
+    \IfNoValueTF {#1}
+      { \int_gincr:N \g_@@_pauses_int }
+      { \int_gset:Nn \g_@@_pauses_int {#1} }
+    \exp_args:Ne \@@_onslide:n { \int_use:N \g_@@_pauses_int - }
+  }
+%    \end{macrocode}
+% \end{macro}
 %
 %    \begin{macrocode}
 %</class>

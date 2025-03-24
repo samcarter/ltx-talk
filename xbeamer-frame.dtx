@@ -141,11 +141,10 @@
         title = Slide ~ \@@_frame_slide:
       }      
     \vbox_set:Nw \l_@@_slide_box
-      \tl_gclear:N \g_@@_onslide_tl
   }
 \cs_new_protected:Npn \@@_slide_end:
   {
-      \tl_use:N \g_@@_onslide_tl
+    \tl_use:N \g_@@_onslide_tl
     \vbox_set_end:
     \vbox_set_to_ht:Nnn \l_@@_slide_box { \textheight }
       {

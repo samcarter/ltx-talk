@@ -243,6 +243,73 @@ suggest that more than four slides would be possible).
 
 \section{Creating overlays}
 
+\subsection{The \cs{pause} command}
+
+The \cs{pause} command offers an easy, but not very flexible way of creating
+frames that are uncovered piecewise. If you say \cs{pause} somewhere in a
+frame, only the text on the frame up to the \cs{pause} command is shown on the
+first slide. On the second slide, everything is shown up to the second
+\cs{pause}, and so forth. You can also use \cs{pause} inside environments; its
+effect will last after the environment. However, taking this to extremes and
+using \cs{pause} deeply within a nested environment may not have the desired
+result.
+
+A much more fine-grained control over what is shown on each slide can be
+attained using overlay specifications, see the next sections. However, for many
+simple cases the \cs{pause} command is sufficient.
+
+The \cs{pause} command takes an optional argument
+\begin{syntax}
+  \cs{pause}\oarg{overlay spec}
+\end{syntax}
+This causes the text following it to be shown only from the next slide on, or,
+if the optional \meta{overlay spec} is given, from the slide with the number
+\meta{overlay spec}. If the optional \meta{overlay spec} is given, the counter
+|pauses| is set to this number. This command uses the \cs{onslide} command
+internally. The effect of \cs{pause} lasts till the next \cs{pause},
+\cs{onslide}, or the end of the frame.
+\begin{verbatim}
+  \begin{frame}
+    \begin{itemize}
+    \item
+      Shown from first slide on.
+    \pause
+    \item
+      Shown from second slide on.
+      \begin{itemize}
+      \item
+        Shown from second slide on.
+      \pause
+      \item
+        Shown from third slide on.
+      \end{itemize}
+    \item
+      Shown from third slide on.
+    \pause
+    \item
+      Shown from fourth slide on.
+    \end{itemize}
+
+    Shown from fourth slide on.
+
+    \begin{itemize}
+    \onslide
+    \item
+      Shown from first slide on.
+    \pause
+    \item
+      Shown from fifth slide on.
+    \end{itemize}
+  \end{frame}
+\end{verbatim}
+
+This command does \emph{not} work correctly inside math mode environments like
+|align| and \pkg{pgf} environments like |tikzpicture| or |tcolorbox|, since
+these do really wicked things.
+
+To \enquote{unpause} some text, that is, to temporarily suspend pausing, use
+the command \cs{onslide}, see below.
+
 \subsection{The general concept of overlay specifications}
 
 \subsection{Commands with overlay specifications}

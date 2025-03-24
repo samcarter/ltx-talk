@@ -109,7 +109,7 @@
             \exp_not:c { l_@@_ #1 _tl }
           }
         \NewDocumentCommand \exp_not:c {#1} 
-          { D <> { all } s O {##4} m }
+          { D <> { all } s = { short } O {##4} m }
           {
             \tag_tool:n { sec-start = #1 }
             \tl_set:Nn \exp_not:c { l_@@_ #1 _tl } {##4}
@@ -126,10 +126,8 @@
                       \int_eval:n { \g_@@_frame_int + 1 } . 1
                     }
               ]
-              {##3}
-            \hook_use:n { #1 / begin }
+              {##4}
           }
-        \hook_new:n { #1 / begin }
       }
 }
 %    \end{macrocode}

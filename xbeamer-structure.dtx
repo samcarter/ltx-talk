@@ -73,13 +73,66 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
-% \begin{macro}{\section, \subsection, \subsubsection}
-%   At present stub commands: quite what needs to happen here is unclear.
+% \begin{variable}
+%   {
+%     \l_@@_section_tl ,
+%     \l_@@_subsection_tl ,
+%     \l_@@_subsubsection_tl
+%   }
 %    \begin{macrocode}
-\NewDocumentCommand \section { s O {#3} m } { }
-\NewDocumentCommand \subsection { s O {#3} m } { }
-\NewDocumentCommand \subsubsection { s O {#3} m } { }
+\tl_new:N \l_@@_section_tl
+\tl_new:N \l_@@_subsection_tl
+\tl_new:N \l_@@_subsubsection_tl
 %    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\section, \subsection, \subsubsection}
+% \begin{macro}
+%   {
+%     \insertsection       ,
+%     \insertsubsection   ,
+%     \insertsubsubsection
+%   }
+%  The sectioning commands all have essentially the same form: we therefore
+%  create using a generator with the necessary conditionals in place. As we
+%  do not typeset sections at this stage, the code is quite different from
+%  \pkg{article}. This also means that the bookmark links need to point forward
+%  to the next slide: if that doesn't appear, the bookmarks will be out.
+%    \begin{macrocode}
+\clist_map_inline:nn { section , subsection , subsubsection }
+  {
+    \use:e
+      {
+        \NewDocumentCommand \exp_not:c { insert #1 } { }
+          {
+            \exp_not:N \tl_use:N
+            \exp_not:c { l_@@_ #1 _tl }
+          }
+        \NewDocumentCommand \exp_not:c {#1} 
+          { D <> { all } s = { short } O {##4} m }
+          {
+            \tag_tool:n { sec-start = #1 }
+            \tl_set:Nn \exp_not:c { l_@@_ #1 _tl } {##4}
+            \str_if_eq:nnT {#1} { section }
+              { \tl_clear:N \exp_not:N \l_@@_subsection_tl }
+            \str_if_eq:nnF {#1} { subsubsection }
+              { \tl_clear:N \exp_not:N \l_@@_subsubsection_tl }
+            \exp_not:N \bookmark
+              [
+                dest =
+                  \exp_not:n
+                    {
+                      \int_eval:n { \g_@@_frame_int + 1 }
+                      .
+                      \int_eval:n { \g_@@_slide_int + 1 }
+                    }
+              ]
+              {##3}
+          }
+      }
+}
+%    \end{macrocode}
+% \end{macro}
 % \end{macro}
 %
 % \begin{macro}{\frametitle}

@@ -81,10 +81,12 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\g_@@_pauses_int}
+% \begin{variable}{\g_@@_pauses_int, \c@pauses, \thepauses}
 %   The automatically-incremented value for the relative overlay value.
 %    \begin{macrocode}
 \int_new:N \g_@@_pauses_int
+\cs_new_eq:NN \c@pauses \g_@@_pauses_int
+\cs_new:Npn \thepauses { \@arabic \g_@@_pauses_int } 
 %    \end{macrocode}
 % \end{variable}
 %

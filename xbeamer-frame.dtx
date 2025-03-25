@@ -128,12 +128,19 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{variable}{\c_@@_pause_init_int}
+%   A simple concept: mainly done for performance reasons.
+%    \begin{macrocode}
+\cs_new_eq:NN \c_@@_pause_init_int \c_one_int
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{macro}{\@@_slide_begin:, \@@_slide_end:}
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_begin:
   {
     \int_gincr:N \g_@@_slide_int
-    \int_gset_eq:NN \g_@@_pauses_int \c_one_int
+    \int_gset_eq:NN \g_@@_pauses_int \c_@@_pause_init_int
     \bool_gset_false:N \g_@@_slide_continue_bool
     \tag_struct_begin:e
       {

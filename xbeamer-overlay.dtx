@@ -193,6 +193,52 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \subsection{Adding overlays to existing commands}
+%
+% \begin{macro}
+%  {
+%    \textbf ,
+%    \textit ,
+%    \textmd ,
+%    \textnormal ,
+%    \textrm ,
+%    \textsc ,
+%    \textsf ,
+%    \textsl ,
+%    \texttt ,
+%    \textup ,
+%    \emph
+%  }
+%   Make the standard tet commands overlay-aware.
+%    \begin{macrocode}
+\tl_map_inline:nn
+  {
+    \textbf
+    \textit
+    \textmd
+    \textnormal
+    \textrm
+    \textsc
+    \textsf
+    \textsl
+    \texttt
+    \textup
+    \emph
+  }
+  {
+    \ExpandArgs { c } \NewCommandCopy { std \cs_to_str:N #1 } #1
+    \ExpandArgs { Nne } \RenewDocumentCommand #1
+      { > { \@@_overlay_arg:n } D <> { all } +m }
+      {
+        \exp_not:N \bool_if:NTF ##1
+          { \exp_not:c { std \cs_to_str:N #1 } }
+          { \exp_not:N \use:n }
+            {##2}
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

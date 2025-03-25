@@ -228,9 +228,9 @@
   {
     \ExpandArgs { c } \NewCommandCopy { std \cs_to_str:N #1 } #1
     \ExpandArgs { Nne } \RenewDocumentCommand #1
-      { > { \@@_overlay_arg:n } D <> { all } +m }
+      { D <> { all } +m }
       {
-        \exp_not:N \bool_if:NTF ##1
+        \exp_not:N \@@_overlay:nTF {##1}
           { \exp_not:c { std \cs_to_str:N #1 } }
           { \exp_not:N \use:n }
             {##2}

@@ -209,7 +209,10 @@
 %    \textup ,
 %    \emph
 %  }
-%   Make the standard text commands overlay-aware.
+% \begin{macro}{\@@_textcmd_eqiv:n}
+%   Make the standard text commands overlay-aware. To keep the spacing
+%   unchanged when the command is not active, we use the same approach as
+%   the kernel does for inserting the right grouping.
 %    \begin{macrocode}
 \tl_map_inline:nn
   {
@@ -232,11 +235,21 @@
       {
         \exp_not:N \@@_overlay:nTF {##1}
           { \exp_not:c { std \cs_to_str:N #1 } }
-          { \exp_not:N \use:n }
+          { \exp_not:N \@@_textcmd_eqiv:n }
             {##2}
       }
   }
+\cs_new_protected:Npn \@@_textcmd_eqiv:n #1
+  {
+    \mode_if_math:TF
+      { { \mbox {#1} } }
+      {
+        \mode_leave_vertical:
+        {#1}
+      }
+  }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 %
 %    \begin{macrocode}

@@ -270,7 +270,7 @@
   {
     \quark_if_recursion_tail_stop_do:Nn #2
       {
-        \@@_decode_overlay_offset:Nn 0 { 0 }
+        \@@_decode_overlay_offset:Nn #1 { 0 }
         \q_recursion_tail \q_recursion_stop
       }
     \token_if_eq_meaning:NNTF #2 ( % )
@@ -322,7 +322,7 @@
 %   open at either the start or the end.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_check:
-  {
+  {\show\l_@@_decode_overlays_str
     \clist_set:NV \l_@@_decode_overlays_clist \l_@@_decode_overlays_str
     \clist_if_in:NnTF \l_@@_decode_overlays_clist { * }
       { \bool_set_true:N \l_@@_decode_result_bool }

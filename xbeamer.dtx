@@ -260,14 +260,11 @@
 \sys_if_engine_opentype:TF
   {
     \RequirePackage { unicode-math }
-    \setmainfont { NewCMSans10-Regular.otf }
     \setsansfont { NewCMSans10-Regular.otf }
     \setmathfont { NewCMSansMath-Regular.otf }
   }
-  {
-    \RequirePackage { sansmathfonts }
-    \cs_set_eq:NN \rmdefault \sfdefault
-  }
+  { \RequirePackage { sansmathfonts } }
+\cs_set:Npn \familydefault { \rmdefault }
 %    \end{macrocode}
 %
 % \subsection{Hyperlinks}

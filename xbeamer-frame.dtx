@@ -291,16 +291,19 @@
 \cs_new_protected:Npn \@@_slide_link:
   {
     \MakeLinkTarget * { slide . \@@_frame_slide: }
-    \bookmark
-      [
-        dest     = \@currentHref ,
-        keeplevel ,
-        rellevel = 1
-      ]
+    \use:e
       {
-        \g_@@_frametitle_tl
-        \tl_if_empty:NF \g_@@_frametitle_tl { \c_space_tl }
-        ( Slide ~ \@@_frame_slide: )
+        \exp_not:N \bookmark
+          [
+            dest     = \exp_not:N \@currentHref ,
+            keeplevel ,
+            rellevel = 1
+          ]
+          {
+            \exp_not:V \g_@@_frametitle_tl
+            \tl_if_empty:NF \g_@@_frametitle_tl { \c_space_tl }
+            ( Slide ~ \@@_frame_slide: )
+          }
       }
   }
 %    \end{macrocode}

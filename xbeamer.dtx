@@ -119,12 +119,7 @@
       \l_@@_fontsize_dim ,
     mode .choices:nn =
       { handout , projector }
-      { \str_set:NV \l_@@_mode_str \l_keys_choice_tl } ,
-    unknown .code:n =
-      {
-        \msg_error:nne { xbeamer } { unknown-class-option }
-          { \l_keys_key_str \tl_if_empty:nF {#1} { = \tl_to_str:n {#1} } }
-      }
+      { \str_set:NV \l_@@_mode_str \l_keys_choice_tl }
   }
 %    \end{macrocode}
 % \end{variable}
@@ -146,15 +141,6 @@
     aspect-ratio = 16:9 ,
     font-size    = 11pt ,
     mode         = projector
-  }
-%    \end{macrocode}
-%
-%    \begin{macrocode}
-\msg_new:nnnn { xbeamer } { unknown-class-option }
-  { Unknown~class~option~"#1". }
-  {
-    The~xbeamer~class~received~the~key-value~option~"#1",~
-    but~this~is~not~recognised.
   }
 %    \end{macrocode}
 %

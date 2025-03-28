@@ -244,13 +244,29 @@
 \NewTemplateType { footer } { 0 }
 \DeclareTemplateInterface { header } { xbeamer } { 0 }
   {
+    background-color : tokenlist
   }
 \DeclareTemplateInterface { footer } { xbeamer } { 0 }
   {
   }
 \DeclareTemplateCode { header } { xbeamer } { 0 } 
-  { }
   {
+    background-color = \l_@@_header_bg_tl
+  }
+  {
+    \mode_leave_vertical:
+    \group_begin:
+      \tl_if_empty:NF \l_@@_header_bg_tl
+        {
+          \exp_args:NV \color_select:n \l_@@_header_bg_tl
+          \tex_kern:D -\g_@@_margin_left_dim
+          \rule [ -\headsep ]
+            { \paperwidth }
+            { \dim_eval:n { \g_@@_margin_top_dim + \headsep } }
+          \tex_kern:D -\paperwidth
+          \tex_kern:D \g_@@_margin_left_dim
+        }
+    \group_end:
     \@@_slide_header:
   }
 \DeclareTemplateCode { footer } { xbeamer } { 0 } 

@@ -248,7 +248,10 @@
   {
   }
 \DeclareTemplateCode { header } { xbeamer } { 0 } 
-  { } { }
+  { }
+  {
+    \@@_slide_header:
+  }
 \DeclareTemplateCode { footer } { xbeamer } { 0 } 
   { } { }
 \DeclareInstance { header } { std } { xbeamer } { }
@@ -264,7 +267,7 @@
   {
     \cs_set_nopar:Npn \@oddhead
       {
-        \@@_slide_header:
+        \@@_slide_link:
         \UseInstance { header } { std } 
       }
     \cs_set_nopar:Npn \@oddfoot { \UseInstance { footer } { std } }
@@ -273,12 +276,33 @@
   }
 \cs_set_nopar:Npn \ps@plain
   {
-    \cs_set_nopar:Npn \@oddhead { \@@_slide_header: }
+    \cs_set_nopar:Npn \@oddhead { \@@_slide_link: }
     \cs_set_nopar:Npn \@oddfoot { }
     \cs_set_eq:NN \@evenhead \@oddhead
     \cs_set_eq:NN \@evenfoot \@oddfoot
   }
 \pagestyle { xbeamer }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_slide_link:}
+%   Inserts the slide link info that is needed evne for plain slides.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide_link:
+  {
+    \MakeLinkTarget * { slide . \@@_frame_slide: }
+    \bookmark
+      [
+        dest     = \@currentHref ,
+        keeplevel ,
+        rellevel = 1
+      ]
+      {
+        \g_@@_frametitle_tl
+        \tl_if_empty:NF \g_@@_frametitle_tl { \c_space_tl }
+        ( Slide ~ \@@_frame_slide: )
+      }
+  }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -299,18 +323,6 @@
         title    = { \g_@@_frametitle_tl } ,
       }
     \tag_mc_begin:n { }
-    \MakeLinkTarget * { slide . \@@_frame_slide: }
-    \bookmark
-      [
-        dest     = \@currentHref ,
-        keeplevel ,
-        rellevel = 1
-      ]
-      {
-        \g_@@_frametitle_tl
-        \tl_if_empty:NF \g_@@_frametitle_tl { \c_space_tl }
-        ( Slide ~ \@@_frame_slide: )
-      }
     \group_begin:
       \tagpdfparaOff
       \@@_insert_frametitle:

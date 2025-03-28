@@ -315,12 +315,12 @@
   {
     \tag_resume:n { header }
     \tag_mc_end:
-    \tag_struct_begin:n
+    \tag_struct_begin:e
       {
         firstkid = true ,
         parent   = \int_use:N \g_@@_slide_struct_int ,
         tag      = frametitle ,
-        title    = { \g_@@_frametitle_tl } ,
+        title    = { \text_purify:n { \g_@@_frametitle_tl } } ,
       }
     \tag_mc_begin:n { }
     \group_begin:

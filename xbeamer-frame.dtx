@@ -225,6 +225,49 @@
   }
 %    \end{macrocode}
 %
+% \subsection{Wallpaper}
+%
+% Templates for the header and footer area.
+%    \begin{macrocode}
+\NewTemplateType { header } { 0 }
+\NewTemplateType { footer } { 0 }
+\DeclareTemplateInterface { header } { xbeamer } { 0 }
+  {
+  }
+\DeclareTemplateInterface { footer } { xbeamer } { 0 }
+  {
+  }
+\DeclareTemplateCode { header } { xbeamer } { 0 } 
+  { } { }
+\DeclareTemplateCode { footer } { xbeamer } { 0 } 
+  { } { }
+\DeclareInstance { header } { std } { xbeamer } { }
+\DeclareInstance { footer } { std } { xbeamer } { }
+%    \end{macrocode}
+%
+% \begin{macro}{\ps@xbeamer, \ps@plain}
+%   Install a standard header and footer template, and redefine the
+%   \texttt{plain} one as this will be used for frames without
+%   \enquote{wallpaper} which still need core links, etc.
+%    \begin{macrocode}
+\cs_new_nopar:Npn \ps@xbeamer
+  {
+    \cs_set_nopar:Npn \@oddhead { \UseInstance { header } { std } }
+    \cs_set_nopar:Npn \@oddfoot { \UseInstance { footer } { std } }
+    \cs_set_eq:NN \@evenhead \@oddhead
+    \cs_set_eq:NN \@evenfoot \@oddfoot
+  }
+\cs_set_nopar:Npn \ps@plain
+  {
+    \cs_set_nopar:Npn \@oddhead { }
+    \cs_set_nopar:Npn \@oddfoot { }
+    \cs_set_eq:NN \@evenhead \@oddhead
+    \cs_set_eq:NN \@evenfoot \@oddfoot
+  }
+\pagestyle { xbeamer }
+%    \end{macrocode}
+% \end{macro}
+%
 % \subsection{The \texttt{frame} environment}
 %
 % \begin{variable}{\g_@@_frame_int, \c@frame, \theframe}

@@ -238,12 +238,14 @@
 %
 % \subsection{Wallpaper}
 %
+% \begin{variable}{\l_@@_header_bg_tl, \l_@@_header_fg_tl}
 % Templates for the header and footer area.
 %    \begin{macrocode}
 \NewTemplateType { header } { 0 }
 \NewTemplateType { footer } { 0 }
 \DeclareTemplateInterface { header } { xbeamer } { 0 }
   {
+    color : tokenlist ,
     background-color : tokenlist
   }
 \DeclareTemplateInterface { footer } { xbeamer } { 0 }
@@ -251,6 +253,7 @@
   }
 \DeclareTemplateCode { header } { xbeamer } { 0 } 
   {
+    color            = \l_@@_header_fg_tl ,
     background-color = \l_@@_header_bg_tl
   }
   {
@@ -267,13 +270,18 @@
           \tex_kern:D \g_@@_margin_left_dim
         }
     \group_end:
-    \@@_slide_header:
+    \group_begin:
+      \tl_if_empty:NF \l_@@_header_fg_tl
+        { \exp_args:NV \color_select:n \l_@@_header_fg_tl }
+      \@@_slide_header:
+    \group_end:
   }
 \DeclareTemplateCode { footer } { xbeamer } { 0 } 
   { } { }
 \DeclareInstance { header } { std } { xbeamer } { }
 \DeclareInstance { footer } { std } { xbeamer } { }
 %    \end{macrocode}
+% \end{variable}
 %
 % \begin{macro}{\ps@xbeamer, \ps@plain}
 %   Install a standard header and footer template, and redefine the

@@ -135,6 +135,14 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\g_@@_slide_struct_int}
+%  The tagging structure number for the slide: needed by the content placed
+%  outside of the current box (for example the frame title).
+%    \begin{macrocode}
+\int_new:N \g_@@_slide_struct_int
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{macro}{\@@_slide_begin:, \@@_slide_end:}
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_begin:
@@ -147,6 +155,7 @@
         tag   = slide ,
         title = Slide ~ \@@_frame_slide:
       }
+    \int_gset:Nn \g_@@_slide_struct_int { \tag_get:n { struct_num } }
     \vbox_set:Nw \l_@@_slide_box
       \tl_gclear:N \g_@@_onslide_tl
   }
@@ -253,19 +262,62 @@
 %    \begin{macrocode}
 \cs_new_nopar:Npn \ps@xbeamer
   {
-    \cs_set_nopar:Npn \@oddhead { \UseInstance { header } { std } }
+    \cs_set_nopar:Npn \@oddhead
+      {
+        \@@_slide_header:
+        \UseInstance { header } { std } 
+      }
     \cs_set_nopar:Npn \@oddfoot { \UseInstance { footer } { std } }
     \cs_set_eq:NN \@evenhead \@oddhead
     \cs_set_eq:NN \@evenfoot \@oddfoot
   }
 \cs_set_nopar:Npn \ps@plain
   {
-    \cs_set_nopar:Npn \@oddhead { }
+    \cs_set_nopar:Npn \@oddhead { \@@_slide_header: }
     \cs_set_nopar:Npn \@oddfoot { }
     \cs_set_eq:NN \@evenhead \@oddhead
     \cs_set_eq:NN \@evenfoot \@oddfoot
   }
 \pagestyle { xbeamer }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_slide_header:}
+%   Inserts the slide header information including the frame title: that
+%   will need to be split out into a template (leaving a question about what
+%   to do with empty titles).
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide_header:
+  {
+    \tag_resume:n { header }
+    \tag_struct_begin:n
+      {
+        firstkid = true ,
+        parent   = \int_use:N \g_@@_slide_struct_int ,
+        tag      = frametitle ,
+        title    = { \g_@@_frametitle_tl } ,
+      }
+    \tag_mc_begin:n { }
+    \MakeLinkTarget * { slide . \@@_frame_slide: }
+    \bookmark
+      [
+        dest     = \@currentHref ,
+        keeplevel ,
+        rellevel = 1
+      ]
+      {
+        \g_@@_frametitle_tl
+        \tl_if_empty:NF \g_@@_frametitle_tl { \c_space_tl }
+        ( Slide ~ \@@_frame_slide: )
+      }
+    \group_begin:
+      \tagpdfparaOff
+      \@@_insert_frametitle:
+    \group_end:
+    \tag_mc_end:
+    \tag_struct_end:
+    \tag_suspend:n { header }
+  }
 %    \end{macrocode}
 % \end{macro}
 %

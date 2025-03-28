@@ -153,33 +153,33 @@
 % \end{macro}
 % \end{macro}
 %
+% \begin{variable}{\g_@@_frametitle_tl}
+%    \begin{macrocode}
+\tl_new:N \g_@@_frametitle_tl
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{macro}{\frametitle}
-%   As an interim approach, we hard-code formatting here but do tag.
+%   Just data storage: at the present no use of the optional argument.
 %    \begin{macrocode}
 \NewDocumentCommand \frametitle { D <> { all } O {#3} m }
   {
-    \tag_struct_begin:n { tag = frametitle , title = {#3} }
-    \tag_mc_begin:n { }
-    \MakeLinkTarget * { slide . \@@_frame_slide: }
-    \bookmark
-      [
-        dest     = \@currentHref ,
-        keeplevel ,
-        rellevel = 1
-      ]
-      {
-        #3 ~
-        ( Slide ~ \@@_frame_slide: )
-      }
-    \group_begin:
-      \tagpdfparaOff
-      \normalfont \Large \bfseries
-      #3
-      \par
-      \bigskip
-    \group_end:
-    \tag_mc_end:
-    \tag_struct_end:
+    \@@_overlay:nTF {#1}
+      { \tl_gset:Nn \g_@@_frametitle_tl {#3} }
+      { \tl_gclear:N \g_@@_frametitle_tl }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_insert_frametitle:}
+%   Will become a template in due course.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_insert_frametitle:
+  {
+    \normalfont \Large \bfseries
+    \g_@@_frametitle_tl \hfil
+    \par
+    \bigskip
   }
 %    \end{macrocode}
 % \end{macro}

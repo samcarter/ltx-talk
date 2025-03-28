@@ -290,6 +290,7 @@
 \cs_new_protected:Npn \@@_slide_header:
   {
     \tag_resume:n { header }
+    \tag_mc_end_push:
     \tag_struct_begin:n
       {
         firstkid = true ,
@@ -316,6 +317,7 @@
     \group_end:
     \tag_mc_end:
     \tag_struct_end:
+    \tag_mc_end_pop:n { }
     \tag_suspend:n { header }
   }
 %    \end{macrocode}

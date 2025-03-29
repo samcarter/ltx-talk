@@ -334,12 +334,17 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_slide_header:}
+% \begin{macro}{\@@_slide_header:, \@@_slide_header_aux:}
 %   Inserts the slide header information including the frame title: that
 %   will need to be split out into a template (leaving a question about what
 %   to do with empty titles).
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_header:
+  {
+    \tl_if_empty:NF \g_@@_frametitle_tl
+      { \@@_slide_header_aux: }
+  }
+\cs_new_protected:Npn \@@_slide_header_aux:
   {
     \tag_resume:n { header }
     \tag_mc_end:

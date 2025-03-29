@@ -370,6 +370,13 @@
 %
 % \subsection{The \texttt{frame} environment}
 %
+% \begin{variable}{\l_@@_frame_bool}
+%  To track whether we are inside a frame or not.
+%    \begin{macrocode}
+\bool_new:N \l_@@_frame_bool
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{variable}{\g_@@_frame_int, \c@frame, \theframe}
 %   The overall frame number, including \LaTeX{} counter-like access.
 %    \begin{macrocode}
@@ -394,6 +401,7 @@
   {
     \tag_struct_begin:n { tag = frame }
     \int_gincr:N \g_@@_frame_int
+    \bool_set_true:N \l_@@_frame_bool
     \@@_slide:n {#1}
     \tag_struct_end:
   }

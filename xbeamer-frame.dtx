@@ -250,6 +250,8 @@
   }
 \DeclareTemplateInterface { footer } { xbeamer } { 0 }
   {
+    color : tokenlist ,
+    background-color : tokenlist
   }
 \DeclareTemplateCode { header } { xbeamer } { 0 } 
   {
@@ -278,7 +280,26 @@
     \hfil
   }
 \DeclareTemplateCode { footer } { xbeamer } { 0 } 
-  { } { }
+  {
+    color            = \l_@@_footer_fg_tl ,
+    background-color = \l_@@_footer_bg_tl
+  }
+  {
+    \mode_leave_vertical:
+    \group_begin:
+      \tl_if_empty:NF \l_@@_footer_bg_tl
+        {
+          \exp_args:NV \color_select:n \l_@@_footer_bg_tl
+          \tex_kern:D -\g_@@_margin_left_dim
+          \rule
+            { \paperwidth }
+            { \dim_eval:n { \g_@@_margin_bottom_dim } }
+          \tex_kern:D -\paperwidth
+          \tex_kern:D \g_@@_margin_left_dim
+        }
+    \group_end:
+    \hfil
+  }
 \DeclareInstance { header } { std } { xbeamer } { }
 \DeclareInstance { footer } { std } { xbeamer } { }
 %    \end{macrocode}

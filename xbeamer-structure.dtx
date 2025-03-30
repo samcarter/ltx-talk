@@ -153,9 +153,10 @@
 % \end{macro}
 % \end{macro}
 %
-% \begin{variable}{\g_@@_frame_title_tl}
+% \begin{variable}{\g_@@_frame_title_tl, \g_@@_frame_subtitle_tl}
 %    \begin{macrocode}
 \tl_new:N \g_@@_frame_title_tl
+\tl_new:N \g_@@_frame_subtitle_tl
 %    \end{macrocode}
 % \end{variable}
 %
@@ -168,6 +169,12 @@
       { \tl_gset:Nn \g_@@_frame_title_tl {#3} }
       { \tl_gclear:N \g_@@_frame_title_tl }
   }
+\NewDocumentCommand \framesubtitle { D <> { all } O {#3} m }
+  {
+    \@@_overlay:nTF {#1}
+      { \tl_gset:Nn \g_@@_frame_subtitle_tl {#3} }
+      { \tl_gclear:N \g_@@_frame_subtitle_tl }
+  }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -177,7 +184,7 @@
 \cs_new_protected:Npn \@@_insert_frametitle:
   {
     \normalfont \Large \bfseries
-    \g_@@_frametitle_tl \hfil
+    \g_@@_frame_title_tl \hfil
     \par
     \bigskip
   }

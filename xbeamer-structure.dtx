@@ -240,6 +240,7 @@
 % \end{macro}
 %
 % \begin{macro}{\item}
+% \begin{macro}{\@@_item_parse_spec:w}
 % \begin{macro}{\@@_item_parse_spec:n}
 %   Again, add the additional argument: here, we have to do a little
 %   gymnastics. The test for an overlay has to come after the standard item
@@ -259,8 +260,8 @@
           {
             \tl_if_empty:NF \l_@@_block_inner_spec_tl
               {
-                \exp_args:NV \@@_item_parse_spec:n
-                  \l_@@_block_inner_spec_tl
+                \exp_after:wN \@@_item_parse_spec:w
+                  \l_@@_block_inner_spec_tl  < all > \q_stop
               }
           }
           { \@@_item_parse_spec:n {#1} }
@@ -272,6 +273,8 @@
 %   for spacing we likely will need to add something to the \texttt{true}
 %   branch too.
 %    \begin{macrocode}
+\cs_new_protected:Npn \@@_item_parse_spec:w #1 < #2 > #3 \q_stop
+  { \@@_item_parse_spec:n {#2} }
 \cs_new_protected:Npn \@@_item_parse_spec:n #1
   {
     \@@_overlay:nF {#1}
@@ -285,6 +288,7 @@
       }
   }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 % \end{macro}
 % \begin{variable}{\g_@@_list_end_tl}
@@ -307,6 +311,21 @@
   }
 %    \end{macrocode}
 %  \end{macro}
+% Allow for the classical \pkg{beamer} syntax.
+%    \begin{macrocode}
+\AddToHook { begindocument / before }
+  {
+    \RenewDocumentEnvironment { itemize } { = { overlay-spec } !O { } }
+      { \UseInstance { blockenv } { itemize } {#1} }
+      { \endblockenv }
+    \RenewDocumentEnvironment { enumerate }{ = { overlay-spec } !O { } }
+      { \UseInstance { blockenv } { enumerate } {#1} }
+      { \endblockenv }
+    \RenewDocumentEnvironment { description } { = { overlay-spec } !O { } }
+      { \UseInstance { blockenv } { description } {#1} }
+      { \endblockenv }
+  }
+%    \end{macrocode}
 %
 % \begin{variable}{\l_@@_block_inner_spec_tl}
 %   Add an overlay key to the \texttt{block} template.  Placed here, it applies

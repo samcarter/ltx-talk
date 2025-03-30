@@ -164,11 +164,7 @@
 % \begin{variable}
 %   {
 %     \c_@@_paper_height_dim  ,
-%     \c_@@_paper_width_dim   ,
-%     \g_@@_margin_top_dim    ,
-%     \g_@@_margin_bottom_dim ,
-%     \g_@@_margin_left_dim   ,
-%     \g_@@_margin_right_dim  ,
+%     \c_@@_paper_width_dim
 %   }
 %   As \pkg{geometry} is being used to set the paper size with no previous
 %   value, we have to use the optional argument rather than waiting to
@@ -189,14 +185,6 @@
     \exp_not:N \@@_tmp:w \l_@@_aspect_ratio_str
       \tl_to_str:n { : } 100 \exp_not:N \q_stop
   }
-\dim_new:N \g_@@_margin_top_dim
-\dim_new:N \g_@@_margin_bottom_dim
-\dim_new:N \g_@@_margin_left_dim
-\dim_new:N \g_@@_margin_right_dim
-\dim_set:Nn \g_@@_margin_top_dim    { 10mm }
-\dim_set:Nn \g_@@_margin_bottom_dim {  8mm }
-\dim_set:Nn \g_@@_margin_left_dim   { 10mm }
-\dim_set:Nn \g_@@_margin_right_dim  { 10mm }
 \use:e
   {
     \exp_not:N \RequirePackage
@@ -206,11 +194,11 @@
             \dim_use:N \c_@@_paper_width_dim  ,
             \dim_use:N \c_@@_paper_height_dim
           } ,
-        top        = \dim_use:N \g_@@_margin_top_dim ,
-        bottom     = \dim_use:N \g_@@_margin_bottom_dim ,
-        left       = \dim_use:N \g_@@_margin_left_dim ,
-        right      = \dim_use:N \g_@@_margin_right_dim ,
-        headheight = 10mm ,
+        tmargin     = 10mm ,
+        bmargin     = 8mm  ,
+        lmargin     = 10mm ,
+        rmargin     = 10mm ,
+        headheight = 10mm  ,
         headsep    = 2mm
       ]
       { geometry }

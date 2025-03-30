@@ -264,12 +264,12 @@
       \tl_if_empty:NF \l_@@_header_bg_tl
         {
           \exp_args:NV \color_select:n \l_@@_header_bg_tl
-          \tex_kern:D -\g_@@_margin_left_dim
+          \tex_kern:D -\Gm@lmargin
           \rule [ -\headsep ]
             { \paperwidth }
-            { \dim_eval:n { \g_@@_margin_top_dim + \headsep } }
+            { \dim_eval:n { \Gm@tmargin + \headsep } }
           \tex_kern:D -\paperwidth
-          \tex_kern:D \g_@@_margin_left_dim
+          \tex_kern:D \Gm@lmargin
         }
     \group_end:
     \group_begin:
@@ -290,12 +290,12 @@
       \tl_if_empty:NF \l_@@_footer_bg_tl
         {
           \exp_args:NV \color_select:n \l_@@_footer_bg_tl
-          \tex_kern:D -\g_@@_margin_left_dim
+          \tex_kern:D -\Gm@lmargin
           \rule
             { \paperwidth }
-            { \dim_eval:n { \g_@@_margin_bottom_dim } }
+            { \Gm@bmargin }
           \tex_kern:D -\paperwidth
-          \tex_kern:D \g_@@_margin_left_dim
+          \tex_kern:D \Gm@lmargin
         }
     \group_end:
     \hfil

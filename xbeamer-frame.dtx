@@ -150,7 +150,7 @@
     \int_gincr:N \g_@@_slide_int
     \int_gset_eq:NN \g_@@_pauses_int \c_@@_pause_init_int
     \bool_gset_false:N \g_@@_slide_continue_bool
-    \tl_gclear:N \g_@@_frametitle_tl
+    \tl_gclear:N \g_@@_frame_title_tl
     \tag_struct_begin:e
       {
         tag   = slide ,
@@ -347,8 +347,8 @@
             rellevel = 1
           ]
           {
-            \exp_not:V \g_@@_frametitle_tl
-            \tl_if_empty:NF \g_@@_frametitle_tl { \c_space_tl }
+            \exp_not:V \g_@@_frame_title_tl
+            \tl_if_empty:NF \g_@@_frame_title_tl { \c_space_tl }
             ( Slide ~ \@@_frame_slide: )
           }
       }
@@ -363,7 +363,7 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_header:
   {
-    \tl_if_empty:NF \g_@@_frametitle_tl
+    \tl_if_empty:NF \g_@@_frame_title_tl
       { \@@_slide_header_aux: }
   }
 \cs_new_protected:Npn \@@_slide_header_aux:
@@ -375,7 +375,7 @@
         firstkid = true ,
         parent   = \int_use:N \g_@@_slide_struct_int ,
         tag      = frametitle ,
-        title    = { \text_purify:n { \g_@@_frametitle_tl } } ,
+        title    = { \text_purify:n { \g_@@_frame_title_tl } } ,
       }
     \tag_mc_begin:n { }
     \group_begin:

@@ -153,9 +153,9 @@
 % \end{macro}
 % \end{macro}
 %
-% \begin{variable}{\g_@@_frametitle_tl}
+% \begin{variable}{\g_@@_frame_title_tl}
 %    \begin{macrocode}
-\tl_new:N \g_@@_frametitle_tl
+\tl_new:N \g_@@_frame_title_tl
 %    \end{macrocode}
 % \end{variable}
 %
@@ -165,8 +165,8 @@
 \NewDocumentCommand \frametitle { D <> { all } O {#3} m }
   {
     \@@_overlay:nTF {#1}
-      { \tl_gset:Nn \g_@@_frametitle_tl {#3} }
-      { \tl_gclear:N \g_@@_frametitle_tl }
+      { \tl_gset:Nn \g_@@_frame_title_tl {#3} }
+      { \tl_gclear:N \g_@@_frame_title_tl }
   }
 %    \end{macrocode}
 % \end{macro}

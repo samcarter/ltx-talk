@@ -128,7 +128,7 @@
           { D <> { all } s O {##4} m }
           {
             \exp_not:N \refstepcounter {#1}
-            \tag_tool:n { sec-start = #1 }
+            \tag_tool:n { sec-start = #1 , restore-para }
             \tl_set:Nn \exp_not:c { l_@@_ #1 _tl } {##4}
             \str_if_eq:nnT {#1} { section }
               { \tl_clear:N \exp_not:N \l_@@_subsection_tl }

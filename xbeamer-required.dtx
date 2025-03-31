@@ -79,6 +79,14 @@
 % \enquote{classical} definitions so that they follow the expectations of
 % third-party code.
 %
+% \begin{variable}{\thepage}
+%   We define \cs{thepage} here: this is needed by third-party packages
+%   and is therefore a standard requirement.
+%    \begin{macrocode}
+\cs_new:Npn \thepage { \@arabic \c@page }
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{macro}{\today}
 %   This is the definition as done in the standard classes.
 %    \begin{macrocode}
@@ -104,6 +112,20 @@
   }
 %    \end{macrocode}
 % \end{macro}
+%
+% \subsection{Standard design settings}
+%
+%    \begin{macrocode}
+\setcounter { tocdepth } { 3 }
+\setlength \arraycolsep { 5pt }
+\setlength \tabcolsep { 6pt }
+\setlength \arrayrulewidth { 0.4pt }
+\setlength \doublerulesep { 2pt }
+\setlength \tabbingsep { \labelsep }
+\skip \@mpfootins = \skip \footins
+\setlength \fboxsep { 3pt }
+\setlength \fboxrule { 0.4pt }
+%    \end{macrocode}
 %
 %    \begin{macrocode}
 %</class>

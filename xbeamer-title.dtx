@@ -93,7 +93,9 @@
 %     \l_@@_titlelem_after_skip ,
 %     \l_@@_titlelem_before_skip ,
 %     \l_@@_titlelem_color_tl ,
-%     \l_@@_titlelem_font_tl
+%     \l_@@_titlelem_font_tl ,
+%     \l_@@_titlelem_tag_begin_tl ,
+%     \l_@@_titlelem_tag_end_tl ,
 %   }
 %   As the various elements of the titlepage share certain characteristics, we
 %   use a single template and split them as instances.
@@ -105,13 +107,17 @@
     before-skip : length = 0em ,
     color : tokenlist ,
     font : tokenlist = \normalfont ,
+    tag-begin : tokenlist = ,
+    tag-end : tokenlist =
   }
 \DeclareTemplateCode { titlepage-element } { xbeamer } { 1 }
   {
     after-skip = \l_@@_titlelem_after_skip ,
     before-skip = \l_@@_titlelem_before_skip ,
     color = \l_@@_titlelem_color_tl ,
-    font = \l_@@_titlelem_font_tl
+    font = \l_@@_titlelem_font_tl ,
+    tag-begin = \l_@@_titlelem_tag_begin_tl ,
+    tag-end = \l_@@_titlelem_tag_end_tl
   }
   {
     \tl_if_empty:nF {#1}
@@ -121,8 +127,10 @@
           \tl_if_empty:NF \l_@@_titlelem_color_tl
             { \exp_args:NV \color_select:n \l_@@_titlelem_color_tl }
           \l_@@_titlelem_font_tl
+          \l_@@_titlelem_tag_begin_tl
           #1
           \par
+          \l_@@_titlelem_tag_end_tl
         \group_end:
         \vspace { \l_@@_titlelem_after_skip }
       }
@@ -139,7 +147,11 @@
 \DeclareInstance { titlepage-element } { subtitle } { xbeamer }
   { before-skip = 0.25em }
 \DeclareInstance { titlepage-element } { title } { xbeamer }
-  {  font = \Large }
+  {
+    font = \Large ,
+    tag-begin = \tag_struct_begin:n { tag = Title } ,
+    tag-end = \tag_struct_end:
+  }
 %    \end{macrocode}
 % \end{variable}
 %

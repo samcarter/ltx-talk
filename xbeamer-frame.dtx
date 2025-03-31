@@ -247,14 +247,14 @@
   {
     color : tokenlist ,
     background-color : tokenlist,
-    height : length = \Gm@tmargin + \headsep 
+    height : length = \Gm@tmargin + \headsep
   }
 \DeclareTemplateInterface { footer } { xbeamer } { 0 }
   {
     color : tokenlist ,
     background-color : tokenlist
   }
-\DeclareTemplateCode { header } { xbeamer } { 0 } 
+\DeclareTemplateCode { header } { xbeamer } { 0 }
   {
     color            = \l_@@_header_fg_tl ,
     background-color = \l_@@_header_bg_tl ,
@@ -281,7 +281,7 @@
     \group_end:
     \hfil
   }
-\DeclareTemplateCode { footer } { xbeamer } { 0 } 
+\DeclareTemplateCode { footer } { xbeamer } { 0 }
   {
     color            = \l_@@_footer_fg_tl ,
     background-color = \l_@@_footer_bg_tl
@@ -317,7 +317,7 @@
     \cs_set_nopar:Npn \@oddhead
       {
         \@@_slide_link:
-        \UseInstance { header } { std } 
+        \UseInstance { header } { std }
       }
     \cs_set_nopar:Npn \@oddfoot { \UseInstance { footer } { std } }
     \cs_set_eq:NN \@evenhead \@oddhead
@@ -335,7 +335,7 @@
 % \end{macro}
 %
 % \begin{macro}{\@@_slide_link:}
-%   Inserts the slide link info that is needed evne for plain slides.
+%   Inserts the slide link info that is needed even for plain slides.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_link:
   {

@@ -201,10 +201,10 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{macro}{\titlepage}
+% \begin{macro}{\maketitle}
 %   A very simple setup.
 %    \begin{macrocode}
-\NewDocumentCommand \titlepage { O {} }
+\NewDocumentCommand \maketitle { O {} }
   {
     \bool_if:NTF \l_@@_frame_bool
       { \UseTemplate { titlepage } { xbeamer } {#1} }

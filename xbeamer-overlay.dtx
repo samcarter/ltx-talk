@@ -127,6 +127,19 @@
   }
 %    \end{macrocode}
 % \end{macro}
+% \begin{environment}{onlyenv}
+%    \begin{macrocode}
+\NewDocumentEnvironment { onlyenv } { > { \@@_overlay_arg:n } D <> { all } }
+  {
+    \bool_if:NF #1
+      { \vbox_set:Nw \l_@@_tmp_box }
+  }
+  {
+    \bool_if:NF #1
+      { \vbox_set_end: }
+  }
+%    \end{macrocode}
+% \end{onlyenv}
 %
 % \begin{macro}{\onslide}
 % \begin{macro}{\@@_onslide:n}

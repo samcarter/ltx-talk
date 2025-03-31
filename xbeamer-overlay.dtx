@@ -116,19 +116,6 @@
   }
 %    \end{macrocode}
 % \end{macro}
-% \begin{environment}{altenv}
-%    \begin{macrocode}
-\NewDocumentEnvironment { altenv } { > { \@@_overlay_arg:n } D <> { all } }
-  {
-    \bool_if:NF #1
-      { \vbox_set:Nw \l_@@_tmp_box }
-  }
-  {
-    \bool_if:NF #1
-      { \vbox_set_end: }
-  }
-%    \end{macrocode}
-% \end{environment}
 %
 % \begin{macro}{\only}
 %   And again.

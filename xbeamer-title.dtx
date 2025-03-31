@@ -147,7 +147,7 @@
 %   {
 %     \l_@@_titlepage_order_clist  ,
 %     \l_@@_titlepage_alignment    ,
-%     \l_@@_titlepage_pagestyle_tl ,
+%     \l_@@_titlepage_framestyle_tl ,
 %     \l_@@_frame_alignment_tl
 %   }
 %   Here, we deal with the overall style: notice that frame vertical alignment
@@ -165,20 +165,20 @@
         institute ,
         date
       } ,
+    framestyle : tokenlist = xbeamer ,
     horizontal-alignment : choice { left , center ,  right } = center ,
-    pagestyle : tokenlist = xbeamer ,
     vertical-alignment : choice { bottom , center , stretch , top } = center
   }
 \DeclareTemplateCode { titlepage } { xbeamer } { 0 }
   {
     element-order = \l_@@_titlepage_order_clist ,
+    framestyle = \l_@@_titlepage_framestyle_tl ,
     horizontal-alignment =
       {
         left = \tl_set:Nn \l_@@_titlepage_alignment { flushleft } ,
         center = \tl_set:Nn \l_@@_titlepage_alignment { center } ,
         right = \tl_set:Nn \l_@@_titlepage_alignment { flushright }
       } ,
-    pagestyle = \l_@@_titlepage_pagestyle_tl ,
     vertical-alignment = 
       {
         bottom = \tl_set:Nn \l_@@_frame_alignment_tl { bottom } ,
@@ -188,8 +188,8 @@
       }
   }
   {
-    \tl_if_empty:NF \l_@@_titlepage_pagestyle_tl
-      { \exp_args:NV \thispagestyle \l_@@_titlepage_pagestyle_tl }
+    \tl_if_empty:NF \l_@@_titlepage_framestyle_tl
+      { \exp_args:NV \thispagestyle \l_@@_titlepage_framestyle_tl }
     \begin { \l_@@_titlepage_alignment }
       \clist_map_inline:Nn \l_@@_titlepage_order_clist
         {

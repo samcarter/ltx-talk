@@ -127,6 +127,53 @@
 \setlength \fboxrule { 0.4pt }
 %    \end{macrocode}
 %
+% \subsection{List support}
+%
+%    \begin{macrocode}
+\setlength  \labelsep  { 0.5em }
+\cs_new:Npn \labelenumi { \theenumi . }
+\cs_new:Npn \labelenumii { ( \theenumii ) }
+\cs_new:Npn \labelenumiii { \theenumiii . }
+\cs_new:Npn \labelenumiv { \theenumiv . }
+\cs_new:Npn \labelitemi  { \labelitemfont \textbullet }
+\cs_new:Npn \labelitemii { \labelitemfont \bfseries \textendash }
+\cs_new:Npn \labelitemiii { \labelitemfont \textasteriskcentered }
+\cs_new:Npn \labelitemiv  { \labelitemfont \textperiodcentered }
+\cs_new:Npn \labelitemfont { \normalfont }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\setlength \leftmargini   { 2em }
+\setlength \leftmarginii  { 2em }
+\setlength \leftmarginiii { 2em }
+\setlength  \labelsep  { 0.5em }
+\setlength  \labelwidth { \leftmargini }
+\addtolength \labelwidth { -\labelsep }
+\cs_gset_nopar:Npn \@listi
+  {
+    \leftmargin \leftmargini
+    \topsep 3pt plus 2pt minus 2.5pt
+    \parsep 0pt
+    \itemsep 3pt plus 2pt minus 3pt
+  }
+\cs_gset_eq:NN \@listI \@listi
+\cs_gset_nopar:Npn \@listii
+  {
+    \leftmargin \leftmarginii
+    \topsep    2pt plus 1pt minus 2pt
+    \parsep    0pt plus 1pt
+    \itemsep   \parsep
+  }
+\cs_gset_nopar:Npn \@listiii
+  {
+    \leftmargin \leftmarginiii
+    \topsep    2pt plus 1pt minus 2pt
+    \parsep    0pt plus 1pt
+    \itemsep   \parsep
+  }
+\setlength \partopsep { 0pt }
+%    \end{macrocode}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

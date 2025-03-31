@@ -343,56 +343,6 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% Again temporary code: allow us to have some useful result for lists, and in
-% particular let them interface with tagging (without this, you cannot load the
-% tagging code).
-%    \begin{macrocode}
-\setlength  \labelsep  { 0.5em }
-\newcommand \labelenumi { \theenumi . }
-\newcommand \labelenumii { ( \theenumii ) }
-\newcommand \labelenumiii { \theenumiii . }
-\newcommand \labelenumiv { \theenumiv . }
-\newcommand \labelitemi  { \labelitemfont \textbullet }
-\newcommand \labelitemii { \labelitemfont \bfseries \textendash }
-\newcommand \labelitemiii { \labelitemfont \textasteriskcentered }
-\newcommand \labelitemiv  { \labelitemfont \textperiodcentered }
-\newcommand \labelitemfont { \normalfont }
-%    \end{macrocode}
-%
-% List design settings: once again temporary and taken from the standard
-% classes.
-%    \begin{macrocode}
-\setlength \leftmargini   { 2em }
-\setlength \leftmarginii  { 2em }
-\setlength \leftmarginiii { 2em }
-\setlength  \labelsep  { 0.5em }
-\setlength  \labelwidth { \leftmargini }
-\addtolength \labelwidth { -\labelsep }
-\def \@listi
-  {
-    \leftmargin \leftmargini
-    \topsep 3pt plus 2pt minus 2.5pt
-    \parsep 0pt
-    \itemsep 3pt plus 2pt minus 3pt
-  }
-\let \@listI \@listi
-\def \@listii
-  {
-    \leftmargin \leftmarginii
-    \topsep    2pt plus 1pt minus 2pt
-    \parsep    0pt plus 1pt
-    \itemsep   \parsep
-  }
-\def \@listiii
-  {
-    \leftmargin \leftmarginiii
-    \topsep    2pt plus 1pt minus 2pt
-    \parsep    0pt plus 1pt
-    \itemsep   \parsep
-  }
-\setlength \partopsep { 0pt }
-%    \end{macrocode}
-%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

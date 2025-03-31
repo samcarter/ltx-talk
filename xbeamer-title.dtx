@@ -203,6 +203,7 @@
     \tl_if_empty:NF \l_@@_titlepage_framestyle_tl
       { \exp_args:NV \thispagestyle \l_@@_titlepage_framestyle_tl }
     \begin { \l_@@_titlepage_alignment }
+      \cs_set_protected:Npn \and { \quad }
       \clist_map_inline:Nn \l_@@_titlepage_order_clist
         {
           \ExpandArgs { nnv } \UseInstance { titlepage-element }

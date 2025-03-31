@@ -106,7 +106,6 @@
 % \subsection{Overlay commands}
 %
 % \begin{macro}{\alt}
-% \begin{macro}{\only}
 %   Simple wrappers around the internal switch.
 %    \begin{macrocode}
 \NewDocumentCommand \alt { D <> { all } +m +m }
@@ -115,13 +114,18 @@
       {#2}
       {#3}
   }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\only}
+%   And again.
+%    \begin{macrocode}
 \NewDocumentCommand \only { D <> { all } +m }
   {
     \@@_overlay:nT {#1}
       {#2}
   }
 %    \end{macrocode}
-% \end{macro}
 % \end{macro}
 %
 % \begin{macro}{\onslide}

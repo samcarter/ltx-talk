@@ -230,20 +230,6 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\today}
-%   This is the definition as done in the standard classes.
-%    \begin{macrocode}
-\cs_new:Npn \today
-  {
-    \if_case:w \month \or:
-      January \or: February \or: March \or: April \or: May \or: June \or:
-      July \or: August \or: September \or: October \or: November \or: December
-    \fi
-    \space\number\day, \number\year
-  }
-%    \end{macrocode}
-% \end{macro}
-%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

@@ -28,12 +28,3 @@ This package is maintained by Joseph Wright: joseph@texdev.net
 ## License
 
 Released under the LaTeX Project Public License v1.3c or later. See https://www.latex-project.org/lppl.txt
-
-
-
-# xbeamer
-
-A re-implementation of `beamer` using `expl3` methods
-
-This is a *development draft*: whether this goes forward to a release and what
-form it might take is entirely open.

@@ -73,6 +73,150 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
+% \begin{macro}{\institute, \subtitle}
+% \begin{variable}{\@institute, \@subtitle}
+%   Simple storage at present: we use names similar to the kernel ones for
+%   author, etc., as this makes data management easier.
+%    \begin{macrocode}
+\cs_new_nopar:Npn \@institute { }
+\cs_new_nopar:Npn \@subtitle { }
+\NewDocumentCommand \institute { m }
+  { \cs_gset_nopar:Npn \@institute {#1} }
+\NewDocumentCommand \subtitle { m }
+  { \cs_gset_nopar:Npn \@subtitle {#1} }
+%    \end{macrocode}
+% \end{variable}
+% \end{macro}
+%
+% \begin{variable}
+%   {
+%     \l_@@_titlelem_after_skip ,
+%     \l_@@_titlelem_before_skip ,
+%     \l_@@_titlelem_color_tl ,
+%     \l_@@_titlelem_font_tl
+%   }
+%   As the various elements of the titlepage share certain characteristics, we
+%   use a single template and split them as instances.
+%    \begin{macrocode}
+\NewTemplateType { titlepage-element } { 1 }
+\DeclareTemplateInterface { titlepage-element } { xbeamer } { 1 }
+  {
+    after-skip : length = 0em,
+    before-skip : length = 0em,
+    color : tokenlist ,
+    font  : tokenlist = \normalfont
+  }
+\DeclareTemplateCode { titlepage-element } { xbeamer } { 1 }
+  {
+    after-skip = \l_@@_titlelem_after_skip ,
+    before-skip = \l_@@_titlelem_before_skip ,
+    color = \l_@@_titlelem_color_tl ,
+    font = \l_@@_titlelem_font_tl
+  }
+  {
+    \tl_if_empty:nF {#1}
+      {
+        \vspace { \l_@@_titlelem_before_skip }
+        \group_begin:
+          \tl_if_empty:NF \l_@@_titlelem_color_tl
+            { \exp_args:NV \color_select:n \l_@@_titlelem_color_tl }
+          \l_@@_titlelem_font_tl
+          #1
+          \par
+        \group_end:
+        \vspace { \l_@@_titlelem_after_skip }
+      }
+  }
+%    \end{macrocode}
+%   Standard settings are taken from \pkg{beamer} with minor adjustments.
+%    \begin{macrocode}
+\DeclareInstance { titlepage-element } { author } { xbeamer }
+  { before-skip = 1em , }
+\DeclareInstance { titlepage-element } { date } { xbeamer }
+  { after-skip = 0.5em }
+\DeclareInstance { titlepage-element } { institute } { xbeamer }
+  { font = \scriptsize }
+\DeclareInstance { titlepage-element } { subtitle } { xbeamer }
+  { before-skip = 0.25em }
+\DeclareInstance { titlepage-element } { title } { xbeamer }
+  {  font = \Large }
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{variable}
+%   {
+%     \l_@@_titlepage_order_clist  ,
+%     \l_@@_titlepage_alignment    ,
+%     \l_@@_titlepage_pagestyle_tl ,
+%     \l_@@_frame_alignment_tl
+%   }
+%   Here, we deal with the overall style: notice that frame vertical alignment
+%   actually applies elsewhere, which is why it doesn't show up in the template
+%   code part. As a result, we have a slightly repetitive key interface.
+%    \begin{macrocode}
+\NewTemplateType { titlepage } { 0 }
+\DeclareTemplateInterface { titlepage } { xbeamer } { 0 }
+  {
+    element-order : commalist = 
+      {
+        title     ,
+        subtitle  ,
+        author    ,
+        institute ,
+        date
+      } ,
+    horizontal-alignment : choice { left , center ,  right } = center ,
+    pagestyle : tokenlist = xbeamer ,
+    vertical-alignment : choice { bottom , center , stretch , top } = center
+  }
+\DeclareTemplateCode { titlepage } { xbeamer } { 0 }
+  {
+    element-order = \l_@@_titlepage_order_clist ,
+    horizontal-alignment =
+      {
+        left = \tl_set:Nn \l_@@_titlepage_alignment { flushleft } ,
+        center = \tl_set:Nn \l_@@_titlepage_alignment { center } ,
+        right = \tl_set:Nn \l_@@_titlepage_alignment { flushright }
+      } ,
+    pagestyle = \l_@@_titlepage_pagestyle_tl ,
+    vertical-alignment = 
+      {
+        bottom = \tl_set:Nn \l_@@_frame_alignment_tl { bottom } ,
+        center = \tl_set:Nn \l_@@_frame_alignment_tl { center } ,
+        stretch = \tl_set:Nn \l_@@_frame_alignment_tl { stretch } ,
+        top = \tl_set:Nn \l_@@_frame_alignment_tl { top }
+      }
+  }
+  {
+    \tl_if_empty:NF \l_@@_titlepage_pagestyle_tl
+      { \exp_args:NV \thispagestyle \l_@@_titlepage_pagestyle_tl }
+    \begin { \l_@@_titlepage_alignment }
+      \clist_map_inline:Nn \l_@@_titlepage_order_clist
+        {
+          \ExpandArgs { nnv } \UseInstance { titlepage-element }
+            {##1} { @ ##1 }
+        }
+    \end { \l_@@_titlepage_alignment }
+  }
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\titlepage}
+%   A very simple setup.
+%    \begin{macrocode}
+\NewDocumentCommand \titlepage { O {} }
+  {
+    \bool_if:NTF \l_@@_frame_bool
+      { \UseTemplate { titlepage } { xbeamer } {#1} }
+      {
+        \begin { frame }
+          \UseTemplate { titlepage } { xbeamer } {#1}
+        \end { frame }
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

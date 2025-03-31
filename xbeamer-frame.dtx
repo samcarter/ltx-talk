@@ -238,7 +238,7 @@
 %
 % \subsection{Wallpaper}
 %
-% \begin{variable}{\l_@@_header_bg_tl, \l_@@_header_fg_tl}
+% \begin{variable}{\l_@@_header_bg_tl, \l_@@_header_fg_tl, \l_@@_header_ht_dim}
 % Templates for the header and footer area.
 %    \begin{macrocode}
 \NewTemplateType { header } { 0 }
@@ -246,7 +246,8 @@
 \DeclareTemplateInterface { header } { xbeamer } { 0 }
   {
     color : tokenlist ,
-    background-color : tokenlist
+    background-color : tokenlist,
+    height : length = \Gm@tmargin + \headsep 
   }
 \DeclareTemplateInterface { footer } { xbeamer } { 0 }
   {
@@ -256,7 +257,8 @@
 \DeclareTemplateCode { header } { xbeamer } { 0 } 
   {
     color            = \l_@@_header_fg_tl ,
-    background-color = \l_@@_header_bg_tl
+    background-color = \l_@@_header_bg_tl ,
+    height           = \l_@@_header_ht_dim
   }
   {
     \mode_leave_vertical:
@@ -267,7 +269,7 @@
           \tex_kern:D -\Gm@lmargin
           \rule [ -\headsep ]
             { \paperwidth }
-            { \dim_eval:n { \Gm@tmargin + \headsep } }
+            { \dim_eval:n { \l_@@_header_ht_dim } }
           \tex_kern:D -\paperwidth
           \tex_kern:D \Gm@lmargin
         }

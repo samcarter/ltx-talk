@@ -253,13 +253,18 @@
 \DeclareTemplateInterface { footer } { xbeamer } { 0 }
   {
     color : tokenlist ,
-    background-color : tokenlist
+    background-color : tokenlist ,
+    element-order : commalist ,
+    separator : tokenlist = {\hfil} ,
+    font : tokenlist = {\tiny},
+    left-skip : length = \Gm@lmargin ,
+    right-skip : length = \Gm@rmargin ,
   }
 \DeclareTemplateCode { header } { xbeamer } { 0 }
   {
     color            = \l_@@_header_fg_tl ,
     background-color = \l_@@_header_bg_tl ,
-    height           = \l_@@_header_ht_dim
+    height           = \l_@@_header_ht_dim,
   }
   {
     \noindent
@@ -282,10 +287,54 @@
     \group_end:
     \hfil
   }
+\NewTemplateType { footer-element } { 1 }
+\DeclareTemplateInterface { footer-element } { xbeamer } { 1 }
+  {
+    left-skip : length = 0em ,
+    right-skip : length = 0em ,
+    color : tokenlist ,
+    font : tokenlist = ,
+    tag-begin : tokenlist = ,
+    tag-end : tokenlist =
+  }
+\DeclareTemplateCode { footer-element } { xbeamer } { 1 }
+  {
+    left-skip = \l_@@_footelem_left_skip ,
+    right-skip = \l_@@_footelem_right_skip ,
+    color = \l_@@_footelem_color_tl ,
+    font = \l_@@_footelem_font_tl ,
+    tag-begin = \l_@@_footelem_tag_begin_tl ,
+    tag-end = \l_@@_footelem_tag_end_tl
+  }
+  {
+    \tl_if_empty:nF {#1}
+      {
+        \hspace { \l_@@_footelem_left_skip }
+        \group_begin:
+          \tl_if_empty:NF \l_@@_footelem_color_tl
+            { \exp_args:NV \color_select:n \l_@@_footelem_color_tl }
+          \l_@@_footelem_font_tl
+          \l_@@_footelem_tag_begin_tl
+          #1
+          \l_@@_footelem_tag_end_tl
+        \group_end:
+        \hspace { \l_@@_footelem_right_skip }
+      }
+  }
+\DeclareInstance { footer-element } { date } { xbeamer } { }
+\DeclareInstance { footer-element } { author } { xbeamer } {  }
+\DeclareInstance { footer-element } { title } { xbeamer } {  }
+\DeclareInstance { footer-element } { institute } { xbeamer } {  }
+\DeclareInstance { footer-element } { framenumber } { xbeamer } {  }
 \DeclareTemplateCode { footer } { xbeamer } { 0 }
   {
     color            = \l_@@_footer_fg_tl ,
-    background-color = \l_@@_footer_bg_tl
+    background-color = \l_@@_footer_bg_tl ,
+    element-order    = \l_@@_footer_order_clist ,
+    separator        = \l_@@_footer_sep_tl ,
+    font             = \l_@@_footer_font_tl ,
+    left-skip        = \l_@@_footer_left_skip ,
+    right-skip       = \l_@@_footer_right_skip ,
   }
   {
     \noindent
@@ -301,7 +350,25 @@
           \tex_kern:D \Gm@lmargin
         \group_end:
       }
-    \hfil
+        \tex_kern:D -\Gm@lmargin
+        \tl_if_empty:NF \l_@@_footer_fg_tl
+          { \exp_args:NV \color_select:n \l_@@_footer_fg_tl }
+        \begin{minipage}{\paperwidth}
+          \vspace*{-\Gm@bmargin}
+          \l_@@_footer_font_tl
+          \hspace{\l_@@_footer_left_skip}
+          \clist_pop:NNT \l_@@_footer_order_clist \l_@@_tmp_tl
+            {
+              \ExpandArgs { nVv } \UseInstance { footer-element } \l_@@_tmp_tl { @ \l_@@_tmp_tl }
+              \clist_map_inline:Nn \l_@@_footer_order_clist
+                { 
+                  \l_@@_footer_sep_tl
+                  \ExpandArgs { nnv } \UseInstance { footer-element } {##1} { @ ##1 } 
+                }
+            }
+          \hspace{\l_@@_footer_right_skip}
+        \end{minipage}
+        \tex_kern:D -\Gm@rmargin
   }
 \DeclareInstance { header } { std } { xbeamer } { }
 \DeclareInstance { footer } { std } { xbeamer } { }
@@ -408,6 +475,7 @@
 \int_new:N \g_@@_frame_int
 \cs_new_eq:NN \c@frame \g_@@_frame_int
 \cs_new:Npn \theframe { \@arabic \c@frame }
+\cs_new:Npn \@framenumber { \@arabic \c@frame }
 %    \end{macrocode}
 % \end{variable}
 %

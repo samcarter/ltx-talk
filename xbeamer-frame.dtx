@@ -289,9 +289,9 @@
   }
   {
     \noindent
-    \group_begin:
-      \tl_if_empty:NF \l_@@_footer_bg_tl
-        {
+    \tl_if_empty:NF \l_@@_footer_bg_tl
+      {
+        \group_begin:
           \exp_args:NV \color_select:n \l_@@_footer_bg_tl
           \tex_kern:D -\Gm@lmargin
           \rule
@@ -299,8 +299,8 @@
             { \Gm@bmargin }
           \tex_kern:D -\paperwidth
           \tex_kern:D \Gm@lmargin
-        }
-    \group_end:
+        \group_end:
+      }
     \hfil
   }
 \DeclareInstance { header } { std } { xbeamer } { }

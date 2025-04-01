@@ -201,7 +201,7 @@ said, some decisions have been made: some of this is re-stating ideas which
 carry forward from \pkg{beamer}.
 \begin{itemize}
   \item The basic structure of a presentation is made up of \env{frame}
-  environments, which are made up of one or more slides.
+    environments, which are made up of one or more slides.
   \item Variable content is indicated by an \emph{overlay specification}, given
     in optional angle brackets (|< ... >|).
   \item Slides have a \emph{fixed} height of \qty{100}{\mm}.
@@ -353,20 +353,20 @@ unreadable slides.
 The \cs{item} command is overlay specification-aware. If an overlay
 specification is provided, the item will only be shown on the specified slides,
 see the following example. If the \cs{item} command is to take an optional
-argument and an overlay specification, the overlay specification can comes
-first as in |\item<1>[Cat]|.
+argument and an overlay specification, the overlay specification comes first as
+in |\item<1>[Cat]|.
 \begin{verbatim}
   \begin{frame}
     There are three important points:
     \begin{enumerate}
-    \item<1-> A first one,
-    \item<2-> a second one with a bunch of subpoints,
-      \begin{itemize}
-      \item first subpoint. (Only shown from second slide on!).
-      \item<3-> second subpoint added on third slide.
-      \item<4-> third subpoint added on fourth slide.
-      \end{itemize}
-    \item<5-> and a third one.
+      \item<1-> A first one,
+      \item<2-> a second one with a bunch of subpoints,
+        \begin{itemize}
+          \item first subpoint. (Only shown from second slide on!).
+          \item<3-> second subpoint added on third slide.
+          \item<4-> third subpoint added on fourth slide.
+        \end{itemize}
+      \item<5-> and a third one.
     \end{enumerate}
   \end{frame}
 \end{verbatim}
@@ -383,7 +383,8 @@ incremental overlay specification, see Section~\ref{XXX}, you
 can implement, for example, a stepwise uncovering of the items. The
 \meta{overlay specification} is inherited by subenvironments.
 Naturally, in a subenvironment you can reset it locally by setting it to
-|<1->|.
+|<1->| (the subitems will be shown on all slides) or |<.->| (the subitems will
+be shown starting from the same slide as the parent item).
 \begin{verbatim}
   \begin{itemize}[overlay-spec = <+->]
     \item This is shown from the first slide on.

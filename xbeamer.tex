@@ -47,13 +47,15 @@ for those people who are interested.
   }
 \makeatother
 \ExplSyntaxOff
-\NewDocumentCommand\foreign{m}{\textit{#1}}
 \NewDocumentCommand\email{m}{\href{mailto:#1}{\nolinkurl{#1}}}
+\NewDocumentCommand\foreign{m}{\textit{#1}}
+\NewDocumentCommand\opt{m}{\texttt{#1}}
 % Tidy up the above in bookmarks
 \makeatletter
 \pdfstringdefDisableCommands{%
   \let\acro\@firstofone
   \let\foreign\@firstofone
+  \let\opt\@firstofone
 }
 \makeatother
 

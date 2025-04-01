@@ -198,7 +198,7 @@ way that things should work, and very little is therefore at all stable. That
 said, some decisions have been made: some of this is re-stating ideas which
 carry forward from \pkg{beamer}.
 \begin{itemize}
-  \item The basic structure of a presentation is made up of |frame|
+  \item The basic structure of a presentation is made up of \env{frame}
   environments, which are made up of one or more slides.
   \item Variable content is indicated by an \emph{overlay specification}, given
     in optional angle brackets (|< ... >|).
@@ -228,12 +228,12 @@ important to note for the user
 
 \DescribeEnv{frame}
 A presentation consists of a series of frames. Each frame consists of a series
-of slides. You create a frame using |frame| environment. All of the text that
-is not tagged by overlay specifications is shown on all slides of the frame.
-(Overlay specifications are explained in more detail in later sections. For the
-moment, let's just say that an overlay specification is a list of numbers or
-number ranges in angle brackets that is put after certain commands as in
-|\uncover<1,2>{Text}|.) If a frame contains commands that have an overlay
+of slides. You create a frame using \env{frame} environment. All of the text
+that is not tagged by overlay specifications is shown on all slides of the
+frame. (Overlay specifications are explained in more detail in later sections.
+For the moment, let's just say that an overlay specification is a list of
+numbers or number ranges in angle brackets that is put after certain commands
+as in |\uncover<1,2>{Text}|.) If a frame contains commands that have an overlay
 specification, the frame will contain multiple slides; otherwise it contains
 only one slide.
 
@@ -316,8 +316,8 @@ internally. The effect of \cs{pause} lasts till the next \cs{pause},
 \end{verbatim}
 
 This command does \emph{not} work correctly inside math mode environments like
-|align| and \pkg{pgf} environments like |tikzpicture| or |tcolorbox|, since
-these do really wicked things.
+\env{align} and \pkg{pgf} environments like \env{tikzpicture} or
+\env{tcolorbox}, since these do really wicked things.
 
 To \enquote{unpause} some text, that is, to temporarily suspend pausing, use
 the command \cs{onslide}, see below.
@@ -333,11 +333,37 @@ the command \cs{onslide}, see below.
 \section{Structuring a presentation: the local structure}
 
 \LaTeX{} provides different commands for structuring text \enquote{locally},
-for example, \foreign{via} the |itemize| environment. These environments are
-also available in the \pkg{xbeamer} class, although their appearance has been
-slightly changed.
+for example, \foreign{via} the \env{itemize} environment. These environments
+are also available in the \pkg{xbeamer} class, although their appearance has
+been slightly changed.
 
 \subsection{Itemizations, enumerations and descriptions}
+
+There are three predefined environments for creating lists, namely
+\env{enumerate}, \env{itemize}, and \env{description}. The first two can be
+nested to depth three, but nesting them to this depth creates totally
+unreadable slides.
+
+The \cs{item} command is overlay specification-aware. If an overlay
+specification is provided, the item will only be shown on the specified slides,
+see the following example. If the \cs{item} command is to take an optional
+argument and an overlay specification, the overlay specification can comes
+first as in |\item<1>[Cat]|.
+\begin{verbatim}
+\begin{frame}
+  There are three important points:
+  \begin{enumerate}
+  \item<1-> A first one,
+  \item<2-> a second one with a bunch of subpoints,
+    \begin{itemize}
+    \item first subpoint. (Only shown from second slide on!).
+    \item<3-> second subpoint added on third slide.
+    \item<4-> third subpoint added on fourth slide.
+    \end{itemize}
+  \item<5-> and a third one.
+  \end{enumerate}
+\end{frame}
+\end{verbatim}
 
 \subsection{Highlighting}
 

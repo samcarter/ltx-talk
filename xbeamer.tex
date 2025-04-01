@@ -350,20 +350,21 @@ see the following example. If the \cs{item} command is to take an optional
 argument and an overlay specification, the overlay specification can comes
 first as in |\item<1>[Cat]|.
 \begin{verbatim}
-\begin{frame}
-  There are three important points:
-  \begin{enumerate}
-  \item<1-> A first one,
-  \item<2-> a second one with a bunch of subpoints,
-    \begin{itemize}
-    \item first subpoint. (Only shown from second slide on!).
-    \item<3-> second subpoint added on third slide.
-    \item<4-> third subpoint added on fourth slide.
-    \end{itemize}
-  \item<5-> and a third one.
-  \end{enumerate}
-\end{frame}
+  \begin{frame}
+    There are three important points:
+    \begin{enumerate}
+    \item<1-> A first one,
+    \item<2-> a second one with a bunch of subpoints,
+      \begin{itemize}
+      \item first subpoint. (Only shown from second slide on!).
+      \item<3-> second subpoint added on third slide.
+      \item<4-> third subpoint added on fourth slide.
+      \end{itemize}
+    \item<5-> and a third one.
+    \end{enumerate}
+  \end{frame}
 \end{verbatim}
+
 
 \subsection{Highlighting}
 

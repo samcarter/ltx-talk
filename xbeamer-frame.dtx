@@ -239,8 +239,44 @@
 %
 % \subsection{Wallpaper}
 %
+%    \begin{macrocode}
+\NewTemplateType { footer-element } { 1 }
+\DeclareTemplateInterface { footer-element } { xbeamer } { 1 }
+  {
+    color : tokenlist ,
+    font : tokenlist = ,
+    left-skip : length = 0em ,
+    right-skip : length = 0em
+  }
+\DeclareTemplateCode { footer-element } { xbeamer } { 1 }
+  {
+    color = \l_@@_footelem_color_tl ,
+    font = \l_@@_footelem_font_tl ,
+    left-skip = \l_@@_footelem_left_skip ,
+    right-skip = \l_@@_footelem_right_skip
+  }
+  {
+    \tl_if_empty:nF {#1}
+      {
+        \hspace { \l_@@_footelem_left_skip }
+        \group_begin:
+          \tl_if_empty:NF \l_@@_footelem_color_tl
+            { \exp_args:NV \color_select:n \l_@@_footelem_color_tl }
+          \l_@@_footelem_font_tl
+          #1
+        \group_end:
+        \hspace { \l_@@_footelem_right_skip }
+      }
+  }
+\DeclareInstance { footer-element } { date } { xbeamer } { }
+\DeclareInstance { footer-element } { author } { xbeamer } {  }
+\DeclareInstance { footer-element } { title } { xbeamer } {  }
+\DeclareInstance { footer-element } { institute } { xbeamer } {  }
+\DeclareInstance { footer-element } { framenumber } { xbeamer } {  }
+%    \end{macrocode}
+%
 % \begin{variable}{\l_@@_header_bg_tl, \l_@@_header_fg_tl, \l_@@_header_ht_dim}
-% Templates for the header and footer area.
+%   Templates for the header and footer area.
 %    \begin{macrocode}
 \NewTemplateType { header } { 0 }
 \NewTemplateType { footer } { 0 }
@@ -287,39 +323,6 @@
     \group_end:
     \hfil
   }
-\NewTemplateType { footer-element } { 1 }
-\DeclareTemplateInterface { footer-element } { xbeamer } { 1 }
-  {
-    color : tokenlist ,
-    font : tokenlist = ,
-    left-skip : length = 0em ,
-    right-skip : length = 0em
-  }
-\DeclareTemplateCode { footer-element } { xbeamer } { 1 }
-  {
-    color = \l_@@_footelem_color_tl ,
-    font = \l_@@_footelem_font_tl ,
-    left-skip = \l_@@_footelem_left_skip ,
-    right-skip = \l_@@_footelem_right_skip
-  }
-  {
-    \tl_if_empty:nF {#1}
-      {
-        \hspace { \l_@@_footelem_left_skip }
-        \group_begin:
-          \tl_if_empty:NF \l_@@_footelem_color_tl
-            { \exp_args:NV \color_select:n \l_@@_footelem_color_tl }
-          \l_@@_footelem_font_tl
-          #1
-        \group_end:
-        \hspace { \l_@@_footelem_right_skip }
-      }
-  }
-\DeclareInstance { footer-element } { date } { xbeamer } { }
-\DeclareInstance { footer-element } { author } { xbeamer } {  }
-\DeclareInstance { footer-element } { title } { xbeamer } {  }
-\DeclareInstance { footer-element } { institute } { xbeamer } {  }
-\DeclareInstance { footer-element } { framenumber } { xbeamer } {  }
 \DeclareTemplateCode { footer } { xbeamer } { 0 }
   {
     color            = \l_@@_footer_fg_tl ,

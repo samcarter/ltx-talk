@@ -293,18 +293,14 @@
     color : tokenlist ,
     font : tokenlist = ,
     left-skip : length = 0em ,
-    right-skip : length = 0em ,
-    tag-begin : tokenlist = ,
-    tag-end : tokenlist =
+    right-skip : length = 0em
   }
 \DeclareTemplateCode { footer-element } { xbeamer } { 1 }
   {
     color = \l_@@_footelem_color_tl ,
     font = \l_@@_footelem_font_tl ,
     left-skip = \l_@@_footelem_left_skip ,
-    right-skip = \l_@@_footelem_right_skip ,
-    tag-begin = \l_@@_footelem_tag_begin_tl ,
-    tag-end = \l_@@_footelem_tag_end_tl
+    right-skip = \l_@@_footelem_right_skip
   }
   {
     \tl_if_empty:nF {#1}
@@ -314,9 +310,7 @@
           \tl_if_empty:NF \l_@@_footelem_color_tl
             { \exp_args:NV \color_select:n \l_@@_footelem_color_tl }
           \l_@@_footelem_font_tl
-          \l_@@_footelem_tag_begin_tl
           #1
-          \l_@@_footelem_tag_end_tl
         \group_end:
         \hspace { \l_@@_footelem_right_skip }
       }

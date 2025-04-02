@@ -338,7 +338,6 @@
       \l_@@_header_font_tl
       \@@_slide_title:
     \group_end:
-    \hfil
   }
 \DeclareTemplateCode { footer } { xbeamer } { 0 }
   {
@@ -401,6 +400,7 @@
       {
         \@@_slide_link:
         \UseInstance { header } { std }
+        \hfil
       }
     \cs_set_nopar:Npn \@oddfoot { \UseInstance { footer } { std } }
     \cs_set_eq:NN \@evenhead \@oddhead
@@ -408,7 +408,11 @@
   }
 \cs_set_nopar:Npn \ps@plain
   {
-    \cs_set_nopar:Npn \@oddhead { \@@_slide_link: }
+    \cs_set_nopar:Npn \@oddhead
+      {
+        \@@_slide_link:
+        \hfil
+      }
     \cs_set_nopar:Npn \@oddfoot { }
     \cs_set_eq:NN \@evenhead \@oddhead
     \cs_set_eq:NN \@evenfoot \@oddfoot

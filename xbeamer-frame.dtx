@@ -327,7 +327,7 @@
     \group_begin:
       \tl_if_empty:NF \l_@@_header_fg_tl
         { \exp_args:NV \color_select:n \l_@@_header_fg_tl }
-      \@@_slide_header:
+      \@@_slide_title:
     \group_end:
     \hfil
   }
@@ -432,17 +432,17 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_slide_header:, \@@_slide_header_aux:}
+% \begin{macro}{\@@_slide_title:, \@@_slide_title_aux:}
 %   Inserts the slide header information including the frame title: that
 %   will need to be split out into a template (leaving a question about what
 %   to do with empty titles).
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_slide_header:
+\cs_new_protected:Npn \@@_slide_title:
   {
     \tl_if_empty:NF \g_@@_frame_title_tl
-      { \@@_slide_header_aux: }
+      { \@@_slide_title_aux: }
   }
-\cs_new_protected:Npn \@@_slide_header_aux:
+\cs_new_protected:Npn \@@_slide_title_aux:
   {
     \tag_resume:n { header }
     \tag_mc_end:

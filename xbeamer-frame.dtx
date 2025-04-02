@@ -239,6 +239,13 @@
 %
 % \subsection{Wallpaper}
 %
+% \begin{variable}
+%   {
+%     \l_@@_footelem_left_skip ,
+%     \l_@@_footelem_right_skip ,
+%     \l_@@_footelem_color_tl ,
+%     \l_@@_footelem_font_tl
+%   }
 %    \begin{macrocode}
 \NewTemplateType { footer-element } { 1 }
 \DeclareTemplateInterface { footer-element } { xbeamer } { 1 }
@@ -274,6 +281,7 @@
 \DeclareInstance { footer-element } { institute } { xbeamer } {  }
 \DeclareInstance { footer-element } { framenumber } { xbeamer } {  }
 %    \end{macrocode}
+% \end{variable}
 %
 % \begin{variable}{\l_@@_header_bg_tl, \l_@@_header_fg_tl, \l_@@_header_ht_dim}
 %   Templates for the header and footer area.

@@ -255,8 +255,8 @@
     color : tokenlist ,
     background-color : tokenlist ,
     element-order : commalist ,
-    separator : tokenlist = {\hfil} ,
-    font : tokenlist = {\tiny},
+    separator : tokenlist = \hfil ,
+    font : tokenlist = \tiny ,
     left-skip : length = \Gm@lmargin ,
     right-skip : length = \Gm@rmargin ,
   }
@@ -350,25 +350,26 @@
           \tex_kern:D \Gm@lmargin
         \group_end:
       }
-        \tex_kern:D -\Gm@lmargin
-        \tl_if_empty:NF \l_@@_footer_fg_tl
-          { \exp_args:NV \color_select:n \l_@@_footer_fg_tl }
-        \begin{minipage}{\paperwidth}
-          \vspace*{-\Gm@bmargin}
-          \l_@@_footer_font_tl
-          \hspace{\l_@@_footer_left_skip}
-          \clist_pop:NNT \l_@@_footer_order_clist \l_@@_tmp_tl
-            {
-              \ExpandArgs { nVv } \UseInstance { footer-element } \l_@@_tmp_tl { @ \l_@@_tmp_tl }
-              \clist_map_inline:Nn \l_@@_footer_order_clist
-                { 
-                  \l_@@_footer_sep_tl
-                  \ExpandArgs { nnv } \UseInstance { footer-element } {##1} { @ ##1 } 
-                }
+    \tex_kern:D -\Gm@lmargin
+    \tl_if_empty:NF \l_@@_footer_fg_tl
+      { \exp_args:NV \color_select:n \l_@@_footer_fg_tl }
+    \begin { minipage } { \paperwidth }
+      \vspace * {-\Gm@bmargin }
+      \l_@@_footer_font_tl
+      \hspace { \l_@@_footer_left_skip }
+      \clist_pop:NNT \l_@@_footer_order_clist \l_@@_tmp_tl
+        {
+          \ExpandArgs { nVv } \UseInstance { footer-element } \l_@@_tmp_tl
+            { @ \l_@@_tmp_tl }
+          \clist_map_inline:Nn \l_@@_footer_order_clist
+            { 
+              \l_@@_footer_sep_tl
+              \ExpandArgs { nnv } \UseInstance { footer-element } {##1} { @ ##1 } 
             }
-          \hspace{\l_@@_footer_right_skip}
-        \end{minipage}
-        \tex_kern:D -\Gm@rmargin
+        }
+      \hspace { \l_@@_footer_right_skip }
+    \end { minipage }
+    \tex_kern:D -\Gm@rmargin
   }
 \DeclareInstance { header } { std } { xbeamer } { }
 \DeclareInstance { footer } { std } { xbeamer } { }

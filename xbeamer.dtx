@@ -236,6 +236,14 @@
 %
 % \subsection{Hyperlinks}
 %
+% \begin{variable}{\thepage}
+%   We define \cs{thepage} here: this is checked for by \pkg{hyperref} so has
+%   to come early.
+%    \begin{macrocode}
+\cs_new:Npn \thepage { \@arabic \c@page }
+%    \end{macrocode}
+% \end{variable}
+%
 % A requirement.
 %    \begin{macrocode}
 \RequirePackage { hyperref }

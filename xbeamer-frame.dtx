@@ -283,7 +283,13 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\l_@@_header_bg_tl, \l_@@_header_fg_tl, \l_@@_header_ht_dim}
+% \begin{variable}
+%   {
+%     \l_@@_header_bg_tl   ,
+%     \l_@@_header_fg_tl   ,
+%     \l_@@_header_font_tl ,
+%     \l_@@_header_ht_dim
+%   }
 %   Templates for the header and footer area.
 %    \begin{macrocode}
 \NewTemplateType { header } { 0 }
@@ -292,6 +298,7 @@
   {
     background-color : tokenlist,
     color : tokenlist ,
+    font : tokenlist = \normalfont ,
     height : length = \Gm@tmargin + \headsep
   }
 \DeclareTemplateInterface { footer } { xbeamer } { 0 }
@@ -308,6 +315,7 @@
   {
     background-color = \l_@@_header_bg_tl ,
     color            = \l_@@_header_fg_tl ,
+    font             = \l_@@_header_font_tl ,
     height           = \l_@@_header_ht_dim
   }
   {
@@ -327,6 +335,7 @@
     \group_begin:
       \tl_if_empty:NF \l_@@_header_fg_tl
         { \exp_args:NV \color_select:n \l_@@_header_fg_tl }
+      \l_@@_header_font_tl
       \@@_slide_title:
     \group_end:
     \hfil

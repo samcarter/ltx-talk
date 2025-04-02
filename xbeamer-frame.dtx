@@ -250,16 +250,16 @@
 \NewTemplateType { footer-element } { 1 }
 \DeclareTemplateInterface { footer-element } { xbeamer } { 1 }
   {
-    color : tokenlist ,
-    font : tokenlist = ,
-    left-skip : length = 0em ,
+    color      : tokenlist ,
+    font       : tokenlist = ,
+    left-skip  : length = 0em ,
     right-skip : length = 0em
   }
 \DeclareTemplateCode { footer-element } { xbeamer } { 1 }
   {
-    color = \l_@@_footelem_color_tl ,
-    font = \l_@@_footelem_font_tl ,
-    left-skip = \l_@@_footelem_left_skip ,
+    color      = \l_@@_footelem_color_tl ,
+    font       = \l_@@_footelem_font_tl ,
+    left-skip  = \l_@@_footelem_left_skip ,
     right-skip = \l_@@_footelem_right_skip
   }
   {
@@ -297,19 +297,19 @@
 \DeclareTemplateInterface { header } { xbeamer } { 0 }
   {
     background-color : tokenlist,
-    color : tokenlist ,
-    font : tokenlist = \normalfont ,
-    height : length = \Gm@tmargin + \headsep
+    color            : tokenlist ,
+    font             : tokenlist = \normalfont ,
+    height           : length = \Gm@tmargin + \headsep
   }
 \DeclareTemplateInterface { footer } { xbeamer } { 0 }
   {
     background-color : tokenlist ,
-    color : tokenlist ,
-    element-order : commalist ,
-    font : tokenlist = \tiny ,
-    left-skip : length = \Gm@lmargin ,
-    right-skip : length = \Gm@rmargin ,
-    separator : tokenlist = \hfil
+    color            : tokenlist ,
+    element-order    : commalist ,
+    font             : tokenlist = \tiny ,
+    left-skip        : length = \Gm@lmargin ,
+    right-skip       : length = \Gm@rmargin ,
+    separator        : tokenlist = \hfil
   }
 \DeclareTemplateCode { header } { xbeamer } { 0 }
   {

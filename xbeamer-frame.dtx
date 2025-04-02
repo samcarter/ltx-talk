@@ -351,10 +351,10 @@
         \group_end:
       }
     \tex_kern:D -\Gm@lmargin
-    \tl_if_empty:NF \l_@@_footer_fg_tl
-      { \exp_args:NV \color_select:n \l_@@_footer_fg_tl }
     \begin { minipage } { \paperwidth }
       \vspace * {-\Gm@bmargin }
+      \tl_if_empty:NF \l_@@_footer_fg_tl
+        { \exp_args:NV \color_select:n \l_@@_footer_fg_tl }
       \l_@@_footer_font_tl
       \hspace { \l_@@_footer_left_skip }
       \clist_pop:NNT \l_@@_footer_order_clist \l_@@_tmp_tl

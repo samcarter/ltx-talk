@@ -246,25 +246,25 @@
 \NewTemplateType { footer } { 0 }
 \DeclareTemplateInterface { header } { xbeamer } { 0 }
   {
-    color : tokenlist ,
     background-color : tokenlist,
+    color : tokenlist ,
     height : length = \Gm@tmargin + \headsep
   }
 \DeclareTemplateInterface { footer } { xbeamer } { 0 }
   {
-    color : tokenlist ,
     background-color : tokenlist ,
+    color : tokenlist ,
     element-order : commalist ,
-    separator : tokenlist = \hfil ,
     font : tokenlist = \tiny ,
     left-skip : length = \Gm@lmargin ,
     right-skip : length = \Gm@rmargin ,
+    separator : tokenlist = \hfil
   }
 \DeclareTemplateCode { header } { xbeamer } { 0 }
   {
-    color            = \l_@@_header_fg_tl ,
     background-color = \l_@@_header_bg_tl ,
-    height           = \l_@@_header_ht_dim,
+    color            = \l_@@_header_fg_tl ,
+    height           = \l_@@_header_ht_dim
   }
   {
     \noindent
@@ -290,19 +290,19 @@
 \NewTemplateType { footer-element } { 1 }
 \DeclareTemplateInterface { footer-element } { xbeamer } { 1 }
   {
-    left-skip : length = 0em ,
-    right-skip : length = 0em ,
     color : tokenlist ,
     font : tokenlist = ,
+    left-skip : length = 0em ,
+    right-skip : length = 0em ,
     tag-begin : tokenlist = ,
     tag-end : tokenlist =
   }
 \DeclareTemplateCode { footer-element } { xbeamer } { 1 }
   {
-    left-skip = \l_@@_footelem_left_skip ,
-    right-skip = \l_@@_footelem_right_skip ,
     color = \l_@@_footelem_color_tl ,
     font = \l_@@_footelem_font_tl ,
+    left-skip = \l_@@_footelem_left_skip ,
+    right-skip = \l_@@_footelem_right_skip ,
     tag-begin = \l_@@_footelem_tag_begin_tl ,
     tag-end = \l_@@_footelem_tag_end_tl
   }

@@ -87,6 +87,8 @@
 %    \begin{macrocode}
 \cs_gset_protected:Npn \vbox_set:Nnn #1#2#3
   { \vbox_set:Nn #1 { \dim_set:Nn \tex_hsize:D {#2} #3 } }
+\cs_gset_protected:Npn \vbox:nn #1#2
+  { \vbox:n { \dim_set:Nn \tex_hsize:D {#1} #2 } }
 %    \end{macrocode}
 %
 % \subsection{Extra variants}

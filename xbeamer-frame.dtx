@@ -351,7 +351,10 @@
 %     \l_@@_footer_left_skip   ,
 %     \l_@@_footer_right_skip 
 %   }
-%   Templates for the footer area.
+%   Templates for the footer area. Again the margins are handled in stages:
+%   here we do have a box for the content so the right skip is used, and we
+%   avoid an overfull box by including consideration of the right margin of the
+%   page layout.
 %    \begin{macrocode}
 \NewTemplateType { footer } { 0 }
 \DeclareTemplateInterface { footer } { xbeamer } { 0 }
@@ -376,25 +379,27 @@
   }
   {
     \noindent
+    \tex_kern:D -\Gm@lmargin
     \tl_if_empty:NF \l_@@_footer_bg_tl
       {
         \group_begin:
           \color_select:V \l_@@_footer_bg_tl
-          \tex_kern:D -\Gm@lmargin
           \rule
             { \paperwidth }
             { \Gm@bmargin }
           \tex_kern:D -\paperwidth
-          \tex_kern:D \Gm@lmargin
         \group_end:
       }
-    \tex_kern:D -\Gm@lmargin
-    \begin { minipage } { \paperwidth }
+    \tex_kern:D \l_@@_footer_left_skip
+    \begin { minipage }
+      {
+        \dim_eval:n
+          { \paperwidth - \l_@@_footer_left_skip - \l_@@_footer_right_skip }
+      }
       \vspace * {-\Gm@bmargin }
       \tl_if_empty:NF \l_@@_footer_fg_tl
         { \color_select:V \l_@@_footer_fg_tl }
       \l_@@_footer_font_tl
-      \hspace { \l_@@_footer_left_skip }
       \clist_pop:NNT \l_@@_footer_order_clist \l_@@_tmp_tl
         {
           \ExpandArgs { nVv } \UseInstance { footer-element } \l_@@_tmp_tl
@@ -405,9 +410,8 @@
               \ExpandArgs { nnv } \UseInstance { footer-element } {##1} { @ ##1 } 
             }
         }
-      \hspace * { \l_@@_footer_right_skip }
     \end { minipage }
-    \tex_kern:D -\Gm@rmargin
+    \tex_kern:D \dim_eval:n { - \Gm@rmargin + \l_@@_footer_right_skip }
   }
 \DeclareInstance { footer } { std } { xbeamer } { }
 %    \end{macrocode}

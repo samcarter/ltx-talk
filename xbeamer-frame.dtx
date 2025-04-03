@@ -292,7 +292,10 @@
 %     \l_@@_header_left_skip  ,
 %     \l_@@_header_right_skip 
 %   }
-%   Templates for the header area.
+%   Templates for the header area. The background always covers the full width,
+%   but the text area may be narrower. The setup here aims to avoid repeated
+%   kerns but also dealing with complex conditionals, hence we always move to
+%   the edge of the paper first then adjust as required.
 %    \begin{macrocode}
 \NewTemplateType { header } { 0 }
 \DeclareTemplateInterface { header } { xbeamer } { 0 }

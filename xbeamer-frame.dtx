@@ -385,32 +385,34 @@
         \group_begin:
           \color_select:V \l_@@_footer_bg_tl
           \rule
+            [ \dim_eval:n { \footskip - \Gm@bmargin } ]
             { \paperwidth }
             { \Gm@bmargin }
           \tex_kern:D -\paperwidth
         \group_end:
       }
     \tex_kern:D \l_@@_footer_left_skip
-    \begin { minipage }
+    \vbox:nn
       {
-        \dim_eval:n
-          { \paperwidth - \l_@@_footer_left_skip - \l_@@_footer_right_skip }
+          \paperwidth
+        - \l_@@_footer_left_skip
+        - \l_@@_footer_right_skip
       }
-      \vspace * {-\Gm@bmargin }
-      \tl_if_empty:NF \l_@@_footer_fg_tl
-        { \color_select:V \l_@@_footer_fg_tl }
-      \l_@@_footer_font_tl
-      \clist_pop:NNT \l_@@_footer_order_clist \l_@@_tmp_tl
-        {
-          \ExpandArgs { nVv } \UseInstance { footer-element } \l_@@_tmp_tl
-            { @ \l_@@_tmp_tl }
-          \clist_map_inline:Nn \l_@@_footer_order_clist
-            { 
-              \l_@@_footer_sep_tl
-              \ExpandArgs { nnv } \UseInstance { footer-element } {##1} { @ ##1 } 
-            }
-        }
-    \end { minipage }
+      {
+        \tl_if_empty:NF \l_@@_footer_fg_tl
+          { \color_select:V \l_@@_footer_fg_tl }
+        \l_@@_footer_font_tl
+        \clist_pop:NNT \l_@@_footer_order_clist \l_@@_tmp_tl
+          {
+            \ExpandArgs { nVv } \UseInstance { footer-element } \l_@@_tmp_tl
+              { @ \l_@@_tmp_tl }
+            \clist_map_inline:Nn \l_@@_footer_order_clist
+              { 
+                \l_@@_footer_sep_tl
+                \ExpandArgs { nnv } \UseInstance { footer-element } {##1} { @ ##1 }
+              }
+          }
+      }
     \tex_kern:D \dim_eval:n { \l_@@_footer_right_skip - \Gm@rmargin }
   }
 \DeclareInstance { footer } { std } { xbeamer } { }

@@ -290,26 +290,15 @@
 %     \l_@@_header_font_tl ,
 %     \l_@@_header_ht_dim
 %   }
-%   Templates for the header and footer area.
+%   Templates for the header area.
 %    \begin{macrocode}
 \NewTemplateType { header } { 0 }
-\NewTemplateType { footer } { 0 }
 \DeclareTemplateInterface { header } { xbeamer } { 0 }
   {
     background-color : tokenlist,
     color            : tokenlist ,
     font             : tokenlist = \normalfont ,
     height           : length = \Gm@tmargin + \headsep
-  }
-\DeclareTemplateInterface { footer } { xbeamer } { 0 }
-  {
-    background-color : tokenlist ,
-    color            : tokenlist ,
-    element-order    : commalist ,
-    font             : tokenlist = \tiny ,
-    left-skip        : length = \Gm@lmargin ,
-    right-skip       : length = \Gm@rmargin ,
-    separator        : tokenlist = \hfil
   }
 \DeclareTemplateCode { header } { xbeamer } { 0 }
   {
@@ -338,6 +327,22 @@
       \l_@@_header_font_tl
       \@@_slide_title:
     \group_end:
+  }
+\DeclareInstance { header } { std } { xbeamer } { }
+%    \end{macrocode}
+% \end{variable}
+%   Templates for the footer area.
+%    \begin{macrocode}
+\NewTemplateType { footer } { 0 }
+\DeclareTemplateInterface { footer } { xbeamer } { 0 }
+  {
+    background-color : tokenlist ,
+    color            : tokenlist ,
+    element-order    : commalist ,
+    font             : tokenlist = \tiny ,
+    left-skip        : length = \Gm@lmargin ,
+    right-skip       : length = \Gm@rmargin ,
+    separator        : tokenlist = \hfil
   }
 \DeclareTemplateCode { footer } { xbeamer } { 0 }
   {
@@ -384,10 +389,8 @@
     \end { minipage }
     \tex_kern:D -\Gm@rmargin
   }
-\DeclareInstance { header } { std } { xbeamer } { }
 \DeclareInstance { footer } { std } { xbeamer } { }
 %    \end{macrocode}
-% \end{variable}
 %
 % \begin{macro}{\ps@xbeamer, \ps@plain}
 %   Install a standard header and footer template, and redefine the

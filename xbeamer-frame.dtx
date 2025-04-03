@@ -411,7 +411,7 @@
             }
         }
     \end { minipage }
-    \tex_kern:D \dim_eval:n { - \Gm@rmargin + \l_@@_footer_right_skip }
+    \tex_kern:D \dim_eval:n { \l_@@_footer_right_skip - \Gm@rmargin }
   }
 \DeclareInstance { footer } { std } { xbeamer } { }
 %    \end{macrocode}

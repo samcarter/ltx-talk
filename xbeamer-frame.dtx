@@ -285,10 +285,12 @@
 %
 % \begin{variable}
 %   {
-%     \l_@@_header_bg_tl   ,
-%     \l_@@_header_fg_tl   ,
-%     \l_@@_header_font_tl ,
-%     \l_@@_header_ht_dim
+%     \l_@@_header_bg_tl      ,
+%     \l_@@_header_fg_tl      ,
+%     \l_@@_header_font_tl    ,
+%     \l_@@_header_ht_dim     ,
+%     \l_@@_header_left_skip  ,
+%     \l_@@_header_right_skip 
 %   }
 %   Templates for the header area.
 %    \begin{macrocode}
@@ -298,29 +300,33 @@
     background-color : tokenlist,
     color            : tokenlist ,
     font             : tokenlist = \normalfont ,
-    height           : length = \Gm@tmargin + \headsep
+    height           : length = \Gm@tmargin + \headsep ,
+    left-skip        : length = \Gm@lmargin ,
+    right-skip       : length = \Gm@rmargin
   }
 \DeclareTemplateCode { header } { xbeamer } { 0 }
   {
     background-color = \l_@@_header_bg_tl ,
     color            = \l_@@_header_fg_tl ,
     font             = \l_@@_header_font_tl ,
-    height           = \l_@@_header_ht_dim
+    height           = \l_@@_header_ht_dim ,
+    left-skip        = \l_@@_header_left_skip ,
+    right-skip       = \l_@@_header_right_skip
   }
   {
     \noindent
+    \tex_kern:D -\Gm@lmargin
     \group_begin:
       \tl_if_empty:NF \l_@@_header_bg_tl
         {
           \color_select:V \l_@@_header_bg_tl
-          \tex_kern:D -\Gm@lmargin
           \rule [ -\headsep ]
             { \paperwidth }
             { \l_@@_header_ht_dim }
           \tex_kern:D -\paperwidth
-          \tex_kern:D \Gm@lmargin
         }
     \group_end:
+    \tex_kern:D \l_@@_header_left_skip
     \group_begin:
       \tl_if_empty:NF \l_@@_header_fg_tl
         { \color_select:V \l_@@_header_fg_tl }

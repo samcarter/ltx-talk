@@ -323,9 +323,10 @@
       \tl_if_empty:NF \l_@@_header_bg_tl
         {
           \color_select:V \l_@@_header_bg_tl
-          \rule [ -\headsep ]
+          \rule:nnn
             { \paperwidth }
-            { \l_@@_header_ht_dim }
+            { \l_@@_header_ht_dim - \headsep }
+            { \headsep }
           \kern_horizontal:n { -\paperwidth }
         }
     \group_end:
@@ -384,10 +385,10 @@
       {
         \group_begin:
           \color_select:V \l_@@_footer_bg_tl
-          \rule
-            [ \dim_eval:n { \footskip - \Gm@bmargin } ]
+          \rule:nnn
             { \paperwidth }
-            { \Gm@bmargin }
+            { \footskip }
+            { \Gm@bmargin - \footskip }
           \kern_horizontal:n { -\paperwidth }
         \group_end:
       }

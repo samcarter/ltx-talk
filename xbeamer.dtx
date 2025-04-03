@@ -104,6 +104,14 @@
       { \par }
     \__kernel_kern:n {#1}
   }
+\cs_gset_protected:Npn \rule:nnn #1#2#3
+  {
+    \tex_vrule:D
+      height \dim_eval:n {#2} \exp_stop_f:
+      depth  \dim_eval:n {#3} \exp_stop_f:
+      width  \dim_eval:n {#1} \exp_stop_f:
+      \scan_stop:
+  }
 %    \end{macrocode}
 %
 % \subsection{Extra variants}

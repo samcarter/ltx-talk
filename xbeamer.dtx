@@ -81,6 +81,14 @@
   {A class for typesetting presentations}
 %    \end{macrocode}
 %
+% \subsection{Additions for \pkg{expl3}}
+%
+% Like \cs{vcoffin_set:Nnn}, so should be an easy enough addition.
+%    \begin{macrocode}
+\cs_gset_protected:Npn \vbox_set:Nnn #1#2#3
+  { \vbox_set:Nn #1 { \dim_set:Nn \tex_hsize:D {#2} #3 } }
+%    \end{macrocode}
+%
 % \subsection{Extra variants}
 %
 %    \begin{macrocode}

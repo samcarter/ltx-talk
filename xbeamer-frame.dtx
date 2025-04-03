@@ -268,7 +268,7 @@
         \hspace { \l_@@_footelem_left_skip }
         \group_begin:
           \tl_if_empty:NF \l_@@_footelem_color_tl
-            { \exp_args:NV \color_select:n \l_@@_footelem_color_tl }
+            { \color_select:V \l_@@_footelem_color_tl }
           \l_@@_footelem_font_tl
           #1
         \group_end:
@@ -323,7 +323,7 @@
     \group_begin:
       \tl_if_empty:NF \l_@@_header_bg_tl
         {
-          \exp_args:NV \color_select:n \l_@@_header_bg_tl
+          \color_select:V \l_@@_header_bg_tl
           \tex_kern:D -\Gm@lmargin
           \rule [ -\headsep ]
             { \paperwidth }
@@ -334,7 +334,7 @@
     \group_end:
     \group_begin:
       \tl_if_empty:NF \l_@@_header_fg_tl
-        { \exp_args:NV \color_select:n \l_@@_header_fg_tl }
+        { \color_select:V \l_@@_header_fg_tl }
       \l_@@_header_font_tl
       \@@_slide_title:
     \group_end:
@@ -354,7 +354,7 @@
     \tl_if_empty:NF \l_@@_footer_bg_tl
       {
         \group_begin:
-          \exp_args:NV \color_select:n \l_@@_footer_bg_tl
+          \color_select:V \l_@@_footer_bg_tl
           \tex_kern:D -\Gm@lmargin
           \rule
             { \paperwidth }
@@ -367,7 +367,7 @@
     \begin { minipage } { \paperwidth }
       \vspace * {-\Gm@bmargin }
       \tl_if_empty:NF \l_@@_footer_fg_tl
-        { \exp_args:NV \color_select:n \l_@@_footer_fg_tl }
+        { \color_select:V \l_@@_footer_fg_tl }
       \l_@@_footer_font_tl
       \hspace { \l_@@_footer_left_skip }
       \clist_pop:NNT \l_@@_footer_order_clist \l_@@_tmp_tl

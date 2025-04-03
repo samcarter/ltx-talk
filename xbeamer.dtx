@@ -91,6 +91,21 @@
   { \vbox:n { \dim_set:Nn \tex_hsize:D {#1} #2 } }
 %    \end{macrocode}
 %
+% Some things from \pkg{xbox} that would be useful.
+%    \begin{macrocode}
+\cs_gset_protected:Npn \kern_horizontal:n #1
+  {
+    \mode_leave_vertical:
+    \__kernel_kern:n {#1}
+  }
+\cs_gset_protected:Npn \kern_vertical:n #1
+  {
+    \mode_if_vertical:F
+      { \par }
+    \__kernel_kern:n {#1}
+  }
+%    \end{macrocode}
+%
 % \subsection{Extra variants}
 %
 %    \begin{macrocode}

@@ -318,7 +318,7 @@
   }
   {
     \noindent
-    \tex_kern:D -\Gm@lmargin
+    \kern_horizontal:n { -\Gm@lmargin }
     \group_begin:
       \tl_if_empty:NF \l_@@_header_bg_tl
         {
@@ -326,10 +326,10 @@
           \rule [ -\headsep ]
             { \paperwidth }
             { \l_@@_header_ht_dim }
-          \tex_kern:D -\paperwidth
+          \kern_horizontal:n { -\paperwidth }
         }
     \group_end:
-    \tex_kern:D \l_@@_header_left_skip
+    \kern_horizontal:n { \l_@@_header_left_skip }
     \group_begin:
       \tl_if_empty:NF \l_@@_header_fg_tl
         { \color_select:V \l_@@_header_fg_tl }
@@ -379,7 +379,7 @@
   }
   {
     \noindent
-    \tex_kern:D -\Gm@lmargin
+    \kern_horizontal:n { -\Gm@lmargin }
     \tl_if_empty:NF \l_@@_footer_bg_tl
       {
         \group_begin:
@@ -388,10 +388,10 @@
             [ \dim_eval:n { \footskip - \Gm@bmargin } ]
             { \paperwidth }
             { \Gm@bmargin }
-          \tex_kern:D -\paperwidth
+          \kern_horizontal:n { -\paperwidth }
         \group_end:
       }
-    \tex_kern:D \l_@@_footer_left_skip
+    \kern_horizontal:n { \l_@@_footer_left_skip }
     \vbox:nn
       {
           \paperwidth
@@ -413,7 +413,7 @@
               }
           }
       }
-    \tex_kern:D \dim_eval:n { \l_@@_footer_right_skip - \Gm@rmargin }
+    \kern_horizontal:n { \l_@@_footer_right_skip - \Gm@rmargin }
   }
 \DeclareInstance { footer } { std } { xbeamer } { }
 %    \end{macrocode}

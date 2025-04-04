@@ -319,17 +319,10 @@
   {
     \noindent
     \kern_horizontal:n { -\Gm@lmargin }
-    \group_begin:
-      \tl_if_empty:NF \l_@@_header_bg_tl
-        {
-          \color_select:V \l_@@_header_bg_tl
-          \rule:nnn
-            { \paperwidth }
-            { \l_@@_header_ht_dim - \headsep }
-            { \headsep }
-          \kern_horizontal:n { -\paperwidth }
-        }
-    \group_end:
+    \@@_wallpaper_hrule:Nnn
+      \l_@@_header_bg_tl
+      { \l_@@_header_ht_dim - \headsep }
+      { \headsep }
     \kern_horizontal:n { \l_@@_header_left_skip }
     \group_begin:
       \tl_if_empty:NF \l_@@_header_fg_tl
@@ -381,17 +374,10 @@
   {
     \noindent
     \kern_horizontal:n { -\Gm@lmargin }
-    \tl_if_empty:NF \l_@@_footer_bg_tl
-      {
-        \group_begin:
-          \color_select:V \l_@@_footer_bg_tl
-          \rule:nnn
-            { \paperwidth }
-            { \footskip }
-            { \Gm@bmargin - \footskip }
-          \kern_horizontal:n { -\paperwidth }
-        \group_end:
-      }
+    \@@_wallpaper_hrule:Nnn
+      \l_@@_footer_bg_tl
+      { \footskip }
+      { \Gm@bmargin - \footskip }
     \kern_horizontal:n { \l_@@_footer_left_skip }
     \vbox:nn
       {
@@ -419,6 +405,23 @@
 \DeclareInstance { footer } { std } { xbeamer } { }
 %    \end{macrocode}
 % \end{variable}
+%
+% \begin{macro}{\@@_wallpaper_hrule:Nnn}
+%   A simple abstraction for the top and bottom rules on the page.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_wallpaper_hrule:Nnn #1#2#3
+  {
+    \tl_if_empty:NF #1
+      {
+        \group_begin:
+          \color_select:V #1
+          \rule:nnn { \paperwidth } {#2} {#3}
+          \kern_horizontal:n { -\paperwidth }
+        \group_end:
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
 %
 % \begin{macro}{\ps@xbeamer, \ps@plain}
 %   Install a standard header and footer template, and redefine the

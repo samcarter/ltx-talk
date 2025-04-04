@@ -284,12 +284,13 @@
 % \end{variable}
 %
 % \begin{variable}
-%   {
-%     \l_@@_header_bg_tl      ,
-%     \l_@@_header_fg_tl      ,
-%     \l_@@_header_font_tl    ,
-%     \l_@@_header_ht_dim     ,
-%     \l_@@_header_left_skip  ,
+%    {
+%     \l_@@_header_bg_tl           ,
+%     \l_@@_header_fg_tl           , 
+%     \l_@@_header_font_tl         ,
+%     \l_@@_header_ht_dim          ,
+%     \l_@@_header_left_skip       ,
+%     \l_@@_header_frametitle_bool ,
 %     \l_@@_header_right_skip 
 %   }
 %   Templates for the header area. The background always covers the full width,
@@ -300,21 +301,23 @@
 \NewTemplateType { header } { 0 }
 \DeclareTemplateInterface { header } { xbeamer } { 0 }
   {
-    background-color : tokenlist,
-    color            : tokenlist ,
-    font             : tokenlist = \normalfont ,
-    height           : length = \Gm@tmargin + \headsep ,
-    left-skip        : length = \Gm@lmargin ,
-    right-skip       : length = \Gm@rmargin
+    background-color  : tokenlist,
+    color             : tokenlist ,
+    font              : tokenlist = \normalfont ,
+    height            : length = \Gm@tmargin + \headsep ,
+    left-skip         : length = \Gm@lmargin ,
+    print-frame-title : boolean = true ,
+    right-skip        : length = \Gm@rmargin
   }
 \DeclareTemplateCode { header } { xbeamer } { 0 }
   {
-    background-color = \l_@@_header_bg_tl ,
-    color            = \l_@@_header_fg_tl ,
-    font             = \l_@@_header_font_tl ,
-    height           = \l_@@_header_ht_dim ,
-    left-skip        = \l_@@_header_left_skip ,
-    right-skip       = \l_@@_header_right_skip
+    background-color  = \l_@@_header_bg_tl ,
+    color             = \l_@@_header_fg_tl ,
+    font              = \l_@@_header_font_tl ,
+    height            = \l_@@_header_ht_dim ,
+    left-skip         = \l_@@_header_left_skip ,
+    print-frame-title = \l_@@_header_frametitle_bool ,
+    right-skip        = \l_@@_header_right_skip
   }
   {
     \noindent
@@ -327,10 +330,17 @@
       \tl_if_empty:NF \l_@@_header_fg_tl
         { \color_select:V \l_@@_header_fg_tl }
       \l_@@_header_font_tl
-      \@@_slide_title:
+      \bool_if:NT \l_@@_header_frametitle_bool
+        { \@@_slide_title: }
     \group_end:
   }
 \DeclareInstance { header } { std } { xbeamer } { }
+\AddToHook { begindocument }
+  {
+    \DeclareInstanceCopy { header } { wallpaper } { std }
+    \EditInstance { header } { wallpaper }
+      { print-frame-title = false }
+  }
 %    \end{macrocode}
 % \end{variable}
 % \begin{variable}
@@ -401,6 +411,12 @@
     \kern_horizontal:n { \l_@@_footer_right_skip - \Gm@rmargin }
   }
 \DeclareInstance { footer } { std } { xbeamer } { }
+\AddToHook { begindocument }
+  {
+    \DeclareInstanceCopy { footer } { wallpaper } { std }
+    \EditInstance { footer } { wallpaper }
+      { element-order = }
+  }
 %    \end{macrocode}
 % \end{variable}
 %
@@ -422,11 +438,40 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\ps@xbeamer, \ps@plain}
+% \begin{macro}{\ps@plain, \ps@wallpaper, \ps@xbeamer}
 %   Install a standard header and footer template, and redefine the
 %   \texttt{plain} one as this will be used for frames without
-%   \enquote{wallpaper} which still need core links, etc.
+%   \enquote{wallpaper} which still need core links, etc. We also provide
+%   a version that only shows the visual elements: this is deliberately
+%   using the same settings as the main templates.
 %    \begin{macrocode}
+\cs_set_nopar:Npn \ps@plain
+  {
+    \cs_set_nopar:Npn \@oddhead
+      {
+        \@@_slide_link:
+        \hfil
+      }
+    \cs_set_nopar:Npn \@oddfoot { }
+    \cs_set_eq:NN \@evenhead \@oddhead
+    \cs_set_eq:NN \@evenfoot \@oddfoot
+  }
+\cs_set_nopar:Npn \ps@wallpaper
+  {
+    \cs_set_nopar:Npn \@oddhead
+      {
+        \@@_slide_link:
+        \UseInstance { header } { wallpaper }
+        \hfil
+      }
+    \cs_set_nopar:Npn \@oddfoot
+      {
+        \UseInstance { header } { wallpaper }
+        \hfil
+      }
+    \cs_set_eq:NN \@evenhead \@oddhead
+    \cs_set_eq:NN \@evenfoot \@oddfoot
+  }
 \cs_new_nopar:Npn \ps@xbeamer
   {
     \cs_set_nopar:Npn \@oddhead
@@ -436,17 +481,6 @@
         \hfil
       }
     \cs_set_nopar:Npn \@oddfoot { \UseInstance { footer } { std } }
-    \cs_set_eq:NN \@evenhead \@oddhead
-    \cs_set_eq:NN \@evenfoot \@oddfoot
-  }
-\cs_set_nopar:Npn \ps@plain
-  {
-    \cs_set_nopar:Npn \@oddhead
-      {
-        \@@_slide_link:
-        \hfil
-      }
-    \cs_set_nopar:Npn \@oddfoot { }
     \cs_set_eq:NN \@evenhead \@oddhead
     \cs_set_eq:NN \@evenfoot \@oddfoot
   }

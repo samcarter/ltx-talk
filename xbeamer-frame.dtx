@@ -318,7 +318,6 @@
   }
   {
     \noindent
-    \kern_horizontal:n { -\Gm@lmargin }
     \@@_wallpaper_hrule:Nnn
       \l_@@_header_bg_tl
       { \l_@@_header_ht_dim - \headsep }
@@ -373,7 +372,6 @@
   }
   {
     \noindent
-    \kern_horizontal:n { -\Gm@lmargin }
     \@@_wallpaper_hrule:Nnn
       \l_@@_footer_bg_tl
       { \footskip }
@@ -411,6 +409,7 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_wallpaper_hrule:Nnn #1#2#3
   {
+    \kern_horizontal:n { -\Gm@lmargin }
     \tl_if_empty:NF #1
       {
         \group_begin:

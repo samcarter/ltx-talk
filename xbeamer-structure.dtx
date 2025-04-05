@@ -176,18 +176,36 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_insert_frametitle:}
-%   Will become a template in due course.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_insert_frametitle:
+\NewTemplateType { frametitle } { 1 }
+\DeclareTemplateInterface { frametitle } { xbeamer } { 1 }
   {
-    \normalfont \Large \bfseries
-    \g_@@_frame_title_tl \hfil
-    \par
-    \bigskip
+    after-skip  : length = \bigskipamount ,
+    before-skip : length = 0em ,
+    color       : tokenlist = ,
+    font        : tokenlist = \Large \bfseries
   }
+\DeclareTemplateCode { frametitle } { xbeamer } { 1 }
+  {
+    after-skip  = \l_@@_frametitle_after_skip ,
+    before-skip = \l_@@_frametitle_before_skip ,
+    color       = \l_@@_frametitle_color_tl ,
+    font        = \l_@@_frametitle_font_tl
+  }
+  {
+    \noindent
+    \vspace { \l_@@_frametitle_before_skip }
+    \group_begin:
+      \tl_if_empty:NF \l_@@_frametitle_color_tl
+        { \color_select:V \l_@@_frametitle_color_tl }
+      \l_@@_frametitle_font_tl
+      #1
+      \par
+    \group_end:
+    \vspace { \l_@@_frametitle_after_skip }
+  }
+\DeclareInstance { frametitle } { header } { xbeamer } { }
 %    \end{macrocode}
-% \end{macro}
 %
 % \begin{environment}{description, quote, quotation, verse}
 %   Stub logical environments: needed as the tagging setup expects these

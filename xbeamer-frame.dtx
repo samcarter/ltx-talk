@@ -331,7 +331,11 @@
         { \color_select:V \l_@@_header_fg_tl }
       \l_@@_header_font_tl
       \bool_if:NT \l_@@_header_frametitle_bool
-        { \@@_slide_title: }
+        {
+          \ExpandArgs { nnV }
+            \UseInstance { frametitle } { header }
+              \g_@@_frame_title_tl
+        }
     \group_end:
   }
 \DeclareInstance { header } { std } { xbeamer } { }

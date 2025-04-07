@@ -165,12 +165,11 @@
   {
       \tl_use:N \g_@@_onslide_tl
     \vbox_set_end:
-    \vbox_set_to_ht:Nnn \l_@@_slide_box { \textheight }
+    \vbox_to_ht:nn { \textheight }
       {
         \use:c { @@_valign_ \l_@@_frame_alignment_tl :n }
           { \vbox_unpack_drop:N \l_@@_slide_box }
       }
-    \box_use_drop:N \l_@@_slide_box
     \tag_struct_end:
     \clearpage
   }

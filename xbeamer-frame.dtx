@@ -391,7 +391,7 @@
       { \footskip }
       { \Gm@bmargin - \footskip }
     \kern_horizontal:n { \l_@@_footer_left_skip }
-    \vbox:nn
+    \vbox_set_to_wd:Nnn \l_@@_tmp_box
       {
           \paperwidth
         - \l_@@_footer_left_skip
@@ -412,6 +412,7 @@
               }
           }
       }
+    \box_use_drop:N \l_@@_tmp_box
     \kern_horizontal:n { \l_@@_footer_right_skip - \Gm@rmargin }
   }
 \DeclareInstance { footer } { std } { xbeamer } { }

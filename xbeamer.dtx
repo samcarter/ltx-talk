@@ -85,10 +85,15 @@
 %
 % Like \cs{vcoffin_set:Nnn}, so should be an easy enough addition.
 %    \begin{macrocode}
-\cs_gset_protected:Npn \vbox_set:Nnn #1#2#3
-  { \vbox_set:Nn #1 { \dim_set:Nn \tex_hsize:D {#2} #3 } }
-\cs_gset_protected:Npn \vbox:nn #1#2
-  { \vbox:n { \dim_set:Nn \tex_hsize:D {#1} #2 } }
+\cs_gset_protected:Npn \vbox_set_to_wd:Nnn #1#2#3
+  {
+    \tex_setbox:D #1 \tex_vbox:D
+      {
+        \tex_hsize:D \__box_dim_eval:n {#2}
+        \color_group_begin: #3 \par \color_group_end:
+      }
+    \box_dp:N #1 \__box_dim_eval:n {#2}
+  }
 %    \end{macrocode}
 %
 % Some things from \pkg{xbox} that would be useful.

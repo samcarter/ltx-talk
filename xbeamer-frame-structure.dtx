@@ -79,9 +79,10 @@
 %   \url{https://github.com/latex3/tagging-project/issues/54}. That contrasts
 %   with \pkg{beamer}: may need to revisit later.
 %    \begin{macrocode}
-\NewDocumentEnvironment { columns } { D <> { all } }
+\NewDocumentEnvironment { columns } { D <> { all } O { } }
   {
     \noindent
+    \keys_set:nn { xbeamer / column } {#2}
     \hbox_set_to_wd:Nnw \l_@@_tmp_box { \textwidth }
       \ignorespaces
   }

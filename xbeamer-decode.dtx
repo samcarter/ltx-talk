@@ -220,7 +220,7 @@
       {
         \str_set:Nn \l_@@_decode_action_str {#1}
         \tl_if_blank:nF {#2}
-          { \@@_decode_overlays:n {#1} }
+          { \@@_decode_overlays:n {#2} }
       }
       {
         \msg_error:nnV { xbeamer } { bad-overlay-spec }

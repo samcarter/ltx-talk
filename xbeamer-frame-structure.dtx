@@ -131,8 +131,9 @@
     \vbox_to_ht:nn { \textheight }
       {
         \use:c { @@_valign_ \l_@@_column_alignment_tl :n }
-          { \vbox_unpack_drop:N \l_@@_tmp_box }
+          { \box_use_drop:N \l_@@_tmp_box }
       }
+    \hfil
     \@ignoretrue
   }
 %    \end{macrocode}

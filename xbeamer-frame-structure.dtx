@@ -116,12 +116,7 @@
 \NewDocumentEnvironment { column } { D <> { all } O { } m }
   {
     \keys_set:nn { xbeamer / column } {#2}
-    \use:e
-      {
-        \exp_not:N \begin { minipage }
-          [ \tl_head:N \l_@@_column_alignment_tl ]
-      }
-        {#3}
+    \vbox_set_to_wd:Nnw \l_@@_tmp_box {#3}
       \leavevmode
       \raggedright
       \ignorespaces
@@ -131,7 +126,12 @@
 %   suppressed by a \tn{ignorespaces} inserted by the kernel.
 %    \begin{macrocode}
   {
-    \end { minipage }
+    \vbox_set_end:
+    \vbox_to_ht:nn { \textheight }
+      {
+        \use:c { @@_valign_ \l_@@_column_alignment_tl :n }
+          { \vbox_unpack_drop:N \l_@@_tmp_box }
+      }
     \@ignoretrue
   }
 %    \end{macrocode}

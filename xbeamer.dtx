@@ -94,6 +94,16 @@
       }
     \box_dp:N #1 \__box_dim_eval:n {#2}
   }
+\cs_gset_protected:Npn \vbox_set_to_wd:Nnw #1#2
+  {
+    \cs_set_protected:Npn \__box_set_to_wd:
+      { \box_wd:N #1 \__box_dim_eval:n {#2} }
+    \tex_setbox:D #1 \tex_vbox:D
+      \c_group_begin_token
+        \tex_hsize:D \__box_dim_eval:n {#2}
+        \group_insert_after:N \__box_set_to_wd:
+        \color_group_begin:
+  }
 %    \end{macrocode}
 %
 % Some things from \pkg{xbox} that would be useful.

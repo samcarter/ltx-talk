@@ -205,9 +205,16 @@
 % \begin{macro}{\@@_decode_action:n}
 % \begin{macro}{\@@_decode_action:w}
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_decode_action:n #1
-  { \@@_decode_action:w #1 @ @ \q_@@_stop }
-\cs_new_protected:Npn \@@_decode_action:w #1 @ #2 @ #3 \q_@@_stop
+\cs_new_protected:Npe \@@_decode_action:n #1
+  {
+    \exp_not:N \@@_decode_action:w
+      #1 \tl_to_str:n { @ @ } \exp_not:N \q_@@_stop
+  }
+\use:e
+  {
+    \cs_new_protected:Npn \exp_not:N \@@_decode_action:w
+      #1 \tl_to_str:n { @ } #2 \tl_to_str:n { @ } #3 \exp_not:N \q_@@_stop
+  }
   {
     \clist_if_in:NnTF \c_@@_actions_clist {#1}
       {

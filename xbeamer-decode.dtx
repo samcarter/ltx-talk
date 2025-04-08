@@ -120,6 +120,14 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\l_@@_decode_actions_bool, \l_@@_decode_actions_str}
+%   For the actions versions of overlay tracking.
+%    \begin{macrocode}
+\bool_new:N \l_@@_decode_actions_bool
+\str_new:N \l_@@_decode_actions_str
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{macro}{\@@_decode_parse:n, \@@_decode_parse_aux:n}
 % \begin{macro}{\@@_decode_parse:w}
 %   First a simple check for an entirely blank argument: if that's the case,
@@ -130,13 +138,15 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_parse:n #1
   {
+    \str_clear:N \l_@@_decode_action_str
     \tl_if_blank:nTF {#1}
       { \bool_set_true:N \l_@@_decode_overlays_bool }
       {
-        \bool_set_false:N \l_@@_decode_overlays_bool
         \str_set:Nn \l_@@_decode_arg_str {#1}
+        \bool_set_false:N \l_@@_decode_actions_bool
+        \bool_set_false:N \l_@@_decode_overlays_bool
         \str_clear:N \l_@@_decode_overlays_str
-        \str_clear:N \l_@@_decode_action_str
+        \str_clear:N \l_@@_decode_actions_str
         \exp_args:No \@@_decode_parse_aux:n { \l_@@_decode_arg_str }
       }
   }

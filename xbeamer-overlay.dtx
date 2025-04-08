@@ -227,6 +227,22 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \subsection{Actions}
+%
+% \begin{macro}{\alert}
+%   We will likely want more flexibility here: for the moment, hard-code
+%   something.
+%    \begin{macrocode}
+\NewDocumentCommand \alert { D <> { all } +m }
+  {
+    \@@_overlay:nTF {#1}
+      { \textcolor { red } }
+      { \textcolor { . } }
+        {#2}
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 % \subsection{Adding overlays to existing commands}
 %
 % \begin{macro}

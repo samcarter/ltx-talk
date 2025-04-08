@@ -73,11 +73,11 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
-% \begin{variable}{\l_@@_decode_result_bool}
+% \begin{variable}{\l_@@_decode_overlays_bool}
 %   The result from decoding: are we on the current slide. This may well be
 %   better handled by moving to a |TF| signature: to be explored.
 %    \begin{macrocode}
-\bool_new:N \l_@@_decode_result_bool
+\bool_new:N \l_@@_decode_overlays_bool
 %    \end{macrocode}
 % \end{variable}
 %
@@ -130,9 +130,9 @@
 \cs_new_protected:Npn \@@_decode_parse:n #1
   {
     \tl_if_blank:nTF {#1}
-      { \bool_set_true:N \l_@@_decode_result_bool }
+      { \bool_set_true:N \l_@@_decode_overlays_bool }
       {
-        \bool_set_false:N \l_@@_decode_result_bool
+        \bool_set_false:N \l_@@_decode_overlays_bool
         \str_set:Nn \l_@@_decode_arg_str {#1}
         \str_clear:N \l_@@_decode_overlays_str
         \str_clear:N \l_@@_decode_action_str
@@ -180,13 +180,13 @@
             { \str_if_eq_p:Vn \l_@@_mode_str {#1} }
             { \str_if_eq_p:Vn \l_@@_mode_str { all } }
           }
-          { \bool_set_true:N \l_@@_decode_result_bool }
-          { \bool_set_false:N \l_@@_decode_result_bool }
+          { \bool_set_true:N \l_@@_decode_overlays_bool }
+          { \bool_set_false:N \l_@@_decode_overlays_bool }
       }
       {
         \str_if_eq:VnTF \l_@@_mode_str { projector }
           { \@@_decode_action:n {#1} }
-          { \bool_set_true:N \l_@@_decode_result_bool }
+          { \bool_set_true:N \l_@@_decode_overlays_bool }
       }
   }
 %    \end{macrocode}
@@ -340,7 +340,7 @@
   {
     \clist_set:NV \l_@@_decode_overlays_clist \l_@@_decode_overlays_str
     \clist_if_in:NnTF \l_@@_decode_overlays_clist { * }
-      { \bool_set_true:N \l_@@_decode_result_bool }
+      { \bool_set_true:N \l_@@_decode_overlays_bool }
       {
         \clist_map_inline:Nn \l_@@_decode_overlays_clist
           { \@@_decode_check:w 0 ##1 - - \q_stop }
@@ -366,7 +366,7 @@
   {
     \int_compare:nNnTF \g_@@_slide_int = {#1}
       {
-        \bool_set_true:N \l_@@_decode_result_bool
+        \bool_set_true:N \l_@@_decode_overlays_bool
         \clist_map_break:
       }
       {
@@ -385,7 +385,7 @@
         \int_compare:nNnTF \g_@@_slide_int < {#1}
           { \bool_gset_true:N \g_@@_slide_continue_bool }
           {
-            \bool_set_true:N \l_@@_decode_result_bool
+            \bool_set_true:N \l_@@_decode_overlays_bool
             \bool_lazy_and:nnT
               { \int_compare_p:nNn \g_@@_slide_int < {#2} }
               { \int_compare_p:nNn {#2} < \c_max_int }

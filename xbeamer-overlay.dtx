@@ -85,7 +85,7 @@
 \prg_new_protected_conditional:Npnn \@@_overlay:n #1 { T , F , TF }
   {
     \@@_decode_parse:n {#1}
-    \bool_if:NTF \l_@@_decode_result_bool
+    \bool_if:NTF \l_@@_decode_overlays_bool
       \prg_return_true:
       \prg_return_false:
   }

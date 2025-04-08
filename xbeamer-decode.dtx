@@ -135,6 +135,7 @@
         \bool_set_false:N \l_@@_decode_result_bool
         \str_set:Nn \l_@@_decode_arg_str {#1}
         \str_clear:N \l_@@_decode_overlays_str
+        \str_clear:N \l_@@_decode_action_str
         \exp_args:No \@@_decode_parse_aux:n { \l_@@_decode_arg_str }
       }
   }
@@ -166,8 +167,8 @@
 % \end{variable}
 %
 % \begin{macro}{\@@_decode_mode:n}
-%   Check if the mode is known and current. At present, we only consider
-%   overlays for presentations.
+%   Check if the mode is known and current. At present, we only carry out
+%   further parsing for projector mode.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_mode:n #1
   {
@@ -184,7 +185,7 @@
       }
       {
         \str_if_eq:VnTF \l_@@_mode_str { projector }
-          { \@@_decode_overlays:n {#1} }
+          { \@@_decode_action:n {#1} }
           { \bool_set_true:N \l_@@_decode_result_bool }
       }
   }
@@ -204,6 +205,9 @@
 %
 % \begin{macro}{\@@_decode_action:n}
 % \begin{macro}{\@@_decode_action:w}
+%   Here, we have two valid possibilities: no action specification at all, or
+%   or from the known list. If we don't find one of those outcomes, we can
+%   issue an error.
 %    \begin{macrocode}
 \cs_new_protected:Npe \@@_decode_action:n #1
   {
@@ -216,15 +220,19 @@
       #1 \tl_to_str:n { @ } #2 \tl_to_str:n { @ } #3 \exp_not:N \q_@@_stop
   }
   {
-    \clist_if_in:NnTF \c_@@_actions_clist {#1}
+    \tl_if_blank:nTF {#2}
+      { \@@_decode_overlays:n {#1} }
       {
-        \str_set:Nn \l_@@_decode_action_str {#1}
-        \tl_if_blank:nF {#2}
-          { \@@_decode_overlays:n {#2} }
-      }
-      {
-        \msg_error:nnV { xbeamer } { bad-overlay-spec }
-          \l_@@_decode_arg_str
+        \clist_if_in:NnTF \c_@@_actions_clist {#1}
+          {
+            \str_set:Nn \l_@@_decode_action_str {#1}
+            \tl_if_blank:nF {#2}
+              { \@@_decode_overlays:n {#2} }
+          }
+          {
+            \msg_error:nnV { xbeamer } { bad-overlay-spec }
+              \l_@@_decode_arg_str
+           }
       }
   }
 %    \end{macrocode}

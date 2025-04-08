@@ -163,7 +163,7 @@
     \tl_if_blank:nTF {#2}
       { \@@_decode_mode:n {#1} }
       {
-        \@@_decode_overlays:n {#1}
+        \@@_decode_overlays:nn { overlays } {#1}
         \@@_decode_action:n {#2}
       }
   }
@@ -238,13 +238,13 @@
   }
   {
     \tl_if_blank:nTF {#2}
-      { \@@_decode_overlays:n {#1} }
+      { \@@_decode_overlays:nn { overlays } {#1} }
       {
         \clist_if_in:NnTF \c_@@_actions_clist {#1}
           {
             \str_set:Nn \l_@@_decode_action_str {#1}
             \tl_if_blank:nF {#2}
-              { \@@_decode_overlays:n {#2} }
+              { \@@_decode_overlays:nn { actions } {#2} }
           }
           {
             \msg_error:nnV { xbeamer } { bad-overlay-spec }
@@ -256,41 +256,42 @@
 % \end{macro}
 % \end{macro}
 %
-% \begin{macro}{\@@_decode_overlays:n}
-% \begin{macro}{\@@_decode_overlays:N}
-% \begin{macro}{\@_decode_overlay_+:w, \@@_decode_overlay_.:w}
-% \begin{macro}{\@@_decode_overlay_aux:NN}
-% \begin{macro}{\@@_decode_overlay_offset:NnN}
-% \begin{macro}{\@@_decode_overlay_offset:Nn}
+% \begin{macro}{\@@_decode_overlays:nn}
+% \begin{macro}{\@@_decode_overlays:nN}
+% \begin{macro}{\@_decode_overlay_+:nw, \@@_decode_overlay_.:nw}
+% \begin{macro}{\@@_decode_overlay_aux:nNN}
+% \begin{macro}{\@@_decode_overlay_offset:nNnN}
+% \begin{macro}{\@@_decode_overlay_offset:nNn}
 %   The loop here needs to replace all |+| and |.| characters by the current
 %   automatic value, allowing for any offsets. This step also needs to track
 %   whether to increment the automatic value: true if a |+| is seen, false
 %   otherwise.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_decode_overlays:n #1
+\cs_new_protected:Npn \@@_decode_overlays:nn #1#2
   {
     \bool_set_false:N \l_@@_decode_step_bool
-    \@@_decode_overlays:N #1 \q_recursion_tail \q_recursion_stop
+    \@@_decode_overlays:nN {#1} #2 \q_recursion_tail \q_recursion_stop
     \bool_if:NT \l_@@_decode_step_bool
       { \int_gincr:N \g_@@_pauses_int }
-    \@@_decode_check:
+    \@@_decode_check:n {#1}
   }
-\cs_new_protected:Npn \@@_decode_overlays:N #1
+\cs_new_protected:Npn \@@_decode_overlays:nN #1#2
   {
-    \quark_if_recursion_tail_stop:N #1
-    \cs_if_exist_use:cF { @@_decode_overlay_ #1 :w }
+    \quark_if_recursion_tail_stop:N #2
+    \cs_if_exist_use:cF { @@_decode_overlay_ #2 :nw }
       {
-        \str_put_right:Nn \l_@@_decode_overlays_str {#1}
-        \@@_decode_overlays:N
+        \str_put_right:cn { l_@@_decode_ #1 _str } {#2}
+        \@@_decode_overlays:nN
       }
+        {#1}
   }
-\cs_new_protected:cpn { @@_decode_overlay_+:w }
+\cs_new_protected:cpn { @@_decode_overlay_+:nw } #1
   {
     \bool_set_true:N \l_@@_decode_step_bool
-    \@@_decode_overlay_aux:NN 0
+    \@@_decode_overlay_aux:nNN {#1} 0
   }
-\cs_new_protected:cpn { @@_decode_overlay_.:w }
-  { \@@_decode_overlay_aux:NN 1 }
+\cs_new_protected:cpn { @@_decode_overlay_.:nw } #1 
+  { \@@_decode_overlay_aux:nNN {#1} 1 }
 %    \end{macrocode}
 %   The look-ahead for an offset to a relative specification. If the
 %   end-of-loop is reached, the value still needs to be inserted: to
@@ -298,41 +299,41 @@
 %   so the end-of-loop markers are re-inserted. Otherwise, there is a check
 %   to see if the next token is a |(|.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_decode_overlay_aux:NN #1#2
+\cs_new_protected:Npn \@@_decode_overlay_aux:nNN #1#2#3
   {
-    \quark_if_recursion_tail_stop_do:Nn #2
+    \quark_if_recursion_tail_stop_do:Nn #3
       {
-        \@@_decode_overlay_offset:Nn #1 { 0 }
+        \@@_decode_overlay_offset:nNn {#1} #2 { 0 }
         \q_recursion_tail \q_recursion_stop
       }
-    \token_if_eq_meaning:NNTF #2 ( % )
-      { \@@_decode_overlay_offset:NnN #1 { } }
-      { \@@_decode_overlay_offset:Nn #1 { 0 } #2 }
+    \token_if_eq_meaning:NNTF #3 ( % )
+      { \@@_decode_overlay_offset:nNnN {#1} #2 { } }
+      { \@@_decode_overlay_offset:nNn {#1} #2 { 0 } #3 }
   }
 %    \end{macrocode}
 %   For the end of an offset, any valid overlay specification must have a
 %   closing |)|, so this time the end-of-loop case is an error. Otherwise
 %   simply collect up tokens until the closing |)| is found.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_decode_overlay_offset:NnN #1#2#3
+\cs_new_protected:Npn \@@_decode_overlay_offset:nNnN #1#2#3#4
   {
-    \quark_if_recursion_tail_stop_do:Nn #3
+    \quark_if_recursion_tail_stop_do:Nn #4
       {
         \msg_error:nnV { xbeamer } { bad-overlay-spec }
           \l_@@_decode_arg_str
       } % (
-    \token_if_eq_meaning:NNTF #3 )
-      { \@@_decode_overlay_offset:Nn #1 {#2} }
-      { \@@_decode_overlay_offset:NnN #1 {#2#3} }
+    \token_if_eq_meaning:NNTF #4 )
+      { \@@_decode_overlay_offset:nNn {#1} #2 {#3} }
+      { \@@_decode_overlay_offset:nNnN {#1} #2 {#3#4} }
   }
 %    \end{macrocode}
 %   Overlay values can never be negative: this is enforced here.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_decode_overlay_offset:Nn #1#2
+\cs_new_protected:Npn \@@_decode_overlay_offset:nNn #1#2#3
   {
-    \str_put_right:Ne \l_@@_decode_overlays_str
-      { \int_max:nn { 0 } { #2 + \g_@@_pauses_int - #1 } }
-    \@@_decode_overlays:N
+    \str_put_right:ce { l_@@_decode_ #1 _str }
+      { \int_max:nn { 0 } { #3 + \g_@@_pauses_int - #2 } }
+    \@@_decode_overlays:nN {#1}
   }
 %    \end{macrocode}
 % \end{macro}
@@ -342,10 +343,10 @@
 % \end{macro}
 % \end{macro}
 %
-% \begin{macro}{\@@_decode_check:}
-% \begin{macro}{\@@_decode_check:w}
-% \begin{macro}{\@@_decode_check_single:n}
-% \begin{macro}{\@@_decode_check_range:nn}
+% \begin{macro}{\@@_decode_check:n}
+% \begin{macro}{\@@_decode_check:nw}
+% \begin{macro}{\@@_decode_check_single:nn}
+% \begin{macro}{\@@_decode_check_range:nnn}
 %   At this stage we have a fully \enquote{written out} overlay specification,
 %   and need to work out if the current slide is included. We need to look at
 %   each entry in the comma-separated list to sort this out. First we filter
@@ -353,14 +354,14 @@
 %   entry is a single number or a range, and if the latter, whether it's
 %   open at either the start or the end.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_decode_check:
+\cs_new_protected:Npn \@@_decode_check:n #1 
   {
-    \clist_set:NV \l_@@_decode_overlays_clist \l_@@_decode_overlays_str
-    \clist_if_in:NnTF \l_@@_decode_overlays_clist { * }
-      { \bool_set_true:N \l_@@_decode_overlays_bool }
+    \clist_set:cv { l_@@_decode_ #1 _clist } { l_@@_decode_ #1 _str }
+    \clist_if_in:cnTF { l_@@_decode_ #1 _clist } { * }
+      { \bool_set_true:c { l_@@_decode_ #1 _bool } }
       {
-        \clist_map_inline:Nn \l_@@_decode_overlays_clist
-          { \@@_decode_check:w 0 ##1 - - \q_stop }
+        \clist_map_inline:cn { l_@@_decode_ #1 _clist }
+          { \@@_decode_check:nw {#1} 0 ##1 - - \q_stop }
       }
   }
 %    \end{macrocode}
@@ -369,43 +370,43 @@
 %   that there will be starting value in all cases, but there may not be an
 %   end one.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_decode_check:w #1 - #2 - #3 \q_stop
+\cs_new_protected:Npn \@@_decode_check:nw #1#2 - #3 - #4 \q_stop
   {
-    \tl_if_blank:nTF {#3}
-      { \@@_decode_check_single:n {#1} }
+    \tl_if_blank:nTF {#4}
+      { \@@_decode_check_single:nn {#1} {#2} }
       {
-        \tl_if_blank:nTF {#2}
-          { \@@_decode_check_range:nn {#1} { \c_max_int } }
-          { \@@_decode_check_range:nn {#1} {#2} }
+        \tl_if_blank:nTF {#3}
+          { \@@_decode_check_range:nnn {#1} {#2} { \c_max_int } }
+          { \@@_decode_check_range:nnn {#1} {#2} {#3} }
       }
   }
-\cs_set_protected:Npn \@@_decode_check_single:n #1
+\cs_set_protected:Npn \@@_decode_check_single:nn #1#2
   {
-    \int_compare:nNnTF \g_@@_slide_int = {#1}
+    \int_compare:nNnTF \g_@@_slide_int = {#2}
       {
-        \bool_set_true:N \l_@@_decode_overlays_bool
+        \bool_set_true:c { l_@@_decode_ #1 _bool }
         \clist_map_break:
       }
       {
-        \int_compare:nNnT {#1} > \g_@@_slide_int
+        \int_compare:nNnT {#2} > \g_@@_slide_int
           { \bool_gset_true:N \g_@@_slide_continue_bool }
       }
   }
 %    \end{macrocode}
 %   TODO: In the following we might want to add a check whether the range was
-%   given with |#1| being smaller than |#2|, to be decided upon.
+%   given with |#2| being smaller than |#3|, to be decided upon.
 %    \begin{macrocode}
-\cs_set_protected:Npn \@@_decode_check_range:nn #1#2
+\cs_set_protected:Npn \@@_decode_check_range:nnn #1#2#3
   {
-    \int_compare:nNnF \g_@@_slide_int > {#2}
+    \int_compare:nNnF \g_@@_slide_int > {#3}
       {
-        \int_compare:nNnTF \g_@@_slide_int < {#1}
+        \int_compare:nNnTF \g_@@_slide_int < {#2}
           { \bool_gset_true:N \g_@@_slide_continue_bool }
           {
-            \bool_set_true:N \l_@@_decode_overlays_bool
+            \bool_set_true:c { l_@@_decode_ #1 _bool }
             \bool_lazy_and:nnT
-              { \int_compare_p:nNn \g_@@_slide_int < {#2} }
-              { \int_compare_p:nNn {#2} < \c_max_int }
+              { \int_compare_p:nNn \g_@@_slide_int < {#3} }
+              { \int_compare_p:nNn {#3} < \c_max_int }
               { \bool_gset_true:N \g_@@_slide_continue_bool }
             \clist_map_break:
           }

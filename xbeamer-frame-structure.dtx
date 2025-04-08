@@ -99,7 +99,7 @@
 \keys_define:nn { xbeamer / column }
   {
     vertical-alignment .choices:nn =
-      { bottom , center , stretch , top }
+      { bottom , center , top }
       {
         \tl_set_eq:NN \l_@@_column_alignment_tl
           \l_keys_value_tl
@@ -111,6 +111,35 @@
   }
 %    \end{macrocode}
 % \end{variable}
+%
+% \begin{macro}
+%   {
+%     \@@_column_align_bottom:n  ,
+%     \@@_column_align_center:n  ,
+%     \@@_column_align_top:n
+%   }
+%   A pretty standard abstraction: we make sure there are always two skips.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_column_align_bottom:n #1
+  {
+    \skip_vertical:n { 0pt~plus~1fil }
+    #1
+    \skip_vertical:n { 0pt }
+  }
+\cs_new_protected:Npn \@@_column_align_center:n #1
+  {
+    \skip_vertical:n { 0pt~plus~0.5fil }
+    #1
+    \skip_vertical:n { 0pt~plus~0.5fil }
+  }
+\cs_new_protected:Npn \@@_column_align_top:n #1
+  {
+    \skip_vertical:n { 0pt }
+    #1
+    \skip_vertical:n { 0pt~plus~1fil }
+  }
+%    \end{macrocode}
+% \end{macro}
 %
 % \begin{environment}{column}
 %    \begin{macrocode}
@@ -130,7 +159,7 @@
     \vbox_set_end:
     \vbox_to_ht:nn { \textheight }
       {
-        \use:c { @@_valign_ \l_@@_column_alignment_tl :n }
+        \use:c { @@_column_align_ \l_@@_column_alignment_tl :n }
           { \box_use_drop:N \l_@@_tmp_box }
       }
     \hfil

@@ -230,6 +230,70 @@
 % \end{environment}
 % \end{macro}
 %
+% \begin{variable}
+%   {
+%     \l_@@_saved_overlays_bool ,
+%     \l_@@_saved_action_str    ,
+%     \l_@@_saved_actions_bool
+%   }
+%    \begin{macrocode}
+\bool_new:N \l_@@_saved_overlays_bool
+\str_new:N \l_@@_saved_action_str
+\bool_new:N \l_@@_saved_actions_bool
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\action}
+% \begin{environment}{actionenv}
+%   As we need data on not just overlays but also actions at the end of the
+%   environment, this has to be done manually.
+%    \begin{macrocode}
+\NewDocumentCommand \action { D <> { all } +m }
+  {
+    \@@_overlay:nTF {#1}
+      {
+        \bool_if:NTF \l_@@_decode_actions_bool
+          {
+            \use:c { @@_action_ \l_@@_decode_action_str _begin: }
+            #2
+            \use:c { @@_action_ \l_@@_decode_action_str _end: }
+          }
+          {#2}
+      }
+      {
+        \@@_action_uncover_begin:
+        #2
+        \@@_action_uncover_end:
+      }
+  }
+\NewDocumentEnvironment { actionenv } { D <> { all } }
+  {
+    \@@_decode_parse:n {#1}
+    \bool_set_eq:NN \l_@@_saved_overlays_bool
+      \l_@@_decode_overlays_bool
+    \str_set_eq:NN \l_@@_saved_action_str
+      \l_@@_decode_action_str
+    \bool_set_eq:NN \l_@@_saved_actions_bool
+      \l_@@_decode_actions_bool
+    \bool_if:NTF \l_@@_decode_overlays_bool
+      {
+        \bool_if:NT \l_@@_decode_actions_bool
+          { \use:c { @@_action_ \l_@@_decode_action_str _begin: } }
+      }
+      { \@@_action_uncover_begin: }
+  }
+  {
+    \bool_if:NTF \l_@@_saved_overlays_bool
+      {
+        \bool_if:NT \l_@@_saved_actions_bool
+          { \use:c { @@_action_ \l_@@_saved_action_str _end: } }
+      }
+      { \@@_action_uncover_end: }
+  }
+%    \end{macrocode}
+% \end{environment}
+% \end{macro}
+%
 % \subsection{Non-action commands and environments}
 %
 % This section contains commands and environments that do \emph{not}

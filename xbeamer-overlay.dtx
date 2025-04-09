@@ -133,9 +133,9 @@
 %   Simply hide unconditionally.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_action_invisible_begin:
-  { \draw_hidden_begin: }
+  { \opacity_select:n { 0 } }
 \cs_new_protected:Npn \@@_action_invisible_end:
-  { \draw_hidden_end: }
+  { \opacity_select:n { 1 } }
 \cs_new_eq:NN \@@_action_visible_begin: \@@_action_invisible_begin:
 \cs_new_eq:NN \@@_action_visible_end: \@@_action_invisible_end:
 %    \end{macrocode}
@@ -156,9 +156,9 @@
 %   Currently the same as making things invisible, but that will change.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_action_uncover_begin:
-  { \draw_hidden_begin: }
+  { \opacity_select:n { 0 } }
 \cs_new_protected:Npn \@@_action_uncover_end:
-  { \draw_hidden_end: }
+  { \opacity_select:n { 1 } }
 %    \end{macrocode}
 % \end{macro}
 %

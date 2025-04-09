@@ -104,7 +104,130 @@
 % \end{macro}
 % \end{macro}
 %
-% \subsection{Overlay commands and environments}
+% \subsection{Action commands and environments}
+%
+% Commands that can be used as actions all have a common form (with one
+% exception). The common internal structure is used to enable them to be used
+% as actions by looking for the name
+% \cs[no-index]{@@_action_\meta{name}_begin:}. There are two forms: opt-in and
+% opt-out
+%
+% \begin{macro}{\@@_action_alert_begin:, \@@_action_alert_end:}
+%   Currently a rather simple approach!
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_action_alert_begin:
+  {
+    \group_begin:
+      \color_select:n { red }
+  }
+\cs_new_protected:Npn \@@_action_alert_end:
+  { \group_end: }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}
+%   {
+%     \@@_action_invisible_begin:, \@@_action_invisible_end:,
+%     \@@_action_visible_begin:,   \@@_action_visible_end:
+%   }
+%   Simply hide unconditionally.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_action_invisible_begin:
+  { \draw_hidden_begin: }
+\cs_new_protected:Npn \@@_action_invisible_end:
+  { \draw_hidden_end: }
+\cs_new_eq:NN \@@_action_visible_begin: \@@_action_invisible_begin:
+\cs_new_eq:NN \@@_action_visible_end: \@@_action_invisible_end:
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_action_only_begin:, \@@_action_only_end:}
+%   Here, we simply throw away the content we do not want: this is done by
+%   typesetting in a disposable box.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_action_only_begin:
+  { \vbox_set:Nw \l_@@_tmp_box }
+\cs_new_protected:Npn \@@_action_only_end:
+  { \vbox_set_end: }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_action_uncover_begin:, \@@_action_uncover_end:}
+%   Currently the same as making things invisible, but that will change.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_action_uncover_begin:
+  { \draw_hidden_begin: }
+\cs_new_protected:Npn \@@_action_uncover_end:
+  { \draw_hidden_end: }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\only, \uncover, \visible}
+% \begin{environment}{onlyenv, uncoverenv, visibleenv}
+%   Commands and environments where the payload applies when the material is
+%   not active on the slide.
+%    \begin{macrocode}
+\clist_map_inline:nn { only , uncover , visible }
+  {
+    \ExpandArgs { cne } \NewDocumentCommand {#1} { D <> { all } +m }
+      {
+        \exp_not:N \@@_overlay:nTF {##1}
+          {##2}
+          {
+            \exp_not:c { @@_action_ #1 _begin: }
+            ##2
+            \exp_not:c { @@_action_ #1 _end: }
+          }
+      }
+    \ExpandArgs { nnee } \NewDocumentEnvironment { #1 env }
+      { > { \@@_overlay_arg:n } D <> { all } }
+      {
+        \exp_not:N \bool_if:NF ##1
+          { \exp_not:c { @@_action_ #1 _begin: } }
+      }
+      {
+        \exp_not:N \bool_if:NF ##1
+          { \exp_not:c { @@_action_ #1 _end: } }
+      }
+  }
+%    \end{macrocode}
+% \end{environment}
+% \end{macro}
+% \begin{macro}{\alert, \invisible}
+% \begin{environment}{alertenv, invisibleenv}
+%   And those where the action applies when we are on the slide.
+%    \begin{macrocode}
+\clist_map_inline:nn { alert , invisible }
+  {
+    \ExpandArgs { cne } \NewDocumentCommand {#1} { D <> { all } +m }
+      {
+        \exp_not:N \@@_overlay:nTF {##1}
+          {
+            \exp_not:c { @@_action_ #1 _begin: }
+            ##2
+            \exp_not:c { @@_action_ #1 _end: }
+          }
+          {##2}
+      }
+    \ExpandArgs { nnee } \NewDocumentEnvironment { #1 env }
+      { > { \@@_overlay_arg:n } D <> { all } }
+      {
+        \exp_not:N \bool_if:TF ##1
+          { \exp_not:c { @@_action_ #1 _begin: } }
+      }
+      {
+        \exp_not:N \bool_if:TF ##1
+          { \exp_not:c { @@_action_ #1 _end: } }
+      }
+  }
+%    \end{macrocode}
+% \end{environment}
+% \end{macro}
+%
+% \subsection{Non-action commands and environments}
+%
+% This section contains commands and environments that do \emph{not}
+% need to be made available as actions.
 %
 % \begin{macro}{\alt}
 %   Simple wrappers around the internal switch.
@@ -117,30 +240,6 @@
   }
 %    \end{macrocode}
 % \end{macro}
-%
-% \begin{macro}{\only}
-%   And again.
-%    \begin{macrocode}
-\NewDocumentCommand \only { D <> { all } +m }
-  {
-    \@@_overlay:nT {#1}
-      {#2}
-  }
-%    \end{macrocode}
-% \end{macro}
-% \begin{environment}{onlyenv}
-%    \begin{macrocode}
-\NewDocumentEnvironment { onlyenv } { > { \@@_overlay_arg:n } D <> { all } }
-  {
-    \bool_if:NF #1
-      { \vbox_set:Nw \l_@@_tmp_box }
-  }
-  {
-    \bool_if:NF #1
-      { \vbox_set_end: }
-  }
-%    \end{macrocode}
-% \end{environment}
 %
 % \begin{macro}{\onslide}
 % \begin{macro}{\@@_onslide:n}
@@ -168,36 +267,6 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{macro}{\uncover}
-%   Almost certainly we will need to add an operation into the true branches
-%   here to keep spacing correct.
-%    \begin{macrocode}
-\NewDocumentCommand \uncover { D <> { all } +m }
-  {
-    \@@_overlay:nTF {#1}
-      {#2}
-      {
-        \draw_hidden_begin:
-        #2
-        \draw_hidden_end:
-      }
-  }
-%    \end{macrocode}
-% \end{macro}
-% \begin{environment}{uncoverenv}
-%    \begin{macrocode}
-\NewDocumentEnvironment { uncoverenv } { > { \@@_overlay_arg:n } D <> { all } }
-  {
-    \bool_if:NF #1
-      { \draw_hidden_begin: }
-  }
-  {
-    \bool_if:NF #1
-      { \draw_hidden_end: }
-  }
-%    \end{macrocode}
-% \end{environment}
-%
 % \begin{macro}{\temporal}
 %   A tricky one: to separate the not-on-current-slide cases, the flag to
 %   continue is used.
@@ -224,22 +293,6 @@
       { \int_gincr:N \g_@@_pauses_int }
       { \int_gset:Nn \g_@@_pauses_int {#1} }
     \exp_args:Ne \@@_onslide:n { \int_use:N \g_@@_pauses_int - }
-  }
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsection{Actions}
-%
-% \begin{macro}{\alert}
-%   We will likely want more flexibility here: for the moment, hard-code
-%   something.
-%    \begin{macrocode}
-\NewDocumentCommand \alert { D <> { all } +m }
-  {
-    \@@_overlay:nTF {#1}
-      { \textcolor { red } }
-      { \textcolor { . } }
-        {#2}
   }
 %    \end{macrocode}
 % \end{macro}

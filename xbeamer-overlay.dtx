@@ -218,11 +218,11 @@
     \ExpandArgs { nnee } \NewDocumentEnvironment { #1 env }
       { > { \@@_overlay_arg:n } D <> { all } }
       {
-        \exp_not:N \bool_if:TF ##1
+        \exp_not:N \bool_if:NF ##1
           { \exp_not:c { @@_action_ #1 _begin: } }
       }
       {
-        \exp_not:N \bool_if:TF ##1
+        \exp_not:N \bool_if:NF ##1
           { \exp_not:c { @@_action_ #1 _end: } }
       }
   }

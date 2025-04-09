@@ -209,17 +209,6 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{variable}{\c_@@_actions_clist}
-%    \begin{macrocode}
-\clist_const:Ne \c_@@_actions_clist
-  {
-    \tl_to_str:n { alert }     ,
-    \tl_to_str:n { invisible } ,
-    \tl_to_str:n { uncover }
-  }
-%    \end{macrocode}
-% \end{variable}
-%
 % \begin{macro}{\@@_decode_action:n}
 % \begin{macro}{\@@_decode_action:w}
 %   Here, we have two valid possibilities: no action specification at all, or
@@ -240,7 +229,7 @@
     \tl_if_blank:nTF {#2}
       { \@@_decode_overlays:nn { overlays } {#1} }
       {
-        \clist_if_in:NnTF \c_@@_actions_clist {#1}
+        \cs_if_exist:cTF { @@_action_ #1 _begin: }
           {
             \str_set:Nn \l_@@_decode_action_str {#1}
             \tl_if_blank:nF {#2}

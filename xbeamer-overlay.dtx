@@ -168,12 +168,12 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\only, \uncover, \visible}
-% \begin{environment}{onlyenv, uncoverenv, visibleenv}
+% \begin{macro}{\only, \invisible, \uncover}
+% \begin{environment}{onlyenv, invisibleenv, uncoverenv}
 %   Commands and environments where the payload applies when the material is
 %   not active on the slide.
 %    \begin{macrocode}
-\clist_map_inline:nn { only , uncover , visible }
+\clist_map_inline:nn { only , invisible , uncover }
   {
     \ExpandArgs { cne } \NewDocumentCommand {#1} { D <> { all } +m }
       {
@@ -199,11 +199,11 @@
 %    \end{macrocode}
 % \end{environment}
 % \end{macro}
-% \begin{macro}{\alert, \invisible}
-% \begin{environment}{alertenv, invisibleenv}
+% \begin{macro}{\alert, \visible}
+% \begin{environment}{alertenv, visibleenv}
 %   And those where the action applies when we are on the slide.
 %    \begin{macrocode}
-\clist_map_inline:nn { alert , invisible }
+\clist_map_inline:nn { alert , visible }
   {
     \ExpandArgs { cne } \NewDocumentCommand {#1} { D <> { all } +m }
       {

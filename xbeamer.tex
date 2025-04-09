@@ -142,10 +142,10 @@ differently, almost everything is still subject to discussion.
 \section{Simple example documents}
 
 Currently, \pkg{xbeamer} \emph{absolutely requires} the use of the
-\cs{DocumentMetadata} command \emph{and} the \texttt{testphase} code for new
-document structures. As such, the most basic \pkg{xbeamer} document is
+\cs{DocumentMetadata} command \emph{and} the a setting for the \texttt{tagging}
+key. As such, the most basic \pkg{xbeamer} document is
 \begin{verbatim}
-  \DocumentMetadata{testphase = latest}
+  \DocumentMetadata{tagging = on} % or "tagging = off"
   \documentclass{xbeamer}
   \begin{document}
   \begin{frame}

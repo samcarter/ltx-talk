@@ -334,6 +334,7 @@
 %
 % \begin{macro}{\onslide}
 % \begin{macro}{\@@_onslide:n}
+% \begin{macro}{\@@_onslide_reset:}
 %   Simply make transparent: we will likely need to save the original
 %   opacity level. To allow us to apply independent of group level, a little
 %   work is needed.
@@ -344,7 +345,7 @@
   {
     \tl_use:N \g_@@_onslide_tl
     \@@_overlay:nTF {#1}
-      { \tl_gclear:N \g_@@_onslide_tl }
+      { \group_insert_after:N \@@_onslide_reset: }
       {
         \opacity_select:n { 0 }
         \tl_gset:Nn \g_@@_onslide_escape_tl
@@ -355,12 +356,15 @@
         \group_insert_after:N \g_@@_onslide_escape_tl
         \tl_gset:Nn \g_@@_onslide_tl
           {
+            \tl_gclear:N \g_@@_onslide_tl
             \tl_gclear:N \g_@@_onslide_escape_tl
-            \opacity_select:n { 1 }
+            \@@_onslide_reset:
           }
       }
   }
+\cs_new_protected:Npn \@@_onslide_reset: { \opacity_select:n { 1 } }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 % \end{macro}
 % \begin{variable}{\g_@@_onslide_tl, \g_@@_onslide_escape_tl}

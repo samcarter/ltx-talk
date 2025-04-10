@@ -110,7 +110,26 @@
 % exception). The common internal structure is used to enable them to be used
 % as actions by looking for the name
 % \cs[no-index]{@@_action_\meta{name}_begin:}. There are two forms: opt-in and
-% opt-out
+% opt-out: to deal with that we use named conditionals.
+%
+% \begin{macro}
+%   {
+%     \@@_if_action_alert:Nn      ,
+%     \@@_if_action_visible:Nn    ,
+%     \@@_if_action_only:Nn       ,
+%     \@@_if_action_uncover:Nn    ,
+%     \@@_if_action_inivisible:Nn
+%   }
+%   To allow for flipping logic, the payload argument here may be opt-in or
+%   opt-out.
+%    \begin{macrocode}
+\cs_new_eq:NN \@@_if_action_alert:Nn \bool_if:NT
+\cs_new_eq:NN \@@_if_action_invisible:Nn \bool_if:NT
+\cs_new_eq:NN \@@_if_action_only:Nn \bool_if:NF
+\cs_new_eq:NN \@@_if_action_uncover:Nn \bool_if:NF
+\cs_new_eq:NN \@@_if_action_visible:Nn \bool_if:NF
+%    \end{macrocode}
+% \end{macro}
 %
 % \begin{macro}{\@@_action_alert_begin:, \@@_action_alert_end:}
 %   Currently a rather simple approach!
@@ -246,13 +265,15 @@
 % \begin{macro}{\action}
 % \begin{environment}{actionenv}
 %   As we need data on not just overlays but also actions at the end of the
-%   environment, this has to be done manually.
+%   environment, this has to be done manually. For the environment version,
+%   the various pieces of data therefore need to be saved.
 %    \begin{macrocode}
 \NewDocumentCommand \action { D <> { all } +m }
   {
     \@@_overlay:nTF {#1}
       {
-        \bool_if:NTF \l_@@_decode_actions_bool
+        \use:c { @@_if_action_ \l_@@_decode_action_str :Nn }
+          \l_@@_decode_actions_bool 
           {
             \use:c { @@_action_ \l_@@_decode_action_str _begin: }
             #2
@@ -277,7 +298,8 @@
       \l_@@_decode_actions_bool
     \bool_if:NTF \l_@@_decode_overlays_bool
       {
-        \bool_if:NT \l_@@_decode_actions_bool
+        \use:c { @@_if_action_ \l_@@_decode_action_str :Nn }
+          \l_@@_decode_actions_bool 
           { \use:c { @@_action_ \l_@@_decode_action_str _begin: } }
       }
       { \@@_action_uncover_begin: }
@@ -285,7 +307,8 @@
   {
     \bool_if:NTF \l_@@_saved_overlays_bool
       {
-        \bool_if:NT \l_@@_saved_actions_bool
+        \use:c { @@_if_action_ \l_@@_saved_action_str :Nn }
+          \l_@@_saved_actions_bool 
           { \use:c { @@_action_ \l_@@_saved_action_str _end: } }
       }
       { \@@_action_uncover_end: }

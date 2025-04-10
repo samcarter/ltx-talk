@@ -8,7 +8,7 @@ module = "xbeamer"
 packtdszip = true
 
 -- Typeset .tex files
-typesetfiles = {"*.tex"}
+typesetfiles = {"*.tex", "examples/*.tex"}
 
 -- Detail how to set the tag automatically
 tagfiles = {"CHANGELOG.md", "*.dtx", "*.tex"}

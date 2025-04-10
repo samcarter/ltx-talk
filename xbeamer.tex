@@ -330,7 +330,205 @@ the command \cs{onslide}, see below.
 
 \subsection{The general concept of overlay specifications}
 
-\subsection{Commands with overlay specifications}
+Whilst the \cs{pause} command is easy to understand, it is quite limited and so
+is best suited only to simple cases. The \pkg{xbeamer} class therefore supports
+a different approach. The idea is to add \emph{overlay specifications} to
+commands. These specifications are always given in pointed brackets and follow
+the command as the first argument. In the simplest case, the specification
+contains just a number. A command with an overlay specification following it
+will only have \enquote{effect} on the slide(s) mentioned in the specification.
+What exactly \enquote{having an effect} means, depends on the command. Consider
+the following example.
+\begin{verbatim}
+  \begin{frame}
+    \textbf{This line is bold on all three slides.}
+    \textbf<2>{This line is bold only on the second slide.}
+    \textbf<3>{This line is bold only on the third slide.}
+  \end{frame}
+\end{verbatim}
+
+For the command \cs{textbf}, the overlay specification causes the text to be
+set in boldface only on the specified slides. On all other slides, the text is
+set in a normal font.
+
+For a second example, consider the following frame:
+\begin{verbatim}
+  \begin{frame}
+    \only<1>{This line is inserted only on slide 1.}
+    \only<2>{This line is inserted only on slide 2.}
+  \end{frame}
+\end{verbatim}
+
+The command \cs{only} normally simply inserts its parameter into the current
+frame. However, if an overlay specification is present, it \enquote{throws
+away} its parameter on slides that are not mentioned.
+
+Overlay specifications can only be written behind certain commands, not every
+command. Which commands you can use and which effects this will have is
+explained in the next section. However, it is quite easy to redefine an
+existing command such that it becomes \enquote{overlay specification aware},
+see also Section~\ref{sec:overlay-cmds}.
+
+The syntax of (basic) overlay specifications is the following: they are
+comma-separated lists of slides and ranges. Ranges are specified like this:
+|2-5|, which means slide two through to five. The start or the end of a range
+can be omitted. For example, |3-| means \enquote{slides three, four, five, and
+so on} and |-5| means the same as |1-5|. A complicated example is
+|-3,6-8,10,12-15|, which selects the slides 1, 2, 3, 6, 7, 8, 10, 12, 13, 14
+and~15.
+
+\subsection{Commands with overlay specifications%
+  \label{sec:overlay-cmds}}
+
+For the following commands, adding an overlay specification causes the command
+to be simply ignored on slides that are not included in the specification:
+\cs{textbf}, \cs{textit}, \cs{textmd}, \cs{textnormal}, \cs{textrm},
+\cs{textsc}, \cs{textsf}, \cs{textsl}, \cs{texttt}, \cs{textup}, \cs{emph};
+\cs{color}, \cs{textcolor}; \cs{alert}, \cs{structure}. If a command takes
+several arguments, like \cs{color}, the specification should directly follow
+the command as in the following example:
+\begin{verbatim}
+  \begin{frame}
+    \color<2-3>[rgb]{1,0,0} This text is red on slides 2 and 3, otherwise
+      black.
+  \end{frame}
+\end{verbatim}
+
+For the following commands, the effect of an overlay specification is special:
+
+\DescribeMacro{\onslide}
+\begin{syntax}
+  \cs{onslide}\sarg{overlay spec}
+\end{syntax}
+All text following this command will only be shown (uncovered) on the specified slides. 
+On non-specified slides, the text still occupies space. If no slides are specified, the 
+following text is always shown. You need not call this command in the same \TeX{} group, 
+its effect transcends block groups.
+\begin{verbatim}
+  \begin{frame}
+    Shown on first slide.
+    \onslide<2-3>
+    Shown on second and third slide.
+    \begin{itemize}
+    \item
+      Still shown on the second and third slide.
+    \onslide+<4->
+    \item
+      Shown from slide 4 on.
+    \end{itemize}
+    Shown from slide 4 on.
+    \onslide
+    Shown on all slides.
+  \end{frame}
+\end{verbatim}
+
+\DescribeMacro{\only}
+\begin{syntax}
+  \cs{only}\sarg{overlay spec}\marg{text}
+\end{syntax}
+Tthe \meta{text} is inserted only into the specified slides. For other slides, 
+the text is simply thrown away. In particular, it occupies no space.
+\begin{verbatim}
+  \only<3->{Text inserted from slide 3 on.}
+\end{verbatim}
+
+\DescribeMacro{\uncover}
+\begin{syntax}
+  \cs{uncover}\sarg{overlay spec}\marg{text}
+\end{syntax}
+If the \meta{overlay spec} is present, the \meta{text} is shown
+(\enquote{uncovered}) only on the specified slides. On other slides, the text
+still occupies space and it is still typeset, but it is not shown or only shown
+as if transparent. For details on how to specify whether the text is invisible
+or just transparent see Section~\ref{sec:opacity}.
+\begin{verbatim}
+  \uncover<3->{Text shown from slide 3 on.}
+\end{verbatim}
+
+\DescribeMacro{\visible}
+\begin{syntax}
+  \cs{visible}\sarg{overlay spec}\marg{text}
+\end{syntax}
+This command does almost the same as \cs{uncover}. The only difference is that
+if the text is not shown, it is never shown in a transparent way, but rather it
+is not shown at all. Thus, for this command the transparency settings have no
+effect.
+\begin{verbatim}
+  \visible<2->{Text shown from slide 2 on.}
+\end{verbatim}
+
+\DescribeMacro{\invisible}
+\begin{syntax}
+  \cs{invisible}\sarg{overlay spec}\marg{text}
+\end{syntax}
+This command does the opposite of \cs{visible}.
+\begin{verbatim}
+  \invisible<2->{Text hidden from slide 2 on.}
+\end{verbatim}
+
+\DescribeMacro{\alt}
+\begin{syntax}
+  \cs{alt}\sarg{overlay spec}\marg{default text}\marg{alternative text}
+\end{syntax}
+The default text is shown on the specified slides, otherwise the alternative
+text.
+\begin{verbatim}
+  \alt<2>{On Slide 2}{Not on slide 2.}
+\end{verbatim}
+
+\DescribeMacro{\temporal}
+\begin{syntax}
+  \cs{temporal}\sarg{overlay spec}\marg{before slide text}\marg{default text}%
+    \marg{after slide text}
+\end{syntax}
+This command alternates between three different texts, depending on whether the
+current slide is temporally before the specified slides, is one of the
+specified slides, or comes after them. If the \meta{overlay spec} is not an
+interval (that is, if it has a \enquote{hole}), the \enquote{hole} is
+considered to be part of the before slides.
+\begin{verbatim}
+  \temporal<3-4>{Shown on 1, 2}{Shown on 3, 4}{Shown 5, 6, 7, ...}
+  \temporal<3,5>{Shown on 1, 2, 4}{Shown on 3, 5}{Shown 6, 7, 8, ...}
+\end{verbatim}
+As a possible application of the \cs{temporal} command consider the following example:
+\begin{verbatim}
+  \NewDocumentCommand\colorize{D<>{all}{%
+    \temporal<#1>{\color{red!50}}{\color{black}}{\color{black!50}}}
+  \begin{frame}
+    \begin{itemize}
+      \colorize<1> \item First item.
+      \colorize<2> \item Second item.
+      \colorize<3> \item Third item.
+      \colorize<4> \item Fourth item.
+    \end{itemize}
+  \end{frame}
+\end{verbatim}
+
+\DescribeMacro{\item}
+\begin{syntax}
+  \cs{item}\sarg{action spec}\oarg{item label}
+\end{syntax}
+The effect of \meta{action spec} is described in Section~\ref{sec:action-spec};
+this extends the \meta{overlay spec} to include the potential to
+\enquote{alert} items.
+\begin{verbatim}
+  \begin{frame}
+    \begin{itemize}
+    \item<1-> First point, shown on all slides.
+    \item<2-> Second point, shown on slide 2 and later.
+    \item<2-> Third point, also shown on slide 2 and later.
+    \item<3-> Fourth point, shown on slide 3.
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+    \begin{enumerate}
+    \item<3-| alert@3>[0.] A zeroth point, shown at the very end.
+    \item<1-| alert@1> The first and main point.
+    \item<2-| alert@2> The second point.
+    \end{enumerate}
+  \end{frame}
+\end{verbatim}
 
 \subsection{Environments with overlay specifications}
 

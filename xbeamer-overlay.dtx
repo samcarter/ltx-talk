@@ -334,7 +334,8 @@
 %
 % \begin{macro}{\onslide}
 % \begin{macro}{\@@_onslide:n}
-%   Simply make transparent.
+%   Simply make transparent: we will likely need to save the original
+%   opacity level.
 %    \begin{macrocode}
 \NewDocumentCommand \onslide { D <> { all } }
   { \@@_onslide:n {#1} }
@@ -344,9 +345,8 @@
     \@@_overlay:nTF {#1}
       { \tl_gclear:N \g_@@_onslide_tl }
       {
-        \group_begin:
-          \opacity_select:n { 0 }
-          \tl_gset:Nn \g_@@_onslide_tl { \group_end: }
+        \opacity_select:n { 0 }
+        \tl_gset:Nn \g_@@_onslide_tl { \opacity_select:n { 1 } }
       }
   }
 %    \end{macrocode}

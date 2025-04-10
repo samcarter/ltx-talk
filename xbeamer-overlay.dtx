@@ -194,7 +194,6 @@
 % \end{macro}
 %
 % \begin{macro}{\only, \invisible, \uncover}
-% \begin{environment}{onlyenv, invisibleenv, uncoverenv}
 %   Commands and environments where the payload applies when the material is
 %   not active on the slide.
 %    \begin{macrocode}
@@ -210,6 +209,10 @@
             \exp_not:c { @@_action_ #1 _end: }
           }
       }
+%    \end{macrocode}
+% \end{macro}
+% \begin{environment}{onlyenv, invisibleenv, uncoverenv}
+%    \begin{macrocode}
     \ExpandArgs { nnee } \NewDocumentEnvironment { #1 env }
       { > { \@@_overlay_arg:n } D <> { all } }
       {
@@ -223,9 +226,7 @@
   }
 %    \end{macrocode}
 % \end{environment}
-% \end{macro}
 % \begin{macro}{\alert, \visible}
-% \begin{environment}{alertenv, visibleenv}
 %   And those where the action applies when we are on the slide.
 %    \begin{macrocode}
 \clist_map_inline:nn { alert , visible }
@@ -240,6 +241,10 @@
           }
           {##2}
       }
+%    \end{macrocode}
+% \end{macro}
+% \begin{environment}{alertenv, visibleenv}
+%    \begin{macrocode}
     \ExpandArgs { nnee } \NewDocumentEnvironment { #1 env }
       { > { \@@_overlay_arg:n } D <> { all } }
       {
@@ -253,7 +258,6 @@
   }
 %    \end{macrocode}
 % \end{environment}
-% \end{macro}
 %
 % \begin{variable}
 %   {

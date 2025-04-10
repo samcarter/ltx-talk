@@ -334,8 +334,7 @@
 %
 % \begin{macro}{\onslide}
 % \begin{macro}{\@@_onslide:n}
-%   As with \cs{uncover}, we likely need something for spacing in the visible
-%   branch.
+%   Simply make transparent.
 %    \begin{macrocode}
 \NewDocumentCommand \onslide { D <> { all } }
   { \@@_onslide:n {#1} }
@@ -345,8 +344,9 @@
     \@@_overlay:nTF {#1}
       { \tl_gclear:N \g_@@_onslide_tl }
       {
-        \draw_hidden_begin:
-        \tl_gset:Nn \g_@@_onslide_tl { \draw_hidden_end: }
+        \group_begin:
+          \opacity_select:n { 0 }
+          \tl_gset:Nn \g_@@_onslide_tl { \group_end: }
       }
   }
 %    \end{macrocode}

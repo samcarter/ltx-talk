@@ -335,7 +335,8 @@
 % \begin{macro}{\onslide}
 % \begin{macro}{\@@_onslide:n}
 %   Simply make transparent: we will likely need to save the original
-%   opacity level.
+%   opacity level. To allow us to apply independent of group level, a little
+%   work is needed.
 %    \begin{macrocode}
 \NewDocumentCommand \onslide { D <> { all } }
   { \@@_onslide:n {#1} }
@@ -346,15 +347,26 @@
       { \tl_gclear:N \g_@@_onslide_tl }
       {
         \opacity_select:n { 0 }
-        \tl_gset:Nn \g_@@_onslide_tl { \opacity_select:n { 1 } }
+        \tl_gset:Nn \g_@@_onslide_escape_tl
+          {
+            \opacity_select:n { 0 }
+            \group_insert_after:N \g_@@_onslide_escape_tl
+          }
+        \group_insert_after:N \g_@@_onslide_escape_tl
+        \tl_gset:Nn \g_@@_onslide_tl
+          {
+            \tl_gclear:N \g_@@_onslide_escape_tl
+            \opacity_select:n { 1 }
+          }
       }
   }
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}
-% \begin{variable}{\g_@@_onslide_tl}
+% \begin{variable}{\g_@@_onslide_tl, \g_@@_onslide_escape_tl}
 %    \begin{macrocode}
 \tl_new:N \g_@@_onslide_tl
+\tl_new:N \g_@@_onslide_escape_tl
 %    \end{macrocode}
 % \end{variable}
 %

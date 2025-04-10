@@ -8,6 +8,7 @@ module = "xbeamer"
 packtdszip = true
 
 -- Typeset .tex files
+typesetexe = "lualatex-dev"
 typesetfiles = {"*.tex", "examples/*.tex"}
 
 -- Detail how to set the tag automatically

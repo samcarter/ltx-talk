@@ -50,6 +50,9 @@ for those people who are interested.
 \NewDocumentCommand\email{m}{\href{mailto:#1}{\nolinkurl{#1}}}
 \NewDocumentCommand\foreign{m}{\textit{#1}}
 \NewDocumentCommand\opt{m}{\texttt{#1}}
+\ExplSyntaxOn
+\NewDocumentCommand \sarg { m } { \texttt < \__codedoc_meta:n {#1} \texttt > }
+\ExplSyntaxOff
 % Tidy up the above in bookmarks
 \makeatletter
 \pdfstringdefDisableCommands{%

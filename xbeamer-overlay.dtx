@@ -293,7 +293,7 @@
       \bool_if:NTF \l_@@_decode_overlays_bool
         {
           \use:c { @@_if_action_ \l_@@_decode_action_str :Nn }
-            \l_@@_decode_actions_bool 
+            \l_@@_decode_actions_bool
             { \use:c { @@_action_ \l_@@_decode_action_str _begin: } }
         }
         { \@@_action_uncover_begin: }
@@ -303,7 +303,7 @@
       \bool_if:NTF \l_@@_saved_overlays_bool
         {
           \use:c { @@_if_action_ \l_@@_saved_action_str :Nn }
-            \l_@@_saved_actions_bool 
+            \l_@@_saved_actions_bool
             { \use:c { @@_action_ \l_@@_saved_action_str _end: } }
         }
         { \@@_action_uncover_end: }

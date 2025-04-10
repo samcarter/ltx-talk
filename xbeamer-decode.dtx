@@ -213,8 +213,9 @@
       {
         \str_if_eq:VnTF \l_@@_mode_str { projector }
           {
-            \@@_decode_overlays:nn { overlays } { * }
             \@@_decode_action:n {#1}
+            \str_if_empty:NT \l_@@_decode_overlays_str
+              { \@@_decode_overlays:nn { overlays } { * } }
           }
           { \bool_set_true:N \l_@@_decode_overlays_bool }
       }

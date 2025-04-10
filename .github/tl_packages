@@ -29,6 +29,7 @@ hyperref
 iftex
 infwarerr
 l3experimental
+latex-bin-dev
 latex-lab
 kvoptions
 newcomputermodern

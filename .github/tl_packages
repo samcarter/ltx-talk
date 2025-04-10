@@ -40,5 +40,6 @@ siunitx
 tagpdf
 tools
 underscore
+unicode-math
 # Indexing (needed to compile docs)
 makeindex

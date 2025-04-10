@@ -161,7 +161,7 @@
   { \@@_decode_parse:w #1 | | \q_@@_stop }
 \cs_new_protected:Npn \@@_decode_parse:w #1 | #2 | #3 \q_@@_stop
   {
-    \exp_args:Nee  \@@_decode_parse:nn
+    \exp_args:Nee \@@_decode_parse:nn
       { \tl_trim_spaces:n {#1} }
       { \tl_trim_spaces:n {#2} }
   }

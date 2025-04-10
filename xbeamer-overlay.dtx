@@ -129,6 +129,13 @@
 \cs_new_eq:NN \@@_if_action_visible:Nn \bool_if:NF
 %    \end{macrocode}
 % \end{macro}
+% \begin{macro}{\@@_if_action_:Nn}
+%   We also provide a version to cover the case there is no action at
+%   all: this always skips the payload.
+%    \begin{macrocode}
+\cs_new_eq:NN \@@_if_action_:Nn \use_none:nn
+%    \end{macrocode}
+% \end{macro}
 %
 % \begin{macro}{\@@_action_alert_begin:, \@@_action_alert_end:}
 %   Currently a rather simple approach!

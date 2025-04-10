@@ -136,6 +136,7 @@
 %
 % \begin{macro}{\@@_decode_parse:n, \@@_decode_parse_aux:n}
 % \begin{macro}{\@@_decode_parse:w}
+% \begin{macro}{\@@_decode_parse:nn}
 %   First a simple check for an entirely blank argument: if that's the case,
 %   there is no additional overlay to consider. Then deal with any category code
 %   issues before splitting at a \verb"|", if present. If there is, we have an
@@ -160,6 +161,12 @@
   { \@@_decode_parse:w #1 | | \q_@@_stop }
 \cs_new_protected:Npn \@@_decode_parse:w #1 | #2 | #3 \q_@@_stop
   {
+    \exp_args:Nee  \@@_decode_parse:nn
+      { \tl_trim_spaces:n {#1} }
+      { \tl_trim_spaces:n {#2} }
+  }
+\cs_new_protected:Npn \@@_decode_parse:nn #1#2
+  {
     \tl_if_blank:nTF {#2}
       { \@@_decode_mode:n {#1} }
       {
@@ -168,6 +175,7 @@
       }
   }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 % \end{macro}
 %

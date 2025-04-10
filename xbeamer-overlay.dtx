@@ -264,56 +264,55 @@
 %
 % \begin{macro}{\action}
 % \begin{environment}{actionenv}
+% \begin{macro}{\@@_action_begin:n}
+% \begin{macro}{\@@_action_end:}
 %   As we need data on not just overlays but also actions at the end of the
-%   environment, this has to be done manually. For the environment version,
-%   the various pieces of data therefore need to be saved.
+%   environment, this has to be done manually. To allow working with
+%   environments but also items, the code needs to save data for the end
+%   function. The group is needed for cases where we are not in a \LaTeX{}
+%   environment group.
 %    \begin{macrocode}
 \NewDocumentCommand \action { D <> { all } +m }
   {
-    \@@_overlay:nTF {#1}
-      {
-        \use:c { @@_if_action_ \l_@@_decode_action_str :Nn }
-          \l_@@_decode_actions_bool 
-          {
-            \use:c { @@_action_ \l_@@_decode_action_str _begin: }
-            #2
-            \use:c { @@_action_ \l_@@_decode_action_str _end: }
-          }
-          {#2}
-      }
-      {
-        \@@_action_uncover_begin:
-        #2
-        \@@_action_uncover_end:
-      }
+    \@@_action_begin:n {#1}
+    #2
+    \@@_action_end:
   }
 \NewDocumentEnvironment { actionenv } { D <> { all } }
+  { \@@_action_begin:n {#1} }
+  { \@@_action_end: }
+\cs_new_protected:Npn \@@_action_begin:n #1
   {
-    \@@_decode_parse:n {#1}
-    \bool_set_eq:NN \l_@@_saved_overlays_bool
-      \l_@@_decode_overlays_bool
-    \str_set_eq:NN \l_@@_saved_action_str
-      \l_@@_decode_action_str
-    \bool_set_eq:NN \l_@@_saved_actions_bool
-      \l_@@_decode_actions_bool
-    \bool_if:NTF \l_@@_decode_overlays_bool
-      {
-        \use:c { @@_if_action_ \l_@@_decode_action_str :Nn }
-          \l_@@_decode_actions_bool 
-          { \use:c { @@_action_ \l_@@_decode_action_str _begin: } }
-      }
-      { \@@_action_uncover_begin: }
+    \group_begin:
+      \@@_decode_parse:n {#1}
+      \bool_set_eq:NN \l_@@_saved_overlays_bool
+        \l_@@_decode_overlays_bool
+      \str_set_eq:NN \l_@@_saved_action_str
+        \l_@@_decode_action_str
+      \bool_set_eq:NN \l_@@_saved_actions_bool
+        \l_@@_decode_actions_bool
+      \bool_if:NTF \l_@@_decode_overlays_bool
+        {
+          \use:c { @@_if_action_ \l_@@_decode_action_str :Nn }
+            \l_@@_decode_actions_bool 
+            { \use:c { @@_action_ \l_@@_decode_action_str _begin: } }
+        }
+        { \@@_action_uncover_begin: }
   }
+\cs_new_protected:Npn \@@_action_end:
   {
-    \bool_if:NTF \l_@@_saved_overlays_bool
-      {
-        \use:c { @@_if_action_ \l_@@_saved_action_str :Nn }
-          \l_@@_saved_actions_bool 
-          { \use:c { @@_action_ \l_@@_saved_action_str _end: } }
-      }
-      { \@@_action_uncover_end: }
+      \bool_if:NTF \l_@@_saved_overlays_bool
+        {
+          \use:c { @@_if_action_ \l_@@_saved_action_str :Nn }
+            \l_@@_saved_actions_bool 
+            { \use:c { @@_action_ \l_@@_saved_action_str _end: } }
+        }
+        { \@@_action_uncover_end: }
+    \group_end:
   }
 %    \end{macrocode}
+% \end{macro}
+% \end{macro}
 % \end{environment}
 % \end{macro}
 %

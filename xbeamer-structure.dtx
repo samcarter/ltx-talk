@@ -286,14 +286,14 @@
   { \@@_item_parse_spec:n {#2} }
 \cs_new_protected:Npn \@@_item_parse_spec:n #1
   {
-    \@@_overlay:nF {#1}
+    \tl_if_blank:nF {#1}
       {
         \tl_gset:Nn \g_@@_list_end_tl
           {
-            \@@_action_uncover_end:
-            \tl_gclear:N \g_@@_list_end_tl
+            \@@_action_end:
+             \tl_gclear:N \g_@@_list_end_tl
           }
-        \@@_action_uncover_begin:
+        \@@_action_begin:n {#1}
       }
   }
 %    \end{macrocode}

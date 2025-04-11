@@ -180,13 +180,25 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{variable}{\l_@@_uncover_hidden_fp}
+%   Currently Just an on-off, but that will change.
+%    \begin{macrocode}
+\NewTemplateType { hidden } { 0 }
+\DeclareTemplateInterface { hidden } { xbeamer } { 0 }
+  { opacity : real = 0 }
+\DeclareTemplateCode { hidden } { xbeamer } { 0 }
+  { opacity = \l_@@_uncover_hidden_fp }
+  { \opacity_select:n { \l_@@_uncover_hidden_fp } }
+\DeclareInstance { hidden } { std } { xbeamer } { }
+%    \end{macrocode}
+% \end{variable}
 % \begin{macro}{\@@_action_uncover_begin:, \@@_action_uncover_end:}
-%   Currently the same as making things invisible, but that will change.
+%   Use the template
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_action_uncover_begin:
   {
     \group_begin:
-      \opacity_select:n { 0 }
+      \UseInstance { hidden } { std }
   }
 \cs_new_protected:Npn \@@_action_uncover_end:
   { \group_end: }

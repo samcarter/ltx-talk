@@ -110,7 +110,11 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_slide:n}
+% \begin{macro}{\@@_slide:n, \@@_slide_auxii:n, \@@_slide_auxii:n}
+%  Each slide is parsed inside simple st up, the only complexity being if we
+%  are handling fragile frames. There, aall \cs{obeyedline} in the grabbed
+%  tokens need to be turned back into |^^M| before rescanning: this ensures
+%  that any verbatim grabbing in the frame still works.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide:n #1
   {
@@ -120,11 +124,31 @@
       \bool_do_while:Nn \g_@@_slide_continue_bool
         {
           \@@_slide_begin:
-            #1
+            \@@_slide_auxi:n {#1}
           \@@_slide_end:
         }
     \group_end:
   }
+\cs_new_protected:Npn \@@_slide_auxi:n #1 {#1}
+\bool_if:NT \l_@@_fragile_bool
+  {
+    \cs_gset_protected:Npn \@@_slide_auxi:n #1
+      {
+        \@@_slide_auxii:n {#1}
+        \exp_args:NV \tl_rescan_dynamic:n \l_@@_tmp_tl
+      }
+  }
+\group_begin:
+  \char_set_catcode_other:n { `\^^M }%
+  \cs_new_protected:Npn \_@@_slide_auxii:n #1%
+    {%
+      \group_begin:%
+        \cs_set:Npn \obeyedline { ^^M }%
+        \tl_set:Ne \l_@@_tmp_tl {#1}%
+      \exp_args:NNNV \group_end:%
+      \tl_set:Nn \l_@@_tmp_tl \l_@@_tmp_tl%
+    }%
+\group_end:%
 %    \end{macrocode}
 % \end{macro}
 %
@@ -593,14 +617,38 @@
 % \end{macro}
 %
 % \begin{macro}{frame}
+%   The definitoon for the \texttt{frame} evnironment is currently dependent
+%   on whether frames may be fragile: other than that, it's quite simple.
 %    \begin{macrocode}
-\RenewDocumentEnvironment { frame } { D <> { all } O { } +b }
+\bool_if:NTF \l_@@_fragile_bool
+  { \RenewDocumentEnvironment { frame } { D <> { all } O { } c } }
+  { \RenewDocumentEnvironment { frame } { D <> { all } O { } +b } }
   {
     \keys_set:nn { xbeamer / frame } {#2}
     \@@_mode:nT {#1}
       { \@@_frame_process:n {#3} }
   }
   { }
+%    \end{macrocode}
+%  Currently, there is a limitation in \pkg{ltcmd} that only one optional
+%  argument can come before a \texttt{c}-type one. That needs to be adjusted,
+%  but for the present we can \enquote{fix} by adjusting the grabber.
+%    \begin{macrocode}
+\cs_gset_protected_nopar:Npn \frame
+  {
+    \__cmd_start_env:nnnnn { D <> { all } O { } c } { frame }
+      {
+        \__cmd_grab_D_verb_safe:w <>
+        \__cmd_grab_D_verb_safe:w []
+        \__cmd_grab_c:w
+      }
+      {
+        { \prg_do_nothing: all }
+        { \prg_do_nothing: }
+        \c_novalue_tl 
+      }
+      { }
+  }
 %    \end{macrocode}
 % \end{macro}
 %

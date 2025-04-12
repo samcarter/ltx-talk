@@ -139,16 +139,16 @@
       }
   }
 \group_begin:
-  \char_set_catcode_other:n { `\^^M }%
-  \cs_new_protected:Npn \_@@_slide_auxii:n #1%
-    {%
-      \group_begin:%
-        \cs_set:Npn \obeyedline { ^^M }%
-        \tl_set:Ne \l_@@_tmp_tl {#1}%
-      \exp_args:NNNV \group_end:%
-      \tl_set:Nn \l_@@_tmp_tl \l_@@_tmp_tl%
-    }%
-\group_end:%
+  \char_set_catcode_other:n { `\^^M } %
+  \cs_new_protected:Npn \_@@_slide_auxii:n #1 %
+    { %
+      \group_begin: %
+        \cs_set:Npn \obeyedline { ^^M  }%
+        \tl_set:Ne \l_@@_tmp_tl {#1} %
+      \exp_args:NNNV \group_end: %
+      \tl_set:Nn \l_@@_tmp_tl \l_@@_tmp_tl %
+    } %
+\group_end: %
 %    \end{macrocode}
 % \end{macro}
 %

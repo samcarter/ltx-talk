@@ -621,8 +621,8 @@
 %   on whether frames may be fragile: other than that, it's quite simple.
 %    \begin{macrocode}
 \bool_if:NTF \l_@@_fragile_bool
-  { \RenewDocumentEnvironment { frame } { D <> { all } O { } c } }
-  { \RenewDocumentEnvironment { frame } { D <> { all } O { } +b } }
+  { \RenewDocumentEnvironment { frame } { !D <> { all } !O { } c } }
+  { \RenewDocumentEnvironment { frame } { !D <> { all } !O { } +b } }
   {
     \keys_set:nn { xbeamer / frame } {#2}
     \@@_mode:nT {#1}
@@ -636,7 +636,7 @@
 %    \begin{macrocode}
 \cs_gset_protected_nopar:Npn \frame
   {
-    \__cmd_start_env:nnnnn { D <> { all } O { } c } { frame }
+    \__cmd_start_env:nnnnn { !D <> { all } !O { } c } { frame }
       {
         \__cmd_grab_D_verb_safe:w <>
         \__cmd_grab_D_verb_safe:w []

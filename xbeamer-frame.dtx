@@ -621,14 +621,34 @@
 %   on whether frames may be fragile: other than that, it's quite simple.
 %    \begin{macrocode}
 \bool_if:NTF \l_@@_fragile_bool
-  { \RenewDocumentEnvironment { frame } { !D <> { all } O { } c } }
-  { \RenewDocumentEnvironment { frame } { !D <> { all } O { } +b } }
+  { \RenewDocumentEnvironment { frame } { D <> { all } O { } c } }
+  { \RenewDocumentEnvironment { frame } { D <> { all } O { } +b } }
   {
     \keys_set:nn { xbeamer / frame } {#2}
     \@@_mode:nT {#1}
       { \@@_frame_process:n {#3} }
   }
   { }
+%    \end{macrocode}
+%  Currently, there is a limitation in \pkg{ltcmd} that only one optional
+%  argument can come before a \texttt{c}-type one. That needs to be adjusted,
+%  but for the present we can \enquote{fix} by adjusting the grabber.
+%    \begin{macrocode}
+\cs_gset_protected_nopar:Npn \frame
+  {
+    \__cmd_start_env:nnnnn { D <> { all } O { } c } { frame }
+      {
+        \__cmd_grab_D_verb_safe:w <>
+        \__cmd_grab_D_verb_safe:w []
+        \__cmd_grab_c:w
+      }
+      {
+        { \prg_do_nothing: all }
+        { \prg_do_nothing: }
+        \c_novalue_tl 
+      }
+      { }
+  }
 %    \end{macrocode}
 % \end{macro}
 %

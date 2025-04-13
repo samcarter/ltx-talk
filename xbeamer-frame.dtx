@@ -623,14 +623,18 @@
 \bool_if:NTF \l_@@_fragile_bool
   { \RenewDocumentEnvironment { frame } { !D <> { all } !O { } c } }
   { \RenewDocumentEnvironment { frame } { !D <> { all } !O { } +b } }
-  {
-    \keys_set:nn { xbeamer / frame } {#2}
-    \@@_mode:nT {#1}
-      { \@@_frame_process:n {#3} }
+    {
+      \keys_set:nn { xbeamer / frame } {#2}
+      \@@_mode:nT {#1}
+        { \@@_frame_process:n {#3} }
+     }
+     { }
 %    \end{macrocode}
 %  Until the next \texttt{dev} release of \LaTeX{}, we have to cheat a bit
 %  here.
 %    \begin{macrocode}
+\bool_if:NT \l_@@_fragile_bool
+  {
     \cs_gset_protected_nopar:Npn \frame
       {
         \__cmd_start_env:nnnnn { !D <> { all } !O { } c } { frame }
@@ -647,7 +651,6 @@
           { }
       }
   }
-  { }
 %    \end{macrocode}
 % \end{macro}
 %

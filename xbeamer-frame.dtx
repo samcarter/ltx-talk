@@ -627,27 +627,27 @@
     \keys_set:nn { xbeamer / frame } {#2}
     \@@_mode:nT {#1}
       { \@@_frame_process:n {#3} }
-  }
-  { }
 %    \end{macrocode}
 %  Until the next \texttt{dev} release of \LaTeX{}, we have to cheat a bit
 %  here.
 %    \begin{macrocode}
-\cs_gset_protected_nopar:Npn \frame
-  {
-    \__cmd_start_env:nnnnn { !D <> { all } !O { } c } { frame }
+    \cs_gset_protected_nopar:Npn \frame
       {
-        \__cmd_grab_D_verb_safe:w <>
-        \__cmd_grab_D_verb_safe:w []
-        \__cmd_grab_c:w
+        \__cmd_start_env:nnnnn { !D <> { all } !O { } c } { frame }
+          {
+            \__cmd_grab_D_verb_safe:w <>
+            \__cmd_grab_D_verb_safe:w []
+            \__cmd_grab_c:w
+          }
+          {
+            { \prg_do_nothing: all }
+            { \prg_do_nothing: }
+            \c_novalue_tl 
+          }
+          { }
       }
-      {
-        { \prg_do_nothing: all }
-        { \prg_do_nothing: }
-        \c_novalue_tl 
-      }
-      { }
   }
+  { }
 %    \end{macrocode}
 % \end{macro}
 %

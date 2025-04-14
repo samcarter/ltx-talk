@@ -270,6 +270,19 @@
   }
 %    \end{macrocode}
 % \end{environment}
+% \begin{macro}{\only}
+%   This code needs to be done manually as for the command version the content
+%   must be entirely discarded. That can't work for the environment version,
+%   which has to deal with for example single items in a list (and so cannot
+%   be collected up verbatim and must use a box).
+%    \begin{macrocode}
+\RenewDocumentCommand \only { D <> { all } +m }
+  {
+    \@@_overlay:nT {#1}
+      {#2}
+  }
+%    \end{macrocode}
+% \end{macro}
 %
 % \begin{variable}
 %   {

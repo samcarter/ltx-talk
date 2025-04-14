@@ -267,7 +267,7 @@
           { \stditem [ #2 ] }
         \IfNoValueTF {#1}
           {
-            \tl_if_empty:NF \l_@@_action_spec_tl
+            \tl_if_empty:NF \l_@@_action_spec_str
               {
                 \exp_after:wN \@@_item_parse_spec:w
                   \l_@@_action_spec_str < all > \q_stop
@@ -336,14 +336,14 @@
   }
 %    \end{macrocode}
 %
-% \begin{variable}{\l_@@_action_spec_tl}
+% \begin{variable}{\l_@@_action_spec_str}
 %   Add an overlay key to the \texttt{block} template.  Placed here, it applies
 %   \emph{before} the \cs{item} starts, so we do not have to redefine the
 %   latter to do actions up-front. This also means it can apply to whatever we
 %   want it to within a block.
 %    \begin{macrocode}
 \keys_define:nn { template / block / display  }
-  { action-spec .tl_set:N = \l_@@_action_spec_tl }
+  { action-spec .str_set:N = \l_@@_action_spec_str }
 %    \end{macrocode}
 % \end{variable}
 %

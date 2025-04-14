@@ -321,14 +321,26 @@
 %    \begin{macrocode}
 \AddToHook { begindocument / before }
   {
-    \RenewDocumentEnvironment { itemize } { = { action-spec } !O { } }
-      { \UseInstance { blockenv } { itemize } {#1} }
+    \RenewDocumentEnvironment { itemize } { = { action-spec } !o }
+      {
+        \IfNoValueTF {#1}
+          { \UseInstance { blockenv } { itemize } { } }
+          { \UseInstance { blockenv } { itemize } {#1} }
+      }
       { \endblockenv }
-    \RenewDocumentEnvironment { enumerate }{ = { action-spec } !O { } }
-      { \UseInstance { blockenv } { enumerate } {#1} }
+    \RenewDocumentEnvironment { enumerate }{ = { action-spec } !o }
+      {
+        \IfNoValueTF {#1}
+          { \UseInstance { blockenv } { enumerate } { } }
+          { \UseInstance { blockenv } { enumerate } {#1} }
+      }
       { \endblockenv }
-    \RenewDocumentEnvironment { description } { = { action-spec } !O { } }
-      { \UseInstance { blockenv } { description } {#1} }
+    \RenewDocumentEnvironment { description } { = { action-spec } !o }
+      {
+        \IfNoValueTF {#1}
+          { \UseInstance { blockenv } { description } { } }
+          { \UseInstance { blockenv } { description } {#1} }
+      }
       { \endblockenv }
   }
 %    \end{macrocode}

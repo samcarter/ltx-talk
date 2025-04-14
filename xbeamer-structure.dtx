@@ -267,7 +267,7 @@
           { \stditem [ #2 ] }
         \IfNoValueTF {#1}
           {
-            \tl_if_empty:NF \l_@@_action_spec_str
+            \str_if_empty:NF \l_@@_action_spec_str
               {
                 \exp_after:wN \@@_item_parse_spec:w
                   \l_@@_action_spec_str < all > \q_stop

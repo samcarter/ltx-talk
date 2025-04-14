@@ -250,7 +250,7 @@
               { \@@_decode_overlays:nn { actions } {#2} }
           }
           {
-            \msg_error:nnV { xbeamer } { bad-overlay-spec }
+            \msg_error:nnV { xbeamer } { bad-action-spec }
               \l_@@_decode_arg_str
            }
       }
@@ -322,7 +322,7 @@
   {
     \quark_if_recursion_tail_stop_do:Nn #4
       {
-        \msg_error:nnV { xbeamer } { bad-overlay-spec }
+        \msg_error:nnV { xbeamer } { bad-action-spec }
           \l_@@_decode_arg_str
       } % (
     \token_if_eq_meaning:NNTF #4 )
@@ -422,7 +422,7 @@
 % \end{macro}
 %
 %    \begin{macrocode}
-\msg_new:nnnn { xbeamer } { bad-overlay-spec }
+\msg_new:nnnn { xbeamer } { bad-action-spec }
   { Bad~overlay~specification~"#1". }
   {
     The~overlay~specification~given~doesn't~follow~the~pattern~described~in~

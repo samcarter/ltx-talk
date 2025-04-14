@@ -267,10 +267,10 @@
           { \stditem [ #2 ] }
         \IfNoValueTF {#1}
           {
-            \tl_if_empty:NF \l_@@_block_inner_spec_tl
+            \tl_if_empty:NF \l_@@_action_spec_tl
               {
                 \exp_after:wN \@@_item_parse_spec:w
-                  \l_@@_block_inner_spec_tl  < all > \q_stop
+                  \l_@@_action_spec_tl  < all > \q_stop
               }
           }
           { \@@_item_parse_spec:n {#1} }
@@ -324,26 +324,26 @@
 %    \begin{macrocode}
 \AddToHook { begindocument / before }
   {
-    \RenewDocumentEnvironment { itemize } { = { overlay-spec } !O { } }
+    \RenewDocumentEnvironment { itemize } { = { action-spec } !O { } }
       { \UseInstance { blockenv } { itemize } {#1} }
       { \endblockenv }
-    \RenewDocumentEnvironment { enumerate }{ = { overlay-spec } !O { } }
+    \RenewDocumentEnvironment { enumerate }{ = { action-spec } !O { } }
       { \UseInstance { blockenv } { enumerate } {#1} }
       { \endblockenv }
-    \RenewDocumentEnvironment { description } { = { overlay-spec } !O { } }
+    \RenewDocumentEnvironment { description } { = { action-spec } !O { } }
       { \UseInstance { blockenv } { description } {#1} }
       { \endblockenv }
   }
 %    \end{macrocode}
 %
-% \begin{variable}{\l_@@_block_inner_spec_tl}
+% \begin{variable}{\l_@@_action_spec_tl}
 %   Add an overlay key to the \texttt{block} template.  Placed here, it applies
 %   \emph{before} the \cs{item} starts, so we do not have to redefine the
 %   latter to do actions up-front. This also means it can apply to whatever we
 %   want it to within a block.
 %    \begin{macrocode}
 \keys_define:nn { template / block / display  }
-  { overlay-spec .tl_set:N = \l_@@_block_inner_spec_tl }
+  { action-spec .tl_set:N = \l_@@_action_spec_tl }
 %    \end{macrocode}
 % \end{variable}
 %

@@ -110,22 +110,30 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_slide:n, \@@_slide_auxii:n, \@@_slide_auxii:n}
+% \begin{macro}{\@@_slide:nn}
+% \begin{macro}{\@@_slide_auxi:n, \@@_slide_auxii:n}
 %  Each slide is parsed inside simple st up, the only complexity being if we
 %  are handling fragile frames. There, all \cs{obeyedline} in the grabbed
 %  tokens need to be turned back into |^^M| before rescanning: this ensures
-%  that any verbatim grabbing in the frame still works.
+%  that any verbatim grabbing in the frame still works. The strange business
+%  with setting the continuation boolean is needed as otherwise we get an
+%  infinite loop if there is an overlay specification for the frame itself.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_slide:n #1
+\cs_new_protected:Npn \@@_slide:nn #1#2
   {
     \group_begin:
       \int_gzero:N \g_@@_slide_int
       \RenewCommandCopy \frame \@@_latexe_frame:n
       \bool_do_while:Nn \g_@@_slide_continue_bool
         {
-          \@@_slide_begin:
-            \@@_slide_auxi:n {#1}
-          \@@_slide_end:
+          \int_gincr:N \g_@@_slide_int
+          \@@_overlay:nTF {#1}
+            {
+              \@@_slide_begin:
+                \@@_slide_auxi:n {#2}
+              \@@_slide_end:
+            }
+            { \bool_gset_false:N \g_@@_slide_continue_bool }
         }
     \group_end:
   }
@@ -151,6 +159,7 @@
 \group_end: %
 %    \end{macrocode}
 % \end{macro}
+% \end{macro}
 %
 % \begin{variable}{\c_@@_pause_init_int}
 %   A simple concept: mainly done for performance reasons.
@@ -171,7 +180,6 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_begin:
   {
-    \int_gincr:N \g_@@_slide_int
     \int_gset_eq:NN \g_@@_pauses_int \c_@@_pause_init_int
     \bool_gset_false:N \g_@@_slide_continue_bool
     \tl_gclear:N \g_@@_frame_title_tl
@@ -607,15 +615,15 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_frame_process:n}
+% \begin{macro}{\@@_frame_process:nn}
 %   Here, the frame content is received as the argument.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_frame_process:n #1
+\cs_new_protected:Npn \@@_frame_process:nn #1#2
   {
     \tag_struct_begin:n { tag = frame }
     \int_gincr:N \g_@@_frame_int
     \bool_set_true:N \l_@@_frame_bool
-    \@@_slide:n {#1}
+    \@@_slide:nn {#1} {#2}
     \tag_struct_end:
   }
 %    \end{macrocode}
@@ -636,8 +644,7 @@
   }
     {
       \keys_set:nn { xbeamer / frame } {#2}
-      \@@_mode:nT {#1}
-        { \@@_frame_process:n {#3} }
+      \@@_frame_process:nn {#1} {#3}
      }
      { }
 %    \end{macrocode}

@@ -82,6 +82,28 @@
       }
   }
 
+\TEST { Overlays~plus~actions }
+  {
+    \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
+      {
+        \int_gset:Nn \g__xbeamer_slide_int {#1}
+        \int_gset:Nn \g__xbeamer_pauses_int { 1 }
+        \__xbeamer_decode_parse:n {#2}
+        \bool_lazy_and:nnTF
+          { \l__xbeamer_decode_overlays_bool }
+          { \l__xbeamer_decode_actions_bool }
+          \prg_return_true:
+          \prg_return_false:
+      }
+    \test:nnTF { 1 } { 1-|alert@1 } \TRUE \ERROR
+    \test:nnTF { 1 } { 2-|alert@1 } \ERROR \FALSE
+    \test:nnTF { 2 } { 1-|alert@1 } \ERROR \FALSE
+    \test:nnTF { 2 } { 1-|alert@2 } \TRUE \ERROR
+    \test:nnTF { 2 } { 2-|alert@2 } \TRUE \ERROR
+    \test:nnTF { 1 } { +-|alert@+ } \ERROR \FALSE
+    \test:nnTF { 2 } { +-|alert@+ } \TRUE \ERROR
+  }
+
 \TEST { Errors }
   {
     \__xbeamer_decode_parse:n { foo@1 }

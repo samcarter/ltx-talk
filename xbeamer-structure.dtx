@@ -125,7 +125,7 @@
             \exp_not:c { l_@@_ #1 _tl }
           }
         \NewDocumentCommand \exp_not:c {#1}
-          { D <> { all } s O {##4} m }
+          { s D <> { all } O {##4} m }
           {
             \exp_not:N \refstepcounter {#1}
             \tag_tool:n { sec-start = #1 , restore-para }

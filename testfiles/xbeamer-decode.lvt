@@ -1,0 +1,36 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{xbeamer}
+
+\ExplSyntaxOn
+
+\prg_new_protected_conditional:Npnn \test_overlay:nn #1#2 { TF }
+  {
+    \int_gset:Nn \g__xbeamer_slide_int {#1}
+    \__xbeamer_decode_parse:n {#2}
+    \bool_if:NTF \l__xbeamer_decode_overlays_bool
+      \prg_return_true:
+      \prg_return_false:
+  }
+
+\START
+
+\TEST { Explicit~overlay~specs }
+  {
+    \test_overlay:nnTF { 1 } { 0 } \ERROR \FALSE
+    \test_overlay:nnTF { 1 } { 1 } \TRUE \ERROR
+    \test_overlay:nnTF { 1 } { 2 } \ERROR \FALSE
+    \test_overlay:nnTF { 2 } { 1- } \TRUE \ERROR
+    \test_overlay:nnTF { 2 } { 2- } \TRUE \ERROR
+    \test_overlay:nnTF { 2 } { 3- } \ERROR \FALSE
+    \test_overlay:nnTF { 2 } { -1 } \ERROR \FALSE
+    \test_overlay:nnTF { 2 } { -2 } \TRUE \ERROR
+    \test_overlay:nnTF { 2 } { -3 } \TRUE \ERROR
+    \test_overlay:nnTF { 1 } { 1,3 } \TRUE \ERROR
+    \test_overlay:nnTF { 2 } { 1,3 } \ERROR \FALSE
+    \test_overlay:nnTF { 3 } { 1,3 } \TRUE \ERROR
+    \test_overlay:nnTF { 4 } { 1,3 } \ERROR \FALSE
+  }
+
+\END

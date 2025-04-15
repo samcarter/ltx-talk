@@ -108,4 +108,5 @@
   {
     \__xbeamer_decode_parse:n { foo@1 }
   }
+
 \END

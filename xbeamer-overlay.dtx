@@ -540,7 +540,8 @@
 %
 % \begin{macro}{\includegraphics}
 % \begin{macro}{\stdincludegraphics}
-%   Just wrap up the args and forward if appropriate.
+%   Just wrap up the args and forward if appropriate. The star is |#1| here as
+%   that matches the documented behavior of starred commands generally.
 %    \begin{macrocode}
 \RequirePackage { graphicx }
 \NewCommandCopy \stdincludegraphics \includegraphics

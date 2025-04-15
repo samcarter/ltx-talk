@@ -32,4 +32,30 @@
     \test:nnTF { 4 } { 1,3 } \ERROR \FALSE
   }
 
+\TEST { Relative~overlay~specs }
+  {
+    \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
+      {
+        \int_gset:Nn \g__xbeamer_slide_int {#1}
+        \int_gset:Nn \g__xbeamer_pauses_int { 1 }
+        \__xbeamer_decode_parse:n {#2}
+        \bool_if:NTF \l__xbeamer_decode_overlays_bool
+          \prg_return_true:
+          \prg_return_false:
+      }
+    \test:nnTF { 1 } { + } \TRUE \ERROR
+    \test:nnTF { 2 } { +- } \TRUE \ERROR
+    \test:nnTF { 2 } { -+ } \ERROR \FALSE
+    \test:nnTF { 1 } { +,+(2) } \TRUE \ERROR
+    \test:nnTF { 2 } { +,+(2) } \ERROR \FALSE
+    \test:nnTF { 3 } { +,+(2) } \TRUE \ERROR
+    \test:nnTF { 4 } { +,+(2) } \ERROR \FALSE
+    \test:nnTF { 1 } { . } \ERROR \FALSE
+    \test:nnTF { 2 } { .- } \TRUE \ERROR
+    \test:nnTF { 2 } { -. } \ERROR \FALSE
+    \test:nnTF { 1 } { .,.(2) } \ERROR \FALSE
+    \test:nnTF { 2 } { .,.(2) } \TRUE \ERROR
+    \test:nnTF { 3 } { .,.(2) } \ERROR \FALSE
+  }
+
 \END

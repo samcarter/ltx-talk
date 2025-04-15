@@ -69,16 +69,16 @@
           \prg_return_true:
           \prg_return_false:
       }
-    \cs_set_protected:Npn \TRUEshow
+    \cs_set_protected:Npn \TRUE
       { \LONGTYPEOUT { TRUE : ~ \l__xbeamer_decode_action_str } }
     \clist_map_inline:nn { alert , invisible , only , uncover , visible }
       {
-        \test:nnTF { 1 } { #1@1 } \TRUEshow \ERROR
+        \test:nnTF { 1 } { #1@1 } \TRUE \ERROR
         \test:nnTF { 2 } { #1@1 } \ERROR \FALSE
-        \test:nnTF { 1 } { #1@+ } \TRUEshow \ERROR
+        \test:nnTF { 1 } { #1@+ } \TRUE \ERROR
         \test:nnTF { 2 } { #1@+ } \ERROR \FALSE
         \test:nnTF { 1 } { #1@. } \ERROR \FALSE
-        \test:nnTF { 2 } { #1@. } \ERROR \TRUEshow
+        \test:nnTF { 2 } { #1@. } \ERROR \TRUE
       }
   }
 

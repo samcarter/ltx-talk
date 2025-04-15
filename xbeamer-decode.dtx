@@ -136,12 +136,9 @@
 %
 % \begin{macro}{\@@_decode_parse:n, \@@_decode_parse_aux:n}
 % \begin{macro}{\@@_decode_parse:w}
-% \begin{macro}{\@@_decode_parse:nn}
 %   First a simple check for an entirely blank argument: if that's the case,
-%   there is no additional overlay to consider. Then deal with any category code
-%   issues before splitting at a \verb"|", if present. If there is, we have an
-%   action specification as |#2|. Otherwise, there might be one as |#1|, so
-%   there is a check for that.
+%   there is no additional overlay to consider. Then deal with any category
+%   code issues before looping over blocks divided by \verb"|" tokens.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_parse:n #1
   {
@@ -158,21 +155,13 @@
       }
   }
 \cs_new_protected:Npn \@@_decode_parse_aux:n #1
-  { \@@_decode_parse:w #1 | | \q_@@_stop }
-\cs_new_protected:Npn \@@_decode_parse:w #1 | #2 | #3 \q_@@_stop
+  { \@@_decode_parse:w #1 | \q_recursion_tail | \q_recursion_stop }
+\cs_new_protected:Npn \@@_decode_parse:w #1 |
   {
-    \exp_args:Nee \@@_decode_parse:nn
+    \quark_if_recursion_tail_stop:n {#1}
+    \exp_args:Ne \@@_decode_mode:n
       { \tl_trim_spaces:n {#1} }
-      { \tl_trim_spaces:n {#2} }
-  }
-\cs_new_protected:Npn \@@_decode_parse:nn #1#2
-  {
-    \tl_if_blank:nTF {#2}
-      { \@@_decode_mode:n {#1} }
-      {
-        \@@_decode_overlays:nn { overlays } {#1}
-        \@@_decode_action:n {#2}
-      }
+    \@@_decode_parse:w 
   }
 %    \end{macrocode}
 % \end{macro}
@@ -192,35 +181,61 @@
 % \end{variable}
 %
 % \begin{macro}{\@@_decode_mode:n}
-%   Check if the mode is known and current. At present, we only carry out
-%   further parsing for projector mode. As there has already been a split at
-%   a \verb"|", if we are moving on to look for actions, there will be no
-%   overlay details, so that is filled in with a \verb|*|.
+% \begin{macro}{\@@_decode_mode:w}
+% \begin{macro}{\@@_decode_mode_aux:n}
+%   Check if the mode is known and current. If we find an action but have no
+%   overlay details, they is filled in with a \verb|*|.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_decode_mode:n #1
+\cs_new_protected:Npe \@@_decode_mode:n #1
   {
-    \clist_if_in:NnTF \c_@@_modes_clist {#1}
+    \clist_if_in:NnTF \exp_not:N \c_@@_modes_clist {#1}
       {
-        \bool_lazy_any:nTF
+        \exp_not:N \bool_lazy_any:nT
           {
-            { \str_if_eq_p:nn {#1} { all } }
-            { \str_if_eq_p:Vn \l_@@_mode_str {#1} }
-            { \str_if_eq_p:Vn \l_@@_mode_str { all } }
+            { \exp_not:N \str_if_eq_p:nn {#1} { all } }
+            {
+              \exp_not:N \str_if_eq_p:Vn
+                \exp_not:N \l_@@_mode_str {#1}
+            }
+            {
+              \exp_not:N \str_if_eq_p:Vn
+                \exp_not:N \l_@@_mode_str { all }
+            }
           }
-          { \bool_set_true:N \l_@@_decode_overlays_bool }
-          { \bool_set_false:N \l_@@_decode_overlays_bool }
+          { \bool_set_true:N \exp_not:N \l_@@_decode_overlays_bool }
       }
       {
-        \str_if_eq:VnTF \l_@@_mode_str { projector }
-          {
-            \@@_decode_action:n {#1}
-            \str_if_empty:NT \l_@@_decode_overlays_str
-              { \@@_decode_overlays:nn { overlays } { * } }
-          }
-          { \bool_set_true:N \l_@@_decode_overlays_bool }
+        \exp_not:N \@@_decode_mode:w #1 \tl_to_str:n { : : }
+          \exp_not:N \q_@@_stop
+      }
+  }
+\use:e
+  {
+    \cs_new_protected:Npe \exp_not:N \@@_decode_mode:w
+      #1 \token_to_str:N :
+      #2 \token_to_str:N : 
+      #3 \exp_not:N \q_@@_stop
+  }
+  {
+    \exp_not:N \tl_if_blank:nTF {#2}
+      {
+        \exp_not:N \@@_decode_mode:nn
+          { \tl_to_str:n { projector } } {#1}
+      }
+      { \exp_not:N \@@_decode_mode:nn {#1} {#2} }
+  }
+\cs_new_protected:Npn \@@_decode_mode:nn #1#2
+  {
+    \str_if_eq:VnT \l_@@_mode_str {#1}
+      {
+        \@@_decode_action:n {#2}
+        \str_if_empty:NT \l_@@_decode_overlays_str
+          { \@@_decode_overlays:nn { overlays } { * } }
       }
   }
 %    \end{macrocode}
+% \end{macro}
+% \end{macro}
 % \end{macro}
 %
 % \begin{macro}{\@@_decode_action:n}

@@ -222,11 +222,13 @@
 %    \begin{macrocode}
 \NewDocumentEnvironment { block } { D <> { all } }
   {
+    \@@_action_begin:n {#1}
     \vbox_set:Nw \l_@@_tmp_box
   }
   {
     \vbox_set_end:
     \box_use:N \l_@@_tmp_box
+    \@@_action_end:
   }
 %    \end{macrocode}
 % \end{macro}
@@ -288,7 +290,7 @@
         \tl_gset:Nn \g_@@_list_end_tl
           {
             \@@_action_end:
-             \tl_gclear:N \g_@@_list_end_tl
+            \tl_gclear:N \g_@@_list_end_tl
           }
         \@@_action_begin:n {#1}
       }

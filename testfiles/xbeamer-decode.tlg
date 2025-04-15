@@ -34,3 +34,46 @@ FALSE
 TRUE
 FALSE
 ============================================================
+============================================================
+TEST 3: Actions
+============================================================
+TRUE: alert
+FALSE
+TRUE: alert
+FALSE
+FALSE
+TRUE: alert
+TRUE: invisible
+FALSE
+TRUE: invisible
+FALSE
+FALSE
+TRUE: invisible
+TRUE: only
+FALSE
+TRUE: only
+FALSE
+FALSE
+TRUE: only
+TRUE: uncover
+FALSE
+TRUE: uncover
+FALSE
+FALSE
+TRUE: uncover
+TRUE: visible
+FALSE
+TRUE: visible
+FALSE
+FALSE
+TRUE: visible
+============================================================
+============================================================
+TEST 4: Errors
+============================================================
+! Package xbeamer Error: Bad overlay specification "foo@1".
+For immediate help type H <return>.
+ ...                                              
+l. ...  }
+The overlay specification given doesn't follow the pattern described in the xbeamer manual: it has been ignored.
+============================================================

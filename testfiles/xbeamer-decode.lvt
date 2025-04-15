@@ -58,4 +58,32 @@
     \test:nnTF { 3 } { .,.(2) } \ERROR \FALSE
   }
 
+\TEST { Actions }
+  {
+    \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
+      {
+        \int_gset:Nn \g__xbeamer_slide_int {#1}
+        \int_gset:Nn \g__xbeamer_pauses_int { 1 }
+        \__xbeamer_decode_parse:n {#2}
+        \bool_if:NTF \l__xbeamer_decode_actions_bool
+          \prg_return_true:
+          \prg_return_false:
+      }
+    \cs_set_protected:Npn \TRUEshow
+      { \LONGTYPEOUT { TRUE : ~ \l__xbeamer_decode_action_str } }
+    \clist_map_inline:nn { alert , invisible , only , uncover , visible }
+      {
+        \test:nnTF { 1 } { #1@1 } \TRUEshow \ERROR
+        \test:nnTF { 2 } { #1@1 } \ERROR \FALSE
+        \test:nnTF { 1 } { #1@+ } \TRUEshow \ERROR
+        \test:nnTF { 2 } { #1@+ } \ERROR \FALSE
+        \test:nnTF { 1 } { #1@. } \ERROR \FALSE
+        \test:nnTF { 2 } { #1@. } \ERROR \TRUEshow
+      }
+  }
+
+\TEST { Errors }
+  {
+    \__xbeamer_decode_parse:n { foo@1 }
+  }
 \END

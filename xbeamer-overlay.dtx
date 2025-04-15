@@ -522,6 +522,30 @@
 % \end{macro}
 % \end{macro}
 %
+% \begin{macro}{\includegraphics}
+% \begin{macro}{\stdincludegraphics}
+%   Just wrap up the args and forward if appropriate.
+%    \begin{macrocode}
+\RequirePackage { graphicx }
+\NewCommandCopy \stdincludegraphics \includegraphics
+\RenewDocumentCommand \includegraphics { s D <> { all } o o m }
+  {
+    \@@_overlay:nT {#2}
+      {
+        \use:e
+          {
+            \exp_not:N \stdincludegraphics
+              \IfBooleanT #1 { * }
+              \IfNoValueF {#3} { [ \exp_not:n { {#3} } ] }
+              \IfNoValueF {#4} { [ \exp_not:n { {#4} } ] }
+          }
+            {#5}
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

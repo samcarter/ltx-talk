@@ -493,7 +493,7 @@
 % \end{macro}
 %
 % \begin{environment}{overprint}
-% \begin{macro}{\@@_overpint_save_ht:}
+% \begin{macro}{\@@_overprint_save_ht:}
 %   For overprinting, in contrast to \cls{beamer} we use a two-pass approach
 %   to save the size at the end of the run: this means you can use \cs{only}
 %   for example in overprinting.
@@ -503,7 +503,7 @@
   {
     \vbox_set_end:
     \int_incr:N \l_@@_overprint_int
-    \@@_overpint_save_ht:
+    \@@_overprint_save_ht:
     \cs_if_exist:cTF 
       { overprint@ \@@_frame_overprint: }
       {
@@ -522,7 +522,7 @@
       }
       { \box_use_drop:N \l_@@_tmp_box }
   }
-\cs_new_protected:Npn \@@_overpint_save_ht:
+\cs_new_protected:Npn \@@_overprint_save_ht:
   {
     \tl_if_exist:cF { g_@@_overprint_ \@@_frame_overprint: _tl }
       {

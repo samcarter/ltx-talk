@@ -204,7 +204,7 @@
       }
       {
         \exp_not:N \@@_decode_mode:w #1 \tl_to_str:n { : : }
-          \exp_not:N \q_@@_stop
+          \exp_not:N \q_stop
       }
   }
 \use:e
@@ -212,7 +212,7 @@
     \cs_new_protected:Npe \exp_not:N \@@_decode_mode:w
       #1 \token_to_str:N :
       #2 \token_to_str:N : 
-      #3 \exp_not:N \q_@@_stop
+      #3 \exp_not:N \q_stop
   }
   {
     \exp_not:N \tl_if_blank:nTF {#2}
@@ -245,12 +245,12 @@
 \cs_new_protected:Npe \@@_decode_action:n #1
   {
     \exp_not:N \@@_decode_action:w
-      #1 \tl_to_str:n { @ @ } \exp_not:N \q_@@_stop
+      #1 \tl_to_str:n { @ @ } \exp_not:N \q_stop
   }
 \use:e
   {
     \cs_new_protected:Npn \exp_not:N \@@_decode_action:w
-      #1 \tl_to_str:n { @ } #2 \tl_to_str:n { @ } #3 \exp_not:N \q_@@_stop
+      #1 \tl_to_str:n { @ } #2 \tl_to_str:n { @ } #3 \exp_not:N \q_stop
   }
   {
     \tl_if_blank:nTF {#2}

@@ -522,6 +522,11 @@
       }
       { \box_use_drop:N \l_@@_tmp_box }
   }
+%    \end{macrocode}
+%   As there is no clear end-point for overprinting, we need to be careful to
+%   keep the current width separate from the saved one. The rest is then about
+%   saving to the \texttt{.aux} file and helping out the user. 
+%    \begin{macrocode}
 \cs_new_protected:Npn \@@_overprint_save_ht:
   {
     \tl_if_exist:cF { g_@@_overprint_ \@@_frame_overprint: _tl }

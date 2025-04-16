@@ -143,7 +143,9 @@
 \cs_new_protected:Npn \@@_decode_parse:n #1
   {
     \str_clear:N \l_@@_decode_action_str
-    \tl_if_blank:nTF {#1}
+    \bool_lazy_or:nnTF
+      { \tl_if_blank_p:n {#1} }
+      { \str_if_eq_p:nn {#1} { all } }
       { \bool_set_true:N \l_@@_decode_overlays_bool }
       {
         \str_set:Nn \l_@@_decode_arg_str {#1}
@@ -180,7 +182,6 @@
 %    \begin{macrocode}
 \clist_const:Ne \c_@@_modes_clist
   {
-    \tl_to_str:n { all }       ,
     \tl_to_str:n { handout }   ,
     \tl_to_str:n { projector }
   }
@@ -197,18 +198,8 @@
   {
     \clist_if_in:NnTF \exp_not:N \c_@@_modes_clist {#1}
       {
-        \exp_not:N \bool_lazy_any:nT
-          {
-            { \exp_not:N \str_if_eq_p:nn {#1} { all } }
-            {
-              \exp_not:N \str_if_eq_p:Vn
-                \exp_not:N \l_@@_mode_str {#1}
-            }
-            {
-              \exp_not:N \str_if_eq_p:Vn
-                \exp_not:N \l_@@_mode_str { all }
-            }
-          }
+        \exp_not:N \str_if_eqT:Vn
+          \exp_not:N \l_@@_mode_str {#1}
           { \bool_set_true:N \exp_not:N \l_@@_decode_overlays_bool }
       }
       {

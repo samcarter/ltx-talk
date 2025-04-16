@@ -494,6 +494,7 @@
 %
 % \begin{environment}{overprint}
 % \begin{macro}{\@@_overprint_save_ht:}
+% \begin{macro}{\@@_overprint_check_ht:n}
 %   For overprinting, in contrast to \cls{beamer} we use a two-pass approach
 %   to save the size at the end of the run: this means you can use \cs{only}
 %   for example in overprinting.
@@ -550,8 +551,28 @@
               }
           }
       }
+    \hook_gput_code:nne { enddocument / afterlastpage } { xbeamer }
+       { \@@_overprint_check_ht:n { \@@_frame_overprint: } }
+  }
+\cs_new_protected:Npn \@@_overprint_check_ht:n #1
+  {
+    \bool_lazy_and:nnF
+      { \exp_not:N \cs_if_exist_p:c { overprint@ #1 } }
+      {
+        \dim_compare_p:vNv { overprint@ #1 } = { g_@@_overprint_ #1 _tl }
+      }
+      {
+        \msg_warning:nn { xbeamer } { overprint-ht }
+        \cs_gset_protected:Npn \@@_overprint_check_ht:n ##1 { }
+      }
+  }
+\msg_new:nnn { xbeamer } { overprint-ht }
+  {
+    Overprint~area~height~has~changed:\\
+    rerun~LaTeX.
   }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 % \end{environment}
 %

@@ -156,9 +156,17 @@
   }
 \cs_new_protected:Npn \@@_decode_parse_aux:n #1
   { \@@_decode_parse:w #1 | \q_recursion_tail | \q_recursion_stop }
+%    \end{macrocode}
+%   The end-of-loop test here covers the case where the active mode is not
+%   mentioned at all in the specification.
+%    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_parse:w #1 |
   {
-    \quark_if_recursion_tail_stop:n {#1}
+    \quark_if_recursion_tail_stop_do:nn {#1}
+      {
+        \str_if_empty:NT \l_@@_decode_overlays_str
+          { \bool_set_true:N \l_@@_decode_overlays_bool }
+      }
     \exp_args:Ne \@@_decode_mode:n
       { \tl_trim_spaces:n {#1} }
     \@@_decode_parse:w 

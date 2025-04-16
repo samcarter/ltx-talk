@@ -104,6 +104,22 @@
     \test:nnTF { 2 } { +-|alert@+ } \TRUE \ERROR
   }
 
+\TEST { Modes }
+  {
+    \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
+      {
+        \str_set:Nn \l__xbeamer_mode_str {#1}
+        \int_gset:Nn \g__xbeamer_slide_int { 1 }
+        \int_gset:Nn \g__xbeamer_pauses_int { 1 }
+        \__xbeamer_decode_parse:n {#2}
+        \bool_if:NTF \l__xbeamer_decode_overlays_bool
+          \prg_return_true:
+          \prg_return_false:
+      }
+    \test:nnTF { handout } { 1- } \TRUE \ERROR
+    \test:nnTF { handout } { 1-|handout:0 } \ERROR \FALSE
+  }
+
 \TEST { Errors }
   {
     \__xbeamer_decode_parse:n { foo@1 }

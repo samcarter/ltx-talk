@@ -639,6 +639,77 @@ different slides, the following code might be used:
   \end{frame}
 \end{verbatim}
 
+\section{Advanced overlay specifications}
+
+\subsubsection{Action specifications%
+  \label{sec:action-spec}}
+
+This section also introduces a rather advanced concept. You may also wish to
+skip it on first reading.
+
+Some overlay specification-aware commands can handle not only normal overlay
+specifications, but also so called \emph{action spec}. In an action
+specification, the list of slide numbers and ranges is prefixed by
+\meta{action}|@|, where \meta{action} is the name of a certain action to be
+taken on the specified slides:
+\begin{verbatim}
+  \item<3-|alert@3> Shown from slide 3 on, alerted on slide 3.
+\end{verbatim}
+
+In the above example, the \cs{item} command, which allows actions to be
+specified, will uncover the item text from slide three on and it will,
+additionally, alert this item exactly on slide~3.
+
+Not all commands can take an action specification. Currently, only \cs{item},
+\cs{action}, the environment \env{actionenv}, and the block environments (like
+\env{block}) handle them.
+
+By default, the following actions are available:
+\begin{itemize}
+  \item |alert| alters the item or block.
+  \item |uncover| uncovers the item or block (this is the default, if no action
+    is specified).
+  \item |only| causes the whole item or block to be inserted only on the
+    specified slides.
+  \item |visible| causes the text to become visible only on the specified
+    slides (the difference between |uncover| and |visible| is the same as
+    between \cs{uncover} and \cs{visible}).
+  \item |invisible| causes the text to become invisible on the specified
+    slides.
+\end{itemize}
+
+The whole action mechanism is based on the following environment:
+\DescribeEnv{actionenv}
+\begin{syntax}
+  \cs{begin}\{actionenv\}\sarg{action spec}
+\end{syntax}
+This environment extracts all actions from the \meta{action spec} for the
+current mode. For each action of the form \meta{action}|@|\meta{slide numbers},
+it inserts the equivalent internal code to:
+|\begin{|\meta{action}|env}<|\meta{slide number}|>| at the beginning of the
+environment and the text |\end{|\meta{action}|env}| at the end. An
+\meta{overlay spec} without an action is promoted to |uncover@|\meta{overlay
+spec}.
+\begin{verbatim}
+  \begin{frame}
+    \begin{actionenv}<2-|alert@3-4,6>
+      This text is shown the same way as the text below.
+    \end{actionenv}
+
+    \begin{uncoverenv}<2->
+      \begin{alertenv}<3-4,6>
+        This text is shown the same way as the text above.
+      \end{alertenv}
+    \end{uncoverenv}
+  \end{frame}
+\end{verbatim}
+
+\DescribeMacro{\action}
+\begin{syntax}
+  \cs{action}\sarg{action spec}\marg{text}
+\end{syntax}
+This has the same effect as putting \meta{text} in an \env{actionenv}.
+
 \section{Structuring a presentation: the local structure}
 
 \LaTeX{} provides different commands for structuring text \enquote{locally},
@@ -733,8 +804,7 @@ creates a new column.
   \cs{begin}\{columns\}\sarg{action spec}\oarg{options}
 \end{syntax}
 A multi-column area. If the \meta{action spec} is present, the given actions
-are taken on the specified slides, see
-Section~\ref{section-action-specifications}.
+are taken on the specified slides, see Section~\ref{sec:action-spec}.
 
 \DescribeEnv{column}
 \begin{syntax}
@@ -754,8 +824,8 @@ To create a column, you can use the \env{column} environment.
 
 Creates a single column of width \meta{column width}. If the \meta{action
 specification} is present, the given actions are taken on the specified slides,
-see Section~\ref{section-action-specifications}. The vertical placement of the
-enclosing \env{columns} environment can be overruled by specifying a specific
+see Section~\ref{sec:action-spec}. The vertical placement of the enclosing
+\env{columns} environment can be overruled by specifying a specific
 \meta{placement}.
 
 \end{documentation}

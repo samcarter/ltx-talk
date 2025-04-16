@@ -569,6 +569,76 @@ would not.
 
 \subsection{Dynamically changing text or images}
 
+You may sometimes wish to have some part of a frame change dynamically from
+slide to slide. On each slide of the frame, something different should be shown
+inside this area. You could achieve the effect of dynamically changing text by
+giving a list of \cs{only} commands like this:
+\begin{verbatim}
+  \only<1>{Initial text.}
+  \only<2>{Replaced by this on second slide.}
+  \only<3>{Replaced again by this on third slide.}
+\end{verbatim}
+
+The trouble with this approach is that it may lead to slight, but annoying
+differences in the heights of the lines, which may cause the whole frame to
+\enquote{wobble} from slide to slide. This problem becomes much more severe if
+the replacement text is several lines long.
+
+To solve this problem, you can use two environments: \env{overlayarea} and
+\env{overprint}. The first is more flexible, but less user-friendly.
+
+\DescribeEnv{overlayarea}
+\begin{syntax}
+  \cs{begin}\{overlayarea\}\marg{area width}\marg{area height}
+\end{syntax}
+Everything within the environment will be placed in a rectangular area of the
+specified size. The area will have the same size on all slides of a frame,
+regardless of its actual contents.
+\begin{verbatim}
+  \begin{overlayarea}{\textwidth}{3cm}
+    \only<1>{Some text for the first slide.\\Possibly several lines long.}
+    \only<2>{Replacement on the second slide.}
+  \end{overlayarea}
+\end{verbatim}
+
+\DescribeEnv{overprint}
+\begin{syntax}
+  \cs{begin}\{overprint\}\oarg{area width}
+\end{syntax}
+The \meta{area width} defaults to the text width. Inside the environment, use
+\cs{only} or \cs{onslide} to specify different things that should be shown for
+this environment on different slides. Everything within the environment will be
+placed in a rectangular area of the specified width. The height and depth of
+the area are chosen large enough to accommodate the largest contents of the
+area. Two compilations will be needed to allow \LaTeX{} to track the tallest
+version of the frame contents.
+\begin{verbatim}
+  \begin{overprint}
+    \only<1|handout:1>{%
+        Some text for the first slide.\\
+        Possibly several lines long.
+      }%
+    \only<2|handout:0>{%
+       Replacement on the second slide. Suppressed for handout.
+     }%
+  \end{overprint}
+  Following text
+\end{verbatim}
+
+A similar need for dynamical changes arises when you have, say, a series of
+pictures named \file{first}, \file{second}, and \file{third} that show
+different stages of some process. To make a frame that shows these pictures on
+different slides, the following code might be used:
+\begin{verbatim}
+  \begin{frame}
+    \frametitle{The Three Process Stages}
+
+    \includegraphics<1>{first}
+    \includegraphics<2>{second}
+    \includegraphics<3>{third}
+  \end{frame}
+\end{verbatim}
+
 \section{Structuring a presentation: the local structure}
 
 \LaTeX{} provides different commands for structuring text \enquote{locally},

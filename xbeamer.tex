@@ -92,24 +92,24 @@ for those people who are interested.
 \section{Introduction%
   \label{sec:intro}}
 
-The \pkg{beamer} class was first released in 2003, and rapidly became the
+The \cls{beamer} class was first released in 2003, and rapidly became the
 most popular method for producing presentations in \LaTeX{}. As detailed in
-the \pkg{beamer} manual
+the \cls{beamer} manual
 \begin{quotation}
-  Till Tantau created \pkg{beamer} mainly in his spare time. Many other people
+  Till Tantau created \cls{beamer} mainly in his spare time. Many other people
   have helped by sending him emails containing suggestions for improvement or
   corrections or patches or whole new themes (by now, this amounts to over a
-  thousand emails concerning \pkg{beamer}). Indeed, most of the development was
+  thousand emails concerning \cls{beamer}). Indeed, most of the development was
   only initiated by feature requests and bug reports. Without this feedback,
-  \pkg{beamer} would still be what it was originally intended to be: a small
+  \cls{beamer} would still be what it was originally intended to be: a small
   private collection of macros that make using the \pkg{seminar} class easier.
-  Till created the first version of \pkg{beamer} for his PhD defense
+  Till created the first version of \cls{beamer} for his PhD defense
   presentation in February 2003. A month later, he put the package on
   \acro{ctan} at the request of some colleagues. After that, things somehow got
   out of hand.
 \end{quotation}
 
-The effort which Till put in over the time he was developing \pkg{beamer}
+The effort which Till put in over the time he was developing \cls{beamer}
 cannot be underestimated. However, there are several challenges which confront
 us today
 \begin{enumerate}
@@ -119,7 +119,7 @@ us today
     visual results but not necessarily the most idiomatic style
   \item Till made few comments in the code or in commit messages in the code
     history
-  \item The underlying box structure of a \pkg{beamer} document is very
+  \item The underlying box structure of a \cls{beamer} document is very
     different from the standard \LaTeX{} model, and a lot of material is
     boxed up multiple times
   \item Engine, font and macro development over the past 20 years offers
@@ -127,11 +127,11 @@ us today
 \end{enumerate}
 These all feed into an issue addressing a major requirement today:
 accessibility. Broadly, the internal structure (and to some extend the user
-interface) of \pkg{beamer} mean that it is not possible to \enquote{retrofit}
+interface) of \cls{beamer} mean that it is not possible to \enquote{retrofit}
 PDF tagging into the class.
 
 Instead, the approach is to develop a new class, currently called
-\pkg{xbeamer}, which takes ideas from \pkg{beamer} but with tagging and
+\pkg{xbeamer}, which takes ideas from \cls{beamer} but with tagging and
 accessibility of structure as a design aim from the beginning. In contrast to
 work by the \LaTeX{} Project Team on making the core classes accessible, the
 expectation for \pkg{xbeamer} is that users \emph{will} need to change their
@@ -140,7 +140,7 @@ revised and adjusted each time they are used. The need to edit sources
 should therefore not be an insurmountable barrier.
 
 At present, this code is \emph{highly} experimental: only a (small) subset of
-\pkg{beamer} functionality is implemented, some things are being done
+\cls{beamer} functionality is implemented, some things are being done
 differently, almost everything is still subject to discussion.
 
 \section{Simple example documents}
@@ -205,7 +205,7 @@ As covered in Section~\ref{sec:intro}, the \pkg{xbeamer} class is currently
 highly experimental. Active discussion is ongoing around many aspects of the
 way that things should work, and very little is therefore at all stable. That
 said, some decisions have been made: some of this is re-stating ideas which
-carry forward from \pkg{beamer}.
+carry forward from \cls{beamer}.
 \begin{itemize}
   \item The basic structure of a presentation is made up of \env{frame}
     environments, which are made up of one or more slides.
@@ -217,9 +217,9 @@ carry forward from \pkg{beamer}.
     Computer Modern for OpenType engines).
 \end{itemize}
 
-\section{Differences from \pkg{beamer}}
+\section{Differences from \cls{beamer}}
 
-The following key differences between \pkg{beamer} and \pkg{xbeamer} are
+The following key differences between \cls{beamer} and \pkg{xbeamer} are
 important to note for the user
 \begin{itemize}
   \item The default font setup in \pkg{xbeamer} is \emph{all} sanserif, in
@@ -632,7 +632,7 @@ be shown starting from the same slide as the parent item).
   \end{itemize}
 \end{verbatim}
 If you do not need to give any other options for the list environment, you may
-use the shortened format |[<...>]|, which matches the \pkg{beamer} syntax:
+use the shortened format |[<...>]|, which matches the \cls{beamer} syntax:
 \begin{verbatim}
   \begin{itemize}[<+->]
     \item This is shown from the first slide on.

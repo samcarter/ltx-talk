@@ -442,16 +442,25 @@
 %
 % \subsection{Fixed-size areas}
 %
-% \begin{environment}{overlayarea}
-%   An initial approach: quite similar to a column.
+% \begin{macro}{\@@_overprint_begin:n}
+%   A common auxiliary for overprinting, which starts off much the same for
+%   both \env{overlayarea} and \env{overprint}.
 %    \begin{macrocode}
-\NewDocumentEnvironment { overlayarea } { m m }
+\cs_new_protected:Npn \@@_overprint_begin:n #1
   {
     \noindent
     \vbox_set_to_wd:Nnw \l_@@_tmp_box {#1}
       \raggedright
       \ignorespaces
   }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{environment}{overlayarea}
+%   An initial approach: quite similar to a column.
+%    \begin{macrocode}
+\NewDocumentEnvironment { overlayarea } { m m }
+  { \@@_overprint_begin:n {#1} }
   {
     \vbox_set_end:
     \vbox_to_ht:nn {#2}
@@ -461,6 +470,84 @@
       }
   }
 %    \end{macrocode}
+% \end{environment}
+%
+% \begin{variable}{\l_@@_overprint_int}
+%   Track the overprints on a slide: as the slide forms a group, we do not need
+%   to worry about resetting.
+%    \begin{macrocode}
+\int_new:N \l_@@_overprint_int
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}[EXP]{\@@_frame_overprint:}
+%   To refer to the current overprint environment within the document:
+%   needed in the \texttt{.aux} so avoids using non-letters.
+%    \begin{macrocode}
+\cs_new:Npn \@@_frame_overprint:
+  {
+    \int_to_Roman:n \g_@@_frame_int
+    \int_to_roman:n \l_@@_overprint_int
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{environment}{overprint}
+% \begin{macro}{\@@_overpint_save_ht:}
+%   For overprinting,. in contrast to \cls{beamer} we use a two-pass approach
+%   to save the size at the end of the run: this means you can use \cs{only}
+%   for example in overprinting.
+%    \begin{macrocode}
+\NewDocumentEnvironment { overprint } { O { \textwidth } }
+  { \@@_overprint_begin:n {#1} }
+  {
+    \vbox_set_end:
+    \int_incr:N \l_@@_overprint_int
+    \@@_overpint_save_ht:
+    \cs_if_exist:cTF 
+      { overprint@ \@@_frame_overprint: }
+      {
+        \dim_compare:vNnTF
+          { overprint@ \@@_frame_overprint: }
+            > { \box_ht:N \l_@@_tmp_box }
+          {
+            \vbox_to_ht:vn
+              { overprint@ \@@_frame_overprint: }
+              {
+                \box_use_drop:N \l_@@_tmp_box
+                \vfil
+              }
+          }
+          { \box_use_drop:N \l_@@_tmp_box }
+      }
+      { \box_use_drop:N \l_@@_tmp_box }
+  }
+\cs_new_protected:Npn \@@_overpint_save_ht:
+  {
+    \tl_if_exist:cF { g_@@_overprint_ \@@_frame_overprint: _tl }
+      {
+        \tl_new:c { g_@@_overprint_ \@@_frame_overprint: _tl }
+        \tl_gset:cn { g_@@_overprint_ \@@_frame_overprint: _tl }
+          { 0pt }
+      }
+    \tl_gset:ce { g_@@_overprint_ \@@_frame_overprint: _tl }
+      {
+        \dim_max:vn { g_@@_overprint_ \@@_frame_overprint: _tl }
+          { \box_ht:N \l_@@_tmp_box }
+      }
+    \legacy_if:nT { @filesw }
+      {
+        \iow_now:Ne \@auxout
+          {
+            \gdef \exp_not:c { overprint@ \@@_frame_overprint: }
+              {
+                \exp_not:v { g_@@_overprint_ \@@_frame_overprint: _tl }
+              }
+          }
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
 % \end{environment}
 %
 % \subsection{Adding overlays to existing commands}

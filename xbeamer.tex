@@ -69,7 +69,7 @@ for those people who are interested.
 \begin{document}
 
 \title{%
-  \pkg{xbeamer} -- A class for typesetting presentations%
+  \cls{xbeamer} -- A class for typesetting presentations%
   \thanks{This file describes \fileversion,
     last revised \filedate.}%
 }
@@ -131,10 +131,10 @@ interface) of \cls{beamer} mean that it is not possible to \enquote{retrofit}
 PDF tagging into the class.
 
 Instead, the approach is to develop a new class, currently called
-\pkg{xbeamer}, which takes ideas from \cls{beamer} but with tagging and
+\cls{xbeamer}, which takes ideas from \cls{beamer} but with tagging and
 accessibility of structure as a design aim from the beginning. In contrast to
 work by the \LaTeX{} Project Team on making the core classes accessible, the
-expectation for \pkg{xbeamer} is that users \emph{will} need to change their
+expectation for \cls{xbeamer} is that users \emph{will} need to change their
 sources. Unlike other documents, presentations tend to be \enquote{single use}:
 revised and adjusted each time they are used. The need to edit sources
 should therefore not be an insurmountable barrier.
@@ -145,9 +145,9 @@ differently, almost everything is still subject to discussion.
 
 \section{Simple example documents}
 
-Currently, \pkg{xbeamer} \emph{absolutely requires} the use of the
+Currently, \cls{xbeamer} \emph{absolutely requires} the use of the
 \cs{DocumentMetadata} command \emph{and} the a setting for the \texttt{tagging}
-key. As such, the most basic \pkg{xbeamer} document is
+key. As such, the most basic \cls{xbeamer} document is
 \begin{verbatim}
   \DocumentMetadata{tagging = on} % or "tagging = draft"
   \documentclass{xbeamer}
@@ -177,7 +177,7 @@ A slightly more useful version, which generates multiple slides and shows some
   \end{document}
 \end{verbatim}
 
-Tagging is activated for the standard (projector) output of \pkg{xbeamer}, but
+Tagging is activated for the standard (projector) output of \cls{xbeamer}, but
 it is more useful in handout mode, which is activated using a class option.
 \begin{verbatim}
   \DocumentMetadata{tagging = on}
@@ -201,7 +201,7 @@ available at \url{https://www.texdev.net/xbeamer/examples/}.
 
 \section{Class structure and design decisions}
 
-As covered in Section~\ref{sec:intro}, the \pkg{xbeamer} class is currently
+As covered in Section~\ref{sec:intro}, the \cls{xbeamer} class is currently
 highly experimental. Active discussion is ongoing around many aspects of the
 way that things should work, and very little is therefore at all stable. That
 said, some decisions have been made: some of this is re-stating ideas which
@@ -219,14 +219,14 @@ carry forward from \cls{beamer}.
 
 \section{Differences from \cls{beamer}}
 
-The following key differences between \cls{beamer} and \pkg{xbeamer} are
+The following key differences between \cls{beamer} and \cls{xbeamer} are
 important to note for the user
 \begin{itemize}
-  \item The default font setup in \pkg{xbeamer} is \emph{all} sanserif, in
+  \item The default font setup in \cls{xbeamer} is \emph{all} sanserif, in
     particular \cs{mathrm} and \cs{textrm} will give a sanserif font
   \item Overlay specifications can only be given as the first argument to
     commands
-  \item There are no optional braced arguments in \pkg{xbeamer}, in particular
+  \item There are no optional braced arguments in \cls{xbeamer}, in particular
     frame titles are given using \cs{frametitle} and not as
     |\begin{frame}{...}|
   \item New overlay-aware commands and environments should be defined using
@@ -342,7 +342,7 @@ the command \cs{onslide}, see below.
 \subsection{The general concept of overlay specifications}
 
 Whilst the \cs{pause} command is easy to understand, it is quite limited and so
-is best suited only to simple cases. The \pkg{xbeamer} class therefore supports
+is best suited only to simple cases. The \cls{xbeamer} class therefore supports
 a different approach. The idea is to add \emph{overlay specifications} to
 commands. These specifications are always given in pointed brackets and follow
 the command as the first argument. In the simplest case, the specification
@@ -643,7 +643,7 @@ different slides, the following code might be used:
 
 \LaTeX{} provides different commands for structuring text \enquote{locally},
 for example, \foreign{via} the \env{itemize} environment. These environments
-are also available in the \pkg{xbeamer} class, although their appearance has
+are also available in the \cls{xbeamer} class, although their appearance has
 been slightly changed.
 
 \subsection{Itemizations, enumerations and descriptions}

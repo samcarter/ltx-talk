@@ -153,6 +153,8 @@
     \par
     \keys_set:nn { xbeamer / column } {#2}
     \vbox_set_to_wd:Nnw \l_@@_tmp_box {#3}
+      \dim_set:Nn \textwidth {#3}
+      \dim_set:Nn \columnwidth {#3}
       \leavevmode
       \raggedright
       \ignorespaces

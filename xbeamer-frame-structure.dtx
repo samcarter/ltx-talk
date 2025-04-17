@@ -82,7 +82,7 @@
 \NewDocumentEnvironment { columns } { D <> { all } O { } }
   {
     \@@_action_begin:n {#1}
-    \noindent
+    \par
     \keys_set:nn { xbeamer / column } {#2}
     \hbox_set_to_wd:Nnw \l_@@_tmp_box { \textwidth }
       \ignorespaces
@@ -91,6 +91,7 @@
       \unskip
     \hbox_set_end:
     \box_use_drop:N \l_@@_tmp_box
+    \par
     \@@_action_end:
   }
 %    \end{macrocode}
@@ -148,6 +149,7 @@
 \NewDocumentEnvironment { column } { D <> { all } O { } m }
   {
     \@@_action_begin:n {#1}
+    \par
     \keys_set:nn { xbeamer / column } {#2}
     \vbox_set_to_wd:Nnw \l_@@_tmp_box {#3}
       \leavevmode
@@ -166,6 +168,7 @@
           { \box_use_drop:N \l_@@_tmp_box }
       }
     \hfil
+    \par
     \@@_action_end:
     \@ignoretrue
   }

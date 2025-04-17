@@ -198,7 +198,7 @@
   {
     \clist_if_in:NnTF \exp_not:N \c_@@_modes_clist {#1}
       {
-        \exp_not:N \str_if_eqT:Vn
+        \exp_not:N \str_if_eq:VnT
           \exp_not:N \l_@@_mode_str {#1}
           { \bool_set_true:N \exp_not:N \l_@@_decode_overlays_bool }
       }

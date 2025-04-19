@@ -118,6 +118,7 @@
       }
     \test:nnTF { handout } { 1- } \TRUE \ERROR
     \test:nnTF { handout } { 1-|handout:0 } \ERROR \FALSE
+    \test:nnTF { handout } { projector } \ERROR \FALSE
   }
 
 \TEST { Errors }

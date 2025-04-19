@@ -90,6 +90,13 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\l_@@_decode_pure_bool}
+%   Tracks whether only mode specifications were given.
+%    \begin{macrocode}
+\bool_new:N \l_@@_decode_pure_bool
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{variable}{\l_@@_decode_step_bool}
 %   Tracks whether to step \cs{g_@@_pauses_int}.
 %    \begin{macrocode}
@@ -151,6 +158,7 @@
         \str_set:Nn \l_@@_decode_arg_str {#1}
         \bool_set_false:N \l_@@_decode_actions_bool
         \bool_set_false:N \l_@@_decode_overlays_bool
+        \bool_set_true:N \l_@@_decode_pure_bool
         \str_clear:N \l_@@_decode_overlays_str
         \str_clear:N \l_@@_decode_actions_str
         \exp_args:No \@@_decode_parse_aux:n { \l_@@_decode_arg_str }
@@ -166,7 +174,9 @@
   {
     \quark_if_recursion_tail_stop_do:nn {#1}
       {
-        \str_if_empty:NT \l_@@_decode_overlays_str
+        \bool_lazy_and:nnT
+          { \str_if_empty_p:N \l_@@_decode_overlays_str }
+          { ! \l_@@_decode_pure_bool }
           { \bool_set_true:N \l_@@_decode_overlays_bool }
       }
     \exp_args:Ne \@@_decode_mode:n
@@ -224,11 +234,15 @@
   }
 \cs_new_protected:Npn \@@_decode_mode:nn #1#2
   {
-    \str_if_eq:VnT \l_@@_mode_str {#1}
+    \str_if_eq:VnTF \l_@@_mode_str {#1}
       {
         \@@_decode_action:n {#2}
         \str_if_empty:NT \l_@@_decode_overlays_str
           { \@@_decode_overlays:nn { overlays } { * } }
+      }
+      {
+        \tl_if_blank:nF {#2}
+          { \bool_set_false:N \l_@@_decode_pure_bool }
       }
   }
 %    \end{macrocode}
@@ -258,6 +272,7 @@
       {
         \cs_if_exist:cTF { @@_action_ #1 _begin: }
           {
+            \bool_set_false:N \l_@@_decode_pure_bool
             \str_set:Nn \l_@@_decode_action_str {#1}
             \tl_if_blank:nF {#2}
               { \@@_decode_overlays:nn { actions } {#2} }

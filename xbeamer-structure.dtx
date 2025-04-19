@@ -220,10 +220,17 @@
 %
 % \begin{environment}{block}
 %    \begin{macrocode}
-\NewDocumentEnvironment { block } { D <> { all } }
+\NewDocumentEnvironment { block } { D <> { all } m }
   {
     \@@_action_begin:n {#1}
     \vbox_set:Nw \l_@@_tmp_box
+      \group_begin:
+        \medskip
+        \normalfont \large \bfseries
+        #2
+        \par
+        \medskip
+      \group_end:
   }
   {
     \vbox_set_end:
@@ -232,23 +239,6 @@
   }
 %    \end{macrocode}
 % \end{environment}
-%
-% \begin{macro}{\blocktitle}
-%   As an interim approach, hard code block title formatting: tagging here
-%   needs to be worked out.
-%    \begin{macrocode}
-\NewDocumentCommand \blocktitle { D <> { all } m }
-  {
-    \group_begin:
-      \medskip
-      \normalfont \large \bfseries
-      #2
-      \par
-      \medskip
-    \group_end:
-  }
-%    \end{macrocode}
-% \end{macro}
 %
 % \begin{macro}{\item}
 % \begin{macro}{\@@_item_parse_spec:w}

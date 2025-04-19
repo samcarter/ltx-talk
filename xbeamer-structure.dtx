@@ -287,10 +287,10 @@
   {
     \tl_if_blank:nF {#1}
       {
-        \tl_gset:Nn \g_@@_list_end_tl
+        \tl_set:Nn \l_@@_list_end_tl
           {
             \@@_action_end:
-            \tl_gclear:N \g_@@_list_end_tl
+            \tl_clear:N \l_@@_list_end_tl
           }
         \@@_action_begin:n {#1}
       }
@@ -299,9 +299,9 @@
 % \end{macro}
 % \end{macro}
 % \end{macro}
-% \begin{variable}{\g_@@_list_end_tl}
+% \begin{variable}{\l_@@_list_end_tl}
 %    \begin{macrocode}
-\tl_new:N \g_@@_list_end_tl
+\tl_new:N \l_@@_list_end_tl
 %    \end{macrocode}
 % \end{variable}
 %  \begin{macro}{\__block_list_item_end:, \__block_list_end:}
@@ -309,12 +309,12 @@
 %    \begin{macrocode}
 \cs_set:Npe \__block_list_item_end:
   {
-    \exp_not:N \g_@@_list_end_tl
+    \exp_not:N \l_@@_list_end_tl
     \exp_not:o \__block_list_item_end:
   }
 \cs_set:Npe \__block_list_end:
   {
-    \exp_not:N \g_@@_list_end_tl
+    \exp_not:N \l_@@_list_end_tl
     \exp_not:o \__block_list_end:
   }
 %    \end{macrocode}

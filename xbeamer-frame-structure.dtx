@@ -146,6 +146,8 @@
 % \end{macro}
 %
 % \begin{environment}{column}
+%   A cut-down version of a minipage: we want to be clear on the semantic
+%   meaning.
 %    \begin{macrocode}
 \NewDocumentEnvironment { column } { D <> { all } O { } m }
   {
@@ -155,6 +157,7 @@
     \vbox_set_to_wd:Nnw \l_@@_tmp_box {#3}
       \dim_set:Nn \textwidth {#3}
       \dim_set:Nn \columnwidth {#3}
+      \@parboxrestore
       \leavevmode
       \raggedright
       \ignorespaces

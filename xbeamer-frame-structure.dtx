@@ -101,6 +101,15 @@
 %    \begin{macrocode}
 \keys_define:nn { xbeamer / column }
   {
+    b .meta:n =
+      { vertical-alignment = bottom } ,
+    b .value_forbidden:n = true ,
+    c .meta:n =
+      { vertical-alignment = center } ,
+    c .value_forbidden:n = true ,
+    t .meta:n =
+      { vertical-alignment = top } ,
+    t .value_forbidden:n = true ,
     vertical-alignment .choices:nn =
       { bottom , center , top }
       {

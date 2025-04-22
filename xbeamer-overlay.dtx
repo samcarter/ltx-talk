@@ -678,6 +678,39 @@
 % \end{macro}
 % \end{macro}
 %
+% \begin{macro}{\label}
+% \begin{macro}{\@@_label:n}
+%   Here, we can't wrap the existing command up as we need the space hack, so
+%   it has to be declared from scratch. There is also a non-standard overlay
+%   default. At present, no special tricks as seen in \pkg{beamer}.   
+%    \begin{macrocode}
+\RenewDocumentCommand \label { D <> { 1 } m }
+  {
+    \@bsphack
+    \@@_overlay:nT {#1}
+      { \@@_label:n {#2} }
+    \@esphack
+  }
+\cs_new_protected:Npn \@@_label:n #1
+  {
+    \begingroup
+      \UseHookWithArguments { label } { 1 } {#1}
+      \protected@write \@auxout { }
+        {
+          \string \newlabel {#1}
+            { 
+              { \@currentlabel }
+              { \thepage }
+              { \@currentlabelname }
+              { \@currentHref }
+              { \@kernel@reserved@label@data }
+            }
+        }
+    \endgroup
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

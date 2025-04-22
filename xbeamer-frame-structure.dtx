@@ -73,6 +73,11 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
+%    \begin{macrocode}
+\keys_define:nn { xbeamer }
+  { columns .inherit:n = xbeamer / column }
+%    \end{macrocode}
+%
 % \begin{environment}{columns}
 %   Columns are block-like environments so we start and end with a \cs{par} to
 %   ensure correct tagging.

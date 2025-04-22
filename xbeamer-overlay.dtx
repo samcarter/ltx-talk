@@ -79,10 +79,10 @@
 %
 % \subsection{Utilities}
 %
-% \begin{macro}[TF]{\@@_overlay:n}
+% \begin{macro}[TF]{\@@_if_overlay:n}
 % \begin{macro}{\@@_overlay_arg:n}
 %    \begin{macrocode}
-\prg_new_protected_conditional:Npnn \@@_overlay:n #1 { T , F , TF }
+\prg_new_protected_conditional:Npnn \@@_if_overlay:n #1 { T , F , TF }
   {
     \@@_decode_parse:n {#1}
     \bool_if:NTF \l_@@_decode_overlays_bool
@@ -95,7 +95,7 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_overlay_arg:n #1
   {
-    \@@_overlay:nTF {#1}
+    \@@_if_overlay:nTF {#1}
       { \cs_set:Npn \ProcessedArgument { \c_true_bool } }
       { \cs_set:Npn \ProcessedArgument { \c_false_bool } }
   }
@@ -213,7 +213,7 @@
   {
     \ExpandArgs { cne } \NewDocumentCommand {#1} { D <> { all } +m }
       {
-        \exp_not:N \@@_overlay:nTF {##1}
+        \exp_not:N \@@_if_overlay:nTF {##1}
           {##2}
           {
             \exp_not:c { @@_action_ #1 _begin: }
@@ -245,7 +245,7 @@
   {
     \ExpandArgs { cne } \NewDocumentCommand {#1} { D <> { all } +m }
       {
-        \exp_not:N \@@_overlay:nTF {##1}
+        \exp_not:N \@@_if_overlay:nTF {##1}
           {
             \exp_not:c { @@_action_ #1 _begin: }
             ##2
@@ -278,7 +278,7 @@
 %    \begin{macrocode}
 \RenewDocumentCommand \only { D <> { all } +m }
   {
-    \@@_overlay:nT {#1}
+    \@@_if_overlay:nT {#1}
       {#2}
   }
 %    \end{macrocode}
@@ -361,7 +361,7 @@
 %    \begin{macrocode}
 \NewDocumentCommand \alt { D <> { all } +m +m }
   {
-    \@@_overlay:nTF {#1}
+    \@@_if_overlay:nTF {#1}
       {#2}
       {#3}
   }
@@ -380,7 +380,7 @@
 \cs_new_protected:Npn \@@_onslide:n #1
   {
     \tl_use:N \g_@@_onslide_tl
-    \@@_overlay:nTF {#1}
+    \@@_if_overlay:nTF {#1}
       { \group_insert_after:N \@@_onslide_reset: }
       {
         \opacity_select:n { 0 }
@@ -416,7 +416,7 @@
 %    \begin{macrocode}
 \NewDocumentCommand \temporal { D <> { all } +m +m +m }
   {
-    \@@_overlay:nTF {#1}
+    \@@_if_overlay:nTF {#1}
       {#3}
       {
         \bool_if:NTF \g_@@_slide_continue_bool
@@ -633,7 +633,7 @@
     \ExpandArgs { Nne } \RenewDocumentCommand #1
       { D <> { all } +m }
       {
-        \exp_not:N \@@_overlay:nTF {##1}
+        \exp_not:N \@@_if_overlay:nTF {##1}
           { \exp_not:c { std \cs_to_str:N #1 } }
           { \exp_not:N \@@_textcmd_eqiv:n }
             {##2}
@@ -662,7 +662,7 @@
 \NewCommandCopy \stdincludegraphics \includegraphics
 \RenewDocumentCommand \includegraphics { s D <> { all } o o m }
   {
-    \@@_overlay:nT {#2}
+    \@@_if_overlay:nT {#2}
       {
         \use:e
           {
@@ -687,7 +687,7 @@
 \RenewDocumentCommand \label { D <> { 1 } m }
   {
     \@bsphack
-    \@@_overlay:nT {#1}
+    \@@_if_overlay:nT {#1}
       { \@@_label:n {#2} }
     \@esphack
   }

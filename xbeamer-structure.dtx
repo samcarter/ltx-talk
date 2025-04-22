@@ -165,12 +165,12 @@
 %    \begin{macrocode}
 \NewDocumentCommand \frametitle { D <> { all } O {#3} m }
   {
-    \@@_overlay:nT {#1}
+    \@@_if_overlay:nT {#1}
       { \tl_gset:Nn \g_@@_frame_title_tl {#3} }
   }
 \NewDocumentCommand \framesubtitle { D <> { all } O {#3} m }
   {
-    \@@_overlay:nT {#1}
+    \@@_if_overlay:nT {#1}
       { \tl_gset:Nn \g_@@_frame_subtitle_tl {#3} }
   }
 %    \end{macrocode}

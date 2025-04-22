@@ -677,6 +677,35 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% Work around a bug in \pkg{ltcmd}.
+% \begin{macrocode}
+\group_begin:
+  \char_set_catcode_other:N \^^M %
+  \cs_gset_protected:Npn \__cmd_grab_c_auxiii:N #1 %
+    { %
+      \token_case_charcode:NnF #1 %
+        { %
+          ^^M %
+            { \__cmd_grab_c_auxiv: } %
+          \c_space_token %
+            { %
+             \tl_put_right:Nn \l__cmd_tmpa_tl {#1} %
+             \__cmd_grab_c_auxiii:N %
+            } %
+          \c_group_begin_token %
+            { %
+              \tl_set:Nn \l__cmd_tmpb_tl {#1} %
+              \__cmd_grab_c_auxvi:N %
+            } %
+        } %
+        { %
+          \tl_put_right:Nn \l__cmd_tmpa_tl {#1} %
+          \__cmd_grab_c_auxv: %
+        } %
+    } %
+\group_end: %
+%    \end{macrocode}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

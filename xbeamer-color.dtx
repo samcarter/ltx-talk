@@ -145,12 +145,11 @@
 %
 % \subsection{Color definition}
 %
-% \begin{macro}{\definecolor}
-%   Set both the \pkg{l3color} and \pkg{xcolor} data: to allow us to have
-%   semantic colors, for the present we adjust the signature for
-%   \cs{definecolor} and coerce for \pkg{xcolor}.
+% \begin{macro}{\DeclareColor}
+%   Set both the \pkg{l3color} and \pkg{xcolor} data: a new command as this
+%   means we do not have an issue with the signature.
 %    \begin{macrocode}
-\RenewDocumentCommand \definecolor { o m m }
+\NewDocumentCommand \DeclareColor { o m m }
   {
     \IfNoValueTF {#1}
       {
@@ -166,13 +165,24 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{macro}{\definecolor}
+%   Simply redirect.
+%    \begin{macrocode}
+\RenewDocumentCommand \definecolor { m m m }
+  {
+    \color_set:nnn {#1} {#2} {#3}
+    \stddefinecolor {#1} {#2} {#3}
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 % \subsection{Semantic colors}
 %
 % Pick up the standard colors from \pkg{beamer}.
 %    \begin{macrocode}
-\definecolor { alert }     { red }
-\definecolor { example }   { green!50!black }
-\definecolor [ rgb ] { structure } { 0.2 , 0.2 , 0.7 }
+\DeclareColor { alert }   { red }
+\DeclareColor { example } { green!50!black }
+\DeclareColor [ rgb ] { structure } { 0.2 , 0.2 , 0.7 }
 %    \end{macrocode}
 %
 %    \begin{macrocode}

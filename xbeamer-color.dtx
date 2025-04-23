@@ -82,6 +82,8 @@
 % predictable way: \pkg{pgf} in particular makes use of \pkg{xcolor} internal
 % as part of color management. Thus some accommodations are required.
 %
+% \subsection{Existing definitions}
+%
 %    \begin{macrocode}
 \RequirePackage { xcolor }
 %    \end{macrocode}
@@ -99,6 +101,45 @@
 %   Save the document commands.
 %    \begin{macrocode}
 \NewCommandCopy \stddefinecolor \definecolor
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Document commands}
+%
+% \begin{macro}{\color, \mathcolor, \textcolor}
+%   Add the overlay specification and use \pkg{l3color}.
+%    \begin{macrocode}
+\RenewDocumentCommand \color { D <> { all } o m }
+  {
+    \@@_if_overlay:nT {#1}
+      {
+        \IfNoValueTF {#2}
+          { \color_select:n {#3} }
+          { \color_select:nn {#2} {#3} }
+      }
+  }
+\RenewDocumentCommand \mathcolor { D <> { all } o m +m }
+  {
+    \@@_if_overlay:nT {#1}
+      {
+        \IfNoValueTF {#2}
+          { \color_math:nn {#3} {#4} }
+          { \color_math:nnn {#2} {#3} {#4} }
+      }
+  }
+\RenewDocumentCommand \textcolor { D <> { all } o m +m }
+  {
+    \@@_if_overlay:nT {#1}
+      {
+        \mode_leave_vertical:
+        \group_begin:
+          \IfNoValueTF {#2}
+            { \color_select:n {#3} }
+            { \color_select:nn {#2} {#3} }
+          #4
+        \group_end:
+      }
+  }
 %    \end{macrocode}
 % \end{macro}
 %

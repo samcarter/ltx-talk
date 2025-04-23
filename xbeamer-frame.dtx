@@ -607,6 +607,18 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% The total frames can be handled using the kernel properties: we just have
+% to work around an issue until the next kernel (dev) release.
+%    \begin{macrocode}
+\NewProperty { totalframes } { shipout } { -1 }
+  { \int_use:N \g_@@_frame_int }
+\AddToHook { enddocument / afterlastpage }
+  {
+    \cs_gset_protected:Npn \write { \tex_immediate:D \tex_write:D }
+    \RecordProperties { lastpage } { totalframes }
+  }
+%    \end{macrocode}
+%
 % \begin{macro}{\@@_latexe_frame:n}
 %   As we will need to re-define \cs{frame} but have it available inside
 %   frames, a copy is made here.

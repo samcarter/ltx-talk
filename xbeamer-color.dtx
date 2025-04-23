@@ -73,6 +73,35 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
+% The aim here is to \emph{test} how well \pkg{l3color} can support the range
+% of color functions that are needed for a presentation. As such, this is
+% very much experimental, but deliberately so. In particular, there is an
+% important question about the need for global colors: used throughout
+% \cls{beamer} but otherwise not widely encountered. At the same time, there is
+% a need to work with packages that expect color to be managed in a
+% predictable way: \pkg{pgf} in particular makes use of \pkg{xcolor} internal
+% as part of color management. Thus some accommodations are required.
+%
+%    \begin{macrocode}
+\RequirePackage { xcolor }
+%    \end{macrocode}
+%
+% \begin{macro}{\stdcolor, \stdmathcolor, \stdtextcolor}
+%   Save the document commands.
+%    \begin{macrocode}
+\NewCommandCopy \stdcolor \color
+\NewCommandCopy \stdmathcolor \mathcolor
+\NewCommandCopy \stdtextcolor \textcolor
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\stddefinecolor}
+%   Save the document commands.
+%    \begin{macrocode}
+\NewCommandCopy \stddefinecolor \definecolor
+%    \end{macrocode}
+% \end{macro}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

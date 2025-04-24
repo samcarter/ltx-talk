@@ -241,6 +241,7 @@
 \NewDocumentEnvironment { block } { D <> { all } m }
   {
     \@@_action_begin:n {#1}
+    \par
     \vbox_set:Nw \l_@@_tmp_box
       \group_begin:
         \medskip
@@ -255,6 +256,7 @@
   {
     \vbox_set_end:
     \box_use:N \l_@@_tmp_box
+    \par
     \@@_action_end:
   }
 %    \end{macrocode}

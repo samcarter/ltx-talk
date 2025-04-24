@@ -314,27 +314,16 @@
 %    \begin{macrocode}
 \AddToHook { begindocument / before }
   {
-    \RenewDocumentEnvironment { itemize } { = { action-spec } !o }
+    \clist_map_inline:nn { itemize , enumerate , description }
       {
-        \IfNoValueTF {#1}
-          { \UseInstance { blockenv } { itemize } { } }
-          { \UseInstance { blockenv } { itemize } {#1} }
+        \RenewDocumentEnvironment {#1} { = { action-spec } !o }
+          {
+            \IfNoValueTF {##1}
+              { \UseInstance { blockenv } {#1} { } }
+              { \UseInstance { blockenv } {#1} {##1} }
+          }
+          { \endblockenv }
       }
-      { \endblockenv }
-    \RenewDocumentEnvironment { enumerate }{ = { action-spec } !o }
-      {
-        \IfNoValueTF {#1}
-          { \UseInstance { blockenv } { enumerate } { } }
-          { \UseInstance { blockenv } { enumerate } {#1} }
-      }
-      { \endblockenv }
-    \RenewDocumentEnvironment { description } { = { action-spec } !o }
-      {
-        \IfNoValueTF {#1}
-          { \UseInstance { blockenv } { description } { } }
-          { \UseInstance { blockenv } { description } {#1} }
-      }
-      { \endblockenv }
   }
 %    \end{macrocode}
 % And add the structural color to item labels.

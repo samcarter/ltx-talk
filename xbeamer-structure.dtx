@@ -208,6 +208,7 @@
 %    \end{macrocode}
 %
 % \begin{environment}{description, quote, quotation, verse}
+% \begin{environment}{stdquote, stdquotation, stdverse}
 %   Stub logical environments: needed as the tagging setup expects these
 %   to exist.
 %    \begin{macrocode}
@@ -215,7 +216,24 @@
 \NewDocumentEnvironment { quote } { } { } { }
 \NewDocumentEnvironment { quotation } { } { } { }
 \NewDocumentEnvironment { verse } { } { } { }
+\AddToHook { begindocument / before }
+  {
+    \clist_map_inline:nn { quote , quotation , verse }
+      {
+        \NewEnvironmentCopy { std #1 } {#1}
+        \RenewDocumentEnvironment {#1} { D <> { all } !O{} }
+          {
+            \@@_action_begin:n {##1}
+            \begin { std #1 } [ {##2} ]
+          }
+          {
+            \end { std #1 }
+            \@@_action_end:
+          }
+      }
+  }
 %    \end{macrocode}
+% \end{environment}
 % \end{environment}
 %
 % \begin{environment}{block}

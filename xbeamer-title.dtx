@@ -105,7 +105,7 @@
   {
     after-skip : length = 0em ,
     before-skip : length = 0em ,
-    color : tokenlist ,
+    color : tokenlist = . ,
     font : tokenlist = \normalfont ,
     tag-begin : tokenlist = ,
     tag-end : tokenlist =
@@ -145,9 +145,10 @@
 \DeclareInstance { titlepage-element } { institute } { xbeamer }
   { font = \scriptsize }
 \DeclareInstance { titlepage-element } { subtitle } { xbeamer }
-  { before-skip = 0.25em }
+  { before-skip = 0.25em , color = structure }
 \DeclareInstance { titlepage-element } { title } { xbeamer }
   {
+    color = structure ,
     font = \Large ,
     tag-begin = \tag_struct_begin:n { tag = Title } ,
     tag-end = \tag_struct_end:

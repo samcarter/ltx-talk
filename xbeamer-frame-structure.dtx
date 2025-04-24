@@ -101,7 +101,7 @@
     \keys_set:nn { xbeamer / columns } {#2}
     \hbox_set_to_wd:Nnw \l_@@_tmp_box { \l_@@_columns_wd_tl }
       \dim_set:Nn \textwidth { \l_@@_columns_wd_tl }
-      \dim_set:Nn \columnwidth { \l_@@_columns_wd_tl }
+      \dim_set_eq:NN \columnwidth \textwidth
       \ignorespaces
   }
   {
@@ -182,7 +182,7 @@
     \keys_set:nn { xbeamer / column } {#2}
     \vbox_set_to_wd:Nnw \l_@@_tmp_box {#3}
       \dim_set:Nn \textwidth {#3}
-      \dim_set:Nn \columnwidth {#3}
+      \dim_set_eq:NN \columnwidth \textwidth
       \@parboxrestore
       \leavevmode
       \raggedright

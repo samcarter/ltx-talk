@@ -337,6 +337,16 @@
       { \endblockenv }
   }
 %    \end{macrocode}
+% And add the structural color to item labels.
+%    \begin{macrocode}
+\AddToHook { begindocument / before }
+  {
+    \EditInstance { item } { basic }
+      { label-format = \color { structure } #1 }
+    \EditInstance { item } { description }
+      { label-format = \normalfont \bfseries \color { structure } #1 }
+  }
+%    \end{macrocode}
 %
 % \begin{variable}{\l_@@_action_spec_str}
 %   Add an overlay key to the \texttt{block} template.  Placed here, it applies

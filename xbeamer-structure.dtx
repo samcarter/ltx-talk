@@ -310,7 +310,8 @@
   }
 %    \end{macrocode}
 %  \end{macro}
-% Allow for the classical \cls{beamer} syntax.
+% \begin{environment}{itemize, enumerate, description}
+%   Allow for the classical \cls{beamer} syntax.
 %    \begin{macrocode}
 \AddToHook { begindocument / before }
   {
@@ -326,6 +327,7 @@
       }
   }
 %    \end{macrocode}
+% \end{environment}
 % And add the structural color to item labels.
 %    \begin{macrocode}
 \AddToHook { begindocument / before }

@@ -102,10 +102,12 @@
     \hbox_set_to_wd:Nnw \l_@@_tmp_box { \l_@@_columns_wd_tl }
       \dim_set:Nn \textwidth { \l_@@_columns_wd_tl }
       \dim_set_eq:NN \columnwidth \textwidth
+      \hfil
       \ignorespaces
   }
   {
       \unskip
+      \hfil
     \hbox_set_end:
     \box_use_drop:N \l_@@_tmp_box
     \par

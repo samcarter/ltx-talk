@@ -444,7 +444,8 @@
             \clist_map_inline:Nn \l_@@_footer_order_clist
               { 
                 \l_@@_footer_sep_tl
-                \ExpandArgs { nnv } \UseInstance { footer-element } {##1} { @ ##1 }
+                \ExpandArgs { nnv }
+                  \UseInstance { footer-element } {##1} { @ ##1 }
               }
           }
         \hfil

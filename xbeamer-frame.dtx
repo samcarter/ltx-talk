@@ -555,40 +555,6 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_slide_title:, \@@_slide_title_aux:}
-%   Inserts the slide header information including the frame title: that
-%   will need to be split out into a template (leaving a question about what
-%   to do with empty titles).
-%    \begin{macrocode}
-\cs_new_protected:Npn \@@_slide_title:
-  {
-    \tl_if_empty:NF \g_@@_frame_title_tl
-      { \@@_slide_title_aux: }
-  }
-\cs_new_protected:Npn \@@_slide_title_aux:
-  {
-    \tag_resume:n { header }
-    \tag_mc_end:
-    \tag_struct_begin:e
-      {
-        firstkid = true ,
-        parent   = \int_use:N \g_@@_slide_struct_int ,
-        tag      = frametitle ,
-        title    = { \text_purify:n { \g_@@_frame_title_tl } } ,
-      }
-    \tag_mc_begin:n { }
-    \group_begin:
-      \tagpdfparaOff
-      \@@_insert_frametitle:
-    \group_end:
-    \tag_mc_end:
-    \tag_struct_end:
-    \tag_mc_begin:n { artifact }
-    \tag_suspend:n { header }
-  }
-%    \end{macrocode}
-% \end{macro}
-%
 % \subsection{The \texttt{frame} environment}
 %
 % \begin{variable}{\l_@@_frame_bool}

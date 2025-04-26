@@ -176,6 +176,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{macro}{\@@_frame_title:n}
+%   Inserting the frame title requires we deal with tagging as well as
+%   appearance: if there is a title, we need to tag just this part of the
+%   header.
 %    \begin{macrocode}
 \NewTemplateType { frametitle } { 1 }
 \DeclareTemplateInterface { frametitle } { xbeamer } { 1 }
@@ -199,13 +203,36 @@
       \tl_if_empty:NF \l_@@_frametitle_color_tl
         { \color_select:V \l_@@_frametitle_color_tl }
       \l_@@_frametitle_font_tl
-      #1
+      \tl_if_blank:nF {#1}
+        { \@@_frame_title:n {#1} }
       \par
     \group_end:
     \vspace { \l_@@_frametitle_after_skip }
   }
 \DeclareInstance { frametitle } { header } { xbeamer } { }
+\cs_new_protected:Npn \@@_frame_title:n #1
+  {
+    \tag_resume:n { header }
+    \tag_mc_end:
+    \tag_struct_begin:e
+      {
+        firstkid = true ,
+        parent   = \int_use:N \g_@@_slide_struct_int ,
+        tag      = frametitle ,
+        title    = { \text_purify:n { \g_@@_frame_title_tl } } ,
+      }
+    \tag_mc_begin:n { }
+    \group_begin:
+      \tagpdfparaOff
+      #1
+    \group_end:
+    \tag_mc_end:
+    \tag_struct_end:
+    \tag_mc_begin:n { artifact }
+    \tag_suspend:n { header }
+  }
 %    \end{macrocode}
+% \end{macro}
 %
 % \begin{environment}{description, quote, quotation, verse}
 % \begin{environment}{stdquote, stdquotation, stdverse}

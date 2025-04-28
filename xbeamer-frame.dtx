@@ -75,6 +75,15 @@
 %
 % \subsection{Slides in frames}
 %
+% Currently, each slide in a frame will produce a separate page in the output
+% (unless the slide is suppressed entirely). Material is then hidden on some
+% pages by using opacity. An alternative approach would be to use Optional
+% Content Groups to have a similar effect on one page per frame. However,
+% whilst that would be relatively clear for appear/disappear effects, it would
+% be much less straight-forward for partial transparency, \foreign{etc.}, plus
+% would depend more heavily on viewer support. At a future stage we may wish to
+% revisit this.
+%
 % \begin{variable}{\g_@@_slide_continue_bool}
 %   Tracks whether the frame continues after the current slide.
 %    \begin{macrocode}

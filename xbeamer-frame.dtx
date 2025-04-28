@@ -111,7 +111,7 @@
 % \end{macro}
 %
 % \begin{macro}{\@@_slide:nn}
-% \begin{macro}{\@@_slide_aux:n, \@@_slide_verb:n}
+% \begin{macro}{\@@_slide_aux:n}
 %  Each slide is parsed inside simple st up, the only complexity being if we
 %  are handling fragile frames. There, all \cs{obeyedline} in the grabbed
 %  tokens need to be turned back into |^^M| before rescanning: this ensures
@@ -130,17 +130,19 @@
           \@@_if_overlay:nTF {#1}
             {
               \@@_slide_begin:
-                \@@_slide_aux:n {#2}
+                \bool_if:NTF \l_@@_fragile_bool
+                  { \@@_slide_aux:n }
+                  { \use:n }
+                    {#2}
               \@@_slide_end:
             }
             { \bool_gset_false:N \g_@@_slide_continue_bool }
         }
     \group_end:
   }
-\cs_new_protected:Npn \@@_slide_aux:n #1 {#1}
 \group_begin:
   \char_set_catcode_other:n { `\^^M } %
-  \cs_new_protected:Npn \_@@_slide_verb:n #1 %
+  \cs_new_protected:Npn \_@@_slide_aux:n #1 %
     { %
       \group_begin: %
         \cs_set:Npn \obeyedline { ^^M  }%
@@ -151,8 +153,6 @@
           } %
     } %
 \group_end: %
-\bool_if:NT \l_@@_fragile_bool
-  { \cs_gset_eq:NN \@@_slide_aux:n \_@@_slide_verb:n }
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}

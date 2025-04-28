@@ -130,7 +130,7 @@
           \@@_if_overlay:nTF {#1}
             {
               \@@_slide_begin:
-                \bool_if:NTF \l_@@_fragile_bool
+                \bool_if:NTF \l_@@_frame_verb_bool
                   { \@@_slide_aux:n }
                   { \use:n }
                     {#2}
@@ -560,6 +560,13 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\l_@@_frame_verb_bool}
+%  Indicates that material was collected verbatim (and thus needs rescanning).
+%    \begin{macrocode}
+\bool_new:N \l_@@_frame_verb_bool
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{variable}{\g_@@_frame_int, \c@frame, \theframe, \@framenumber}
 %   The overall frame number, including \LaTeX{} counter-like access.
 %    \begin{macrocode}
@@ -604,49 +611,48 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{frame}
-%   The definition for the \texttt{frame} evnironment is currently dependent
-%   on whether frames may be fragile: other than that, it's quite simple.
+% \begin{macro}{frame, frame*}
+%   The definition for the \env{frame} and \env{frame*} environments: the exact
+%   interface at both the document and code levels is still open.
 %    \begin{macrocode}
-\bool_if:NTF \l_@@_fragile_bool
+\RenewDocumentEnvironment { frame }
+  { !D <> { all } = { action-spec } !O { } +b }
   {
-    \RenewDocumentEnvironment { frame }
-      { !D <> { all } = { action-spec } !O { } c }
-  }
-  {
-    \RenewDocumentEnvironment { frame }
-      { !D <> { all } = { action-spec } !O { } +b }
-  }
-    {
       \keys_set:nn { xbeamer / frame } {#2}
+      \bool_set_false:N \l_@@_frame_verb_bool
       \@@_frame_process:nn {#1} {#3}
-     }
-     { }
+  }
+  { }
+\NewDocumentEnvironment { frame* }
+  { !D <> { all } = { action-spec } !O { } c }
+  {
+      \keys_set:nn { xbeamer / frame } {#2}
+      \bool_set_true:N \l_@@_frame_verb_bool
+      \@@_frame_process:nn {#1} {#3}
+  }
+  { }
 %    \end{macrocode}
 %  Until the next \texttt{dev} release of \LaTeX{}, we have to cheat a bit
 %  here.
 %    \begin{macrocode}
-\bool_if:NT \l_@@_fragile_bool
+\cs_gset_protected_nopar:cpn { frame* }
   {
-    \cs_gset_protected_nopar:Npn \frame
+    \__cmd_start_env:nnnnn
+      { !D <> { all } = { action-spec } !O { } c } { frame* }
       {
-        \__cmd_start_env:nnnnn
-          { !D <> { all } = { action-spec } !O { } c } { frame }
-          {
-            \__cmd_grab_D_obey_spaces_verb_safe:w <>
-            \__cmd_grab_D_obey_spaces_no_strip_verb_safe:w []
-            \__cmd_grab_c:w
-          }
-          {
-            { \prg_do_nothing: all }
-            { \prg_do_nothing: }
-            \c_novalue_tl
-          }
-          {
-            { }
-            { { \__cmd_arg_to_keyvalue:nn { action-spec } } }
-            { }
-          }
+        \__cmd_grab_D_obey_spaces_verb_safe:w <>
+        \__cmd_grab_D_obey_spaces_no_strip_verb_safe:w []
+        \__cmd_grab_c:w
+      }
+      {
+        { \prg_do_nothing: all }
+        { \prg_do_nothing: }
+        \c_novalue_tl
+      }
+      {
+        { }
+        { { \__cmd_arg_to_keyvalue:nn { action-spec } } }
+        { }
       }
   }
 %    \end{macrocode}

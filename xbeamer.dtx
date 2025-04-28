@@ -187,7 +187,6 @@
 %   {
 %     \l_@@_aspect_ratio_str ,
 %     \l_@@_fontsize_dim     ,
-%     \l_@@_fragile_bool     ,
 %     \l_@@_mode_str
 %   }
 %    \begin{macrocode}
@@ -197,8 +196,6 @@
       \l_@@_aspect_ratio_str ,
     font-size .dim_set:N =
       \l_@@_fontsize_dim ,
-    fragile-frames .bool_set:N =
-      \l_@@_fragile_bool ,
     mode .choices:nn =
       { handout , projector }
       { \str_set:NV \l_@@_mode_str \l_keys_choice_tl }
@@ -210,10 +207,9 @@
 %    \begin{macrocode}
 \keys_define:nn { xbeamer }
   {
-    aspect-ratio   .usage:n = load ,
-    fragile-frames. usage:n = load ,
-    font-size      .usage:n = load ,
-    mode           .usage:n = load
+    aspect-ratio .usage:n = load ,
+    font-size    .usage:n = load ,
+    mode         .usage:n = load
   }
 %    \end{macrocode}
 %
@@ -223,7 +219,6 @@
   {
     aspect-ratio   = 16:9      ,
     font-size      = 11pt      ,
-    fragile-frames = false     ,
     mode           = projector
   }
 %    \end{macrocode}

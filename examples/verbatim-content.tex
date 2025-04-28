@@ -1,11 +1,11 @@
 \DocumentMetadata{tagging = on}
-\documentclass[fragile-frames = true]{xbeamer}
+\documentclass{xbeamer}
 
 \usepackage{fancyvrb}
 
 \begin{document}
 
-\begin{frame}
+\begin{frame*}
   Text
   \begin{actionenv}<+-|alert@+>
     \begin{Verbatim}[gobble = 6]
@@ -15,6 +15,6 @@
     \end{Verbatim}
   \end{actionenv}
   \uncover<+->{More text}
-\end{frame}
+\end{frame*}
 
 \end{document}

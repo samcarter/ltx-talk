@@ -154,8 +154,7 @@
     \IfNoValueTF {#1}
       {
         \color_set:nn {#2} {#3}
-        \color_export:nnN {#3} { comma-sep-rgb } \l_@@_tmp_tl
-        \ExpandArgs { nnV } \stddefinecolor {#2} { rgb } \l_@@_tmp_tl
+        \colorlet {#2} {#3}
       }
       {
         \color_set:nnn {#2} {#1} {#3}

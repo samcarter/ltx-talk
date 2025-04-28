@@ -176,7 +176,7 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_frame_title:n}
+% \begin{macro}{\@@_frame_title:n, \@@_frame_title_tagged:n}
 %   Inserting the frame title requires we deal with tagging as well as
 %   appearance: if there is a title, we need to tag just this part of the
 %   header.
@@ -212,12 +212,19 @@
 \DeclareInstance { frametitle } { header } { xbeamer } { }
 \cs_new_protected:Npn \@@_frame_title:n #1
   {
+    \bool_if:NTF \g_@@_frame_tag_bool
+      { \@@_frame_title_tagged:n }
+      { \use:n }
+        {#1}
+  }
+\cs_new_protected:Npn \@@_frame_title_tagged:n #1
+  {
     \tag_resume:n { header }
     \tag_mc_end:
     \tag_struct_begin:e
       {
         firstkid = true ,
-        parent   = \int_use:N \g_@@_slide_struct_int ,
+        parent   = \int_use:N \g_@@_frame_struct_int ,
         tag      = frametitle ,
         title    = { \text_purify:n { \g_@@_frame_title_tl } } ,
       }

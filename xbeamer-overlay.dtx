@@ -79,7 +79,7 @@
 %
 % \subsection{Utilities}
 %
-% \begin{macro}[TF]{\@@_if_overlay:n}
+% \begin{macro}[TF]{\@@_if_overlay:n, \@@_if_overlay:V}
 % \begin{macro}{\@@_overlay_arg:n}
 %    \begin{macrocode}
 \prg_new_protected_conditional:Npnn \@@_if_overlay:n #1 { T , F , TF }
@@ -89,6 +89,7 @@
       \prg_return_true:
       \prg_return_false:
   }
+\prg_generate_conditional_variant:Nnn \@@_if_overlay:n { V } { T , F , TF }
 %    \end{macrocode}
 %   A macro processor variant of the check that always results in an |N|-type
 %   bool.

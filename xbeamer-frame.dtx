@@ -139,11 +139,16 @@
           \@@_if_overlay:nTF {#1}
             {
               \@@_slide_begin:
-                \bool_if:NTF \l_@@_frame_verb_bool
-                  { \@@_slide_aux:n }
-                  { \use:n }
-                    {#2}
-              \@@_slide_end:
+              \@@_if_overlay:VTF \l_@@_frame_tagging_str
+                { \@@_frame_tag:n }
+                { \@@_frame_notag:n }
+                  {
+                    \bool_if:NTF \l_@@_frame_verb_bool
+                      { \@@_slide_aux:n }
+                      { \use:n }
+                        {#2}
+                  }
+               \@@_slide_end:
             }
             { \bool_gset_false:N \g_@@_slide_continue_bool }
         }
@@ -173,11 +178,11 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\g_@@_slide_struct_int}
+% \begin{variable}{\g_@@_frame_struct_int}
 %  The tagging structure number for the slide: needed by the content placed
 %  outside of the current box (for example the frame title).
 %    \begin{macrocode}
-\int_new:N \g_@@_slide_struct_int
+\int_new:N \g_@@_frame_struct_int
 %    \end{macrocode}
 % \end{variable}
 %
@@ -189,12 +194,6 @@
     \bool_gset_false:N \g_@@_slide_continue_bool
     \tl_gclear:N \g_@@_frame_title_tl
     \tl_gclear:N \g_@@_frame_subtitle_tl
-    \tag_struct_begin:e
-      {
-        tag   = slide ,
-        title = Slide ~ \@@_frame_slide:
-      }
-    \int_gset:Nn \g_@@_slide_struct_int { \tag_get:n { struct_num } }
     \vbox_set:Nw \l_@@_slide_box
       \tl_gclear:N \g_@@_onslide_tl
   }
@@ -207,7 +206,6 @@
         \use:c { @@_slide_align_ \l_@@_frame_alignment_tl :n }
           { \vbox_unpack_drop:N \l_@@_slide_box }
       }
-    \tag_struct_end:
     \clearpage
   }
 %    \end{macrocode}
@@ -257,12 +255,14 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\l_@@_action_spec_str}
+% \begin{variable}{\l_@@_action_spec_str, \l_@@_frame_tagging_str}
 %    \begin{macrocode}
 \keys_define:nn { xbeamer / frame }
   {
     action-spec .str_set:N
       = \l_@@_action_spec_str ,
+    tagging-spec .str_set:N
+      = \l_@@_frame_tagging_str ,
     vertical-alignment .choices:nn =
       { bottom , center , stretch , top }
       {
@@ -273,6 +273,7 @@
 \keys_set:nn { xbeamer / frame }
   {
     action-spec        =        ,
+    tagging-spec       =  1     ,
     vertical-alignment = center
   }
 %    \end{macrocode}
@@ -569,6 +570,14 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\g_@@_frame_tag_bool}
+%   To track when a frame is being tagged: mainly needed for the header
+%   (and as a result global).
+%    \begin{macrocode}
+\bool_new:N \g_@@_frame_tag_bool
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{variable}{\l_@@_frame_verb_bool}
 %  Indicates that material was collected verbatim (and thus needs rescanning).
 %    \begin{macrocode}
@@ -611,11 +620,40 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_frame_process:nn #1#2
   {
-    \tag_struct_begin:n { tag = frame }
     \int_gincr:N \g_@@_frame_int
     \bool_set_true:N \l_@@_frame_bool
     \@@_slide:nn {#1} {#2}
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_frame_tag:n}
+%   Wraps some content in tagging for a frame: we may have multiple of these
+%   in one logical frame, but that is non-standard.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_frame_tag:n #1
+  {
+    \tag_struct_begin:n { tag = frame }
+    \int_gset:Nn \g_@@_frame_struct_int { \tag_get:n { struct_num } }
+    \bool_gset_true:N \g_@@_frame_tag_bool
+    #1
     \tag_struct_end:
+  }
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\@@_frame_notag:n}
+%   The alternative: turn off tagging and suppress the function that would
+%   tag the frame title.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_frame_notag:n #1
+  {
+    \tag_mc_begin:n { artifact }
+    \tag_suspend:n { frame }
+    \bool_gset_false:N \g_@@_frame_tag_bool
+    #1
+    \par
+    \tag_resume:n { frame }
+    \tag_mc_end:
   }
 %    \end{macrocode}
 % \end{macro}

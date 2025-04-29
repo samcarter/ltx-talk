@@ -343,18 +343,62 @@
 \tl_new:N \l_@@_list_end_tl
 %    \end{macrocode}
 % \end{variable}
-%  \begin{macro}{\__block_list_item_end:, \__block_list_end:}
-%    Currently no hook for this, so we have to do internal patching.
+%  \begin{macro}{\__block_inter_item:, \endblockenv}
+%    There are no currently no hooks for insertion at the end of
+%    list items, so we have to do it manually. We cannot target
+%    \cs{__block_list_item_end:}/\cs{__block_list_end:} as these
+%    change definition if tagging is suspended.
 %    \begin{macrocode}
-\cs_set:Npe \__block_list_item_end:
+\cs_gset_protected:Npn \__block_inter_item:
   {
-    \exp_not:N \l_@@_list_end_tl
-    \exp_not:o \__block_list_item_end:
+    \legacy_if:nT { @inlabel }
+      { \indent \par }
+   \mode_if_horizontal:T
+     {
+       \__block_skip_remove_last:
+       \__block_skip_remove_last:
+       \par
+     }
+    \l_@@_list_end_tl
+    \__kernel_list_item_end:
+    \__kernel_list_item_begin:
+    \addpenalty \@itempenalty 
+    \addvspace \itemsep
   }
-\cs_set:Npe \__block_list_end:
+\cs_gset:Npn \endblockenv
   {
-    \exp_not:N \l_@@_list_end_tl
-    \exp_not:o \__block_list_end:
+    \__block_debug_typeout:n { blockenv~common~ending \on@line }
+    \bool_if:NT \l__block_level_incr_bool
+      { \int_gdecr:N \g_block_nesting_depth_int }
+    \legacy_if:nT { @inlabel }
+      {
+        \mode_leave_vertical: 
+        \legacy_if_gset_false:n { @inlabel }
+      }
+    \__block_if_list:T
+      { \legacy_if:nT { @newlist } { \@noitemerr } }
+    \mode_if_horizontal:TF
+       {
+         \__block_skip_remove_last:
+         \__block_skip_remove_last:
+         \par
+       }
+       { \@inmatherr { \end { \@currenvir } } }
+    \l_@@_list_end_tl
+    \__kernel_displayblock_end:
+    \__block_if_list:T { \legacy_if_gset_false:n { @newlist } }
+    \legacy_if:nF { @noparlist }
+      {
+        \__block_skip_set_to_last:N \l_tmpa_skip
+        \dim_compare:nNnT \l_tmpa_skip > \c_zero_dim
+          {
+            \skip_vertical:n { - \l_tmpa_skip }
+            \skip_vertical:n { \l_tmpa_skip + \parskip - \@outerparskip }
+          }
+        \addpenalty \@endparpenalty
+        \addvspace \l__block_topsepadd_skip
+      }
+    \socket_use:n { tagsupport/block-endpe }
   }
 %    \end{macrocode}
 %  \end{macro}

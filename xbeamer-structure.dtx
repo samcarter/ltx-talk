@@ -73,88 +73,6 @@
 %<@@=xbeamer>
 %    \end{macrocode}
 %
-% \subsection{Sectioning}
-%
-% \begin{variable}
-%   {
-%     \l_@@_section_tl ,
-%     \l_@@_subsection_tl ,
-%     \l_@@_subsubsection_tl
-%   }
-%    \begin{macrocode}
-\tl_new:N \l_@@_section_tl
-\tl_new:N \l_@@_subsection_tl
-\tl_new:N \l_@@_subsubsection_tl
-%    \end{macrocode}
-% \end{variable}
-%
-% \begin{macro}{\section, \subsection, \subsubsection}
-% \begin{macro}{\thesection, \thesubsection, \thesubsubsection}
-%  Here, we need full \LaTeX{} counters, so create them using the appropriate
-%  mechanism: that also means we can sort out counter dependency and the
-%  appearance (using the same setup as in \pkg{article}).
-%    \begin{macrocode}
-\newcounter { section }
-\newcounter { subsection } [ section ]
-\newcounter { subsubsection } [ subsection ]
-\cs_gset:Npn \thesection { \@arabic \c@section }
-\cs_gset:Npn \thesubsection { \thesection . \@arabic \c@subsection }
-\cs_gset:Npn \thesubsubsection { \thesubsection . \@arabic \c@subsubsection }
-%    \end{macrocode}
-% \end{macro}
-% \end{macro}
-%
-% \begin{macro}{\section, \subsection, \subsubsection}
-% \begin{macro}
-%   {
-%     \insertsection       ,
-%     \insertsubsection   ,
-%     \insertsubsubsection
-%   }
-%  The sectioning commands all have essentially the same form: we therefore
-%  create using a generator with the necessary conditionals in place. As we
-%  do not typeset sections at this stage, the code is quite different from
-%  \pkg{article}. This also means that the bookmark links need to point forward
-%  to the next slide: if that doesn't appear, the bookmarks will be out.
-%    \begin{macrocode}
-\clist_map_inline:nn { section , subsection , subsubsection }
-  {
-    \use:e
-      {
-        \NewDocumentCommand \exp_not:c { insert #1 } { }
-          {
-            \exp_not:N \tl_use:N
-            \exp_not:c { l_@@_ #1 _tl }
-          }
-        \NewDocumentCommand \exp_not:c {#1}
-          { s D <> { all } O {##4} m }
-          {
-            \exp_not:N \refstepcounter {#1}
-            \tag_tool:n { sec-start = #1 , restore-para }
-            \tl_set:Nn \exp_not:c { l_@@_ #1 _tl } {##4}
-            \str_if_eq:nnT {#1} { section }
-              { \tl_clear:N \exp_not:N \l_@@_subsection_tl }
-            \str_if_eq:nnF {#1} { subsubsection }
-              { \tl_clear:N \exp_not:N \l_@@_subsubsection_tl }
-            \exp_not:N \bookmark
-              [
-                dest =
-                  \exp_not:n
-                    {
-                      slide .
-                      \int_eval:n { \g_@@_frame_int + 1 } . 1
-                    }
-              ]
-              {##3}
-            \hook_use:n { #1 / begin }
-          }
-        \hook_new:n { #1 / begin }
-      }
-}
-%    \end{macrocode}
-% \end{macro}
-% \end{macro}
-%
 % \subsection{Frame title}
 %
 % \begin{variable}{\g_@@_frame_title_tl, \g_@@_frame_subtitle_tl}
@@ -243,6 +161,88 @@
     \tag_suspend:n { header }
   }
 %    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Sectioning}
+%
+% \begin{variable}
+%   {
+%     \l_@@_section_tl ,
+%     \l_@@_subsection_tl ,
+%     \l_@@_subsubsection_tl
+%   }
+%    \begin{macrocode}
+\tl_new:N \l_@@_section_tl
+\tl_new:N \l_@@_subsection_tl
+\tl_new:N \l_@@_subsubsection_tl
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\section, \subsection, \subsubsection}
+% \begin{macro}{\thesection, \thesubsection, \thesubsubsection}
+%  Here, we need full \LaTeX{} counters, so create them using the appropriate
+%  mechanism: that also means we can sort out counter dependency and the
+%  appearance (using the same setup as in \pkg{article}).
+%    \begin{macrocode}
+\newcounter { section }
+\newcounter { subsection } [ section ]
+\newcounter { subsubsection } [ subsection ]
+\cs_gset:Npn \thesection { \@arabic \c@section }
+\cs_gset:Npn \thesubsection { \thesection . \@arabic \c@subsection }
+\cs_gset:Npn \thesubsubsection { \thesubsection . \@arabic \c@subsubsection }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\section, \subsection, \subsubsection}
+% \begin{macro}
+%   {
+%     \insertsection       ,
+%     \insertsubsection   ,
+%     \insertsubsubsection
+%   }
+%  The sectioning commands all have essentially the same form: we therefore
+%  create using a generator with the necessary conditionals in place. As we
+%  do not typeset sections at this stage, the code is quite different from
+%  \pkg{article}. This also means that the bookmark links need to point forward
+%  to the next slide: if that doesn't appear, the bookmarks will be out.
+%    \begin{macrocode}
+\clist_map_inline:nn { section , subsection , subsubsection }
+  {
+    \use:e
+      {
+        \NewDocumentCommand \exp_not:c { insert #1 } { }
+          {
+            \exp_not:N \tl_use:N
+            \exp_not:c { l_@@_ #1 _tl }
+          }
+        \NewDocumentCommand \exp_not:c {#1}
+          { s D <> { all } O {##4} m }
+          {
+            \exp_not:N \refstepcounter {#1}
+            \tag_tool:n { sec-start = #1 , restore-para }
+            \tl_set:Nn \exp_not:c { l_@@_ #1 _tl } {##4}
+            \str_if_eq:nnT {#1} { section }
+              { \tl_clear:N \exp_not:N \l_@@_subsection_tl }
+            \str_if_eq:nnF {#1} { subsubsection }
+              { \tl_clear:N \exp_not:N \l_@@_subsubsection_tl }
+            \exp_not:N \bookmark
+              [
+                dest =
+                  \exp_not:n
+                    {
+                      slide .
+                      \int_eval:n { \g_@@_frame_int + 1 } . 1
+                    }
+              ]
+              {##3}
+            \hook_use:n { #1 / begin }
+          }
+        \hook_new:n { #1 / begin }
+      }
+}
+%    \end{macrocode}
+% \end{macro}
 % \end{macro}
 %
 % \subsection{Block environments}

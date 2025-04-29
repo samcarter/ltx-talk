@@ -232,7 +232,7 @@
             \tag_tool:n { sec-start = #1 , restore-para }
             \tl_set:Nn \exp_not:c { l_@@_ #1 _tl } {##4}
             \tl_gset_eq:NN \exp_not:c { g_@@_ #1 _tl }
-              { l_@@_ #1 _tl }
+              \exp_not:c { l_@@_ #1 _tl }
             \str_if_eq:nnT {#1} { section }
               { \tl_clear:N \exp_not:N \l_@@_subsection_tl }
             \str_if_eq:nnF {#1} { subsubsection }

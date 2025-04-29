@@ -168,13 +168,22 @@
 % \begin{variable}
 %   {
 %     \l_@@_section_tl ,
+%     \g_@@_section_tl ,
 %     \l_@@_subsection_tl ,
-%     \l_@@_subsubsection_tl
+%     \g_@@_subsection_tl ,
+%     \l_@@_subsubsection_tl ,
+%     \g_@@_subsubsection_tl
 %   }
+%   Two versions of the data store: one set locally (but at the top level) for
+%   general use, one set (and more importantly cleared) globally to allow
+%   insertion in the header area just once per name.
 %    \begin{macrocode}
 \tl_new:N \l_@@_section_tl
+\tl_new:N \g_@@_section_tl
 \tl_new:N \l_@@_subsection_tl
+\tl_new:N \g_@@_subsection_tl
 \tl_new:N \l_@@_subsubsection_tl
+\tl_new:N \g_@@_subsubsection_tl
 %    \end{macrocode}
 % \end{variable}
 %
@@ -222,6 +231,8 @@
             \exp_not:N \refstepcounter {#1}
             \tag_tool:n { sec-start = #1 , restore-para }
             \tl_set:Nn \exp_not:c { l_@@_ #1 _tl } {##4}
+            \tl_gset_eq:NN \exp_not:c { g_@@_ #1 _tl }
+              { l_@@_ #1 _tl }
             \str_if_eq:nnT {#1} { section }
               { \tl_clear:N \exp_not:N \l_@@_subsection_tl }
             \str_if_eq:nnF {#1} { subsubsection }

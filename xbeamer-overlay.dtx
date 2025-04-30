@@ -134,35 +134,24 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_action_alert_begin:, \@@_action_alert_end:}
+% \begin{macro}{\@@_action_alert_begin:}
 %   Currently a rather simple approach!
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_action_alert_begin:
-  {
-    \group_begin:
-      \color_select:n { alert }
-  }
-\cs_new_protected:Npn \@@_action_alert_end:
-  { \group_end: }
+  { \color_select:n { alert } }
 %    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}
 %   {
-%     \@@_action_invisible_begin:, \@@_action_invisible_end:,
-%     \@@_action_visible_begin:,   \@@_action_visible_end:
+%     \@@_action_invisible_begin:,
+%     \@@_action_visible_begin:
 %   }
 %   Simply hide unconditionally.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_action_invisible_begin:
-  {
-    \group_begin:
-      \opacity_select:n { 0 }
-  }
-\cs_new_protected:Npn \@@_action_invisible_end:
-  { \group_end: }
+  { \opacity_select:n { 0 } }
 \cs_new_eq:NN \@@_action_visible_begin: \@@_action_invisible_begin:
-\cs_new_eq:NN \@@_action_visible_end: \@@_action_invisible_end:
 %    \end{macrocode}
 % \end{macro}
 %
@@ -189,16 +178,11 @@
 \DeclareInstance { hidden } { std } { xbeamer } { }
 %    \end{macrocode}
 % \end{variable}
-% \begin{macro}{\@@_action_uncover_begin:, \@@_action_uncover_end:}
+% \begin{macro}{\@@_action_uncover_begin:}
 %   Use the template
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_action_uncover_begin:
-  {
-    \group_begin:
-      \UseInstance { hidden } { std }
-  }
-\cs_new_protected:Npn \@@_action_uncover_end:
-  { \group_end: }
+  { \UseInstance { hidden } { std } }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -210,13 +194,16 @@
   {
     \ExpandArgs { cne } \NewDocumentCommand {#1} { D <> { all } +m }
       {
-        \exp_not:N \@@_if_overlay:nTF {##1}
-          {##2}
-          {
-            \exp_not:c { @@_action_ #1 _begin: }
-            ##2
-            \exp_not:c { @@_action_ #1 _end: }
-          }
+        \group_begin:
+          \exp_not:N \@@_if_overlay:nTF {##1}
+            {##2}
+            {
+              \exp_not:c { @@_action_ #1 _begin: }
+              ##2
+              \cs_if_exist:cT { @@_action_ #1 _end: }
+                { \exp_not:c { @@_action_ #1 _end: } }
+            }
+        \group_end:
       }
 %    \end{macrocode}
 % \end{macro}
@@ -229,8 +216,11 @@
           { \exp_not:c { @@_action_ #1 _begin: } }
       }
       {
-        \exp_not:N \bool_if:NF ##1
-          { \exp_not:c { @@_action_ #1 _end: } }
+        \cs_if_exist:cT { @@_action_ #1 _end: }
+          {
+            \exp_not:N \bool_if:NF ##1
+              { \exp_not:c { @@_action_ #1 _end: } }
+          }
       }
   }
 %    \end{macrocode}
@@ -242,13 +232,16 @@
   {
     \ExpandArgs { cne } \NewDocumentCommand {#1} { D <> { all } +m }
       {
-        \exp_not:N \@@_if_overlay:nTF {##1}
-          {
-            \exp_not:c { @@_action_ #1 _begin: }
-            ##2
-            \exp_not:c { @@_action_ #1 _end: }
-          }
-          {##2}
+        \group_begin:
+          \exp_not:N \@@_if_overlay:nTF {##1}
+            {
+              \exp_not:c { @@_action_ #1 _begin: }
+              ##2
+              \cs_if_exist:cT { @@_action_ #1 _end: }
+                { \exp_not:c { @@_action_ #1 _end: } }
+            }
+            {##2}
+        \group_end:
       }
 %    \end{macrocode}
 % \end{macro}
@@ -306,9 +299,11 @@
 %    \begin{macrocode}
 \NewDocumentCommand \action { D <> { all } +m }
   {
-    \@@_action_begin:n {#1}
-    #2
-    \@@_action_end:
+    \group_begin:
+      \@@_action_begin:n {#1}
+      #2
+      \@@_action_end:
+    \group_end:
   }
 \NewDocumentEnvironment { actionenv } { D <> { all } }
   { \@@_action_begin:n {#1} }
@@ -333,13 +328,15 @@
   }
 \cs_new_protected:Npn \@@_action_end:
   {
-      \bool_if:NTF \l_@@_saved_overlays_bool
+      \bool_if:NT \l_@@_saved_overlays_bool
         {
           \use:c { @@_if_action_ \l_@@_saved_action_str :Nn }
             \l_@@_saved_actions_bool
-            { \use:c { @@_action_ \l_@@_saved_action_str _end: } }
+            {
+              \cs_if_exist_use:c
+                { @@_action_ \l_@@_saved_action_str _end: }
+            }
         }
-        { \@@_action_uncover_end: }
     \group_end:
   }
 %    \end{macrocode}

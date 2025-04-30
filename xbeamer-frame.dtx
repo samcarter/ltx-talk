@@ -194,6 +194,7 @@
     \bool_gset_false:N \g_@@_slide_continue_bool
     \tl_gclear:N \g_@@_frame_title_tl
     \tl_gclear:N \g_@@_frame_subtitle_tl
+    \@@_cnt_save:
     \vbox_set:Nw \l_@@_slide_box
       \tl_gclear:N \g_@@_onslide_tl
   }
@@ -201,6 +202,8 @@
   {
       \tl_use:N \g_@@_onslide_tl
     \vbox_set_end:
+    \bool_if:NT \g_@@_slide_continue_bool
+      { \@@_cnt_restore: }
     \vbox_to_ht:nn { \textheight }
       {
         \use:c { @@_slide_align_ \l_@@_frame_alignment_tl :n }
@@ -243,6 +246,56 @@
     \skip_vertical:n { 0pt }
     #1
     \skip_vertical:n { 0pt~plus~1fil }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Counters}
+%
+% \begin{variable}{\l_@@_cnt_reset_seq}
+%   As \cs{stepcounter}, \foreign{etc}., will increment at each overlay, there
+%   is a need to save and reset. The list will be finalised at the end of the
+%   preamble, so the data storage is created at that point. Onyl counters which
+%   exist are handled.
+%    \begin{macrocode}
+\seq_new:N \l_@@_cnt_reset_seq
+\seq_set_from_clist:Nn \l_@@_cnt_reset_seq
+  {
+    equation       ,
+    figure         ,
+    footnote       ,
+    mpfootnote     ,
+    parentequation ,
+    table          ,
+    theorem
+  }
+\AddToHook { begindocument }
+  {
+    \seq_map_inline:Nn \l_@@_cnt_reset_seq
+      {
+        \cs_if_exist:cTF { c@ #1 }
+          {
+            \int_new:c { g_@@_saved_ #1 _int }
+            \int_gset_eq:cc { g_@@_saved_ #1 _int } { c@ #1 }
+          }
+          { \seq_remove_all:Nn \l_@@_cnt_reset_seq {#1} }
+      }
+  }
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\@@_cnt_save:, \@@_cnt_restore:}
+%   A simple save-and-restore pair.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_cnt_save:
+  {
+    \seq_map_inline:Nn \l_@@_cnt_reset_seq
+      { \int_gset_eq:cc { g_@@_saved_ ##1 _int } { c@ ##1 } }
+  }
+\cs_new_protected:Npn \@@_cnt_restore:
+  {
+    \seq_map_inline:Nn \l_@@_cnt_reset_seq
+      { \int_gset_eq:cc { c@ ##1 } { g_@@_saved_ ##1 _int } }
   }
 %    \end{macrocode}
 % \end{macro}

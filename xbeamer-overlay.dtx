@@ -104,65 +104,65 @@
 %
 % Commands that can be used as actions all have a common form (with one
 % exception). The common internal structure is used to enable them to be used
-% as actions by looking for the name
-% \cs[no-index]{@@_action_\meta{name}_begin:}. There are two forms: opt-in and
-% opt-out: to deal with that we use named conditionals.
+% as actions by looking for the name \cs[no-index]{@@_action_\meta{name}:N}.
+% This is set up such that the inactive versions insert a whatsit equal to that
+% which would be present if they were active: that's needed for spacing.
 %
-% \begin{macro}
-%   {
-%     \@@_if_action_alert:Nn     ,
-%     \@@_if_action_visible:Nn   ,
-%     \@@_if_action_only:Nn      ,
-%     \@@_if_action_uncover:Nn   ,
-%     \@@_if_action_invisible:Nn
-%   }
-%   To allow for flipping logic, the payload argument here may be opt-in or
-%   opt-out.
+% \begin{macro}{\@@_action_:N}
+%   The fallback action.
 %    \begin{macrocode}
-\cs_new_eq:NN \@@_if_action_alert:Nn \bool_if:NT
-\cs_new_eq:NN \@@_if_action_invisible:Nn \bool_if:NT
-\cs_new_eq:NN \@@_if_action_only:Nn \bool_if:NF
-\cs_new_eq:NN \@@_if_action_uncover:Nn \bool_if:NF
-\cs_new_eq:NN \@@_if_action_visible:Nn \bool_if:NF
-%    \end{macrocode}
-% \end{macro}
-% \begin{macro}{\@@_if_action_:Nn}
-%   We also provide a version to cover the case there is no action at
-%   all: this always skips the payload.
-%    \begin{macrocode}
-\cs_new_eq:NN \@@_if_action_:Nn \use_none:nn
+\cs_new_protected:Npn \@@_action_:N #1 { }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_action_alert_begin:}
-%   Currently a rather simple approach!
+% \begin{macro}{\@@_action_alert:N}
+%   At present a color selection.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_action_alert_begin:
-  { \color_select:n { alert } }
+\cs_new_protected:Npn \@@_action_alert:N #1
+  {
+    \bool_if:NTF #1
+      { \color_select:n { alert } }
+      { \color_select:n { . } }
+  }
 %    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}
 %   {
-%     \@@_action_invisible_begin:,
-%     \@@_action_visible_begin:
+%     \@@_action_invisible:N,
+%     \@@_action_visible:N
 %   }
 %   Simply hide unconditionally.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_action_invisible_begin:
-  { \opacity_select:n { 0 } }
-\cs_new_eq:NN \@@_action_visible_begin: \@@_action_invisible_begin:
+\cs_new_protected:Npn \@@_action_invisible:N #1
+  {
+    \bool_if:NTF #1
+      { \opacity_select:n { 0 } }
+      { \opacity_select:n { 1 } }
+  }
+\cs_new_protected:Npn \@@_action_visible:N #1
+  {
+    \bool_if:NTF #1
+      { \opacity_select:n { 1 } }
+      { \opacity_select:n { 0 } }
+  }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_action_only_begin:, \@@_action_only_end:}
+% \begin{macro}{\@@_action_only_begin:N, \@@_action_only_end:N}
 %   Here, we simply throw away the content we do not want: this is done by
 %   typesetting in a disposable box.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_action_only_begin:
-  { \vbox_set:Nw \l_@@_tmp_box }
-\cs_new_protected:Npn \@@_action_only_end:
-  { \vbox_set_end: }
+\cs_new_protected:Npn \@@_action_only:N #1
+  {
+    \bool_if:NF #1
+      { \vbox_set:Nw \l_@@_tmp_box }
+  }
+\cs_new_protected:Npn \@@_action_only_end:N #1
+  {
+    \bool_if:NF #1
+      { \vbox_set_end: }
+  }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -178,11 +178,15 @@
 \DeclareInstance { hidden } { std } { xbeamer } { }
 %    \end{macrocode}
 % \end{variable}
-% \begin{macro}{\@@_action_uncover_begin:}
+% \begin{macro}{\@@_action_uncover:N}
 %   Use the template
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_action_uncover_begin:
-  { \UseInstance { hidden } { std } }
+\cs_new_protected:Npn \@@_action_uncover:N #1
+  {
+    \bool_if:NTF #1
+      { \opacity_select:n { 1 } }
+      { \UseInstance { hidden } { std } }
+  }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -192,17 +196,14 @@
 %    \begin{macrocode}
 \clist_map_inline:nn { only , invisible , uncover }
   {
-    \ExpandArgs { cne } \NewDocumentCommand {#1} { D <> { all } +m }
+    \ExpandArgs { cne } \NewDocumentCommand {#1}
+      { > { \@@_overlay_arg:n } D <> { all } +m }
       {
         \group_begin:
-          \exp_not:N \@@_if_overlay:nTF {##1}
-            {##2}
-            {
-              \exp_not:c { @@_action_ #1 _begin: }
-              ##2
-              \cs_if_exist:cT { @@_action_ #1 _end: }
-                { \exp_not:c { @@_action_ #1 _end: } }
-            }
+          \exp_not:c { @@_action_ #1 :N } ##1
+          ##2
+          \cs_if_exist:cT { @@_action_ #1 _end:N }
+            { \exp_not:c { @@_action_ #1 _end:N } ##1 }
         \group_end:
       }
 %    \end{macrocode}
@@ -211,16 +212,10 @@
 %    \begin{macrocode}
     \ExpandArgs { nnee } \NewDocumentEnvironment { #1 env }
       { > { \@@_overlay_arg:n } D <> { all } }
+      { \exp_not:c { @@_action_ #1 :N } ##1 }
       {
-        \exp_not:N \bool_if:NF ##1
-          { \exp_not:c { @@_action_ #1 _begin: } }
-      }
-      {
-        \cs_if_exist:cT { @@_action_ #1 _end: }
-          {
-            \exp_not:N \bool_if:NF ##1
-              { \exp_not:c { @@_action_ #1 _end: } }
-          }
+        \cs_if_exist:cT { @@_action_ #1 _end:N }
+          { \exp_not:c { @@_action_ #1 _end:N } ##1 }
       }
   }
 %    \end{macrocode}
@@ -230,18 +225,13 @@
 %    \begin{macrocode}
 \clist_map_inline:nn { alert , visible }
   {
-    \ExpandArgs { cne } \NewDocumentCommand {#1} { D <> { all } +m }
+    \ExpandArgs { cne } \NewDocumentCommand {#1}
+      { > { \@@_overlay_arg:n } D <> { all } +m }
       {
         \group_begin:
-          \exp_not:N \@@_if_overlay:nTF {##1}
-            {
-              \exp_not:c { @@_action_ #1 _begin: }
-              ##2
-              \cs_if_exist:cT { @@_action_ #1 _end: }
-                { \exp_not:c { @@_action_ #1 _end: } }
-            }
-            {##2}
-        \group_end:
+          \exp_not:c { @@_action_ #1 :N } ##1
+            ##2
+         \group_end:
       }
 %    \end{macrocode}
 % \end{macro}
@@ -249,14 +239,8 @@
 %    \begin{macrocode}
     \ExpandArgs { nnee } \NewDocumentEnvironment { #1 env }
       { > { \@@_overlay_arg:n } D <> { all } }
-      {
-        \exp_not:N \bool_if:NF ##1
-          { \exp_not:c { @@_action_ #1 _begin: } }
-      }
-      {
-        \exp_not:N \bool_if:NF ##1
-          { \exp_not:c { @@_action_ #1 _end: } }
-      }
+      { \exp_not:c { @@_action_ #1 :N } ##1 }
+      { }
   }
 %    \end{macrocode}
 % \end{environment}
@@ -320,22 +304,19 @@
         \l_@@_decode_actions_bool
       \bool_if:NTF \l_@@_decode_overlays_bool
         {
-          \use:c { @@_if_action_ \l_@@_decode_action_str :Nn }
+          \use:c { @@_action_ \l_@@_decode_action_str :N }
             \l_@@_decode_actions_bool
-            { \use:c { @@_action_ \l_@@_decode_action_str _begin: } }
         }
-        { \@@_action_uncover_begin: }
+        { \UseInstance { hidden } { std } }
   }
 \cs_new_protected:Npn \@@_action_end:
   {
       \bool_if:NT \l_@@_saved_overlays_bool
         {
-          \use:c { @@_if_action_ \l_@@_saved_action_str :Nn }
-            \l_@@_saved_actions_bool
-            {
-              \cs_if_exist_use:c
-                { @@_action_ \l_@@_saved_action_str _end: }
-            }
+          \cs_if_exist_use:cF
+            { @@_action_ \l_@@_saved_action_str _end:N }
+            { \use_none:n }
+              \l_@@_saved_actions_bool
         }
     \group_end:
   }

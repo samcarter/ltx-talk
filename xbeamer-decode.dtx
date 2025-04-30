@@ -270,7 +270,7 @@
     \tl_if_blank:nTF {#2}
       { \@@_decode_overlays:nn { overlays } {#1} }
       {
-        \cs_if_exist:cTF { @@_action_ #1 _begin: }
+        \cs_if_exist:cTF { @@_action_ #1 :N }
           {
             \bool_set_false:N \l_@@_decode_pure_bool
             \str_set:Nn \l_@@_decode_action_str {#1}

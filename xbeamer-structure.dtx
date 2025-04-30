@@ -491,6 +491,43 @@
 \RequirePackage { amsthm }
 %    \end{macrocode}
 %
+% \begin{macro}{\newtheorem, \stdnewtheorem}
+%   We need to extend the creation of theorems in two ways: add the overlay
+%   argument, and add the counter to the list of those reset during overlay
+%   creation.
+%    \begin{macrocode}
+\NewCommandCopy \stdnewtheorem \newtheorem
+\RenewDocumentCommand \newtheorem { s m O { } m o }
+  {
+    \IfNoValueTF {#5}
+      {
+        \IfBooleanTF #1
+          { \stdnewtheorem * }
+          { \stdnewtheorem }
+            {#2} [ {#3} ] {#4}
+      }
+      {
+        \IfBooleanTF #1
+          { \stdnewtheorem * }
+          { \stdnewtheorem }
+            {#2} [ {#3} ] {#4} [ {#5} ]
+      }
+    \seq_put_right:Nn \l_@@_cnt_reset_seq {#2}
+    \NewEnvironmentCopy { std #2 } {#2}
+    \RenewDocumentEnvironment {#2} { D <> { all } }
+      {
+        \@@_action_begin:n {##1}
+        \begin { std #2 }
+          \ignorespaces
+      }
+      {
+        \end { std #2 }
+        \@@_action_end:
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

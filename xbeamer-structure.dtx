@@ -491,41 +491,26 @@
 %
 % \subsection{Theorems, \foreign{etc.}}
 %
-% Needed to provide the initial version of the \env{proof} environment.
-%    \begin{macrocode}
-\RequirePackage { amsthm }
-%    \end{macrocode}
-%
 % \begin{macro}{\newtheorem, \stdnewtheorem}
 %   We need to extend the creation of theorems in two ways: add the overlay
 %   argument, and add the counter to the list of those reset during overlay
 %   creation.
 %    \begin{macrocode}
 \NewCommandCopy \stdnewtheorem \newtheorem
-\RenewDocumentCommand \newtheorem { s m O { } m o }
+\RenewDocumentCommand \newtheorem { m O { } m o }
   {
-    \IfNoValueTF {#5}
-      {
-        \IfBooleanTF #1
-          { \stdnewtheorem * }
-          { \stdnewtheorem }
-            {#2} [ {#3} ] {#4}
-      }
-      {
-        \IfBooleanTF #1
-          { \stdnewtheorem * }
-          { \stdnewtheorem }
-            {#2} [ {#3} ] {#4} [ {#5} ]
-      }
-    \NewEnvironmentCopy { std #2 } {#2}
-    \RenewDocumentEnvironment {#2} { D <> { all } }
+    \IfNoValueTF {#4}
+      { \stdnewtheorem {#1} [ {#2} ] {#3} }
+      { \stdnewtheorem {#1} [ {#2} ] {#3} [ {#4 ] }
+    \NewEnvironmentCopy { std #1 } {#1}
+    \RenewDocumentEnvironment {#1} { D <> { all } }
       {
         \@@_action_begin:n {##1}
-        \begin { std #2 }
+        \begin { std #1 }
           \ignorespaces
       }
       {
-        \end { std #2 }
+        \end { std #1 }
         \@@_action_end:
       }
   }

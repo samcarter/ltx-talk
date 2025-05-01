@@ -497,7 +497,7 @@
 %   creation.
 %    \begin{macrocode}
 \NewCommandCopy \stdnewtheorem \newtheorem
-\RenewDocumentCommand \newtheorem { m O { } m o }
+\RenewDocumentCommand \newtheorem { m O {#1} m o }
   {
     \IfNoValueTF {#4}
       { \stdnewtheorem {#1} [ {#2} ] {#3} }

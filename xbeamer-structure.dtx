@@ -185,11 +185,16 @@
 % \begin{macro}{\thesection, \thesubsection, \thesubsubsection}
 %  Here, we need full \LaTeX{} counters, so create them using the appropriate
 %  mechanism: that also means we can sort out counter dependency and the
-%  appearance (using the same setup as in \pkg{article}).
+%  appearance (using the same setup as in \pkg{article}). As (subsub)section
+%  numbers never increment inside frames, we remove these counters from the
+%  general tracker.
 %    \begin{macrocode}
 \newcounter { section }
 \newcounter { subsection } [ section ]
 \newcounter { subsubsection } [ subsection ]
+\seq_gremove_all:Nn \l_@@_cnt_reset_seq { section }
+\seq_gremove_all:Nn \l_@@_cnt_reset_seq { subsection }
+\seq_gremove_all:Nn \l_@@_cnt_reset_seq { subsubsection }
 \cs_gset:Npn \thesection { \@arabic \c@section }
 \cs_gset:Npn \thesubsection { \thesection . \@arabic \c@subsection }
 \cs_gset:Npn \thesubsubsection { \thesubsection . \@arabic \c@subsubsection }

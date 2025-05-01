@@ -517,6 +517,16 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{environment}{proof}
+%   We want to use templates here: but first we want templates to support
+%   blocks generally.
+%    \begin{macrocode}
+\NewDocumentEnvironment { proof } { D <> { all } }
+  { \begin { block } < #1 > { Proof } }
+  { \end { block } }
+%    \end{macrocode}
+% \end{environment}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

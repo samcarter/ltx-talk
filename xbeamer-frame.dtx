@@ -454,7 +454,6 @@
       { \l_@@_header_ht_dim - \headsep }
       { \headsep }
     \kern_horizontal:n { \l_@@_header_left_skip }
-    \@@_section_tagged:
     \group_begin:
       \tl_if_empty:NF \l_@@_header_fg_tl
         { \color_select:V \l_@@_header_fg_tl }
@@ -583,7 +582,11 @@
 %    \begin{macrocode}
 \cs_set_nopar:Npn \ps@plain
   {
-    \cs_set_nopar:Npn \@oddhead { \hfil }
+    \cs_set_nopar:Npn \@oddhead
+      {
+        \@@_section_tagged:
+        \hfil
+      }
     \cs_set_nopar:Npn \@oddfoot { }
     \cs_set_eq:NN \@evenhead \@oddhead
     \cs_set_eq:NN \@evenfoot \@oddfoot
@@ -592,6 +595,7 @@
   {
     \cs_set_nopar:Npn \@oddhead
       {
+        \@@_section_tagged:
         \UseInstance { header } { wallpaper }
         \hfil
       }
@@ -607,6 +611,7 @@
   {
     \cs_set_nopar:Npn \@oddhead
       {
+        \@@_section_tagged:
         \UseInstance { header } { std }
         \hfil
       }

@@ -213,29 +213,44 @@
 %  create using a generator with the necessary conditionals in place. As we
 %  do not typeset sections at this stage, the code is quite different from
 %  \pkg{article}. This also means that the bookmark links need to point forward
-%  to the next slide: if that doesn't appear, the bookmarks will be out.
+%  to the next slide: if that doesn't appear, the bookmarks will be out. Using
+%  the general scratch sequence here should be OK: t really is a one-off
+%  setting. We need a sequence to allow indexed mapping to avoid any extra
+%  setup for the depth value.
 %    \begin{macrocode}
-\clist_map_inline:nn { section , subsection , subsubsection }
+\seq_set_from_clist:Nn \l_tmpa_seq
+  { section , subsection , subsubsection }
+\seq_map_indexed_inline:Nn \l_tmpa_seq
   {
     \use:e
       {
-        \NewDocumentCommand \exp_not:c { insert #1 } { }
+        \NewDocumentCommand \exp_not:c { insert #2 } { }
           {
             \exp_not:N \tl_use:N
-            \exp_not:c { l_@@_ #1 _tl }
+            \exp_not:c { l_@@_ #2 _tl }
           }
-        \NewDocumentCommand \exp_not:c {#1}
+        \NewDocumentCommand \exp_not:c {#2}
           { s D <> { all } O {##4} m }
           {
-            \exp_not:N \refstepcounter {#1}
-            \tag_tool:n { sec-start = #1 , restore-para }
-            \tl_set:Nn \exp_not:c { l_@@_ #1 _tl } {##4}
-            \tl_gset_eq:NN \exp_not:c { g_@@_ #1 _tl }
-              \exp_not:c { l_@@_ #1 _tl }
-            \str_if_eq:nnT {#1} { section }
+            \exp_not:N \refstepcounter {#2}
+            \tag_tool:n { sec-start = #2 , restore-para }
+            \tl_set:Nn \exp_not:c { l_@@_ #2 _tl } {##4}
+            \tl_gset_eq:NN \exp_not:c { g_@@_ #2 _tl }
+              \exp_not:c { l_@@_ #2 _tl }
+            \str_if_eq:nnT {#2} { section }
               { \tl_clear:N \exp_not:N \l_@@_subsection_tl }
-            \str_if_eq:nnF {#1} { subsubsection }
+            \str_if_eq:nnF {#2} { subsubsection }
               { \tl_clear:N \exp_not:N \l_@@_subsubsection_tl }
+            \exp_not:N \addcontentsline { toc } {#2}
+              {
+                \exp_not:N \int_compare:nNnF {#1} >
+                  { \exp_not:N \value { secnumdepth } }
+                 {
+                   \exp_not:N \protect \exp_not:N \numberline
+                     { \exp_not:c { the #2 } }
+                 }
+                ##4
+              }
             \exp_not:N \bookmark
               [
                 dest =
@@ -246,9 +261,9 @@
                     }
               ]
               {##3}
-            \hook_use:n { #1 / begin }
+            \hook_use:n { #2 / begin }
           }
-        \hook_new:n { #1 / begin }
+        \hook_new:n { #2 / begin }
       }
 }
 %    \end{macrocode}

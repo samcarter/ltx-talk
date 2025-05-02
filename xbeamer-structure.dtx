@@ -364,6 +364,12 @@
           #3
           \UseHookWithArguments { contentsline / text / after }{ 4 }
             {#1} {#3} {#4} { \@contentsline@destination }
+          \UseHookWithArguments { contentsline / page / before } { 4 }
+            {#1} {#3} {#4}
+            { \@contentsline@destination }
+         \UseHookWithArguments { contentsline / page / after } { 4 }
+            {#1} {#3} {#4}
+            { \@contentsline@destination }
           \par
         \group_end:
         \vfil

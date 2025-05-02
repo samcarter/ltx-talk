@@ -245,10 +245,10 @@
               {
                 \exp_not:N \int_compare:nNnF {#1} >
                   { \exp_not:N \value { secnumdepth } }
-                 {
-                   \exp_not:N \protect \exp_not:N \numberline
-                     { \exp_not:c { the #2 } }
-                 }
+                  {
+                    \exp_not:N \protect \exp_not:N \numberline
+                      { \exp_not:c { the #2 } }
+                  }
                 ##4
               }
             \exp_not:N \bookmark
@@ -289,6 +289,88 @@
       }
   }
 %    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Table of contents}
+%
+% \begin{macro}{\@starttoc}
+%   The standard kernel implementation here deliberately overwrites the file
+%   as soon as it's read. That's no good for us as the table of contents can
+%   be read multiple times. So we modify the code: we start from the
+%   tagging-aware version (this may need to be revisited). We retain the
+%   \LaTeXe{} code as much as possible.
+%    \begin{macrocode}
+\cs_gset_protected:Npn \@starttoc #1
+  {
+    \begingroup
+      \makeatletter
+      \UseTaggingSocket { toc / starttoc / before } {#1}
+      \@input { \jobname .#1 }
+      \UseTaggingSocket { toc / starttoc / after } {#1}
+      \legacy_if:nT { @filesw }
+        {
+          \AddToHook { enddocument / afterlastpage }
+            {
+              \expandafter \newwrite \csname tf@ #1 \endcsname
+              \immediate \openout \csname tf@ #1 \endcsname \jobname .#1 \relax
+            }
+        }
+      \@nobreakfalse
+    \endgroup
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\tableofcontents}
+%   For the present simply print the output.
+%    \begin{macrocode}
+\NewDocumentCommand \tableofcontents { O { } }
+  {
+    \group_begin:
+      \@starttoc { toc }
+    \group_end:
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\l@section, \l@subsection, \l@subsubsection}
+% \begin{macro}{\@@_toc_level:nnn}
+%   Initial hard-coded versions to be templated once we have some other effects
+%   also working. We may need to look at this \nequote{higher up} as we will need
+%   to know the section numbers.
+%    \begin{macrocode}
+\cs_new_protected:Npn \l@section #1#2
+  { \@@_toc_level:nnn { \bfseries \color { structure } } {#1} {#2} }
+\cs_new_protected:Npn \l@subsection #1#2
+  {
+    \@@_toc_level:nnn
+      {
+        \skip_set:Nn \leftskip { 2em }
+        \color { . }
+      }
+      {#1} {#2}
+  }
+\cs_new_protected:Npn \l@subsubsection #1#2
+  {
+    \@@_toc_level:nnn
+      {
+        \skip_set:Nn \leftskip { 4em }
+        \color { . }
+        \footnotesize
+      }
+      {#1} {#2}
+  }
+\cs_new_protected:Npn \@@_toc_level:nnn #1#2#3
+  {
+    \group_begin:
+      \noindent
+      #1
+      #2
+      \par
+    \group_end:
+  }
+%    \end{macrocode}
+% \end{macro}
 % \end{macro}
 %
 % \subsection{Block environments}

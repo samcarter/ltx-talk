@@ -270,6 +270,20 @@ contents} can be normal \LaTeX{} text, but may not contain |\verb| commands or
   \end{frame}
 \end{verbatim}
 
+\DescribeEnv{frame*}
+The \env{frame*} environment works exactly the same way as the \env{frame} one,
+\emph{except} that it can contain |\verb| commands or |verbatim| environments
+or any environment that changes the character codes. The \env{frame*}
+environment however \emph{cannot} be used inside the argument of another
+command. This means for example you cannot use it inside the last argument of
+\cs{AddToHook}.
+\begin{verbatim}
+  \begin{frame*}
+    \frametitle{A title}
+    Some content \verb|$%#|.
+  \end{frame*}
+\end{verbatim}
+
 \subsection{Frame and margin size}
 
 \subsection{Restricting the slides of a frame}

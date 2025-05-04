@@ -270,6 +270,7 @@
   }
 \AddToHook { begindocument }
   {
+    \seq_remove_duplicates:N \l_@@_cnt_reset_seq
     \seq_map_inline:Nn \l_@@_cnt_reset_seq
       {
         \int_new:c { g_@@_saved_ #1 _int }

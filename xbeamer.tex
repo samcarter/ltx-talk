@@ -287,6 +287,11 @@ command.
   \end{frame*}
 \end{verbatim}
 
+In contrast to \cls{beamer}'s \opt{fragile} frame option, the \env{frame*}
+environment does not use external files to handle verbatim material. As such,
+there is very little performance impact processing frames containing category
+code changes.
+
 \subsection{Frame and margin size}
 
 \subsection{Restricting the slides of a frame}

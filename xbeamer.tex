@@ -294,6 +294,29 @@ code changes.
 
 \subsection{Frame and margin size}
 
+The size of a frame is actually the \enquote{paper size} of a presentation, and
+it is variable. The standard size of a frame is \qty{100}{\mm} heigh with an
+aspect ratio of $16:9$. It is the job of the presentation program to display
+the slides at full screen size. The main advantage of using a small
+\enquote{paper size} is that you can use all your normal fonts at their natural
+sizes. In particular, inserting a graphic with \qty{11}{pt} labels will result
+in reasonably sized text during the presentation.
+
+\DescribeOption{aspect-ratio}
+The aspect ratio of the slides can be adjusted by setting the
+\opt{aspect-ratio} load-time option, which takes two integer values separated
+by a colon. These values are the relative width and height of the slide: in
+contrast to \pkg{beamer}, the absolute height is a fixed value of
+\qty{100}{\mm}.
+
+Aside from using these options, you should refrain from changing the
+\enquote{paper size}. However, you \emph{can} change the size of the left and
+right margins, which default to \qty{10}{\mm}. These should be set using the
+interfaces from the \pkg{geometry} package, for example
+\begin{verbatim}
+  \geometry{lmargin = 15mm, rmargin = 15mm}
+\end{verbatim}
+
 \subsection{Restricting the slides of a frame}
 
 The number of slides in a frame is automatically calculated. If the largest

@@ -697,6 +697,52 @@ different slides, the following code might be used:
 
 \subsection{Advanced overlay specifications}
 
+\subsubsection{Mode Specifications}
+
+This section is only important if you use the mode mechanism to create
+different versions of your presentation. If you are not familiar with modes,
+please skip this section or read Section~\ref{sec:modes} first.
+
+In certain cases you may wish to have different overlay specifications to apply
+to a command in different modes. For example, you might wish a certain text to
+appear only from the third slide on during your presentation, but in a handout
+for the audience there should be no third slide and the text should appear
+already on the second slide. In this case you could write
+\begin{verbatim}
+  \only<3| handout:2>{Some text}
+\end{verbatim}
+
+The vertical bar separates the two different specifications |3| and
+|handout:2|. By writing a mode name before a colon, you specify that the
+following specification only applies to that mode. If no mode is given, as in
+|3|, the mode |projector| is automatically added. For this reason, if you write
+|\only<3>{Text}| and you are in |handout| mode, the text will be shown on all
+slides since there is no restriction specified for handouts and since the |3|
+is the same as |projector:3|.
+
+It is also possible to give an overlay specification that contains only a mode
+name (or several, separated by vertical bars):
+\begin{verbatim}
+  \only<handout>{This text is shown only in handout mode.}
+\end{verbatim}
+
+An overlay specification that does not contain any slide numbers is called a
+(pure) \emph{mode specification}. If a mode specification is given, all modes
+that are not mentioned are automatically suppressed. Thus |<projector:1->|
+means \enquote{on all slides in |projector| mode and also on all slides in all
+other modes, since nothing special is specified for them}, whereas
+|<projector>| means \enquote{on all slides in |projector| mode and not on any
+other slide}.
+
+You can also mix pure mode specifications and overlay specifications, although
+this can get confusing:
+\begin{verbatim}
+  \only<article| projector:1>{Riddle}
+\end{verbatim}
+
+This will cause the text |Riddle| to be inserted in |article| mode and on the
+first slide of a frame in |projector| mode, but not at all in |handout| mode.
+
 \subsubsection{Action specifications%
   \label{sec:action-spec}}
 

@@ -812,6 +812,138 @@ spec}.
 \end{syntax}
 This has the same effect as putting \meta{text} in an \env{actionenv}.
 
+\subsubsection{Incremental specifications%
+  \label{sec:incremental}}
+
+This section is mostly important for people who have already used overlay
+specifications a lot and have grown tired of writing things like |<1->|,
+|<2->|, |<3->|, and so on again and again. You should skip this section on
+first reading.
+
+Often you want to have overlay specifications that follow a pattern similar to
+the following:
+\begin{verbatim}
+  \begin{itemize}
+    \item<1-> Apple
+    \item<2-> Peach
+    \item<3-> Plum
+    \item<4-> Orange
+  \end{itemize}
+\end{verbatim}
+
+The problem starts if you decide to insert a new fruit, say, at the beginning.
+In this case, you would have to adjust all of the overlay specifications. Also,
+if you add a \cs{pause} command before the |itemize|, you would also have to
+update the overlay specifications.
+
+The class offers a special syntax to make creating lists as the one above more
+convenient. You can replace it by the following list of \emph{incremental
+overlay specifications}:
+\begin{verbatim}
+  \begin{itemize}
+    \item<+-> Apple
+    \item<+-> Peach
+    \item<+-> Plum
+    \item<+-> Orange
+  \end{itemize}
+\end{verbatim}
+
+The effect of the |+| sign is the following: You can use it in any overlay
+specification at any point where you would usually use a number. If a |+| sign
+is encountered, it is replaced by the current value of the \LaTeX{} counter
+|pauses|, which is~$1$ at the beginning of the frame. Then the counter is
+increased by~$1$, though it is only increased once for every overlay
+specification, even if the specification contains multiple |+| signs (they are
+replaced by the same number).
+
+In the above example, the first specification is replaced by |<1->|. Then the
+second is replaced by |<2->| and so forth. We can now easily insert new
+entries, without having to change anything else. We might also write the
+following:
+\begin{verbatim}
+  \begin{itemize}
+    \item<+-| alert@+> Apple
+    \item<+-| alert@+> Peach
+    \item<+-| alert@+> Plum
+    \item<+-| alert@+> Orange
+  \end{itemize}
+\end{verbatim}
+
+This will alert the current item when it is uncovered. For example, the first
+specification \verb"<+-| alert@+>" is replaced by \verb"<1-| alert@1>", the
+second is replaced by \verb"<2-| alert@2>", and so on. Since the \env{itemize}
+environment also allows you to specify a default overlay specification, see the
+documentation of that environment, the above example can be written even more
+economically as follows:
+\begin{verbatim}
+  \begin{itemize}[<+-| alert@+>]
+    \item Apple
+    \item Peach
+    \item Plum
+    \item Orange
+  \end{itemize}
+\end{verbatim}
+
+The \cs{pause} command also updates the counter |pauses|. You can change this
+counter yourself using the normal \LaTeX{} commands \cs{setcounter} or
+\cs{addtocounter}.
+
+Any occurrence of a |+| sign may be followed by an \emph{offset} in round
+brackets. This offset will be added to the value of the |pauses| counter. Thus,
+if |pauses| is $2$, then |<+(1)->| expands to |<3->| and |<+(-1)-+>| expands to
+|<1-2>|. For example
+\begin{verbatim}
+  \begin{itemize}
+    \item<2-> Apple
+    \item<3-> Peach
+    \item<4-> Plum
+    \item<5-> Orange
+  \end{itemize}
+\end{verbatim}
+and
+\begin{verbatim}
+  \begin{itemize}[<+(1)->]
+    \item Apple
+    \item Peach
+    \item Plum
+    \item Orange
+  \end{itemize}
+\end{verbatim}
+are equivalent.
+
+There is another special sign you can use in an overlay specification that
+behaves similarly to the |+| sign: a dot. When you write |<.->|, a similar
+thing as in |<+->| happens \emph{except} that the counter |pauses| is
+\emph{not} incremented and \emph{except} that you get the value of |pauses|
+decreased by one. Thus a dot, possibly followed by an offset, just expands to
+the current value of the counter |pauses| minus one, possibly offset. This dot
+notation can be useful in case like the following:
+\begin{verbatim}
+  \begin{itemize}[<+->]
+    \item Apple
+    \item<.-> Peach
+    \item Plum
+    \item Orange
+  \end{itemize}
+\end{verbatim}
+
+In the example, the second item is shown at the same time as the first one
+since it does not update the counter.
+
+In the following example, each time an item is uncovered, the specified text is
+alerted. When the next item is uncovered, this altering ends.
+\begin{verbatim}
+  \begin{itemize}[<+->]
+    \item This is \alert<.>{important}.
+    \item We want to \alert<.>{highlight} this and \alert<.>{this}.
+    \item What is the \alert<.>{matrix}?
+  \end{itemize}
+\end{verbatim}
+
+The replacements of the |+| sign and the |.| sign are no less than zero. This
+prevents errors when encountering large negative offsets, for example
+|<+(-7)->| is converted to |<0->| rather than |<-6->|.
+
 \section{Structuring a presentation: the local structure}
 
 \LaTeX{} provides different commands for structuring text \enquote{locally},

@@ -1071,6 +1071,26 @@ see Section~\ref{sec:action-spec}. The vertical placement of the enclosing
 \env{columns} environment can be overruled by specifying a specific
 \meta{placement}.
 
+\section{Creating alternative output formats%
+  \label{sec:modes}}
+
+\DescribeOption{mode}
+The \cls{xbeamer} class allows you to select different output formats from the
+same source using the option \opt{mode}. This works with the overlay
+specification to typeset some of the input selectively.
+
+\subsection{Creating handouts using the \opt{handout} mode}
+  
+During a presentation it is very much desirable that the audience has a
+\emph{handout} or even \emph{lecture notes} available to it. A handout allows
+everyone in the audience to individually go back to things they have not
+understood.
+
+The easiest way of creating a handout for your audience is to set the
+\opt{mode} option set to \meta{hanout}. This will cause the document to be
+typeset in |handout| mode. It will look like a presentation, but it can be
+printed or annotated more easily (the overlays are \enquote{flattened}).
+
 \end{documentation}
 
 \PrintIndex

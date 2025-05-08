@@ -425,8 +425,8 @@ set in a normal font.
 For a second example, consider the following frame:
 \begin{verbatim}
   \begin{frame}
-    \only<1>{This line is inserted only on slide 1.}
-    \only<2>{This line is inserted only on slide 2.}
+    \only<1>{This line is inserted only on slide~1.}
+    \only<2>{This line is inserted only on slide~2.}
   \end{frame}
 \end{verbatim}
 
@@ -485,9 +485,9 @@ its effect transcends block groups.
       Still shown on the second and third slide.
     \onslide<4->
     \item
-      Shown from slide 4 on.
+      Shown from slide~4 on.
     \end{itemize}
-    Shown from slide 4 on.
+    Shown from slide~4 on.
     \onslide
     Shown on all slides.
   \end{frame}
@@ -534,7 +534,7 @@ effect.
 \end{syntax}
 This command does the opposite of \cs{visible}.
 \begin{verbatim}
-  \invisible<2->{Text hidden from slide 2 on.}
+  \invisible<2->{Text hidden from slide~2 on.}
 \end{verbatim}
 
 \DescribeMacro{\alt}
@@ -544,7 +544,7 @@ This command does the opposite of \cs{visible}.
 The default text is shown on the specified slides, otherwise the alternative
 text.
 \begin{verbatim}
-  \alt<2>{On Slide 2}{Not on slide 2.}
+  \alt<2>{On slide~2}{Not on slide~2.}
 \end{verbatim}
 
 \DescribeMacro{\temporal}
@@ -586,9 +586,9 @@ this extends the \meta{overlay spec} to include the potential to
   \begin{frame}
     \begin{itemize}
     \item<1-> First point, shown on all slides.
-    \item<2-> Second point, shown on slide 2 and later.
-    \item<2-> Third point, also shown on slide 2 and later.
-    \item<3-> Fourth point, shown on slide 3.
+    \item<2-> Second point, shown on slide~2 and later.
+    \item<2-> Third point, also shown on slide~2 and later.
+    \item<3-> Fourth point, shown on slide~3.
     \end{itemize}
   \end{frame}
 
@@ -622,7 +622,7 @@ would not.
   \begin{frame}
     This line is always shown.
     \begin{onlyenv}<2>
-      This line is inserted on slide 2.
+      This line is inserted on slide~2.
     \end{onlyenv}
   \end{frame}
 \end{verbatim}

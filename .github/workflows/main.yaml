@@ -49,3 +49,12 @@ jobs:
           package_file: .github/tl_packages
       - name: Run l3build
         run: l3build doc -q -H
+      - name: Archive docs
+        uses: actions/upload-artifact@v4
+        with:
+          path: |
+            **/*.pdf
+            !build
+            !texmf
+            !**/testfiles*
+          retention-days: 21 

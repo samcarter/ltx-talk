@@ -1024,6 +1024,23 @@ use the shortened format |[<...>]|, which matches the \cls{beamer} syntax:
 
 \subsection{Highlighting}
 
+\DescribeMacro{\alert}
+\begin{syntax}
+  \cs{alert}\sarg{overlay spec}\marg{text}
+\end{syntax}
+The given \meta{text} is highlighted, typically by coloring the text red. If
+the \meta{overlay spec} is present, the command only has an effect on the
+specified slides.
+\begin{verbatim}
+  This is \alert{important}.
+\end{verbatim}
+
+\DescribeEnv{alertenv}
+\begin{syntax}
+  \cs{begin}\{\texttt{alertenv}\}\sarg{overlay spec}
+\end{syntax}
+Environment version of the \cs{alert} command.
+
 \subsection{Block environments}
 
 \subsection{Splitting a frame into multiple columns}

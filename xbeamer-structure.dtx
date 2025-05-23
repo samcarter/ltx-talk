@@ -324,22 +324,20 @@
 % \end{macro}
 %
 % \begin{macro}{\l@section, \l@subsection, \l@subsubsection}
-% \begin{macro}
-%   {
-%     \@@_toc_section:nnn       ,
-%     \@@_toc_subsection:nnn    ,
-%     \@@_toc_subsubsection:nnn
-%   }
+% \begin{macro}{\@@_toc_aux:nnnn}
+% \begin{macro}{\@@_toc_dest:n}
+% \begin{macro}{\@@_toc_dest:w}
 % \begin{macro}{\@@_toc_level:nnnn}
 %   Initial hard-coded versions to be templated once we have some other effects
 %   also working. We may need to look at this \enquote{higher up} as we will need
 %   to know the section numbers.
 %    \begin{macrocode}
 \cs_new_protected:Npn \l@section #1#2
-  { \@@_toc_section:nnn { \bfseries \color { structure } } {#1} {#2} }
+  { \@@_toc_aux:nnnn { 1 } { \bfseries \color { structure } } {#1} {#2} }
 \cs_new_protected:Npn \l@subsection #1#2
   {
-    \@@_toc_subsection:nnn
+    \@@_toc_aux:nnnn
+      { 2 }
       {
         \skip_set:Nn \leftskip { 2em }
         \color { . }
@@ -348,7 +346,8 @@
   }
 \cs_new_protected:Npn \l@subsubsection #1#2
   {
-    \@@_toc_subsubsection:nnn
+    \@@_toc_aux:nnnn
+      { 3 }
       {
         \skip_set:Nn \leftskip { 4em }
         \color { . }
@@ -356,12 +355,35 @@
       }
       {#1} {#2}
   }
-\cs_new_protected:Npn \@@_toc_section:nnn #1#2#3
-  { \@@_toc_level:nnnn { 1 } {#1} {#2} {#3} }
-\cs_new_protected:Npn \@@_toc_subsection:nnn #1#2#3
-  { \@@_toc_level:nnnn { 2 } {#1} {#2} {#3} }
-\cs_new_protected:Npn \@@_toc_subsubsection:nnn #1#2#3
-  { \@@_toc_level:nnnn { 3 } {#1} {#2} {#3} }
+\cs_new_protected:Npn \@@_toc_aux:nnnn #1#2#3#4
+  {
+    \int_compare:nNnTF { \value { section } } < 1
+      { \use:n }
+      { \@@_toc_dest:n }
+        { \@@_toc_level:nnnn {#1} {#2} {#3} {#4} }
+  }
+%    \end{macrocode}
+%   We can extract the details for the TOC levels from
+%   \tn{@contentsline@destination}. At present, that is quite simple-minded:
+%   if we are in the current section, show fully, else make semi-opaque. Needs
+%   a rounded-out interface but the basic idea will be the same.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_toc_dest:n
+  {
+    \exp_after:wN \@@_toc_dest:w \@contentsline@destination
+      . 0 . 0 . 0 . \q_stop
+  }
+\cs_new_protected:Npn \@@_toc_dest:w #1 . #2 . #3 . #4 . #5 \q_stop #6
+  {
+    \int_compare:nNnTF { \value { section } } = {#2}
+      {#6}
+      {
+        \group_begin:
+          \opacity_select:n { 0.2 }
+          #6
+        \group_end:
+      }
+  }
 \cs_new_protected:Npn \@@_toc_level:nnnn #1#2#3#4
   {
     \int_compare:nNnF {#1} > { \value { tocdepth } }
@@ -386,6 +408,8 @@
       }
   }
 %    \end{macrocode}
+% \end{macro}
+% \end{macro}
 % \end{macro}
 % \end{macro}
 % \end{macro}

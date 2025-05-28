@@ -80,10 +80,10 @@
 %    \begin{macrocode}
 \cs_new_nopar:Npn \@institute { }
 \cs_new_nopar:Npn \@subtitle { }
-\NewDocumentCommand \institute { m }
-  { \cs_gset_nopar:Npn \@institute {#1} }
-\NewDocumentCommand \subtitle { m }
-  { \cs_gset_nopar:Npn \@subtitle {#1} }
+\NewDocumentCommand \institute { = { short-institute } O {#2} m }
+  { \cs_gset_nopar:Npn \@institute {#2} }
+\NewDocumentCommand \subtitle { = { short-subtitle } O {#2} m }
+  { \cs_gset_nopar:Npn \@subtitle {#2} }
 %    \end{macrocode}
 % \end{variable}
 % \end{macro}

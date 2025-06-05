@@ -124,10 +124,18 @@
 \cs_new_protected:Npn \@@_slide:nn #1#2
   { 
     \group_begin:
-      \tl_replace_all:Nne \l_@@_frame_tagging_clist { n }
+      \tl_set:Ne \l_@@_tmp_tl
         {
           \property_ref:ee { frame . \int_use:N \g_@@_frame_int }
             { slides }
+        }
+      \str_if_eq:VnTF \l_@@_frame_tagging_str { n }
+        { \str_set:NV  \l_@@_frame_tagging_str \l_@@_tmp_tl }
+        {
+          \str_replace_all:NnV \l_@@_frame_tagging_str { ,n }
+            \l_@@_tmp_tl
+          \str_replace_all:NnV \l_@@_frame_tagging_str { ,~n }
+            \l_@@_tmp_tl
         }
       \int_gzero:N \g_@@_slide_int
       \RenewCommandCopy \frame \@@_latexe_frame:n
@@ -137,8 +145,7 @@
           \@@_if_overlay:nTF {#1}
             {
               \@@_slide_begin:
-              \clist_if_in:NVTF \l_@@_frame_tagging_clist
-                \g_@@_slide_int
+              \@@_if_overlay:VTF \l_@@_frame_tagging_str
                 { \@@_frame_tag:n }
                 { \@@_frame_notag:n }
                   {
@@ -317,14 +324,14 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\l_@@_action_spec_str, \l_@@_frame_tagging_clist}
+% \begin{variable}{\l_@@_action_spec_str, \l_@@_frame_tagging_str}
 %    \begin{macrocode}
 \keys_define:nn { xbeamer / frame }
   {
     action-spec .str_set:N
       = \l_@@_action_spec_str ,
-    tag-slides .clist_set:N
-      = \l_@@_frame_tagging_clist ,
+    tag-slides .str_set:N
+      = \l_@@_frame_tagging_str ,
     vertical-alignment .choices:nn =
       { bottom , center , stretch , top }
       {

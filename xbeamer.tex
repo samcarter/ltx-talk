@@ -1126,7 +1126,10 @@ available. This can be used to list which slides in a frame are tagged: those
 omitted are marked as artifacts. The setting should be a comma-list of slide
 numbers, which an include \opt{n} as a marker to mean the last slide of the
 frame. The standard setting is \opt{tag-slides = n}, meaning only the last
-slide of the frame is tagged.
+slide of the frame is tagged. You may use mode specifications in the
+\opt{tag-slides} option, for example \opt{tag-slides = n|handout:1,n} would tag
+the last slide in the frame in \texttt{projector} mode and the first and last
+for \texttt{handout} mode.
 
 
 \end{documentation}

@@ -159,7 +159,7 @@
 % \begin{variable}
 %   {
 %     \l_@@_titlepage_order_clist  ,
-%     \l_@@_titlepage_alignment    ,
+%     \l_@@_titlepage_alignment_tl  ,
 %     \l_@@_titlepage_framestyle_tl ,
 %     \l_@@_frame_alignment_tl
 %   }
@@ -188,9 +188,9 @@
     framestyle = \l_@@_titlepage_framestyle_tl ,
     horizontal-alignment =
       {
-        left = \tl_set:Nn \l_@@_titlepage_alignment { flushleft } ,
-        center = \tl_set:Nn \l_@@_titlepage_alignment { center } ,
-        right = \tl_set:Nn \l_@@_titlepage_alignment { flushright }
+        left = \tl_set:Nn \l_@@_titlepage_alignment_tl { flushleft } ,
+        center = \tl_set:Nn \l_@@_titlepage_alignment_tl { center } ,
+        right = \tl_set:Nn \l_@@_titlepage_alignment_tl { flushright }
       } ,
     vertical-alignment =
       {
@@ -203,14 +203,14 @@
   {
     \tl_if_empty:NF \l_@@_titlepage_framestyle_tl
       { \exp_args:NV \thispagestyle \l_@@_titlepage_framestyle_tl }
-    \begin { \l_@@_titlepage_alignment }
+    \begin { \l_@@_titlepage_alignment_tl }
       \cs_set_protected:Npn \and { \quad }
       \clist_map_inline:Nn \l_@@_titlepage_order_clist
         {
           \ExpandArgs { nnv } \UseInstance { titlepage-element }
             {##1} { @ ##1 }
         }
-    \end { \l_@@_titlepage_alignment }
+    \end { \l_@@_titlepage_alignment_tl }
   }
 %    \end{macrocode}
 % \end{variable}

@@ -107,6 +107,10 @@
 %    \end{macrocode}
 % \end{variable}
 %
+%    \begin{macrocode}
+\property_new:nnnn { slides } { now } { 1 } { \int_use:N \g_@@_slide_int }
+%    \end{macrocode}
+%
 % \begin{macro}{\@@_slide:nn}
 % \begin{macro}{\@@_slide_aux:n}
 %  Each slide is parsed inside simple st up, the only complexity being if we
@@ -117,8 +121,13 @@
 %  infinite loop if there is an overlay specification for the frame itself.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide:nn #1#2
-  {
+  { 
     \group_begin:
+      \tl_replace_all:Nne \l_@@_frame_tagging_clist { n }
+        {
+          \property_ref:ee { frame . \int_use:N \g_@@_frame_int }
+            { slides }
+        }
       \int_gzero:N \g_@@_slide_int
       \RenewCommandCopy \frame \@@_latexe_frame:n
       \bool_do_while:Nn \g_@@_slide_continue_bool
@@ -127,8 +136,9 @@
           \@@_if_overlay:nTF {#1}
             {
               \@@_slide_begin:
-              \@@_if_overlay:VTF \l_@@_frame_tagging_str
-                { \@@_frame_tag:n }
+              \clist_if_in:NVTF \l_@@_frame_tagging_clist
+                \g_@@_slide_int
+                { \wlog{TAGGING~frame. \int_use:N \g_@@_frame_int . \int_use:N \g_@@_slide_int } \@@_frame_tag:n }
                 { \@@_frame_notag:n }
                   {
                     \bool_if:NTF \l_@@_frame_verb_bool
@@ -140,6 +150,8 @@
             }
             { \bool_gset_false:N \g_@@_slide_continue_bool }
         }
+      \property_record:ee { frame . \int_use:N \g_@@_frame_int }
+        { slides }
     \group_end:
   }
 \group_begin:
@@ -304,14 +316,14 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\l_@@_action_spec_str, \l_@@_frame_tagging_str}
+% \begin{variable}{\l_@@_action_spec_str, \l_@@_frame_tagging_clist}
 %    \begin{macrocode}
 \keys_define:nn { xbeamer / frame }
   {
     action-spec .str_set:N
       = \l_@@_action_spec_str ,
-    tagging-spec .str_set:N
-      = \l_@@_frame_tagging_str ,
+    tag-slides .clist_set:N
+      = \l_@@_frame_tagging_clist ,
     vertical-alignment .choices:nn =
       { bottom , center , stretch , top }
       {
@@ -322,7 +334,7 @@
 \keys_set:nn { xbeamer / frame }
   {
     action-spec        =        ,
-    tagging-spec       =  1     ,
+    tag-slides         = n      ,
     vertical-alignment = center
   }
 %    \end{macrocode}

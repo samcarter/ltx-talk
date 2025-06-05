@@ -648,10 +648,10 @@
 %
 % The total frames can be handled using the kernel properties.
 %    \begin{macrocode}
-\NewProperty { totalframes } { shipout } { -1 }
+\property_new:nnnn { totalframes } { shipout } { -1 }
   { \int_use:N \g_@@_frame_int }
 \AddToHook { enddocument / afterlastpage }
-  { \RecordProperties { lastpage } { totalframes } }
+  { \property_record:nn { lastpage } { totalframes } }
 %    \end{macrocode}
 %
 % \begin{macro}{\@@_latexe_frame:n}

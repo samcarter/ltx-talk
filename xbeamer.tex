@@ -1112,6 +1112,23 @@ The easiest way of creating a handout for your audience is to set the
 typeset in |handout| mode. It will look like a presentation, but it can be
 printed or annotated more easily (the overlays are \enquote{flattened}).
 
+\section{Creating tagging PDF output}
+
+As detailed in the introduction (Section~\ref{sec:intro}), the \cls{xbeamer}
+class has been written from the start with tagging in mind. As such, where
+possible, tagging is generated automatically. This works best with predictable
+frame structure, for example the classical \enquote{uncover a list one item at
+a time} approach.
+
+\DescribeOption{tag-slides}
+To enable control tagging of slides, the frame option \opt{tag-slides} is
+available. This can be used to list which slides in a frame are tagged: those
+omitted are marked as artifacts. The setting should be a comma-list of slide
+numbers, which an include \opt{n} as a marker to mean the last slide of the
+frame. The standard setting is \opt{tag-slides = n}, meaning only the last
+slide of the frame is tagged.
+
+
 \end{documentation}
 
 \PrintIndex

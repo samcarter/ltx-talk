@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% File: xbeamer-decode.dtx Copyright (C) 2023-2025 Joseph Wright
+% File: ltx-talk-decode.dtx Copyright (C) 2023-2025 Joseph Wright
 %
 % It may be distributed and/or modified under the conditions of the
 % LaTeX Project Public License (LPPL), either version 1.3c of this
@@ -9,7 +9,7 @@
 %
 %    https://www.latex-project.org/lppl.txt
 %
-% This file is part of the "xbeamer bundle" (The Work in LPPL)
+% This file is part of the "ltx-talk bundle" (The Work in LPPL)
 % and all files in that bundle must be distributed together.
 %
 % The released version of this bundle is available from CTAN.
@@ -18,7 +18,7 @@
 %
 % The development version of the bundle can be found at
 %
-%    https://github.com/josephwright/xbeamer
+%    https://github.com/josephwright/ltx-talk
 %
 % for those people who are interested.
 %
@@ -39,7 +39,7 @@
 % \def\fileversion{v0.0.0}
 %
 % \title{^^A
-%   \pkg{xbeamer-decode} -- Decoding overlay specs^^A
+%   \pkg{ltx-talk-decode} -- Decoding overlay specs^^A
 %   \thanks{This file describes \fileversion,
 %     last revised \filedate.}^^A
 % }
@@ -61,7 +61,7 @@
 %
 % \begin{implementation}
 %
-% \section{\pkg{xbeamer-decode} implementation}
+% \section{\pkg{ltx-talk-decode} implementation}
 %
 % Start the \pkg{DocStrip} guards.
 %    \begin{macrocode}
@@ -70,7 +70,7 @@
 %
 % Identify the internal prefix.
 %    \begin{macrocode}
-%<@@=xbeamer>
+%<@@=talk>
 %    \end{macrocode}
 %
 % \begin{variable}{\l_@@_decode_overlays_bool}
@@ -278,7 +278,7 @@
               { \@@_decode_overlays:nn { actions } {#2} }
           }
           {
-            \msg_error:nnV { xbeamer } { bad-action-spec }
+            \msg_error:nnV { talk } { bad-action-spec }
               \l_@@_decode_arg_str
            }
       }
@@ -350,7 +350,7 @@
   {
     \quark_if_recursion_tail_stop_do:Nn #4
       {
-        \msg_error:nnV { xbeamer } { bad-action-spec }
+        \msg_error:nnV { talk } { bad-action-spec }
           \l_@@_decode_arg_str
       } % (
     \token_if_eq_meaning:NNTF #4 )
@@ -450,11 +450,11 @@
 % \end{macro}
 %
 %    \begin{macrocode}
-\msg_new:nnnn { xbeamer } { bad-action-spec }
+\msg_new:nnnn { talk } { bad-action-spec }
   { Bad~overlay~specification~"#1". }
   {
     The~overlay~specification~given~doesn't~follow~the~pattern~described~in~
-    the~xbeamer~manual:~it~has~been~ignored.
+    the~ltx-talk~manual:~it~has~been~ignored.
   }
 %    \end{macrocode}
 %

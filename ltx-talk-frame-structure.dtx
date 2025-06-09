@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% File: xbeamer-frame-structure.dtx Copyright (C) 2025 Joseph Wright
+% File: ltx-talk-frame-structure.dtx Copyright (C) 2025 Joseph Wright
 %
 % It may be distributed and/or modified under the conditions of the
 % LaTeX Project Public License (LPPL), either version 1.3c of this
@@ -9,7 +9,7 @@
 %
 %    https://www.latex-project.org/lppl.txt
 %
-% This file is part of the "xbeamer bundle" (The Work in LPPL)
+% This file is part of the "ltx-talk bundle" (The Work in LPPL)
 % and all files in that bundle must be distributed together.
 %
 % The released version of this bundle is available from CTAN.
@@ -18,7 +18,7 @@
 %
 % The development version of the bundle can be found at
 %
-%    https://github.com/josephwright/xbeamer
+%    https://github.com/josephwright/ltx-talk
 %
 % for those people who are interested.
 %
@@ -39,7 +39,7 @@
 % \def\fileversion{v0.0.0}
 %
 % \title{^^A
-%   \pkg{xbeamer-frame} -- The structure of frames^^A
+%   \pkg{ltx-talk-frame} -- The structure of frames^^A
 %   \thanks{This file describes \fileversion,
 %     last revised \filedate.}^^A
 % }
@@ -61,7 +61,7 @@
 %
 % \begin{implementation}
 %
-% \section{\pkg{xbeamer-frame-structure} implementation}
+% \section{\pkg{ltx-talk-frame-structure} implementation}
 %
 % Start the \pkg{DocStrip} guards.
 %    \begin{macrocode}
@@ -70,12 +70,12 @@
 %
 % Identify the internal prefix.
 %    \begin{macrocode}
-%<@@=xbeamer>
+%<@@=talk>
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\keys_define:nn { xbeamer }
-  { columns .inherit:n = xbeamer / column }
+\keys_define:nn { talk }
+  { columns .inherit:n = talk / column }
 %    \end{macrocode}
 %
 % \begin{variable}{\l_@@_columns_wd_tl}
@@ -83,9 +83,9 @@
 %   that the key value will make sense even if it depends on the current
 %   \cs{textwidth}.
 %    \begin{macrocode}
-\keys_define:nn { xbeamer / columns }
+\keys_define:nn { talk / columns }
   { width .tl_set:N = \l_@@_columns_wd_tl }
-\keys_set:nn { xbeamer / columns }
+\keys_set:nn { talk / columns }
   { width = \textwidth }
 %    \end{macrocode}
 % \end{variable}
@@ -98,7 +98,7 @@
   {
     \@@_action_begin:n {#1}
     \par
-    \keys_set:nn { xbeamer / columns } {#2}
+    \keys_set:nn { talk / columns } {#2}
     \hbox_set_to_wd:Nnw \l_@@_tmp_box { \l_@@_columns_wd_tl }
       \dim_set:Nn \textwidth { \l_@@_columns_wd_tl }
       \dim_set_eq:NN \columnwidth \textwidth
@@ -118,7 +118,7 @@
 %
 % \begin{variable}{\l_@@_column_alignment_tl}
 %    \begin{macrocode}
-\keys_define:nn { xbeamer / column }
+\keys_define:nn { talk / column }
   {
     b .meta:n =
       { vertical-alignment = bottom } ,
@@ -136,7 +136,7 @@
           \l_keys_value_tl
       }
   }
-\keys_set:nn { xbeamer / column }
+\keys_set:nn { talk / column }
   {
     vertical-alignment = center
   }
@@ -181,7 +181,7 @@
   {
     \@@_action_begin:n {#1}
     \par
-    \keys_set:nn { xbeamer / column } {#2}
+    \keys_set:nn { talk / column } {#2}
     \vbox_set_to_wd:Nnw \l_@@_tmp_box {#3}
       \dim_set:Nn \textwidth {#3}
       \dim_set_eq:NN \columnwidth \textwidth

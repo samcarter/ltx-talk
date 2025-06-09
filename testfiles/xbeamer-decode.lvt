@@ -1,7 +1,7 @@
 \input{regression-test}
 
 \DocumentMetadata{tagging = draft}
-\documentclass{xbeamer}
+\documentclass{ltx-talk}
 
 \ExplSyntaxOn
 
@@ -11,9 +11,9 @@
   {
     \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
       {
-        \int_gset:Nn \g__xbeamer_slide_int {#1}
-        \__xbeamer_decode_parse:n {#2}
-        \bool_if:NTF \l__xbeamer_decode_overlays_bool
+        \int_gset:Nn \g__talk_slide_int {#1}
+        \__talk_decode_parse:n {#2}
+        \bool_if:NTF \l__talk_decode_overlays_bool
           \prg_return_true:
           \prg_return_false:
       }
@@ -36,10 +36,10 @@
   {
     \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
       {
-        \int_gset:Nn \g__xbeamer_slide_int {#1}
-        \int_gset:Nn \g__xbeamer_pauses_int { 1 }
-        \__xbeamer_decode_parse:n {#2}
-        \bool_if:NTF \l__xbeamer_decode_overlays_bool
+        \int_gset:Nn \g__talk_slide_int {#1}
+        \int_gset:Nn \g__talk_pauses_int { 1 }
+        \__talk_decode_parse:n {#2}
+        \bool_if:NTF \l__talk_decode_overlays_bool
           \prg_return_true:
           \prg_return_false:
       }
@@ -62,15 +62,15 @@
   {
     \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
       {
-        \int_gset:Nn \g__xbeamer_slide_int {#1}
-        \int_gset:Nn \g__xbeamer_pauses_int { 1 }
-        \__xbeamer_decode_parse:n {#2}
-        \bool_if:NTF \l__xbeamer_decode_actions_bool
+        \int_gset:Nn \g__talk_slide_int {#1}
+        \int_gset:Nn \g__talk_pauses_int { 1 }
+        \__talk_decode_parse:n {#2}
+        \bool_if:NTF \l__talk_decode_actions_bool
           \prg_return_true:
           \prg_return_false:
       }
     \cs_set_protected:Npn \TRUE
-      { \LONGTYPEOUT { TRUE : ~ \l__xbeamer_decode_action_str } }
+      { \LONGTYPEOUT { TRUE : ~ \l__talk_decode_action_str } }
     \clist_map_inline:nn { alert , invisible , only , uncover , visible }
       {
         \test:nnTF { 1 } { #1@1 } \TRUE \ERROR
@@ -86,12 +86,12 @@
   {
     \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
       {
-        \int_gset:Nn \g__xbeamer_slide_int {#1}
-        \int_gset:Nn \g__xbeamer_pauses_int { 1 }
-        \__xbeamer_decode_parse:n {#2}
+        \int_gset:Nn \g__talk_slide_int {#1}
+        \int_gset:Nn \g__talk_pauses_int { 1 }
+        \__talk_decode_parse:n {#2}
         \bool_lazy_and:nnTF
-          { \l__xbeamer_decode_overlays_bool }
-          { \l__xbeamer_decode_actions_bool }
+          { \l__talk_decode_overlays_bool }
+          { \l__talk_decode_actions_bool }
           \prg_return_true:
           \prg_return_false:
       }
@@ -108,11 +108,11 @@
   {
     \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
       {
-        \str_set:Nn \l__xbeamer_mode_str {#1}
-        \int_gset:Nn \g__xbeamer_slide_int { 1 }
-        \int_gset:Nn \g__xbeamer_pauses_int { 1 }
-        \__xbeamer_decode_parse:n {#2}
-        \bool_if:NTF \l__xbeamer_decode_overlays_bool
+        \str_set:Nn \l__talk_mode_str {#1}
+        \int_gset:Nn \g__talk_slide_int { 1 }
+        \int_gset:Nn \g__talk_pauses_int { 1 }
+        \__talk_decode_parse:n {#2}
+        \bool_if:NTF \l__talk_decode_overlays_bool
           \prg_return_true:
           \prg_return_false:
       }
@@ -123,7 +123,7 @@
 
 \TEST { Errors }
   {
-    \__xbeamer_decode_parse:n { foo@1 }
+    \__talk_decode_parse:n { foo@1 }
   }
 
 \END

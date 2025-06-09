@@ -1,4 +1,4 @@
-# `xbeamer` - A LaTeX class for producing presentations
+# `ltx-talk` - A LaTeX class for producing presentations
 
 ## NOTICE
 
@@ -7,7 +7,7 @@ including almost all features and the name the class, is still open.
 
 ## Description
 
-The `xbeamer` class is focused on producing (on-screen) presentations, along
+The `ltx-talk` class is focused on producing (on-screen) presentations, along
 with support material such as handouts and speaker notes. Content is created in
 a `frame` environment, each of which can be divided up into a number of slides
 (actual output pages). A simple 'overlay' notation is used to specify which

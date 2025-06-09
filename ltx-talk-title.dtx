@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% File: xbeamer-title.dtx Copyright (C) 2025 Joseph Wright
+% File: ltx-talk-title.dtx Copyright (C) 2025 Joseph Wright
 %
 % It may be distributed and/or modified under the conditions of the
 % LaTeX Project Public License (LPPL), either version 1.3c of this
@@ -9,7 +9,7 @@
 %
 %    https://www.latex-project.org/lppl.txt
 %
-% This file is part of the "xbeamer bundle" (The Work in LPPL)
+% This file is part of the "ltx-talk bundle" (The Work in LPPL)
 % and all files in that bundle must be distributed together.
 %
 % The released version of this bundle is available from CTAN.
@@ -18,7 +18,7 @@
 %
 % The development version of the bundle can be found at
 %
-%    https://github.com/josephwright/xbeamer
+%    https://github.com/josephwright/xbeameltx-talkr
 %
 % for those people who are interested.
 %
@@ -39,7 +39,7 @@
 % \def\fileversion{v0.0.0}
 %
 % \title{^^A
-%   \pkg{xbeamer-title} -- Title pages^^A
+%   \pkg{ltx-talk-title} -- Title pages^^A
 %   \thanks{This file describes \fileversion,
 %     last revised \filedate.}^^A
 % }
@@ -61,7 +61,7 @@
 %
 % \begin{implementation}
 %
-% \section{\pkg{xbeamer-title} implementation}
+% \section{\pkg{ltx-talk-title} implementation}
 %
 % Start the \pkg{DocStrip} guards.
 %    \begin{macrocode}
@@ -70,7 +70,7 @@
 %
 % Identify the internal prefix.
 %    \begin{macrocode}
-%<@@=xbeamer>
+%<@@=talk>
 %    \end{macrocode}
 %
 % \begin{macro}{\institute, \subtitle}
@@ -101,7 +101,7 @@
 %   use a single template and split them as instances.
 %    \begin{macrocode}
 \NewTemplateType { titlepage-element } { 1 }
-\DeclareTemplateInterface { titlepage-element } { xbeamer } { 1 }
+\DeclareTemplateInterface { titlepage-element } { talk } { 1 }
   {
     after-skip : length = 0em ,
     before-skip : length = 0em ,
@@ -110,7 +110,7 @@
     tag-begin : tokenlist = ,
     tag-end : tokenlist =
   }
-\DeclareTemplateCode { titlepage-element } { xbeamer } { 1 }
+\DeclareTemplateCode { titlepage-element } { talk } { 1 }
   {
     after-skip  = \l_@@_titlelem_after_skip ,
     before-skip = \l_@@_titlelem_before_skip ,
@@ -138,15 +138,15 @@
 %    \end{macrocode}
 %   Standard settings are taken from \cls{beamer} with minor adjustments.
 %    \begin{macrocode}
-\DeclareInstance { titlepage-element } { author } { xbeamer }
+\DeclareInstance { titlepage-element } { author } { talk }
   { before-skip = 1em }
-\DeclareInstance { titlepage-element } { date } { xbeamer }
+\DeclareInstance { titlepage-element } { date } { talk }
   { after-skip = 0.5em }
-\DeclareInstance { titlepage-element } { institute } { xbeamer }
+\DeclareInstance { titlepage-element } { institute } { talk }
   { font = \scriptsize }
-\DeclareInstance { titlepage-element } { subtitle } { xbeamer }
+\DeclareInstance { titlepage-element } { subtitle } { talk }
   { before-skip = 0.25em , color = structure }
-\DeclareInstance { titlepage-element } { title } { xbeamer }
+\DeclareInstance { titlepage-element } { title } { talk }
   {
     color = structure ,
     font = \Large ,
@@ -168,7 +168,7 @@
 %   code part. As a result, we have a slightly repetitive key interface.
 %    \begin{macrocode}
 \NewTemplateType { titlepage } { 0 }
-\DeclareTemplateInterface { titlepage } { xbeamer } { 0 }
+\DeclareTemplateInterface { titlepage } { talk } { 0 }
   {
     element-order : commalist =
       {
@@ -178,11 +178,11 @@
         institute ,
         date
       } ,
-    framestyle : tokenlist = xbeamer ,
+    framestyle : tokenlist = talk ,
     horizontal-alignment : choice { left , center ,  right } = center ,
     vertical-alignment : choice { bottom , center , stretch , top } = center
   }
-\DeclareTemplateCode { titlepage } { xbeamer } { 0 }
+\DeclareTemplateCode { titlepage } { talk } { 0 }
   {
     element-order = \l_@@_titlepage_order_clist ,
     framestyle = \l_@@_titlepage_framestyle_tl ,
@@ -221,10 +221,10 @@
 \NewDocumentCommand \maketitle { O {} }
   {
     \bool_if:NTF \l_@@_frame_bool
-      { \UseTemplate { titlepage } { xbeamer } {#1} }
+      { \UseTemplate { titlepage } { talk } {#1} }
       {
         \begin { frame }
-          \UseTemplate { titlepage } { xbeamer } {#1}
+          \UseTemplate { titlepage } { talk } {#1}
         \end { frame }
       }
   }

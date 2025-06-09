@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% File: xbeamer-color.dtx Copyright (C) 2025 Joseph Wright
+% File: ltx-talk-color.dtx Copyright (C) 2025 Joseph Wright
 %
 % It may be distributed and/or modified under the conditions of the
 % LaTeX Project Public License (LPPL), either version 1.3c of this
@@ -9,7 +9,7 @@
 %
 %    https://www.latex-project.org/lppl.txt
 %
-% This file is part of the "xbeamer bundle" (The Work in LPPL)
+% This file is part of the "ltx-talk bundle" (The Work in LPPL)
 % and all files in that bundle must be distributed together.
 %
 % The released version of this bundle is available from CTAN.
@@ -18,7 +18,7 @@
 %
 % The development version of the bundle can be found at
 %
-%    https://github.com/josephwright/xbeamer
+%    https://github.com/josephwright/ltx-talk
 %
 % for those people who are interested.
 %
@@ -39,7 +39,7 @@
 % \def\fileversion{v0.0.0}
 %
 % \title{^^A
-%   \pkg{xbeamer-color} -- Color definitions^^A
+%   \pkg{ltx-talk-color} -- Color definitions^^A
 %   \thanks{This file describes \fileversion,
 %     last revised \filedate.}^^A
 % }
@@ -61,7 +61,7 @@
 %
 % \begin{implementation}
 %
-% \section{\pkg{xbeamer-color} implementation}
+% \section{\pkg{ltx-talk-color} implementation}
 %
 % Start the \pkg{DocStrip} guards.
 %    \begin{macrocode}
@@ -70,7 +70,7 @@
 %
 % Identify the internal prefix.
 %    \begin{macrocode}
-%<@@=xbeamer>
+%<@@=talk>
 %    \end{macrocode}
 %
 % The aim here is to \emph{test} how well \pkg{l3color} can support the range
@@ -84,7 +84,7 @@
 %
 % Currently, colors defined using \pkg{xcolor} will be passed on to
 % \pkg{l3color} provided \cs{DocumentMetadata} is active. As that is a
-% requirement in any case for \cls{xbeamer}, some of the setup is relatively
+% requirement in any case for \cls{ltx-talk}, some of the setup is relatively
 % easy to do.
 %
 % \subsection{Existing definitions}

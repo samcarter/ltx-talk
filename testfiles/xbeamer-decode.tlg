@@ -89,9 +89,9 @@ FALSE
 ============================================================
 TEST 6: Errors
 ============================================================
-! Class xbeamer Error: Bad overlay specification "foo@1".
+! Class ltx-talk Error: Bad overlay specification "foo@1".
 For immediate help type H <return>.
  ...                                              
 l. ...  }
-The overlay specification given doesn't follow the pattern described in the xbeamer manual: it has been ignored.
+The overlay specification given doesn't follow the pattern described in the ltx-talk manual: it has been ignored.
 ============================================================

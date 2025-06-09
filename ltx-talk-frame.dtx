@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% File: xbeamer-frame.dtx Copyright (C) 2023-2025 Joseph Wright
+% File: ltx-talk-frame.dtx Copyright (C) 2023-2025 Joseph Wright
 %
 % It may be distributed and/or modified under the conditions of the
 % LaTeX Project Public License (LPPL), either version 1.3c of this
@@ -9,7 +9,7 @@
 %
 %    https://www.latex-project.org/lppl.txt
 %
-% This file is part of the "xbeamer bundle" (The Work in LPPL)
+% This file is part of the "ltx-talk bundle" (The Work in LPPL)
 % and all files in that bundle must be distributed together.
 %
 % The released version of this bundle is available from CTAN.
@@ -18,7 +18,7 @@
 %
 % The development version of the bundle can be found at
 %
-%    https://github.com/josephwright/xbeamer
+%    https://github.com/josephwright/ltx-talk
 %
 % for those people who are interested.
 %
@@ -39,7 +39,7 @@
 % \def\fileversion{v0.0.0}
 %
 % \title{^^A
-%   \pkg{xbeamer-frame} -- The structure of frames^^A
+%   \pkg{ltx-talk-frame} -- The structure of frames^^A
 %   \thanks{This file describes \fileversion,
 %     last revised \filedate.}^^A
 % }
@@ -61,7 +61,7 @@
 %
 % \begin{implementation}
 %
-% \section{\pkg{xbeamer-frame} implementation}
+% \section{\pkg{ltx-talk-frame} implementation}
 %
 % Start the \pkg{DocStrip} guards.
 %    \begin{macrocode}
@@ -70,7 +70,7 @@
 %
 % Identify the internal prefix.
 %    \begin{macrocode}
-%<@@=xbeamer>
+%<@@=talk>
 %    \end{macrocode}
 %
 % \subsection{Slides in frames}
@@ -326,7 +326,7 @@
 %
 % \begin{variable}{\l_@@_action_spec_str, \l_@@_frame_tagging_str}
 %    \begin{macrocode}
-\keys_define:nn { xbeamer / frame }
+\keys_define:nn { talk / frame }
   {
     action-spec .str_set:N
       = \l_@@_action_spec_str ,
@@ -339,7 +339,7 @@
           \l_keys_value_tl
       }
   }
-\keys_set:nn { xbeamer / frame }
+\keys_set:nn { talk / frame }
   {
     action-spec        =        ,
     tag-slides         = n      ,
@@ -385,14 +385,14 @@
 %   }
 %    \begin{macrocode}
 \NewTemplateType { footer-element } { 1 }
-\DeclareTemplateInterface { footer-element } { xbeamer } { 1 }
+\DeclareTemplateInterface { footer-element } { talk } { 1 }
   {
     color      : tokenlist ,
     font       : tokenlist = ,
     left-skip  : length = 0em ,
     right-skip : length = 0em
   }
-\DeclareTemplateCode { footer-element } { xbeamer } { 1 }
+\DeclareTemplateCode { footer-element } { talk } { 1 }
   {
     color      = \l_@@_footelem_color_tl ,
     font       = \l_@@_footelem_font_tl ,
@@ -412,11 +412,11 @@
         \hspace { \l_@@_footelem_right_skip }
       }
   }
-\DeclareInstance { footer-element } { date } { xbeamer } { }
-\DeclareInstance { footer-element } { author } { xbeamer } { }
-\DeclareInstance { footer-element } { title } { xbeamer } { }
-\DeclareInstance { footer-element } { institute } { xbeamer } { }
-\DeclareInstance { footer-element } { framenumber } { xbeamer } { }
+\DeclareInstance { footer-element } { date } { talk } { }
+\DeclareInstance { footer-element } { author } { talk } { }
+\DeclareInstance { footer-element } { title } { talk } { }
+\DeclareInstance { footer-element } { institute } { talk } { }
+\DeclareInstance { footer-element } { framenumber } { talk } { }
 %    \end{macrocode}
 % \end{variable}
 %
@@ -436,7 +436,7 @@
 %   the edge of the paper first then adjust as required.
 %    \begin{macrocode}
 \NewTemplateType { header } { 0 }
-\DeclareTemplateInterface { header } { xbeamer } { 0 }
+\DeclareTemplateInterface { header } { talk } { 0 }
   {
     background-color  : tokenlist,
     color             : tokenlist = structure ,
@@ -446,7 +446,7 @@
     print-frame-title : boolean = true ,
     right-skip        : length = \Gm@rmargin
   }
-\DeclareTemplateCode { header } { xbeamer } { 0 }
+\DeclareTemplateCode { header } { talk } { 0 }
   {
     background-color  = \l_@@_header_bg_tl ,
     color             = \l_@@_header_fg_tl ,
@@ -475,7 +475,7 @@
         }
     \group_end:
   }
-\DeclareInstance { header } { std } { xbeamer } { }
+\DeclareInstance { header } { std } { talk } { }
 \AddToHook { begindocument }
   {
     \DeclareInstanceCopy { header } { wallpaper } { std }
@@ -501,7 +501,7 @@
 %   page layout.
 %    \begin{macrocode}
 \NewTemplateType { footer } { 0 }
-\DeclareTemplateInterface { footer } { xbeamer } { 0 }
+\DeclareTemplateInterface { footer } { talk } { 0 }
   {
     background-color : tokenlist ,
     color            : tokenlist ,
@@ -511,7 +511,7 @@
     right-skip       : length = \Gm@rmargin ,
     separator        : tokenlist = \hfil
   }
-\DeclareTemplateCode { footer } { xbeamer } { 0 }
+\DeclareTemplateCode { footer } { talk } { 0 }
   {
     background-color = \l_@@_footer_bg_tl ,
     color            = \l_@@_footer_fg_tl ,
@@ -554,7 +554,7 @@
     \box_use_drop:N \l_@@_tmp_box
     \kern_horizontal:n { \l_@@_footer_right_skip - \Gm@rmargin }
   }
-\DeclareInstance { footer } { std } { xbeamer } { }
+\DeclareInstance { footer } { std } { talk } { }
 \AddToHook { begindocument }
   {
     \DeclareInstanceCopy { footer } { wallpaper } { std }
@@ -582,7 +582,7 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\ps@plain, \ps@wallpaper, \ps@xbeamer}
+% \begin{macro}{\ps@plain, \ps@wallpaper, \ps@talk}
 %   Install a standard header and footer template, and redefine the
 %   \texttt{plain} one as this will be used for frames without
 %   \enquote{wallpaper} which still need core links, \foreign{etc}. We also
@@ -616,7 +616,7 @@
     \cs_set_eq:NN \@evenhead \@oddhead
     \cs_set_eq:NN \@evenfoot \@oddfoot
   }
-\cs_new_nopar:Npn \ps@xbeamer
+\cs_new_nopar:Npn \ps@talk
   {
     \cs_set_nopar:Npn \@oddhead
       {
@@ -628,7 +628,7 @@
     \cs_set_eq:NN \@evenhead \@oddhead
     \cs_set_eq:NN \@evenfoot \@oddfoot
   }
-\pagestyle { xbeamer }
+\pagestyle { talk }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -732,7 +732,7 @@
 \RenewDocumentEnvironment { frame }
   { !D <> { all } = { action-spec } !O { } +b }
   {
-      \keys_set:nn { xbeamer / frame } {#2}
+      \keys_set:nn { talk / frame } {#2}
       \bool_set_false:N \l_@@_frame_verb_bool
       \@@_frame_process:nn {#1} {#3}
   }
@@ -740,7 +740,7 @@
 \NewDocumentEnvironment { frame* }
   { !D <> { all } = { action-spec } !O { } c }
   {
-      \keys_set:nn { xbeamer / frame } {#2}
+      \keys_set:nn { talk / frame } {#2}
       \bool_set_true:N \l_@@_frame_verb_bool
       \@@_frame_process:nn {#1} {#3}
   }

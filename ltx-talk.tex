@@ -1,6 +1,6 @@
 \iffalse meta-comment
 
-File: xbeamer.tex Copyright (C) 2023-2025 Joseph Wright
+File: ltx-talk.tex Copyright (C) 2023-2025 Joseph Wright
 
 It may be distributed and/or modified under the conditions of the
 LaTeX Project Public License (LPPL), either version 1.3c of this
@@ -9,7 +9,7 @@ of this license is in the file
 
    https://www.latex-project.org/lppl.txt
 
-This file is part of the "xbeamer bundle" (The Work in LPPL)
+This file is part of the "ltx-talk bundle" (The Work in LPPL)
 and all files in that bundle must be distributed together.
 
 The released version of this bundle is available from CTAN.
@@ -18,7 +18,7 @@ The released version of this bundle is available from CTAN.
 
 The development version of the bundle can be found at
 
-   https://github.com/josephwright/xbeamer
+   https://github.com/josephwright/ltx-talk
 
 for those people who are interested.
 
@@ -70,7 +70,7 @@ for those people who are interested.
 \begin{document}
 
 \title{%
-  \cls{xbeamer} -- A class for typesetting presentations%
+  \cls{ltx-talk} -- A class for typesetting presentations%
   \thanks{This file describes \fileversion,
     last revised \filedate.}%
 }
@@ -132,10 +132,10 @@ interface) of \cls{beamer} mean that it is not possible to \enquote{retrofit}
 PDF tagging into the class.
 
 Instead, the approach is to develop a new class, currently called
-\cls{xbeamer}, which takes ideas from \cls{beamer} but with tagging and
+\cls{ltx-talk}, which takes ideas from \cls{beamer} but with tagging and
 accessibility of structure as a design aim from the beginning. In contrast to
 work by the \LaTeX{} Project Team on making the core classes accessible, the
-expectation for \cls{xbeamer} is that users \emph{will} need to change their
+expectation for \cls{ltx-talk} is that users \emph{will} need to change their
 sources. Unlike other documents, presentations tend to be \enquote{single use}:
 revised and adjusted each time they are used. The need to edit sources
 should therefore not be an insurmountable barrier.
@@ -157,12 +157,12 @@ before design aspects.
 
 \section{Simple example documents}
 
-Currently, \cls{xbeamer} \emph{absolutely requires} the use of the
+Currently, \cls{ltx-talk} \emph{absolutely requires} the use of the
 \cs{DocumentMetadata} command \emph{and} the a setting for the \texttt{tagging}
-key. As such, the most basic \cls{xbeamer} document is
+key. As such, the most basic \cls{ltx-talk} document is
 \begin{verbatim}
   \DocumentMetadata{tagging = on} % or "tagging = draft"/"tagging = off"
-  \documentclass{xbeamer}
+  \documentclass{ltx-talk}
   \begin{document}
   \begin{frame}
     Some content here
@@ -174,7 +174,7 @@ A slightly more useful version, which generates multiple slides and shows some
 (current) features, is
 \begin{verbatim}
   \DocumentMetadata{tagging = on}
-  \documentclass{xbeamer}
+  \documentclass{ltx-talk}
   \begin{document}
   \begin{frame}
     \frametitle{An example frame}
@@ -189,12 +189,12 @@ A slightly more useful version, which generates multiple slides and shows some
   \end{document}
 \end{verbatim}
 
-Tagging is activated for the standard (projector) output of \cls{xbeamer}, but
+Tagging is activated for the standard (projector) output of \cls{ltx-talk}, but
 it is perhaps more useful in handout mode, which is activated using a class
 option.
 \begin{verbatim}
   \DocumentMetadata{tagging = on}
-  \documentclass[mode = handout]{xbeamer}
+  \documentclass[mode = handout]{ltx-talk}
   \begin{document}
   \begin{frame}
     \frametitle{An example frame}
@@ -210,11 +210,11 @@ option.
 \end{verbatim}
 
 A larger set of examples which can be edited and typeset in the browser are
-available at \url{https://www.texdev.net/xbeamer/examples/}.
+available at \url{https://www.texdev.net/ltx-talk/examples/}.
 
 \section{Class structure and design decisions}
 
-As covered in Section~\ref{sec:intro}, the \cls{xbeamer} class is currently
+As covered in Section~\ref{sec:intro}, the \cls{ltx-talk} class is currently
 highly experimental. Active discussion is ongoing around many aspects of the
 way that things should work, and very little is therefore at all stable. That
 said, some decisions have been made: some of this is re-stating ideas which
@@ -232,10 +232,10 @@ carry forward from \cls{beamer}.
 
 \section{Differences from \cls{beamer}}
 
-The following key differences between \cls{beamer} and \cls{xbeamer} are
+The following key differences between \cls{beamer} and \cls{ltx-talk} are
 important to note for the user
 \begin{itemize}
-  \item The default font setup in \cls{xbeamer} is \emph{all} sanserif, in
+  \item The default font setup in \cls{ltx-talk} is \emph{all} sanserif, in
     particular \cs{mathrm} and \cs{textrm} will give a sanserif font
   \item Overlay specifications can only be given as the first argument to
     commands
@@ -243,7 +243,7 @@ important to note for the user
     the overlay argument, e.g. |\includgraphics*<...>|: this reflects the
     fact that the star is usually described as part of the command name rather
     than as an argument
-  \item There are no optional braced arguments in \cls{xbeamer}, in particular
+  \item There are no optional braced arguments in \cls{ltx-talk}, in particular
     frame titles are given using \cs{frametitle} and not as
     |\begin{frame}{...}|
   \item New overlay-aware commands and environments should be defined using
@@ -413,7 +413,7 @@ the command \cs{onslide}, see below.
 \subsection{The general concept of overlay specifications}
 
 Whilst the \cs{pause} command is easy to understand, it is quite limited and so
-is best suited only to simple cases. The \cls{xbeamer} class therefore supports
+is best suited only to simple cases. The \cls{ltx-talk} class therefore supports
 a different approach. The idea is to add \emph{overlay specifications} to
 commands. These specifications are always given in pointed brackets and follow
 the command as the first argument. In the simplest case, the specification
@@ -963,7 +963,7 @@ prevents errors when encountering large negative offsets, for example
 
 \LaTeX{} provides different commands for structuring text \enquote{locally},
 for example, \foreign{via} the \env{itemize} environment. These environments
-are also available in the \cls{xbeamer} class, although their appearance has
+are also available in the \cls{ltx-talk} class, although their appearance has
 been slightly changed.
 
 \subsection{Itemizations, enumerations and descriptions}
@@ -1107,7 +1107,7 @@ see Section~\ref{sec:action-spec}. The vertical placement of the enclosing
   \label{sec:modes}}
 
 \DescribeOption{mode}
-The \cls{xbeamer} class allows you to select different output formats from the
+The \cls{ltx-talk} class allows you to select different output formats from the
 same source using the option \opt{mode}. This works with the overlay
 specification to typeset some of the input selectively.
 
@@ -1125,7 +1125,7 @@ printed or annotated more easily (the overlays are \enquote{flattened}).
 
 \section{Creating tagging PDF output}
 
-As detailed in the introduction (Section~\ref{sec:intro}), the \cls{xbeamer}
+As detailed in the introduction (Section~\ref{sec:intro}), the \cls{ltx-talk}
 class has been written from the start with tagging in mind. As such, where
 possible, tagging is generated automatically. This works best with predictable
 frame structure, for example the classical \enquote{uncover a list one item at

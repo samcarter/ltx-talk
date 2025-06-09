@@ -26,12 +26,12 @@ runlatex.editorlines=45;
 
 runlatex.preincludes = {
 {% for e in examples %}
- "pre{{forloop.index0}}": {"pre{{examples.size}}": "xbeamer.cls"},
+ "pre{{forloop.index0}}": {"pre{{examples.size}}": "ltx-talk.cls"},
 {% endfor %}
 }
 </script>
 
-# XBeamer Examples
+# ltx-talk Examples
 
 {% for e in examples %}
 
@@ -45,11 +45,11 @@ runlatex.preincludes = {
 
 
 
-## `xbeamer.cls`
+## `ltx-talk.cls`
 
 <pre class="norun" style="height:8em" markdown="1">
 
-{% include_relative xbeamer.cls %}
+{% include_relative ltx-talk.cls %}
 
 </pre>
 

@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% File: xbeamer-overlay.dtx Copyright (C) 2024,2025 Joseph Wright
+% File: ltx-talk-overlay.dtx Copyright (C) 2024,2025 Joseph Wright
 %
 % It may be distributed and/or modified under the conditions of the
 % LaTeX Project Public License (LPPL), either version 1.3c of this
@@ -9,7 +9,7 @@
 %
 %    https://www.latex-project.org/lppl.txt
 %
-% This file is part of the "xbeamer bundle" (The Work in LPPL)
+% This file is part of the "ltx-talk bundle" (The Work in LPPL)
 % and all files in that bundle must be distributed together.
 %
 % The released version of this bundle is available from CTAN.
@@ -18,7 +18,7 @@
 %
 % The development version of the bundle can be found at
 %
-%    https://github.com/josephwright/xbeamer
+%    https://github.com/josephwright/ltx-talk
 %
 % for those people who are interested.
 %
@@ -39,7 +39,7 @@
 % \def\fileversion{v0.0.0}
 %
 % \title{^^A
-%   \pkg{xbeamer-overlay} -- Overlays^^A
+%   \pkg{ltx-talk-overlay} -- Overlays^^A
 %   \thanks{This file describes \fileversion,
 %     last revised \filedate.}^^A
 % }
@@ -61,7 +61,7 @@
 %
 % \begin{implementation}
 %
-% \section{\pkg{xbeamer-overlay} implementation}
+% \section{\pkg{ltx-talk-overlay} implementation}
 %
 % Start the \pkg{DocStrip} guards.
 %    \begin{macrocode}
@@ -70,7 +70,7 @@
 %
 % Identify the internal prefix.
 %    \begin{macrocode}
-%<@@=xbeamer>
+%<@@=talk>
 %    \end{macrocode}
 %
 % \subsection{Utilities}
@@ -170,12 +170,12 @@
 %   Currently just an on-off, but that will change.
 %    \begin{macrocode}
 \NewTemplateType { hidden } { 0 }
-\DeclareTemplateInterface { hidden } { xbeamer } { 0 }
+\DeclareTemplateInterface { hidden } { talk } { 0 }
   { opacity : real = 0 }
-\DeclareTemplateCode { hidden } { xbeamer } { 0 }
+\DeclareTemplateCode { hidden } { talk } { 0 }
   { opacity = \l_@@_uncover_hidden_fp }
   { \opacity_select:n { \l_@@_uncover_hidden_fp } }
-\DeclareInstance { hidden } { std } { xbeamer } { }
+\DeclareInstance { hidden } { std } { talk } { }
 %    \end{macrocode}
 % \end{variable}
 % \begin{macro}{\@@_action_uncover:N}
@@ -528,7 +528,7 @@
               }
           }
       }
-    \hook_gput_code:nne { enddocument / afterlastpage } { xbeamer }
+    \hook_gput_code:nne { enddocument / afterlastpage } { talk }
        { \@@_overprint_check_ht:n { \@@_frame_overprint: } }
   }
 \cs_new_protected:Npn \@@_overprint_check_ht:n #1
@@ -539,11 +539,11 @@
         \dim_compare_p:vNv { overprint@ #1 } = { g_@@_overprint_ #1 _tl }
       }
       {
-        \msg_warning:nn { xbeamer } { overprint-ht }
+        \msg_warning:nn { talk } { overprint-ht }
         \cs_gset_protected:Npn \@@_overprint_check_ht:n ##1 { }
       }
   }
-\msg_new:nnn { xbeamer } { overprint-ht }
+\msg_new:nnn { talk } { overprint-ht }
   {
     Overprint~area~height~has~changed:\\
     rerun~LaTeX.

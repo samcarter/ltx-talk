@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% File: xbeamer-structure.dtx Copyright (C) 2024,2025 Joseph Wright
+% File: ltx-talk-structure.dtx Copyright (C) 2024,2025 Joseph Wright
 %
 % It may be distributed and/or modified under the conditions of the
 % LaTeX Project Public License (LPPL), either version 1.3c of this
@@ -9,7 +9,7 @@
 %
 %    https://www.latex-project.org/lppl.txt
 %
-% This file is part of the "xbeamer bundle" (The Work in LPPL)
+% This file is part of the "ltx-talk bundle" (The Work in LPPL)
 % and all files in that bundle must be distributed together.
 %
 % The released version of this bundle is available from CTAN.
@@ -18,7 +18,7 @@
 %
 % The development version of the bundle can be found at
 %
-%    https://github.com/josephwright/xbeamer
+%    https://github.com/josephwright/ltx-talk
 %
 % for those people who are interested.
 %
@@ -39,7 +39,7 @@
 % \def\fileversion{v0.0.0}
 %
 % \title{^^A
-%   \pkg{xbeamer-structure} -- Structural commands^^A
+%   \pkg{ltx-talk-structure} -- Structural commands^^A
 %   \thanks{This file describes \fileversion,
 %     last revised \filedate.}^^A
 % }
@@ -61,7 +61,7 @@
 %
 % \begin{implementation}
 %
-% \section{\pkg{xbeamer-structure} implementation}
+% \section{\pkg{ltx-talk-structure} implementation}
 %
 % Start the \pkg{DocStrip} guards.
 %    \begin{macrocode}
@@ -70,7 +70,7 @@
 %
 % Identify the internal prefix.
 %    \begin{macrocode}
-%<@@=xbeamer>
+%<@@=talk>
 %    \end{macrocode}
 %
 % \subsection{Frame title}
@@ -104,14 +104,14 @@
 %   header.
 %    \begin{macrocode}
 \NewTemplateType { frametitle } { 1 }
-\DeclareTemplateInterface { frametitle } { xbeamer } { 1 }
+\DeclareTemplateInterface { frametitle } { talk } { 1 }
   {
     after-skip  : length = \bigskipamount ,
     before-skip : length = 0em ,
     color       : tokenlist = ,
     font        : tokenlist = \Large \bfseries
   }
-\DeclareTemplateCode { frametitle } { xbeamer } { 1 }
+\DeclareTemplateCode { frametitle } { talk } { 1 }
   {
     after-skip  = \l_@@_frametitle_after_skip ,
     before-skip = \l_@@_frametitle_before_skip ,
@@ -131,7 +131,7 @@
     \group_end:
     \vspace { \l_@@_frametitle_after_skip }
   }
-\DeclareInstance { frametitle } { header } { xbeamer } { }
+\DeclareInstance { frametitle } { header } { talk } { }
 \cs_new_protected:Npn \@@_frame_title:n #1
   {
     \bool_if:NTF \g_@@_frame_tag_bool

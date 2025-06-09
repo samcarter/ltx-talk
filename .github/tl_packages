@@ -8,7 +8,7 @@ xetex
 # warnings with some packages and errors with others
 metafont
 mfware
-# Dependencies for xbeamer
+# Dependencies for ltx-tlak
 geometry
 relsize
 # Dependencies for documentation

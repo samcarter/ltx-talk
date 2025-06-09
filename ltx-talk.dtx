@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% File: xbeamer.dtx Copyright (C) 2023-2025 Joseph Wright
+% File: ltx-talk.dtx Copyright (C) 2023-2025 Joseph Wright
 %
 % It may be distributed and/or modified under the conditions of the
 % LaTeX Project Public License (LPPL), either version 1.3c of this
@@ -9,7 +9,7 @@
 %
 %    https://www.latex-project.org/lppl.txt
 %
-% This file is part of the "xbeamer bundle" (The Work in LPPL)
+% This file is part of the "ltx-talk bundle" (The Work in LPPL)
 % and all files in that bundle must be distributed together.
 %
 % The released version of this bundle is available from CTAN.
@@ -18,7 +18,7 @@
 %
 % The development version of the bundle can be found at
 %
-%    https://github.com/josephwright/xbeamer
+%    https://github.com/josephwright/ltx-talk
 %
 % for those people who are interested.
 %
@@ -39,7 +39,7 @@
 % \def\fileversion{v0.0.0}
 %
 % \title{^^A
-%   \pkg{xbeamer} -- Overall set up^^A
+%   \pkg{ltx-talk} -- Overall set up^^A
 %   \thanks{This file describes \fileversion,
 %     last revised \filedate.}^^A
 % }
@@ -61,7 +61,7 @@
 %
 % \begin{implementation}
 %
-% \section{\pkg{xbeamer} implementation}
+% \section{\pkg{ltx-talk} implementation}
 %
 % Start the \pkg{DocStrip} guards.
 %    \begin{macrocode}
@@ -70,14 +70,14 @@
 %
 % Identify the internal prefix.
 %    \begin{macrocode}
-%<@@=xbeamer>
+%<@@=talk>
 %    \end{macrocode}
 %
 % \subsection{Set up}
 %
 % Identify the package and give the over all version information.
 %    \begin{macrocode}
-\ProvidesExplClass {xbeamer} {2025-05-04} {0.0.0}
+\ProvidesExplClass {ltx-lalk} {2025-05-04} {0.0.0}
   {A class for typesetting presentations}
 %    \end{macrocode}
 %
@@ -179,7 +179,8 @@
 %
 % Get the right type of message.
 %    \begin{macrocode}
-\prop_gput:Nnn \g_msg_module_type_prop { xbeamer } { Class }
+\prop_gput:Nnn \g_msg_module_name_prop { talk } { ltx-talk }
+\prop_gput:Nnn \g_msg_module_type_prop { talk } { Class }
 %    \end{macrocode}
 %
 % \subsection{Option handling}
@@ -191,7 +192,7 @@
 %     \l_@@_mode_str
 %   }
 %    \begin{macrocode}
-\keys_define:nn { xbeamer }
+\keys_define:nn { talk }
   {
     aspect-ratio .str_set:N =
       \l_@@_aspect_ratio_str ,
@@ -206,7 +207,7 @@
 %
 % Scope for options.
 %    \begin{macrocode}
-\keys_define:nn { xbeamer }
+\keys_define:nn { talk }
   {
     aspect-ratio .usage:n = load ,
     font-size    .usage:n = load ,
@@ -216,7 +217,7 @@
 %
 % Initial values.
 %    \begin{macrocode}
-\keys_set:nn { xbeamer }
+\keys_set:nn { talk }
   {
     aspect-ratio   = 16:9      ,
     font-size      = 11pt      ,
@@ -236,7 +237,7 @@
   {
     \file_input:n { size10.clo }
     \RequirePackage { relsize }
-    \hook_gput_code:nne { begindocument } { xbeamer }
+    \hook_gput_code:nne { begindocument } { talk }
       { \exp_not:N \relsize { \fp_eval:n { \l_@@_fontsize_dim / 10pt } } }
   }
 %    \end{macrocode}
@@ -337,7 +338,7 @@
 %    \begin{macrocode}
 \tagpdfsetup
   {
-    role / user-NS = xbeamer         ,
+    role / user-NS = ltx-talk        ,
     role / new-tag = frame / Sect    ,
     role / new-tag = frametitle / H4
   }

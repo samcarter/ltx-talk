@@ -137,8 +137,8 @@ accessibility of structure as a design aim from the beginning. In contrast to
 work by the \LaTeX{} Project Team on making the core classes accessible, the
 expectation for \cls{ltx-talk} is that users \emph{will} need to change their
 sources. Unlike other documents, presentations tend to be \enquote{single use}:
-revised and adjusted each time they are used. The need to edit sources
-should therefore not be an insurmountable barrier.
+revised and adjusted each time they are used. The need to edit sources should
+therefore not be an insurmountable barrier.
 
 At present, this code is \emph{highly} experimental: only a (small) subset of
 \cls{beamer} functionality is implemented, some things are being done
@@ -413,14 +413,14 @@ the command \cs{onslide}, see below.
 \subsection{The general concept of overlay specifications}
 
 Whilst the \cs{pause} command is easy to understand, it is quite limited and so
-is best suited only to simple cases. The \cls{ltx-talk} class therefore supports
-a different approach. The idea is to add \emph{overlay specifications} to
-commands. These specifications are always given in pointed brackets and follow
-the command as the first argument. In the simplest case, the specification
-contains just a number. A command with an overlay specification following it
-will only have \enquote{effect} on the slide(s) mentioned in the specification.
-What exactly \enquote{having an effect} means, depends on the command. Consider
-the following example.
+is best suited only to simple cases. The \cls{ltx-talk} class therefore
+supports a different approach. The idea is to add \emph{overlay specifications}
+to commands. These specifications are always given in pointed brackets and
+follow the command as the first argument. In the simplest case, the
+specification contains just a number. A command with an overlay specification
+following it will only have \enquote{effect} on the slide(s) mentioned in the
+specification. What exactly \enquote{having an effect} means, depends on the
+command. Consider the following example.
 \begin{verbatim}
   \begin{frame}
     \textbf{This line is bold on all three slides.}

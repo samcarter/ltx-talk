@@ -2,8 +2,9 @@
 
 ## NOTICE
 
-This is a *development draft*: the exact nature of what might be released,
-including almost all features and the name the class, is still open.
+This class is _highly_ experimental, and changes may occur to almost all
+interfaces. Development is focussed on tagging/functionality as the primary
+driver; as such, support for design aspects is likely to be lower priority.
 
 ## Description
 

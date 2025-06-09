@@ -1,6 +1,6 @@
 ---
 name: Tagging issue
-about: Report an issue abotu the generation or structure of tagged PDF
+about: Report an issue about the generation or structure of tagged PDF
 title: ''
 labels: tagging
 assignees: josephwright

@@ -507,7 +507,9 @@
 %   Parsing the spec is a separate function here as there are a couple of
 %   routes to get here. At present we only have a \texttt{false} branch, but
 %   for spacing we likely will need to add something to the \texttt{true}
-%   branch too.
+%   branch too. The odd stuff with \tn{currentgrouplevel} here is needed
+%   so we only close the item at the correct nesting, allowing for the
+%   group that gets added.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_item_parse_spec:w #1 < #2 > #3 \q_stop
   { \@@_item_parse_spec:n {#2} }
@@ -515,10 +517,14 @@
   {
     \tl_if_blank:nF {#1}
       {
-        \tl_set:Nn \l_@@_list_end_tl
+        \tl_set:Ne \l_@@_list_end_tl
           {
-            \@@_action_end:
-            \tl_clear:N \l_@@_list_end_tl
+            \exp_not:N \int_compare:nNnT \tex_currentgrouplevel:D =
+              { \int_use:N \tex_currentgrouplevel:D + 1 }
+              {
+                \@@_action_end:
+                \tl_clear:N \exp_not:N \l_@@_list_end_tl
+              }
           }
         \@@_action_begin:n {#1}
       }

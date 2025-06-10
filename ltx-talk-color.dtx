@@ -104,6 +104,13 @@
 %
 % \subsection{Document commands}
 %
+%    \begin{macrocode}
+\cs_generate_variant:Nn \color_select:n { e }
+\cs_generate_variant:Nn \color_select:nn { ne }
+\cs_generate_variant:Nn \color_math:nn { e }
+\cs_generate_variant:Nn \color_math:nnn { ne }
+%    \end{macrocode}
+%
 % \begin{macro}{\color, \mathcolor, \textcolor}
 %   Add the overlay specification and use \pkg{l3color}.
 %    \begin{macrocode}
@@ -112,8 +119,8 @@
     \@@_if_overlay:nT {#1}
       {
         \IfNoValueTF {#2}
-          { \color_select:n {#3} }
-          { \color_select:nn {#2} {#3} }
+          { \color_select:e {#3} }
+          { \color_select:ne {#2} {#3} }
       }
   }
 \RenewDocumentCommand \mathcolor { D <> { all } o m +m }
@@ -121,8 +128,8 @@
     \@@_if_overlay:nT {#1}
       {
         \IfNoValueTF {#2}
-          { \color_math:nn {#3} {#4} }
-          { \color_math:nnn {#2} {#3} {#4} }
+          { \color_math:en {#3} {#4} }
+          { \color_math:nen {#2} {#3} {#4} }
       }
   }
 \RenewDocumentCommand \textcolor { D <> { all } o m +m }
@@ -132,8 +139,8 @@
         \mode_leave_vertical:
         \group_begin:
           \IfNoValueTF {#2}
-            { \color_select:n {#3} }
-            { \color_select:nn {#2} {#3} }
+            { \color_select:e {#3} }
+            { \color_select:ne {#2} {#3} }
           #4
         \group_end:
       }

@@ -106,17 +106,17 @@
 \NewTemplateType { frametitle } { 1 }
 \DeclareTemplateInterface { frametitle } { talk } { 1 }
   {
-    after-skip  : length = \bigskipamount ,
-    before-skip : length = 0em ,
-    color       : tokenlist = ,
-    font        : tokenlist = \Large \bfseries
+    after-vspace  : skip = \bigskipamount ,
+    before-vspace : skip = 0em ,
+    color         : tokenlist = ,
+    font          : tokenlist = \Large \bfseries
   }
 \DeclareTemplateCode { frametitle } { talk } { 1 }
   {
-    after-skip  = \l_@@_frametitle_after_skip ,
-    before-skip = \l_@@_frametitle_before_skip ,
-    color       = \l_@@_frametitle_color_tl ,
-    font        = \l_@@_frametitle_font_tl
+    after-vspace  = \l_@@_frametitle_after_skip ,
+    before-vspace = \l_@@_frametitle_before_skip ,
+    color         = \l_@@_frametitle_color_tl ,
+    font          = \l_@@_frametitle_font_tl
   }
   {
     \noindent

@@ -442,9 +442,9 @@
     color             : tokenlist = structure ,
     font              : tokenlist = \normalfont ,
     height            : length = \Gm@tmargin + \headsep ,
-    left-skip         : length = \Gm@lmargin ,
+    left-hspace       : skip = \Gm@lmargin ,
     print-frame-title : boolean = true ,
-    right-skip        : length = \Gm@rmargin
+    right-hspace      : skip = \Gm@rmargin
   }
 \DeclareTemplateCode { header } { talk } { 0 }
   {
@@ -452,9 +452,9 @@
     color             = \l_@@_header_fg_tl ,
     font              = \l_@@_header_font_tl ,
     height            = \l_@@_header_ht_dim ,
-    left-skip         = \l_@@_header_left_skip ,
+    left-hspace       = \l_@@_header_left_skip ,
     print-frame-title = \l_@@_header_frametitle_bool ,
-    right-skip        = \l_@@_header_right_skip
+    right-hspace      = \l_@@_header_right_skip
   }
   {
     \noindent

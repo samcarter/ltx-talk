@@ -189,6 +189,7 @@
 %   {
 %     \l_@@_aspect_ratio_str ,
 %     \l_@@_fontsize_dim     ,
+%     \l_@@_frame_title_bool ,
 %     \l_@@_mode_str
 %   }
 %    \begin{macrocode}
@@ -198,6 +199,8 @@
       \l_@@_aspect_ratio_str ,
     font-size .dim_set:N =
       \l_@@_fontsize_dim ,
+    frame-title-arg .bool_set:N =
+      \l_@@_frame_title_bool ,
     mode .choices:nn =
       { handout , projector }
       { \str_set:NV \l_@@_mode_str \l_keys_choice_tl }
@@ -209,9 +212,10 @@
 %    \begin{macrocode}
 \keys_define:nn { talk }
   {
-    aspect-ratio .usage:n = load ,
-    font-size    .usage:n = load ,
-    mode         .usage:n = load
+    aspect-ratio    .usage:n = load ,
+    font-size       .usage:n = load ,
+    frame-title-arg .usage:n = load ,
+    mode            .usage:n = load
   }
 %    \end{macrocode}
 %
@@ -219,9 +223,10 @@
 %    \begin{macrocode}
 \keys_set:nn { talk }
   {
-    aspect-ratio   = 16:9      ,
-    font-size      = 11pt      ,
-    mode           = projector
+    aspect-ratio    = 16:9      ,
+    font-size       = 11pt      ,
+    frame-title-arg = false     ,
+    mode            = projector
   }
 %    \end{macrocode}
 %

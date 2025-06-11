@@ -320,6 +320,16 @@ specified with the command \cs{frametitle} You should end the \meta{frame
 title} with a period, if the title is a proper sentence. Otherwise, there
 should not be a period.
 
+\DescribeOption{frame-title-arg}
+For compatibly with \cls{beamer}, the class can be loaded with the option
+\opt{frame-title-arg}. When this is active, the \env{frame} environment
+\emph{requires} an argument in all cases
+\begin{verbatim}
+  \begin{frame}{Frame title here}
+\end{verbatim}
+This interface is less flexible than using \cs{frametitle}, which is therefore
+the recommended approach.
+
 \subsection{Frame and margin size}
 
 The size of a frame is actually the \enquote{paper size} of a presentation, and

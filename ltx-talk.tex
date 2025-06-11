@@ -307,6 +307,19 @@ environment does not use external files to handle verbatim material. As such,
 there is very little performance impact processing frames containing category
 code changes.
 
+\subsection{Components of a frame}
+
+\subsubsection{The frame title}
+
+\DescribeMacro{\frametitle}
+\begin{syntax}
+  \cs{frametitle}\sarg{overlay spec}\oarg{options}\marg{frame title}
+\end{syntax}
+The frame title is shown prominently at the top of the frame and can be
+specified with the command \cs{frametitle} You should end the \meta{frame
+title} with a period, if the title is a proper sentence. Otherwise, there
+should not be a period.
+
 \subsection{Frame and margin size}
 
 The size of a frame is actually the \enquote{paper size} of a presentation, and

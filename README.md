@@ -22,6 +22,12 @@ targeted definitions without needing to rewrite entire blocks of code. This
 allows a variety of visual appearances to be selected for the same content
 source.
 
+The `ltx-talk` class has syntax similar to the popular `beamer` class, although
+there are some (deliberate) differences. However, `ltx-talk` has been
+implemented to support creation of tagged (accessible) PDF output as a core
+aim. As such, it is suited to creating output for reuse in other formats, e.g.
+HTML conversions, without additional steps.
+
 ## Author
 
 This package is maintained by Joseph Wright: joseph@texdev.net

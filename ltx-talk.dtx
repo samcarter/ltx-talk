@@ -131,12 +131,12 @@
 %
 % A thin wrapper from \tn{scantokens}.
 %    \begin{macrocode}
-\cs_gset_protected:Npn \tl_rescan_tokens:n #1
+\cs_gset_protected:Npn \tl_retokenize:n #1
   {
     \group_begin:
       \int_set:Nn \tex_newlinechar:D { 13 }
     \exp_after:wN \group_end:
-    \tex_scantokens:D {#1}
+    \tex_scantokens:D \exp_after:wN { \tl_to_str:n {#1} }
   }
 %    \end{macrocode}
 %

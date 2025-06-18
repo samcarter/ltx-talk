@@ -131,21 +131,24 @@
 %
 % A thin wrapper from \tn{scantokens}.
 %    \begin{macrocode}
-\cs_gset_protected:Npe \tl_rescan_dynamic:n #1
-  {
-    \group_begin:
-      \exp_not:N \int_set:Nn \exp_not:N \tex_newlinechar:D { 13 }
-    \exp_not:N \exp_after:wN \group_end:
-    \cs_if_exist:NTF \tex_scantextokens:D
-      {
-        \exp_not:N \tex_scantextokens:D \exp_not:N \exp_after:wN
-          { \exp_not:N \tl_to_str:n {#1} ^^J }
-      }
-      {
-        \exp_not:N \tex_scantokens:D \exp_not:N \exp_after:wN
-          { \exp_not:N \tl_to_str:n {#1} }
-      }
-  }
+\group_begin:
+  \char_set_catcode_other:n { `\^^M } %
+  \cs_gset_protected:Npe \tl_rescan_dynamic:n #1 %
+    { %
+      \group_begin: %
+        \exp_not:N \int_set:Nn \exp_not:N \tex_newlinechar:D { 13 } %
+      \exp_not:N \exp_after:wN \group_end: %
+      \cs_if_exist:NTF \tex_scantokens:D %
+        { %
+          \exp_not:N \tex_scantokens:D \exp_not:N \exp_after:wN %
+            { \exp_not:N \tl_to_str:n {#1} } %
+        } %
+        { %
+          \exp_not:N \tex_scantextokens:D \exp_not:N \exp_after:wN %
+            { \exp_not:N \tl_to_str:n {#1} ^^M } %
+        } %
+    } %
+\group_end: %
 %    \end{macrocode}
 %
 % \subsection{Extra variants}

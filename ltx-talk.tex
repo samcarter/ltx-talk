@@ -156,11 +156,11 @@ before design aspects.
 
 \section{Simple example documents}
 
-Currently, \cls{ltx-talk} \emph{absolutely requires} the use of the
-\cs{DocumentMetadata} command \emph{and} the a setting for the \texttt{tagging}
-key. As such, the most basic \cls{ltx-talk} document is
+Using \cls{ltx-talk} \emph{absolutely requires} the use of the
+\cs{DocumentMetadata} command As such, the most basic \cls{ltx-talk} document
+is
 \begin{verbatim}
-  \DocumentMetadata{tagging = off} % or "draft"|"on"
+  \DocumentMetadata{} % likely with "tagging = on"
   \documentclass{ltx-talk}
   \begin{document}
   \begin{frame}
@@ -172,7 +172,7 @@ key. As such, the most basic \cls{ltx-talk} document is
 A slightly more useful version, which generates multiple slides and shows some
 (current) features, is
 \begin{verbatim}
-  \DocumentMetadata{tagging = on}
+  \DocumentMetadata{}
   \documentclass{ltx-talk}
   \begin{document}
   \begin{frame}
@@ -192,7 +192,7 @@ Tagging is activated for the standard (projector) output of \cls{ltx-talk}, but
 it is perhaps more useful in handout mode, which is activated using a class
 option.
 \begin{verbatim}
-  \DocumentMetadata{tagging = on}
+  \DocumentMetadata{}
   \documentclass[mode = handout]{ltx-talk}
   \begin{document}
   \begin{frame}

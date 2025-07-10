@@ -176,6 +176,16 @@
 % \end{macro}
 % \end{macro}
 %
+% The very last frame will not be recorded by the above, so we have to add to
+% the hook at the very end of the run.
+%    \begin{macrocode}
+\AddToHook { enddocument / afterlastpage }
+  {
+    \property_record:ee { frame . \int_use:N \g_@@_frame_int }
+      { slides }
+  }
+%    \end{macrocode}
+% 
 % \begin{variable}{\c_@@_pause_init_int}
 %   A simple concept: mainly done for performance reasons.
 %    \begin{macrocode}
@@ -667,7 +677,7 @@
 \AddToHook { enddocument / afterlastpage }
   { \property_record:nn { lastpage } { totalframes } }
 %    \end{macrocode}
-%
+% 
 % \begin{macro}{\@@_latexe_frame:n}
 %   As we will need to re-define \cs{frame} but have it available inside
 %   frames, a copy is made here.

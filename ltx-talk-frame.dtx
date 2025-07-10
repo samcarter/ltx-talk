@@ -459,7 +459,7 @@
       \l_@@_header_bg_tl
       { \l_@@_header_ht_dim - \headsep }
       { \headsep }
-    \kern_horizontal:n { \l_@@_header_left_skip }
+    \skip_horizontal:n { \l_@@_header_left_skip }
     \group_begin:
       \tl_if_empty:NF \l_@@_header_fg_tl
         { \color_select:V \l_@@_header_fg_tl }
@@ -524,7 +524,7 @@
       \l_@@_footer_bg_tl
       { \footskip }
       { \Gm@bmargin - \footskip }
-    \kern_horizontal:n { \l_@@_footer_left_skip }
+    \skip_horizontal:n { \l_@@_footer_left_skip }
     \vbox_set_to_wd:Nnn \l_@@_tmp_box
       {
           \paperwidth
@@ -549,7 +549,7 @@
         \hfil
       }
     \box_use_drop:N \l_@@_tmp_box
-    \kern_horizontal:n { \l_@@_footer_right_skip - \Gm@rmargin }
+    \skip_horizontal:n { \l_@@_footer_right_skip - \Gm@rmargin }
   }
 \DeclareInstance { footer } { std } { talk } { }
 \AddToHook { begindocument }
@@ -566,13 +566,13 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_wallpaper_hrule:Nnn #1#2#3
   {
-    \kern_horizontal:n { -\Gm@lmargin }
+    \skip_horizontal:n { -\Gm@lmargin }
     \tl_if_empty:NF #1
       {
         \group_begin:
           \color_select:V #1
           \rule:nnn { \paperwidth } {#2} {#3}
-          \kern_horizontal:n { -\paperwidth }
+          \skip_horizontal:n { -\paperwidth }
         \group_end:
       }
   }

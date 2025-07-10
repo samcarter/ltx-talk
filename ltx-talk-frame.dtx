@@ -273,15 +273,11 @@
     mpfootnote     ,
     parentequation
   }
-\AddToHook { begindocument }
-  {
-    \seq_remove_duplicates:N \l_@@_cnt_reset_seq
-    \seq_map_inline:Nn \l_@@_cnt_reset_seq
-      {
-        \int_new:c { g_@@_saved_ #1 _int }
-        \int_gset_eq:cc { g_@@_saved_ #1 _int } { c@ #1 }
-      }
-  }
+\seq_map_inline:Nn \l_@@_cnt_reset_seq
+    {
+      \int_new:c { g_@@_saved_ #1 _int }
+      \int_gset_eq:cc { g_@@_saved_ #1 _int } { c@ #1 }
+    }
 %    \end{macrocode}
 % \end{variable}
 %
@@ -308,6 +304,7 @@
 \cs_gset_protected:Npn \@definecounter #1
   {
     \std@definecounter {#1}
+    \int_new:c { g_@@_saved_ #1 _int }
     \seq_gput_right:Nn \l_@@_cnt_reset_seq {#1}
   }
 %    \end{macrocode}

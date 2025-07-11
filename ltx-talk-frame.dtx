@@ -120,6 +120,8 @@
 %  that any verbatim grabbing in the frame still works. The strange business
 %  with setting the continuation boolean is needed as otherwise we get an
 %  infinite loop if there is an overlay specification for the frame itself.
+%  Tagging should not of itself force slide continuation, so the global
+%  boolean is reset for the tagged slide.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide:nn #1#2
   { 
@@ -146,7 +148,10 @@
             {
               \@@_slide_begin:
               \@@_if_overlay:VTF \l_@@_frame_tagging_str
-                { \@@_frame_tag:n }
+                {
+                  \bool_gset_false:N \g_@@_slide_continue_bool
+                  \@@_frame_tag:n
+                }
                 { \@@_frame_notag:n }
                   {
                     \bool_if:NTF \l_@@_frame_verb_bool

@@ -12,7 +12,7 @@ A clear and concise description of what the the concern is.
 
 **To Reproduce**
 ```latex
-\DocumentMetadata{tagging = on}
+\DocumentMetadata{}
 \documentclass{ltx-talk}
 
   % Any preamble code goes here

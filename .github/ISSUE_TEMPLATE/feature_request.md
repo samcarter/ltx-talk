@@ -11,7 +11,7 @@ assignees: josephwright
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 Please include a minimal working example of your current input
 ```latex
-\DocumentMetadata{tagging = on}
+\DocumentMetadata{}
 \documentclass{ltx-talk}
 
   % Any preamble code goes here

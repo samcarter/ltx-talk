@@ -12,7 +12,7 @@ A clear and concise description of what the bug is.
 
 **To Reproduce**
 ```latex
-\DocumentMetadata{tagging = on} % Or "tagging = off"
+\DocumentMetadata{} % Or "tagging = off"
 \listfiles
 \documentclass{ltx-talk}
 

@@ -39,7 +39,7 @@ function update_tag(file,content,tagname,tagdate)
       "\\fileversion%{[^}]+%}",
       "\\fileversion{v" .. tagname .. "}")
     return string.gsub(content,
-      "\n\\ProvidesExplClass %{ltx-talk%} %{[^}]+%} %{[^}]+%}\n",
+      "\n\\ProvidesExplClass %{ltx%-talk%} %{[^}]+%} %{[^}]+%}\n",
       "\n\\ProvidesExplClass {ltx-talk} {"
         .. tagdate .. "} {" .. tagname .. "}\n")
   end

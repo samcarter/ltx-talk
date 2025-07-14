@@ -488,9 +488,10 @@ For the following commands, adding an overlay specification causes the command
 to be simply ignored on slides that are not included in the specification:
 \cs{textbf}, \cs{textit}, \cs{textmd}, \cs{textnormal}, \cs{textrm},
 \cs{textsc}, \cs{textsf}, \cs{textsl}, \cs{texttt}, \cs{textup}, \cs{emph};
-\cs{color}, \cs{textcolor}; \cs{alert}, \cs{structure}. If a command takes
-several arguments, like \cs{color}, the specification should directly follow
-the command as in the following example:
+\cs{color}, \cs{textcolor}; \cs{alert}, \cs{structure}.
+
+If a command takes several arguments, like \cs{color}, the specification should
+directly follow the command as in the following example:
 \begin{verbatim}
   \begin{frame}
     \color<2-3>[rgb]{1,0,0} This text is red on slides 2 and 3, otherwise

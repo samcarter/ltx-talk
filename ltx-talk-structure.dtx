@@ -651,11 +651,13 @@
       { \stdnewtheorem {#1} [ {#2} ] {#3} }
       { \stdnewtheorem {#1} [ {#2} ] {#3} [ {#4} ] }
     \NewEnvironmentCopy { std #1 } {#1}
-    \RenewDocumentEnvironment {#1} { D <> { all } }
+    \RenewDocumentEnvironment {#1} { D <> { all } o }
       {
         \@@_action_begin:n {##1}
-        \begin { std #1 }
-          \ignorespaces
+        \IfNoValueTF {##2}
+          { \begin { std #1 } }
+          { \begin { std #1 } [ {##2} ] }
+            \ignorespaces
       }
       {
         \end { std #1 }

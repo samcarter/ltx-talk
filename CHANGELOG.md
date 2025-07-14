@@ -10,6 +10,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ### Changed
 - Load `amsmath` with all engines
 
+### Fixed
+- Support optional arg. for theorem envs. (see issue
+  [\#63](https://github.com/josephwright/ltx-talk/issues/63))
+
 ## [v0.1.0] - 2025-07-12
 
 - Initial release

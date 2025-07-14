@@ -7,6 +7,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.1.1] - 2025-07-14
+
 ### Changed
 - Load `amsmath` with all engines
 
@@ -18,4 +20,5 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.1.1...HEAD
+[v0.1.1]: https://github.com/josephwright/ltx-talk/compare/v0.1.0...v0.1.1

@@ -92,10 +92,12 @@
 \IfFormatAtLeastF{2025-11-01}
   {
     \msg_new:nnnn { ltx-talk } { kernel-too-old }
-      { ltx-talk~ requires~ at~ least~ LaTeX2e~ 2025-11-01. }
+      { The~ltx-talk~class~requires~LaTeX~2025-11-01~or~later. }
       {
-        You~ might~ need~ to~ compile~ using~ either~ lualatex-dev~ or~
-        pdflatex-dev.
+        You~have~tried~to~use~the~ltx-talk~class~with~a~LaTeX~kernel~release~
+        prior~to~2025-11-01;~the~required~functionality~is~missing. \\ \\
+        At~present,~you~may~need~to~use~the~development~release~of~LaTeX,~
+        invoked~using~"lualatex-dev"~or~"pdflatex-dev".
       }
     \msg_fatal:nn { ltx-talk } { kernel-too-old }
   }

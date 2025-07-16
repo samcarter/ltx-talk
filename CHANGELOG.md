@@ -7,6 +7,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+- Error if kernel support is too old
+
 ## [v0.1.1] - 2025-07-14
 
 ### Changed

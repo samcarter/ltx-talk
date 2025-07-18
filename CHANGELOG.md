@@ -7,6 +7,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Added
+- Documentation for `\framesubtitle`
+
 ### Fixed
 - Reset frame continuation flag for all tagging states (see issue
   [\#66](https://github.com/josephwright/ltx-talk/issues/66))

@@ -312,13 +312,16 @@ code changes.
 \subsubsection{The frame title}
 
 \DescribeMacro{\frametitle}
+\DescribeMacro{\framesubtitle}
 \begin{syntax}
   \cs{frametitle}\sarg{overlay spec}\oarg{options}\marg{frame title}
+  \cs{framesubtitle}\sarg{overlay spec}\oarg{options}\marg{frame subtitle}
 \end{syntax}
 The frame title is shown prominently at the top of the frame and can be
 specified with the command \cs{frametitle}. You should end the \meta{frame
 title} with a period, if the title is a proper sentence. Otherwise, there
-should not be a period.
+should not be a period. A frame subtitle may also be given; this is typically
+used where a series of related frames are given with clearly distinct content.
 
 \DescribeOption{frame-title-arg}
 For compatibly with \cls{beamer}, the class can be loaded with the option
@@ -328,7 +331,8 @@ For compatibly with \cls{beamer}, the class can be loaded with the option
   \begin{frame}{Frame title here}
 \end{verbatim}
 This interface is less flexible than using \cs{frametitle}, which is therefore
-the recommended approach.
+the recommended approach. Note that this option does \emph{not} influence
+frame subtitles, which can \emph{only} be given using \cs{framesubitle}.
 
 \subsection{Frame and margin size}
 

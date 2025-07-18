@@ -7,6 +7,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+- Use Latin Modern for pdfTeX
+
 ## [v0.1.2] - 2025-07-16
 
 ### Changed

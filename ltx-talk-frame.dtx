@@ -152,7 +152,10 @@
                   \bool_gset_false:N \g_@@_slide_continue_bool
                   \@@_frame_tag:n
                 }
-                { \@@_frame_notag:n }
+                {
+                  \bool_gset_false:N \g_@@_slide_continue_bool
+                  \@@_frame_notag:n
+                }
                   {
                     \bool_if:NTF \l_@@_frame_verb_bool
                       { \@@_slide_aux:n }

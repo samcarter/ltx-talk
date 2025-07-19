@@ -988,6 +988,42 @@ The replacements of the |+| sign and the |.| sign are no less than zero. This
 prevents errors when encountering large negative offsets, for example
 |<+(-7)->| is converted to |<0->| rather than |<-6->|.
 
+\section{Structuring a presentation: the global structure}
+
+This section lists the commands that are used for structuring a presentation
+\enquote{globally} using commands like \cs{section} or \cs{part}. These commands are used
+to create a \emph{static} structure, meaning that the resulting presentation is
+normally presented one slide after the other in the order the slides occur.
+
+\subsection{Adding a title frame}
+
+You can use the standard \cs{maketitle} command to insert a title frame. As
+standard, it will arrange the following elements on the title page: the
+document title and subtitle, the authors' names, their affiliation, and the
+date.
+
+\DescribeMacro{\maketitle}
+\begin{syntax}
+  \cs{maketitle}\oarg{settings}
+\end{syntax}
+The \cs{maketitle} command may be inserted either inside or outside of a
+\env{frame} environment; the result will be a full frame in either case. The
+optional argument to the command is used to specify the following
+\meta{settings}
+\begin{itemize}
+  \item \opt{element-order} which determines which entries are priting
+    and the order they appear: a comma-list
+  \item \opt{frame-style} sets the frame style
+  \item \opt{horizontal-alignment
+  \item \opt{vertical-alignment}
+\end{itemize}
+
+\DescribeMacro{\subtitle}
+\DescribeMacro{\institute}
+As well as the standard \LaTeX{} elements \cs{author}, \cs{title} and
+\cs{date}, \cls{ltx-talk} supports \cs{subtitle} and \cs{institute}. These work
+in the same way as the standard commands for providing metadata.
+
 \section{Structuring a presentation: the local structure}
 
 \LaTeX{} provides different commands for structuring text \enquote{locally},

@@ -9,6 +9,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Added
 - Documentation for `\framesubtitle`
+- Documentation for `\maketitle` extensions
 
 ### Fixed
 - Reset frame continuation flag for all tagging states (see issue

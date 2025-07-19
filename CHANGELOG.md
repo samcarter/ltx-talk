@@ -7,6 +7,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.1.4] - 2025-07-19
+
 ### Added
 - Documentation for `\framesubtitle`
 - Documentation for `\maketitle` extensions
@@ -38,7 +40,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.1.3...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.1.4...HEAD
+[v0.1.4]: https://github.com/josephwright/ltx-talk/compare/v0.1.3...v0.1.4
 [v0.1.3]: https://github.com/josephwright/ltx-talk/compare/v0.1.2...v0.1.3
 [v0.1.2]: https://github.com/josephwright/ltx-talk/compare/v0.1.1...v0.1.2
 [v0.1.1]: https://github.com/josephwright/ltx-talk/compare/v0.1.0...v0.1.1

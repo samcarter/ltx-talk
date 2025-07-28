@@ -892,13 +892,14 @@ overlay specifications}:
   \end{itemize}
 \end{verbatim}
 
-The effect of the |+| sign is the following: You can use it in any overlay
+The effect of the |+| sign is the following. You can use it in any overlay
 specification at any point where you would usually use a number. If a |+| sign
-is encountered, it is replaced by the current value of the \LaTeX{} counter
-|pauses|, which is~$1$ at the beginning of the frame. Then the counter is
-increased by~$1$, though it is only increased once for every overlay
-specification, even if the specification contains multiple |+| signs (they are
-replaced by the same number).
+is encountered, it is replaced by one more than the current value of the
+\LaTeX{} counter |pauses|; that is $0$ at the beginning of the frame, so the
+first possible replacement value is~$1$. At the end of the overlay
+specification, the |pauses| counter is incremented. This only happens once even
+if the specification contains multiple |+| signs (they are replaced by the same
+number).
 
 In the above example, the first specification is replaced by |<1->|. Then the
 second is replaced by |<2->| and so forth. We can now easily insert new
@@ -958,9 +959,8 @@ are equivalent.
 There is another special sign you can use in an overlay specification that
 behaves similarly to the |+| sign: a dot. When you write |<.->|, a similar
 thing as in |<+->| happens \emph{except} that the counter |pauses| is
-\emph{not} incremented and \emph{except} that you get the value of |pauses|
-decreased by one. Thus a dot, possibly followed by an offset, just expands to
-the current value of the counter |pauses| minus one, possibly offset. This dot
+\emph{not} incremented. Thus a dot, possibly followed by an offset, just
+expands to the current value of the counter |pauses, possibly offset. This dot
 notation can be useful in case like the following:
 \begin{verbatim}
   \begin{itemize}[<+->]

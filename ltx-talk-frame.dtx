@@ -192,13 +192,6 @@
       { slides }
   }
 %    \end{macrocode}
-% 
-% \begin{variable}{\c_@@_pause_init_int}
-%   A simple concept: mainly done for performance reasons.
-%    \begin{macrocode}
-\cs_new_eq:NN \c_@@_pause_init_int \c_one_int
-%    \end{macrocode}
-% \end{variable}
 %
 % \begin{variable}{\g_@@_frame_struct_int}
 %  The tagging structure number for the slide: needed by the content placed
@@ -212,7 +205,7 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_begin:
   {
-    \int_gset_eq:NN \g_@@_pauses_int \c_@@_pause_init_int
+    \int_gzero:N \g_@@_pauses_int
     \bool_gset_false:N \g_@@_slide_continue_bool
     \tl_gclear:N \g_@@_frame_title_tl
     \tl_gclear:N \g_@@_frame_subtitle_tl

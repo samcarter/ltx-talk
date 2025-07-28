@@ -37,7 +37,7 @@
     \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
       {
         \int_gset:Nn \g__talk_slide_int {#1}
-        \int_gset:Nn \g__talk_pauses_int { 1 }
+        \int_gzero:N \g__talk_pauses_int
         \__talk_decode_parse:n {#2}
         \bool_if:NTF \l__talk_decode_overlays_bool
           \prg_return_true:
@@ -63,7 +63,7 @@
     \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
       {
         \int_gset:Nn \g__talk_slide_int {#1}
-        \int_gset:Nn \g__talk_pauses_int { 1 }
+        \int_gzero:N \g__talk_pauses_int
         \__talk_decode_parse:n {#2}
         \bool_if:NTF \l__talk_decode_actions_bool
           \prg_return_true:
@@ -87,7 +87,7 @@
     \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
       {
         \int_gset:Nn \g__talk_slide_int {#1}
-        \int_gset:Nn \g__talk_pauses_int { 1 }
+        \int_gzero:N \g__talk_pauses_int
         \__talk_decode_parse:n {#2}
         \bool_lazy_and:nnTF
           { \l__talk_decode_overlays_bool }
@@ -110,7 +110,7 @@
       {
         \str_set:Nn \l__talk_mode_str {#1}
         \int_gset:Nn \g__talk_slide_int { 1 }
-        \int_gset:Nn \g__talk_pauses_int { 1 }
+        \int_gzero:N \g__talk_pauses_int
         \__talk_decode_parse:n {#2}
         \bool_if:NTF \l__talk_decode_overlays_bool
           \prg_return_true:

@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+- Revise handling of `pauses` counter and `+`/`.` implementation (see issue
+  [\#60](https://github.com/josephwright/ltx-talk/issues/60))
+
 ## [v0.1.4] - 2025-07-19
 
 ### Added

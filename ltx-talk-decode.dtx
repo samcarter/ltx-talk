@@ -319,10 +319,10 @@
 \cs_new_protected:cpn { @@_decode_overlay_+:nw } #1
   {
     \bool_set_true:N \l_@@_decode_step_bool
-    \@@_decode_overlay_aux:nNN {#1} 0
+    \@@_decode_overlay_aux:nNN {#1} 1
   }
 \cs_new_protected:cpn { @@_decode_overlay_.:nw } #1 
-  { \@@_decode_overlay_aux:nNN {#1} 1 }
+  { \@@_decode_overlay_aux:nNN {#1} 0 }
 %    \end{macrocode}
 %   The look-ahead for an offset to a relative specification. If the
 %   end-of-loop is reached, the value still needs to be inserted: to
@@ -363,7 +363,7 @@
 \cs_new_protected:Npn \@@_decode_overlay_offset:nNn #1#2#3
   {
     \str_put_right:ce { l_@@_decode_ #1 _str }
-      { \int_max:nn { 0 } { #3 + \g_@@_pauses_int - #2 } }
+      { \int_max:nn { 0 } { #3 + \g_@@_pauses_int + #2 } }
     \@@_decode_overlays:nN {#1}
   }
 %    \end{macrocode}

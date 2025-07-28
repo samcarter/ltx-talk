@@ -326,6 +326,10 @@ title} with a period, if the title is a proper sentence. Otherwise, there
 should not be a period. A frame subtitle may also be given; this is typically
 used where a series of related frames are given with clearly distinct content.
 
+Currently, the \meta{frame subtitle} is not used in output: this will be
+addressed in later releases. The \meta{options} for both commands are currently
+unused.
+
 \DescribeOption{frame-title-arg}
 For compatibly with \cls{beamer}, the class can be loaded with the option
 \opt{frame-title-arg}. When this is active, the \env{frame} environment
@@ -1023,9 +1027,14 @@ optional argument to the command is used to specify the following
 
 \DescribeMacro{\subtitle}
 \DescribeMacro{\institute}
+\begin{syntax}
+  \cs{subtitle}\oarg{options}\marg{subtitle} \\
+  \cs{institute}\oarg{options}\marg{institute}
+\end{syntax}
 As well as the standard \LaTeX{} elements \cs{author}, \cs{title} and
 \cs{date}, \cls{ltx-talk} supports \cs{subtitle} and \cs{institute}. These work
-in the same way as the standard commands for providing metadata.
+in the same way as the standard commands for providing metadata. The
+\meta{options} argument is currently unused.
 
 \section{Structuring a presentation: the local structure}
 

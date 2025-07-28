@@ -7,6 +7,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.1.5] - 2025-07-28
+
 ### Changed
 - Revise handling of `pauses` counter and `+`/`.` implementation (see issue
   [\#60](https://github.com/josephwright/ltx-talk/issues/60))
@@ -44,7 +46,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.1.4...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.1.5...HEAD
+[v0.1.5]: https://github.com/josephwright/ltx-talk/compare/v0.1.4...v0.1.5
 [v0.1.4]: https://github.com/josephwright/ltx-talk/compare/v0.1.3...v0.1.4
 [v0.1.3]: https://github.com/josephwright/ltx-talk/compare/v0.1.2...v0.1.3
 [v0.1.2]: https://github.com/josephwright/ltx-talk/compare/v0.1.1...v0.1.2

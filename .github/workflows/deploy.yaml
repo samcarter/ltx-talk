@@ -32,3 +32,4 @@ jobs:
         with:
           artifacts: "*.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: true

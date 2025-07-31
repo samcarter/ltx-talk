@@ -490,7 +490,7 @@
 \AddToHook { begindocument / before }
   {
     \NewCommandCopy \stditem \item
-    \RenewDocumentCommand \item { d <> = { label } o }
+    \RenewDocumentCommand \item { d <> o }
       {
         \IfNoValueTF {#2}
           { \stditem }

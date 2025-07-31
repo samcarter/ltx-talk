@@ -9,6 +9,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Fixed
 - Generate a required variant
+- Handling of optional argument to `\item`
 
 ## [v0.1.5] - 2025-07-28
 

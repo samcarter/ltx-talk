@@ -7,6 +7,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.1.7] - 2025-08-26
+
 ### Fixed
 - Overlay argument of `frame` producing an infinite loop in some cases (see
   issue [\#79](https://github.com/josephwright/ltx-talk/issues/79))
@@ -56,7 +58,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.1.6...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.1.7...HEAD
+[v0.1.7]: https://github.com/josephwright/ltx-talk/compare/v0.1.6...v0.1.7
 [v0.1.6]: https://github.com/josephwright/ltx-talk/compare/v0.1.5...v0.1.6
 [v0.1.5]: https://github.com/josephwright/ltx-talk/compare/v0.1.4...v0.1.5
 [v0.1.4]: https://github.com/josephwright/ltx-talk/compare/v0.1.3...v0.1.4

@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+- Implementation of `\pause` since update of counter method (see
+  issue [\#83](https://github.com/josephwright/ltx-talk/issues/83))
+
 ## [v0.1.7] - 2025-08-26
 
 ### Fixed

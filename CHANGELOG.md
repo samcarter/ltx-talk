@@ -7,6 +7,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.1.9] - 2025-09-01
+
 ### Fixed
 - Missing code in fix for issue
   [\#83](https://github.com/josephwright/ltx-talk/issues/83)
@@ -68,7 +70,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.1.8...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.1.9...HEAD
+[v0.1.9]: https://github.com/josephwright/ltx-talk/compare/v0.1.8...v0.1.9
 [v0.1.8]: https://github.com/josephwright/ltx-talk/compare/v0.1.7...v0.1.8
 [v0.1.7]: https://github.com/josephwright/ltx-talk/compare/v0.1.6...v0.1.7
 [v0.1.6]: https://github.com/josephwright/ltx-talk/compare/v0.1.5...v0.1.6

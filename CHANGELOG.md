@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+- Missing code in fix for issue
+  [\#83](https://github.com/josephwright/ltx-talk/issues/83)
+
 ## [v0.1.8] - 2025-08-31
 
 ### Fixed

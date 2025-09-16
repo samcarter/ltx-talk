@@ -220,15 +220,19 @@
 % \end{variable}
 %
 %   A bit similar to the current approach to lists: we need a template at
-%   the start but a common function at the end.
+%   the start but a common function at the end. The |float-placement| key is
+%   at present just there to allow mopping up of any argument that is given
+%   by accident, hence maps to a temporary variable.
 %    \begin{macrocode}
 \NewTemplateType { floatenv } { 2 }
 \DeclareTemplateInterface { floatenv } { talk } { 2 }
   {
+    float-placement : tokenlist ,
     horizontal-alignment : choice { left , center ,  right } = left
   }
 \DeclareTemplateCode { floatenv } { talk } { 2 }
   {
+    float-placement = \l_@@_tmp_tl ,
     horizontal-alignment =
       {
         left = \tl_set:Nn \l_@@_float_alignment_tl { flushleft } ,
@@ -260,7 +264,7 @@
 %    \begin{macrocode}
 \clist_map_inline:nn { figure , table }
   {
-    \NewDocumentEnvironment {#1} { D <> { all } O { } }
+    \NewDocumentEnvironment {#1} { D <> { all } = { float-placement } O { } }
       {
         \@@_action_begin:n {##1}
         \UseInstance { floatenv } { std } {##2} {#1}

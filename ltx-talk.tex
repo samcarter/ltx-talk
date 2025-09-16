@@ -1131,6 +1131,27 @@ Environment version of the \cs{alert} command.
 
 \subsection{Block environments}
 
+\subsection{Figures and tables}
+
+You can use the standard \LaTeX{} environments \env{figure} and \env{table}
+much the same way you would normally use them. However, any placement
+specification will be ignored. Figures and tables are immediately inserted
+where the environments start. If there are too many of them to fit on the
+frame, you must manually split them among additional frames.
+\begin{verbatim}
+  \begin{frame}
+    \begin{figure}
+      \includegraphics{myfigure}
+      \caption{This caption is placed below the figure.}
+    \end{figure}
+
+    \begin{figure}
+      \caption{This caption is placed above the figure.}
+      \includegraphics{myotherfigure}
+    \end{figure}
+  \end{frame}
+\end{verbatim}
+
 \subsection{Splitting a frame into multiple columns}
 
 The class offers several commands and environments for splitting (perhaps only

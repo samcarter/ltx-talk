@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Added
+- Support for `figure` and `table` environments, and `\caption` command (see
+  issue [\#89](https://github.com/josephwright/ltx-talk/issues/89))
+
 ## [v0.1.9] - 2025-09-01
 
 ### Fixed

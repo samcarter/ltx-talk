@@ -285,7 +285,8 @@
     \tl_new:c { #1 name }
     \tl_set:ce { #1 name } { \text_titlecase_first:n {#1} }
     \tl_new:c { fnum@ #1 }
-    \tl_set:cn { fnum@ #1 } { \figurename \nobreakspace \thefigure }
+    \tl_set:ce { fnum@ #1 }
+      { \exp_not:c { #1 name } \nobreakspace \exp_not:c { the #1 } }
   }
 %    \end{macrocode}
 % \end{variable}

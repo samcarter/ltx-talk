@@ -9,6 +9,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [v0.2.1] - 2025-09-18
 
+### Fixed
+- Correct float caption info
+
 ## [v0.2.0] - 2025-09-16
 
 ### Added

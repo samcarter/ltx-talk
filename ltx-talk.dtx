@@ -195,6 +195,9 @@
       \l_@@_fontsize_dim ,
     frame-title-arg .bool_set:N =
       \l_@@_frame_title_bool ,
+    handout .code:n = 
+      { \str_set:Nn \l_@@_mode_str { handout } } ,
+    handout .value_forbidden:n = true ,
     mode .choices:nn =
       { handout , projector }
       { \str_set:NV \l_@@_mode_str \l_keys_choice_tl }

@@ -7,6 +7,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Added
+- Support for class option `handout` to match `beamer` syntax
+
 ## [v0.2.1] - 2025-09-18
 
 ### Fixed

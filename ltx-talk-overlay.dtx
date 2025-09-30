@@ -109,9 +109,11 @@
 % which would be present if they were active: that's needed for spacing.
 %
 % \begin{macro}{\@@_action_:N}
-%   The fallback action.
+%   The fallback action. At present, we need to create a whatsit here to avoid
+%   spacing issues. (In Lua\TeX{}, if we can move to attributes, this can be
+%   removed.)
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_action_:N #1 { }
+\cs_new_protected:Npn \@@_action_:N #1 { \opacity_select:n { 1 } }
 %    \end{macrocode}
 % \end{macro}
 %

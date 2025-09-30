@@ -8,7 +8,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ## [Unreleased]
 
 ### Added
-- Support for class option `handout` to match `beamer` syntax
+-  Option `handout` as alias for `mode = handout` to match `beamer` syntax
 
 ### Fixed
 - Spacing issue in columns (see issue

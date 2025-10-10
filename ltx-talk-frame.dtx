@@ -548,9 +548,12 @@
               { @ \l_@@_tmp_tl }
             \clist_map_inline:Nn \l_@@_footer_order_clist
               { 
-                \l_@@_footer_sep_tl
-                \ExpandArgs { nnv }
-                  \UseInstance { footer-element } {##1} { @ ##1 }
+                \tl_if_empty:cF { @ ##1 }
+                  {
+                    \l_@@_footer_sep_tl
+                    \ExpandArgs { nnv }
+                      \UseInstance { footer-element } {##1} { @ ##1 }
+                  }
               }
           }
         \hfil

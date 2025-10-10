@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+- Use of separator for empty footer elements (see issue
+  [\#99](https://github.com/josephwright/ltx-talk/issues/99))
+
 ## [v0.2.2] - 2025-09-30
 
 ### Added

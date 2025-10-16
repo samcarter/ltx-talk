@@ -321,6 +321,24 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \subsection{Footnotes}
+%
+% \begin{macro}{\@makefntext}
+%   A copy of the version provided by \cls{article}: as for \cs{@caption}, we
+%   likely want a template here. It's not at present completely clear what will
+%   happen in the kernel (as the footnote templates currently leave
+%   \cs{@makefntext} alone).
+%    \begin{macrocode}
+\cs_new_protected:Npn \@makefntext #1
+  {
+    \parindent 1em
+    \noindent
+    \hb@xt@ 1.8em { \hss \@makefnmark }
+    #1
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

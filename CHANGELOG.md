@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+- Avoid error with `\footnote` (see issue
+  [\#91](https://github.com/josephwright/ltx-talk/issues/91))
+
 ## [v0.2.3] - 2025-10-10
 
 ### Fixed

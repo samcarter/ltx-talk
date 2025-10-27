@@ -97,6 +97,11 @@
       }
   }
 %    \end{macrocode}
+%   Allow empty values for author and title.
+%    \begin{macrocode}
+\tl_glear:N \@author
+\tl_glear:N \@title
+%    \end{macrocode}
 %   As the date has a standard value, that has to be propagated.
 %    \begin{macrocode}
 \tl_gset_eq:NN \@shortdate \@date

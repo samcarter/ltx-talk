@@ -512,8 +512,8 @@
     color            : tokenlist ,
     element-order    : commalist ,
     font             : tokenlist = \tiny ,
-    left-skip        : length = \Gm@lmargin ,
-    right-skip       : length = \Gm@rmargin ,
+    left-hspace      : length = \Gm@lmargin ,
+    right-hspace     : length = \Gm@rmargin ,
     separator        : tokenlist = \hfil
   }
 \DeclareTemplateCode { footer } { talk } { 0 }
@@ -523,8 +523,8 @@
     element-order    = \l_@@_footer_order_clist ,
     separator        = \l_@@_footer_sep_tl ,
     font             = \l_@@_footer_font_tl ,
-    left-skip        = \l_@@_footer_left_skip ,
-    right-skip       = \l_@@_footer_right_skip
+    left-hspace      = \l_@@_footer_left_skip ,
+    right-hspace     = \l_@@_footer_right_skip
   }
   {
     \noindent

@@ -11,6 +11,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 - Support for short versions of author, date, institution and (sub)title
 - make `subtitle` footer-element available 
 
+### Changed
+- Normalize key names between header and footer templates
+
 ### Fixed
 - Avoid error with `\footnote` (see issue
   [\#91](https://github.com/josephwright/ltx-talk/issues/91))

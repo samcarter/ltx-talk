@@ -391,17 +391,17 @@
 \NewTemplateType { footer-element } { 1 }
 \DeclareTemplateInterface { footer-element } { talk } { 1 }
   {
-    color      : tokenlist ,
-    font       : tokenlist = ,
-    left-skip  : length = 0em ,
-    right-skip : length = 0em
+    color        : tokenlist ,
+    font         : tokenlist = ,
+    left-hspace  : length = 0em ,
+    right-hspace : length = 0em
   }
 \DeclareTemplateCode { footer-element } { talk } { 1 }
   {
-    color      = \l_@@_footelem_color_tl ,
-    font       = \l_@@_footelem_font_tl ,
-    left-skip  = \l_@@_footelem_left_skip ,
-    right-skip = \l_@@_footelem_right_skip
+    color        = \l_@@_footelem_color_tl ,
+    font         = \l_@@_footelem_font_tl ,
+    left-hspace  = \l_@@_footelem_left_skip ,
+    right-hspace = \l_@@_footelem_right_skip
   }
   {
     \tl_if_empty:nF {#1}

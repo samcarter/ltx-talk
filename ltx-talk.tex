@@ -1304,6 +1304,25 @@ Two instances of this template are pre-defined: \texttt{std} and
 \texttt{wallpaper}. The \texttt{wallpaper} version omits any elements, meaning
 that it only applies a colored background to the footer.
 
+\subsection{Template \texttt{header}}
+
+This template is used to populate the header area of the slide: this takes no
+arguments. The standard template is \texttt{talk}, which recognizes the keys
+\begin{itemize}
+  \item \opt{background-color} The color of the background of the entire footer
+    area
+  \item \opt{color} The color of the text in the footer area
+  \item \opt{font} Font for printing elements
+  \item \opt{height} The overall height of the header background area
+  \item \opt{left-hspace} Margin on left of footer
+  \item \opt{print-frame-title} A boolean to turn title printing on and off
+  \item \opt{right-hspace} Margin on right of footer
+\end{itemize}
+
+Two instances of this template are pre-defined: \texttt{std} and
+\texttt{wallpaper}. The \texttt{wallpaper} version sets \opt{print-frame-title}
+to \opt{false}, and thus only adds the background color to the header.
+
 \end{documentation}
 
 \PrintIndex

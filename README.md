@@ -6,8 +6,7 @@ This class is _highly_ experimental, and changes may occur to almost all
 interfaces. Development is focussed on tagging/functionality as the primary
 driver; as such, support for design aspects is likely to be lower priority.
 
-It *requires* LaTeX 2025-11-01: this is currently available as a pre-release
-by using `lualatex-dev` or `pdflatex-dev`.
+It *requires* LaTeX 2025-11-01 or newer.
 
 ## Description
 

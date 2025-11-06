@@ -36,6 +36,7 @@ latex-tools-dev
 lualatex-math
 luamml
 kvoptions
+mathtools
 newcomputermodern
 pdfmanagement-testphase
 pdftexcmds

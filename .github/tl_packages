@@ -29,10 +29,7 @@ hypdoc
 hyperref
 iftex
 infwarerr
-latex-bin-dev
 latex-lab
-latex-lab-dev
-latex-tools-dev
 lualatex-math
 luamml
 kvoptions

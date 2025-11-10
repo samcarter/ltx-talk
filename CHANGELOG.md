@@ -11,7 +11,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Added
 - Support for short versions of author, date, institution and (sub)title
-- make `subtitle` footer-element available 
+- Footer element `subtitle`
 
 ### Changed
 - Normalize key names between header and footer templates

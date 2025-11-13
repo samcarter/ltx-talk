@@ -2,7 +2,7 @@
 
 ## NOTICE
 
-This class is _highly_ experimental, and changes may occur to almost all
+This class is experimental, and changes may occur to almost all
 interfaces. Development is focussed on tagging/functionality as the primary
 driver; as such, support for design aspects is likely to be lower priority.
 

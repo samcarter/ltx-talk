@@ -24,5 +24,5 @@ Some useful links:
 - A [series of examples](./examples/) are available which demonstrate some
   of the key features of the class
 - The [CTAN page](https://ctan.org/pkg/ltx-talk) for the class
-- The [GitHub repository](https://github.com/josephwright/ltx-ltx) for the
+- The [GitHub repository](https://github.com/josephwright/ltx-talk) for the
   class

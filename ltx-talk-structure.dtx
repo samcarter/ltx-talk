@@ -269,22 +269,26 @@
 % \end{macro}
 %
 % \begin{macro}{talk/sec/title}
+% \begin{macro}{\@@_sect_tag:nn}
 %   The argument is one of section, subsection or subsubsection.
 %    \begin{macrocode}
 \NewTaggingSocket { talk / sec / title } { 1 }
 \NewTaggingSocketPlug { talk / sec / title } { default }
+  { \exp_args:Ne \@@_sect_tag:nn { \text_purify:v { l_@@_ #1 _ tl } } {#1} }
+\cs_new_protected:Npn \@@_sect_tag:nn #1#2
   {
     \tag_struct_begin:e
       {
         tag        =
-          \UseStructureName { sec / \use:c { toclevel@ #1 } / title } ,
-        title      = { \text_purify:v { l_@@_ #1 _ tl } } ,
-        actualtext = { \text_purify:v { l_@@_ #1 _ tl } } ,
+          \UseStructureName { sec / \use:c { toclevel@ #2 } / title } ,
+        title      = {#1} ,
+        actualtext = {#1} ,
       }
     \tag_struct_end:
   }
 \AssignTaggingSocketPlug { talk / sec / title } { default } 
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 %
 % \subsection{Table of contents}

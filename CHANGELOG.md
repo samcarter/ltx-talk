@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## Fixed
+ - Interpretation of `=` in mandatory argument for `\author` and `\title` (see
+   issue [\#114](https://github.com/josephwright/ltx-talk/issues/114))
+
 ## [v0.3.2] - 2025-11-29
 
 ## Fixed

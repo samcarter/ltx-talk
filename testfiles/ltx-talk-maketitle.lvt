@@ -1,0 +1,17 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\author{A.N. Other}
+\title{Awkward = fun}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\maketitle
+
+\end{document}

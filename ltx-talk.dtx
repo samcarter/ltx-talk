@@ -329,6 +329,13 @@
 \cs_set_eq:NN \rmdefault \sfdefault
 %    \end{macrocode}
 %
+% To ensure that math mode fonts are always initialized, force loading at the
+% start of the document. This is left as late as possible: just before
+% typesetting starts
+%    \begin{macrocode}
+\AddToHook { begindocument / end } { \check@mathfonts }
+%    \end{macrocode}
+%
 % \subsection{Hyperlinks}
 %
 % \begin{variable}{\thepage}

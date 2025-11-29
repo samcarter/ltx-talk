@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## Fixed
+ - Column output with pdfTeX (see issue
+   [\#112](https://github.com/josephwright/ltx-talk/issues/112))
+
 ## [v0.3.1] - 2025-11-28
 
 ## Fixed

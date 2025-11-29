@@ -1,0 +1,20 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}
+  \begin{columns}
+    \begin{column}{.6\textwidth}
+      Hello
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\end{document}

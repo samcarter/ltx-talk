@@ -10,6 +10,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ## Fixed
  - Interpretation of `=` in mandatory argument for `\author` and `\title` (see
    issue [\#114](https://github.com/josephwright/ltx-talk/issues/114))
+- Paragraph termination in columns (see issue
+  [\#115](https://github.com/josephwright/ltx-talk/issues/115))
 
 ## [v0.3.2] - 2025-11-29
 

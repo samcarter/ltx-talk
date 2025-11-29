@@ -195,9 +195,12 @@
   }
 %    \end{macrocode}
 %   The \cs{@ignore} here means that any spaces after |\end{column}| are
-%   suppressed by a \tn{ignorespaces} inserted by the kernel.
+%   suppressed by a \tn{ignorespaces} inserted by the kernel. The \cs{par}
+%   before \cs{@@_action_end:} is needed as the group formed for actions
+%   would otherwise trap for example alignment changes.
 %    \begin{macrocode}
   {
+      \par
       \@@_action_end:
     \vbox_set_end:
     \use:c { @@_column_align_ \l_@@_column_alignment_tl :n }

@@ -7,6 +7,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.3.3] - 2025-11-29
+
 ## Fixed
  - Interpretation of `=` in mandatory argument for `\author` and `\title` (see
    issue [\#114](https://github.com/josephwright/ltx-talk/issues/114))
@@ -130,7 +132,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.3.2...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.3.3...HEAD
+[v0.3.3]: https://github.com/josephwright/ltx-talk/compare/v0.3.2...v0.3.3
 [v0.3.2]: https://github.com/josephwright/ltx-talk/compare/v0.3.1...v0.3.2
 [v0.3.1]: https://github.com/josephwright/ltx-talk/compare/v0.3.0...v0.3.1
 [v0.3.0]: https://github.com/josephwright/ltx-talk/compare/v0.2.3...v0.3.0

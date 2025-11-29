@@ -1,0 +1,32 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\section{Section 1}
+
+\begin{frame}
+\frametitle{Frame 1}
+Content of Frame 1
+\end{frame}
+
+\begin{frame}
+\frametitle{Frame 2}
+Content of Frame 2
+\end{frame}
+
+\section{Section 2}
+
+\begin{frame}
+\frametitle{Frame 3}
+Content of Frame 3
+\end{frame}
+
+\begin{frame}
+\frametitle{Frame 4}
+Content of Frame 4
+\end{frame}
+  
+\end{document}

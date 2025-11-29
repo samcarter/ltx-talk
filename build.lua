@@ -15,6 +15,7 @@ typesetfiles = {"*.tex", "examples/*.tex"}
 tagfiles = {"CHANGELOG.md", "*.dtx", "*.tex"}
 
 checkengines = {"pdftex","luatex"}
+checkruns = 2
 
 function update_tag(file,content,tagname,tagdate)
   tagname = string.gsub(tagname, "^v", "")

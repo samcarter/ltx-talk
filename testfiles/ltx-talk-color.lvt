@@ -13,4 +13,10 @@
   test\color{red} test
 \end{frame}
 
+\pagecolor{blue!50}
+
+\begin{frame}
+  test
+\end{frame}
+
 \end{document}

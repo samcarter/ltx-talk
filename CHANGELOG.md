@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ## [Unreleased]
 
 ### Fixed
+- Definition of `\pagecolor` (see issue
+  [\#116](https://github.com/josephwright/ltx-talk/issues/116))
 - Suppression of spaces after `\color` (see
   issue [\#117](https://github.com/josephwright/ltx-talk/issues/117))
 

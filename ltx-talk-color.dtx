@@ -149,6 +149,32 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{macro}{\pagecolor}
+% \begin{macro}{\@@_pagecolor:n}
+%   Here, the definition is different: we directly use the shipout hook.
+%    \begin{macrocode}
+\RenewDocumentCommand \pagecolor { D <> { all } o m }
+  {
+    \@@_if_overlay:nT {#1}
+      {
+        \IfNoValueTF {#2}
+          { \@@_pagecolor:n { {#3} } }
+          { \@@_pagecolor:n { [ {#2} ] {#3} } }
+      }
+  }
+\cs_new_protected:Npn \@@_pagecolor:n #1
+  {
+    \AddToHook { shipout / background }
+      {
+        \color #1
+        \put ( 0cm, -\paperheight )
+          { \rule { \paperwidth } { \paperheight } }
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
 % \subsection{Color definition}
 %
 % \begin{macro}{\DeclareColor}

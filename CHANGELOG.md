@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+- Suppression of spaces after `\color` (see
+  issue [\#117](https://github.com/josephwright/ltx-talk/issues/117))
+
 ## [v0.3.3] - 2025-11-29
 
 ## Fixed

@@ -1,0 +1,16 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}
+  test\color{red} test
+\end{frame}
+
+\end{document}

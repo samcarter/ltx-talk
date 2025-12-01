@@ -13,7 +13,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [v0.3.3] - 2025-11-29
 
-## Fixed
+### Fixed
 - Interpretation of `=` in mandatory argument for `\author` and `\title` (see
   issue [\#114](https://github.com/josephwright/ltx-talk/issues/114))
 - Paragraph termination in columns (see issue
@@ -21,17 +21,17 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [v0.3.2] - 2025-11-29
 
-## Fixed
+### Fixed
  - Column output with pdfTeX (see issue
    [\#112](https://github.com/josephwright/ltx-talk/issues/112))
 
 ## [v0.3.1] - 2025-11-28
 
-## Fixed
+### Fixed
  - Order of section titles in tagging structures (see issue
    [\#111](https://github.com/josephwright/ltx-talk/issues/111))
  
-## Changed
+### Changed
  - Added ActualText to section structures for better reading experience
   
 ## [v0.3.0] - 2025-11-10

@@ -39,7 +39,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Order of section titles in tagging structures (see issue
   [\#111](https://github.com/josephwright/ltx-talk/issues/111))
- 
+
 ### Changed
 
 - Added ActualText to section structures for better reading experience
@@ -71,7 +71,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Added
 
--  Option `handout` as alias for `mode = handout` to match `beamer` syntax
+- Option `handout` as alias for `mode = handout` to match `beamer` syntax
 
 ### Fixed
 

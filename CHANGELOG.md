@@ -1,4 +1,5 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a
@@ -10,6 +11,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ## [v0.3.4] - 2025-12-01
 
 ### Fixed
+
 - Definition of `\pagecolor` (see issue
   [\#116](https://github.com/josephwright/ltx-talk/issues/116))
 - Suppression of spaces after `\color` (see
@@ -18,6 +20,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ## [v0.3.3] - 2025-11-29
 
 ### Fixed
+
 - Interpretation of `=` in mandatory argument for `\author` and `\title` (see
   issue [\#114](https://github.com/josephwright/ltx-talk/issues/114))
 - Paragraph termination in columns (see issue
@@ -26,113 +29,135 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ## [v0.3.2] - 2025-11-29
 
 ### Fixed
- - Column output with pdfTeX (see issue
-   [\#112](https://github.com/josephwright/ltx-talk/issues/112))
+
+- Column output with pdfTeX (see issue
+  [\#112](https://github.com/josephwright/ltx-talk/issues/112))
 
 ## [v0.3.1] - 2025-11-28
 
 ### Fixed
+
  - Order of section titles in tagging structures (see issue
    [\#111](https://github.com/josephwright/ltx-talk/issues/111))
  
 ### Changed
+
  - Added ActualText to section structures for better reading experience
   
 ## [v0.3.0] - 2025-11-10
 
 ### Added
+
 - Support for short versions of author, date, institution and (sub)title
 - Footer element `subtitle`
 
 ### Changed
+
 - Normalize key names between header and footer templates
 
 ### Fixed
+
 - Avoid error with `\footnote` (see issue
   [\#91](https://github.com/josephwright/ltx-talk/issues/91))
 
 ## [v0.2.3] - 2025-10-10
 
 ### Fixed
+
 - Use of separator for empty footer elements (see issue
   [\#99](https://github.com/josephwright/ltx-talk/issues/99))
 
 ## [v0.2.2] - 2025-09-30
 
 ### Added
+
 -  Option `handout` as alias for `mode = handout` to match `beamer` syntax
 
 ### Fixed
+
 - Spacing issue in columns (see issue
   [\#93](https://github.com/josephwright/ltx-talk/issues/93))
 
 ## [v0.2.1] - 2025-09-18
 
 ### Fixed
+
 - Correct float caption info
 
 ## [v0.2.0] - 2025-09-16
 
 ### Added
+
 - Support for `figure` and `table` environments, and `\caption` command (see
   issue [\#89](https://github.com/josephwright/ltx-talk/issues/89))
 
 ## [v0.1.9] - 2025-09-01
 
 ### Fixed
+
 - Missing code in fix for issue
   [\#83](https://github.com/josephwright/ltx-talk/issues/83)
 
 ## [v0.1.8] - 2025-08-31
 
 ### Fixed
+
 - Implementation of `\pause` since update of counter method (see
   issue [\#83](https://github.com/josephwright/ltx-talk/issues/83))
 
 ## [v0.1.7] - 2025-08-26
 
 ### Fixed
+
 - Overlay argument of `frame` producing an infinite loop in some cases (see
   issue [\#79](https://github.com/josephwright/ltx-talk/issues/79))
 
 ## [v0.1.6] - 2025-07-31
 
 ### Fixed
+
 - Generate a required variant
 - Handling of optional argument to `\item`
 
 ## [v0.1.5] - 2025-07-28
 
 ### Changed
+
 - Revise handling of `pauses` counter and `+`/`.` implementation (see issue
   [\#60](https://github.com/josephwright/ltx-talk/issues/60))
 
 ## [v0.1.4] - 2025-07-19
 
 ### Added
+
 - Documentation for `\framesubtitle`
 - Documentation for `\maketitle` extensions
 
 ### Fixed
+
 - Reset frame continuation flag for all tagging states (see issue
   [\#66](https://github.com/josephwright/ltx-talk/issues/66))
 
 ## [v0.1.3] - 2025-07-18
 
 ### Changed
+
 - Use Latin Modern for pdfTeX
 
 ## [v0.1.2] - 2025-07-16
 
 ### Changed
+
 - Error if kernel support is too old
 
 ## [v0.1.1] - 2025-07-14
 
 ### Changed
+
 - Load `amsmath` with all engines
 
 ### Fixed
+
 - Support optional arg. for theorem envs. (see issue
   [\#63](https://github.com/josephwright/ltx-talk/issues/63))
 

@@ -37,12 +37,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Fixed
 
- - Order of section titles in tagging structures (see issue
-   [\#111](https://github.com/josephwright/ltx-talk/issues/111))
+- Order of section titles in tagging structures (see issue
+  [\#111](https://github.com/josephwright/ltx-talk/issues/111))
  
 ### Changed
 
- - Added ActualText to section structures for better reading experience
+- Added ActualText to section structures for better reading experience
   
 ## [v0.3.0] - 2025-11-10
 

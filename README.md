@@ -30,6 +30,12 @@ implemented to support creation of tagged (accessible) PDF output as a core
 aim. As such, it is suited to creating output for reuse in other formats, e.g.
 HTML conversions, without additional steps.
 
+## Contributing
+
+See `CONTRIBUTING.md` for details of how best to contribute code to the
+class: this includes details of what changes are likely (and less likely)
+to be accepted.
+
 ## Author
 
 This package is maintained by Joseph Wright: joseph@texdev.net

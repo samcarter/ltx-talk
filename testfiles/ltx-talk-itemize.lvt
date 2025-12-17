@@ -22,4 +22,22 @@
   Statement after itemize
 \end{frame}
 
+\begin{frame}
+  \begin{itemize}[<+->]
+    \item Statement 1 in itemize
+      \begin{itemize}
+        \item Subitem one
+        \item Subitem two
+        \item Subitem three
+      \end{itemize}
+    \item Statement 2 in itemize
+      \begin{itemize}[<.->]
+        \item Subitem one
+        \item Subitem two
+        \item Subitem three
+      \end{itemize}
+    \item Statement 3 in itemize
+  \end{itemize}
+\end{frame}
+
 \end{document}

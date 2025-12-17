@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Interaction of lists and `\pause` (see issue
+  [\#125](https://github.com/josephwright/ltx-talk/issues/125))
+
 ## [v0.3.4] - 2025-12-01
 
 ### Fixed

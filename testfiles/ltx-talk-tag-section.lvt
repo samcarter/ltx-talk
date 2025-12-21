@@ -1,9 +1,11 @@
 \input{regression-test}
 
-\DocumentMetadata{tagging = draft}
+\DocumentMetadata{tagging = on}
 \documentclass{ltx-talk}
 
 \begin{document}
+
+\SHOWPDFTAGS
 
 \section{Section 1}
 

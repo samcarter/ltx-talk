@@ -5,7 +5,11 @@
 
 \begin{document}
 
+\START
+
 \SHOWPDFTAGS
+
+\OMIT
 
 \section{Section 1}
 

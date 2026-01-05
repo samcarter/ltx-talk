@@ -73,6 +73,7 @@
 %<@@=talk>
 %    \end{macrocode}
 %
+% \begin{variable}{\c_@@_metadata_short_clist}
 % \begin{variable}{\@author, \@date, \@institute, \@subtitle, \@title}
 % \begin{variable}
 %   {
@@ -87,8 +88,9 @@
 %   will always be set in the following code so can be used automatically
 %   anywhere we might want them.
 %    \begin{macrocode}
-\clist_map_inline:nn
+\clist_const:Nn \c_@@_metadata_short_clist
   { author , date , institute , subtitle , title }
+\clist_map_inline:Nn \c_@@_metadata_short_clist
   {
     \keys_define:nn { talk / metadata }
       {
@@ -106,6 +108,7 @@
 %    \begin{macrocode}
 \tl_gset_eq:NN \@shortdate \@date
 %    \end{macrocode}
+% \end{variable}
 % \end{variable}
 % \end{variable}
 %

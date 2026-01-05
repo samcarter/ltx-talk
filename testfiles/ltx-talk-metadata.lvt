@@ -1,0 +1,25 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass[10pt]{ltx-talk}
+
+\title{Some things we did}
+\subtitle{Week 1}
+
+\EditInstance{footer}{std}
+  {
+    color         = black,
+    element-order = {title, subtitle, framenumber, totalframes},
+  }
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}
+  content
+\end{frame}
+
+\end{document}

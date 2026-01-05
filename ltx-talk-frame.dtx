@@ -422,6 +422,7 @@
 \DeclareInstance { footer-element } { subtitle } { talk } { }
 \DeclareInstance { footer-element } { institute } { talk } { }
 \DeclareInstance { footer-element } { framenumber } { talk } { }
+\DeclareInstance { footer-element } { totalframes } { talk } { }
 %    \end{macrocode}
 % \end{variable}
 %
@@ -573,16 +574,14 @@
 %    \end{macrocode}
 % \end{variable}
 % \begin{macro}[EXP]{\@@_metadata_name:n}
-%   A simple auxiliary to shorten metadata names but not the frame number.
-%   This is used as all the standard metadata is stored in two forms, and
-%   other than on the title page we use the shorter version. Full expansion
+%   A simple auxiliary to shorten metadata names if appropriate. Full expansion
 %   is applied as this avoids any issue with stored names.
 %    \begin{macrocode}
 \cs_new:Npn \@@_metadata_name:n #1
   {
-    \str_if_eq:eeTF {#1} { framenumber }
-      {#1}
+    \tl_if_exist:cTF { @ short #1 }
       { short #1 }
+      {#1}
   }
 %    \end{macrocode}
 % \end{macro}
@@ -686,13 +685,16 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% The total frames can be handled using the kernel properties.
+% \begin{variable}{\@totalframes}
+%   The total frames can be handled using the kernel properties.
 %    \begin{macrocode}
 \property_new:nnnn { totalframes } { shipout } { -1 }
   { \int_use:N \g_@@_frame_int }
 \AddToHook { enddocument / afterlastpage }
   { \property_record:nn { lastpage } { totalframes } }
+\cs_new:Npn \@totalframes { \property_ref:nn { lastpage } { totalframes } }
 %    \end{macrocode}
+% \end{variable}
 % 
 % \begin{macro}{\@@_latexe_frame:n}
 %   As we will need to re-define \cs{frame} but have it available inside

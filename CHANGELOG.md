@@ -11,14 +11,14 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ### Fixed
 
 - Support `totalframes` in metadata (see issue
-  [\#125](https://github.com/josephwright/ltx-talk/issues/127))
+  [\#127](https://github.com/josephwright/ltx-talk/issues/127))
 - Expansion of commands in overlay specs (see issue
   [\#133](https://github.com/josephwright/ltx-talk/issues/133))
 
 ### Changed
 
 - Revise approach to detecting 'short' metadata iteems (see issue
-  [\#125](https://github.com/josephwright/ltx-talk/issues/127))
+  [\#127](https://github.com/josephwright/ltx-talk/issues/127))
 
 ## [v0.3.5] - 2025-12-17
 

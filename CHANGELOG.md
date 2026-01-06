@@ -19,7 +19,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Changed
 
-- Revise approach to detecting 'short' metadata iteems (see issue
+- Revise approach to detecting 'short' metadata items (see issue
   [\#127](https://github.com/josephwright/ltx-talk/issues/127))
 
 ## [v0.3.5] - 2025-12-17

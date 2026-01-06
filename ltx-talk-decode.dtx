@@ -141,13 +141,16 @@
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{macro}{\@@_decode_parse:n, \@@_decode_parse_aux:n}
+% \begin{macro}
+%   {\@@_decode_parse:n, \@@_decode_parse_auxi:n, \@@_decode_parse_auxii:n}
 % \begin{macro}{\@@_decode_parse:w}
 %   First a simple check for an entirely blank argument: if that's the case,
 %   there is no additional overlay to consider. Then deal with any category
 %   code issues before looping over blocks divided by \verb"|" tokens.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_parse:n #1
+  { \exp_args:Ne \@@_decode_parse_auxi:n {#1} }
+\cs_new_protected:Npn \@@_decode_parse_auxi:n #1
   {
     \str_clear:N \l_@@_decode_action_str
     \bool_lazy_or:nnTF
@@ -161,10 +164,10 @@
         \bool_set_true:N \l_@@_decode_pure_bool
         \str_clear:N \l_@@_decode_overlays_str
         \str_clear:N \l_@@_decode_actions_str
-        \exp_args:No \@@_decode_parse_aux:n { \l_@@_decode_arg_str }
+        \exp_args:No \@@_decode_parse_auxii:n { \l_@@_decode_arg_str }
       }
   }
-\cs_new_protected:Npn \@@_decode_parse_aux:n #1
+\cs_new_protected:Npn \@@_decode_parse_auxii:n #1
   { \@@_decode_parse:w #1 | \q_recursion_tail | \q_recursion_stop }
 %    \end{macrocode}
 %   The end-of-loop test here covers the case where the active mode is not

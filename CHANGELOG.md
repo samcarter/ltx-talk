@@ -12,6 +12,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Support `totalframes` in metadata (see issue
   [\#125](https://github.com/josephwright/ltx-talk/issues/127))
+- Expansion of commands in overlay specs (see issue
+  [\#133](https://github.com/josephwright/ltx-talk/issues/133))
 
 ### Changed
 

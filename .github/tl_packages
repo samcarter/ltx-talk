@@ -34,6 +34,7 @@ lualatex-math
 luamml
 kvoptions
 mathtools
+mwe
 newcomputermodern
 pdfmanagement-testphase
 pdftexcmds

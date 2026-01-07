@@ -10,7 +10,7 @@
 \showoutput
 
 \begin{frame}
-  test\color{red} test
+  test\color{red} test \colorbox{blue!25}{text}
 \end{frame}
 
 \pagecolor{blue!50}

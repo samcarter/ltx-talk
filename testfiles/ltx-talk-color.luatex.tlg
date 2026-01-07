@@ -59,9 +59,9 @@ Completed box being shipped out [1]
 ....\pdfdest name{Doc-Start} xyz
 ....\pdfdest name{Doc-Start} xyz
 ....\glue(\topskip) 0.0
-....\vbox(233.31262+0.0)x448.92128, glue set 226.93973fil, direction TLT
+....\vbox(233.31262+0.0)x448.92128, glue set 220.93973fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(6.25244+0.12045)x448.92128, glue set 414.99823fil, direction TLT
+.....\hbox(9.25244+3.12045)x448.92128, glue set 387.53625fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -79,6 +79,24 @@ Completed box being shipped out [1]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\pdfcolorstack 0 push {0.75 0.75 1 rg 0.75 0.75 1 RG}
+......\pdfcolorstack 0 push {0.75 0.75 1 rg 0.75 0.75 1 RG}
+......\hbox(9.25244+3.12045)x0.0, glue set - 23.81563fil, direction TLT
+.......\rule(9.25244+3.12045)x23.81563
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\pdfcolorstack 0 pop
+......\hbox(9.25244+3.12045)x23.81563, direction TLT
+.......\kern3.0
+.......\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+.......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+.......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+.......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+.......\pdfcolorstack 0 pop
+.......\kern3.0
+......\pdfcolorstack 0 pop
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil

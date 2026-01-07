@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Support for `\color(f)box` (see issue
+  [\#135](https://github.com/josephwright/ltx-talk/issues/135))
+
 ## [v0.3.6] - 2026-01-06
 
 ### Fixed

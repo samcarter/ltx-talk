@@ -102,7 +102,7 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \subsection{Document commands}
+% \subsection{Document (and interface) commands}
 %
 %    \begin{macrocode}
 \cs_generate_variant:Nn \color_select:n { e }
@@ -173,6 +173,14 @@
   }
 %    \end{macrocode}
 % \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\set@color}
+%   Part of code-level interface for color: simply use the \pkg{expl3} version
+%   of the same idea.
+%    \begin{macrocode}
+\cs_set_eq:NN \set@color \color_ensure_current:
+%    \end{macrocode}
 % \end{macro}
 %
 % \subsection{Color definition}

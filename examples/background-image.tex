@@ -8,13 +8,9 @@
 \end{frame}
 
 \AddToHook{shipout/background}
-  {%
-    \put(0cm, -\paperheight)
-      {%
-        \includegraphics[width = \paperwidth, height = \paperheight]
-          {example-image-a}
-      }%
-  }
+  {\put(0cm, -\paperheight)
+      {\includegraphics[width = \paperwidth, height = \paperheight]
+          {example-image-a}}}
 
 \begin{frame}
   Some text

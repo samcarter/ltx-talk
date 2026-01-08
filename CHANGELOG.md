@@ -10,6 +10,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Fixed
 
+- Spanning overlays across tabular cells (see issue
+  [\#129](https://github.com/josephwright/ltx-talk/issues/129))
 - Support for `\color(f)box` (see issue
   [\#135](https://github.com/josephwright/ltx-talk/issues/135))
 

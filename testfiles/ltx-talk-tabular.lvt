@@ -1,0 +1,23 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass[10pt]{ltx-talk}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}
+  \visible<+->{Text} more text
+
+  \begin{tabular}{lll}
+    1&2&3\\
+    &\visible<+->{B&C}\\
+  \end{tabular}
+
+  Text \visible<+->{stuff} more stuff
+\end{frame}
+
+\end{document}

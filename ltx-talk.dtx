@@ -139,6 +139,59 @@
   }
 %    \end{macrocode}
 %
+% Some extensions are needed to opacity support: this should only be here for a
+% short period.
+%    \begin{macrocode}
+\cs_gset_protected:Npn \opacity_begin:n #1
+  { \__opacity_select:nN {#1} \__opacity_backend_begin:n }
+\cs_gset_protected:Npn \opacity_end:
+  { \__opacity_backend_end: }
+\AddToHook { begindocument }
+  {
+    \cs_gset_protected:Npe \__opacity_backend_begin:n #1
+      {
+        \bool_lazy_any:nTF
+          {
+            { \sys_if_engine_pdftex_p: }
+            { \sys_if_engine_luatex_p: }
+            { \sys_if_engine_xetex_p: }
+          }
+          {
+            \tl_set:Nn \exp_not:N \l__opacity_backend_fill_tl {#1}
+            \tl_set:Nn \exp_not:N \l__opacity_backend_stroke_tl {#1}
+            \pdfmanagement_add:nnn { Page / Resources / ExtGState }
+              { opacity #1 }
+              { << /ca ~ #1 /CA ~ #1 >> }
+            \sys_if_engine_xetex:TF
+              { \__kernel_backend_literal_pdf:n }
+              {
+                \__kernel_color_backend_stack_push:nn
+                  \exp_not:N \c__opacity_backend_stack_int
+              }
+                { /opacity #1 ~ gs }
+          }
+          {
+            \__opacity_backend:nnn {#1} { fill } { ca }
+            \__opacity_backend:nnn {#1} { stroke } { ca }
+          }
+      }
+    \cs_gset_protected:Npe \__opacity_backend_end:
+      {
+        \bool_lazy_any:nTF
+          {
+            { \sys_if_engine_pdftex_p: }
+            { \sys_if_engine_luatex_p: }
+            { \sys_if_engine_xetex_p: }
+          }
+          { \__opacity_backend_reset: }
+          {
+            \__opacity_backend_reset_fill:
+            \__opacity_backend_reset_stroke:
+          }
+      }
+  }
+%    \end{macrocode}
+%
 % \subsection{Extra variants}
 %
 %    \begin{macrocode}

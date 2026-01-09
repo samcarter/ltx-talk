@@ -10,7 +10,7 @@
 \showoutput
 
 \begin{frame}
-  Statement before the itemize and first pause\pause
+  Statement before the itemize and pause\pause
   \begin{itemize}
     \item Statement 1 in itemize 
     \pause

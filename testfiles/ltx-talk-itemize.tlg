@@ -1451,7 +1451,7 @@ Completed box being shipped out [5]
 .........\hbox(0.0+0.0)x0.0
 ..........\hbox(0.0+0.0)x0.0, shifted -13.6
 ...........\pdfdest name{*.13} xyz
-...........\pdfdest struct80 name{*.13} xyz
+...........\pdfdest struct79 name{*.13} xyz
 ...........\penalty 10000
 .........\kern 0.0
 .........\TS1/lmss/m/n/10.95 ^^88
@@ -1513,7 +1513,7 @@ Completed box being shipped out [5]
 .........\hbox(0.0+0.0)x0.0
 ..........\hbox(0.0+0.0)x0.0, shifted -13.6
 ...........\pdfdest name{*.14} xyz
-...........\pdfdest struct85 name{*.14} xyz
+...........\pdfdest struct84 name{*.14} xyz
 ...........\penalty 10000
 .........\kern 0.0
 .........\TS1/lmss/m/n/10.95 ^^88
@@ -1575,7 +1575,7 @@ Completed box being shipped out [5]
 .........\hbox(0.0+0.0)x0.0
 ..........\hbox(0.0+0.0)x0.0, shifted -13.6
 ...........\pdfdest name{*.15} xyz
-...........\pdfdest struct90 name{*.15} xyz
+...........\pdfdest struct89 name{*.15} xyz
 ...........\penalty 10000
 .........\kern 0.0
 .........\TS1/lmss/m/n/10.95 ^^88
@@ -4262,7 +4262,7 @@ Completed box being shipped out [11]
 .........\hbox(0.0+0.0)x0.0
 ..........\hbox(0.0+0.0)x0.0, shifted -13.6
 ...........\pdfdest name{*.62} xyz
-...........\pdfdest struct233 name{*.62} xyz
+...........\pdfdest struct232 name{*.62} xyz
 ...........\penalty 10000
 .........\kern 0.0
 .........\T1/lmss/bx/n/10.95 ^^U
@@ -4315,7 +4315,7 @@ Completed box being shipped out [11]
 .........\hbox(0.0+0.0)x0.0
 ..........\hbox(0.0+0.0)x0.0, shifted -13.6
 ...........\pdfdest name{*.63} xyz
-...........\pdfdest struct238 name{*.63} xyz
+...........\pdfdest struct237 name{*.63} xyz
 ...........\penalty 10000
 .........\kern 0.0
 .........\T1/lmss/bx/n/10.95 ^^U
@@ -4370,7 +4370,7 @@ Completed box being shipped out [11]
 .........\hbox(0.0+0.0)x0.0
 ..........\hbox(0.0+0.0)x0.0, shifted -13.6
 ...........\pdfdest name{*.64} xyz
-...........\pdfdest struct243 name{*.64} xyz
+...........\pdfdest struct242 name{*.64} xyz
 ...........\penalty 10000
 .........\kern 0.0
 .........\T1/lmss/bx/n/10.95 ^^U
@@ -4428,7 +4428,7 @@ Completed box being shipped out [11]
 .........\hbox(0.0+0.0)x0.0
 ..........\hbox(0.0+0.0)x0.0, shifted -13.6
 ...........\pdfdest name{*.65} xyz
-...........\pdfdest struct248 name{*.65} xyz
+...........\pdfdest struct247 name{*.65} xyz
 ...........\penalty 10000
 .........\kern 0.0
 .........\TS1/lmss/m/n/10.95 ^^88
@@ -4491,7 +4491,7 @@ Completed box being shipped out [11]
 .........\hbox(0.0+0.0)x0.0
 ..........\hbox(0.0+0.0)x0.0, shifted -13.6
 ...........\pdfdest name{*.66} xyz
-...........\pdfdest struct254 name{*.66} xyz
+...........\pdfdest struct253 name{*.66} xyz
 ...........\penalty 10000
 .........\kern 0.0
 .........\T1/lmss/bx/n/10.95 ^^U
@@ -4544,7 +4544,7 @@ Completed box being shipped out [11]
 .........\hbox(0.0+0.0)x0.0
 ..........\hbox(0.0+0.0)x0.0, shifted -13.6
 ...........\pdfdest name{*.67} xyz
-...........\pdfdest struct259 name{*.67} xyz
+...........\pdfdest struct258 name{*.67} xyz
 ...........\penalty 10000
 .........\kern 0.0
 .........\T1/lmss/bx/n/10.95 ^^U
@@ -4599,7 +4599,7 @@ Completed box being shipped out [11]
 .........\hbox(0.0+0.0)x0.0
 ..........\hbox(0.0+0.0)x0.0, shifted -13.6
 ...........\pdfdest name{*.68} xyz
-...........\pdfdest struct264 name{*.68} xyz
+...........\pdfdest struct263 name{*.68} xyz
 ...........\penalty 10000
 .........\kern 0.0
 .........\T1/lmss/bx/n/10.95 ^^U
@@ -4657,7 +4657,7 @@ Completed box being shipped out [11]
 .........\hbox(0.0+0.0)x0.0
 ..........\hbox(0.0+0.0)x0.0, shifted -13.6
 ...........\pdfdest name{*.69} xyz
-...........\pdfdest struct269 name{*.69} xyz
+...........\pdfdest struct268 name{*.69} xyz
 ...........\penalty 10000
 .........\kern 0.0
 .........\TS1/lmss/m/n/10.95 ^^88
@@ -4734,10 +4734,4 @@ Completed box being shipped out [11]
 .\hbox(0.0+0.0)x0.0
 .\kern 655.4883
 (ltx-talk-itemize.aux)
-MathML statistic
-================
-==> 0 MathML fragments read
-==> 0 different MathML fragments
-==> 0 math fragments found
-==> 0 fitting MathML AF found
-==> 0 MathML AF attached
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.

@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.3.7] - 2026-01-09
+
 ### Fixed
 
 - Spanning overlays across tabular cells (see issue
@@ -195,7 +197,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.3.6...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.3.7...HEAD
+[v0.3.7]: https://github.com/josephwright/ltx-talk/compare/v0.3.6...v0.3.7
 [v0.3.6]: https://github.com/josephwright/ltx-talk/compare/v0.3.5...v0.3.6
 [v0.3.5]: https://github.com/josephwright/ltx-talk/compare/v0.3.4...v0.3.5
 [v0.3.4]: https://github.com/josephwright/ltx-talk/compare/v0.3.3...v0.3.4

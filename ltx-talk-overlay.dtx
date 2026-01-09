@@ -108,12 +108,13 @@
 % This is set up such that the inactive versions insert a whatsit equal to that
 % which would be present if they were active: that's needed for spacing.
 %
-% \begin{macro}{\@@_action_:N}
-%   The fallback action. At present, we need to create a whatsit here to avoid
-%   spacing issues. (In Lua\TeX{}, if we can move to attributes, this can be
-%   removed.)
+% \begin{macro}{\@@_action_:N, \@@_action__end:N}
+%   The fallback action. This is needed for two reasons. First, it ensures that
+%   spacing is correct in terms of whatsits. Second, it deals with the need to
+%   keep opacity in-track in things like lists.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_action_:N #1 { \opacity_select:n { 1 } }
+\cs_new_protected:Npn \@@_action_:N #1 { \opacity_begin:n { 1 } }
+\cs_new_protected:Npn \@@_action__end:N #1 { \opacity_end: }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -364,11 +365,9 @@
   { \@@_onslide:n {#1} }
 \cs_new_protected:Npn \@@_onslide:n #1
   {
-    \@@_if_overlay:nTF {#1}
-      {
-        \tl_use:N \g_@@_onslide_tl
-        \tl_gclear:N \g_@@_onslide_tl
-      }
+    \tl_use:N \g_@@_onslide_tl
+    \tl_gclear:N \g_@@_onslide_tl
+    \@@_if_overlay:nF {#1}
       {
         \opacity_begin:n { 0 }
         \tl_gput_right:Nn \g_@@_onslide_tl

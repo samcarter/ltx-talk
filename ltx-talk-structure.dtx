@@ -529,7 +529,9 @@
   {
     \tl_if_empty:NT \g_@@_onslide_tl
       {
-        \tl_if_blank:nF {#1}
+        \bool_lazy_or:nnF
+          { \tl_if_blank_p:n {#1} }
+          { \str_if_eq_p:nn {#1} { all } }
           {
             \tl_set:Ne \l_@@_list_end_tl
               {

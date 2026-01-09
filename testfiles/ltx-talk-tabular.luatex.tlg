@@ -59,7 +59,7 @@ Completed box being shipped out [1]
 ....\pdfdest name{Doc-Start} xyz
 ....\pdfdest name{Doc-Start} xyz
 ....\glue(\topskip) 0.0
-....\vbox(233.31262+0.0)x448.92128, glue set 190.6184fil, direction TLT
+....\vbox(233.31262+0.0)x448.92128, glue set 190.80453fil, direction TLT
 .....\glue 0.0 plus 0.5fil
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -168,7 +168,7 @@ Completed box being shipped out [1]
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\lineskip) 0.0
-.....\hbox(7.71974+0.12045)x448.92128, glue set 354.71844fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 364.3216fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -183,10 +183,15 @@ Completed box being shipped out [1]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
 ......\pdfcolorstack 1 push {/opacity0 gs}
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 c
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 o
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 n
+......\discretionary (penalty 50)
+.......< \TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ^^ad
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 n
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\pdfcolorstack 1 pop
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
@@ -195,12 +200,6 @@ Completed box being shipped out [1]
 ......\kern-0.3066 (font)
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 r
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
-......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -293,7 +292,7 @@ Completed box being shipped out [2]
 ...\vbox(233.31262+0.0)x448.92128, direction TLT
 ....\write-{}
 ....\glue(\topskip) 0.0
-....\vbox(233.31262+0.0)x448.92128, glue set 190.6184fil, direction TLT
+....\vbox(233.31262+0.0)x448.92128, glue set 190.80453fil, direction TLT
 .....\glue 0.0 plus 0.5fil
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -402,7 +401,7 @@ Completed box being shipped out [2]
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\lineskip) 0.0
-.....\hbox(7.71974+0.12045)x448.92128, glue set 354.71844fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 364.3216fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -417,10 +416,15 @@ Completed box being shipped out [2]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
 ......\pdfcolorstack 1 push {/opacity0 gs}
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 c
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 o
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 n
+......\discretionary (penalty 50)
+.......< \TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ^^ad
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 n
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\pdfcolorstack 1 pop
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
@@ -429,12 +433,6 @@ Completed box being shipped out [2]
 ......\kern-0.3066 (font)
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 r
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
-......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -526,7 +524,7 @@ Completed box being shipped out [3]
 ...\vbox(233.31262+0.0)x448.92128, direction TLT
 ....\write-{}
 ....\glue(\topskip) 0.0
-....\vbox(233.31262+0.0)x448.92128, glue set 190.6184fil, direction TLT
+....\vbox(233.31262+0.0)x448.92128, glue set 190.80453fil, direction TLT
 .....\glue 0.0 plus 0.5fil
 .....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue(\parskip) 0.0 plus 1.0
@@ -657,7 +655,7 @@ Completed box being shipped out [3]
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\lineskip) 0.0
-.....\hbox(7.71974+0.12045)x448.92128, glue set 354.71844fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 364.3216fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -674,10 +672,15 @@ Completed box being shipped out [3]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
 ......\pdfcolorstack 1 push {/opacity1 gs}
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 c
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 o
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 n
+......\discretionary (penalty 50)
+.......< \TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ^^ad
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 n
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\pdfcolorstack 1 pop
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
@@ -686,12 +689,6 @@ Completed box being shipped out [3]
 ......\kern-0.3066 (font)
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 r
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
-......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil

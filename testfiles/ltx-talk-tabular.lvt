@@ -17,7 +17,7 @@
     &\visible<+->{B&C}\\
   \end{tabular}
 
-  Text \visible<+->{stuff} more stuff
+  Text \visible<+->{content} more
 \end{frame}
 
 \end{document}

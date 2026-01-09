@@ -155,7 +155,7 @@ Completed box being shipped out [1]
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\lineskip) 0.0
-.....\hbox(7.60422+0.0)x448.92128, glue set 354.69174fil
+.....\hbox(7.60422+0.0)x448.92128, glue set 364.3025fil
 ......\hbox(0.0+0.0)x0.0
 ......\T1/lmss/m/n/10.95 T
 ......\kern-0.9125
@@ -164,10 +164,13 @@ Completed box being shipped out [1]
 ......\T1/lmss/m/n/10.95 t
 ......\glue 3.65 plus 1.825 minus 1.21666
 ......\pdfcolorstack 1 push {/opacity0 gs}
-......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 c
+......\T1/lmss/m/n/10.95 o
+......\T1/lmss/m/n/10.95 n
 ......\T1/lmss/m/n/10.95 t
-......\T1/lmss/m/n/10.95 u
-......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 n
+......\T1/lmss/m/n/10.95 t
 ......\pdfcolorstack 1 pop
 ......\glue 3.65 plus 1.825 minus 1.21666
 ......\T1/lmss/m/n/10.95 m
@@ -175,11 +178,6 @@ Completed box being shipped out [1]
 ......\kern-0.30418
 ......\T1/lmss/m/n/10.95 r
 ......\T1/lmss/m/n/10.95 e
-......\glue 3.65 plus 1.825 minus 1.21666
-......\T1/lmss/m/n/10.95 s
-......\T1/lmss/m/n/10.95 t
-......\T1/lmss/m/n/10.95 u
-......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -366,7 +364,7 @@ Completed box being shipped out [2]
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\lineskip) 0.0
-.....\hbox(7.60422+0.0)x448.92128, glue set 354.69174fil
+.....\hbox(7.60422+0.0)x448.92128, glue set 364.3025fil
 ......\hbox(0.0+0.0)x0.0
 ......\T1/lmss/m/n/10.95 T
 ......\kern-0.9125
@@ -375,10 +373,13 @@ Completed box being shipped out [2]
 ......\T1/lmss/m/n/10.95 t
 ......\glue 3.65 plus 1.825 minus 1.21666
 ......\pdfcolorstack 1 push {/opacity0 gs}
-......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 c
+......\T1/lmss/m/n/10.95 o
+......\T1/lmss/m/n/10.95 n
 ......\T1/lmss/m/n/10.95 t
-......\T1/lmss/m/n/10.95 u
-......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 n
+......\T1/lmss/m/n/10.95 t
 ......\pdfcolorstack 1 pop
 ......\glue 3.65 plus 1.825 minus 1.21666
 ......\T1/lmss/m/n/10.95 m
@@ -386,11 +387,6 @@ Completed box being shipped out [2]
 ......\kern-0.30418
 ......\T1/lmss/m/n/10.95 r
 ......\T1/lmss/m/n/10.95 e
-......\glue 3.65 plus 1.825 minus 1.21666
-......\T1/lmss/m/n/10.95 s
-......\T1/lmss/m/n/10.95 t
-......\T1/lmss/m/n/10.95 u
-......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -649,7 +645,7 @@ Completed box being shipped out [3]
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\lineskip) 0.0
-.....\hbox(7.60422+0.0)x448.92128, glue set 354.69174fil
+.....\hbox(7.60422+0.0)x448.92128, glue set 364.3025fil
 ......\write1{\new@label@record{mcid-16}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{16}{tagmcid}{\__property_code_tagmcid: }}}
 ......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
 ......\hbox(0.0+0.0)x0.0
@@ -660,10 +656,13 @@ Completed box being shipped out [3]
 ......\T1/lmss/m/n/10.95 t
 ......\glue 3.65 plus 1.825 minus 1.21666
 ......\pdfcolorstack 1 push {/opacity1 gs}
-......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 c
+......\T1/lmss/m/n/10.95 o
+......\T1/lmss/m/n/10.95 n
 ......\T1/lmss/m/n/10.95 t
-......\T1/lmss/m/n/10.95 u
-......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 n
+......\T1/lmss/m/n/10.95 t
 ......\pdfcolorstack 1 pop
 ......\glue 3.65 plus 1.825 minus 1.21666
 ......\T1/lmss/m/n/10.95 m
@@ -671,11 +670,6 @@ Completed box being shipped out [3]
 ......\kern-0.30418
 ......\T1/lmss/m/n/10.95 r
 ......\T1/lmss/m/n/10.95 e
-......\glue 3.65 plus 1.825 minus 1.21666
-......\T1/lmss/m/n/10.95 s
-......\T1/lmss/m/n/10.95 t
-......\T1/lmss/m/n/10.95 u
-......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
 ......\pdfliteral page{EMC}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
@@ -716,4 +710,10 @@ Completed box being shipped out [3]
 .\hbox(0.0+0.0)x0.0
 .\kern 655.4883
 (ltx-talk-tabular.aux)
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+MathML statistic
+================
+==> 0 MathML fragments read
+==> 0 different MathML fragments
+==> 0 math fragments found
+==> 0 fitting MathML AF found
+==> 0 MathML AF attached

@@ -519,31 +519,26 @@
 %   for spacing we likely will need to add something to the \texttt{true}
 %   branch too. The odd stuff with \tn{currentgrouplevel} here is needed
 %   so we only close the item at the correct nesting, allowing for the
-%   group that gets added. We also need to watch out for \cs{pause}: if that is
-%   active, the entire item should not show up. That is easiest to check using
-%   the \cs{g_@@_onslide_tl} variable.
+%   group that gets added.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_item_parse_spec:w #1 < #2 > #3 \q_stop
   { \@@_item_parse_spec:n {#2} }
 \cs_new_protected:Npn \@@_item_parse_spec:n #1
   {
-    \tl_if_empty:NT \g_@@_onslide_tl
+    \bool_lazy_or:nnF
+      { \tl_if_blank_p:n {#1} }
+      { \str_if_eq_p:nn {#1} { all } }
       {
-        \bool_lazy_or:nnF
-          { \tl_if_blank_p:n {#1} }
-          { \str_if_eq_p:nn {#1} { all } }
+        \tl_set:Ne \l_@@_list_end_tl
           {
-            \tl_set:Ne \l_@@_list_end_tl
+            \exp_not:N \int_compare:nNnT \tex_currentgrouplevel:D =
+              { \int_use:N \tex_currentgrouplevel:D + 1 }
               {
-                \exp_not:N \int_compare:nNnT \tex_currentgrouplevel:D =
-                  { \int_use:N \tex_currentgrouplevel:D + 1 }
-                  {
-                    \@@_action_end:
-                    \tl_clear:N \exp_not:N \l_@@_list_end_tl
-                  }
+                \@@_action_end:
+                \tl_clear:N \exp_not:N \l_@@_list_end_tl
               }
-            \@@_action_begin:n {#1}
           }
+        \@@_action_begin:n {#1}
       }
   }
 %    \end{macrocode}

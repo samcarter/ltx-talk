@@ -1,0 +1,1218 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../bookmark.sty
+Package: bookmark ....-..-.. v... PDF bookmarks (HO)
+(../bkm-pdftex.def
+File: bkm-pdftex.def ....-..-.. v... bookmark driver for pdfTeX and luaTeX (HO)
+\BKM@id=\count...
+))
+LaTeX template Info: Declaring instance 'basic' of type item on line ....
+LaTeX template Info: Declaring instance 'description' of type item on line ....
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line ....
+LaTeX Font Info:    Checking defaults for OML/cmssm/m/it on input line ....
+LaTeX Font Info:    Trying to load font information for OML+cmssm on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMS/cmsssy/m/n on input line ....
+LaTeX Font Info:    Trying to load font information for OMS+cmsssy on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMX/cmssex/m/n on input line ....
+LaTeX Font Info:    Trying to load font information for OMX+cmssex on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for U/xcmss/m/n on input line ....
+LaTeX Font Info:    Trying to load font information for U+xcmss on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+Info: mathml file ltx-talk-pause-mathml does not exist
+Info: mathml file ltx-talk-pause-luamml-mathml does not exist
+LaTeX template Info: Declaring instance 'wallpaper' of type header on line ....
+LaTeX template Info: Declaring instance 'wallpaper' of type footer on line ....
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 448.92128pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 233.31262pt, 22.76219pt)
+* \paperwidth=505.82677pt
+* \paperheight=284.52756pt
+* \textwidth=448.92128pt
+* \textheight=233.31262pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-77.96053pt
+* \headheight=28.45274pt
+* \headsep=5.69054pt
+* \topskip=11.0pt
+* \footskip=17.07164pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=0.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+Package hyperref Info: Link coloring OFF on input line ....
+(../supp-pdf.mkii
+[LoadingMPStoPDFconverter(version2006.09.02).]
+\scratchcounter=\count...
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l. ......csname newcount\endcsname \scratchcounter
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \relax 
+l. ......csname newcount\endcsname \scratchcounter
+I was expecting to see `<', `=', or `>'. Didn't.
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l. ......csname newcount\endcsname \scratchcounter
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+\scratchdimen=\dimen...
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l. ...... \csname newdimen\endcsname \scratchdimen
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \relax 
+l. ...... \csname newdimen\endcsname \scratchdimen
+I was expecting to see `<', `=', or `>'. Didn't.
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l. ...... \csname newdimen\endcsname \scratchdimen
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+\scratchbox=\box...
+\nofMPsegments=\count...
+\nofMParguments=\count...
+\everyMPshowfont=\toks...
+\MPscratchCnt=\count...
+\MPscratchDim=\dimen...
+\MPnumerator=\count...
+\makeMPintoPDFobject=\count...
+\everyMPtoPDFconversion=\toks...
+) (../epstopdf-base.sty
+Package: epstopdf-base ....-..-.. v... Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line ....
+(../epstopdf-sys.cfg
+File: epstopdf-sys.cfg ....-..-.. v... Configuration of (r)epstopdf for TeX Live
+))
+LaTeX DocumentMetadata Warning: The language has not been set in \DocumentMetadata.
+(DocumentMetadata)              Setting it to 'en' as fallback.
+LaTeX Font Info:    Trying to load font information for OT1+cmsmf on input line ....
+Package tagpdf Warning: nested marked content found - mcid 1
+Package tagpdf Warning: there is no mc to end at 2
+Completed box being shipped out [1]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\pdfinterwordspaceon
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.1} xyz
+...\pdfdest struct22 name{page.1} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 18.45267fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,3,-1,}
+....\marks4{b+,3,-1,}
+....\hbox(10.00008+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(10.00008+0.0)x448.92128, glue set 399.88115fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\T1/lmss/bx/n/14.4 F
+......\kern-0.44
+......\T1/lmss/bx/n/14.4 r
+......\T1/lmss/bx/n/14.4 a
+......\T1/lmss/bx/n/14.4 m
+......\T1/lmss/bx/n/14.4 e
+......\T1/lmss/bx/n/14.4 1
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,3,2,}
+....\marks4{e+,3,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\pdfcolorstack 0 push {0 g 0 G}
+....\pdfdest name{Doc-Start} xyz
+....\pdfdest struct22 name{Doc-Start} xyz
+....\glue(\topskip) 3.82173
+....\hbox(7.17827+0.43799)x448.92128, glue set 388.08757fil
+.....\write1{\new@label@record{mcid-1}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{1}{tagmcid}{\__property_code_tagmcid: }}}
+.....\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.....\hbox(0.0+0.0)x0.0
+.....\T1/lmss/m/n/10.95 6
+.....\T1/lmss/m/n/10.95 1
+.....\T1/lmss/m/n/10.95 >
+.....\T1/lmss/m/n/10.95 2
+.....\T1/lmss/m/n/10.95 0
+.....\T1/lmss/m/n/10.95 8
+.....\T1/lmss/m/n/10.95 5
+.....\T1/lmss/m/n/10.95 >
+.....\T1/lmss/m/n/10.95 2
+.....\T1/lmss/m/n/10.95 0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\marks4{b-,1,4,text,,,}
+....\marks4{b+,1,4,text,,,}
+....\kern -0.43799
+....\hbox(0.0+0.43799)x0.0
+.....\pdfliteral page{EMC}
+....\glue -0.43799
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,4,-1,}
+...\marks4{b+,4,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,4,2,}
+...\marks4{e+,4,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+.\kern 0.0
+Completed box being shipped out [2]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.2} xyz
+...\pdfdest struct22 name{page.2} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 18.45267fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,6,-1,}
+....\marks4{b+,6,-1,}
+....\hbox(10.00008+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(10.00008+0.0)x448.92128, glue set 399.88115fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\T1/lmss/bx/n/14.4 F
+......\kern-0.44
+......\T1/lmss/bx/n/14.4 r
+......\T1/lmss/bx/n/14.4 a
+......\T1/lmss/bx/n/14.4 m
+......\T1/lmss/bx/n/14.4 e
+......\T1/lmss/bx/n/14.4 1
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,6,2,}
+....\marks4{e+,6,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+.....\write1{\new@label@record{mcid-5}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{5}{tagmcid}{\__property_code_tagmcid: }}}
+.....\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+....\glue(\topskip) 0.0
+....\hbox(233.31262+0.0)x448.92128
+.....\vbox(233.31262+0.0)x448.92128, glue set 179.775fil
+......\glue 0.0 plus 0.5fil
+......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,2,-1,}
+......\marks4{b+,2,-1,}
+......\glue(\parskip) 0.0 plus 1.0
+......\glue(\parskip) 0.0
+......\hbox(7.60422+0.0)x448.92128, glue set 359.83086fil
+.......\hbox(0.0+0.0)x0.0
+.......\T1/lmss/m/n/10.95 S
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 n
+.......\T1/lmss/m/n/10.95 t
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 n
+.......\T1/lmss/m/n/10.95 c
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 1
+.......\T1/lmss/m/n/10.95 o
+.......\T1/lmss/m/n/10.95 f
+.......\T1/lmss/m/n/10.95 F
+.......\kern-0.30418
+.......\T1/lmss/m/n/10.95 r
+.......\T1/lmss/m/n/10.95 a
+.......\T1/lmss/m/n/10.95 m
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 1
+.......\pdfcolorstack 1 push {/opacity0 gs}
+.......\pdfcolorstack 1 push {/opacity0 gs}
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0
+.......\glue(\rightskip) 0.0 plus 1.0fil
+......\glue 12.0 plus 4.0 minus 4.0
+......\glue 0.0
+......\glue(\lineskip) 0.0
+......\vbox(33.93341+0.0)x448.92128
+.......\glue 6.0 plus 2.0 minus 2.0
+.......\glue 0.0
+.......\glue(\parskip) 0.0 plus 1.0
+.......\glue(\parskip) 0.0
+.......\hbox(8.3334+0.0)x448.92128, glue set 411.25505fil
+........\hbox(0.0+0.0)x0.0
+........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+........\T1/lmss/bx/n/12 B
+........\T1/lmss/bx/n/12 l
+........\T1/lmss/bx/n/12 o
+........\kern0.36667
+........\T1/lmss/bx/n/12 c
+........\T1/lmss/bx/n/12 k
+........\T1/lmss/bx/n/12 1
+........\penalty 10000
+........\glue(\parfillskip) 0.0
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\glue 6.0 plus 2.0 minus 2.0
+.......\glue 0.0
+.......\pdfcolorstack 0 pop
+.......\glue(\parskip) 0.0 plus 1.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 5.99579
+.......\hbox(7.60422+0.0)x448.92128, glue set 359.83086fil
+........\hbox(0.0+0.0)x0.0
+........\T1/lmss/m/n/10.95 S
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 n
+........\T1/lmss/m/n/10.95 t
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 n
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 2
+........\T1/lmss/m/n/10.95 o
+........\T1/lmss/m/n/10.95 f
+........\T1/lmss/m/n/10.95 F
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 m
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 1
+........\penalty 10000
+........\glue(\parfillskip) 0.0
+........\glue(\rightskip) 0.0 plus 1.0fil
+......\pdfcolorstack 1 pop
+......\pdfliteral page{EMC}
+......\marks4{e-,2,4,}
+......\marks4{e+,2,4,}
+......\pdfcolorstack 1 pop
+......\glue 0.0 plus 0.5fil
+.....\pdfliteral page{EMC}
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\marks4{e-,2,4,}
+....\marks4{e+,2,4,}
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,7,-1,}
+...\marks4{b+,7,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,7,2,}
+...\marks4{e+,7,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+Completed box being shipped out [3]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.3} xyz
+...\pdfdest struct22 name{page.3} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 18.45267fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,11,-1,}
+....\marks4{b+,11,-1,}
+....\hbox(10.00008+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(10.00008+0.0)x448.92128, glue set 399.88115fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\pdfliteral page{EMC}
+......\marks4{e-,11,2,}
+......\marks4{e+,11,2,}
+......\write1{\new@label@record{mcid-12}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{12}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/frametitle <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\marks4{b-,12,14,frametitle,,,}
+......\marks4{b+,12,14,frametitle,,,}
+......\T1/lmss/bx/n/14.4 F
+......\kern-0.44
+......\T1/lmss/bx/n/14.4 r
+......\T1/lmss/bx/n/14.4 a
+......\T1/lmss/bx/n/14.4 m
+......\T1/lmss/bx/n/14.4 e
+......\T1/lmss/bx/n/14.4 1
+......\pdfliteral page{EMC}
+......\marks4{e-,12,14,}
+......\marks4{e+,12,14,}
+......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,13,-1,}
+......\marks4{b+,13,-1,}
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,13,2,}
+....\marks4{e+,13,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 179.775fil
+.....\glue 0.0 plus 0.5fil
+.....\hbox(7.60422+0.0)x448.92128, glue set 359.83086fil
+......\write1{\new@label@record{mcid-8}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{8}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\hbox(0.0+0.0)x0.0
+......\T1/lmss/m/n/10.95 S
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 n
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 n
+......\T1/lmss/m/n/10.95 c
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 1
+......\T1/lmss/m/n/10.95 o
+......\T1/lmss/m/n/10.95 f
+......\T1/lmss/m/n/10.95 F
+......\kern-0.30418
+......\T1/lmss/m/n/10.95 r
+......\T1/lmss/m/n/10.95 a
+......\T1/lmss/m/n/10.95 m
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 1
+......\pdfcolorstack 1 push {/opacity1 gs}
+......\pdfliteral page{EMC}
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\marks4{b-,8,9,text,,,}
+.....\marks4{b+,8,9,text,,,}
+.....\glue 12.0 plus 4.0 minus 4.0
+.....\glue 0.0
+.....\marks4{e-,8,9,}
+.....\marks4{e+,8,9,}
+.....\glue(\lineskip) 0.0
+.....\vbox(33.93341+0.0)x448.92128
+......\glue 6.0 plus 2.0 minus 2.0
+......\glue 0.0
+......\glue(\parskip) 0.0 plus 1.0
+......\glue(\parskip) 0.0
+......\hbox(8.3334+0.0)x448.92128, glue set 411.25505fil
+.......\write1{\new@label@record{mcid-9}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{9}{tagmcid}{\__property_code_tagmcid: }}}
+.......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.......\hbox(0.0+0.0)x0.0
+.......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+.......\T1/lmss/bx/n/12 B
+.......\T1/lmss/bx/n/12 l
+.......\T1/lmss/bx/n/12 o
+.......\kern0.36667
+.......\T1/lmss/bx/n/12 c
+.......\T1/lmss/bx/n/12 k
+.......\T1/lmss/bx/n/12 1
+.......\pdfliteral page{EMC}
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0
+.......\glue(\rightskip) 0.0 plus 1.0fil
+......\marks4{b-,9,11,text,,,}
+......\marks4{b+,9,11,text,,,}
+......\marks4{e-,9,11,}
+......\marks4{e+,9,11,}
+......\glue 6.0 plus 2.0 minus 2.0
+......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue(\parskip) 0.0 plus 1.0
+......\glue(\parskip) 0.0
+......\glue(\baselineskip) 5.99579
+......\hbox(7.60422+0.0)x448.92128, glue set 359.83086fil
+.......\write1{\new@label@record{mcid-10}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{10}{tagmcid}{\__property_code_tagmcid: }}}
+.......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.......\hbox(0.0+0.0)x0.0
+.......\T1/lmss/m/n/10.95 S
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 n
+.......\T1/lmss/m/n/10.95 t
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 n
+.......\T1/lmss/m/n/10.95 c
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 2
+.......\T1/lmss/m/n/10.95 o
+.......\T1/lmss/m/n/10.95 f
+.......\T1/lmss/m/n/10.95 F
+.......\kern-0.30418
+.......\T1/lmss/m/n/10.95 r
+.......\T1/lmss/m/n/10.95 a
+.......\T1/lmss/m/n/10.95 m
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 1
+.......\pdfliteral page{EMC}
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0
+.......\glue(\rightskip) 0.0 plus 1.0fil
+......\marks4{b-,10,13,text,,,}
+......\marks4{b+,10,13,text,,,}
+......\marks4{e-,10,13,}
+......\marks4{e+,10,13,}
+.....\pdfcolorstack 1 pop
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,14,-1,}
+...\marks4{b+,14,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,14,2,}
+...\marks4{e+,14,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+Overfull \hbox (89.09042pt too wide) in paragraph at lines ...
+[]\T1/lmss/m/n/10.95 Sentence1ofFrame2[][]$[]$[] 
+\hbox(9.53749+4.0625)x448.92128
+.\hbox(0.0+0.0)x0.0
+.\T1/lmss/m/n/10.95 S
+.\T1/lmss/m/n/10.95 e
+.\T1/lmss/m/n/10.95 n
+.\T1/lmss/m/n/10.95 t
+.\T1/lmss/m/n/10.95 e
+.\T1/lmss/m/n/10.95 n
+.\T1/lmss/m/n/10.95 c
+.\T1/lmss/m/n/10.95 e
+.\T1/lmss/m/n/10.95 1
+.\T1/lmss/m/n/10.95 o
+.\T1/lmss/m/n/10.95 f
+.\T1/lmss/m/n/10.95 F
+.\kern-0.30418
+.\T1/lmss/m/n/10.95 r
+.\T1/lmss/m/n/10.95 a
+.\T1/lmss/m/n/10.95 m
+.\T1/lmss/m/n/10.95 e
+.\T1/lmss/m/n/10.95 2
+.\pdfcolorstack 1 push {/opacity0 gs}
+.\pdfcolorstack 1 push {/opacity0 gs}
+.\mathon
+.\vbox(9.53749+4.0625)x448.92128
+..\hbox(9.53749+4.0625)x448.92128, glue set 180.26454fil
+...\glue(\leftskip) 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x0.0
+...\hbox(9.53749+4.0625)x88.3922
+....\mathon
+....\vbox(9.53749+4.0625)x88.3922
+.....\hbox(9.51996+4.08003)x88.3922
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x42.4167
+.......\rule(9.51996+4.08003)x0.0
+.......\glue 6.0
+.......\glue 0.00002
+.......\T1/lmss/m/n/10.95 T
+.......\kern-0.9125
+.......\T1/lmss/m/n/10.95 a
+.......\T1/lmss/m/n/10.95 b
+.......\T1/lmss/m/n/10.95 l
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 1
+.......\glue 0.0 plus 1.0fil
+.......\glue 6.0
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x45.9755
+.......\glue 6.0
+.......\glue 0.00002
+.......\T1/lmss/m/n/10.95 F
+.......\kern-0.30418
+.......\T1/lmss/m/n/10.95 r
+.......\T1/lmss/m/n/10.95 a
+.......\T1/lmss/m/n/10.95 m
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 2
+.......\glue 0.0 plus 1.0fil
+.......\glue 6.0
+......\glue(\tabskip) 0.0
+....\mathoff
+...\penalty 10000
+...\glue(\parfillskip) 0.0
+...\glue(\rightskip) 0.0 plus 1.0fil
+..\penalty 0
+.\mathoff
+.\pdfcolorstack 1 pop
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0 plus 1.0fil
+Completed box being shipped out [4]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.4} xyz
+...\pdfdest struct22 name{page.4} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 18.45267fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,16,-1,}
+....\marks4{b+,16,-1,}
+....\hbox(10.00008+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(10.00008+0.0)x448.92128, glue set 399.88115fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\T1/lmss/bx/n/14.4 F
+......\kern-0.44
+......\T1/lmss/bx/n/14.4 r
+......\T1/lmss/bx/n/14.4 a
+......\T1/lmss/bx/n/14.4 m
+......\T1/lmss/bx/n/14.4 e
+......\T1/lmss/bx/n/14.4 2
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,16,2,}
+....\marks4{e+,16,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\write1{\new@label@record{frame.1}{{slides}{2}}}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 207.71263fil
+.....\glue 0.0 plus 0.5fil
+.....\pdfliteral page{/Artifact BMC}
+.....\marks4{b-,15,-1,}
+.....\marks4{b+,15,-1,}
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\hbox(9.53749+4.0625)x448.92128
+......\hbox(0.0+0.0)x0.0
+......\T1/lmss/m/n/10.95 S
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 n
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 n
+......\T1/lmss/m/n/10.95 c
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 1
+......\T1/lmss/m/n/10.95 o
+......\T1/lmss/m/n/10.95 f
+......\T1/lmss/m/n/10.95 F
+......\kern-0.30418
+......\T1/lmss/m/n/10.95 r
+......\T1/lmss/m/n/10.95 a
+......\T1/lmss/m/n/10.95 m
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 2
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\mathon
+......\vbox(9.53749+4.0625)x448.92128
+.......\hbox(9.53749+4.0625)x448.92128, glue set 180.26454fil
+........\glue(\leftskip) 0.0 plus 1.0fil
+........\hbox(0.0+0.0)x0.0
+........\hbox(9.53749+4.0625)x88.3922
+.........\mathon
+.........\vbox(9.53749+4.0625)x88.3922
+..........\hbox(9.51996+4.08003)x88.3922
+...........\glue(\tabskip) 0.0
+...........\hbox(9.51996+4.08003)x42.4167
+............\rule(9.51996+4.08003)x0.0
+............\glue 6.0
+............\glue 0.00002
+............\T1/lmss/m/n/10.95 T
+............\kern-0.9125
+............\T1/lmss/m/n/10.95 a
+............\T1/lmss/m/n/10.95 b
+............\T1/lmss/m/n/10.95 l
+............\T1/lmss/m/n/10.95 e
+............\T1/lmss/m/n/10.95 1
+............\glue 0.0 plus 1.0fil
+............\glue 6.0
+...........\glue(\tabskip) 0.0
+...........\hbox(9.51996+4.08003)x45.9755
+............\glue 6.0
+............\glue 0.00002
+............\T1/lmss/m/n/10.95 F
+............\kern-0.30418
+............\T1/lmss/m/n/10.95 r
+............\T1/lmss/m/n/10.95 a
+............\T1/lmss/m/n/10.95 m
+............\T1/lmss/m/n/10.95 e
+............\T1/lmss/m/n/10.95 2
+............\glue 0.0 plus 1.0fil
+............\glue 6.0
+...........\glue(\tabskip) 0.0
+.........\mathoff
+........\penalty 10000
+........\glue(\parfillskip) 0.0
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\penalty 0
+......\mathoff
+......\pdfcolorstack 1 pop
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\glue 12.0 plus 4.0 minus 4.0
+.....\glue 0.0
+.....\pdfliteral page{EMC}
+.....\marks4{e-,15,2,}
+.....\marks4{e+,15,2,}
+.....\pdfcolorstack 1 pop
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,17,-1,}
+...\marks4{b+,17,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,17,2,}
+...\marks4{e+,17,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+Overfull \hbox (89.09042pt too wide) in paragraph at lines ...
+[][][]\T1/lmss/m/n/10.95 Sentence1ofFrame2[][]$[]$[][][][] 
+\hbox(9.53749+4.0625)x448.92128
+.\write1{\new@label@record{mcid-18}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{18}{tagmcid}{\__property_code_tagmcid: }}}
+.\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.\hbox(0.0+0.0)x0.0
+.\T1/lmss/m/n/10.95 S
+.\T1/lmss/m/n/10.95 e
+.\T1/lmss/m/n/10.95 n
+.\T1/lmss/m/n/10.95 t
+.\T1/lmss/m/n/10.95 e
+.\T1/lmss/m/n/10.95 n
+.\T1/lmss/m/n/10.95 c
+.\T1/lmss/m/n/10.95 e
+.\T1/lmss/m/n/10.95 1
+.\T1/lmss/m/n/10.95 o
+.\T1/lmss/m/n/10.95 f
+.\T1/lmss/m/n/10.95 F
+.\kern-0.30418
+.\T1/lmss/m/n/10.95 r
+.\T1/lmss/m/n/10.95 a
+.\T1/lmss/m/n/10.95 m
+.\T1/lmss/m/n/10.95 e
+.\T1/lmss/m/n/10.95 2
+.\pdfcolorstack 1 push {/opacity1 gs}
+.\pdfliteral page{EMC}
+.\mathon
+.\vbox(9.53749+4.0625)x448.92128
+..\hbox(9.53749+4.0625)x448.92128, glue set 180.26454fil
+...\glue(\leftskip) 0.0 plus 1.0fil
+...\write1{\new@label@record{mcid-19}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{19}{tagmcid}{\__property_code_tagmcid: }}}
+...\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...\hbox(0.0+0.0)x0.0
+...\pdfliteral page{EMC}
+...\hbox(9.53749+4.0625)x88.3922
+....\mathon
+....\vbox(9.53749+4.0625)x88.3922
+.....\hbox(9.51996+4.08003)x88.3922
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x42.4167
+.......\rule(9.51996+4.08003)x0.0
+.......\glue 6.0
+.......\glue 0.00002
+.......\write1{\new@label@record{mcid-20}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{20}{tagmcid}{\__property_code_tagmcid: }}}
+.......\penalty 10000
+.......\glue 0.0
+.......\pdfliteral shipout page{/TD <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.......\T1/lmss/m/n/10.95 T
+.......\kern-0.9125
+.......\T1/lmss/m/n/10.95 a
+.......\T1/lmss/m/n/10.95 b
+.......\T1/lmss/m/n/10.95 l
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 1
+.......\pdfliteral page{EMC}
+.......\glue 0.0 plus 1.0fil
+.......\glue 6.0
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x45.9755
+.......\glue 6.0
+.......\glue 0.00002
+.......\write1{\new@label@record{mcid-21}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{21}{tagmcid}{\__property_code_tagmcid: }}}
+.......\penalty 10000
+.......\glue 0.0
+.......\pdfliteral shipout page{/TD <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.......\T1/lmss/m/n/10.95 F
+.......\kern-0.30418
+.......\T1/lmss/m/n/10.95 r
+.......\T1/lmss/m/n/10.95 a
+.......\T1/lmss/m/n/10.95 m
+.......\T1/lmss/m/n/10.95 e
+.......\T1/lmss/m/n/10.95 2
+.......\pdfliteral page{EMC}
+.......\glue 0.0 plus 1.0fil
+.......\glue 6.0
+......\glue(\tabskip) 0.0
+.....\marks4{b-,20,23,TD,,,}
+.....\marks4{b+,20,23,TD,,,}
+.....\marks4{e-,20,23,}
+.....\marks4{e+,20,23,}
+.....\marks4{b-,21,24,TD,,,}
+.....\marks4{b+,21,24,TD,,,}
+.....\marks4{e-,21,24,}
+.....\marks4{e+,21,24,}
+....\mathoff
+...\write1{\new@label@record{mcid-22}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{22}{tagmcid}{\__property_code_tagmcid: }}}
+...\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...\pdfliteral page{EMC}
+...\penalty 10000
+...\glue(\parfillskip) 0.0
+...\glue(\rightskip) 0.0 plus 1.0fil
+..\marks4{b-,19,20,text,,,}
+..\marks4{b+,19,20,text,,,}
+..\marks4{e-,19,20,}
+..\marks4{e+,19,20,}
+..\marks4{b-,22,25,text,,,}
+..\marks4{b+,22,25,text,,,}
+..\marks4{e-,22,25,}
+..\marks4{e+,22,25,}
+..\penalty 0
+.\mathoff
+.\write1{\new@label@record{mcid-23}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{23}{tagmcid}{\__property_code_tagmcid: }}}
+.\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.\pdfcolorstack 1 pop
+.\pdfliteral page{EMC}
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0 plus 1.0fil
+Completed box being shipped out [5]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.5} xyz
+...\pdfdest struct22 name{page.5} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 18.45267fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,24,-1,}
+....\marks4{b+,24,-1,}
+....\hbox(10.00008+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(10.00008+0.0)x448.92128, glue set 399.88115fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\pdfliteral page{EMC}
+......\marks4{e-,24,2,}
+......\marks4{e+,24,2,}
+......\write1{\new@label@record{mcid-25}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{25}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/frametitle <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\marks4{b-,25,27,frametitle,,,}
+......\marks4{b+,25,27,frametitle,,,}
+......\T1/lmss/bx/n/14.4 F
+......\kern-0.44
+......\T1/lmss/bx/n/14.4 r
+......\T1/lmss/bx/n/14.4 a
+......\T1/lmss/bx/n/14.4 m
+......\T1/lmss/bx/n/14.4 e
+......\T1/lmss/bx/n/14.4 2
+......\pdfliteral page{EMC}
+......\marks4{e-,25,27,}
+......\marks4{e+,25,27,}
+......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,26,-1,}
+......\marks4{b+,26,-1,}
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,26,2,}
+....\marks4{e+,26,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 207.71263fil
+.....\glue 0.0 plus 0.5fil
+.....\hbox(9.53749+4.0625)x448.92128
+......\write1{\new@label@record{mcid-18}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{18}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\hbox(0.0+0.0)x0.0
+......\T1/lmss/m/n/10.95 S
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 n
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 n
+......\T1/lmss/m/n/10.95 c
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 1
+......\T1/lmss/m/n/10.95 o
+......\T1/lmss/m/n/10.95 f
+......\T1/lmss/m/n/10.95 F
+......\kern-0.30418
+......\T1/lmss/m/n/10.95 r
+......\T1/lmss/m/n/10.95 a
+......\T1/lmss/m/n/10.95 m
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 2
+......\pdfcolorstack 1 push {/opacity1 gs}
+......\pdfliteral page{EMC}
+......\mathon
+......\vbox(9.53749+4.0625)x448.92128
+.......\hbox(9.53749+4.0625)x448.92128, glue set 180.26454fil
+........\glue(\leftskip) 0.0 plus 1.0fil
+........\write1{\new@label@record{mcid-19}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{19}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\hbox(0.0+0.0)x0.0
+........\pdfliteral page{EMC}
+........\hbox(9.53749+4.0625)x88.3922
+.........\mathon
+.........\vbox(9.53749+4.0625)x88.3922
+..........\hbox(9.51996+4.08003)x88.3922
+...........\glue(\tabskip) 0.0
+...........\hbox(9.51996+4.08003)x42.4167
+............\rule(9.51996+4.08003)x0.0
+............\glue 6.0
+............\glue 0.00002
+............\write1{\new@label@record{mcid-20}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{20}{tagmcid}{\__property_code_tagmcid: }}}
+............\penalty 10000
+............\glue 0.0
+............\pdfliteral shipout page{/TD <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+............\T1/lmss/m/n/10.95 T
+............\kern-0.9125
+............\T1/lmss/m/n/10.95 a
+............\T1/lmss/m/n/10.95 b
+............\T1/lmss/m/n/10.95 l
+............\T1/lmss/m/n/10.95 e
+............\T1/lmss/m/n/10.95 1
+............\pdfliteral page{EMC}
+............\glue 0.0 plus 1.0fil
+............\glue 6.0
+...........\glue(\tabskip) 0.0
+...........\hbox(9.51996+4.08003)x45.9755
+............\glue 6.0
+............\glue 0.00002
+............\write1{\new@label@record{mcid-21}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{21}{tagmcid}{\__property_code_tagmcid: }}}
+............\penalty 10000
+............\glue 0.0
+............\pdfliteral shipout page{/TD <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+............\T1/lmss/m/n/10.95 F
+............\kern-0.30418
+............\T1/lmss/m/n/10.95 r
+............\T1/lmss/m/n/10.95 a
+............\T1/lmss/m/n/10.95 m
+............\T1/lmss/m/n/10.95 e
+............\T1/lmss/m/n/10.95 2
+............\pdfliteral page{EMC}
+............\glue 0.0 plus 1.0fil
+............\glue 6.0
+...........\glue(\tabskip) 0.0
+..........\marks4{b-,20,23,TD,,,}
+..........\marks4{b+,20,23,TD,,,}
+..........\marks4{e-,20,23,}
+..........\marks4{e+,20,23,}
+..........\marks4{b-,21,24,TD,,,}
+..........\marks4{b+,21,24,TD,,,}
+..........\marks4{e-,21,24,}
+..........\marks4{e+,21,24,}
+.........\mathoff
+........\write1{\new@label@record{mcid-22}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{22}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,19,20,text,,,}
+.......\marks4{b+,19,20,text,,,}
+.......\marks4{e-,19,20,}
+.......\marks4{e+,19,20,}
+.......\marks4{b-,22,25,text,,,}
+.......\marks4{b+,22,25,text,,,}
+.......\marks4{e-,22,25,}
+.......\marks4{e+,22,25,}
+.......\penalty 0
+......\mathoff
+......\write1{\new@label@record{mcid-23}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{23}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\pdfcolorstack 1 pop
+......\pdfliteral page{EMC}
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\marks4{b-,18,17,text,,,}
+.....\marks4{b+,18,17,text,,,}
+.....\glue 12.0 plus 4.0 minus 4.0
+.....\glue 0.0
+.....\marks4{e-,18,17,}
+.....\marks4{e+,18,17,}
+.....\marks4{b-,23,26,text,,,}
+.....\marks4{b+,23,26,text,,,}
+.....\marks4{e-,23,16,}
+.....\marks4{e+,23,16,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,27,-1,}
+...\marks4{b+,27,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,27,2,}
+...\marks4{e+,27,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+.\kern -655.4883
+.\hbox(0.0+0.0)x0.0
+.\kern 655.4883
+(ltx-talk-pause.aux)
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.

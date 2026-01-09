@@ -292,7 +292,8 @@
 %   environment, this has to be done manually. To allow working with
 %   environments but also items, the code needs to save data for the end
 %   function. The group is needed for cases where we are not in a \LaTeX{}
-%   environment group.
+%   environment group. When an \cs{onslide}/\cs{pause} is active, it takes
+%   priority: sorted by applying up-front.
 %    \begin{macrocode}
 \NewDocumentCommand \action { D <> { all } +m }
   {
@@ -315,12 +316,16 @@
         \l_@@_decode_action_str
       \bool_set_eq:NN \l_@@_saved_actions_bool
         \l_@@_decode_actions_bool
-      \bool_if:NTF \l_@@_decode_overlays_bool
+      \tl_if_empty:NTF \g_@@_onslide_tl
         {
-          \use:c { @@_action_ \l_@@_decode_action_str :N }
-            \l_@@_decode_actions_bool
+          \bool_if:NTF \l_@@_decode_overlays_bool
+            {
+              \use:c { @@_action_ \l_@@_decode_action_str :N }
+                \l_@@_decode_actions_bool
+            }
+            { \UseInstance { hidden } { std } }
         }
-        { \UseInstance { hidden } { std } }
+        { \@@_action_invisible:N \c_true_bool }
   }
 \cs_new_protected:Npn \@@_action_end:
   {

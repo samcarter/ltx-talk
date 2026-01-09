@@ -12,6 +12,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Spanning overlays across tabular cells (see issue
   [\#129](https://github.com/josephwright/ltx-talk/issues/129))
+- Application of `\pause` to block environments (see issue
+  [\#134](https://github.com/josephwright/ltx-talk/issues/134))
 - Support for `\color(f)box` (see issue
   [\#135](https://github.com/josephwright/ltx-talk/issues/135))
 

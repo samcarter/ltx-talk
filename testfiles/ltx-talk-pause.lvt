@@ -3,8 +3,6 @@
 \DocumentMetadata{tagging = draft}
 \documentclass{ltx-talk}
 
-\ExplSyntaxOn
-
 \START
 
 \showoutput

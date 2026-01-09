@@ -1717,7 +1717,7 @@ Completed box being shipped out [6]
 ....\write-{}
 ....\write1{\new@label@record{frame.1}{{slides}{5}}}
 ....\glue(\topskip) 0.0
-....\vbox(233.31262+0.0)x448.92128, glue set 98.90836fil
+....\vbox(233.31262+0.0)x448.92128, glue set 96.90836fil
 .....\glue 0.0 plus 0.5fil
 .....\pdfliteral page{/Artifact BMC}
 .....\marks4{b-,23,-1,}
@@ -1808,6 +1808,7 @@ Completed box being shipped out [6]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 0.0 plus 1.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
@@ -1848,6 +1849,7 @@ Completed box being shipped out [6]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 0.0 plus 1.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
@@ -1888,6 +1890,7 @@ Completed box being shipped out [6]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\pdfcolorstack 1 pop
@@ -1978,6 +1981,7 @@ Completed box being shipped out [6]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 0.0 plus 1.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
@@ -2018,6 +2022,7 @@ Completed box being shipped out [6]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 0.0 plus 1.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
@@ -2058,12 +2063,11 @@ Completed box being shipped out [6]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 2.0 plus 1.0 minus 2.0
-.....\glue -2.0 plus -1.0 minus -2.0
+.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\glue 2.0 plus 1.0 minus 2.0
-.....\glue -2.0 plus -1.0 minus -2.0
 .....\glue 3.0 plus 2.0 minus 3.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue(\parskip) 0.0
@@ -2112,6 +2116,7 @@ Completed box being shipped out [6]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 3.0 plus 2.0 minus 2.5
 .....\pdfliteral page{EMC}
@@ -2202,7 +2207,7 @@ Completed box being shipped out [7]
 ....\hbox(0.0+0.0)x0.0
 ....\write-{}
 ....\glue(\topskip) 0.0
-....\vbox(233.31262+0.0)x448.92128, glue set 98.90836fil
+....\vbox(233.31262+0.0)x448.92128, glue set 96.90836fil
 .....\glue 0.0 plus 0.5fil
 .....\pdfliteral page{/Artifact BMC}
 .....\marks4{b-,26,-1,}
@@ -2334,6 +2339,7 @@ Completed box being shipped out [7]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 0.0 plus 1.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
@@ -2374,6 +2380,7 @@ Completed box being shipped out [7]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\pdfcolorstack 1 pop
@@ -2464,6 +2471,7 @@ Completed box being shipped out [7]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 0.0 plus 1.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
@@ -2504,6 +2512,7 @@ Completed box being shipped out [7]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 0.0 plus 1.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
@@ -2544,12 +2553,11 @@ Completed box being shipped out [7]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 2.0 plus 1.0 minus 2.0
-.....\glue -2.0 plus -1.0 minus -2.0
+.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\glue 2.0 plus 1.0 minus 2.0
-.....\glue -2.0 plus -1.0 minus -2.0
 .....\glue 3.0 plus 2.0 minus 3.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue(\parskip) 0.0
@@ -2598,6 +2606,7 @@ Completed box being shipped out [7]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 3.0 plus 2.0 minus 2.5
 .....\pdfliteral page{EMC}
@@ -2688,7 +2697,7 @@ Completed box being shipped out [8]
 ....\hbox(0.0+0.0)x0.0
 ....\write-{}
 ....\glue(\topskip) 0.0
-....\vbox(233.31262+0.0)x448.92128, glue set 98.90836fil
+....\vbox(233.31262+0.0)x448.92128, glue set 96.90836fil
 .....\glue 0.0 plus 0.5fil
 .....\pdfliteral page{/Artifact BMC}
 .....\marks4{b-,29,-1,}
@@ -2861,6 +2870,7 @@ Completed box being shipped out [8]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\pdfcolorstack 1 pop
@@ -2951,6 +2961,7 @@ Completed box being shipped out [8]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 0.0 plus 1.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
@@ -2991,6 +3002,7 @@ Completed box being shipped out [8]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 0.0 plus 1.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
@@ -3031,12 +3043,11 @@ Completed box being shipped out [8]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 2.0 plus 1.0 minus 2.0
-.....\glue -2.0 plus -1.0 minus -2.0
+.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\glue 2.0 plus 1.0 minus 2.0
-.....\glue -2.0 plus -1.0 minus -2.0
 .....\glue 3.0 plus 2.0 minus 3.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue(\parskip) 0.0
@@ -3085,6 +3096,7 @@ Completed box being shipped out [8]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 3.0 plus 2.0 minus 2.5
 .....\pdfliteral page{EMC}
@@ -3175,7 +3187,7 @@ Completed box being shipped out [9]
 ....\hbox(0.0+0.0)x0.0
 ....\write-{}
 ....\glue(\topskip) 0.0
-....\vbox(233.31262+0.0)x448.92128, glue set 98.90836fil
+....\vbox(233.31262+0.0)x448.92128, glue set 96.90836fil
 .....\glue 0.0 plus 0.5fil
 .....\pdfliteral page{/Artifact BMC}
 .....\marks4{b-,32,-1,}
@@ -3439,6 +3451,7 @@ Completed box being shipped out [9]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 0.0 plus 1.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
@@ -3479,6 +3492,7 @@ Completed box being shipped out [9]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 0.0 plus 1.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
@@ -3519,12 +3533,11 @@ Completed box being shipped out [9]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 2.0 plus 1.0 minus 2.0
-.....\glue -2.0 plus -1.0 minus -2.0
+.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\glue 2.0 plus 1.0 minus 2.0
-.....\glue -2.0 plus -1.0 minus -2.0
 .....\glue 3.0 plus 2.0 minus 3.0
 .....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue(\parskip) 0.0
@@ -3573,6 +3586,7 @@ Completed box being shipped out [9]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 3.0 plus 2.0 minus 2.5
 .....\pdfliteral page{EMC}
@@ -4062,6 +4076,7 @@ Completed box being shipped out [10]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 3.0 plus 2.0 minus 2.5
 .....\pdfliteral page{EMC}
@@ -4703,6 +4718,116 @@ Completed box being shipped out [11]
 ...\pdfliteral page{EMC}
 ...\marks4{e-,57,2,}
 ...\marks4{e+,57,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+Completed box being shipped out [12]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.12} xyz
+...\pdfdest struct22 name{page.12} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,59,-1,}
+....\marks4{b+,59,-1,}
+....\hbox(0.0+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,59,2,}
+....\marks4{e+,59,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\write1{\new@label@record{frame.2}{{slides}{6}}}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 225.7084fil
+.....\glue 0.0 plus 0.5fil
+.....\hbox(7.60422+0.0)x448.92128, glue set 400.01155fil
+......\write1{\new@label@record{mcid-58}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{58}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\hbox(0.0+0.0)x0.0
+......\T1/lmss/m/n/10.95 L
+......\T1/lmss/m/n/10.95 a
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 f
+......\T1/lmss/m/n/10.95 r
+......\T1/lmss/m/n/10.95 a
+......\T1/lmss/m/n/10.95 m
+......\T1/lmss/m/n/10.95 e
+......\pdfliteral page{EMC}
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\marks4{b-,58,77,text,,,}
+.....\marks4{b+,58,77,text,,,}
+.....\marks4{e-,58,76,}
+.....\marks4{e+,58,76,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,60,-1,}
+...\marks4{b+,60,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,60,2,}
+...\marks4{e+,60,2,}
 ...\pdfrunninglinkon
 .\kern 0.0
 .\kern -655.4883

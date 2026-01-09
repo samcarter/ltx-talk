@@ -329,13 +329,14 @@
   }
 \cs_new_protected:Npn \@@_action_end:
   {
-      \bool_if:NT \l_@@_saved_overlays_bool
+      \bool_if:NTF \l_@@_saved_overlays_bool
         {
           \cs_if_exist_use:cF
             { @@_action_ \l_@@_saved_action_str _end:N }
             { \use_none:n }
               \l_@@_saved_actions_bool
         }
+        { \opacity_end: }
     \group_end:
   }
 %    \end{macrocode}

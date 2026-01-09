@@ -40,4 +40,8 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+  Last frame
+\end{frame}
+
 \end{document}

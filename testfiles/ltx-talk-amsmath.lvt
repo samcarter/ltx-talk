@@ -19,7 +19,7 @@
         &\visible<+->{= \mathcolor{red}{\frac{1}{3}}\\}
         &\visible<+->{= \frac{\pi}{4}\\[-\baselineskip]\notag}
     \end{align}
-    Text \visible<+->{stuff} more stuff
+    Text \visible<+->{text} more text
 \end{frame}
 
 \end{document}

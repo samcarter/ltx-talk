@@ -1,0 +1,3380 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+Completed box being shipped out [1]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\pdfinterwordspaceon
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.1} xyz
+...\pdfdest struct22 name{page.1} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,2,-1,}
+....\marks4{b+,2,-1,}
+....\hbox(0.0+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,2,2,}
+....\marks4{e+,2,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\pdfcolorstack 0 push {0 g 0 G}
+....\pdfdest name{Doc-Start} xyz
+....\pdfdest struct22 name{Doc-Start} xyz
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 73.58818fil
+.....\glue 0.0 plus 0.5fil
+.....\pdfliteral page{/Artifact BMC}
+.....\marks4{b-,1,-1,}
+.....\marks4{b+,1,-1,}
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\hbox(7.60422+0.0)x448.92128, glue set 428.512fil
+......\hbox(0.0+0.0)x0.0
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.60416+0.0)x7.30002
+........\mathon
+........\OML/cmssm/m/it/10.95 A
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\pdfdest name{equation.1} xyz
+...........\pdfdest struct22 name{equation.1} xyz
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 1
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.14647+0.0)x8.5167
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\OMS/cmsssy/m/n/10.95 ^^Q
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 5
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\pdfdest name{equation.2} xyz
+...........\pdfdest struct22 name{equation.2} xyz
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 2
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832
+.......\hbox(14.58607+7.59631)x52.2832
+........\mathon
+........\hbox(14.58607+7.59631)x52.2832
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 1
+.........\OT1/cmsmf/m/n/10.95 2
+.........\OT1/cmsmf/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\pdfdest name{equation.3} xyz
+...........\pdfdest struct22 name{equation.3} xyz
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 3
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\pdfdest name{equation.4} xyz
+...........\pdfdest struct22 name{equation.4} xyz
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 4
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.2744+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.2744+7.59631)x52.2832, glue set 28.34213fil
+.......\hbox(12.2744+7.59631)x23.94107
+........\mathon
+........\hbox(12.2744+7.59631)x23.94107
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.2744+7.59631)x9.34116
+..........\hbox(12.2744+7.59631)x9.34116
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(12.2744+7.59631)x6.94116
+............\hbox(4.86665+0.0)x6.94116
+.............\OML/cmssm/m/it/10.95 ^^Y
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x6.94116, glue set 0.73308fil
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+.............\OT1/cmsmf/m/n/10.95 4
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\pdfdest name{equation.5} xyz
+...........\pdfdest struct22 name{equation.5} xyz
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 5
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x52.2832, glue set 52.2832fil
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x0.00002
+.......\kern -194.66902
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.91576
+.....\hbox(7.60422+0.0)x448.92128, glue set 354.69174fil
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\glue 3.65 plus 1.825 minus 1.21666
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\pdfcolorstack 1 pop
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 m
+......\T1/lmss/m/n/10.95 o
+......\kern-0.30418
+......\T1/lmss/m/n/10.95 r
+......\T1/lmss/m/n/10.95 e
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfliteral page{EMC}
+.....\marks4{e-,1,2,}
+.....\marks4{e+,1,2,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,3,-1,}
+...\marks4{b+,3,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,3,2,}
+...\marks4{e+,3,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+.\kern 0.0
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+Completed box being shipped out [2]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.2} xyz
+...\pdfdest struct22 name{page.2} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,5,-1,}
+....\marks4{b+,5,-1,}
+....\hbox(0.0+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,5,2,}
+....\marks4{e+,5,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 73.58818fil
+.....\glue 0.0 plus 0.5fil
+.....\pdfliteral page{/Artifact BMC}
+.....\marks4{b-,4,-1,}
+.....\marks4{b+,4,-1,}
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\hbox(7.60422+0.0)x448.92128, glue set 428.512fil
+......\hbox(0.0+0.0)x0.0
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.60416+0.0)x7.30002
+........\mathon
+........\OML/cmssm/m/it/10.95 A
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 1
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.14647+0.0)x8.5167
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\OMS/cmsssy/m/n/10.95 ^^Q
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 5
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 2
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832
+.......\hbox(14.58607+7.59631)x52.2832
+........\mathon
+........\hbox(14.58607+7.59631)x52.2832
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 1
+.........\OT1/cmsmf/m/n/10.95 2
+.........\OT1/cmsmf/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 3
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 4
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.2744+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.2744+7.59631)x52.2832, glue set 28.34213fil
+.......\hbox(12.2744+7.59631)x23.94107
+........\mathon
+........\hbox(12.2744+7.59631)x23.94107
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.2744+7.59631)x9.34116
+..........\hbox(12.2744+7.59631)x9.34116
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(12.2744+7.59631)x6.94116
+............\hbox(4.86665+0.0)x6.94116
+.............\OML/cmssm/m/it/10.95 ^^Y
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x6.94116, glue set 0.73308fil
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+.............\OT1/cmsmf/m/n/10.95 4
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 5
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x52.2832, glue set 52.2832fil
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x0.00002
+.......\kern -194.66902
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.91576
+.....\hbox(7.60422+0.0)x448.92128, glue set 354.69174fil
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\glue 3.65 plus 1.825 minus 1.21666
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\pdfcolorstack 1 pop
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 m
+......\T1/lmss/m/n/10.95 o
+......\kern-0.30418
+......\T1/lmss/m/n/10.95 r
+......\T1/lmss/m/n/10.95 e
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfliteral page{EMC}
+.....\marks4{e-,4,2,}
+.....\marks4{e+,4,2,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,6,-1,}
+...\marks4{b+,6,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,6,2,}
+...\marks4{e+,6,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+Completed box being shipped out [3]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.3} xyz
+...\pdfdest struct22 name{page.3} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,8,-1,}
+....\marks4{b+,8,-1,}
+....\hbox(0.0+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,8,2,}
+....\marks4{e+,8,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 73.58818fil
+.....\glue 0.0 plus 0.5fil
+.....\pdfliteral page{/Artifact BMC}
+.....\marks4{b-,7,-1,}
+.....\marks4{b+,7,-1,}
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\hbox(7.60422+0.0)x448.92128, glue set 428.512fil
+......\hbox(0.0+0.0)x0.0
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.60416+0.0)x7.30002
+........\mathon
+........\OML/cmssm/m/it/10.95 A
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 1
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.14647+0.0)x8.5167
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\OMS/cmsssy/m/n/10.95 ^^Q
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 5
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 2
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832
+.......\hbox(14.58607+7.59631)x52.2832
+........\mathon
+........\hbox(14.58607+7.59631)x52.2832
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 1
+.........\OT1/cmsmf/m/n/10.95 2
+.........\OT1/cmsmf/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 3
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 4
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.2744+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.2744+7.59631)x52.2832, glue set 28.34213fil
+.......\hbox(12.2744+7.59631)x23.94107
+........\mathon
+........\hbox(12.2744+7.59631)x23.94107
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.2744+7.59631)x9.34116
+..........\hbox(12.2744+7.59631)x9.34116
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(12.2744+7.59631)x6.94116
+............\hbox(4.86665+0.0)x6.94116
+.............\OML/cmssm/m/it/10.95 ^^Y
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x6.94116, glue set 0.73308fil
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+.............\OT1/cmsmf/m/n/10.95 4
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 5
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x52.2832, glue set 52.2832fil
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x0.00002
+.......\kern -194.66902
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.91576
+.....\hbox(7.60422+0.0)x448.92128, glue set 354.69174fil
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\glue 3.65 plus 1.825 minus 1.21666
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\pdfcolorstack 1 pop
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 m
+......\T1/lmss/m/n/10.95 o
+......\kern-0.30418
+......\T1/lmss/m/n/10.95 r
+......\T1/lmss/m/n/10.95 e
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfliteral page{EMC}
+.....\marks4{e-,7,2,}
+.....\marks4{e+,7,2,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,9,-1,}
+...\marks4{b+,9,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,9,2,}
+...\marks4{e+,9,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+Completed box being shipped out [4]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.4} xyz
+...\pdfdest struct22 name{page.4} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,11,-1,}
+....\marks4{b+,11,-1,}
+....\hbox(0.0+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,11,2,}
+....\marks4{e+,11,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 73.58818fil
+.....\glue 0.0 plus 0.5fil
+.....\pdfliteral page{/Artifact BMC}
+.....\marks4{b-,10,-1,}
+.....\marks4{b+,10,-1,}
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\hbox(7.60422+0.0)x448.92128, glue set 428.512fil
+......\hbox(0.0+0.0)x0.0
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.60416+0.0)x7.30002
+........\mathon
+........\OML/cmssm/m/it/10.95 A
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 1
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.14647+0.0)x8.5167
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\OMS/cmsssy/m/n/10.95 ^^Q
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 5
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 2
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832
+.......\hbox(14.58607+7.59631)x52.2832
+........\mathon
+........\hbox(14.58607+7.59631)x52.2832
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 1
+.........\OT1/cmsmf/m/n/10.95 2
+.........\OT1/cmsmf/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 3
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 4
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.2744+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.2744+7.59631)x52.2832, glue set 28.34213fil
+.......\hbox(12.2744+7.59631)x23.94107
+........\mathon
+........\hbox(12.2744+7.59631)x23.94107
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.2744+7.59631)x9.34116
+..........\hbox(12.2744+7.59631)x9.34116
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(12.2744+7.59631)x6.94116
+............\hbox(4.86665+0.0)x6.94116
+.............\OML/cmssm/m/it/10.95 ^^Y
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x6.94116, glue set 0.73308fil
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+.............\OT1/cmsmf/m/n/10.95 4
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 5
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x52.2832, glue set 52.2832fil
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x0.00002
+.......\kern -194.66902
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.91576
+.....\hbox(7.60422+0.0)x448.92128, glue set 354.69174fil
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\glue 3.65 plus 1.825 minus 1.21666
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\pdfcolorstack 1 pop
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 m
+......\T1/lmss/m/n/10.95 o
+......\kern-0.30418
+......\T1/lmss/m/n/10.95 r
+......\T1/lmss/m/n/10.95 e
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfliteral page{EMC}
+.....\marks4{e-,10,2,}
+.....\marks4{e+,10,2,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,12,-1,}
+...\marks4{b+,12,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,12,2,}
+...\marks4{e+,12,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+Completed box being shipped out [5]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.5} xyz
+...\pdfdest struct22 name{page.5} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,14,-1,}
+....\marks4{b+,14,-1,}
+....\hbox(0.0+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,14,2,}
+....\marks4{e+,14,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 73.58818fil
+.....\glue 0.0 plus 0.5fil
+.....\pdfliteral page{/Artifact BMC}
+.....\marks4{b-,13,-1,}
+.....\marks4{b+,13,-1,}
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\hbox(7.60422+0.0)x448.92128, glue set 428.512fil
+......\hbox(0.0+0.0)x0.0
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.60416+0.0)x7.30002
+........\mathon
+........\OML/cmssm/m/it/10.95 A
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 1
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.14647+0.0)x8.5167
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\OMS/cmsssy/m/n/10.95 ^^Q
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 5
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 2
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832
+.......\hbox(14.58607+7.59631)x52.2832
+........\mathon
+........\hbox(14.58607+7.59631)x52.2832
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 1
+.........\OT1/cmsmf/m/n/10.95 2
+.........\OT1/cmsmf/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 3
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 4
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.2744+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.2744+7.59631)x52.2832, glue set 28.34213fil
+.......\hbox(12.2744+7.59631)x23.94107
+........\mathon
+........\hbox(12.2744+7.59631)x23.94107
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.2744+7.59631)x9.34116
+..........\hbox(12.2744+7.59631)x9.34116
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(12.2744+7.59631)x6.94116
+............\hbox(4.86665+0.0)x6.94116
+.............\OML/cmssm/m/it/10.95 ^^Y
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x6.94116, glue set 0.73308fil
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+.............\OT1/cmsmf/m/n/10.95 4
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 5
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x52.2832, glue set 52.2832fil
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x0.00002
+.......\kern -194.66902
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.91576
+.....\hbox(7.60422+0.0)x448.92128, glue set 354.69174fil
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\glue 3.65 plus 1.825 minus 1.21666
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\pdfcolorstack 1 pop
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 m
+......\T1/lmss/m/n/10.95 o
+......\kern-0.30418
+......\T1/lmss/m/n/10.95 r
+......\T1/lmss/m/n/10.95 e
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\pdfliteral page{EMC}
+.....\marks4{e-,13,2,}
+.....\marks4{e+,13,2,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,15,-1,}
+...\marks4{b+,15,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,15,2,}
+...\marks4{e+,15,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \scan_stop: 
+l. ...\end
+         {frame}
+Completed box being shipped out [6]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.6} xyz
+...\pdfdest struct22 name{page.6} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,29,-1,}
+....\marks4{b+,29,-1,}
+....\hbox(0.0+0.0)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,29,2,}
+....\marks4{e+,29,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 73.58818fil
+.....\glue 0.0 plus 0.5fil
+.....\hbox(7.60422+0.0)x448.92128, glue set 424.862fil
+......\write1{\new@label@record{mcid-16}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{16}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\hbox(0.0+0.0)x0.0
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\glue 3.65 plus 1.825 minus 1.21666
+......\pdfliteral page{EMC}
+......\write1{\new@label@record{mcid-17}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{17}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/Formula <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\marks4{b-,16,7,text,,,}
+.....\marks4{b+,16,7,text,,,}
+.....\marks4{e-,16,7,}
+.....\marks4{e+,16,7,}
+.....\marks4{b-,17,8,Formula,,,}
+.....\marks4{b+,17,8,Formula,,,}
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.60416+0.0)x7.30002
+........\mathon
+........\OML/cmssm/m/it/10.95 A
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\pdfliteral page{EMC}
+.........\marks4{e-,17,8,}
+.........\marks4{e+,17,8,}
+.........\write1{\new@label@record{mcid-18}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{18}{tagmcid}{\__property_code_tagmcid: }}}
+.........\pdfliteral shipout page{/Lbl <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.........\marks4{b-,18,9,Lbl,,,}
+.........\marks4{b+,18,9,Lbl,,,}
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 1
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+.........\pdfliteral page{EMC}
+.........\marks4{e-,18,9,}
+.........\marks4{e+,18,9,}
+.........\write1{\new@label@record{mcid-19}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{19}{tagmcid}{\__property_code_tagmcid: }}}
+.........\pdfliteral shipout page{/Formula <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.........\marks4{b-,19,8,Formula,,,}
+.........\marks4{b+,19,8,Formula,,,}
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.14647+0.0)x8.5167
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\OMS/cmsssy/m/n/10.95 ^^Q
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 2
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 5
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\pdfliteral page{EMC}
+.........\marks4{e-,19,8,}
+.........\marks4{e+,19,8,}
+.........\write1{\new@label@record{mcid-20}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{20}{tagmcid}{\__property_code_tagmcid: }}}
+.........\pdfliteral shipout page{/Lbl <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.........\marks4{b-,20,10,Lbl,,,}
+.........\marks4{b+,20,10,Lbl,,,}
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 2
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+.........\pdfliteral page{EMC}
+.........\marks4{e-,20,10,}
+.........\marks4{e+,20,10,}
+.........\write1{\new@label@record{mcid-21}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{21}{tagmcid}{\__property_code_tagmcid: }}}
+.........\pdfliteral shipout page{/Formula <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.........\marks4{b-,21,8,Formula,,,}
+.........\marks4{b+,21,8,Formula,,,}
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832
+.......\hbox(14.58607+7.59631)x52.2832
+........\mathon
+........\hbox(14.58607+7.59631)x52.2832
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\OT1/cmsmf/m/n/10.95 1
+.........\OT1/cmsmf/m/n/10.95 2
+.........\OT1/cmsmf/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\pdfliteral page{EMC}
+.........\marks4{e-,21,8,}
+.........\marks4{e+,21,8,}
+.........\write1{\new@label@record{mcid-22}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{22}{tagmcid}{\__property_code_tagmcid: }}}
+.........\pdfliteral shipout page{/Lbl <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.........\marks4{b-,22,11,Lbl,,,}
+.........\marks4{b+,22,11,Lbl,,,}
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 3
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+.........\pdfliteral page{EMC}
+.........\marks4{e-,22,11,}
+.........\marks4{e+,22,11,}
+.........\write1{\new@label@record{mcid-23}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{23}{tagmcid}{\__property_code_tagmcid: }}}
+.........\pdfliteral shipout page{/Formula <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.........\marks4{b-,23,8,Formula,,,}
+.........\marks4{b+,23,8,Formula,,,}
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.58607+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.58607+7.59631)x52.2832, glue set 29.80829fil
+.......\hbox(14.58607+7.59631)x22.47491
+........\mathon
+........\hbox(14.58607+7.59631)x22.47491
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.58607+7.59631)x7.875
+..........\hbox(14.58607+7.59631)x7.875
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(14.58607+7.59631)x5.475
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 1
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x5.475
+.............\OT1/cmsmf/m/n/10.95 3
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(14.58607+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\pdfliteral page{EMC}
+.........\marks4{e-,23,8,}
+.........\marks4{e+,23,8,}
+.........\write1{\new@label@record{mcid-24}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{24}{tagmcid}{\__property_code_tagmcid: }}}
+.........\pdfliteral shipout page{/Lbl <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.........\marks4{b-,24,12,Lbl,,,}
+.........\marks4{b+,24,12,Lbl,,,}
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 4
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+.........\pdfliteral page{EMC}
+.........\marks4{e-,24,12,}
+.........\marks4{e+,24,12,}
+.........\write1{\new@label@record{mcid-25}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{25}{tagmcid}{\__property_code_tagmcid: }}}
+.........\pdfliteral shipout page{/Formula <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.........\marks4{b-,25,8,Formula,,,}
+.........\marks4{b+,25,8,Formula,,,}
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.2744+7.59631)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.2744+7.59631)x52.2832, glue set 28.34213fil
+.......\hbox(12.2744+7.59631)x23.94107
+........\mathon
+........\hbox(12.2744+7.59631)x23.94107
+.........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\OT1/cmsmf/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.2744+7.59631)x9.34116
+..........\hbox(12.2744+7.59631)x9.34116
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+...........\vbox(12.2744+7.59631)x6.94116
+............\hbox(4.86665+0.0)x6.94116
+.............\OML/cmssm/m/it/10.95 ^^Y
+............\kern4.45126
+............\rule(0.43799+0.0)x*
+............\kern2.93648
+............\hbox(7.17833+0.0)x6.94116, glue set 0.73308fil
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+.............\OT1/cmsmf/m/n/10.95 4
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+...........\hbox(0.0+0.0)x1.2, shifted -2.73749
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(12.2744+7.59631)x0.00002
+.......\kern -194.66902
+.......\kern 194.66904
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.9919fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.9919
+.........\hbox(9.51996+4.08003)x0.0
+..........\vbox(9.51996+4.08003)x0.0
+...........\kern 0.0
+...........\hbox(9.51996+4.08003)x0.0
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0, shifted -16.6
+...........\penalty 10000
+.........\pdfliteral page{EMC}
+.........\marks4{e-,25,8,}
+.........\marks4{e+,25,8,}
+.........\write1{\new@label@record{mcid-26}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{26}{tagmcid}{\__property_code_tagmcid: }}}
+.........\pdfliteral shipout page{/Lbl <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.........\marks4{b-,26,13,Lbl,,,}
+.........\marks4{b+,26,13,Lbl,,,}
+.........\hbox(8.06465+2.73749)x13.9919
+..........\T1/lmss/m/n/10.95 (
+..........\T1/lmss/m/n/10.95 5
+..........\kern 0.0
+..........\T1/lmss/m/n/10.95 )
+.........\pdfliteral page{EMC}
+.........\marks4{e-,26,13,}
+.........\marks4{e+,26,13,}
+.........\write1{\new@label@record{mcid-27}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{27}{tagmcid}{\__property_code_tagmcid: }}}
+.........\pdfliteral shipout page{/Formula <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.........\marks4{b-,27,8,Formula,,,}
+.........\marks4{b+,27,8,Formula,,,}
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, display
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x7.30002, glue set 7.30002fil
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0
+........\vbox(9.51996+4.08003)x0.0
+.........\kern 0.0
+.........\hbox(9.51996+4.08003)x0.0
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x52.2832, glue set 52.2832fil
+.......\hbox(0.0+0.0)x0.0
+........\mathon
+........\hbox(0.0+0.0)x0.0
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.66902
+......\hbox(9.51996+4.08003)x0.00002
+.......\kern -194.66902
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\pdfliteral page{EMC}
+.....\marks4{e-,27,8,}
+.....\marks4{e+,27,8,}
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.91576
+.....\hbox(7.60422+0.0)x448.92128, glue set 354.69174fil
+......\write1{\new@label@record{mcid-28}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{28}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\T1/lmss/m/n/10.95 T
+......\kern-0.9125
+......\T1/lmss/m/n/10.95 e
+......\T1/lmss/m/n/10.95 x
+......\T1/lmss/m/n/10.95 t
+......\glue 3.65 plus 1.825 minus 1.21666
+......\pdfcolorstack 1 push {/opacity1 gs}
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\pdfcolorstack 1 pop
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 m
+......\T1/lmss/m/n/10.95 o
+......\kern-0.30418
+......\T1/lmss/m/n/10.95 r
+......\T1/lmss/m/n/10.95 e
+......\glue 3.65 plus 1.825 minus 1.21666
+......\T1/lmss/m/n/10.95 s
+......\T1/lmss/m/n/10.95 t
+......\T1/lmss/m/n/10.95 u
+......\T1/lmss/m/n/10.95 ^^[ (ligature ff)
+......\pdfliteral page{EMC}
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\marks4{b-,28,14,text,,,}
+.....\marks4{b+,28,14,text,,,}
+.....\marks4{e-,28,6,}
+.....\marks4{e+,28,6,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,30,-1,}
+...\marks4{b+,30,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,30,2,}
+...\marks4{e+,30,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+.\kern -655.4883
+.\hbox(0.0+0.0)x0.0
+.\kern 655.4883
+(ltx-talk-amsmath.aux)
+MathML statistic
+================
+==> 1 MathML fragments read
+==> 1 different MathML fragments
+==> 1 math fragments found
+==> 1 fitting MathML AF found
+==> 1 MathML AF attached

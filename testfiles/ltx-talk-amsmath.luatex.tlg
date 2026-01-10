@@ -1,0 +1,3463 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+Completed box being shipped out [1]
+\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil, direction TLT
+..\kern0.0
+..\kern-77.96053
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil, direction TLT
+...\kern0.0
+...\kern-43.81725
+...\kern-1.00374
+...\pdfdest name{page.1} xyz
+...\pdfdest name{page.1} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403, direction TLT
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
+....\hbox(0.0+0.0)x448.92128, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdflinkstate 0
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128, direction TLT
+....\pdfcolorstack 0 push {0 g 0 G}
+....\pdfdest name{Doc-Start} xyz
+....\pdfdest name{Doc-Start} xyz
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
+.....\glue 0.0 plus 0.5fil
+.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\hbox(0.0+0.0)x0.0, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x7.41315, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.5993+0.0)x7.41315, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(7.5993+0.0)x7.41315, direction TLT
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝐴
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.5117)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.5117)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.5117)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.5117)x7.875, direction TLT
+..........\hbox(14.83725+7.5117)x7.875, direction TLT
+...........\hbox(14.83725+7.5117)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.5117)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfdest name{equation.1} xyz
+...........\pdfdest name{equation.1} xyz
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 1
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.17935+0.0)x8.5191, direction TLT
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 ≡
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 5
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfdest name{equation.2} xyz
+...........\pdfdest name{equation.2} xyz
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 2
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, direction TLT
+.......\hbox(14.83725+7.75261)x51.80621, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x51.80621, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfdest name{equation.3} xyz
+...........\pdfdest name{equation.3} xyz
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 3
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfdest name{equation.4} xyz
+...........\pdfdest name{equation.4} xyz
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 4
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.28589+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.28589+7.5117)x51.80621, glue set 28.09155fil, direction TLT
+.......\hbox(12.28589+7.5117)x23.71466, direction TLT
+........\mathon
+........\hbox(12.28589+7.5117)x23.71466, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.28589+7.5117)x9.11234, direction TLT
+..........\hbox(12.28589+7.5117)x9.11234, direction TLT
+...........\hbox(12.28589+7.5117)x9.11234, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(12.28589+7.5117)x6.71234, direction TLT
+.............\hbox(4.87274+0.12045)x6.71234, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝜋
+.............\kern4.22668 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.0)x6.71234, glue set 0.61867fil, direction TLT
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 4
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfdest name{equation.5} xyz
+...........\pdfdest name{equation.5} xyz
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 5
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x51.80621, glue set 51.80621fil, direction TLT
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x0.00002, direction TLT
+.......\kern-194.85095
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.80023
+.....\hbox(7.71974+0.12045)x448.92128, glue set 354.71844fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\pdfcolorstack 1 pop
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 m
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 o
+......\kern-0.3066 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 r
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\glue 0.0 plus 0.5fil
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 1
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128, direction TLT
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128, direction TLT
+......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+.\kern0.0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
+Completed box being shipped out [2]
+\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil, direction TLT
+..\kern0.0
+..\kern-77.96053
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil, direction TLT
+...\kern0.0
+...\kern-43.81725
+...\kern-1.00374
+...\pdfdest name{page.2} xyz
+...\pdfdest name{page.2} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403, direction TLT
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
+....\hbox(0.0+0.0)x448.92128, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdflinkstate 0
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128, direction TLT
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
+.....\glue 0.0 plus 0.5fil
+.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\hbox(0.0+0.0)x0.0, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x7.41315, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.5993+0.0)x7.41315, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(7.5993+0.0)x7.41315, direction TLT
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝐴
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.5117)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.5117)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.5117)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.5117)x7.875, direction TLT
+..........\hbox(14.83725+7.5117)x7.875, direction TLT
+...........\hbox(14.83725+7.5117)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.5117)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 1
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.17935+0.0)x8.5191, direction TLT
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 ≡
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 5
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 2
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, direction TLT
+.......\hbox(14.83725+7.75261)x51.80621, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x51.80621, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 3
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 4
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.28589+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.28589+7.5117)x51.80621, glue set 28.09155fil, direction TLT
+.......\hbox(12.28589+7.5117)x23.71466, direction TLT
+........\mathon
+........\hbox(12.28589+7.5117)x23.71466, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.28589+7.5117)x9.11234, direction TLT
+..........\hbox(12.28589+7.5117)x9.11234, direction TLT
+...........\hbox(12.28589+7.5117)x9.11234, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(12.28589+7.5117)x6.71234, direction TLT
+.............\hbox(4.87274+0.12045)x6.71234, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝜋
+.............\kern4.22668 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.0)x6.71234, glue set 0.61867fil, direction TLT
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 4
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 5
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x51.80621, glue set 51.80621fil, direction TLT
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x0.00002, direction TLT
+.......\kern-194.85095
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.80023
+.....\hbox(7.71974+0.12045)x448.92128, glue set 354.71844fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\pdfcolorstack 1 pop
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 m
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 o
+......\kern-0.3066 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 r
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\glue 0.0 plus 0.5fil
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 1
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128, direction TLT
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128, direction TLT
+......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
+Completed box being shipped out [3]
+\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil, direction TLT
+..\kern0.0
+..\kern-77.96053
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil, direction TLT
+...\kern0.0
+...\kern-43.81725
+...\kern-1.00374
+...\pdfdest name{page.3} xyz
+...\pdfdest name{page.3} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403, direction TLT
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
+....\hbox(0.0+0.0)x448.92128, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdflinkstate 0
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128, direction TLT
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
+.....\glue 0.0 plus 0.5fil
+.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\hbox(0.0+0.0)x0.0, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x7.41315, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.5993+0.0)x7.41315, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(7.5993+0.0)x7.41315, direction TLT
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝐴
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.5117)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.5117)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.5117)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.5117)x7.875, direction TLT
+..........\hbox(14.83725+7.5117)x7.875, direction TLT
+...........\hbox(14.83725+7.5117)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.5117)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 1
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.17935+0.0)x8.5191, direction TLT
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 ≡
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 5
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 2
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, direction TLT
+.......\hbox(14.83725+7.75261)x51.80621, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x51.80621, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 3
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 4
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.28589+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.28589+7.5117)x51.80621, glue set 28.09155fil, direction TLT
+.......\hbox(12.28589+7.5117)x23.71466, direction TLT
+........\mathon
+........\hbox(12.28589+7.5117)x23.71466, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.28589+7.5117)x9.11234, direction TLT
+..........\hbox(12.28589+7.5117)x9.11234, direction TLT
+...........\hbox(12.28589+7.5117)x9.11234, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(12.28589+7.5117)x6.71234, direction TLT
+.............\hbox(4.87274+0.12045)x6.71234, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝜋
+.............\kern4.22668 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.0)x6.71234, glue set 0.61867fil, direction TLT
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 4
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 5
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x51.80621, glue set 51.80621fil, direction TLT
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x0.00002, direction TLT
+.......\kern-194.85095
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.80023
+.....\hbox(7.71974+0.12045)x448.92128, glue set 354.71844fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\pdfcolorstack 1 pop
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 m
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 o
+......\kern-0.3066 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 r
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\glue 0.0 plus 0.5fil
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 1
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128, direction TLT
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128, direction TLT
+......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
+Completed box being shipped out [4]
+\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil, direction TLT
+..\kern0.0
+..\kern-77.96053
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil, direction TLT
+...\kern0.0
+...\kern-43.81725
+...\kern-1.00374
+...\pdfdest name{page.4} xyz
+...\pdfdest name{page.4} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403, direction TLT
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
+....\hbox(0.0+0.0)x448.92128, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdflinkstate 0
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128, direction TLT
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
+.....\glue 0.0 plus 0.5fil
+.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\hbox(0.0+0.0)x0.0, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x7.41315, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.5993+0.0)x7.41315, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(7.5993+0.0)x7.41315, direction TLT
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝐴
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.5117)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.5117)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.5117)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.5117)x7.875, direction TLT
+..........\hbox(14.83725+7.5117)x7.875, direction TLT
+...........\hbox(14.83725+7.5117)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.5117)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 1
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.17935+0.0)x8.5191, direction TLT
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 ≡
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 5
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 2
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, direction TLT
+.......\hbox(14.83725+7.75261)x51.80621, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x51.80621, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 3
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 4
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.28589+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.28589+7.5117)x51.80621, glue set 28.09155fil, direction TLT
+.......\hbox(12.28589+7.5117)x23.71466, direction TLT
+........\mathon
+........\hbox(12.28589+7.5117)x23.71466, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity0 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.28589+7.5117)x9.11234, direction TLT
+..........\hbox(12.28589+7.5117)x9.11234, direction TLT
+...........\hbox(12.28589+7.5117)x9.11234, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(12.28589+7.5117)x6.71234, direction TLT
+.............\hbox(4.87274+0.12045)x6.71234, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝜋
+.............\kern4.22668 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.0)x6.71234, glue set 0.61867fil, direction TLT
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 4
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 5
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x51.80621, glue set 51.80621fil, direction TLT
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x0.00002, direction TLT
+.......\kern-194.85095
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.80023
+.....\hbox(7.71974+0.12045)x448.92128, glue set 354.71844fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\pdfcolorstack 1 pop
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 m
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 o
+......\kern-0.3066 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 r
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\glue 0.0 plus 0.5fil
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 1
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128, direction TLT
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128, direction TLT
+......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
+Completed box being shipped out [5]
+\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil, direction TLT
+..\kern0.0
+..\kern-77.96053
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil, direction TLT
+...\kern0.0
+...\kern-43.81725
+...\kern-1.00374
+...\pdfdest name{page.5} xyz
+...\pdfdest name{page.5} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403, direction TLT
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
+....\hbox(0.0+0.0)x448.92128, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdflinkstate 0
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128, direction TLT
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
+.....\glue 0.0 plus 0.5fil
+.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\hbox(0.0+0.0)x0.0, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x7.41315, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.5993+0.0)x7.41315, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(7.5993+0.0)x7.41315, direction TLT
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝐴
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.5117)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.5117)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.5117)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.5117)x7.875, direction TLT
+..........\hbox(14.83725+7.5117)x7.875, direction TLT
+...........\hbox(14.83725+7.5117)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.5117)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 1
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.17935+0.0)x8.5191, direction TLT
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 ≡
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 5
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 2
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, direction TLT
+.......\hbox(14.83725+7.75261)x51.80621, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x51.80621, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 3
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 4
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.28589+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.28589+7.5117)x51.80621, glue set 28.09155fil, direction TLT
+.......\hbox(12.28589+7.5117)x23.71466, direction TLT
+........\mathon
+........\hbox(12.28589+7.5117)x23.71466, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.28589+7.5117)x9.11234, direction TLT
+..........\hbox(12.28589+7.5117)x9.11234, direction TLT
+...........\hbox(12.28589+7.5117)x9.11234, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(12.28589+7.5117)x6.71234, direction TLT
+.............\hbox(4.87274+0.12045)x6.71234, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝜋
+.............\kern4.22668 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.0)x6.71234, glue set 0.61867fil, direction TLT
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 4
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 5
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x51.80621, glue set 51.80621fil, direction TLT
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x0.00002, direction TLT
+.......\kern-194.85095
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.80023
+.....\hbox(7.71974+0.12045)x448.92128, glue set 354.71844fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\pdfcolorstack 1 push {/opacity0 gs}
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\pdfcolorstack 1 pop
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 m
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 o
+......\kern-0.3066 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 r
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\glue 0.0 plus 0.5fil
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 1
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128, direction TLT
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128, direction TLT
+......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
+Completed box being shipped out [6]
+\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil, direction TLT
+..\kern0.0
+..\kern-77.96053
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil, direction TLT
+...\kern0.0
+...\kern-43.81725
+...\kern-1.00374
+...\pdfdest name{page.6} xyz
+...\pdfdest name{page.6} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403, direction TLT
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
+....\hbox(0.0+0.0)x448.92128, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdflinkstate 0
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128, direction TLT
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
+.....\glue 0.0 plus 0.5fil
+.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\hbox(0.0+0.0)x0.0, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
+.....\glue -3.0
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x7.41315, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(7.5993+0.0)x7.41315, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(7.5993+0.0)x7.41315, direction TLT
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝐴
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.5117)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.5117)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.5117)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.5117)x7.875, direction TLT
+..........\hbox(14.83725+7.5117)x7.875, direction TLT
+...........\hbox(14.83725+7.5117)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.5117)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 1
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(5.17935+0.0)x8.5191, direction TLT
+..........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+..........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 ≡
+..........\pdfcolorstack 0 pop
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 5
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 2
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, direction TLT
+.......\hbox(14.83725+7.75261)x51.80621, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x51.80621, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 +
+.........\glue(\medmuskip) 2.43329 plus 1.21664 minus 2.43329
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 2
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 3
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(14.83725+7.75261)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(14.83725+7.75261)x51.80621, glue set 29.32889fil, direction TLT
+.......\hbox(14.83725+7.75261)x22.47733, direction TLT
+........\mathon
+........\hbox(14.83725+7.75261)x22.47733, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(14.83725+7.75261)x7.875, direction TLT
+..........\hbox(14.83725+7.75261)x7.875, direction TLT
+...........\hbox(14.83725+7.75261)x7.875, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(14.83725+7.75261)x5.475, direction TLT
+.............\hbox(7.4241+0.0)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 1
+.............\kern4.34714 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.4966 (font)
+.............\hbox(7.4241+0.2409)x5.475, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 3
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+.........\pdfcolorstack 0 pop
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(14.83725+7.75261)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 4
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\glue(\lineskip) 3.0
+.....\hbox(12.28589+7.5117)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(12.28589+7.5117)x51.80621, glue set 28.09155fil, direction TLT
+.......\hbox(12.28589+7.5117)x23.71466, direction TLT
+........\mathon
+........\hbox(12.28589+7.5117)x23.71466, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 push {/opacity1 gs}
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 =
+.........\glue(\thickmuskip) 3.04161 plus 3.04161
+.........\hbox(12.28589+7.5117)x9.11234, direction TLT
+..........\hbox(12.28589+7.5117)x9.11234, direction TLT
+...........\hbox(12.28589+7.5117)x9.11234, direction TLT
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+............\vbox(12.28589+7.5117)x6.71234, direction TLT
+.............\hbox(4.87274+0.12045)x6.71234, direction TLT
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 𝜋
+.............\kern4.22668 (font)
+.............\rule(0.657+0.0)x*
+.............\kern2.7375 (font)
+.............\hbox(7.1832+0.0)x6.71234, glue set 0.61867fil, direction TLT
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+..............\TU/NewCMSansMath-Regular.otf(1)/m/n/10.95 4
+..............\glue 0.0 plus 1.0fil minus 1.0fil
+............\hbox(0.0+0.0)x1.2, shifted -2.7375, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(12.28589+7.5117)x0.00002, direction TLT
+.......\kern-194.85095
+.......\kern194.85097
+.......\hbox(9.51996+4.08003)x0.0, glue set - 13.99411fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\hbox(9.51996+4.08003)x13.99411, direction TLT
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\vbox(9.51996+4.08003)x0.0, direction TLT
+...........\kern0.0
+...........\hbox(9.51996+4.08003)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(9.51996+4.08003)x0.0
+.........\penalty 10000
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\hbox(0.0+0.0)x0.0, shifted -16.6, direction TLT
+...........\penalty 10000
+.........\hbox(8.2125+2.7375)x13.99411, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 (
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 5
+..........\kern0.0 (italic)
+..........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 )
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue -16.6
+.....\glue(\lineskip) 3.0
+.....\hbox(9.51996+4.08003)x448.92128, direction TLT
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x7.41315, glue set 7.41315fil, direction TLT
+.......\glue 0.0 plus 1.0fil
+.......\hbox(9.51996+4.08003)x0.0, direction TLT
+........\vbox(9.51996+4.08003)x0.0, direction TLT
+.........\kern0.0
+.........\hbox(9.51996+4.08003)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\rule(9.51996+4.08003)x0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\pdfcolorstack 1 pop
+........\mathoff
+......\glue(\tabskip) 0.0
+......\hbox(9.51996+4.08003)x51.80621, glue set 51.80621fil, direction TLT
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\mathon
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, direction TLT
+........\mathoff
+.......\glue 0.0 plus 1.0fil
+......\glue(\tabskip) 194.85095
+......\hbox(9.51996+4.08003)x0.00002, direction TLT
+.......\kern-194.85095
+......\glue(\tabskip) 0.0
+.....\penalty 10000
+.....\glue 0.0
+.....\penalty 10000
+.....\glue(\belowdisplayskip) -11.0 plus -3.0 minus -6.0
+.....\penalty 10000
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\penalty 0
+.....\glue 11.0 plus 3.0 minus 6.0
+.....\glue 0.0 plus -1.0
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.80023
+.....\hbox(7.71974+0.12045)x448.92128, glue set 354.71844fil, direction TLT
+......\localpar
+.......\localinterlinepenalty=0
+.......\localbrokenpenalty=0
+.......\localleftbox=null
+.......\localrightbox=null
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 T
+......\kern-0.90884 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\pdfcolorstack 1 push {/opacity1 gs}
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\pdfcolorstack 1 pop
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 m
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 o
+......\kern-0.3066 (font)
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 r
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
+......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
+......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 ﬀ
+......\penalty 10000
+......\glue(\parfillskip) 0.0
+......\glue(\rightskip) 0.0 plus 1.0fil
+.....\glue 0.0 plus 0.5fil
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 1
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128, direction TLT
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128, direction TLT
+......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+.\kern0.0
+.\kern-655.4883
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\kern655.4883
+.\pdfliteral page <lua data reference ...>
+(ltx-talk-amsmath.aux)
+MathML statistic
+================
+==> 1 MathML fragments read
+==> 1 different MathML fragments
+==> 1 math fragments found
+==> 1 fitting MathML AF found
+==> 1 MathML AF attached

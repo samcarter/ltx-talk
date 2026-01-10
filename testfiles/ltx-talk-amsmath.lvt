@@ -1,0 +1,25 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}
+    Text
+    \begin{align}
+        A
+        &\visible<+->{= \frac{1}{2}\\}
+        &\visible<+->{\mathrel{\textcolor{red}{\equiv}} \frac{2}{5}\\}
+        &\visible<+->{= \textcolor{red}{\frac{1}{3}}+123\\}
+        &\visible<+->{= \mathcolor{red}{\frac{1}{3}}\\}
+        &\visible<+->{= \frac{\pi}{4}\\[-\baselineskip]\notag}
+    \end{align}
+    Text \visible<+->{stuff} more stuff
+\end{frame}
+
+\end{document}

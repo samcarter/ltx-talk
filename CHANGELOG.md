@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Overlay tracking in `amsmath` environments (see issue
+  [\#137](https://github.com/josephwright/ltx-talk/issues/137))
+
 ## [v0.3.7] - 2026-01-09
 
 ### Fixed

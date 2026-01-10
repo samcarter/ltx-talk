@@ -3371,10 +3371,4 @@ Completed box being shipped out [6]
 .\hbox(0.0+0.0)x0.0
 .\kern 655.4883
 (ltx-talk-amsmath.aux)
-MathML statistic
-================
-==> 1 MathML fragments read
-==> 1 different MathML fragments
-==> 1 math fragments found
-==> 1 fitting MathML AF found
-==> 1 MathML AF attached
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.

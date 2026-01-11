@@ -411,10 +411,13 @@
 %    \begin{macrocode}
 \NewDocumentCommand \pause { o }
   {
-    \IfNoValueTF {#1}
-      { \int_gincr:N \g_@@_pauses_int }
-      { \int_gset:Nn \g_@@_pauses_int {#1} }
-    \exp_args:Ne \@@_onslide:n { \int_eval:n { \g_@@_pauses_int + 1 } - }
+    \legacy_if:nF { measuring@ }
+      {
+        \IfNoValueTF {#1}
+          { \int_gincr:N \g_@@_pauses_int }
+          { \int_gset:Nn \g_@@_pauses_int {#1} }
+        \exp_args:Ne \@@_onslide:n { \int_eval:n { \g_@@_pauses_int + 1 } - }
+      }
   }
 %    \end{macrocode}
 % \end{macro}

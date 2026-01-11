@@ -8,6 +8,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Switch to `lua-unicode-math` with LuaTeX
+
 ### Fixed
 
 - Overlay tracking in `amsmath` environments (see issue

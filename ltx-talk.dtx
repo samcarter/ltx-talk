@@ -358,21 +358,26 @@
 %
 % The aim here is to minimize change from the standard font setup but at the
 % same time provide a sans-serif default. Since \cls{beamer} was released,
-% better sans-serif math mode fonts have become available. For OpenType engines,
-% requiring \pkg{unicode-math} is the most sensible approach; we also load
-% \pkg{mathtools} as that has to be before \pkg{unicode-math}. The New Computer
-% Modern font provides a reasonable initial set of glyphs. It comes with a
-% wrapper package, but that does various other things: if the user wants these,
-% they can choose to load themselves. For 8-bit engines, switching the text
-% font to be sans-serif is easy. For math mode, the \pkg{sansmathfonts} package
-% does a good job: here, using the package rather than  adjusting directly is
-% the sensible option.
+% better sans-serif math mode fonts have become available. For OpenType
+% engines,requiring \pkg{(lua-)unicode-math} is the most sensible approach; we
+% also load \pkg{mathtools} as that has to be before \pkg{unicode-math}. The
+% New Computer Modern font provides a reasonable initial set of glyphs. It
+% comes with a wrapper package, but that does various other things: if the user
+% wants these, they can choose to load themselves. For 8-bit engines, switching
+% the text font to be sans-serif is easy. For math mode, the
+% \pkg{sansmathfonts} package does a good job: here, using the package rather
+% than  adjusting directly is the sensible option.
 %    \begin{macrocode}
 \sys_if_engine_opentype:TF
   {
     \RequirePackage { fontspec }
     \RequirePackage { mathtools }
-    \RequirePackage { unicode-math }
+    \sys_if_engine_luatex:TF
+      {
+        \RequirePackage { lua-unicode-math }
+        \tagpdfsetup { math / mathml / luamml = true }
+      }
+      { \RequirePackage { unicode-math } }
     \setmainfont { NewCMSans10-Regular.otf }
     \setsansfont { NewCMSans10-Regular.otf }
     \setmathfont { NewCMSansMath-Regular.otf }

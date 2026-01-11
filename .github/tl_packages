@@ -28,10 +28,11 @@ hypdoc
 hyperref
 iftex
 infwarerr
+kvoptions
 latex-lab
+lua-unicode-math
 lualatex-math
 luamml
-kvoptions
 mathtools
 mwe
 newcomputermodern
@@ -44,7 +45,6 @@ siunitx
 tagpdf
 tools
 underscore
-unicode-math
 xcolor
 # Indexing (needed to compile docs)
 makeindex

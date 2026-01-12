@@ -10,6 +10,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Changed
 
+- Enable tagging of documentation
 - Switch to `lua-unicode-math` with LuaTeX
 
 ### Fixed

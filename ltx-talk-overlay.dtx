@@ -368,7 +368,10 @@
 %   for example in tabular cells.
 %    \begin{macrocode}
 \NewDocumentCommand \onslide { D <> { all } }
-  { \@@_onslide:n {#1} }
+  {
+    \@@_onslide:n {#1}
+    \ignorespaces
+  }
 \cs_new_protected:Npn \@@_onslide:n #1
   {
     \tl_use:N \g_@@_onslide_tl

@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Spacing after `\onslide` (see issue
+  [\#138](https://github.com/josephwright/ltx-talk/issues/138))
+
 ## [v0.3.8] - 2026-01-12
 
 ### Changed

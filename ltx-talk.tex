@@ -1257,6 +1257,24 @@ Tagging can be enabled using the standard \LaTeX{} interface
 \end{verbatim}
 as the first line of the source.
 
+\subsection{Current tagging approach}
+
+Whilst some aspects of tagging are straight-forward, there are specific
+challenges in tagging presentations that mean that some parts of the approach
+are experimental. In particular, the relationship between frame titles and
+sectioning is still very much open. At present, frame titles are tagged as
+sections at the level \texttt{H4}, \foreign{i.e.}, deliberately well below
+sections and subsections. This may lead to warning from some accessibility
+checkers.
+
+Feedback here is needed form users of assistive technology tools, to allow
+adjustment to the standard tagging to best aid them. It is likely that in the
+future, a richer range of options will be provided in this area. At present, if
+you want to adjust the tagging you could use for example
+\begin{verbatim}
+  \tagpdfsetup{role / new-tag = frametitle / H1}
+\end{verbatim}
+
 \subsection{Controlling tagging}
 
 \DescribeOption{tag-slides}

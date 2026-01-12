@@ -1005,10 +1005,4 @@ Completed box being shipped out [4]
 .\hbox(0.0+0.0)x0.0
 .\kern 655.4883
 (ltx-talk-tabular.aux)
-MathML statistic
-================
-==> 0 MathML fragments read
-==> 0 different MathML fragments
-==> 0 math fragments found
-==> 0 fitting MathML AF found
-==> 0 MathML AF attached
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.

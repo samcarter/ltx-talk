@@ -418,13 +418,10 @@
           { \@@_decode_check_range:nnn {#1} {#2} {#3} }
       }
   }
-\cs_set_protected:Npn \@@_decode_check_single:nn #1#2
+\cs_new_protected:Npn \@@_decode_check_single:nn #1#2
   {
     \int_compare:nNnTF \g_@@_slide_int = {#2}
-      {
-        \bool_set_true:c { l_@@_decode_ #1 _bool }
-        \clist_map_break:
-      }
+      { \bool_set_true:c { l_@@_decode_ #1 _bool } }
       {
         \int_compare:nNnT {#2} > \g_@@_slide_int
           { \bool_gset_true:N \g_@@_slide_continue_bool }

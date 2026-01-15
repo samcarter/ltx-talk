@@ -30,6 +30,20 @@
     \test:nnTF { 2 } { 1,3 } \ERROR \FALSE
     \test:nnTF { 3 } { 1,3 } \TRUE \ERROR
     \test:nnTF { 4 } { 1,3 } \ERROR \FALSE
+    \prg_set_protected_conditional:Npnn \test:nn #1#2 { TF }
+      {
+        \int_gset:Nn \g__talk_slide_int {#1}
+        \__talk_decode_parse:n {#2}
+        \bool_if:NTF \g__talk_slide_continue_bool
+          \prg_return_true:
+          \prg_return_false:
+      }
+    \test:nnTF { 1 } { 1-3 } \TRUE \ERROR
+    \test:nnTF { 2 } { 1-3 } \TRUE \ERROR
+    \test:nnTF { 3 } { 1-3 } \FALSE \ERROR
+    \test:nnTF { 1 } { 1,3 } \TRUE \ERROR
+    \test:nnTF { 2 } { 1,3 } \TRUE \ERROR
+    \test:nnTF { 3 } { 1,3 } \FALSE \ERROR
   }
 
 \TEST { Relative~overlay~specs }

@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Handling of comma-separated overlay specs (see issue
+  [\#145](https://github.com/josephwright/ltx-talk/issues/145))
+
 ## [v0.3.9] - 2026-01-15
 
 ### Fixed

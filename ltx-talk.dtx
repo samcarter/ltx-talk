@@ -102,6 +102,21 @@
 \NeedsDocumentMetadata
 %    \end{macrocode}
 %
+% Warn if not an engine that is tested.
+%    \begin{macrocode}
+\bool_lazy_or:nnF
+  { \sys_if_engine_luatex_p: }
+  { \sys_if_engine_pdftex_p: }
+  {
+    \msg_new:nnn { ltx-talk } { unsupported-engine }
+      {
+        The~engine~"\c_sys_engine_str"~
+        is~not~supported~by~the~ltx-talk~class.
+      }
+    \msg_warning:nn { ltx-talk } { unsupported-engine }
+  }
+%    \end{macrocode}
+%
 % \subsection{Additions for \pkg{expl3}}
 %
 % Like \cs{vcoffin_set:Nnn}, so should be an easy enough addition.

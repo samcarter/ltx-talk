@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.3.10] - 2026-01-16
+
 ### Changed
 
 - Avoid adding redundant opacity where block environments have no overlays
@@ -228,7 +230,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.3.9...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.3.10...HEAD
+[v0.3.10]: https://github.com/josephwright/ltx-talk/compare/v0.3.9...v0.3.10
 [v0.3.9]: https://github.com/josephwright/ltx-talk/compare/v0.3.8...v0.3.9
 [v0.3.8]: https://github.com/josephwright/ltx-talk/compare/v0.3.7...v0.3.8
 [v0.3.7]: https://github.com/josephwright/ltx-talk/compare/v0.3.6...v0.3.7

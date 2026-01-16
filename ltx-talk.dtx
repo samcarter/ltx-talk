@@ -142,27 +142,10 @@
 % Some extensions are needed to opacity support: this should only be here for a
 % short period.
 %    \begin{macrocode}
-\cs_if_exist:NF \g__opacity_current_seq
-  {
-    \seq_new:N \g__opacity_current_seq
-    \seq_gpush:Nn \g__opacity_current_seq { 1 }
-  }
 \cs_gset_protected:Npn \opacity_begin:n #1
-  {
-    \seq_gpush:Nn \g__opacity_current_seq {#1}
-    \__opacity_select:nN {#1} \__opacity_backend_begin:n
-  }
+  { \__opacity_select:nN {#1} \__opacity_backend_begin:n }
 \cs_gset_protected:Npn \opacity_end:
-  {
-    \__opacity_backend_end:
-    \seq_gpop:NN \g__opacity_current_seq \l__opacity_tmp_tl
-  }
-\cs_gset_protected:Npn \opacity_ensure_begin:
-  {
-    \seq_get:NN \g__opacity_current_seq \l__opacity_tmp_tl
-    \exp_args:NV \opacity_begin:n \l__opacity_tmp_tl
-  }
-\cs_gset_eq:NN \opacity_ensure_end: \opacity_end:
+  { \__opacity_backend_end: }
 \AddToHook { begindocument }
   {
     \cs_gset_protected:Npe \__opacity_backend_begin:n #1

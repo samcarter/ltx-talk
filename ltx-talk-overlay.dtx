@@ -100,21 +100,62 @@
 % \end{macro}
 % \end{macro}
 %
+% \subsection{Opacity utilities}
+%
+% Currently, opacity is applies using whatsits at a low level. That means
+% that to preserve spacing, we need to insert no-op versions in various
+% places. To do that and get correct overlays, we need to track the current
+% opacity. At present, this seems very \cls{ltx-talk}-specific, so
+% is handled here with a few auxiliaries.
+%
+% \begin{variable}{\g_@@_opacity_seq}
+%   For tracking.
+%    \begin{macrocode}
+\seq_new:N \g_@@_opacity_seq
+\seq_gpush:Nn \g_@@_opacity_seq { 1 }
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\@@_opacity_begin:n, \@@_opacity_end:}
+%   Simply tracking wrappers.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_opacity_begin:n #1
+  {
+    \seq_gpush:Nn \g_@@_opacity_seq {#1}
+    \opacity_begin:n {#1}
+  }
+\cs_new_protected:Npn \@@_opacity_end:
+  {
+    \opacity_end:
+    \seq_gpop:NN \g_@@_opacity_seq \l_@@_tmp_tl
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_opacity_reapply:}
+%   Simply tracking wrappers.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_opacity_reapply:
+  {
+    \seq_get:NN \g_@@_opacity_seq \l_@@_tmp_tl
+    \exp_args:NV \@@_opacity_begin:n \l_@@_tmp_tl
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 % \subsection{Action commands and environments}
 %
 % Commands that can be used as actions all have a common form (with one
 % exception). The common internal structure is used to enable them to be used
 % as actions by looking for the name \cs[no-index]{@@_action_\meta{name}:N}.
-% This is set up such that the inactive versions insert a whatsit equal to that
-% which would be present if they were active: that's needed for spacing.
 %
 % \begin{macro}{\@@_action_:N, \@@_action__end:N}
 %   The fallback action. This is needed for two reasons. First, it ensures that
 %   spacing is correct in terms of whatsits. Second, it deals with the need to
 %   keep opacity in-track in things like lists.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_action_:N #1 { \opacity_ensure_begin: }
-\cs_new_protected:Npn \@@_action__end:N #1 { \opacity_ensure_end: }
+\cs_new_protected:Npn \@@_action_:N #1 { \@@_opacity_reapply: }
+\cs_new_protected:Npn \@@_action__end:N #1 { \@@_opacity_end: }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -142,19 +183,19 @@
 \cs_new_protected:Npn \@@_action_invisible:N #1
   {
     \bool_if:NTF #1
-      { \opacity_begin:n { 0 } }
-      { \opacity_begin:n { 1 } }
+      { \@@_opacity_begin:n { 0 } }
+      { \@@_opacity_begin:n { 1 } }
   }
 \cs_new_protected:Npn \@@_action_invisible_end:N #1
-  { \opacity_end: }
+  { \@@_opacity_end: }
 \cs_new_protected:Npn \@@_action_visible:N #1
   {
     \bool_if:NTF #1
-      { \opacity_begin:n { 1 } }
-      { \opacity_begin:n { 0 } }
+      { \@@_opacity_begin:n { 1 } }
+      { \@@_opacity_begin:n { 0 } }
   }
 \cs_new_protected:Npn \@@_action_visible_end:N #1
-  { \opacity_end: }
+  { \@@_opacity_end: }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -183,7 +224,7 @@
   { opacity : real = 0 }
 \DeclareTemplateCode { hidden } { talk } { 0 }
   { opacity = \l_@@_uncover_hidden_fp }
-  { \opacity_begin:n { \l_@@_uncover_hidden_fp } }
+  { \@@_opacity_begin:n { \l_@@_uncover_hidden_fp } }
 \DeclareInstance { hidden } { std } { talk } { }
 %    \end{macrocode}
 % \end{variable}
@@ -194,11 +235,11 @@
 \cs_new_protected:Npn \@@_action_uncover:N #1
   {
     \bool_if:NTF #1
-      { \opacity_begin:n { 1 } }
+      { \@@_opacity_begin:n { 1 } }
       { \UseInstance { hidden } { std } }
   }
 \cs_new_protected:Npn \@@_action_uncover_end:N #1
-  { \opacity_end: }
+  { \@@_opacity_end: }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -336,7 +377,7 @@
             { \use_none:n }
               \l_@@_saved_actions_bool
         }
-        { \opacity_end: }
+        { \@@_opacity_end: }
     \group_end:
   }
 %    \end{macrocode}
@@ -378,9 +419,9 @@
     \tl_gclear:N \g_@@_onslide_tl
     \@@_if_overlay:nF {#1}
       {
-        \opacity_begin:n { 0 }
+        \@@_opacity_begin:n { 0 }
         \tl_gput_right:Nn \g_@@_onslide_tl
-          { \opacity_end: }
+          { \@@_opacity_end: }
       }
   }
 %    \end{macrocode}

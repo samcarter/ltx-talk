@@ -113,13 +113,11 @@ Completed box being shipped out [1]
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ...........\penalty 0
 ..........\mathoff
+..........\pdfcolorstack 1 pop
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\penalty 150
 .........\glue(\baselineskip) 13.17842
 .........\hbox(0.0+0.0)x179.56577, glue set 179.56577fil
-..........\pdfcolorstack 1 pop
-..........\penalty 10000
-..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 ......\glue 0.0 plus 1.0fil
 .....\pdfliteral page{EMC}
@@ -274,6 +272,7 @@ Completed box being shipped out [2]
 ..........\mathoff
 ..........\write1{\new@label@record{mcid-7}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{7}{tagmcid}{\__property_code_tagmcid: }}}
 ..........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+..........\pdfcolorstack 1 pop
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\marks4{e-,5,9,}
 .........\marks4{e+,5,9,}
@@ -282,7 +281,6 @@ Completed box being shipped out [2]
 .........\penalty 150
 .........\glue(\baselineskip) 13.17842
 .........\hbox(0.0+0.0)x179.56577, glue set 179.56577fil
-..........\pdfcolorstack 1 pop
 ..........\pdfliteral page{EMC}
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0

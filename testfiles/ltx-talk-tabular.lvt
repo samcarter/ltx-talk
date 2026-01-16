@@ -22,4 +22,17 @@
   Text \visible<+->{content} more
 \end{frame}
 
+\begin{frame}
+  Text
+
+  \begin{tabular}{@{} l @{}}
+    \hline
+    AAAAAA \\
+    \onslide<2-> BBBBBB \onslide<1->\\
+    \hline
+  \end{tabular}
+
+  Text
+\end{frame}
+
 \end{document}

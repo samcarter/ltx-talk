@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Avoid unreliable tabular width if last cell contains `\onslide` (see issue
+  [\#148](https://github.com/josephwright/ltx-talk/issues/148))
+
 ## [v0.3.10] - 2026-01-16
 
 ### Changed

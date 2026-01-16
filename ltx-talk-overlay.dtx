@@ -100,6 +100,41 @@
 % \end{macro}
 % \end{macro}
 %
+% \begin{variable}{\l_@@_shuffle_skip}
+%   For tracking.
+%    \begin{macrocode}
+\skip_new:N \l_@@_shuffle_skip
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\@@_shuffle_skip:n}
+%   As opacity uses whatsits at present, we need to make sure that any spaces
+%   come \emph{after} them. This is done by \enquote{shuffling} the last skip
+%   past the opacity.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_shuffle_skip:n #1
+  {
+    \skip_set_eq:NN \l_@@_shuffle_skip \tex_lastskip:D
+    \bool_lazy_and:nnTF
+      { ! \skip_if_eq_p:nn \l_@@_shuffle_skip { 0pt } }
+      {
+        \bool_lazy_or_p:nn
+          { \mode_if_horizontal_p: }
+          { \mode_if_vertical_p: }
+      }
+      {
+        \tex_unskip:D
+        #1
+        \mode_if_horizontal:TF
+          { \skip_horizontal:n }
+          { \skip_vertical:n }
+            \l_@@_shuffle_skip
+      }
+      {#1}
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 % \subsection{Opacity utilities}
 %
 % Currently, opacity is applies using whatsits at a low level. That means
@@ -122,11 +157,11 @@
 \cs_new_protected:Npn \@@_opacity_begin:n #1
   {
     \seq_gpush:Nn \g_@@_opacity_seq {#1}
-    \opacity_begin:n {#1}
+    \@@_shuffle_skip:n { \opacity_begin:n {#1} }
   }
 \cs_new_protected:Npn \@@_opacity_end:
   {
-    \opacity_end:
+    \@@_shuffle_skip:n { \opacity_end: }
     \seq_gpop:NN \g_@@_opacity_seq \l_@@_tmp_tl
   }
 %    \end{macrocode}

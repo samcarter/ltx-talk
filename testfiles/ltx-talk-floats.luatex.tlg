@@ -125,13 +125,11 @@ Completed box being shipped out [1]
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ...........\penalty 0
 ..........\mathoff
+..........\pdfcolorstack 1 pop
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\penalty 150
 .........\glue(\baselineskip) 13.15106
 .........\hbox(0.0+0.0)x179.56577, glue set 179.56577fil, direction TLT
-..........\pdfcolorstack 1 pop
-..........\penalty 10000
-..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 ......\glue 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
@@ -287,15 +285,13 @@ Completed box being shipped out [2]
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\mathoff
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfcolorstack 1 pop
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\penalty 150
 .........\glue(\baselineskip) 13.15106
 .........\hbox(0.0+0.0)x179.56577, glue set 179.56577fil, direction TLT
-..........\pdfliteral page <lua data reference ...>
-..........\pdfliteral page <lua data reference ...>
-..........\pdfcolorstack 1 pop
-..........\penalty 10000
-..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 ......\glue 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil

@@ -438,7 +438,6 @@ Completed box being shipped out [2]
 ......\T1/lmss/m/n/10.95 u
 ......\T1/lmss/m/n/10.95 s
 ......\T1/lmss/m/n/10.95 e
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -488,7 +487,6 @@ Completed box being shipped out [2]
 ......\T1/lmss/m/n/10.95 z
 ......\T1/lmss/m/n/10.95 e
 ......\glue 3.65 plus 1.825 minus 1.21666
-......\pdfcolorstack 1 pop
 ......\pdfcolorstack 1 push {/opacity0 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
@@ -764,7 +762,6 @@ Completed box being shipped out [3]
 ......\T1/lmss/m/n/10.95 u
 ......\T1/lmss/m/n/10.95 s
 ......\T1/lmss/m/n/10.95 e
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -773,7 +770,7 @@ Completed box being shipped out [3]
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 3.86665
-.....\hbox(7.60422+0.0)x427.14552, glue set 159.56052fil, shifted 21.77576
+.....\hbox(7.60422+0.0)x427.14552, glue set 161.38551fil, shifted 21.77576
 ......\hbox(4.39641+0.0)x0.0
 .......\glue -21.77576
 .......\hbox(4.39641+0.0)x16.33182, glue set 7.81493fil
@@ -813,9 +810,6 @@ Completed box being shipped out [3]
 ......\T1/lmss/m/n/10.95 i
 ......\T1/lmss/m/n/10.95 z
 ......\T1/lmss/m/n/10.95 e
-......\glue 3.65 plus 1.825 minus 1.21666
-......\pdfcolorstack 1 pop
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -865,7 +859,6 @@ Completed box being shipped out [3]
 ......\T1/lmss/m/n/10.95 z
 ......\T1/lmss/m/n/10.95 e
 ......\glue 3.65 plus 1.825 minus 1.21666
-......\pdfcolorstack 1 pop
 ......\pdfcolorstack 1 push {/opacity0 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1090,7 +1083,6 @@ Completed box being shipped out [4]
 ......\T1/lmss/m/n/10.95 u
 ......\T1/lmss/m/n/10.95 s
 ......\T1/lmss/m/n/10.95 e
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -1099,7 +1091,7 @@ Completed box being shipped out [4]
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 3.86665
-.....\hbox(7.60422+0.0)x427.14552, glue set 159.56052fil, shifted 21.77576
+.....\hbox(7.60422+0.0)x427.14552, glue set 161.38551fil, shifted 21.77576
 ......\hbox(4.39641+0.0)x0.0
 .......\glue -21.77576
 .......\hbox(4.39641+0.0)x16.33182, glue set 7.81493fil
@@ -1139,9 +1131,6 @@ Completed box being shipped out [4]
 ......\T1/lmss/m/n/10.95 i
 ......\T1/lmss/m/n/10.95 z
 ......\T1/lmss/m/n/10.95 e
-......\glue 3.65 plus 1.825 minus 1.21666
-......\pdfcolorstack 1 pop
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -1150,7 +1139,7 @@ Completed box being shipped out [4]
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 5.99579
-.....\hbox(7.60422+0.0)x427.14552, glue set 159.56052fil, shifted 21.77576
+.....\hbox(7.60422+0.0)x427.14552, glue set 161.38551fil, shifted 21.77576
 ......\hbox(4.39641+0.0)x0.0
 .......\glue -21.77576
 .......\hbox(4.39641+0.0)x16.33182, glue set 7.81493fil
@@ -1190,9 +1179,6 @@ Completed box being shipped out [4]
 ......\T1/lmss/m/n/10.95 i
 ......\T1/lmss/m/n/10.95 z
 ......\T1/lmss/m/n/10.95 e
-......\glue 3.65 plus 1.825 minus 1.21666
-......\pdfcolorstack 1 pop
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -1246,7 +1232,6 @@ Completed box being shipped out [4]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 0
 .....\glue 3.0 plus 2.0 minus 2.5
-.....\pdfcolorstack 1 pop
 .....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -1413,7 +1398,6 @@ Completed box being shipped out [5]
 ......\T1/lmss/m/n/10.95 u
 ......\T1/lmss/m/n/10.95 s
 ......\T1/lmss/m/n/10.95 e
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\pdfliteral page{EMC}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
@@ -1427,7 +1411,7 @@ Completed box being shipped out [5]
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 3.86665
-.....\hbox(7.60422+0.0)x427.14552, glue set 159.56052fil, shifted 21.77576
+.....\hbox(7.60422+0.0)x427.14552, glue set 161.38551fil, shifted 21.77576
 ......\hbox(4.39641+0.0)x0.0
 .......\glue -21.77576
 .......\hbox(4.39641+0.0)x16.33182, glue set 7.81493fil
@@ -1476,9 +1460,6 @@ Completed box being shipped out [5]
 ......\T1/lmss/m/n/10.95 i
 ......\T1/lmss/m/n/10.95 z
 ......\T1/lmss/m/n/10.95 e
-......\glue 3.65 plus 1.825 minus 1.21666
-......\pdfcolorstack 1 pop
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\pdfliteral page{EMC}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1492,7 +1473,7 @@ Completed box being shipped out [5]
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 5.99579
-.....\hbox(7.60422+0.0)x427.14552, glue set 159.56052fil, shifted 21.77576
+.....\hbox(7.60422+0.0)x427.14552, glue set 161.38551fil, shifted 21.77576
 ......\hbox(4.39641+0.0)x0.0
 .......\glue -21.77576
 .......\hbox(4.39641+0.0)x16.33182, glue set 7.81493fil
@@ -1541,9 +1522,6 @@ Completed box being shipped out [5]
 ......\T1/lmss/m/n/10.95 i
 ......\T1/lmss/m/n/10.95 z
 ......\T1/lmss/m/n/10.95 e
-......\glue 3.65 plus 1.825 minus 1.21666
-......\pdfcolorstack 1 pop
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\pdfliteral page{EMC}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1616,8 +1594,6 @@ Completed box being shipped out [5]
 .....\marks4{e+,19,23,}
 .....\penalty 0
 .....\glue 3.0 plus 2.0 minus 2.5
-.....\pdfcolorstack 1 pop
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 5.99579
@@ -1647,7 +1623,6 @@ Completed box being shipped out [5]
 ......\T1/lmss/m/n/10.95 i
 ......\T1/lmss/m/n/10.95 z
 ......\T1/lmss/m/n/10.95 e
-......\pdfcolorstack 1 pop
 ......\pdfliteral page{EMC}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0

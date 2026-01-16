@@ -512,7 +512,6 @@ Completed box being shipped out [2]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -575,7 +574,6 @@ Completed box being shipped out [2]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
-......\pdfcolorstack 1 pop
 ......\pdfcolorstack 1 push {/opacity0 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
@@ -902,7 +900,6 @@ Completed box being shipped out [3]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -911,7 +908,7 @@ Completed box being shipped out [3]
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 3.63551
-.....\hbox(7.8402+0.2409)x427.02129, glue set 159.51074fil, shifted 21.9, direction TLT
+.....\hbox(7.8402+0.2409)x427.02129, glue set 161.33392fil, shifted 21.9, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -963,10 +960,6 @@ Completed box being shipped out [3]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 i
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 z
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
-......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
-......\pdfcolorstack 1 pop
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -1029,7 +1022,6 @@ Completed box being shipped out [3]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
-......\pdfcolorstack 1 pop
 ......\pdfcolorstack 1 push {/opacity0 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1292,7 +1284,6 @@ Completed box being shipped out [4]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -1301,7 +1292,7 @@ Completed box being shipped out [4]
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 3.63551
-.....\hbox(7.8402+0.2409)x427.02129, glue set 159.51074fil, shifted 21.9, direction TLT
+.....\hbox(7.8402+0.2409)x427.02129, glue set 161.33392fil, shifted 21.9, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -1353,10 +1344,6 @@ Completed box being shipped out [4]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 i
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 z
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
-......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
-......\pdfcolorstack 1 pop
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -1365,7 +1352,7 @@ Completed box being shipped out [4]
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 5.5189
-.....\hbox(7.8402+0.2409)x427.02129, glue set 159.51074fil, shifted 21.9, direction TLT
+.....\hbox(7.8402+0.2409)x427.02129, glue set 161.33392fil, shifted 21.9, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -1417,10 +1404,6 @@ Completed box being shipped out [4]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 i
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 z
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
-......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
-......\pdfcolorstack 1 pop
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -1486,7 +1469,6 @@ Completed box being shipped out [4]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 0
 .....\glue 3.0 plus 2.0 minus 2.5
-.....\pdfcolorstack 1 pop
 .....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -1682,7 +1664,6 @@ Completed box being shipped out [5]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 u
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -1691,7 +1672,7 @@ Completed box being shipped out [5]
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 3.63551
-.....\hbox(7.8402+0.2409)x427.02129, glue set 159.51074fil, shifted 21.9, direction TLT
+.....\hbox(7.8402+0.2409)x427.02129, glue set 161.33392fil, shifted 21.9, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -1749,10 +1730,6 @@ Completed box being shipped out [5]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 i
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 z
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
-......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
-......\pdfcolorstack 1 pop
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -1761,7 +1738,7 @@ Completed box being shipped out [5]
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 5.5189
-.....\hbox(7.8402+0.2409)x427.02129, glue set 159.51074fil, shifted 21.9, direction TLT
+.....\hbox(7.8402+0.2409)x427.02129, glue set 161.33392fil, shifted 21.9, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -1819,10 +1796,6 @@ Completed box being shipped out [5]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 i
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 z
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
-......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
-......\pdfcolorstack 1 pop
-......\pdfcolorstack 1 push {/opacity1 gs}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -1894,10 +1867,6 @@ Completed box being shipped out [5]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 0
 .....\glue 3.0 plus 2.0 minus 2.5
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 1 pop
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 5.5189
@@ -1940,7 +1909,6 @@ Completed box being shipped out [5]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 i
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 z
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
-......\pdfcolorstack 1 pop
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil

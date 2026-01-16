@@ -437,12 +437,11 @@
   {
     \tl_use:N \g_@@_onslide_tl
     \tl_gclear:N \g_@@_onslide_tl
-    \@@_if_overlay:nF {#1}
-      {
-        \@@_opacity_begin:n { 0 }
-        \tl_gput_right:Nn \g_@@_onslide_tl
-          { \@@_opacity_end: }
-      }
+    \@@_if_overlay:nTF {#1}
+      { \@@_opacity_reapply: }
+      { \@@_opacity_begin:n { 0 } }
+    \tl_gput_right:Nn \g_@@_onslide_tl
+      { \@@_opacity_end: }
   }
 %    \end{macrocode}
 % \end{macro}

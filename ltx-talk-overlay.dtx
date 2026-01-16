@@ -113,8 +113,8 @@
 %   spacing is correct in terms of whatsits. Second, it deals with the need to
 %   keep opacity in-track in things like lists.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_action_:N #1 { \opacity_begin:n { 1 } }
-\cs_new_protected:Npn \@@_action__end:N #1 { \opacity_end: }
+\cs_new_protected:Npn \@@_action_:N #1 { \opacity_ensure_begin: }
+\cs_new_protected:Npn \@@_action__end:N #1 { \opacity_ensure_end: }
 %    \end{macrocode}
 % \end{macro}
 %

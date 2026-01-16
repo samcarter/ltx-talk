@@ -109,7 +109,6 @@ Completed box being shipped out [1]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 12.0 plus 4.0 minus 4.0
 .....\glue 0.0
-.....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue(\lineskip) 0.0
 .....\vbox(33.93341+0.0)x448.92128
 ......\glue 6.0 plus 2.0 minus 2.0
@@ -163,7 +162,6 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0
 .......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\pdfliteral page{EMC}
 .....\marks4{e-,1,2,}
 .....\marks4{e+,1,2,}
@@ -315,7 +313,6 @@ Completed box being shipped out [2]
 .....\glue 0.0
 .....\marks4{e-,4,7,}
 .....\marks4{e+,4,7,}
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue(\lineskip) 0.0
 .....\vbox(33.93341+0.0)x448.92128
 ......\glue 6.0 plus 2.0 minus 2.0
@@ -383,7 +380,6 @@ Completed box being shipped out [2]
 ......\marks4{b+,6,11,text,,,}
 ......\marks4{e-,6,11,}
 ......\marks4{e+,6,11,}
-.....\pdfcolorstack 1 pop
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
@@ -518,7 +514,6 @@ Completed box being shipped out [3]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 12.0 plus 4.0 minus 4.0
 .....\glue 0.0
-.....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 4.06252
@@ -569,7 +564,6 @@ Completed box being shipped out [3]
 ........\glue(\rightskip) 0.0 plus 1.0fil
 .......\penalty 0
 ......\mathoff
-......\pdfcolorstack 1 pop
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -723,7 +717,6 @@ Completed box being shipped out [4]
 .....\glue 0.0
 .....\marks4{e-,14,15,}
 .....\marks4{e+,14,15,}
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 4.06252
@@ -811,7 +804,6 @@ Completed box being shipped out [4]
 ......\mathoff
 ......\write1{\new@label@record{mcid-20}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{20}{tagmcid}{\__property_code_tagmcid: }}}
 ......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
-......\pdfcolorstack 1 pop
 ......\pdfliteral page{EMC}
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0

@@ -117,7 +117,6 @@ Completed box being shipped out [1]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 12.0 plus 4.0 minus 4.0
 .....\glue 0.0
-.....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue(\lineskip) 0.0
 .....\vbox(34.20401+0.2409)x448.92128, direction TLT
 ......\glue 6.0 plus 2.0 minus 2.0
@@ -188,7 +187,6 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0
 .......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfcolorstack 1 pop
@@ -339,9 +337,6 @@ Completed box being shipped out [2]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 12.0 plus 4.0 minus 4.0
 .....\glue 0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue(\lineskip) 0.0
 .....\vbox(34.20401+0.2409)x448.92128, direction TLT
 ......\glue 6.0 plus 2.0 minus 2.0
@@ -418,12 +413,11 @@ Completed box being shipped out [2]
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0
 .......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 1 pop
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
 ...\hbox(0.0+448.92128)x448.92128, direction TLT
@@ -566,7 +560,6 @@ Completed box being shipped out [3]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 12.0 plus 4.0 minus 4.0
 .....\glue 0.0
-.....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 3.8216
@@ -633,7 +626,6 @@ Completed box being shipped out [3]
 ........\glue(\rightskip) 0.0 plus 1.0fil
 .......\penalty 0
 ......\mathoff
-......\pdfcolorstack 1 pop
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
@@ -786,9 +778,6 @@ Completed box being shipped out [4]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 12.0 plus 4.0 minus 4.0
 .....\glue 0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 3.8216
@@ -799,6 +788,8 @@ Completed box being shipped out [4]
 .......\localleftbox=null
 .......\localrightbox=null
 ......\hbox(0.0+0.0)x0.0, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
 ......\mathon
 ......\vbox(9.5375+4.06248)x448.92128, direction TLT
 .......\hbox(9.5375+4.06248)x448.92128, glue set 176.61578fil, direction TLT
@@ -863,17 +854,12 @@ Completed box being shipped out [4]
 ........\glue(\rightskip) 0.0 plus 1.0fil
 .......\penalty 0
 ......\mathoff
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 1 pop
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
-...\pdfliteral page <lua data reference ...>
-...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
 ...\hbox(0.0+448.92128)x448.92128, direction TLT

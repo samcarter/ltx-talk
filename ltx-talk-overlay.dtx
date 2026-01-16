@@ -325,16 +325,24 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}
+%   {\l_@@_overlay_all_bool}
+%    \begin{macrocode}
+\bool_new:N \l_@@_overlay_all_bool
+%    \end{macrocode}
+% \end{variable}
 % \begin{macro}{\action}
 % \begin{environment}{actionenv}
-% \begin{macro}{\@@_action_begin:n}
+% \begin{macro}{\@@_action_begin:n, \@@_action_begin_aux:n}
 % \begin{macro}{\@@_action_end:}
 %   As we need data on not just overlays but also actions at the end of the
 %   environment, this has to be done manually. To allow working with
 %   environments but also items, the code needs to save data for the end
 %   function. The group is needed for cases where we are not in a \LaTeX{}
 %   environment group. When an \cs{onslide}/\cs{pause} is active, it takes
-%   priority: sorted by applying up-front.
+%   priority: sorted by applying up-front. Actions can be skipped entirely
+%   if the overlay spec is simply \texttt{all}, as there will never be
+%   any spacing issues, \foreign{etc}.
 %    \begin{macrocode}
 \NewDocumentCommand \action { D <> { all } +m }
   {
@@ -350,6 +358,15 @@
 \cs_new_protected:Npn \@@_action_begin:n #1
   {
     \group_begin:
+      \str_if_eq:nnTF {#1} { all }
+        { \bool_set_true:N \l_@@_overlay_all_bool }
+        {
+          \bool_set_false:N \l_@@_overlay_all_bool
+          \@@_action_begin_aux:n {#1}
+        }
+  }
+\cs_new_protected:Npn \@@_action_begin_aux:n #1
+  {  
       \@@_decode_parse:n {#1}
       \bool_set_eq:NN \l_@@_saved_overlays_bool
         \l_@@_decode_overlays_bool
@@ -370,14 +387,17 @@
   }
 \cs_new_protected:Npn \@@_action_end:
   {
-      \bool_if:NTF \l_@@_saved_overlays_bool
+      \bool_if:NF \l_@@_overlay_all_bool
         {
-          \cs_if_exist_use:cF
-            { @@_action_ \l_@@_saved_action_str _end:N }
-            { \use_none:n }
-              \l_@@_saved_actions_bool
+          \bool_if:NTF \l_@@_saved_overlays_bool
+            {
+              \cs_if_exist_use:cF
+                { @@_action_ \l_@@_saved_action_str _end:N }
+                { \use_none:n }
+                  \l_@@_saved_actions_bool
+            }
+            { \@@_opacity_end: }
         }
-        { \@@_opacity_end: }
     \group_end:
   }
 %    \end{macrocode}

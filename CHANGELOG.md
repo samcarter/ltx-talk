@@ -10,7 +10,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Changed
 
-- Avoid adding redundant opacity where block enviornments have no overlays
+- Avoid adding redundant opacity where block environments have no overlays
   active
 
 ### Fixed

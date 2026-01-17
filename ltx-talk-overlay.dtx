@@ -143,38 +143,13 @@
 % opacity. At present, this seems very \cls{ltx-talk}-specific, so
 % is handled here with a few auxiliaries.
 %
-% \begin{variable}{\g_@@_opacity_seq}
-%   For tracking.
-%    \begin{macrocode}
-\seq_new:N \g_@@_opacity_seq
-\seq_gpush:Nn \g_@@_opacity_seq { 1 }
-%    \end{macrocode}
-% \end{variable}
-%
 % \begin{macro}{\@@_opacity_begin:n, \@@_opacity_end:}
 %   Simply tracking wrappers.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_opacity_begin:n #1
-  {
-    \seq_gpush:Nn \g_@@_opacity_seq {#1}
-    \@@_shuffle_skip:n { \opacity_begin:n {#1} }
-  }
+  { \@@_shuffle_skip:n { \opacity_begin:n {#1} } }
 \cs_new_protected:Npn \@@_opacity_end:
-  {
-    \@@_shuffle_skip:n { \opacity_end: }
-    \seq_gpop:NN \g_@@_opacity_seq \l_@@_tmp_tl
-  }
-%    \end{macrocode}
-% \end{macro}
-%
-% \begin{macro}{\@@_opacity_reapply:}
-%   Simply tracking wrappers.
-%    \begin{macrocode}
-\cs_new_protected:Npn \@@_opacity_reapply:
-  {
-    \seq_get:NN \g_@@_opacity_seq \l_@@_tmp_tl
-    \exp_args:NV \@@_opacity_begin:n \l_@@_tmp_tl
-  }
+  { \@@_shuffle_skip:n { \opacity_end: } }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -183,16 +158,6 @@
 % Commands that can be used as actions all have a common form (with one
 % exception). The common internal structure is used to enable them to be used
 % as actions by looking for the name \cs[no-index]{@@_action_\meta{name}:N}.
-%
-% \begin{macro}{\@@_action_:N, \@@_action__end:N}
-%   The fallback action. This is needed for two reasons. First, it ensures that
-%   spacing is correct in terms of whatsits. Second, it deals with the need to
-%   keep opacity in-track in things like lists.
-%    \begin{macrocode}
-\cs_new_protected:Npn \@@_action_:N #1 { \@@_opacity_reapply: }
-\cs_new_protected:Npn \@@_action__end:N #1 { \@@_opacity_end: }
-%    \end{macrocode}
-% \end{macro}
 %
 % \begin{macro}{\@@_action_alert:N}
 %   At present a color selection.
@@ -413,8 +378,10 @@
         {
           \bool_if:NTF \l_@@_decode_overlays_bool
             {
-              \use:c { @@_action_ \l_@@_decode_action_str :N }
-                \l_@@_decode_actions_bool
+              \cs_if_exist_use:cF
+                { @@_action_ \l_@@_decode_action_str :N }
+                  { \use_none:n }
+                    \l_@@_decode_actions_bool
             }
             { \UseInstance { hidden } { std } }
         }

@@ -1718,7 +1718,6 @@ Completed box being shipped out [6]
 .....\marks4{b-,23,-1,}
 .....\marks4{b+,23,-1,}
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 3.0 plus 3.0 minus 2.5
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -1887,7 +1886,6 @@ Completed box being shipped out [6]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 pop
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue -2.0 plus -1.0 minus -2.0
 .....\penalty 0
@@ -2214,7 +2212,6 @@ Completed box being shipped out [7]
 .....\marks4{b-,26,-1,}
 .....\marks4{b+,26,-1,}
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 3.0 plus 3.0 minus 2.5
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -2262,7 +2259,6 @@ Completed box being shipped out [7]
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -2299,7 +2295,6 @@ Completed box being shipped out [7]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue 0.0 plus 1.0
@@ -2383,7 +2378,6 @@ Completed box being shipped out [7]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 pop
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue -2.0 plus -1.0 minus -2.0
 .....\penalty 0
@@ -2710,7 +2704,6 @@ Completed box being shipped out [8]
 .....\marks4{b-,29,-1,}
 .....\marks4{b+,29,-1,}
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 3.0 plus 3.0 minus 2.5
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -2758,7 +2751,6 @@ Completed box being shipped out [8]
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -2795,9 +2787,7 @@ Completed box being shipped out [8]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 0.0 plus 1.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -2836,7 +2826,6 @@ Completed box being shipped out [8]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue 0.0 plus 1.0
@@ -2879,7 +2868,6 @@ Completed box being shipped out [8]
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 pop
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue -2.0 plus -1.0 minus -2.0
 .....\penalty 0
@@ -3206,7 +3194,6 @@ Completed box being shipped out [9]
 .....\marks4{b-,32,-1,}
 .....\marks4{b+,32,-1,}
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 3.0 plus 3.0 minus 2.5
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -3254,7 +3241,6 @@ Completed box being shipped out [9]
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -3291,9 +3277,7 @@ Completed box being shipped out [9]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 0.0 plus 1.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -3332,9 +3316,7 @@ Completed box being shipped out [9]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 0.0 plus 1.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -3373,9 +3355,7 @@ Completed box being shipped out [9]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 pop
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue -2.0 plus -1.0 minus -2.0
 .....\penalty 0
@@ -3702,7 +3682,6 @@ Completed box being shipped out [10]
 .....\marks4{b-,35,-1,}
 .....\marks4{b+,35,-1,}
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 3.0 plus 3.0 minus 2.5
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -3750,7 +3729,6 @@ Completed box being shipped out [10]
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -3787,9 +3765,7 @@ Completed box being shipped out [10]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 0.0 plus 1.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -3828,9 +3804,7 @@ Completed box being shipped out [10]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 0.0 plus 1.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -3869,15 +3843,12 @@ Completed box being shipped out [10]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 pop
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue -2.0 plus -1.0 minus -2.0
 .....\penalty 0
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue -2.0 plus -1.0 minus -2.0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 3.0 plus 2.0 minus 3.0
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -3926,7 +3897,6 @@ Completed box being shipped out [10]
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -3963,9 +3933,7 @@ Completed box being shipped out [10]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 0.0 plus 1.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -4004,9 +3972,7 @@ Completed box being shipped out [10]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 0.0 plus 1.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -4045,9 +4011,7 @@ Completed box being shipped out [10]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 pop
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue -2.0 plus -1.0 minus -2.0
 .....\penalty 0
@@ -4195,7 +4159,6 @@ Completed box being shipped out [11]
 ....\vbox(233.31262+0.0)x448.92128, glue set 100.90836fil
 .....\glue 0.0 plus 0.5fil
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 3.0 plus 3.0 minus 2.5
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -4257,7 +4220,6 @@ Completed box being shipped out [11]
 .....\marks4{e-,39,32,}
 .....\marks4{e+,39,32,}
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -4308,9 +4270,7 @@ Completed box being shipped out [11]
 .....\marks4{b+,41,38,text,,,}
 .....\marks4{e-,41,38,}
 .....\marks4{e+,41,38,}
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 0.0 plus 1.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -4363,9 +4323,7 @@ Completed box being shipped out [11]
 .....\marks4{b+,43,43,text,,,}
 .....\marks4{e-,43,43,}
 .....\marks4{e+,43,43,}
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 0.0 plus 1.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -4418,15 +4376,12 @@ Completed box being shipped out [11]
 .....\marks4{b+,45,48,text,,,}
 .....\marks4{e-,45,48,}
 .....\marks4{e+,45,48,}
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 pop
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue -2.0 plus -1.0 minus -2.0
 .....\penalty 0
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue -2.0 plus -1.0 minus -2.0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 3.0 plus 2.0 minus 3.0
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -4489,7 +4444,6 @@ Completed box being shipped out [11]
 .....\marks4{e-,47,53,}
 .....\marks4{e+,47,53,}
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -4540,9 +4494,7 @@ Completed box being shipped out [11]
 .....\marks4{b+,49,59,text,,,}
 .....\marks4{e-,49,59,}
 .....\marks4{e+,49,59,}
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 0.0 plus 1.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -4595,9 +4547,7 @@ Completed box being shipped out [11]
 .....\marks4{b+,51,64,text,,,}
 .....\marks4{e-,51,64,}
 .....\marks4{e+,51,64,}
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 0.0 plus 1.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
@@ -4650,15 +4600,12 @@ Completed box being shipped out [11]
 .....\marks4{b+,53,69,text,,,}
 .....\marks4{e-,53,69,}
 .....\marks4{e+,53,69,}
-.....\pdfcolorstack 1 pop
 .....\penalty 0
-.....\pdfcolorstack 1 pop
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue -2.0 plus -1.0 minus -2.0
 .....\penalty 0
 .....\glue 2.0 plus 1.0 minus 2.0
 .....\glue -2.0 plus -1.0 minus -2.0
-.....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue 3.0 plus 2.0 minus 3.0
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -4720,7 +4667,6 @@ Completed box being shipped out [11]
 .....\marks4{b+,55,74,text,,,}
 .....\marks4{e-,55,74,}
 .....\marks4{e+,55,74,}
-.....\pdfcolorstack 1 pop
 .....\penalty 0
 .....\glue 3.0 plus 2.0 minus 2.5
 .....\glue 0.0 plus 0.5fil

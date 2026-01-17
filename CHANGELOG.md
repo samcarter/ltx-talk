@@ -8,6 +8,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Drop some 'no-op' opacity whatsits
+
 ## [v0.3.11] - 2026-01-16
 
 ### Fixed

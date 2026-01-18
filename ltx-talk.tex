@@ -147,6 +147,16 @@ almost everything is still subject to discussion. Some document commands are
 stubs: either doing nothing at all or dropping optional arguments. This is to
 allow testing of existing \cls{beamer} sources with minimal changes.
 
+\section{Engine support}
+
+Creating fully tagged PDFs is only possible with suitable engine support;
+Lua\TeX{} offers the best outcomes here and \pdfTeX{} is usable but with some
+limitations (for example, more \LaTeX{} runs being required). As such,
+\cls{ltx-talk} is \emph{only} tested with these engines. Most notably, \XeTeX{}
+is \emph{not} supported: it is not suitable for fully accessible tagged PDF
+production, and transparency support is problematic. Issues arising which are
+\XeTeX{}-specific will therefore be closed without investigation.
+
 \section{Submitting ideas}
 
 As noted in Section~\ref{sec:intro}, the class is at present experimental. As

@@ -282,6 +282,19 @@
   }
 %    \end{macrocode}
 %
+% Compatibility keys for classical font size setting.
+%    \begin{macrocode}
+\clist_map_inline:nn { 10pt , 11pt , 12pt }
+  {
+    \keys_define:nn { talk }
+      {
+        #1 .meta:n            = { font-size = #1 } ,
+        #1 .value_forbidden:n = true ,
+        #1. usage:n           = load
+      }
+  }
+%    \end{macrocode}
+%
 % Initial values.
 %    \begin{macrocode}
 \keys_set:nn { talk }

@@ -1,0 +1,6 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\START
+\documentclass[12pt]{ltx-talk}
+\END

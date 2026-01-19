@@ -365,6 +365,13 @@ the slides at full screen size. The main advantage of using a small
 sizes. In particular, inserting a graphic with \qty{11}{pt} labels will result
 in reasonably sized text during the presentation.
 
+\DescribeOption{font-size}
+You can change the standard font size for the frames using the \opt{font-size}
+option. This is initially set to \opt{11pt}, and if a non-standard size is
+requested will use the \pkg{relsize} package to produce the output requested.
+To support translation from \cls{beamer}, the classical options \opt{10pt},
+\opt{11pt} and \opt{12pt} are also supported.
+
 \DescribeOption{aspect-ratio}
 The aspect ratio of the slides can be adjusted by setting the
 \opt{aspect-ratio} load-time option, which takes two integer values separated

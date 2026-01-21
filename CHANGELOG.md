@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.3.12] - 2026-01-21
+
 ### Changed
 
 - Drop some 'no-op' opacity whatsits
@@ -243,7 +245,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.3.11...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.3.12...HEAD
+[v0.3.12]: https://github.com/josephwright/ltx-talk/compare/v0.3.11...v0.3.12
 [v0.3.11]: https://github.com/josephwright/ltx-talk/compare/v0.3.10...v0.3.11
 [v0.3.10]: https://github.com/josephwright/ltx-talk/compare/v0.3.9...v0.3.10
 [v0.3.9]: https://github.com/josephwright/ltx-talk/compare/v0.3.8...v0.3.9

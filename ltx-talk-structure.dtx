@@ -580,10 +580,15 @@
   {
     \exp_not:n
       { \__block_debug_typeout:n { blockenv~common~ending \on@line } }
-    \exp_not:N \bool_if:NT
       \cs_if_exist:NTF \l__block_transparent_level_bool
-        { \exp_not:N \l__block_transparent_level_bool }
-        { \exp_not:N \l__block_level_incr_bool }
+        {
+          \exp_not:N \bool_if:NF
+          \exp_not:N \l__block_transparent_level_bool
+        }
+        {
+          \exp_not:N \bool_if:NT
+          \exp_not:N \l__block_level_incr_bool
+        }
         { \int_gdecr:N \exp_not:N \g_block_nesting_depth_int }
     \exp_not:n
       {

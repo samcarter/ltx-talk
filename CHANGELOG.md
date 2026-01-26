@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.3.13] - 2026-01-26
+
 ### Changed
 
 - Adapt for updated block code in LaTeX 2026-06-01
@@ -255,7 +257,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.3.12...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.3.13...HEAD
+[v0.3.13]: https://github.com/josephwright/ltx-talk/compare/v0.3.12...v0.3.13
 [v0.3.12]: https://github.com/josephwright/ltx-talk/compare/v0.3.11...v0.3.12
 [v0.3.11]: https://github.com/josephwright/ltx-talk/compare/v0.3.10...v0.3.11
 [v0.3.10]: https://github.com/josephwright/ltx-talk/compare/v0.3.9...v0.3.10

@@ -549,7 +549,7 @@
 \tl_new:N \l_@@_list_end_tl
 %    \end{macrocode}
 % \end{variable}
-% \begin{macro}{\__block_inter_item:, \endblockenv}
+% \begin{macro}{\__block_inter_item:, \BlockEnvEnd, \endblockenv}
 %   There are no currently no hooks for insertion at the end of
 %   list items, so we have to do it manually. We cannot target
 %   \cs{__block_list_item_end:}/\cs{__block_list_end:} as these
@@ -571,57 +571,78 @@
     \addpenalty \@itempenalty 
     \addvspace \itemsep
   }
-\cs_gset:Npn \endblockenv
+%    \end{macrocode}
+%   A rather long block done by expansion to avoid duplication in a patch.
+%    \begin{macrocode}
+\IfFormatAtLeastTF { 2026-06-01 }
+  { \cs_gset_protected:Npe \BlockEnvEnd }
+  { \cs_gset:Npe \endblockenv }
   {
-    \__block_debug_typeout:n { blockenv~common~ending \on@line }
-    \bool_if:NT \l__block_level_incr_bool
-      { \int_gdecr:N \g_block_nesting_depth_int }
-    \legacy_if:nT { @inlabel }
+    \exp_not:n
+      { \__block_debug_typeout:n { blockenv~common~ending \on@line } }
+    \exp_not:N \bool_if:NT
+      \cs_if_exist:NTF \l__block_transparent_level_bool
+        { \exp_not:N \l__block_transparent_level_bool }
+        { \exp_not:N \l__block_level_incr_bool }
+        { \int_gdecr:N \exp_not:N \g_block_nesting_depth_int }
+    \exp_not:n
       {
-        \mode_leave_vertical: 
-        \legacy_if_gset_false:n { @inlabel }
-      }
-    \__block_if_list:T
-      { \legacy_if:nT { @newlist } { \@noitemerr } }
-    \mode_if_horizontal:TF
-       {
-         \__block_skip_remove_last:
-         \__block_skip_remove_last:
-         \par
-       }
-       { \@inmatherr { \end { \@currenvir } } }
-    \l_@@_list_end_tl
-    \__kernel_displayblock_end:
-    \__block_if_list:T { \legacy_if_gset_false:n { @newlist } }
-    \legacy_if:nF { @noparlist }
-      {
-        \__block_skip_set_to_last:N \l_tmpa_skip
-        \dim_compare:nNnT \l_tmpa_skip > \c_zero_dim
+        \legacy_if:nT { @inlabel }
           {
-            \skip_vertical:n { - \l_tmpa_skip }
-            \skip_vertical:n { \l_tmpa_skip + \parskip - \@outerparskip }
+            \mode_leave_vertical: 
+            \legacy_if_gset_false:n { @inlabel }
           }
-        \addpenalty \@endparpenalty
-        \addvspace \l__block_topsepadd_skip
+        \__block_if_list:T
+          { \legacy_if:nT { @newlist } { \@noitemerr } }
+        \mode_if_horizontal:TF
+           {
+             \__block_skip_remove_last:
+             \__block_skip_remove_last:
+             \par
+           }
+           { \@inmatherr { \end { \@currenvir } } }
+        \l_@@_list_end_tl
+        \__kernel_displayblock_end:
+        \__block_if_list:T { \legacy_if_gset_false:n { @newlist } }
+        \legacy_if:nF { @noparlist }
+          {
+            \__block_skip_set_to_last:N \l_tmpa_skip
+            \dim_compare:nNnT \l_tmpa_skip > \c_zero_dim
+              {
+                \skip_vertical:n { - \l_tmpa_skip }
+                \skip_vertical:n { \l_tmpa_skip + \parskip - \@outerparskip }
+              }
+            \addpenalty \@endparpenalty
+            \addvspace \l__block_topsepadd_skip
+          }
+        \socket_use:n { block / endpe }
       }
-    \socket_use:n { block / endpe }
   }
 %    \end{macrocode}
 % \end{macro}
 % \begin{environment}{itemize, enumerate, description}
-%   Allow for the classical \cls{beamer} syntax.
+%   Allow for the classical \cls{beamer} syntax: currently two versions but that
+%   will only last until the 2026-06-01 release of \LaTeX{} is out.
 %    \begin{macrocode}
 \AddToHook { begindocument / before }
   {
     \clist_map_inline:nn { itemize , enumerate , description }
       {
-        \RenewDocumentEnvironment {#1} { = { action-spec } !o }
+        \IfFormatAtLeastTF { 2026-06-01 }
           {
-            \IfNoValueTF {##1}
-              { \UseInstance { blockenv } {#1} { } }
-              { \UseInstance { blockenv } {#1} {##1} }
+            \RenewDocumentEnvironment {#1} { = { action-spec } !O { } }
+              { \SimpleBlockEnv {#1} {##1} }
+              { \BlockEnvEnd }
           }
-          { \endblockenv }
+          {
+            \RenewDocumentEnvironment {#1} { = { action-spec } !o }
+              {
+                \IfNoValueTF {##1}
+                  { \UseInstance { blockenv } {#1} { } }
+                  { \UseInstance { blockenv } {#1} {##1} }
+              }
+              { \endblockenv }
+          }
       }
   }
 %    \end{macrocode}
@@ -641,10 +662,18 @@
 %   Add an overlay key to the \texttt{block} template.  Placed here, it applies
 %   \emph{before} the \cs{item} starts, so we do not have to redefine the
 %   latter to do actions up-front. This also means it can apply to whatever we
-%   want it to within a block.
+%   want it to within a block. Currently two versions but that will only last
+%   until the 2026-06-01 release of \LaTeX{} is out.
 %    \begin{macrocode}
-\keys_define:nn { template / block / display  }
-  { action-spec .str_set:N = \l_@@_action_spec_str }
+\IfFormatAtLeastTF { 2026-06-01 }
+  {
+    \keys_define:nn { template / block / std  }
+      { action-spec .str_set:N = \l_@@_action_spec_str }
+  }
+  {
+    \keys_define:nn { template / block / display  }
+      { action-spec .str_set:N = \l_@@_action_spec_str }
+  }
 %    \end{macrocode}
 % \end{variable}
 %

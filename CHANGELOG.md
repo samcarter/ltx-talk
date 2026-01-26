@@ -8,6 +8,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Adapt for updated block code in LaTeX 2026-06-01
+
 ### Fixed
 
 - Correct handling of combined overlay and action specs containing |+ in both parts

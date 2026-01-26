@@ -388,10 +388,9 @@
     \int_compare:nNnTF { \value { section } } = {#2}
       {#6}
       {
-        \group_begin:
-          \opacity_select:n { 0.2 }
+        \opacity_begin:n { 0.2 }
           #6
-        \group_end:
+        \opacity_end:
       }
   }
 \cs_new_protected:Npn \@@_toc_level:nnnn #1#2#3#4

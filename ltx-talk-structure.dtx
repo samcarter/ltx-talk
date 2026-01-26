@@ -350,7 +350,7 @@
       { 2 }
       {
         \skip_set:Nn \leftskip { 2em }
-        \color { . }
+        \color_ensure_current:
       }
       {#1} {#2}
   }
@@ -360,7 +360,7 @@
       { 3 }
       {
         \skip_set:Nn \leftskip { 4em }
-        \color { . }
+        \color_ensure_current:
         \footnotesize
       }
       {#1} {#2}

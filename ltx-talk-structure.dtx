@@ -549,11 +549,11 @@
 \tl_new:N \l_@@_list_end_tl
 %    \end{macrocode}
 % \end{variable}
-%  \begin{macro}{\__block_inter_item:, \endblockenv}
-%    There are no currently no hooks for insertion at the end of
-%    list items, so we have to do it manually. We cannot target
-%    \cs{__block_list_item_end:}/\cs{__block_list_end:} as these
-%    change definition if tagging is suspended.
+% \begin{macro}{\__block_inter_item:, \endblockenv}
+%   There are no currently no hooks for insertion at the end of
+%   list items, so we have to do it manually. We cannot target
+%   \cs{__block_list_item_end:}/\cs{__block_list_end:} as these
+%   change definition if tagging is suspended.
 %    \begin{macrocode}
 \cs_gset_protected:Npn \__block_inter_item:
   {
@@ -607,7 +607,7 @@
     \socket_use:n { block / endpe }
   }
 %    \end{macrocode}
-%  \end{macro}
+% \end{macro}
 % \begin{environment}{itemize, enumerate, description}
 %   Allow for the classical \cls{beamer} syntax.
 %    \begin{macrocode}

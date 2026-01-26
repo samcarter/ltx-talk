@@ -8,6 +8,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Correct handling of combined overlay and action specs containing |+ in both parts
+, for example `+-| alter@+` (see issue
+  [\#154](https://github.com/josephwright/ltx-talk/issues/154))
+
 ## [v0.3.12] - 2026-01-21
 
 ### Changed

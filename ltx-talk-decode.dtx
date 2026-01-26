@@ -167,8 +167,21 @@
         \exp_args:No \@@_decode_parse_auxii:n { \l_@@_decode_arg_str }
       }
   }
+%    \end{macrocode}
+%   Stepping the value assigned to |+| is done in the outer loop, as within one
+%   overlay expression it always takes the same value. If the \pkg{amsmath}
+%   \tn{ifmeasuring@} flag is on, the overlay counter is not advanced.
+%    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_parse_auxii:n #1
-  { \@@_decode_parse:w #1 | \q_recursion_tail | \q_recursion_stop }
+  {
+    \bool_set_false:N \l_@@_decode_step_bool
+    \@@_decode_parse:w #1 | \q_recursion_tail | \q_recursion_stop
+    \bool_if:NT \l_@@_decode_step_bool
+      {
+        \legacy_if:nF { measuring@ }
+          { \int_gincr:N \g_@@_pauses_int }
+      }
+  }
 %    \end{macrocode}
 %   The end-of-loop test here covers the case where the active mode is not
 %   mentioned at all in the specification.
@@ -297,20 +310,12 @@
 % \begin{macro}{\@@_decode_overlay_offset:nNnN}
 % \begin{macro}{\@@_decode_overlay_offset:nNn}
 %   The loop here needs to replace all |+| and |.| characters by the current
-%   automatic value, allowing for any offsets. This step also needs to track
-%   whether to increment the automatic value: true if a |+| is seen, false
-%   otherwise. If the \pkg{amsmath} \tn{ifmeasuring@} flag is on, the overlay
-%   counter is not advanced.
+%   automatic value, allowing for any offsets. Stepping the value assigned
+%   here is done in the outer loop (see above).
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_overlays:nn #1#2
   {
-    \bool_set_false:N \l_@@_decode_step_bool
     \@@_decode_overlays:nN {#1} #2 \q_recursion_tail \q_recursion_stop
-    \bool_if:NT \l_@@_decode_step_bool
-      {
-        \legacy_if:nF { measuring@ }
-          { \int_gincr:N \g_@@_pauses_int }
-      }
     \@@_decode_check:n {#1}
   }
 \cs_new_protected:Npn \@@_decode_overlays:nN #1#2

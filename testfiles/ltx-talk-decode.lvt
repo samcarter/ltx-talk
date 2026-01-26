@@ -135,8 +135,8 @@
     \test:nnTF { 2 } { 1-|alert@1 } \ERROR \FALSE
     \test:nnTF { 2 } { 1-|alert@2 } \TRUE \ERROR
     \test:nnTF { 2 } { 2-|alert@2 } \TRUE \ERROR
-    \test:nnTF { 1 } { +-|alert@+ } \ERROR \FALSE
-    \test:nnTF { 2 } { +-|alert@+ } \TRUE \ERROR
+    \test:nnTF { 1 } { +-|alert@+ } \TRUE \ERROR
+    \test:nnTF { 2 } { +-|alert@+ } \ERROR \FALSE
   }
 
 \TEST { Modes }

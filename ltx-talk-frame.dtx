@@ -209,6 +209,7 @@
     \int_gzero:N \g_@@_pauses_int
     \tl_gclear:N \g_@@_frame_title_tl
     \tl_gclear:N \g_@@_frame_subtitle_tl
+    \box_gclear:N \g_@@_footnote_box
     \@@_cnt_save:
     \vbox_set:Nw \l_@@_slide_box
       \tl_gclear:N \g_@@_onslide_tl
@@ -222,7 +223,8 @@
     \vbox_to_ht:nn { \textheight }
       {
         \use:c { @@_slide_align_ \l_@@_frame_alignment_tl :n }
-          { \vbox_unpack_drop:N \l_@@_slide_box }
+          { \vbox_unpack_drop:N \l_@@_slide_box  }
+        \vbox_unpack_drop:N \g_@@_footnote_box
       }
     \clearpage
   }

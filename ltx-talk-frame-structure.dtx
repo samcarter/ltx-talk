@@ -373,30 +373,22 @@
 \AssignSocketPlug { fntext / make } { talk }
 %    \end{macrocode}
 %
-% \begin{macro}{\@makefntext}
+% \begin{macro}{\@makefntext, \@@_fnote_makefntext:n}
 %  Copy the tagging-aware footnote setup: this avoids a patching issue.
+%  Timed in this way we avoid needing to delay anything to the start of
+%  the document.
 %    \begin{macrocode}
-\cs_new_eq:NN \@makefntext \fnote_makefntext:n
-%    \end{macrocode}
-%  To get overlay support in the right place, we need to redefine again,
-%  once the lab code has done its thing. The aim here is to pick up the
-%  saved overlay and apply around the entire content of the footnote.
-%    \begin{macrocode}
-\AddToHook { begindocument }
+\cs_new_eq:NN \@@_fnote_makefntext:n \fnote_makefntext:n
+\cs_gset_protected:Npn \fnote_makefntext:n #1
   {
-    \cs_new_eq:NN \@@_fnote_makefntext:n \fnote_makefntext:n
-    \cs_gset_protected:Npn \fnote_makefntext:n #1
-      {
-        \seq_gpop_left:NN \g_@@_footnote_overlay_seq
-          \l_@@_tmp_tl
-        \exp_args:NV \@@_decode_parse:n \l_@@_tmp_tl
-        \@@_action_uncover:N \l_@@_decode_overlays_bool
-        \@@_fnote_makefntext:n {#1}
-        \@@_action_uncover_end:N \l_@@_decode_overlays_bool
-      }
-    \cs_gset_eq:NN \@makefntext \fnote_makefntext:n
+    \seq_gpop_left:NN \g_@@_footnote_overlay_seq
+      \l_@@_tmp_tl
+     \exp_args:NV \@@_decode_parse:n \l_@@_tmp_tl
+    \@@_action_uncover:N \l_@@_decode_overlays_bool
+    \@@_fnote_makefntext:n {#1}
+    \@@_action_uncover_end:N \l_@@_decode_overlays_bool
   }
-%    \end{macrocode}
+\cs_new_eq:NN \@makefntext \fnote_makefntext:n
 % \end{macro}
 %
 %    \begin{macrocode}

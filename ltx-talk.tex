@@ -1240,6 +1240,24 @@ see Section~\ref{sec:action-spec}. The vertical placement of the enclosing
 \env{columns} environment can be overruled by specifying a specific
 \meta{placement}.
 
+\subsection{Footnotes}
+
+First a word of warning: Using footnotes is usually not a good idea. They
+disrupt the flow of reading.
+
+\DescribeMacro{\footnote}
+\begin{syntax}
+  \cs{footnote}\sarg{overlay spec}\oarg{mark-number}\marg{text}
+\end{syntax}
+Inserts a footnote into the current frame. Footnotes will always be shown on
+the current frame; they will never be \enquote{moved} to other frames. As
+usual, one can give a \meta{mark-number}, which will cause the footnote to use
+that number.
+
+If an \meta{overlay spec} is given, this causes the footnote \meta{text} to be
+shown only on the specified slides. The footnote symbol in the text is shown on
+all slides.
+
 \section{Creating alternative output formats%
   \label{sec:modes}}
 

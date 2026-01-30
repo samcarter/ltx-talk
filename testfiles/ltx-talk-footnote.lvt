@@ -1,0 +1,16 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}
+  Text\footnote<2->{Foo} more text \footnote<1->{FooX}
+\end{frame}
+
+\end{document}

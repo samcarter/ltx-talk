@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.4.0] - 2026-01-30
+
 ### Added
 
 - Basic support for footnote output (see issue
@@ -262,7 +264,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.3.13...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.4.0...HEAD
+[v0.4.0]: https://github.com/josephwright/ltx-talk/compare/v0.3.13...v0.4.0
 [v0.3.13]: https://github.com/josephwright/ltx-talk/compare/v0.3.12...v0.3.13
 [v0.3.12]: https://github.com/josephwright/ltx-talk/compare/v0.3.11...v0.3.12
 [v0.3.11]: https://github.com/josephwright/ltx-talk/compare/v0.3.10...v0.3.11

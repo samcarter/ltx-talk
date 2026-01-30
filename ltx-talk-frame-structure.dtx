@@ -377,11 +377,11 @@
 %  Copy the tagging-aware footnote setup: this avoids a patching issue.
 %    \begin{macrocode}
 \cs_new_eq:NN \@makefntext \fnote_makefntext:n
-%    \begin{macrocode}
+%    \end{macrocode}
 %  To get overlay support in the right place, we need to redefine again,
 %  once the lab code has done its thing. The aim here is to pick up the
 %  saved overlay and apply around the entire content of the footnote.
-%    \end{macrocode}
+%    \begin{macrocode}
 \AddToHook { begindocument }
   {
     \cs_new_eq:NN \@@_fnote_makefntext:n \fnote_makefntext:n

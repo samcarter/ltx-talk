@@ -1,0 +1,22 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\usepackage{tikz}
+\usepackage{tikzducks}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}
+  \frametitle{A duck!}
+  \begin{tikzpicture}
+    \duck
+  \end{tikzpicture}
+\end{frame}
+
+\end{document}

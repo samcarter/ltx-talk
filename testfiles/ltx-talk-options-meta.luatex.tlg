@@ -173,8 +173,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `lummain' in version `bold'
 (Font)                  TU/lmm/m/n --> TU/lmm/b/n on input line ....
 \mathfamattr=\attribute...
-Lua-only attribute leftroot = 11
-Lua-only attribute uproot = 12
+Lua-only attribute leftroot = 12
+Lua-only attribute uproot = 13
 Inserting `lua-unicode-math' in `pre_mlist_to_hlist_filter'.
 Custom whatsit prime = 2
 Lua function prime_helper:w = ...

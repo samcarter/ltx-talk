@@ -175,11 +175,19 @@
 % \end{macro}
 % \end{macro}
 %
-% \begin{macro}{\set@color}
+% \begin{macro}{\stdset@color, \stdreset@color}
+%    \begin{macrocode}
+\cs_set_eq:NN \stdset@color \set@color
+\cs_set_eq:NN \stdreset@color \reset@color
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\set@color, \reset@color}
 %   Part of code-level interface for color: simply use the \pkg{expl3} version
 %   of the same idea.
 %    \begin{macrocode}
 \cs_set_eq:NN \set@color \color_ensure_current:
+\cs_set_eq:NN \reset@color \__color_backend_reset:
 %    \end{macrocode}
 % \end{macro}
 %

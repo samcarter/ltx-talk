@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Extend support for color in `pgf` (see issue
+  [\#159](https://github.com/josephwright/ltx-talk/issues/159))
+
 ## [v0.4.0] - 2026-01-30
 
 ### Added

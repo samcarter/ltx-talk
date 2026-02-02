@@ -14,7 +14,7 @@
 
 \begin{frame}
   \frametitle{A duck!}
-  \begin{tikzpicture}
+  \begin{tikzpicture}[alt = {A duck!}]
     \duck
   \end{tikzpicture}
 \end{frame}

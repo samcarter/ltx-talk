@@ -94,47 +94,32 @@ Completed box being shipped out [1]
 ........\pdfliteral origin{0.3985 w }
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\pdfliteral origin{q }
+.........\glue(\spaceskip) 0.0
 .........\pdfliteral origin{q }
 .........\glue(\spaceskip) 0.0
 .........\glue(\spaceskip) 0.0
 .........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral origin{q }
 ...........\glue(\spaceskip) 0.0
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral origin{Q }
 .........\glue(\spaceskip) 0.0
 .........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral origin{q }
 ...........\glue(\spaceskip) 0.0
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral origin{Q }
 .........\glue(\spaceskip) 0.0
 .........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral origin{q }
 ...........\glue(\spaceskip) 0.0
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral origin{Q }
 .........\glue(\spaceskip) 0.0
 .........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral origin{q }
 ...........\glue(\spaceskip) 0.0
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral origin{Q }
 .........\glue(\spaceskip) 0.0
 .........\glue(\spaceskip) 0.0
@@ -255,6 +240,9 @@ Completed box being shipped out [1]
 .........\pdfliteral origin{Q }
 .........\glue(\spaceskip) 0.0
 .........\pdfliteral origin{Q }
+.........\hbox(0.0+0.0)x0.0, direction TLT
+..........\savepos
+..........\write1{\noexpand \pgfsyspdfmark {pgfid1}{\the \lastxpos }{\the \lastypos }}
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\pdfliteral origin{n }
 ........\pdfliteral origin{Q }

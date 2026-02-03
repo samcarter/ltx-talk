@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Ignore section commands inside frames (see issue
+  [\#160](https://github.com/josephwright/ltx-talk/issues/160))
+
 ## [v0.4.1] - 2026-02-02
 
 ### Changed

@@ -209,6 +209,12 @@
 %     \insertsubsection   ,
 %     \insertsubsubsection
 %   }
+% \begin{macro}
+%   {
+%     \@@_sect_section:Nnnn,
+%     \@@_sect_subsection:Nnnn,
+%     \@@_sect_subsubsection:Nnnn
+%   }
 %  The sectioning commands all have essentially the same form: we therefore
 %  create using a generator with the necessary conditionals in place. As we
 %  do not typeset sections at this stage, the code is quite different from
@@ -231,6 +237,11 @@
           }
         \NewDocumentCommand \exp_not:c {#2}
           { s D <> { all } O {##4} m }
+          {
+            \exp_not:N \bool_if:NF \exp_not:N \l_@@_frame_bool
+              { \exp_not:c { @@_sect_ #1 :Nnnn } ##1 {##2} {##3} {##4} }
+          }
+        \cs_new_protected:Npn \exp_not:c { @@_sect_ #1 :Nnnn } ##1##2##3##4
           {
             \exp_not:N \refstepcounter {#2}
             \UseTaggingSocket { sec / end } { \use:c { toclevel@ #2 } }
@@ -265,6 +276,7 @@
       }
 }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 % \end{macro}
 %

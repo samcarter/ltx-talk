@@ -10,8 +10,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Changed
 
-- simplify footnote code
-
+- Simplify footnote code
 
 ## [v0.4.2] - 2026-02-03
 

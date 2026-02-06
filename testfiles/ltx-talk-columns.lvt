@@ -14,6 +14,8 @@
     \begin{column}{.6\textwidth}
       \raggedleft foo\\bar
     \end{column}
+    \begin{column}{0pt}
+    \end{column}
   \end{columns}
 \end{frame}
 

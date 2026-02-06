@@ -92,6 +92,14 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\l_@@_column_int, \g_@@_column_int}
+%   For tracking which column we are in, and allowing for nesting.
+%    \begin{macrocode}
+\int_new:N \l_@@_column_int
+\int_new:N \g_@@_column_int
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{environment}{columns}
 %   Columns are block-like environments so we start and end with a \cs{par} to
 %   ensure correct tagging.
@@ -100,18 +108,19 @@
   {
     \@@_action_begin:n {#1}
     \par
+    \int_set_eq:NN \l_@@_column_int \g_@@_column_int
+    \int_gzero:N \g_@@_column_int
     \keys_set:nn { talk / columns } {#2}
     \hbox_set_to_wd:Nnw \l_@@_tmp_box { \l_@@_columns_wd_tl }
       \dim_set:Nn \textwidth { \l_@@_columns_wd_tl }
       \dim_set_eq:NN \columnwidth \textwidth
-      \hfil
       \ignorespaces
   }
   {
       \unskip
-      \hfil
     \hbox_set_end:
     \box_use_drop:N \l_@@_tmp_box
+    \int_gset_eq:NN \g_@@_column_int \l_@@_column_int
     \par
     \@@_action_end:
   }
@@ -183,6 +192,9 @@
 \NewDocumentEnvironment { column } { D <> { all } O { } m }
   {
     \par
+    \int_gincr:N \g_@@_column_int
+    \int_compare:nNnF \g_@@_column_int = 1
+      { \hfil }
     \keys_set:nn { talk / column } {#2}
     \vbox_set_to_wd:Nnw \l_@@_tmp_box {#3}
       \dim_set:Nn \textwidth {#3}
@@ -205,7 +217,6 @@
     \vbox_set_end:
     \use:c { @@_column_align_ \l_@@_column_alignment_tl :n }
       { \vbox_unpack_drop:N \l_@@_tmp_box }
-    \hfil
     \par
     \@ignoretrue
   }

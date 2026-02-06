@@ -61,8 +61,7 @@ Completed box being shipped out [1]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 206.11261fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(16.3375+10.86252)x448.92128, glue set 29.92992fil, direction TLT
-......\glue 0.0 plus 1.0fil
+.....\hbox(16.3375+10.86252)x448.92128, glue set 89.78975fil, direction TLT
 ......\vbox(5.86371+0.50919)x179.56577, direction TLT
 .......\hbox(5.86371+0.50919)x179.56577, direction TLT
 ........\vbox(6.25244+0.12045)x179.56577, shifted 0.38873, direction TLT
@@ -123,7 +122,6 @@ Completed box being shipped out [1]
 .........\glue(\baselineskip) 13.15106
 .........\hbox(0.0+0.0)x179.56577, glue set 179.56577fil, direction TLT
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-......\glue 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
@@ -215,8 +213,7 @@ Completed box being shipped out [2]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 206.11261fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(16.3375+10.86252)x448.92128, glue set 29.92992fil, direction TLT
-......\glue 0.0 plus 1.0fil
+.....\hbox(16.3375+10.86252)x448.92128, glue set 89.78975fil, direction TLT
 ......\vbox(5.86371+0.50919)x179.56577, direction TLT
 .......\hbox(5.86371+0.50919)x179.56577, direction TLT
 ........\vbox(6.25244+0.12045)x179.56577, shifted 0.38873, direction TLT
@@ -285,7 +282,6 @@ Completed box being shipped out [2]
 .........\glue(\baselineskip) 13.15106
 .........\hbox(0.0+0.0)x179.56577, glue set 179.56577fil, direction TLT
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-......\glue 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0

@@ -211,9 +211,9 @@
 %   }
 % \begin{macro}
 %   {
-%     \@@_sect_section:Nnnn,
-%     \@@_sect_subsection:Nnnn,
-%     \@@_sect_subsubsection:Nnnn
+%     \@@_sect_section:Nnn,
+%     \@@_sect_subsection:Nnn,
+%     \@@_sect_subsubsection:Nnn
 %   }
 %  The sectioning commands all have essentially the same form: we therefore
 %  create using a generator with the necessary conditionals in place. As we
@@ -239,9 +239,12 @@
           { s D <> { all } O {##4} m }
           {
             \exp_not:N \bool_if:NF \exp_not:N \l_@@_frame_bool
-              { \exp_not:c { @@_sect_ #1 :Nnnn } ##1 {##2} {##3} {##4} }
+              {
+                \@@_if_overlay:nT {##2}
+                  { \exp_not:c { @@_sect_ #1 :Nnn } ##1 {##3} {##4} }
+              }
           }
-        \cs_new_protected:Npn \exp_not:c { @@_sect_ #1 :Nnnn } ##1##2##3##4
+        \cs_new_protected:Npn \exp_not:c { @@_sect_ #1 :Nnn } ##1##2##3
           {
             \exp_not:N \refstepcounter {#2}
             \UseTaggingSocket { sec / end } { \use:c { toclevel@ #2 } }
@@ -254,7 +257,7 @@
                       { sec / \use:c { toclevel@ #2 } }
                 }
               }
-            \tl_set:Nn \exp_not:c { l_@@_ #2 _tl } {##4}
+            \tl_set:Nn \exp_not:c { l_@@_ #2 _tl } {##3}
             \UseTaggingSocket { talk / sec / title } {#2}
             \str_if_eq:nnT {#2} { section }
               { \tl_clear:N \exp_not:N \l_@@_subsection_tl }
@@ -268,7 +271,7 @@
                     \exp_not:N \protect \exp_not:N \numberline
                       { \exp_not:c { the #2 } }
                   }
-                ##4
+                ##3
               }
             \hook_use:n { #2 / begin }
           }

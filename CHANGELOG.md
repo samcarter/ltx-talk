@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Apply overlay specs to heading commands (see issue
+  [\#164](https://github.com/josephwright/ltx-talk/issues/164))
+
 ## [v0.4.3] - 2026-02-06
 
 ### Changed

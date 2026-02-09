@@ -1,0 +1,32 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass[mode = handout]{ltx-talk}
+
+\begin{document}
+
+\START
+
+\SHOWFILE{\jobname.toc}
+
+\OMIT
+
+\begin{frame}
+  \tableofcontents
+\end{frame}
+
+\section<projector>{slides only}
+
+\begin{frame}<projector>
+  \frametitle{Projector only}
+  Projector only
+\end{frame}
+
+\section{all modes}
+
+\begin{frame}
+  \frametitle{All modes}
+  all modes
+\end{frame}
+  
+\end{document}

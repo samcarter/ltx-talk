@@ -224,7 +224,11 @@
       {
         \use:c { @@_slide_align_ \l_@@_frame_alignment_tl :n }
           { \vbox_unpack_drop:N \l_@@_slide_box  }
-        \vbox_unpack_drop:N \g_@@_footnote_box
+        \box_if_empty:NF \g_@@_footnote_box
+          {
+            \footnoterule
+            \vbox_unpack_drop:N \g_@@_footnote_box
+          }
       }
     \clearpage
   }

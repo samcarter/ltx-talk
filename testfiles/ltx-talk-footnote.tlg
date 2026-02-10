@@ -68,7 +68,7 @@ Completed box being shipped out [1]
 .....\marks4{b+,1,-1,}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
-.....\hbox(9.22366+0.0)x448.92128, glue set 367.76021fil
+.....\hbox(9.22366+0.0)x448.92128, glue set 371.4102fil
 ......\hbox(0.0+0.0)x0.0
 ......\T1/lmss/m/n/10.95 T
 ......\kern-0.9125
@@ -94,7 +94,6 @@ Completed box being shipped out [1]
 ......\T1/lmss/m/n/10.95 e
 ......\T1/lmss/m/n/10.95 x
 ......\T1/lmss/m/n/10.95 t
-......\glue 3.65 plus 1.825 minus 1.21666
 ......\penalty 10000
 ......\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] /Contents <FEFF0047006F00200074006F002000640065007300740069006E006100740069006F006E00200066006F006F0074006E006F00740065002A002E0033> } action goto name{footnote*.3}
 ......\hbox(9.22366+0.0)x4.75
@@ -106,15 +105,10 @@ Completed box being shipped out [1]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\insert253, natural size 0.0; split(7.7,3.30003); float cost 20000
-.....\insert253, natural size 0.0; split(7.7,3.30003); float cost 20000
 .....\pdfliteral page{EMC}
 .....\marks4{e-,1,2,}
 .....\marks4{e+,1,2,}
 .....\glue 0.0 plus 0.5fil
-.....\kern -3.0
-.....\rule(0.4+0.0)x144.54
-.....\kern 2.6
 .....\kern -3.0
 .....\rule(0.4+0.0)x144.54
 .....\kern 2.6
@@ -281,7 +275,7 @@ Completed box being shipped out [2]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+3.30003)x448.92128, glue set 205.26735fil
 .....\glue 0.0 plus 0.5fil
-.....\hbox(9.22366+0.0)x448.92128, glue set 367.76021fil
+.....\hbox(9.22366+0.0)x448.92128, glue set 371.4102fil
 ......\write1{\new@label@record{mcid-4}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{4}{tagmcid}{\__property_code_tagmcid: }}}
 ......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
 ......\hbox(0.0+0.0)x0.0
@@ -325,7 +319,6 @@ Completed box being shipped out [2]
 ......\T1/lmss/m/n/10.95 e
 ......\T1/lmss/m/n/10.95 x
 ......\T1/lmss/m/n/10.95 t
-......\glue 3.65 plus 1.825 minus 1.21666
 ......\penalty 10000
 ......\pdfliteral page{EMC}
 ......\write1{\new@label@record{mcid-15}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{15}{tagmcid}{\__property_code_tagmcid: }}}
@@ -374,7 +367,6 @@ Completed box being shipped out [2]
 .....\marks4{b+,8,7,text,,,}
 .....\marks4{e-,8,7,}
 .....\marks4{e+,8,7,}
-.....\insert253, natural size 0.0; split(7.7,3.30003); float cost 20000
 .....\marks4{b-,14,7,text,,,}
 .....\marks4{b+,14,7,text,,,}
 .....\marks4{e-,14,7,}
@@ -395,15 +387,11 @@ Completed box being shipped out [2]
 .....\marks4{b+,18,7,text,,,}
 .....\marks4{e-,18,7,}
 .....\marks4{e+,18,7,}
-.....\insert253, natural size 0.0; split(7.7,3.30003); float cost 20000
 .....\marks4{b-,24,7,text,,,}
 .....\marks4{b+,24,7,text,,,}
 .....\marks4{e-,24,6,}
 .....\marks4{e+,24,6,}
 .....\glue 0.0 plus 0.5fil
-.....\kern -3.0
-.....\rule(0.4+0.0)x144.54
-.....\kern 2.6
 .....\kern -3.0
 .....\rule(0.4+0.0)x144.54
 .....\kern 2.6

@@ -67,7 +67,7 @@ Completed box being shipped out [1]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+3.30003)x448.92128, glue set 205.09329fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(9.39885+0.12045)x448.92128, glue set 368.06fil, direction TLT
+.....\hbox(9.39885+0.12045)x448.92128, glue set 371.70636fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -103,8 +103,6 @@ Completed box being shipped out [1]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
-......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
 ......\penalty 10000
 ......\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] /Contents <FEFF0047006F00200074006F002000640065007300740069006E006100740069006F006E00200066006F006F0074006E006F00740065002A002E0033> } action struct name{footnote*.3} goto name{footnote*.3}
 ......\hbox(9.39885+0.0)x4.6132, direction TLT
@@ -117,15 +115,14 @@ Completed box being shipped out [1]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\insert253, natural size 0.0; split(7.7,3.30003); float cost 20000
-.....\insert253, natural size 0.0; split(7.7,3.30003); float cost 20000
 .....\glue 0.0 plus 0.5fil
 .....\kern-3.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\rule(0.4+0.0)x144.54
 .....\kern2.6
-.....\kern-3.0
-.....\rule(0.4+0.0)x144.54
-.....\kern2.6
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\pdfcolorstack 1 push {/opacity0 gs}
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -304,7 +301,7 @@ Completed box being shipped out [2]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+3.30003)x448.92128, glue set 205.09329fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(9.39885+0.12045)x448.92128, glue set 368.06fil, direction TLT
+.....\hbox(9.39885+0.12045)x448.92128, glue set 371.70636fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -344,8 +341,6 @@ Completed box being shipped out [2]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 e
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
-......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
-......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
 ......\penalty 10000
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -360,15 +355,10 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 1.0fil
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\insert253, natural size 0.0; split(7.7,3.30003); float cost 20000
-.....\insert253, natural size 0.0; split(7.7,3.30003); float cost 20000
 .....\glue 0.0 plus 0.5fil
 .....\kern-3.0
-.....\rule(0.4+0.0)x144.54
-.....\kern2.6
-.....\kern-3.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\rule(0.4+0.0)x144.54
 .....\kern2.6
 .....\pdfcolorstack 1 push {/opacity1 gs}

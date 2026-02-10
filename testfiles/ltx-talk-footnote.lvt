@@ -10,7 +10,7 @@
 \showoutput
 
 \begin{frame}
-  Text\footnote<2->{Foo} more text \footnote<1->{FooX}
+  Text\footnote<2->{Foo} more text\footnote<1->{FooX}
 \end{frame}
 
 \end{document}

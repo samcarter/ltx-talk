@@ -373,32 +373,32 @@
 % This socket receives all of the footnote content: in the standard setup it
 % would be an insert. Hence this is the best place to grab the entire content.
 % Notice that the footnote rule is only inserted when the box is used, if
-% it turns out it's needed.
+% it turns out it's needed. The overlay code is added here as it needs to be
+% inside the box used to collect the footnotes but around all of the content:
+% currently there's not a \enquote{tighter} place to target.
 %    \begin{macrocode}
 \NewSocketPlug { fntext / process } { talk }
   {
     \vbox_gset:Nn \g_@@_footnote_box
       {
         \vbox_unpack:N \g_@@_footnote_box
+        \seq_gpop_left:NN \g_@@_footnote_overlay_seq
+          \l_@@_tmp_tl
+        \exp_args:NV \@@_decode_parse:n \l_@@_tmp_tl
+        \@@_action_uncover:N \l_@@_decode_overlays_bool
         #1
+        \@@_action_uncover_end:N \l_@@_decode_overlays_bool
       }
   }
 \AssignSocketPlug { fntext / process } { talk }
 %    \end{macrocode}
 %
-% Wrap an overlay around all of the text of the footnote.
+% \begin{macro}{\@makefntext}
+%   Use a copy of the standard setup.
 %    \begin{macrocode}
-\NewSocketPlug { fntext / make } { talk }
-  {
-    \seq_gpop_left:NN \g_@@_footnote_overlay_seq
-     \l_@@_tmp_tl
-    \exp_args:NV \@@_decode_parse:n \l_@@_tmp_tl
-    \@@_action_uncover:N \l_@@_decode_overlays_bool
-    \fnote_makefntext:n {#1}
-    \@@_action_uncover_end:N \l_@@_decode_overlays_bool
-  }
-\AssignSocketPlug { fntext / make } { talk }
+\cs_new_eq:NN \@makefntext \fnote_makefntext:n
 %    \end{macrocode}
+% \end{macro}
 %
 %    \begin{macrocode}
 %</class>

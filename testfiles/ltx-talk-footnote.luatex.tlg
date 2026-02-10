@@ -163,10 +163,10 @@ Completed box being shipped out [1]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/9 o
 ......\penalty 10000
 ......\rule(0.0+3.30003)x0.0
-......\pdfcolorstack 1 pop
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0
+.....\pdfcolorstack 1 pop
 .....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -208,10 +208,10 @@ Completed box being shipped out [1]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/9 X
 ......\penalty 10000
 ......\rule(0.0+3.30003)x0.0
-......\pdfcolorstack 1 pop
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0
+.....\pdfcolorstack 1 pop
 ....\glue -3.30003
 ...\pdfliteral page <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
@@ -407,14 +407,12 @@ Completed box being shipped out [2]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/9 o
 ......\penalty 10000
 ......\rule(0.0+3.30003)x0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 1 pop
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 1 pop
 .....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue(\parskip) 0.0
 .....\glue(\parskip) 0.0
@@ -462,15 +460,13 @@ Completed box being shipped out [2]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/9 X
 ......\penalty 10000
 ......\rule(0.0+3.30003)x0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 1 pop
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 1 pop
 ....\glue -3.30003
-...\pdfliteral page <lua data reference ...>
-...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
 ...\hbox(0.0+448.92128)x448.92128, direction TLT

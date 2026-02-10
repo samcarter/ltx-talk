@@ -8,6 +8,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Revision of footnote code
+
 ### Fixed
 
 - Apply overlay specs to heading commands (see issue

@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.4.5] - 2026-02-16
+
 ### Fixed
 
 - Correct interaction of `\onslide` and `\item` overlays (see issue
@@ -301,7 +303,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.4.4...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.4.5...HEAD
+[v0.4.5]: https://github.com/josephwright/ltx-talk/compare/v0.4.4...v0.4.5
 [v0.4.4]: https://github.com/josephwright/ltx-talk/compare/v0.4.3...v0.4.4
 [v0.4.3]: https://github.com/josephwright/ltx-talk/compare/v0.4.2...v0.4.3
 [v0.4.2]: https://github.com/josephwright/ltx-talk/compare/v0.4.1...v0.4.2

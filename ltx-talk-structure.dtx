@@ -546,7 +546,7 @@
         \tl_set:Ne \l_@@_list_end_tl
           {
             \exp_not:N \int_compare:nNnT \tex_currentgrouplevel:D =
-              { \int_use:N \tex_currentgrouplevel:D + 1 }
+              { \int_eval:n { \tex_currentgrouplevel:D + 1 } }
               {
                 \@@_action_end:
                 \tl_clear:N \exp_not:N \l_@@_list_end_tl

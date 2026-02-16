@@ -1,0 +1,24 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}
+  Content
+  \onslide<2>
+  \begin{itemize}
+    \item<1-> Stuff
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  Last frame
+\end{frame}
+
+\end{document}

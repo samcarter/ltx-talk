@@ -391,14 +391,18 @@
   {
       \bool_if:NF \l_@@_overlay_all_bool
         {
-          \bool_if:NTF \l_@@_saved_overlays_bool
+          \tl_if_empty:NTF \g_@@_onslide_tl
             {
-              \cs_if_exist_use:cF
-                { @@_action_ \l_@@_saved_action_str _end:N }
-                { \use_none:n }
-                  \l_@@_saved_actions_bool
+              \bool_if:NTF \l_@@_saved_overlays_bool
+                {
+                  \cs_if_exist_use:cF
+                    { @@_action_ \l_@@_saved_action_str _end:N }
+                    { \use_none:n }
+                      \l_@@_saved_actions_bool
+                }
+                { \@@_opacity_end: }
             }
-            { \@@_opacity_end: }
+            { \@@_action_invisible_end:N \c_true_bool }
         }
     \group_end:
   }

@@ -417,6 +417,28 @@
   }
 %    \end{macrocode}
 %
+% \subsection{Text scripts}
+%
+% Newer kernel releases allow us to use real text sub- and superscripts:
+% we set up the appropriate data here.
+%
+% \begin{macro}
+%   {
+%     \textsubscript@offset   ,
+%     \textsubscript@space    ,
+%     \textsuperscript@offset ,
+%     \textsuperscript@space
+%   }
+%   Offset values as in Con\TeX{}t, no additional spacing added after
+%   script items.
+%    \begin{macrocode}
+\cs_set_nopar:Npn \textsubscript@offset { 0.48ex }
+\cs_set_nopar:Npn \textsubscript@space  { }
+\cs_set_nopar:Npn \textsubscript@offset { 0.86ex }
+\cs_set_nopar:Npn \textsubscript@space  { }
+%    \end{macrocode}
+% \end{macro}
+%
 % \subsection{Hyperlinks}
 %
 % \begin{variable}{\thepage}

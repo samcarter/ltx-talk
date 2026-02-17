@@ -706,11 +706,19 @@
 %   creation.
 %    \begin{macrocode}
 \NewCommandCopy \stdnewtheorem \newtheorem
-\RenewDocumentCommand \newtheorem { m O {#1} m o }
+\RenewDocumentCommand \newtheorem { m o m o }
   {
     \IfNoValueTF {#4}
-      { \stdnewtheorem {#1} [ {#2} ] {#3} }
-      { \stdnewtheorem {#1} [ {#2} ] {#3} [ {#4} ] }
+      {
+        \IfNoValueTF {#2}
+          { \stdnewtheorem {#1} {#3} }
+          { \stdnewtheorem {#1} [ {#2} ] {#3} }
+      }
+      {
+        \IfNoValueTF {#2}
+          { \stdnewtheorem {#1} {#3} [ {#4} ] }
+          { \stdnewtheorem {#1} [ {#2} ] {#3} [ {#4} ] }
+      }
     \NewEnvironmentCopy { std #1 } {#1}
     \RenewDocumentEnvironment {#1} { D <> { all } o }
       {

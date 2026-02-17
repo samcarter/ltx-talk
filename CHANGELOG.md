@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Revise signature for `\newtheorem` (see 
+  (https://github.com/latex3/tagging-project/issues/1239))
+
 ## [v0.4.5] - 2026-02-16
 
 ### Fixed

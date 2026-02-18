@@ -168,26 +168,16 @@
   {
     \check@mathfonts
     \vbox_set:Nn \l_@@_tmp_box {#1}
-    \use:e
+    \box_set_ht:Nn \l_@@_tmp_box
+      { 
+          0.5 \box_ht:N \l_@@_tmp_box
+        + 0.5 \box_dp:N \l_@@_tmp_box
+        + ( \l_@@_vcenter_offset_tl )
+      }
+    \box_set_dp:Nn \l_@@_tmp_box
       {
-        \box_set_ht:Nn \l_@@_tmp_box
-          {
-            \dim_eval:n
-              {
-                  0.5 \box_ht:N \l_@@_tmp_box
-                + 0.5 \box_dp:N \l_@@_tmp_box
-                + ( \l_@@_vcenter_offset_tl )
-              }
-          }
-        \box_set_dp:Nn \l_@@_tmp_box
-          { 
-            \dim_eval:n
-              {
-                  0.5 \box_ht:N \l_@@_tmp_box
-                + 0.5 \box_dp:N \l_@@_tmp_box
-                - ( \l_@@_vcenter_offset_tl )
-              }
-          }
+          \box_ht:N \l_@@_tmp_box
+        - ( \l_@@_vcenter_offset_tl ) * 2
       }
     \box_use_drop:N \l_@@_tmp_box
   }

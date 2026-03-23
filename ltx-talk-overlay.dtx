@@ -763,6 +763,20 @@
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}
+% \begin{macro}{\std@label@in@display, \std@label@in@display}
+%   We also need to cover \cs{label@in@display}: a bit more awkward as this is
+%   a document command but not set up as such in \pkg{amsmath}. For the present,
+%   cross our fingers on this!
+%    \begin{macrocode}
+\cs_new_eq:NN \std@label@in@display \label@in@display
+\RenewDocumentCommand \label@in@display { D <> { 1 } m }
+  {
+    \@@_if_overlay:nT {#1}
+      { \std@label@in@display {#2} }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 %
 %    \begin{macrocode}
 %</class>

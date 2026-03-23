@@ -1,0 +1,138 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+============================================================
+TEST 1: Show PDF Tags
+============================================================
+-------- ltx-talk-tag-section.xml (start) ---------
+<PDF>
+ <StructTreeRoot>
+  <Document xmlns="http://iso.org/pdf2/ssn"
+     id="ID.002"
+    >
+   <Sect xmlns="http://iso.org/pdf2/ssn"
+      id="ID.006"
+     >
+    <section xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.007"
+       title="Section 1"
+       actualtext="Section 1"
+       rolemaps-to="H1"
+      >
+    </section>
+    <frame xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+       id="ID.008"
+       rolemaps-to="Sect"
+      >
+     <frametitle xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+        id="ID.011"
+        title="Frame 1"
+        rolemaps-to="H4"
+       >
+      <?MarkedContent page="1" ?>Frame 1
+     </frametitle>
+     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.009"
+        rolemaps-to="Part"
+       >
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.010"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Start"
+         rolemaps-to="P"
+        >
+       <?MarkedContent page="1" ?>Content of Frame 1
+      </text>
+     </text-unit>
+    </frame>
+    <frame xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+       id="ID.012"
+       rolemaps-to="Sect"
+      >
+     <frametitle xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+        id="ID.015"
+        title="Frame 2"
+        rolemaps-to="H4"
+       >
+      <?MarkedContent page="2" ?>Frame 2
+     </frametitle>
+     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.013"
+        rolemaps-to="Part"
+       >
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.014"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Start"
+         rolemaps-to="P"
+        >
+       <?MarkedContent page="2" ?>Content of Frame 2
+      </text>
+     </text-unit>
+    </frame>
+   </Sect>
+   <Sect xmlns="http://iso.org/pdf2/ssn"
+      id="ID.016"
+     >
+    <section xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.017"
+       title="Section 2"
+       actualtext="Section 2"
+       rolemaps-to="H1"
+      >
+    </section>
+    <frame xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+       id="ID.018"
+       rolemaps-to="Sect"
+      >
+     <frametitle xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+        id="ID.021"
+        title="Frame 3"
+        rolemaps-to="H4"
+       >
+      <?MarkedContent page="3" ?>Frame 3
+     </frametitle>
+     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.019"
+        rolemaps-to="Part"
+       >
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.020"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Start"
+         rolemaps-to="P"
+        >
+       <?MarkedContent page="3" ?>Content of Frame 3
+      </text>
+     </text-unit>
+    </frame>
+    <frame xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+       id="ID.022"
+       rolemaps-to="Sect"
+      >
+     <frametitle xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+        id="ID.025"
+        title="Frame 4"
+        rolemaps-to="H4"
+       >
+      <?MarkedContent page="4" ?>Frame 4
+     </frametitle>
+     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.023"
+        rolemaps-to="Part"
+       >
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.024"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Start"
+         rolemaps-to="P"
+        >
+       <?MarkedContent page="4" ?>Content of Frame 4
+      </text>
+     </text-unit>
+    </frame>
+   </Sect>
+  </Document>
+ </StructTreeRoot>
+</PDF>
+-------- ltx-talk-tag-section.xml (end) -----------
+============================================================

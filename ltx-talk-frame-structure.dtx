@@ -305,14 +305,15 @@
 % \begin{variable}{\figurename, \tableename}
 % \begin{variable}{\fnum@figure, \fnum@table}
 %   The standard variables needed to make captions work (nothing for list
-%   of floats, as at present those are not offered).
+%   of floats, as at present those are not offered). For the \enquote{number},
+%   we currently only show the name: \enquote{floats} in presentations really
+%   should not be numbered.
 %    \begin{macrocode}
     \newcounter {#1}
     \tl_new:c { #1 name }
     \tl_set:ce { #1 name } { \text_titlecase_first:n {#1} }
     \tl_new:c { fnum@ #1 }
-    \tl_set:ce { fnum@ #1 }
-      { \exp_not:c { #1 name } \exp_not:N \nobreakspace \exp_not:c { the #1 } }
+    \tl_set_eq:cc { fnum@ #1 } { #1 name }
   }
 %    \end{macrocode}
 % \end{variable}

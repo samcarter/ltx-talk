@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Suppress caption number for 'floats' (see issue
+  [\#178](https://github.com/josephwright/ltx-talk/issues/170))
+
 ## [v0.4.6] - 2026-02-18
 
 ### Changed

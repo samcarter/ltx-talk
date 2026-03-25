@@ -33,5 +33,5 @@ If applicable, add screenshots to help explain your problem.
 
 **TeX System (please complete the following information):**
  - Engine name and version (from the start of the `.log` file, e.g. LuaTeX 1.22.0)
- - LaTeX version (from the start of the log, e.g. `2025-06-01 Patch Level 1`)
+ - LaTeX version (from the start of the log, e.g. 2025-11-01)
  - `ltx-talk` version (from the `\listfiles` output at the end of the log)

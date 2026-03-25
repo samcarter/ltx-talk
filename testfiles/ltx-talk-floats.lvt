@@ -19,6 +19,14 @@
 \end{frame}
 
 \begin{frame}
+  \begin{figure}
+    ABC
+    \caption{Demo}
+  \end{figure}
+  \onslide<2->{Slide 2-}
+\end{frame}
+
+\begin{frame}
   \begin{columns}
     \begin{column}{0.4\textwidth}
       \uncover<2>{test}

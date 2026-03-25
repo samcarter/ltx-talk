@@ -266,11 +266,17 @@
         right = \tl_set:Nn \l_@@_float_alignment_tl { flushright }
       }
   }
+%    \end{macrocode}
+% The use of  \cs{@skiphyperreftrue} here is needed as we do not want targets
+% creating for \enquotes{floats}. We may need a better interface for this:
+% the switch is essentially internal.
+%    \begin{macrocode}
   {
     \SetTemplateKeys { floatenv } { talk } {#1}
     \begin { minipage } { \columnwidth }
       \begin { \l_@@_float_alignment_tl }
         \cs_set_nopar:Npn \@captype {#2}
+        \@skiphyperreftrue
   }
 \DeclareInstance { floatenv } { std } { talk } { horizontal-alignment = left }
 %    \end{macrocode}

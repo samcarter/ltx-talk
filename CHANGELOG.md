@@ -10,6 +10,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Fixed
 
+- Suppress link targets for 'floats' (see issue
+  [\#177](https://github.com/josephwright/ltx-talk/issues/177))
 - Suppress caption number for 'floats' (see issue
   [\#178](https://github.com/josephwright/ltx-talk/issues/178))
 

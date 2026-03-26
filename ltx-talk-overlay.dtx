@@ -777,6 +777,49 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \subsection{Overlay patching of third-party environments}
+%
+% To allow opacity to apply to the entirety of constructed graphics, we need to
+% apply a transparency group around the whole thing. We need to do that by saving
+% the input in an Xform object, which then allows the group to be applied.
+%
+% \begin{variable}{\g_@@_opacity_group_int}
+%   Each use needs an Xform object, which at present we have to track as
+%   there are no anonymous ones.
+%    \begin{macrocode}
+\int_new:N \g_@@_opacity_group_int
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\@@_opacity_group_begin:, \@@_opacity_group_end:}
+%   A general mechanism to collect up an environment in a box, which we can
+%   then use as the source for an Xform object.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_opacity_group_begin:
+  { \begin { lrbox } \l_@@_tmp_box }
+\cs_new_protected:Npn \@@_opacity_group_end:
+  {
+    \end { lrbox }
+    \mode_leave_vertical:
+    \int_gincr:N \g_@@_opacity_group_int
+    \exp_args:Ne \pdfxform_new:nnn
+      { talk.opacity \int_use:N \g_@@_opacity_group_int }
+      { /Group << /S /Transparency /K ~ false /I ~ false >> }
+      { \usebox \l_@@_tmp_box }
+    \exp_args:Ne \pdfxform_use:n
+      { talk.opacity \int_use:N \g_@@_opacity_group_int }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% At present, we only add code onto the main top-level functions.
+%    \begin{macrocode}
+\clist_map_inline:nn { pspicture , tikzpicture }
+  {
+    \AddToHook { env / #1 / before } { \@@_opacity_group_begin:}
+    \AddToHook { env / #1 / after } { \@@_opacity_group_end:}
+  }
+%    \end{macrocode}
 %
 %    \begin{macrocode}
 %</class>

@@ -5,6 +5,10 @@
 
 \EditInstance{hidden}{std}{opacity = 0.15}
 
+\ifdefined\directlua\else
+  \expandafter\endinput
+\fi
+
 \usepackage{pstricks}
 
 \begin{document}

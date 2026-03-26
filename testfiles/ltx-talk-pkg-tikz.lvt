@@ -3,6 +3,8 @@
 \DocumentMetadata{tagging = draft}
 \documentclass{ltx-talk}
 
+\EditInstance{hidden}{std}{opacity = 0.15}
+
 \usepackage{tikz}
 \usepackage{tikzducks}
 
@@ -14,9 +16,11 @@
 
 \begin{frame}
   \frametitle{A duck!}
-  \begin{tikzpicture}[alt = {A duck!}]
-    \duck
-  \end{tikzpicture}
+  \begin{uncoverenv}<2->
+    \begin{tikzpicture}[alt = {A duck!}]
+      \duck
+    \end{tikzpicture}
+  \end{uncoverenv}
 \end{frame}
 
 \end{document}

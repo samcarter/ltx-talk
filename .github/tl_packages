@@ -42,6 +42,7 @@ pdfmanagement-testphase
 pdftexcmds
 pgf
 psnfss
+pstricks
 sansmathfonts
 show-pdf-tags
 siunitx

@@ -1,0 +1,24 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\EditInstance{hidden}{std}{opacity = 0.15}
+
+\usepackage{pstricks}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}
+  \begin{uncoverenv}<2->
+    \begin{pspicture}(8,2)
+      \psframe(8,2)
+    \end{pspicture}
+  \end{uncoverenv}
+\end{frame}
+
+\end{document}

@@ -5,15 +5,19 @@
 
 \EditInstance{hidden}{std}{opacity = 0.15}
 
+\START
+
 \ifdefined\directlua\else
   \expandafter\endinput
 \fi
+
+\OMIT
 
 \usepackage{pstricks}
 
 \begin{document}
 
-\START
+\TIMO
 
 \showoutput
 

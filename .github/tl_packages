@@ -43,6 +43,7 @@ pdfmanagement-testphase
 pdftexcmds
 pgf
 psnfss
+pst-tools
 pstricks
 sansmathfonts
 show-pdf-tags

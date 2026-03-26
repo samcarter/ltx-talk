@@ -37,6 +37,7 @@ lualatex-math
 luamml
 luapstricks
 mathtools
+mptopdf
 mwe
 newcomputermodern
 pdfmanagement-testphase

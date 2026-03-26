@@ -32,7 +32,6 @@ iftex
 infwarerr
 kvoptions
 latex-lab
-latex-lab-dev
 lua-unicode-math
 lualatex-math
 luamml

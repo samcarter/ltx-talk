@@ -16,6 +16,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
   [\#177](https://github.com/josephwright/ltx-talk/issues/177))
 - Suppress caption number for 'floats' (see issue
   [\#178](https://github.com/josephwright/ltx-talk/issues/178))
+- Support hiding of PSTricks content (see issue
+  [\#179](https://github.com/josephwright/ltx-talk/issues/179))
 
 ## [v0.4.6] - 2026-02-18
 

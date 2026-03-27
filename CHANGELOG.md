@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.4.7] - 2026-03-27
+
 ### Fixed
 
 - Suppress link targets for 'floats' (see issue
@@ -317,7 +319,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.4.6...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.4.7...HEAD
+[v0.4.7]: https://github.com/josephwright/ltx-talk/compare/v0.4.6...v0.4.7
 [v0.4.6]: https://github.com/josephwright/ltx-talk/compare/v0.4.5...v0.4.6
 [v0.4.5]: https://github.com/josephwright/ltx-talk/compare/v0.4.4...v0.4.5
 [v0.4.4]: https://github.com/josephwright/ltx-talk/compare/v0.4.3...v0.4.4

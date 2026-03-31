@@ -815,21 +815,12 @@
 % At present, we only add code onto the main top-level functions. This is only
 % applied in Lua\TeX{} due to restrictions on Xform structures in \pdfTeX{}.
 % Here, we apply the collection code to the commands not the environment
-% forms to deal with \enquote{direct} usage. For \pkg{pgf}, a hook rule
-% is applied such that tagging is handled outside of the work we need to
-% do.
+% forms to deal with \enquote{direct} usage.
 %    \begin{macrocode}
 \sys_if_engine_luatex:T
   {
-    \clist_map_inline:nn { pspicture , pgfpicture }
-      {
-        \AddToHook { cmd / #1 / before } { \@@_opacity_group_begin: }
-        \AddToHook { cmd / end #1 / after } { \@@_opacity_group_end: }
-      }
-    \DeclareHookRule { cmd / pgfpicture / before }
-      { ltx-talk } { after } { tikz }
-    \DeclareHookRule { cmd / endpgfpicture / after }
-      { ltx-talk } { before } { tikz }
+    \AddToHook { cmd / pspicture / before } { \@@_opacity_group_begin: }
+    \AddToHook { cmd / endpspicture / after } { \@@_opacity_group_end: }
   }
 %    \end{macrocode}
 %

@@ -812,12 +812,16 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% At present, we only add code onto the main top-level functions.
+% At present, we only add code onto the main top-level functions. This is only
+% applied in Lua\TeX{} due to restrictions on Xform structures in \pdfTeX{}.
 %    \begin{macrocode}
-\clist_map_inline:nn { pspicture , tikzpicture }
+\sys_if_engine_luatex:T
   {
-    \AddToHook { env / #1 / before } { \@@_opacity_group_begin:}
-    \AddToHook { env / #1 / after } { \@@_opacity_group_end:}
+    \clist_map_inline:nn { pspicture , tikzpicture }
+      {
+        \AddToHook { env / #1 / before } { \@@_opacity_group_begin:}
+        \AddToHook { env / #1 / after } { \@@_opacity_group_end:}
+      }
   }
 %    \end{macrocode}
 %

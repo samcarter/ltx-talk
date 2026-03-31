@@ -23,4 +23,10 @@
   \end{uncoverenv}
 \end{frame}
 
+\begin{frame}
+  \begin{tikzpicture}
+    \node {My text};
+  \end{tikzpicture}
+\end{frame}
+
 \end{document}

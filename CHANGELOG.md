@@ -8,6 +8,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Correct application of Xform object to TikZ pictures; only applies in LuaTeX
+  runs (see issue [\#182](https://github.com/josephwright/ltx-talk/issues/182)
+  and issue [\#183](https://github.com/josephwright/ltx-talk/issues/183))
+
 ## [v0.4.7] - 2026-03-27
 
 ### Fixed

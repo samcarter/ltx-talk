@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Overlay behavior of `\textcolor` (see issue
+  [\#184](https://github.com/josephwright/ltx-talk/issues/184))
+
 ## [v0.4.8] - 2026-03-31
 
 ### Fixed

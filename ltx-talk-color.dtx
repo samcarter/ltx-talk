@@ -135,16 +135,16 @@
   }
 \RenewDocumentCommand \textcolor { D <> { all } o m +m }
   {
-    \@@_if_overlay:nT {#1}
-      {
-        \mode_leave_vertical:
-        \group_begin:
+    \mode_leave_vertical:
+    \group_begin:
+      \@@_if_overlay:nT {#1}
+        {
           \IfNoValueTF {#2}
             { \color_select:e {#3} }
             { \color_select:ne {#2} {#3} }
-          #4
-        \group_end:
-      }
+        }
+      #4
+    \group_end:
   }
 %    \end{macrocode}
 % \end{macro}

@@ -19,4 +19,8 @@
   test
 \end{frame}
 
+\begin{frame}
+  test\textcolor<2->{test}
+\end{frame}
+
 \end{document}

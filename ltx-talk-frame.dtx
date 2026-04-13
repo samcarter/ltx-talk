@@ -413,12 +413,13 @@
     \tl_if_empty:nF {#1}
       {
         \hspace { \l_@@_footelem_left_skip }
-        \group_begin:
-          \tl_if_empty:NF \l_@@_footelem_color_tl
-            { \color_select:V \l_@@_footelem_color_tl }
-          \l_@@_footelem_font_tl
-          #1
-        \group_end:
+        \hbox:n
+          {
+            \tl_if_empty:NF \l_@@_footelem_color_tl
+              { \color_select:V \l_@@_footelem_color_tl }
+            \l_@@_footelem_font_tl
+            #1
+          }
         \hspace { \l_@@_footelem_right_skip }
       }
   }

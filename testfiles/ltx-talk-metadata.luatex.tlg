@@ -108,47 +108,51 @@ Completed box being shipped out [1]
 ........\localrightbox=null
 .......\hbox(0.0+0.0)x0.0, direction TLT
 .......\glue 0.0
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 S
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 o
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 m
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 e
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6  
-.......\glue(\spaceskip) 0.0 plus 0.999 minus 0.666
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 t
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 h
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 i
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 n
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 g
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 s
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6  
-.......\glue(\spaceskip) 0.0 plus 0.999 minus 0.666
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 w
-.......\kern-0.18 (font)
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 e
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6  
-.......\glue(\spaceskip) 0.0 plus 0.999 minus 0.666
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 d
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 i
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 d
+.......\hbox(4.296+1.236)x51.76805, direction TLT
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 S
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 o
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 m
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 e
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6  
+........\glue(\spaceskip) 0.0 plus 0.999 minus 0.666
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 t
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 h
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 i
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 n
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 g
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 s
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6  
+........\glue(\spaceskip) 0.0 plus 0.999 minus 0.666
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 w
+........\kern-0.18 (font)
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 e
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6  
+........\glue(\spaceskip) 0.0 plus 0.999 minus 0.666
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 d
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 i
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 d
 .......\glue 0.0
 .......\glue 0.0 plus 1.0fil
 .......\glue 0.0
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 W
-.......\kern-0.18 (font)
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 e
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 e
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 k
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6  
-.......\glue(\spaceskip) 0.0 plus 0.999 minus 0.666
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 1
+.......\hbox(4.164+0.066)x19.80602, direction TLT
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 W
+........\kern-0.18 (font)
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 e
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 e
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 k
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6  
+........\glue(\spaceskip) 0.0 plus 0.999 minus 0.666
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 1
 .......\glue 0.0
 .......\glue 0.0 plus 1.0fil
 .......\glue 0.0
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 1
+.......\hbox(4.068+0.0)x3.186, direction TLT
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 1
 .......\glue 0.0
 .......\glue 0.0 plus 1.0fil
 .......\glue 0.0
-.......\TU/NewCMSans10-Regular.otf(0)/m/n/6 1
+.......\hbox(4.068+0.0)x3.186, direction TLT
+........\TU/NewCMSans10-Regular.otf(0)/m/n/6 1
 .......\glue 0.0
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil

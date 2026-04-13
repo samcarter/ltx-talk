@@ -104,43 +104,47 @@ Completed box being shipped out [1]
 ......\hbox(4.16661+1.16666)x448.92128, glue set 92.61378fil
 .......\hbox(0.0+0.0)x0.0
 .......\glue 0.0
-.......\T1/lmss/m/n/6 S
-.......\T1/lmss/m/n/6 o
-.......\T1/lmss/m/n/6 m
-.......\T1/lmss/m/n/6 e
-.......\glue 2.12503 plus 1.06252 minus 0.70834
-.......\T1/lmss/m/n/6 t
-.......\T1/lmss/m/n/6 h
-.......\T1/lmss/m/n/6 i
-.......\T1/lmss/m/n/6 n
-.......\T1/lmss/m/n/6 g
-.......\T1/lmss/m/n/6 s
-.......\glue 2.12503 plus 1.06252 minus 0.70834
-.......\T1/lmss/m/n/6 w
-.......\kern-0.1771
-.......\T1/lmss/m/n/6 e
-.......\glue 2.12503 plus 1.06252 minus 0.70834
-.......\T1/lmss/m/n/6 d
-.......\T1/lmss/m/n/6 i
-.......\T1/lmss/m/n/6 d
+.......\hbox(4.16661+1.16666)x52.15295
+........\T1/lmss/m/n/6 S
+........\T1/lmss/m/n/6 o
+........\T1/lmss/m/n/6 m
+........\T1/lmss/m/n/6 e
+........\glue 2.12503 plus 1.06252 minus 0.70834
+........\T1/lmss/m/n/6 t
+........\T1/lmss/m/n/6 h
+........\T1/lmss/m/n/6 i
+........\T1/lmss/m/n/6 n
+........\T1/lmss/m/n/6 g
+........\T1/lmss/m/n/6 s
+........\glue 2.12503 plus 1.06252 minus 0.70834
+........\T1/lmss/m/n/6 w
+........\kern-0.1771
+........\T1/lmss/m/n/6 e
+........\glue 2.12503 plus 1.06252 minus 0.70834
+........\T1/lmss/m/n/6 d
+........\T1/lmss/m/n/6 i
+........\T1/lmss/m/n/6 d
 .......\glue 0.0
 .......\glue 0.0 plus 1.0fil
 .......\glue 0.0
-.......\T1/lmss/m/n/6 W
-.......\kern-0.1771
-.......\T1/lmss/m/n/6 e
-.......\T1/lmss/m/n/6 e
-.......\T1/lmss/m/n/6 k
-.......\glue 2.12503 plus 1.06252 minus 0.70834
-.......\T1/lmss/m/n/6 1
+.......\hbox(4.16661+0.0)x19.93817
+........\T1/lmss/m/n/6 W
+........\kern-0.1771
+........\T1/lmss/m/n/6 e
+........\T1/lmss/m/n/6 e
+........\T1/lmss/m/n/6 k
+........\glue 2.12503 plus 1.06252 minus 0.70834
+........\T1/lmss/m/n/6 1
 .......\glue 0.0
 .......\glue 0.0 plus 1.0fil
 .......\glue 0.0
-.......\T1/lmss/m/n/6 1
+.......\hbox(3.9375+0.0)x3.1875
+........\T1/lmss/m/n/6 1
 .......\glue 0.0
 .......\glue 0.0 plus 1.0fil
 .......\glue 0.0
-.......\T1/lmss/m/n/6 1
+.......\hbox(3.9375+0.0)x3.1875
+........\T1/lmss/m/n/6 1
 .......\glue 0.0
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil

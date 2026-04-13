@@ -40,6 +40,14 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}[action-spec = <+->]
+  \begin{itemize}
+    \item Statement 1 in itemize
+    \item Statement 2 in itemize
+    \item Statement 3 in itemize
+  \end{itemize}
+\end{frame}
+
 \begin{frame}
   Last frame
 \end{frame}

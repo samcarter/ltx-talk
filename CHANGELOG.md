@@ -13,6 +13,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 - Fix typos in header template doc
 - Update URL for maths fonts (see issue 
   [\#197]{https://github.com/josephwright/ltx-talk/issues/197))
+- Application of `action-spec` list environments when key is given for entire
+  frame with LaTeX 2026-06-01 (see issue
+  [\#198](https://github.com/josephwright/ltx-talk/issues/198))
 
 ## [v0.4.9] - 2026-04-02
 

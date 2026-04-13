@@ -1,0 +1,22 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}[action-spec = <+->]
+  \begin{itemize}
+    \item One
+    \item Two
+  \end{itemize}
+  \begin{block}{Title}
+    Three
+  \end{block}
+\end{frame}
+
+\end{document}

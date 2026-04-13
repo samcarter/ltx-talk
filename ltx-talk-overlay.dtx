@@ -333,7 +333,9 @@
 % \end{variable}
 % \begin{macro}{\action}
 % \begin{environment}{actionenv}
-% \begin{macro}{\@@_action_begin:n, \@@_action_begin_aux:n}
+% \begin{macro}{\@@_action_begin:n}
+% \begin{macro}{\@@_action_begin:w}
+% \begin{macro}{\@@_action_begin_auxi:n, \@@_action_begin_auxii:n}
 % \begin{macro}{\@@_action_end:}
 %   As we need data on not just overlays but also actions at the end of the
 %   environment, this has to be done manually. To allow working with
@@ -344,7 +346,7 @@
 %   if the overlay spec is simply \texttt{all}, as there will never be
 %   any spacing issues, \foreign{etc}.
 %    \begin{macrocode}
-\NewDocumentCommand \action { D <> { all } +m }
+\NewDocumentCommand \action { d <> +m }
   {
     \group_begin:
       \@@_action_begin:n {#1}
@@ -352,21 +354,32 @@
       \@@_action_end:
     \group_end:
   }
-\NewDocumentEnvironment { actionenv } { D <> { all } }
+\NewDocumentEnvironment { actionenv } { d <> }
   { \@@_action_begin:n {#1} }
   { \@@_action_end: }
 \cs_new_protected:Npn \@@_action_begin:n #1
   {
     \group_begin:
-      \str_if_eq:nnTF {#1} { all }
-        { \bool_set_true:N \l_@@_overlay_all_bool }
+      \tl_if_novalue:nTF {#1}
         {
-          \bool_set_false:N \l_@@_overlay_all_bool
-          \@@_action_begin_aux:n {#1}
+          \exp_after:wN \@@_action_begin:w
+            \l_@@_action_spec_str < all > \q_stop
         }
+        { \@@_action_begin_auxi:n {#1} }
   }
-\cs_new_protected:Npn \@@_action_begin_aux:n #1
-  {  
+\cs_new_protected:Npn \@@_action_begin:w #1 < #2 > #3 \q_stop
+  { \@@_action_begin_auxi:n {#2} }
+\cs_new_protected:Npn \@@_action_begin_auxi:n #1
+  {
+    \str_if_eq:nnTF {#1} { all }
+      { \bool_set_true:N \l_@@_overlay_all_bool }
+      {
+        \bool_set_false:N \l_@@_overlay_all_bool
+        \@@_action_begin_auxii:n {#1}
+      }
+  }
+\cs_new_protected:Npn \@@_action_begin_auxii:n #1
+  {
       \@@_decode_parse:n {#1}
       \bool_set_eq:NN \l_@@_saved_overlays_bool
         \l_@@_decode_overlays_bool
@@ -407,6 +420,8 @@
     \group_end:
   }
 %    \end{macrocode}
+% \end{macro}
+% \end{macro}
 % \end{macro}
 % \end{macro}
 % \end{environment}

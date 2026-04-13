@@ -11,6 +11,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ### Fixed
 
 - Fix typos in header template doc
+- Apply action spec uniformly to all 'action' aware environments (see issue 
+  [\#193](https://github.com/josephwright/ltx-talk/issues/193))
 - Update URL for maths fonts (see issue 
   [\#197](https://github.com/josephwright/ltx-talk/issues/197))
 - Application of `action-spec` list environments when key is given for entire

@@ -11,6 +11,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ### Fixed
 
 - Fix typos in header template doc
+- Update URL for maths fonts (see issue 
+  [\#197]{https://github.com/josephwright/ltx-talk/issues/197))
 
 ## [v0.4.9] - 2026-04-02
 

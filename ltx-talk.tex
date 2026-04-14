@@ -1297,6 +1297,15 @@ Tagging can be enabled using the standard \LaTeX{} interface
 \end{verbatim}
 as the first line of the source.
 
+In most cases, you will also need to state which standard(s) you are
+targetting: validators in particular require that standards are explicitly
+stated. For accessibility, the UA-2 standard is the most likely target, which
+would mean using
+\begin{verbatim}
+  \DocumentMetadata{tagging = on, pdfstandard = UA-2}
+\end{verbatim}
+as the first line of the source.
+
 \subsection{Current tagging approach}
 
 Whilst some aspects of tagging are straight-forward, there are specific

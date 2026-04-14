@@ -1339,7 +1339,7 @@ Several of the templates are illustrated in the examples, available along with
 this document or at \url{https://www.texdev.net/ltx-talk/examples/} as live
 demonstrations.
 
-\subsection{Font choice}
+\subsection{Font choice and loading}
 
 For \pdfTeX{} users, font choice will typically be determined by the available
 \LaTeX{} font packages. For \LuaTeX{} users, the font choice will be partly
@@ -1349,6 +1349,16 @@ font available with Unicode math support. A demonstration of the majority of
 current options in this area is available at
 \url{https://mathfonts.github.io/pdf-test-expression}, where you can also try
 out the appearance of expressions you choose.
+
+Note that for Lua\TeX{}, the current font loading approach is using
+\pkg{lua-unicode-math} with the font then loaded directly. For some use cases,
+for example bold math usage, you may wish to adjust the font setup using a
+\pkg{lua-unicode-math} font-specific package such as
+\begin{verbatim}
+  \usepackage{lum-newcomputermodernsans}
+\end{verbatim}
+This area is very experimental and users may need to manually adjust loading if
+they have specific font requirements.
 
 \subsection{Template \texttt{floatenv}}
 

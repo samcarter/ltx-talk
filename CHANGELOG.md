@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Output all slides in frame overlay spec (see issue 
+  [\#202](https://github.com/josephwright/ltx-talk/issues/202))
+
 ### Fixed
 
 - Tag floats to avoid invalid caption tagging (see issue 

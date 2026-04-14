@@ -84,10 +84,11 @@
 % would depend more heavily on viewer support. At a future stage we may wish to
 % revisit this.
 %
-% \begin{variable}{\g_@@_slide_continue_bool}
+% \begin{variable}{\g_@@_slide_continue_bool, \l_@@_slide_continue_bool}
 %   Tracks whether the frame continues after the current slide.
 %    \begin{macrocode}
 \bool_new:N \g_@@_slide_continue_bool
+\bool_new:N \l_@@_slide_continue_bool
 %    \end{macrocode}
 % \end{variable}
 %
@@ -148,13 +149,17 @@
           \@@_if_overlay:nT {#1}
             {
               \@@_slide_begin:
+              \bool_set_eq:NN \l_@@_slide_continue_bool
+                \g_@@_slide_continue_bool
               \@@_if_overlay:VTF \l_@@_frame_tagging_str
                 {
-                  \bool_gset_false:N \g_@@_slide_continue_bool
+                  \bool_gset_eq:NN \g_@@_slide_continue_bool
+                    \l_@@_slide_continue_bool
                   \@@_frame_tag:n
                 }
                 {
-                  \bool_gset_false:N \g_@@_slide_continue_bool
+                  \bool_gset_eq:NN \g_@@_slide_continue_bool
+                    \l_@@_slide_continue_bool
                   \@@_frame_notag:n
                 }
                   {

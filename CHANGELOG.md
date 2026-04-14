@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.4.11] - 2026-04-14
+
 ### Changed
 
 - Output all slides in frame overlay spec (see issue 
@@ -362,7 +364,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.4.10...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.4.11...HEAD
+[v0.4.11]: https://github.com/josephwright/ltx-talk/compare/v0.4.10...v0.4.11
 [v0.4.10]: https://github.com/josephwright/ltx-talk/compare/v0.4.9...v0.4.10
 [v0.4.9]: https://github.com/josephwright/ltx-talk/compare/v0.4.8...v0.4.9
 [v0.4.8]: https://github.com/josephwright/ltx-talk/compare/v0.4.7...v0.4.8

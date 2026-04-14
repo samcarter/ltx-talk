@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Tag floats to avoid invalid caption tagging (see issue 
+  [\#199](https://github.com/josephwright/ltx-talk/issues/199))
+
 ## [v0.4.10] - 2026-04-13
 
 ### Fixed

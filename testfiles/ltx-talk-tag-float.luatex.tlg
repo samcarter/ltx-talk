@@ -1,0 +1,142 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+============================================================
+TEST 1: Show PDF Tags
+============================================================
+-------- ltx-talk-tag-float.xml (start) ---------
+<PDF>
+ <StructTreeRoot>
+  <Document xmlns="http://iso.org/pdf2/ssn"
+     id="ID.002"
+    >
+   <frame xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+      id="ID.006"
+      rolemaps-to="Sect"
+     >
+    <frametitle xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+       id="ID.016"
+       title="A figure"
+       rolemaps-to="H4"
+      >
+     <?MarkedContent page="1" ?>A figure
+    </frametitle>
+    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.007"
+       rolemaps-to="Part"
+      >
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.008"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
+       >
+     </text>
+     <Div xmlns="http://iso.org/pdf2/ssn"
+        id="ID.009"
+       >
+      <float xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.010"
+         rolemaps-to="Aside"
+        >
+       <Caption xmlns="http://iso.org/pdf2/ssn"
+          id="ID.012"
+         >
+        <Lbl xmlns="http://iso.org/pdf2/ssn"
+           id="ID.013"
+          >
+         <?MarkedContent page="1" ?>Figure: 
+        </Lbl>
+        <text xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.014"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>A caption
+        </text>
+       </Caption>
+       <text xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.011"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextAlign="Start"
+          rolemaps-to="P"
+         >
+        <?MarkedContent page="1" ?>Some content
+       </text>
+      </float>
+     </Div>
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.015"
+        rolemaps-to="P"
+       >
+     </text>
+    </text-unit>
+   </frame>
+   <frame xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+      id="ID.017"
+      rolemaps-to="Sect"
+     >
+    <frametitle xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+       id="ID.027"
+       title="A table"
+       rolemaps-to="H4"
+      >
+     <?MarkedContent page="2" ?>A table
+    </frametitle>
+    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.018"
+       rolemaps-to="Part"
+      >
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.019"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
+       >
+     </text>
+     <Div xmlns="http://iso.org/pdf2/ssn"
+        id="ID.020"
+       >
+      <float xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.021"
+         rolemaps-to="Aside"
+        >
+       <Caption xmlns="http://iso.org/pdf2/ssn"
+          id="ID.022"
+         >
+        <Lbl xmlns="http://iso.org/pdf2/ssn"
+           id="ID.023"
+          >
+         <?MarkedContent page="2" ?>Table: 
+        </Lbl>
+        <text xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.024"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="2" ?>A caption
+        </text>
+       </Caption>
+       <text xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.025"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextAlign="Start"
+          rolemaps-to="P"
+         >
+        <?MarkedContent page="2" ?>Some content
+       </text>
+      </float>
+     </Div>
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.026"
+        rolemaps-to="P"
+       >
+     </text>
+    </text-unit>
+   </frame>
+  </Document>
+ </StructTreeRoot>
+</PDF>
+-------- ltx-talk-tag-float.xml (end) -----------
+============================================================

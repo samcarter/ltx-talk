@@ -1,0 +1,30 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = on}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\START
+
+\SHOWPDFTAGS
+
+\OMIT
+
+\begin{frame}
+  \frametitle{A figure}
+  \begin{figure}
+    Some content
+    \caption{A caption}
+  \end{figure}
+\end{frame}
+  
+\begin{frame}
+  \frametitle{A table}
+  \begin{table}
+    \caption{A caption}
+    Some content
+  \end{table}
+\end{frame}
+
+\end{document}

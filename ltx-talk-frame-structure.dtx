@@ -274,7 +274,13 @@
   {
     \SetTemplateKeys { floatenv } { talk } {#1}
     \begin { minipage } { \columnwidth }
-      \exp_args:Ne \begin { \l_@@_float_alignment_tl }
+      \use:e
+        {
+          \AssignStructureRole { para / semantic } { float }
+          \exp_not:N \begin { \l_@@_float_alignment_tl }
+          \AssignStructureRole{ para / semantic }
+            { \UseStructureName { para / semantic } }
+        }
         \cs_set_nopar:Npn \@captype {#2}
         \@skiphyperreftrue
   }

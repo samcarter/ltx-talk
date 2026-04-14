@@ -274,7 +274,7 @@
   {
     \SetTemplateKeys { floatenv } { talk } {#1}
     \begin { minipage } { \columnwidth }
-      \begin { \l_@@_float_alignment_tl }
+      \exp_args:Ne \begin { \l_@@_float_alignment_tl }
         \cs_set_nopar:Npn \@captype {#2}
         \@skiphyperreftrue
   }
@@ -285,7 +285,7 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \endfloatenv
   {
-      \end { \l_@@_float_alignment_tl }
+      \exp_args:Ne \end { \l_@@_float_alignment_tl }
     \end { minipage }
   }
 %    \end{macrocode}

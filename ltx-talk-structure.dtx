@@ -403,18 +403,13 @@
     \bool_lazy_or:nnTF 
       {
         \bool_lazy_and_p:nn 
-          {
-            \int_compare_p:nNn { \value { section } } = {#2}
-          } {
-            \int_compare_p:nNn { \value { subsection } } = \c_zero_int
-          }
-      } {
+          { \int_compare_p:nNn { \value { section } } = {#2} }
+          { \int_compare_p:nNn { \value { subsection } } = 0 }
+       }
+       {
          \bool_lazy_and_p:nn 
-            {
-              \int_compare_p:nNn { \value { section } } = {#2}
-            } {
-              \int_compare_p:nNn { \value { subsection } } = {#3}
-            }
+           { \int_compare_p:nNn { \value { section } } = {#2} }
+           { \int_compare_p:nNn { \value { subsection } } = {#3} }
       }
       {#6}
       {

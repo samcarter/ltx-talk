@@ -1261,6 +1261,47 @@ If an \meta{overlay spec} is given, this causes the footnote \meta{text} to be
 shown only on the specified slides. The footnote symbol in the text is shown on
 all slides.
 
+\subsection{Repeating a frame}
+
+Sometimes you may wish some slides of a frame to be shown in your main talk,
+but wish some \enquote{supplementary} slides of the frame to be shown only in
+the appendix. In this case, the \cs{reuseframe} command is useful.
+
+\DescribeMacro{\reuseframe}
+\begin{syntax}
+  \cs{reuseframe}\sarg{overlay spec}\oarg{options}\marg{name}
+\end{syntax}
+Reuses a frame that was previously created using \env{frame} or \env{frame*}
+environment with the option \opt{name =\meta{name}}. You can use this command
+to \enquote{continue} a frame that has been interrupted by another frame. The
+effect of this command is to insert the \env{frame} environment with the given
+\meta{overlay specification} and \meta{options} with the original contents.
+\begin{verbatim}
+  \begin{frame}<1-2>[name = myframe]
+    \begin{itemize}
+    \item<alert@1> First subject.
+    \item<alert@2> Second subject.
+    \item<alert@3> Third subject.
+    \end{itemize}
+   \end{frame}
+
+  \begin{frame}
+    Some stuff explaining more on the second matter.
+  \end{frame}
+
+  \reuseframe<3>{myframe}
+\end{verbatim}
+
+The effect of the above code is to create four slides. In the first two, the
+items 1 and~2 are highlighted. The third slide contains the text \enquote{Some
+stuff explaining more on the second matter}. The fourth slide is identical to
+the first two slides, except that the third point is now highlighted.
+
+\DescribeMacro{\againframe}
+To allow conversion of \cls{beamer} slides, the alternative name
+\cs{againframe} is available, and the use of the \opt{label} key in place of
+\opt{name} is currently supported.
+
 \section{Creating alternative output formats%
   \label{sec:modes}}
 

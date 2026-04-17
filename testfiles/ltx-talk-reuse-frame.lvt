@@ -1,0 +1,30 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\showoutput
+
+\START
+
+\begin{frame*}<1>[name = test]
+  Some content
+  \verb|The verb!|
+  \only<2>{Boo!}
+\end{frame*}
+
+\begin{frame}
+  A filler frame
+\end{frame}
+
+\reuseframe<2>{test}
+
+\reuseframe{unknown}
+
+\begin{frame*}[name = test]
+  Well that's not good!
+\end{frame*}
+
+\end{document}

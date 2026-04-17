@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- `\reuseframe` (see issue 
+  [\#190](https://github.com/josephwright/ltx-talk/issues/190))
+
 ### Fixed
 
 - Only show current subsection if toc used in subsection (see issue

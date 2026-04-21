@@ -263,15 +263,18 @@
               { \tl_clear:N \exp_not:N \l_@@_subsection_tl }
             \str_if_eq:nnF {#2} { subsubsection }
               { \tl_clear:N \exp_not:N \l_@@_subsubsection_tl }
-            \exp_not:N \addcontentsline { toc } {#2}
+            \exp_not:N \bool_if:NF ##1
               {
-                \exp_not:N \int_compare:nNnF {#1} >
-                  { \exp_not:N \value { secnumdepth } }
+                \exp_not:N \addcontentsline { toc } {#2}
                   {
-                    \exp_not:N \protect \exp_not:N \numberline
-                      { \exp_not:c { the #2 } }
+                    \exp_not:N \int_compare:nNnF {#1} >
+                      { \exp_not:N \value { secnumdepth } }
+                      {
+                        \exp_not:N \protect \exp_not:N \numberline
+                          { \exp_not:c { the #2 } }
+                      }
+                    ##3
                   }
-                ##3
               }
             \hook_use:n { #2 / begin }
           }

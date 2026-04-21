@@ -13,6 +13,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 - `\reuseframe` (see issue 
   [\#190](https://github.com/josephwright/ltx-talk/issues/190))
 
+### Changed
+
+- Support `*` notation for (sub)sections (omitting from TOC)
+
 ### Fixed
 
 - Only show current subsection if toc used in subsection (see issue

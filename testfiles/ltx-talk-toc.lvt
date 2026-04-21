@@ -1,0 +1,46 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\section*{Outline}
+
+\begin{frame}
+  \tableofcontents
+\end{frame}
+
+\section{Main text}
+
+\begin{frame}
+  Some text
+\end{frame}
+
+\section{Second section}
+
+\subsection{First subsection}
+
+\begin{frame}
+  Some text
+\end{frame}
+
+\subsection{Second subsection}
+
+\begin{frame}
+  Some text
+\end{frame}
+
+\section*{Summary}
+
+\begin{frame}
+  Summary text
+\end{frame}
+
+\START
+
+\SHOWFILE{\jobname.toc}
+
+\OMIT
+  
+\end{document}

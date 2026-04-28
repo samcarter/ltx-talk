@@ -21,6 +21,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Only show current subsection if toc used in subsection (see issue
   [\#203](https://github.com/josephwright/ltx-talk/issues/203))
+- Define handling of multiple action specifications (see issue
+  [\#208](https://github.com/josephwright/ltx-talk/issues/208))
 
 ## [v0.4.11] - 2026-04-14
 

@@ -156,6 +156,12 @@
     \test:nnTF { handout } { projector } \ERROR \FALSE
   }
 
+\TEST { Malformed~actions }
+  {
+    \__talk_decode_parse:n { uncover@2-|alert@4 }
+    \__talk_decode_parse:n { alert@2|2- }
+  }
+
 \TEST { Errors }
   {
     \__talk_decode_parse:n { foo@1 }

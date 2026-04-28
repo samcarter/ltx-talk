@@ -104,7 +104,21 @@ FALSE
 FALSE
 ============================================================
 ============================================================
-TEST 7: Errors
+TEST 7: Malformed actions
+============================================================
+! Class ltx-talk Error: Duplicate action in overlay specification "uncover@2-|alert@4".
+For immediate help type H <return>.
+ ...                                              
+l. ...  }
+The overlay specification contains more than one action:ltx-talk only supports a single action in one overlay.
+! Class ltx-talk Error: Misplaced action in overlay specification "alert@2|2-".
+For immediate help type H <return>.
+ ...                                              
+l. ...  }
+The overlay specification contains an action before the overlay part(s): this is not supported.
+============================================================
+============================================================
+TEST 8: Errors
 ============================================================
 ! Class ltx-talk Error: Bad overlay specification "foo@1".
 For immediate help type H <return>.

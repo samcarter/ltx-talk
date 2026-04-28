@@ -162,8 +162,6 @@
         \bool_set_false:N \l_@@_decode_actions_bool
         \bool_set_false:N \l_@@_decode_overlays_bool
         \bool_set_true:N \l_@@_decode_pure_bool
-        \str_clear:N \l_@@_decode_overlays_str
-        \str_clear:N \l_@@_decode_actions_str
         \exp_args:No \@@_decode_parse_auxii:n { \l_@@_decode_arg_str }
       }
   }
@@ -284,14 +282,28 @@
   }
   {
     \tl_if_blank:nTF {#2}
-      { \@@_decode_overlays:nn { overlays } {#1} }
+      {
+        \str_if_empty:NTF \l_@@_decode_action_str
+          { \@@_decode_overlays:nn { overlays } {#1} }
+          {
+            \msg_error:nnV { talk } { misplaced-action-spec }
+              \l_@@_decode_arg_str
+          }
+      }
       {
         \cs_if_exist:cTF { @@_action_ #1 :N }
           {
             \bool_set_false:N \l_@@_decode_pure_bool
-            \str_set:Nn \l_@@_decode_action_str {#1}
-            \tl_if_blank:nF {#2}
-              { \@@_decode_overlays:nn { actions } {#2} }
+            \str_if_empty:NTF \l_@@_decode_action_str
+              {
+                \str_set:Nn \l_@@_decode_action_str {#1}
+                \tl_if_blank:nF {#2}
+                  { \@@_decode_overlays:nn { actions } {#2} }
+              }
+              {
+                \msg_error:nnV { talk } { duplicate-action-spec }
+                  \l_@@_decode_arg_str
+              }
           }
           {
             \msg_error:nnV { talk } { bad-action-spec }
@@ -315,6 +327,7 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_overlays:nn #1#2
   {
+    \str_clear:c { l_@@_decode_ #1 _str }
     \@@_decode_overlays:nN {#1} #2 \q_recursion_tail \q_recursion_stop
     \@@_decode_check:n {#1}
   }
@@ -464,6 +477,18 @@
   {
     The~overlay~specification~given~doesn't~follow~the~pattern~described~in~
     the~ltx-talk~manual:~it~has~been~ignored.
+  }
+\msg_new:nnnn { talk } { duplicate-action-spec }
+  { Duplicate~action~in~overlay~specification~"#1". }
+  {
+    The~overlay~specification~contains~more~than~one~action:
+    ltx-talk~only~supports~a~single~action~in~one~overlay.
+  }
+\msg_new:nnnn { talk } { misplaced-action-spec }
+  { Misplaced~action~in~overlay~specification~"#1". }
+  {
+    The~overlay~specification~contains~an~action~before~the~overlay~
+    part(s):~this~is~not~supported.
   }
 %    \end{macrocode}
 %

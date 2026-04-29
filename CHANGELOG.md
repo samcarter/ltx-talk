@@ -21,6 +21,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Only show current subsection if toc used in subsection (see issue
   [\#203](https://github.com/josephwright/ltx-talk/issues/203))
+- Exclusion of modes when overlay spec is 'mixed'  (see issue
+  [\#206](https://github.com/josephwright/ltx-talk/issues/206))
 - Define handling of multiple action specifications (see issue
   [\#208](https://github.com/josephwright/ltx-talk/issues/208))
 

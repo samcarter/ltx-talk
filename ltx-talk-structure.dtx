@@ -264,7 +264,7 @@
             \str_if_eq:nnF {#2} { subsubsection }
               { \tl_clear:N \exp_not:N \l_@@_subsubsection_tl }
             \exp_not:N \bool_if:NF ##1
-              { \exp_not:N \@@_head_marks:nnn {#2} {#1} {##3} }
+              { \exp_not:N \@@_head_marks:nnnn {#2} {#1} {##3} {##3} }
             \hook_use:n { #2 / begin }
           }
         \hook_new:n { #2 / begin }
@@ -275,19 +275,39 @@
 % \end{macro}
 % \end{macro}
 % \begin{macro}{\@@_head_marks:nnn}
+% \begin{macro}{\@@_head_marks_aux:Nnn}
 %   For handling bookmarks, TOC, \foreign{etc.}: the naming here follows the
-%   \LaTeX{} kernel.
+%   \LaTeX{} kernel, as does the code in general, but with some minor
+%   adjustments.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_head_marks:nnn #1#2#3
+\cs_new_protected:Npn \@@_head_marks:nnnn #1#2#3#4
   {
-    \addcontentsline { toc } {#1}
+    \tl_if_blank:nTF {#3}
       {
-        \int_compare:nNnF {#2} > { \value { secnumdepth } }
-          { \protect \numberline { \use:c { the #1 } } }
-        #3
+        \tl_if_blank:nF {#4}
+          {
+            \@@_head_marks_aux:Nnnn
+              \addcontentslinebookmark {#1} {#2} {#4}
+          }
+      }
+      {
+        \tl_if_blank:nT {#4}
+          { \addcontentslinebookmarkOff }
+        \@@_head_marks_aux:Nnnn
+          \addcontentsline {#1} {#2} { \texorpdfstring {#3} {#4} }
+      }
+  }
+\cs_new_protected:Npn \@@_head_marks_aux:Nnnn #1#2#3#4
+  {
+    #1 { toc } {#2}
+      {
+        \int_compare:nNnF {#3} > { \value { secnumdepth } }
+          { \protect \numberline { \use:c { the #2 } } }
+         #4
       }
   }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 %
 % \begin{macro}{talk/sec/title}

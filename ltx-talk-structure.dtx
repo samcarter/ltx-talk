@@ -192,9 +192,9 @@
 \newcounter { section }
 \newcounter { subsection } [ section ]
 \newcounter { subsubsection } [ subsection ]
-\seq_gremove_all:Nn \l_@@_cnt_reset_seq { section }
-\seq_gremove_all:Nn \l_@@_cnt_reset_seq { subsection }
-\seq_gremove_all:Nn \l_@@_cnt_reset_seq { subsubsection }
+\seq_gremove_all:Nn \g_@@_cnt_reset_seq { section }
+\seq_gremove_all:Nn \g_@@_cnt_reset_seq { subsection }
+\seq_gremove_all:Nn \g_@@_cnt_reset_seq { subsubsection }
 \cs_gset:Npn \thesection { \@arabic \c@section }
 \cs_gset:Npn \thesubsection { \thesection . \@arabic \c@subsection }
 \cs_gset:Npn \thesubsubsection { \thesubsection . \@arabic \c@subsubsection }

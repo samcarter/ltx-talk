@@ -321,9 +321,10 @@
               { \tl_clear:N \exp_not:N \l_@@_subsection_tl }
             \str_if_eq:nnF {#2} { subsubsection }
               { \tl_clear:N \exp_not:N \l_@@_subsubsection_tl }
-            \exp_not:N \@@_head_marks:nnVV {#2} {#1}
+            \exp_not:N \@@_head_marks:nnVVV {#2} {#1}
               \exp_not:N \l_@@_sec_toc_tl
               \exp_not:N \l_@@_sec_bookmark_tl
+              \exp_not:N \l_@@_sec_nameref_tl
             \hook_use:n { #2 / begin }
           }
         \hook_new:n { #2 / begin }
@@ -347,14 +348,15 @@
 \providecommand \texorpdfstring [ 2 ] {#1}
 %    \end{macrocode}
 % \end{macro}
-% \begin{macro}{\@@_head_marks:nnnn, \@@_head_marks:nnVV}
+% \begin{macro}{\@@_head_marks:nnnnn, \@@_head_marks:nnVVV}
 % \begin{macro}{\@@_head_marks_aux:Nnn}
 %   For handling bookmarks, TOC, \foreign{etc.}: the naming here follows the
 %   \LaTeX{} kernel, as does the code in general, but with some minor
 %   adjustments.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_head_marks:nnnn #1#2#3#4
+\cs_new_protected:Npn \@@_head_marks:nnnnn #1#2#3#4#5
   {
+    \tl_set:Nn \@currentlabelname {#5}
     \tl_if_blank:nTF {#3}
       {
         \tl_if_blank:nF {#4}
@@ -370,7 +372,7 @@
           \addcontentsline {#1} {#2} { \texorpdfstring {#3} {#4} }
       }
   }
-\cs_generate_variant:Nn \@@_head_marks:nnnn { nnVV }
+\cs_generate_variant:Nn \@@_head_marks:nnnnn { nnVVV }
 \cs_new_protected:Npn \@@_head_marks_aux:Nnnn #1#2#3#4
   {
     #1 { toc } {#2}

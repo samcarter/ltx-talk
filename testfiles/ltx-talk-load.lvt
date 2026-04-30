@@ -1,0 +1,13 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+
+\ExplSyntaxOn
+\debug_on:n { check-declarations , deprecation }
+\ExplSyntaxOff
+
+\START
+
+\documentclass{ltx-talk}
+
+\stop

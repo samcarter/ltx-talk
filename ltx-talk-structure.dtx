@@ -264,18 +264,7 @@
             \str_if_eq:nnF {#2} { subsubsection }
               { \tl_clear:N \exp_not:N \l_@@_subsubsection_tl }
             \exp_not:N \bool_if:NF ##1
-              {
-                \exp_not:N \addcontentsline { toc } {#2}
-                  {
-                    \exp_not:N \int_compare:nNnF {#1} >
-                      { \exp_not:N \value { secnumdepth } }
-                      {
-                        \exp_not:N \protect \exp_not:N \numberline
-                          { \exp_not:c { the #2 } }
-                      }
-                    ##3
-                  }
-              }
+              { \exp_not:N \@@_head_marks:nnn {#2} {#1} {##3} }
             \hook_use:n { #2 / begin }
           }
         \hook_new:n { #2 / begin }
@@ -284,6 +273,21 @@
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}
+% \end{macro}
+% \begin{macro}{\@@_head_marks:nnn}
+%   For handling bookmarks, TOC, \foreign{etc.}: the naming here follows the
+%   \LaTeX{} kernel.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_head_marks:nnn #1#2#3
+  {
+    \addcontentsline { toc } {#1}
+      {
+        \int_compare:nNnF {#2} > { \value { secnumdepth } }
+          { \protect \numberline { \use:c { the #1 } } }
+        #3
+      }
+  }
+%    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}{talk/sec/title}

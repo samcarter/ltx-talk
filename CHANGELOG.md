@@ -16,6 +16,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ### Changed
 
 - Support `*` notation for (sub)sections (omitting from TOC)
+- Support for keyval optional argument for (sub)sections
 - Use after-item hook when available
 
 ### Fixed

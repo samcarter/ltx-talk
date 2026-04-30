@@ -37,6 +37,12 @@
   Summary text
 \end{frame}
 
+\section[toc = ]{Colophon}
+
+\begin{frame}
+  Some last text
+\end{frame}
+
 \START
 
 \SHOWFILE{\jobname.toc}

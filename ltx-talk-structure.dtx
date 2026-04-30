@@ -286,7 +286,7 @@
             \exp_not:c { l_@@_ #2 _tl }
           }
         \NewDocumentCommand \exp_not:c {#2}
-          { s D <> { all } = { shorttitle } o m }
+          { s D <> { all } = { shorttitle } O {##4} m }
           {
             \exp_not:N \bool_if:NF \exp_not:N \l_@@_frame_bool
               {

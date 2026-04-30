@@ -341,23 +341,10 @@
 %   }
 %   Patches as in \file{latex-lab-sec-template.dtx}.
 %    \begin{macrocode}
-\newcommand \addcontentslinebookmark [ 3 ] { }
-\newcommand \addcontentslinebookmarkOff { }
-\newcommand \addcontentslinebookmarkReset { }
+\providecommand \addcontentslinebookmark [ 3 ] { }
+\providecommand \addcontentslinebookmarkOff { }
+\providecommand \addcontentslinebookmarkReset { }
 \providecommand \texorpdfstring [ 2 ] {#1}
-\AddToHook { package / hyperref / after }
-  {
-    \RenewCommandCopy \addcontentslinebookmark \Hy@addcontentsline@addbookmark
-    \renewcommand \addcontentslinebookmarkOff
-      {
-        \ifHy@bookmarks
-          \let \addcontentslinebookmarkReset \Hy@bookmarkstrue
-        \else
-          \let \addcontentslinebookmarkReset \relax
-        \fi
-        \Hy@bookmarksfalse
-      }
-  }
 %    \end{macrocode}
 % \end{macro}
 % \begin{macro}{\@@_head_marks:nnnn, \@@_head_marks:nnVV}

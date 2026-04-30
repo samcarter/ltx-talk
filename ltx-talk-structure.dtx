@@ -390,7 +390,10 @@
 %    \begin{macrocode}
 \NewTaggingSocket { talk / sec / title } { 1 }
 \NewTaggingSocketPlug { talk / sec / title } { default }
-  { \exp_args:Ne \@@_head_tag:nn { \text_purify:v { l_@@_ #1 _ tl } } {#1} }
+  {
+      \exp_args:Ne \@@_head_tag:nn
+        { \text_purify:v { l_@@_ #1 _ tl } } {#1}
+  }
 \cs_new_protected:Npn \@@_head_tag:nn #1#2
   {
     \tag_struct_begin:e
@@ -746,7 +749,8 @@
                 \dim_compare:nNnT \l_tmpa_skip > \c_zero_dim
                   {
                     \skip_vertical:n { - \l_tmpa_skip }
-                    \skip_vertical:n { \l_tmpa_skip + \parskip - \@outerparskip }
+                    \skip_vertical:n
+                      { \l_tmpa_skip + \parskip - \@outerparskip }
                   }
                 \addpenalty \@endparpenalty
                 \addvspace \l__block_topsepadd_skip

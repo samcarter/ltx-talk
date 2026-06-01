@@ -112,7 +112,7 @@ Completed box being shipped out [1]
 ........\hbox(0.0+0.0)x0.0
 ........\pdfliteral page{EMC}
 ........\penalty 10000
-........\glue(\parfillskip) 0.0
+........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 .......\marks4{b-,3,11,text,,,}
 .......\marks4{b+,3,11,text,,,}

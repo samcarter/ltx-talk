@@ -98,6 +98,7 @@ LaTeX Info: Redefining \] on input line ....
 ) (../latex-lab-amsmath.ltx
 File: latex-lab-amsmath.ltx ....-..-.. v... amsmath adaptions
 LaTeX Info: Redefining \eqref on input line ....
+\l__luamml_struct_tmpa_int=\count...
 ) (../fontspec.sty (../xparse.sty (../expl3.sty
 Package: expl3 ....-..-.. L3 programming layer (loader) 
 )
@@ -151,7 +152,7 @@ Package: mhsetup ....-..-.. v... programming setup (MH)
 \xmathstrut@box=\box...
 \xmathstrut@dim=\dimen...
 ) (../latex-lab-mathtools.ltx
-File: latex-lab-mathtools.ltx ....-..-.. v... mathtools adaptions
+File: latex-lab-mathtools.ltx ....-..-.. 0.80e mathtools adaptions
 ) (../lua-unicode-math.sty
 Package: lua-unicode-math ....-..-.. v... Opentype Math support for LuaLaTeX
 \g__l_uni_math_font_count_int=\count...
@@ -210,6 +211,9 @@ For immediate help type H <return>.
 l. ...\UseInstance {lua-unicode-math-style} {TeX}
 This is a coding error.
 Local assignment to a global variable '\g__l_uni_math_max_mathstyle_int'.
+) (../latex-lab-unicode-math.ltx
+File: latex-lab-unicode-math.ltx ....-..-.. v... unicode-mathadaptions
+LaTeX Info: Redefining \frac on input line ....
 ) (../NewCMSans10-Regular.fontspec)
 Package fontspec Info: 
 (fontspec)             Font family 'NewCMSans10-Regular.otf(0)' created for font 'NewCMSans10-Regular.otf' with options [Ligatures=TeX,UprightFont={NewCMSans10-Regular.otf},UprightFeatures={SizeFeatures={{Size={-8},Font={NewCMSans08-Regular.otf}},{Size={8-},Font={NewCMSans10-Regular.otf}}}},ItalicFont={NewCMSans10-Oblique.otf},ItalicFeatures={SizeFeatures={{Size={-8},Font={NewCMSans08-Oblique.otf}},{Size={8-},Font={NewCMSans10-Oblique.otf}}}},BoldFont={NewCMSans10-Bold.otf},BoldFeatures={SizeFeatures={{Size={0-},Font={NewCMSans10-Bold.otf}}}},BoldItalicFont={NewCMSans10-BoldOblique.otf},BoldItalicFeatures={SizeFeatures={{Size={0-},Font={NewCMSans10-BoldOblique.otf}}}},SlantedFont={NewCMSans10-Regular.otf},SlantedFeatures={SizeFeatures={{Size={-8},Font={NewCMSans08-Regular.otf}},{Size={8-},Font={NewCMSans10-Regular.otf}}}},BoldSlantedFont={NewCMSans10-Bold.otf},BoldSlantedFeatures={SizeFeatures={{Size={0-},Font={NewCMSans10-Bold.otf}}}},SwashFont={NewCMSans10-Regular.otf},SwashFeatures={SizeFeatures={{Size={-8},Font={NewCMSans08-Regular.otf}},{Size={8-},Font={NewCMSans10-Regular.otf}}}},BoldSwashFont={NewCMSans10-Bold.otf},BoldSwashFeatures={SizeFeatures={{Size={0-},Font={NewCMSans10-Bold.otf}}}}].

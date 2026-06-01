@@ -70,7 +70,7 @@ Completed box being shipped out [1]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 178.7866fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(7.8402+0.2409)x448.92128, glue set 341.6113fil, direction TLT
+.....\hbox(7.8402+0.2409)x448.92128, glue set 170.80566fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -110,10 +110,10 @@ Completed box being shipped out [1]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
 ......\penalty 10000
-......\glue 0.0
+......\glue -0.00002
 ......\pdfcolorstack 1 push {/opacity0 gs}
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 12.0 plus 4.0 minus 4.0
 .....\glue 0.0
@@ -123,7 +123,7 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\glue(\parskip) 0.0 plus 1.0
 ......\glue(\parskip) 0.0
-......\hbox(8.604+0.12)x448.92128, glue set 408.19324fil, direction TLT
+......\hbox(8.604+0.12)x448.92128, glue set 204.09662fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
 ........\localbrokenpenalty=0
@@ -141,7 +141,7 @@ Completed box being shipped out [1]
 .......\glue(\spaceskip) 0.0 plus 2.202 minus 1.468
 .......\TU/NewCMSans10-Regular.otf(0)/b/n/12 1
 .......\penalty 10000
-.......\glue(\parfillskip) 0.0
+.......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0 plus 1.0fil
 ......\glue 6.0 plus 2.0 minus 2.0
 ......\glue 0.0
@@ -149,7 +149,7 @@ Completed box being shipped out [1]
 ......\glue(\parskip) 0.0 plus 1.0
 ......\glue(\parskip) 0.0
 ......\glue(\baselineskip) 5.63982
-......\hbox(7.8402+0.2409)x448.92128, glue set 345.25763fil, direction TLT
+......\hbox(7.8402+0.2409)x448.92128, glue set 172.62881fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
 ........\localbrokenpenalty=0
@@ -185,7 +185,7 @@ Completed box being shipped out [1]
 .......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
 .......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 1
 .......\penalty 10000
-.......\glue(\parfillskip) 0.0
+.......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0 plus 1.0fil
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -292,7 +292,7 @@ Completed box being shipped out [2]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 178.7866fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(7.8402+0.2409)x448.92128, glue set 341.6113fil, direction TLT
+.....\hbox(7.8402+0.2409)x448.92128, glue set 170.80565fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -333,7 +333,7 @@ Completed box being shipped out [2]
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
 ......\penalty 10000
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 12.0 plus 4.0 minus 4.0
 .....\glue 0.0
@@ -343,7 +343,7 @@ Completed box being shipped out [2]
 ......\glue 0.0
 ......\glue(\parskip) 0.0 plus 1.0
 ......\glue(\parskip) 0.0
-......\hbox(8.604+0.12)x448.92128, glue set 408.19324fil, direction TLT
+......\hbox(8.604+0.12)x448.92128, glue set 204.09662fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
 ........\localbrokenpenalty=0
@@ -363,7 +363,7 @@ Completed box being shipped out [2]
 .......\glue(\spaceskip) 0.0 plus 2.202 minus 1.468
 .......\TU/NewCMSans10-Regular.otf(0)/b/n/12 1
 .......\penalty 10000
-.......\glue(\parfillskip) 0.0
+.......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0 plus 1.0fil
 ......\glue 6.0 plus 2.0 minus 2.0
 ......\glue 0.0
@@ -373,7 +373,7 @@ Completed box being shipped out [2]
 ......\glue(\parskip) 0.0 plus 1.0
 ......\glue(\parskip) 0.0
 ......\glue(\baselineskip) 5.63982
-......\hbox(7.8402+0.2409)x448.92128, glue set 345.25763fil, direction TLT
+......\hbox(7.8402+0.2409)x448.92128, glue set 172.62881fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
 ........\localbrokenpenalty=0
@@ -411,7 +411,7 @@ Completed box being shipped out [2]
 .......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
 .......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 1
 .......\penalty 10000
-.......\glue(\parfillskip) 0.0
+.......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
@@ -513,7 +513,7 @@ Completed box being shipped out [3]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 195.80994fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(7.8402+0.2409)x448.92128, glue set 341.6113fil, direction TLT
+.....\hbox(7.8402+0.2409)x448.92128, glue set 170.80566fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -553,10 +553,10 @@ Completed box being shipped out [3]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
 ......\penalty 10000
-......\glue 0.0
+......\glue -0.00002
 ......\pdfcolorstack 1 push {/opacity0 gs}
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 12.0 plus 4.0 minus 4.0
 .....\glue 0.0
@@ -570,7 +570,6 @@ Completed box being shipped out [3]
 .......\localleftbox=null
 .......\localrightbox=null
 ......\hbox(0.0+0.0)x0.0, direction TLT
-......\mathon
 ......\vbox(9.5375+4.06248)x448.92128, direction TLT
 .......\hbox(9.5375+4.06248)x448.92128, glue set 176.61578fil, direction TLT
 ........\glue(\leftskip) 0.0 plus 1.0fil
@@ -581,7 +580,6 @@ Completed box being shipped out [3]
 .........\localrightbox=null
 ........\hbox(0.0+0.0)x0.0, direction TLT
 ........\hbox(9.5375+4.06248)x95.6897, direction TLT
-.........\mathon
 .........\vbox(9.5375+4.06248)x95.6897, direction TLT
 ..........\hbox(9.51996+4.08003)x95.6897, direction TLT
 ...........\glue(\tabskip) 0.0
@@ -620,14 +618,12 @@ Completed box being shipped out [3]
 ............\glue 0.0 plus 1.0fil
 ............\glue 6.0
 ...........\glue(\tabskip) 0.0
-.........\mathoff
 ........\penalty 10000
 ........\glue(\parfillskip) 0.0
 ........\glue(\rightskip) 0.0 plus 1.0fil
 .......\penalty 0
-......\mathoff
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -733,7 +729,7 @@ Completed box being shipped out [4]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 195.80994fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(7.8402+0.2409)x448.92128, glue set 341.6113fil, direction TLT
+.....\hbox(7.8402+0.2409)x448.92128, glue set 170.80565fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -774,7 +770,7 @@ Completed box being shipped out [4]
 ......\glue(\spaceskip) 0.0 plus 1.82318 minus 1.21545
 ......\penalty 10000
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 12.0 plus 4.0 minus 4.0
 .....\glue 0.0
@@ -788,9 +784,6 @@ Completed box being shipped out [4]
 .......\localleftbox=null
 .......\localrightbox=null
 ......\hbox(0.0+0.0)x0.0, direction TLT
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\mathon
 ......\vbox(9.5375+4.06248)x448.92128, direction TLT
 .......\hbox(9.5375+4.06248)x448.92128, glue set 176.61578fil, direction TLT
 ........\glue(\leftskip) 0.0 plus 1.0fil
@@ -801,11 +794,12 @@ Completed box being shipped out [4]
 .........\localrightbox=null
 ........\hbox(0.0+0.0)x0.0, direction TLT
 ........\hbox(9.5375+4.06248)x95.6897, direction TLT
-.........\mathon
 .........\vbox(9.5375+4.06248)x95.6897, direction TLT
 ..........\hbox(9.51996+4.08003)x95.6897, direction TLT
 ...........\glue(\tabskip) 0.0
 ...........\hbox(9.51996+4.08003)x46.07643, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
 ............\rule(9.51996+4.08003)x0.0
 ............\glue 6.0
 ............\TU/NewCMSans10-Regular.otf(0)/m/n/10.95  
@@ -846,20 +840,18 @@ Completed box being shipped out [4]
 ............\glue 0.0 plus 1.0fil
 ............\glue 6.0
 ...........\glue(\tabskip) 0.0
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\mathoff
 ........\penalty 10000
 ........\glue(\parfillskip) 0.0
 ........\glue(\rightskip) 0.0 plus 1.0fil
 .......\penalty 0
-......\mathoff
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
 ...\hbox(0.0+448.92128)x448.92128, direction TLT

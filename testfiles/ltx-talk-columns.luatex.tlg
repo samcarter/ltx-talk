@@ -111,7 +111,7 @@ Completed box being shipped out [1]
 .........\localrightbox=null
 ........\hbox(0.0+0.0)x0.0, direction TLT
 ........\penalty 10000
-........\glue(\parfillskip) 0.0
+........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil

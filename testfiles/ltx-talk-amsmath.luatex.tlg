@@ -61,7 +61,7 @@ Completed box being shipped out [1]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 214.25525fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -76,7 +76,7 @@ Completed box being shipped out [1]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 10000
 .....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
@@ -510,12 +510,12 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue 11.0 plus 3.0 minus 6.0
 .....\penalty 0
-.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue 0.0 plus -1.0
+.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 1.98637
-.....\hbox(7.5336+0.12045)x448.92128, glue set 359.47076fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 179.73538fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -548,7 +548,7 @@ Completed box being shipped out [1]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
@@ -651,7 +651,7 @@ Completed box being shipped out [2]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 214.25525fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -666,7 +666,7 @@ Completed box being shipped out [2]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 10000
 .....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
@@ -1090,12 +1090,12 @@ Completed box being shipped out [2]
 .....\penalty 10000
 .....\glue 11.0 plus 3.0 minus 6.0
 .....\penalty 0
-.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue 0.0 plus -1.0
+.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 1.98637
-.....\hbox(7.5336+0.12045)x448.92128, glue set 359.47076fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 179.73538fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -1128,7 +1128,7 @@ Completed box being shipped out [2]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
@@ -1230,7 +1230,7 @@ Completed box being shipped out [3]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 214.25525fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -1245,7 +1245,7 @@ Completed box being shipped out [3]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 10000
 .....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
@@ -1669,12 +1669,12 @@ Completed box being shipped out [3]
 .....\penalty 10000
 .....\glue 11.0 plus 3.0 minus 6.0
 .....\penalty 0
-.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue 0.0 plus -1.0
+.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 1.98637
-.....\hbox(7.5336+0.12045)x448.92128, glue set 359.47076fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 179.73538fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -1707,7 +1707,7 @@ Completed box being shipped out [3]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
@@ -1809,7 +1809,7 @@ Completed box being shipped out [4]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 214.25525fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -1824,7 +1824,7 @@ Completed box being shipped out [4]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 10000
 .....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
@@ -2248,12 +2248,12 @@ Completed box being shipped out [4]
 .....\penalty 10000
 .....\glue 11.0 plus 3.0 minus 6.0
 .....\penalty 0
-.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue 0.0 plus -1.0
+.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 1.98637
-.....\hbox(7.5336+0.12045)x448.92128, glue set 359.47076fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 179.73538fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -2286,7 +2286,7 @@ Completed box being shipped out [4]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
@@ -2388,7 +2388,7 @@ Completed box being shipped out [5]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 214.25525fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -2403,7 +2403,7 @@ Completed box being shipped out [5]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 10000
 .....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
@@ -2827,12 +2827,12 @@ Completed box being shipped out [5]
 .....\penalty 10000
 .....\glue 11.0 plus 3.0 minus 6.0
 .....\penalty 0
-.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue 0.0 plus -1.0
+.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 1.98637
-.....\hbox(7.5336+0.12045)x448.92128, glue set 359.47076fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 179.73538fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -2865,7 +2865,7 @@ Completed box being shipped out [5]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
@@ -2967,7 +2967,7 @@ Completed box being shipped out [6]
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 72.10204fil, direction TLT
 .....\glue 0.0 plus 0.5fil
-.....\hbox(7.5336+0.12045)x448.92128, glue set 428.5105fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 214.25525fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -2982,7 +2982,7 @@ Completed box being shipped out [6]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\penalty 10000
 .....\glue(\abovedisplayskip) 11.0 plus 3.0 minus 6.0
@@ -3406,12 +3406,12 @@ Completed box being shipped out [6]
 .....\penalty 10000
 .....\glue 11.0 plus 3.0 minus 6.0
 .....\penalty 0
-.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue 0.0 plus -1.0
+.....\glue 11.0 plus 3.0 minus 6.0
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 1.98637
-.....\hbox(7.5336+0.12045)x448.92128, glue set 359.47076fil, direction TLT
+.....\hbox(7.5336+0.12045)x448.92128, glue set 179.73538fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -3446,7 +3446,7 @@ Completed box being shipped out [6]
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 x
 ......\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil

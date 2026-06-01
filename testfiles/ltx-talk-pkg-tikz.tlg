@@ -79,7 +79,7 @@ Completed box being shipped out [1]
 .....\pdfcolorstack 1 push {/opacity0.15 gs}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
-.....\hbox(57.61662+0.0)x448.92128, glue set 392.0158fil
+.....\hbox(57.61662+0.0)x448.92128, glue set 196.0079fil
 ......\hbox(0.0+0.0)x0.0
 ......\hbox(57.61662+0.0)x56.90549
 .......\glue -2.84544
@@ -242,7 +242,7 @@ Completed box being shipped out [1]
 ........\glue 0.0 plus 1.0fil minus 1.0fil
 ......\pdfcolorstack 1 pop
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\pdfliteral page{EMC}
 .....\marks4{e-,1,2,}
@@ -372,7 +372,7 @@ Completed box being shipped out [2]
 .....\marks4{b+,5,8,Figure,,,}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
-.....\hbox(57.61662+0.0)x448.92128, glue set 392.0158fil
+.....\hbox(57.61662+0.0)x448.92128, glue set 196.0079fil
 ......\hbox(0.0+0.0)x0.0
 ......\hbox(57.61662+0.0)x56.90549
 .......\glue -2.84544
@@ -542,7 +542,7 @@ Completed box being shipped out [2]
 ......\pdfcolorstack 1 pop
 ......\pdfliteral page{EMC}
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\marks4{e-,5,8,}
 .....\marks4{e+,5,8,}
@@ -653,7 +653,7 @@ Completed box being shipped out [3]
 .....\marks4{b+,12,-1,}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
-.....\hbox(17.03253+0.0)x448.92128, glue set 405.51802fil
+.....\hbox(17.03253+0.0)x448.92128, glue set 202.75902fil
 ......\hbox(0.0+0.0)x0.0
 ......\hbox(17.03253+0.0)x43.40326
 .......\glue 21.70163
@@ -736,7 +736,7 @@ Completed box being shipped out [3]
 ......\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
 ......\pdfliteral page{EMC}
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\marks4{e-,16,12,}
 .....\marks4{e+,16,12,}

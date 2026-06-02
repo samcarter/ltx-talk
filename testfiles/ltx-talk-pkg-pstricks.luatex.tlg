@@ -74,7 +74,7 @@ Completed box being shipped out [1]
 .....\pdfcolorstack 1 push {/opacity0.15 gs}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
-.....\hbox(56.90549+0.0)x448.92128, glue set 221.29933fil, direction TLT
+.....\hbox(56.90549+0.0)x448.92128, glue set 110.64967fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -84,7 +84,7 @@ Completed box being shipped out [1]
 ......\box(56.90549+0.0)x227.62195
 ......\pdfcolorstack 1 pop
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
@@ -184,7 +184,7 @@ Completed box being shipped out [2]
 .....\pdfcolorstack 1 push {/opacity1 gs}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
-.....\hbox(56.90549+0.0)x448.92128, glue set 221.29933fil, direction TLT
+.....\hbox(56.90549+0.0)x448.92128, glue set 110.64967fil, direction TLT
 ......\localpar
 .......\localinterlinepenalty=0
 .......\localbrokenpenalty=0
@@ -196,7 +196,7 @@ Completed box being shipped out [2]
 ......\box(56.90549+0.0)x227.62195
 ......\pdfcolorstack 1 pop
 ......\penalty 10000
-......\glue(\parfillskip) 0.0
+......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil

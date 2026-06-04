@@ -723,9 +723,10 @@
 % \subsection{Theorems, \foreign{etc.}}
 %
 % \begin{macro}{\newtheorem, \stdnewtheorem}
-%   We need to extend the creation of theorems in two ways: add the overlay
-%   argument, and add the counter to the list of those reset during overlay
-%   creation.
+%   We need to extend the creation of theorems by adding the overlay
+%   argument. This means grabbing all of the arguments up-front, then having
+%   to pass them on to different versions of \cs{newtheorem} depending on
+%   what else has been loaded.
 %    \begin{macrocode}
 \NewCommandCopy \stdnewtheorem \newtheorem
 \RenewDocumentCommand \newtheorem { s m o m o }
@@ -733,7 +734,7 @@
     \use:e
       {
         \exp_not:N \stdnewtheorem
-          \bool_if:NT #1 { * }
+          \IfBooleanT #1 { * }
           { \exp_not:n {#2} }
           \IfNoValueF {#3} { \exp:not:n { [ {#3} ] } }
           { \exp_not:n {#4} }

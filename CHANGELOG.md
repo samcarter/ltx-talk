@@ -11,6 +11,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ### Changed
 
 - Require LaTeX 2026-06-01
+- Support *-form of `\newtheorem` (see issue 
+  [\#219](https://github.com/josephwright/ltx-talk/issues/219))
 
 ## [v0.5.0] - 2026-04-30
 

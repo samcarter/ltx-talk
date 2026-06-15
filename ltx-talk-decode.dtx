@@ -81,6 +81,14 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\l_@@_decode_trailing_bool}
+%   Indicates the current slide trailing after all of those in the overlay
+%   specification: needed for \cs{temporal}.
+%    \begin{macrocode}
+\bool_new:N \l_@@_decode_trailing_bool
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{variable}{\g_@@_pauses_int, \c@pauses, \thepauses}
 %   The automatically-incremented value for the relative overlay value.
 %    \begin{macrocode}
@@ -162,6 +170,7 @@
         \str_set:Nn \l_@@_decode_arg_str {#1}
         \bool_set_false:N \l_@@_decode_actions_bool
         \bool_set_false:N \l_@@_decode_overlays_bool
+        \bool_set_false:N \l_@@_decode_trailing_bool
         \bool_set_false:N \l_@@_decode_modes_bool
         \exp_args:No \@@_decode_parse_auxii:n { \l_@@_decode_arg_str }
       }
@@ -445,8 +454,9 @@
     \int_compare:nNnTF \g_@@_slide_int = {#2}
       { \bool_set_true:c { l_@@_decode_ #1 _bool } }
       {
-        \int_compare:nNnT {#2} > \g_@@_slide_int
+        \int_compare:nNnTF {#2} > \g_@@_slide_int
           { \bool_gset_true:N \g_@@_slide_continue_bool }
+          { \bool_set_true:N \l_@@_decode_trailing_bool }
       }
   }
 %    \end{macrocode}
@@ -455,7 +465,8 @@
 %    \begin{macrocode}
 \cs_set_protected:Npn \@@_decode_check_range:nnn #1#2#3
   {
-    \int_compare:nNnF \g_@@_slide_int > {#3}
+    \int_compare:nNnTF \g_@@_slide_int > {#3}
+      { \bool_set_true:N \l_@@_decode_trailing_bool }
       {
         \int_compare:nNnTF \g_@@_slide_int < {#2}
           { \bool_gset_true:N \g_@@_slide_continue_bool }

@@ -1,0 +1,22 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\showoutput
+
+\START
+
+\begin{frame}<-8>
+  \frametitle{Slide~\arabic{slide}}
+  \temporal<3,5>{Shown on 1, 2, 4}{Shown on 3, 5}{Shown 6, 7, 8, ...}
+\end{frame}
+
+\begin{frame}<-8>
+  \frametitle{Slide~\arabic{slide}}
+  \temporal<3-5>{Shown on 1, 2, 4}{Shown on 3, 5}{Shown 6, 7, 8, ...}
+\end{frame}
+
+\END

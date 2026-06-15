@@ -14,6 +14,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 - Support *-form of `\newtheorem` (see issue 
   [\#219](https://github.com/josephwright/ltx-talk/issues/219))
 
+### Fixed
+
+- Behavior of `\temporal` (see issue
+  [\#224](https://github.com/josephwright/ltx-talk/issues/224))
+
 ## [v0.5.0] - 2026-04-30
 
 ### Added

@@ -336,6 +336,19 @@ environment does not use external files to handle verbatim material. As such,
 there is very little performance impact processing frames containing category
 code changes.
 
+The \env{frame} and \env{frame*} environments recognise the following options
+\begin{itemize}
+  \item \opt{action-spec} Applies the \opt{action-spec} to all nested
+    environments which take a suitable specification: see
+    Section~\ref{sec:lists} for more details.
+  \item \opt{name} Sets the name of a frame for reuse: see
+    Section~\ref{sec:reusing}.
+  \item \opt{label} An alternative for \opt{name}, available for compatibility
+    with \cls{beamer}.
+  \item \opt{vertical-alignment} Defines the vertical alignment of frame
+    content: choice of \top{bottom}, \opt{center}, \opt{top} or \opt{stretch}.
+\end{itemize}
+
 \subsection{Components of a frame}
 
 \subsubsection{The frame title}
@@ -1090,7 +1103,8 @@ for example, \foreign{via} the \env{itemize} environment. These environments
 are also available in the \cls{ltx-talk} class, although their appearance has
 been slightly changed.
 
-\subsection{Itemizations, enumerations and descriptions}
+\subsection{Itemizations, enumerations and descriptions%
+  \label{sec:lists}}
 
 \DescribeEnv{description}
 \DescribeEnv{enumerate}
@@ -1278,7 +1292,8 @@ If an \meta{overlay spec} is given, this causes the footnote \meta{text} to be
 shown only on the specified slides. The footnote symbol in the text is shown on
 all slides.
 
-\subsection{Repeating a frame}
+\subsection{Repeating a frame%
+  \label{sec:reusing}}
 
 \DescribeMacro{\reuseframe}
 \begin{syntax}

@@ -245,6 +245,20 @@ carry forward from \cls{beamer}.
     text for \pdfTeX{} and New Computer Modern for OpenType engines).
 \end{itemize}
 
+\section{Adjusting settings}
+
+At present, settings for \cls{ltx-talk} are not all controlled from a single
+location. Over time this is likely to evolve and be more clearly documented.
+Where keys are used for \foreign{ad hoc} settings, these can typically be set
+globally by using \cs{SetKeys}\texttt{[talk]\{\meta{keys}\}}. The keys are
+currently in different subtrees. For example, overall frame vertical alignment
+could be set using
+\begin{verbatim}
+  \SetKeys[talk]{frame/vertical-alignment = top}
+\end{verbatim}
+Work on both the keys themselves and the documentation is on the active list of
+tasks to complete.
+
 \section{Differences from \cls{beamer}}
 
 The following key differences between \cls{beamer} and \cls{ltx-talk} are

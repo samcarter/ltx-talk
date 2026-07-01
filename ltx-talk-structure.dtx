@@ -415,6 +415,7 @@
 % \subsection{Table of contents}
 %
 % \begin{macro}{\@starttoc}
+% \begin{macro}{\@starttoc@aux@@nn}
 %   The standard kernel implementation here deliberately overwrites the file
 %   as soon as it's read. That's no good for us as the table of contents can
 %   be read multiple times. So we modify the code: we start from the
@@ -425,9 +426,10 @@
   {
     \begingroup
       \makeatletter
-      \UseTaggingSocket { toc / starttoc / before } {#1}
-      \@input { \jobname .#1 }
-      \UseTaggingSocket { toc / starttoc / after } {#1}
+      \bool_if:NTF \g_@@_frame_tag_bool
+        { \@starttoc@aux@@@@nn }
+        { \use_ii:nn }
+          {#1} { \@input { \jobname . #1 } }
       \legacy_if:nT { @filesw }
         {
           \AddToHook { enddocument / afterlastpage }
@@ -439,7 +441,14 @@
       \@nobreakfalse
     \endgroup
   }
+\cs_new_protected:Npn \@starttoc@aux@@@@nn #1#2
+  {
+    \UseTaggingSocket { toc / starttoc / before } {#1}
+    #2
+    \UseTaggingSocket { toc / starttoc / after } {#1}
+  }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 %
 % \begin{macro}{\tableofcontents}

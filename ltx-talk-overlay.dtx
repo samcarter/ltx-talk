@@ -201,17 +201,35 @@
 %
 % \begin{macro}{\@@_action_only:N, \@@_action_only_end:N}
 %   Here, we simply throw away the content we do not want: this is done by
-%   typesetting in a disposable box.
+%   typesetting in a disposable box. As box setting rather than insertion
+%   creates tag structures, they may need to be suspended. To avoid issues
+%   with whatsits, we have a surrounding horizontal box if required.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_action_only:N #1
   {
     \bool_if:NF #1
-      { \vbox_set:Nw \l_@@_tmp_box }
+      {
+        \bool_if:NT \g_@@_frame_tag_bool
+          {
+            \vbox_set:Nw \l_@@_tmp_box
+              \hbox_set:Nw \l_@@_tmp_box
+                \tag_suspend:n { onlyenv }
+          }
+        \vbox_set:Nw \l_@@_tmp_box
+      }
   }
 \cs_new_protected:Npn \@@_action_only_end:N #1
   {
     \bool_if:NF #1
-      { \vbox_set_end: }
+      {
+        \vbox_set_end:
+        \bool_if:NT \g_@@_frame_tag_bool
+          {
+                \tag_resume:n { onlyenv }
+              \hbox_set_end:
+            \vbox_set_end:
+          }
+      }
   }
 %    \end{macrocode}
 % \end{macro}

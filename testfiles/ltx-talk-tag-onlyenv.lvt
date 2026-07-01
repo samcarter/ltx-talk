@@ -1,0 +1,30 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = on}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\START
+
+\SHOWPDFTAGS
+
+\OMIT
+
+\begin{frame*}[tag-slides = {2,3}]
+
+  Always there
+
+  \begin{onlyenv}<2>
+    \includegraphics[alt = {A test image}]{example-image-a}
+  \end{onlyenv}
+
+  \begin{onlyenv}<3>
+    \begin{verbatim}
+      Only in 3
+    \end{verbatim}
+  \end{onlyenv}
+
+\end{frame*}
+
+\end{document}

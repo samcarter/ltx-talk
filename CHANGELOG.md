@@ -19,6 +19,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
   [\#217](https://github.com/josephwright/ltx-talk/issues/217))
 - Behavior of `\temporal` (see issue
   [\#224](https://github.com/josephwright/ltx-talk/issues/224))
+- Suppress tagging inside `onlyenv` when content is omitted (see issue
+  [\#232](https://github.com/josephwright/ltx-talk/issues/232))
 
 ## [v0.5.0] - 2026-04-30
 

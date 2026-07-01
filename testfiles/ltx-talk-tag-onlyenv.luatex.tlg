@@ -1,0 +1,98 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+============================================================
+TEST 1: Show PDF Tags
+============================================================
+-------- ltx-talk-tag-onlyenv.xml (start) ---------
+<PDF>
+ <StructTreeRoot>
+  <Document xmlns="http://iso.org/pdf2/ssn"
+     id="ID.002"
+    >
+   <frame xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+      id="ID.006"
+      rolemaps-to="Sect"
+     >
+    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.007"
+       rolemaps-to="Part"
+      >
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.008"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
+       >
+      <?MarkedContent page="2" ?>Always there
+     </text>
+    </text-unit>
+    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.009"
+       rolemaps-to="Part"
+      >
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.010"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
+       >
+      <Figure xmlns="http://iso.org/pdf2/ssn"
+         id="ID.011"
+         alt="A test image"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:BBox="{ 28.34645, 5.31145, 348.34567, 245.31085 }"
+        >
+       <?MarkedContent page="2" ?>
+      </Figure>
+     </text>
+    </text-unit>
+   </frame>
+   <frame xmlns="https://www.latex-project.org/ns/local/ltx-talk"
+      id="ID.012"
+      rolemaps-to="Sect"
+     >
+    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.013"
+       rolemaps-to="Part"
+      >
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.014"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
+       >
+      <?MarkedContent page="3" ?>Always there
+     </text>
+    </text-unit>
+    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.015"
+       rolemaps-to="Part"
+      >
+     <verbatim xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.016"
+        rolemaps-to="Code"
+       >
+      <codeline xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.017"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Justify"
+         rolemaps-to="Sub"
+        >
+       <?MarkedContent page="3" ?>      Only in 3
+      </codeline>
+      <codeline xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.018"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Justify"
+         rolemaps-to="Sub"
+        >
+       <?MarkedContent page="3" ?>   
+      </codeline>
+     </verbatim>
+    </text-unit>
+   </frame>
+  </Document>
+ </StructTreeRoot>
+</PDF>
+-------- ltx-talk-tag-onlyenv.xml (end) -----------
+============================================================

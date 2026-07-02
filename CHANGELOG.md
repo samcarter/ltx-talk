@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.5.1] - 2026-07-02
+
 ### Changed
 
 - Support *-form of `\newtheorem` (see issue 
@@ -400,7 +402,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.5.1...HEAD
+[v0.5.1]: https://github.com/josephwright/ltx-talk/compare/v0.5.0...v0.5.1
 [v0.5.0]: https://github.com/josephwright/ltx-talk/compare/v0.4.11...v0.5.0
 [v0.4.11]: https://github.com/josephwright/ltx-talk/compare/v0.4.10...v0.4.11
 [v0.4.10]: https://github.com/josephwright/ltx-talk/compare/v0.4.9...v0.4.10

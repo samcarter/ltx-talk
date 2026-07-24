@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Support `frame-title-arg` in `\maketitle` (see issue 
+  [\#238](https://github.com/josephwright/ltx-talk/issues/238))
+
 ## [v0.5.1] - 2026-07-02
 
 ### Changed

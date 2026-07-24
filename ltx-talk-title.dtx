@@ -282,16 +282,17 @@
 % \end{variable}
 %
 % \begin{macro}{\maketitle}
-%   A very simple setup.
+%   A very simple setup with just some expansion needed.
 %    \begin{macrocode}
-\NewDocumentCommand \maketitle { O {} }
+\ExpandArgs { Nne } \NewDocumentCommand \maketitle { O {} }
   {
-    \bool_if:NTF \l_@@_frame_bool
-      { \UseTemplate { titlepage } { talk } {#1} }
+    \exp_not:N \bool_if:NTF \exp_not:N \l_@@_frame_bool
+      { \exp_not:N \UseTemplate { titlepage } { talk } {#1} }
       {
-        \begin { frame }
-          \UseTemplate { titlepage } { talk } {#1}
-        \end { frame }
+        \exp_not:N \begin { frame }
+          \bool_if:NT \l_@@_frame_title_bool { { } }
+          \exp_not:N \UseTemplate { titlepage } { talk } {#1}
+        \exp_not:N \end { frame }
       }
   }
 %    \end{macrocode}

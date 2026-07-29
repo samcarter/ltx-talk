@@ -27,4 +27,13 @@
 
 \end{frame*}
 
+\begin{frame}[tag-slides = 1]
+  \begin{itemize}
+    \item x
+  \end{itemize}
+  \begin{onlyenv}<2>
+   content
+  \end{onlyenv}
+\end{frame*}
+
 \end{document}

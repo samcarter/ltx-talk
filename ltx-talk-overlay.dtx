@@ -200,10 +200,14 @@
 % \end{macro}
 %
 % \begin{macro}{\@@_action_only:N, \@@_action_only_end:N}
+% \begin{macro}{\@@_saved_ifendpe:}
 %   Here, we simply throw away the content we do not want: this is done by
 %   typesetting in a disposable box. As box setting rather than insertion
 %   creates tag structures, they may need to be suspended. To avoid issues
-%   with whatsits, we have a surrounding horizontal box if required.
+%   with whatsits, we have a surrounding horizontal box if required. Suspending
+%   tagging does not turn off or save/restore the \texttt{@endpe} mechanism,
+%   so we need to do this ourselves. This avoids issues with paragraph tagging
+%   if the mechanism would otherwise be active.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_action_only:N #1
   {
@@ -211,6 +215,7 @@
       {
         \bool_if:NT \g_@@_frame_tag_bool
           {
+            \cs_set_eq:NN \@@_saved_ifendpe: \if@endpe
             \vbox_set:Nw \l_@@_tmp_box
               \hbox_set:Nw \l_@@_tmp_box
                 \tag_suspend:n { onlyenv }
@@ -228,10 +233,13 @@
                 \tag_resume:n { onlyenv }
               \hbox_set_end:
             \vbox_set_end:
+            \cs_gset_eq:NN \if@endpe \@@_saved_ifendpe:
           }
       }
   }
+\cs_new_eq:NN \@@_saved_ifendpe: \if@endpe
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 %
 % \begin{variable}{\l_@@_uncover_hidden_fp}

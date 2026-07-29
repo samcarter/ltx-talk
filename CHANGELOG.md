@@ -10,6 +10,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Fixed
 
+- Tagging of `onlyenv` when following a display enviornment (see issue 
+  [\#234](https://github.com/josephwright/ltx-talk/issues/234))
 - Support `frame-title-arg` in `\maketitle` (see issue 
   [\#238](https://github.com/josephwright/ltx-talk/issues/238))
 

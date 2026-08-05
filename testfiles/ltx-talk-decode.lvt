@@ -100,7 +100,9 @@
         \int_gset:Nn \g__talk_slide_int {#1}
         \int_gzero:N \g__talk_pauses_int
         \__talk_decode_parse:n {#2}
-        \bool_if:NTF \l__talk_decode_actions_bool
+        \bool_lazy_and:nnTF
+          { \l__talk_decode_actions_bool }
+          { \l__talk_decode_overlays_bool }
           \prg_return_true:
           \prg_return_false:
       }

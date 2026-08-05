@@ -10,6 +10,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Fixed
 
+- Correct appearance of material which is alerted without an explicit overlay
+  specification (see issue
+  [\#244](https://github.com/josephwright/ltx-talk/issues/244))
 - Detect and error on over-specified overlay (see issue 
   [\#245](https://github.com/josephwright/ltx-talk/issues/245))
 

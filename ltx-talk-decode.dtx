@@ -313,7 +313,11 @@
               {
                 \str_set:Nn \l_@@_decode_action_str {#1}
                 \tl_if_blank:nF {#2}
-                  { \@@_decode_overlays:nn { actions } {#2} }
+                  {
+                    \@@_decode_overlays:nn { actions } {#2}
+                    \clist_if_empty:NT \l_@@_decode_overlays_clist
+                      { \bool_set_true:N \l_@@_decode_overlays_bool }
+                  }
               }
               {
                 \msg_error:nnV { talk } { duplicate-action-spec }

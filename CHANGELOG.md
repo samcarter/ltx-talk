@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.5.3] - 2026-08-05
+
 ### Fixed
 
 - Correct appearance of material which is alerted without an explicit overlay
@@ -419,7 +421,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.5.2...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.5.3...HEAD
+[v0.5.3]: https://github.com/josephwright/ltx-talk/compare/v0.5.2...v0.5.3
 [v0.5.2]: https://github.com/josephwright/ltx-talk/compare/v0.5.1...v0.5.2
 [v0.5.1]: https://github.com/josephwright/ltx-talk/compare/v0.5.0...v0.5.1
 [v0.5.0]: https://github.com/josephwright/ltx-talk/compare/v0.4.11...v0.5.0

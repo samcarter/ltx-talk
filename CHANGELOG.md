@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Detect and error on over-specified overlay (see issue 
+  [\#245](https://github.com/josephwright/ltx-talk/issues/245))
+
 ## [v0.5.2] - 2026-07-29
 
 ### Fixed

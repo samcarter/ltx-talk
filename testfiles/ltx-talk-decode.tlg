@@ -127,4 +127,9 @@ For immediate help type H <return>.
  ...                                              
 l. ...  }
 The overlay specification given doesn't follow the pattern described in the ltx-talk manual: it has been ignored.
+! Class ltx-talk Error: Bad overlay specification "1-|2-".
+For immediate help type H <return>.
+ ...                                              
+l. ...  }
+The overlay specification given doesn't follow the pattern described in the ltx-talk manual: it has been ignored.
 ============================================================

@@ -167,6 +167,7 @@
 \TEST { Errors }
   {
     \__talk_decode_parse:n { foo@1 }
+    \__talk_decode_parse:n { 1-|2- }
   }
 
 \END

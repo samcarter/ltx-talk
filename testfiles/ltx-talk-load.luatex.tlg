@@ -99,11 +99,7 @@ LaTeX Info: Redefining \] on input line ....
 File: latex-lab-amsmath.ltx ....-..-.. v... amsmath adaptions
 LaTeX Info: Redefining \eqref on input line ....
 \l__luamml_struct_tmpa_int=\count...
-) (../fontspec.sty (../xparse.sty (../expl3.sty
-Package: expl3 ....-..-.. L3 programming layer (loader) 
-)
-Package: xparse ....-..-.. L3 Experimental document command parser
-)
+) (../fontspec.sty
 Package: fontspec ....-..-.. v... Font selection for XeLaTeX and LuaLaTeX
 Lua module: fontspec ....-..-.. v... Font selection for XeLaTeX and LuaLaTeX (../fontspec-luatex.sty
 Package: fontspec-luatex ....-..-.. v... Font selection for XeLaTeX and LuaLaTeX

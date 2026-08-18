@@ -1486,9 +1486,12 @@ arguments. The standard template is \texttt{talk}, which recognizes the keys
 
 The current list of supported metadata entries is
 \begin{itemize}
+  \item \texttt{appendixframenumber}
+  \item \texttt{appendixframes}
   \item \texttt{author}
   \item \texttt{date}
   \item \texttt{framenumber}
+  \item \texttt{frames}
   \item \texttt{institute}
   \item \texttt{subtitle}
   \item \texttt{title}
@@ -1669,6 +1672,69 @@ a bibliography to a presentation, keep the following in mind:
     audience since it is often not immediately clear who exactly \enquote{N.}
     might be. We recommend using the full name.
 \end{itemize}
+
+\paragraph{Adding an appendix}
+
+You can add an appendix to your talk by using the \cs{appendix} command. You
+should put frames and perhaps whole subsections into the appendix that you do
+not intend to show during your presentation, but which might be useful to answer
+a question. The \cs{appendix} command essentially just starts a new part.
+
+\DescribeMacro{\appendix}
+\begin{syntax}
+  \cs{appendix}\sarg{mode spec}
+\end{syntax}
+Starts the appendix in the specified modes. All frames, all \cs{subsection}
+commands, and all \cs{section} commands used after this command will not be
+shown as part of the normal navigation bars.
+\begin{verbatim}
+  \begin{document}
+    \begin{frame}
+      \maketitle
+    \end{frame}
+
+    \section*{Outline}
+
+    \begin{frame}
+      \tableofcontents
+    \end{frame}
+
+    \section{Main Text}
+
+    \begin{frame}
+      Some text
+    \end{frame}
+
+    \section*{Summary}
+
+    \begin{frame}
+      Summary text
+    \end{frame}
+
+  \appendix
+
+  \section{Supplmentary material}
+
+  \begin{frame}
+    \tableofcontents
+  \end{frame}
+
+\subsection{Additional material}
+
+\begin{frame}
+  Details
+\end{frame}
+\begin{frame}
+  Text omitted in main talk.
+\end{frame}
+\subsection{Even more additional material}
+\begin{frame}
+  More details
+\end{frame}
+\end{document}
+\end{verbatim}
+\end{command}
+
 
 \subsubsection{Frame structure}
 

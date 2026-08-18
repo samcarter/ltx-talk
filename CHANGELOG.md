@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- `\appendix` command (see issue 
+  [\#252](https://github.com/josephwright/ltx-talk/issues/252))
+
 ## [v0.5.3] - 2026-08-05
 
 ### Fixed

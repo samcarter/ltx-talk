@@ -1,0 +1,48 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\START
+
+\begin{frame}
+  \tableofcontents
+\end{frame}
+
+\section{First}
+
+\begin{frame}
+  First frame
+  
+  \wlog{Frame \theframe}
+  \wlog{Main frames \RefProperty{lastpage}{frames}}
+  \wlog{Total frames \RefProperty{lastpage}{totalframes}}
+\end{frame}
+
+\section{Second}
+
+\begin{frame}
+  Second frame
+
+  \wlog{Frame \theframe}
+  \wlog{Main frames \RefProperty{lastpage}{frames}}
+  \wlog{Total frames \RefProperty{lastpage}{totalframes}}
+\end{frame}
+
+\appendix
+
+\section{Appendix}
+
+\begin{frame}
+  Backup frame
+
+  \wlog{Frame \theframe}
+  \wlog{Main frames \RefProperty{lastpage}{frames}}
+  \wlog{Total frames \RefProperty{lastpage}{totalframes}}
+\end{frame} 
+
+\SHOWFILE{\jobname.toc}
+
+\end{document}

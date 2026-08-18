@@ -1,0 +1,27 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(ltx-talk-appendix.toc) [1]
+Frame 2
+Main frames 3
+Total frames 4
+[2
+]
+Frame 3
+Main frames 3
+Total frames 4
+[3
+]
+Frame 4
+Main frames 3
+Total frames 4
+[4
+]
+-------- ltx-talk-appendix.toc (start) ---------
+(ltx-talk-appendix.toc) \contentsline {section}{First}{2}{section.1}%[nl]
+\contentsline {section}{Second}{3}{section.2}%[nl]
+\appendixmarker[nl]
+\contentsline {section}{Appendix}{4}{section.3}%[nl]
+-------- ltx-talk-appendix.toc (end) -----------
+\tf@toc=\write...
+(ltx-talk-appendix.aux)
+LaTeX Warning: There were multiply-defined labels.

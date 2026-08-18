@@ -386,6 +386,23 @@
 % \end{macro}
 % \end{macro}
 %
+% \begin{macro}{\appendixmarker}
+% \begin{macro}{\contentsline, \@@_saved_contentline:nnnn}
+%   At present, the best way to deal with the TOC for the appendix is to set a
+%   marker: this will likely be generalized once we add support for parts.
+%    \begin{macrocode}
+\NewDocumentCommand \appendixmarker { }
+  {
+    \bool_if:NTF \g_@@_appendix_bool
+      { \cs_gset_eq:NN \contentsline \@@_saved_contentline:nnnn }
+      { \cs_gset_eq:NN \contentsline \use_none:nnnn }
+  }
+\cs_new_eq:NN \@@_saved_contentline:nnnn \use_none:nnnn
+\cs_gset_eq:NN \@@_saved_contentline:nnnn \contentsline
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
 % \begin{macro}{talk/sec/title}
 % \begin{macro}{\@@_head_tag:nn}
 %   The argument is one of section, subsection or subsubsection.
@@ -873,6 +890,27 @@
         \end { std #2 }
         \@@_action_end:
       }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Supplementary material}
+%
+% \begin{variable}{\g_@@_appendix_bool}
+%    \begin{macrocode}
+\bool_new:N \g_@@_appendix_bool
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\appendix}
+%   Set up the global boolean and the TOC control.
+%    \begin{macrocode}
+\NewDocumentCommand \appendix { D <> { all } }
+  {
+    \@@_if_overlay:nT {#1}
+      { \bool_gset_true:N \g_@@_appendix_bool }
+    \addtocontents { toc } { \appendixmarker }
+    \cs_gset_eq:NN \contentsline \use_none:nnnn
   }
 %    \end{macrocode}
 % \end{macro}

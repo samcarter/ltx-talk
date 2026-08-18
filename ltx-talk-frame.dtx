@@ -723,6 +723,27 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\g_@@_appendixframe_int, \c@appendixframe, \theappendixframe, \@appendixframenumber}
+%   The overall frame number, including \LaTeX{} counter-like access.
+%    \begin{macrocode}
+\int_new:N \g_@@_appendixframe_int
+\cs_new_eq:NN \c@appendixframe \g_@@_appendixframe_int
+\cs_new:Npn \theappendixframe { \@arabic \c@appendixframe }
+\cs_new:Npn \@appendixframenumber { \arabic { appendixframe } }
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{variable}{\@frames}
+%   The total frames can be handled using the kernel properties.
+%    \begin{macrocode}
+\property_new:nnnn { frames } { shipout } { -1 }
+  { \int_eval:n { \g_@@_frame_int - \g_@@_appendixframe_int } }
+\AddToHook { enddocument / afterlastpage }
+  { \property_record:nn { lastpage } { frames } }
+\cs_new:Npn \@frames { \property_ref:nn { lastpage } { frames } }
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{variable}{\@totalframes}
 %   The total frames can be handled using the kernel properties.
 %    \begin{macrocode}
@@ -733,7 +754,18 @@
 \cs_new:Npn \@totalframes { \property_ref:nn { lastpage } { totalframes } }
 %    \end{macrocode}
 % \end{variable}
-% 
+%
+% \begin{variable}{\@appendixframes}
+%   The total frames can be handled using the kernel properties.
+%    \begin{macrocode}
+\property_new:nnnn { appendixframes } { shipout } { -1 }
+  { \int_use:N \g_@@_appendixframe_int }
+\AddToHook { enddocument / afterlastpage }
+  { \property_record:nn { lastpage } { appendixframes } }
+\cs_new:Npn \@appendixframes { \property_ref:nn { lastpage } { appendixframes } }
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{macro}{\@@_latexe_frame:n}
 %   As we will need to re-define \cs{frame} but have it available inside
 %   frames, a copy is made here.
@@ -748,6 +780,8 @@
 \cs_new_protected:Npn \@@_frame_process:nn #1#2
   {
     \int_gincr:N \g_@@_frame_int
+    \bool_if:NT \g_@@_appendix_bool
+      { \int_gincr:N \g_@@_appendixframe_int }
     \bool_set_true:N \l_@@_frame_bool
     \str_if_empty:NF \l_@@_frame_name_str
       {

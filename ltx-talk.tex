@@ -1689,52 +1689,39 @@ commands, and all \cs{section} commands used after this command will not be
 shown as part of the normal navigation bars.
 \begin{verbatim}
   \begin{document}
-    \begin{frame}
-      \maketitle
-    \end{frame}
-
-    \section*{Outline}
-
-    \begin{frame}
-      \tableofcontents
-    \end{frame}
-
-    \section{Main Text}
-
-    \begin{frame}
-      Some text
-    \end{frame}
-
-    \section*{Summary}
-
-    \begin{frame}
-      Summary text
-    \end{frame}
-
-  \appendix
-
-  \section{Supplmentary material}
-
+  \begin{frame}
+    \maketitle
+  \end{frame}
+  \section*{Outline}
   \begin{frame}
     \tableofcontents
   \end{frame}
-
-\subsection{Additional material}
-
-\begin{frame}
-  Details
-\end{frame}
-\begin{frame}
-  Text omitted in main talk.
-\end{frame}
-\subsection{Even more additional material}
-\begin{frame}
-  More details
-\end{frame}
-\end{document}
+  \section{Main Text}
+  \begin{frame}
+    Some text
+  \end{frame}
+  \section*{Summary}
+  \begin{frame}
+    Summary text
+  \end{frame}
+  \appendix
+  \section{Supplementary material}
+  \begin{frame}
+    \tableofcontents
+  \end{frame}
+  \subsection{Additional material}
+  \begin{frame}
+    Details
+  \end{frame}
+  \begin{frame}
+    Text omitted in main talk.
+  \end{frame}
+  \subsection{Even more additional material}
+  \begin{frame}
+    More details
+  \end{frame}
+  \end{document}
 \end{verbatim}
-\end{command}
-
 
 \subsubsection{Frame structure}
 

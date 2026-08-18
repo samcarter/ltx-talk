@@ -45,4 +45,6 @@
 
 \SHOWFILE{\jobname.toc}
 
+\OMIT
+
 \end{document}

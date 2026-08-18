@@ -738,8 +738,6 @@
 %    \begin{macrocode}
 \property_new:nnnn { frames } { shipout } { -1 }
   { \int_eval:n { \g_@@_frame_int - \g_@@_appendixframe_int } }
-\AddToHook { enddocument / afterlastpage }
-  { \property_record:nn { lastpage } { frames } }
 \cs_new:Npn \@frames { \property_ref:nn { lastpage } { frames } }
 %    \end{macrocode}
 % \end{variable}
@@ -749,8 +747,6 @@
 %    \begin{macrocode}
 \property_new:nnnn { totalframes } { shipout } { -1 }
   { \int_use:N \g_@@_frame_int }
-\AddToHook { enddocument / afterlastpage }
-  { \property_record:nn { lastpage } { totalframes } }
 \cs_new:Npn \@totalframes { \property_ref:nn { lastpage } { totalframes } }
 %    \end{macrocode}
 % \end{variable}
@@ -760,11 +756,17 @@
 %    \begin{macrocode}
 \property_new:nnnn { appendixframes } { shipout } { -1 }
   { \int_use:N \g_@@_appendixframe_int }
-\AddToHook { enddocument / afterlastpage }
-  { \property_record:nn { lastpage } { appendixframes } }
 \cs_new:Npn \@appendixframes { \property_ref:nn { lastpage } { appendixframes } }
 %    \end{macrocode}
 % \end{variable}
+%
+%    \begin{macrocode}
+\AddToHook { enddocument / afterlastpage }
+  {
+    \property_record:nn { lastpage }
+      { appendixframes , frames , totalframes }
+  }
+%    \end{macrocode}
 %
 % \begin{macro}{\@@_latexe_frame:n}
 %   As we will need to re-define \cs{frame} but have it available inside

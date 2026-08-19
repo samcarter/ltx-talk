@@ -43,7 +43,7 @@ and return
 * a list of result links to the PDF,
 * a validation report using **veraPDF**
 * A form showing the structure tree and Validation using `show-pdf-tags`
-* The log of the lualatex run
+* The log of the LuaLaTeX run
 * A Link to ngPDF which shows the structure tree, the PDF and a derived HTML
   version of the document.
 
@@ -55,7 +55,7 @@ and return
 {% include_relative background-image.tex %}
 ```
 
-### ordering frame header and footer items
+### Ordering frame header and footer items
 
 ```latex
 {% include_relative footer-text.tex  %}
@@ -67,7 +67,7 @@ and return
 {% include_relative header-footer-color.tex %}
 ```
 
-### frame counters
+### Frame counters
 
 ```latex
 {% include_relative totalframes.tex %}

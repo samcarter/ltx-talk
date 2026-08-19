@@ -1,7 +1,3 @@
----
-title: "Tagging of Heading Structures in LaTeX"
----
-
 <script src="https://texlive.net/cm6-test/cm6.bundle.min.js"></script>
 <script src="https://texlive.net/runlatex3-cm6.js"></script>
 <script>
@@ -23,7 +19,7 @@ runlatex.editorlines=20;
 
 </script>
 
-# Ltx-talk Examples
+# Examples of using the `ltx-talk` class
 
 <div style="float:right; width: 8em; padding:1em;border:solid thin black; background-color:#EFEFEF" markdown=1>
 

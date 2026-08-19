@@ -47,9 +47,29 @@ and return
 * A Link to ngPDF which shows the structure tree, the PDF and a derived HTML
   version of the document.
 
-## Frame Layout
+## Lists
 
-### Background Images
+### Revealing one items at a time
+
+```latex
+{% include_relative list-overlays.tex %}
+```
+
+### Applying actions
+
+```latex
+{% include_relative list-actions.tex %}
+```
+
+## Presentation design
+
+### Customizing colors
+
+```latex
+{% include_relative header-footer-color.tex %}
+```
+
+### Inserting background images
 
 ```latex
 {% include_relative background-image.tex %}
@@ -61,68 +81,52 @@ and return
 {% include_relative footer-text.tex  %}
 ```
 
-### Customising colors
-
-```latex
-{% include_relative header-footer-color.tex %}
-```
-
-### Frame counters
-
-```latex
-{% include_relative totalframes.tex %}
-```
-
-## Lists
-
-### actions
-
-```latex
-{% include_relative list-actions.tex %}
-```
-
-### overlays
-
-```latex
-{% include_relative list-overlays.tex %}
-```
-
-## Math
-
-### Math Font setup
-
-```latex
-{% include_relative math-fonts.tex %}
-```
-
-## Something
-
-### Overlay Opacity example
-
-```latex
-{% include_relative overlay-opacity.tex %}
-```
-
-### titlepage styling
+### Titlepage styling
 
 ```latex
 {% include_relative titlepage-styling.tex %}
 ```
 
-### Verbatim 1
+### 'Float' alignment
 
 ```latex
-{% include_relative verbatim-alt-env.tex %}
+{% include_relative float-centering.tex %}
 ```
 
-### Verbatim 2
+## Math mode
+
+### Math font setup
+
+```latex
+{% include_relative math-fonts.tex %}
+```
+
+## Controlling overlays
+
+### Overlay opacity example
+
+```latex
+{% include_relative overlay-opacity.tex %}
+```
+
+## Verbatim materials
+
+### Verbatim content
 
 ```latex
 {% include_relative verbatim-content.tex %}
 ```
 
-### Float alignment
+### Demonstrating the class itself
 
 ```latex
-{% include_relative float-centering.tex %}
+{% include_relative verbatim-alt-env.tex %}
+```
+
+## Presentation structure
+
+### Tracking total frames
+
+```latex
+{% include_relative totalframes.tex %}
 ```

@@ -76,6 +76,7 @@ and return
 ## Lists
 
 ### actions
+
 ```latex
 {% include_relative list-actions.tex %}
 ```
@@ -89,6 +90,7 @@ and return
 ## Math
 
 ### Math Font setup
+
 ```latex
 {% include_relative math-fonts.tex %}
 ```
@@ -96,16 +98,19 @@ and return
 ## Something
 
 ### Overlay Opacity example
+
 ```latex
 {% include_relative overlay-opacity.tex %}
 ```
 
 ### titlepage styling
+
 ```latex
 {% include_relative titlepage-styling.tex %}
 ```
 
 ### Verbatim 1
+
 ```latex
 {% include_relative verbatim-alt-env.tex %}
 ```

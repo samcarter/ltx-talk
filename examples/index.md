@@ -63,6 +63,14 @@ A very common pattern: reveal the list one item at a time.
 {% include_relative list-overlays.tex %}
 ```
 
+### Revealing two items at once
+
+We can use the relative specification `.` to reveal two items at once.
+
+```latex
+{% include_relative list-relative-overlay.tex %}
+```
+
 ### Applying actions
 
 Actions can adjust how content appears: here we highlight as we go.

@@ -27,38 +27,48 @@ runlatex.editorlines=20;
 
 <div style="float:right; width: 8em; padding:1em;border:solid thin black; background-color:#EFEFEF" markdown=1>
 
-  [frame layout](Frame Layout)
+  [frame layout](#frame-layout)
 
-  [Lists](Lists)
+  [Lists](#lists)
 
-  [Math](Math)
+  [Math](#math)
+
+  [Something](#something)
 
  
 </div>
 
+## Introduction
 
-some general description of the example structure.
-some general description of the example structure.
-some general description of the example structure.
-some general description of the example structure.
-some general description of the example structure.
+The examples on this page demonstrate various features of the `ltx-talk` class.
+The example may be used as-is or may be edited using the built in editor.
+
+The **Generate Tagged PDF** button will run LaTeX (`lualatex-dev`) on the file and return
+
+* a list of result links to the PDF,
+* a validation report using **veraPDF**
+* A form showing the structure tree and Validation using `show-pdf-tags`
+* The log of the lualatex run
+* A Link to ngPDF which shows the structure tree, the PDF and a derived HTML version of the document.
 
 
 
 
-## Frame  Layout
+## Frame Layout
 
-### background images
+### Background Images
 
 ```latex
 {% include_relative background-image.tex %}
 ```
 
-### head and foot
+### ordering frame header and footer items
 
 ```latex
 {% include_relative footer-text.tex  %}
 ```
+
+### Customising colors
 
 ```latex
 {% include_relative header-footer-color.tex %}
@@ -91,25 +101,31 @@ some general description of the example structure.
 {% include_relative math-fonts.tex %}
 ```
 
-## Overays
+## Something
 
+### Overlay Opacity example
 ```latex
 {% include_relative overlays-opacity.tex %}
 ```
 
+### titlepage styling
 ```latex
 {% include_relative titlepage-styling.tex %}
 ```
 
+### Verbatim 1
 ```latex
 {% include_relative verbatim-alt-env.tex %}
 ```
+
+### Verbatim 2
 
 ```latex
 {% include_relative verbatim-content.tex %}
 ```
 
 
+### Float alignment
 
 ```latex
 {% include_relative float-centering.tex %}

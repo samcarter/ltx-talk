@@ -55,7 +55,7 @@ and return a list of links:
 
 Lists are perhaps the most common structure in presentation frames.
 
-### Revealing one items at a time
+### Revealing one item at a time
 
 A very common pattern: reveal the list one item at a time.
 

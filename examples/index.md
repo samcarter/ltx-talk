@@ -134,7 +134,7 @@ amount, part-visible content is possible.
 {% include_relative overlay-opacity.tex %}
 ```
 
-## Verbatim materials
+## Verbatim material
 
 ### Verbatim content
 

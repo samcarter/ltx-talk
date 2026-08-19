@@ -14,7 +14,6 @@ function generatepreamble(t,e) {return e.getValue();}
 	  "Top Caption":      "",
 	  "metadata":         ""
       }
-
 runlatex.editorlines=20;
 
 </script>
@@ -31,8 +30,7 @@ runlatex.editorlines=20;
 
   [Something](#something)
 
- 
-</div>
+ </div>
 
 ## Introduction
 
@@ -70,7 +68,6 @@ and return
 ```
 
 ### frame counters
-
 
 ```latex
 {% include_relative totalframes.tex %}
@@ -118,7 +115,6 @@ and return
 ```latex
 {% include_relative verbatim-content.tex %}
 ```
-
 
 ### Float alignment
 

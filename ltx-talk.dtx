@@ -192,7 +192,8 @@
 %     \l_@@_aspect_ratio_str ,
 %     \l_@@_fontsize_dim     ,
 %     \l_@@_frame_title_bool ,
-%     \l_@@_mode_str
+%     \l_@@_mode_str         ,
+%     \l_@@_suppl_mode_str
 %   }
 %    \begin{macrocode}
 \keys_define:nn { talk }
@@ -208,9 +209,13 @@
     handout .value_forbidden:n = true ,
     mode .choices:nn =
       { handout , projector }
-      { \str_set_eq:NN \l_@@_mode_str \l_keys_choice_tl }
+      { \str_set_eq:NN \l_@@_mode_str \l_keys_choice_tl } ,
+    supplementary-frames .choices:nn =
+      { appendix , in-place , omit }
+      { \str_set_eq:NN \l_@@_suppl_mode_str \l_keys_choice_tl }
   }
 \str_new:N \l_@@_mode_str
+\str_new:N \l_@@_suppl_mode_str
 %    \end{macrocode}
 % \end{variable}
 %
@@ -218,10 +223,11 @@
 %    \begin{macrocode}
 \keys_define:nn { talk }
   {
-    aspect-ratio    .usage:n = load ,
-    font-size       .usage:n = load ,
-    frame-title-arg .usage:n = load ,
-    mode            .usage:n = load
+    aspect-ratio         .usage:n = load ,
+    font-size            .usage:n = load ,
+    frame-title-arg      .usage:n = load ,
+    mode                 .usage:n = load ,
+    supplementary-frames .usage:n = load
   }
 %    \end{macrocode}
 %
@@ -242,10 +248,11 @@
 %    \begin{macrocode}
 \keys_set:nn { talk }
   {
-    aspect-ratio    = 16:9      ,
-    font-size       = 11pt      ,
-    frame-title-arg = false     ,
-    mode            = projector
+    aspect-ratio         = 16:9      ,
+    font-size            = 11pt      ,
+    frame-title-arg      = false     ,
+    mode                 = projector ,
+    supplementary-frames = appendix
   }
 %    \end{macrocode}
 %

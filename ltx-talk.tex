@@ -360,6 +360,8 @@ The \env{frame} and \env{frame*} environments recognise the following options
     Section~\ref{sec:reusing}.
   \item \opt{label} An alternative for \opt{name}, available for compatibility
     with \cls{beamer}.
+  \item \opt{supplementary-frame} Indicates the frame is supplementary: see
+    Section~\ref{sec:suppl}.
   \item \opt{vertical-alignment} Defines the vertical alignment of frame
     content: choice of \opt{bottom}, \opt{center}, \opt{top} or \opt{stretch}.
 \end{itemize}
@@ -1345,6 +1347,32 @@ the first two slides, except that the third point is now highlighted.
 To allow conversion of \cls{beamer} slides, the alternative name
 \cs{againframe} is available, and the use of the \opt{label} key in place of
 \opt{name} is currently supported.
+
+\subsection{Supplementary frames%
+  \label{sec:suppl}}
+
+Sometimes, more frames are available than are needed for the presentation. One
+approach to handling these supplementary frames is to collect them after the
+\cs{appendix} command in the source, so that they appear at the end of the
+presentation. This may mean they are out of logical order, and also means it is
+more difficult to provide both a \enquote{short} and \enquote{long} version of
+the same content.
+
+To address this, \cls{ltx-talk} provides the class option
+\opt{supplementary-frames} and frame key \opt{supplementary-frame}. Frames
+marked as as supplementary then have three different handling possibilities,
+set using the class option:
+\begin{itemize}
+  \item \opt{appendix}: Move to the appendix automatically (after any explicit
+    appendix)
+  \item \opt{in-place}: Output in place in the source, \foreign{i.e.}~the
+    same as if the frames where not marked as supplementary
+  \item \opt{omit}: Simply omit the the frames entirely
+\end{itemize}
+
+When frames are automatically moved to the appendix, they are names
+\texttt{appendix.\meta{n}}, where \meta{n} is a serial number; these therefore
+can be accessed using \cs{reuseframe}.
 
 \section{Creating alternative output formats%
   \label{sec:modes}}

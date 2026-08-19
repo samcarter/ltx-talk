@@ -1,0 +1,21 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass[supplementary-frames = appendix]{ltx-talk}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}
+  Main content
+\end{frame}
+
+\begin{frame}[supplementary-frame = true]
+  Extra content
+  \theappendixframe
+\end{frame}
+
+\end{document}

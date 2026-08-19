@@ -357,11 +357,13 @@
 %
 % \begin{variable}
 %   {
-%     \l_@@_action_spec_str  ,
-%     \l_@@_frame_name_str   ,
+%     \l_@@_action_spec_str   ,
+%     \l_@@_frame_name_str    ,
+%     \l_@@_frame_suppl_bool   ,
 %     \l_@@_frame_tagging_str
 %   }
 %    \begin{macrocode}
+\bool_new:N \l_@@_frame_suppl_bool 
 \keys_define:nn { talk / frame }
   {
     action-spec .str_set:N =
@@ -370,6 +372,8 @@
       { name = {#1} } ,
     name .str_set:N =
       \l_@@_frame_name_str ,
+    supplementary-frame .bool_set:N =
+      \l_@@_frame_suppl_bool ,
     tag-slides .str_set:N =
       \l_@@_frame_tagging_str ,
     vertical-alignment .choices:nn =
@@ -381,10 +385,11 @@
   }
 \keys_set:nn { talk / frame }
   {
-    action-spec        =        ,
-    name               =        ,
-    tag-slides         = n      ,
-    vertical-alignment = center
+    action-spec         =        ,
+    name                =        ,
+    supplementary-frame = false  ,
+    tag-slides          = n      ,
+    vertical-alignment  = center
   }
 %    \end{macrocode}
 % \end{variable}
@@ -698,6 +703,13 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\g_@@_frame_suppl_int}
+%   Used to track saved supplementary frames.
+%    \begin{macrocode}
+\int_new:N \g_@@_frame_suppl_int
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{variable}{\g_@@_frame_tag_bool}
 %   To track when a frame is being tagged: mainly needed for the header
 %   (and as a result global).
@@ -777,7 +789,10 @@
 % \end{macro}
 %
 % \begin{macro}{\@@_frame_process:nn}
-%   Here, the frame content is received as the argument.
+% \begin{macro}{\@@_frame_save:nn, \@@_frame_save:en}
+%   Here, the frame content is received as the argument. As frames can be
+%   saved either by the user or automatically that is handled in an
+%   auxiliary.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_frame_process:nn #1#2
   {
@@ -786,26 +801,41 @@
       { \int_gincr:N \g_@@_appendixframe_int }
     \bool_set_true:N \l_@@_frame_bool
     \str_if_empty:NF \l_@@_frame_name_str
+      { \@@_frame_save:en { \l_@@_frame_name_str } {#2} }
+    \bool_if:NTF \l_@@_frame_suppl_bool
       {
-        \tl_if_exist:cT { g_@@_frame_ \l_@@_frame_name_str _tl }
+        \str_case:Vn \l_@@_suppl_mode_str
           {
-            \msg_error:nnV { talk } { duplicate-frame-name }
-              \l_@@_frame_name_str
-          }
-        \tl_clear_new:c { g_@@_frame_ \l_@@_frame_name_str _tl }
-        \tl_gset:ce { g_@@_frame_ \l_@@_frame_name_str _tl }
-          {
+            { appendix }
             {
-              \bool_if:NTF \l_@@_frame_verb_bool
-                { true }
-                { false }
+              \int_gincr:N \g_@@_frame_suppl_int
+              \@@_frame_save:en
+                { appendix . \int_use:N \g_@@_frame_suppl_int }
+                {#2}
             }
-            { \exp_not:n {#2} }
+            { in-place } { \@@_slide:nn {#1} {#2} }
           }
       }
-    \@@_slide:nn {#1} {#2}
+      { \@@_slide:nn {#1} {#2} }
   }
+\cs_new_protected:Npn \@@_frame_save:nn #1#2
+  {
+    \tl_if_exist:cT { g_@@_frame_ #1 _tl }
+      { \msg_error:nnn { talk } { duplicate-frame-name } {#1} }
+    \tl_clear_new:c { g_@@_frame_ #1 _tl }
+    \tl_gset:ce { g_@@_frame_ #1 _tl }
+      {
+        {
+          \bool_if:NTF \l_@@_frame_verb_bool
+            { true }
+            { false }
+        }
+        { \exp_not:n {#2} }
+      }
+  }
+\cs_generate_variant:Nn \@@_frame_save:nn { e }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 %
 % \begin{macro}{\@@_frame_tag:n}
@@ -926,6 +956,21 @@
 % \end{macro}
 % \end{macro}
 % \end{macro}
+%
+% Supplementary frames deferred to the appendix need to be swept up. If
+% necessary, the appendix is triggered.
+%    \begin{macrocode}
+\AddToHook { enddocument }
+  {
+    \int_compare:nNnT \g_@@_frame_suppl_int > 0
+      {
+        \bool_if:NF \l_@@_appendix_bool
+          { \appendix }
+        \int_step_inline:nn \g_@@_frame_suppl_int
+          { \@@_frame_reuse:nn { } { appendix . #1 } }
+      }
+  }
+%    \end{macrocode}
 %
 %    \begin{macrocode}
 \msg_new:nnnn { talk } { unknown-frame-name }

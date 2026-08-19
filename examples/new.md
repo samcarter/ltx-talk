@@ -39,16 +39,15 @@ runlatex.editorlines=20;
 The examples on this page demonstrate various features of the `ltx-talk` class.
 The example may be used as-is or may be edited using the built in editor.
 
-The **Generate Tagged PDF** button will run LaTeX (`lualatex-dev`) on the file and return
+The **Generate Tagged PDF** button will run LaTeX (`lualatex-dev`) on the file
+and return
 
 * a list of result links to the PDF,
 * a validation report using **veraPDF**
 * A form showing the structure tree and Validation using `show-pdf-tags`
 * The log of the lualatex run
-* A Link to ngPDF which shows the structure tree, the PDF and a derived HTML version of the document.
-
-
-
+* A Link to ngPDF which shows the structure tree, the PDF and a derived HTML
+  version of the document.
 
 ## Frame Layout
 

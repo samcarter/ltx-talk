@@ -20,7 +20,7 @@ runlatex.editorlines=20;
 
 # Examples of using the `ltx-talk` class
 
-<div style="float:right; width: 8em; padding:1em;border:solid thin black; background-color:#EFEFEF" markdown=1>
+<div style="float: right; width: 10em; padding: 1em; border: solid thin black; background-color: #EFEFEF" markdown=1>
 
   [Lists](#lists)
 

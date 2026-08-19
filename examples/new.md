@@ -81,13 +81,13 @@ The **Generate Tagged PDF** button will run LaTeX (`lualatex-dev`) on the file a
 
 ### actions
 ```latex
-{% include_relative lists-actions.tex %}
+{% include_relative list-actions.tex %}
 ```
 
 ### overlays
 
 ```latex
-{% include_relative lists-overlays.tex %}
+{% include_relative list-overlays.tex %}
 ```
 
 ## Math
@@ -101,7 +101,7 @@ The **Generate Tagged PDF** button will run LaTeX (`lualatex-dev`) on the file a
 
 ### Overlay Opacity example
 ```latex
-{% include_relative overlays-opacity.tex %}
+{% include_relative overlay-opacity.tex %}
 ```
 
 ### titlepage styling

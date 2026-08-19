@@ -68,7 +68,7 @@ A very common pattern: reveal the list one item at a time.
 We can use the relative specification `.` to reveal two items at once.
 
 ```latex
-{% include_relative list-relative-overlay.tex %}
+{% include_relative list-relative-overlays.tex %}
 ```
 
 ### Applying actions

@@ -49,7 +49,11 @@ and return
 
 ## Lists
 
+Lists are perhaps the most common structure in presentation frames.
+
 ### Revealing one items at a time
+
+A very common pattern: reveal the list one item at a time.
 
 ```latex
 {% include_relative list-overlays.tex %}
@@ -57,13 +61,18 @@ and return
 
 ### Applying actions
 
+Actions can adjust how content appears: here we highlight as we go.
+
 ```latex
 {% include_relative list-actions.tex %}
 ```
 
 ## Presentation design
 
-### Customizing colors
+### Customizing header colors
+
+Choosing a color scheme for the header and footer is one common way to make a
+presentation more visually appealing.
 
 ```latex
 {% include_relative header-footer-color.tex %}
@@ -71,11 +80,16 @@ and return
 
 ### Inserting background images
 
+Background images are another common customization.
+
 ```latex
 {% include_relative background-image.tex %}
 ```
 
 ### Ordering frame header and footer items
+
+Currently, control of the content in headers and footers is quite simple: you
+can choose the entries and their ordering.
 
 ```latex
 {% include_relative footer-text.tex  %}
@@ -83,11 +97,16 @@ and return
 
 ### Titlepage styling
 
+There is more control available in terms of the title page.
+
 ```latex
 {% include_relative titlepage-styling.tex %}
 ```
 
 ### 'Float' alignment
+
+'Floats' do not really float in presentations, but they can still be useful as
+part of the overall structure.
 
 ```latex
 {% include_relative float-centering.tex %}
@@ -97,6 +116,9 @@ and return
 
 ### Math font setup
 
+Math mode works in the standard LaTeX way: here we make some changes to the
+font.
+
 ```latex
 {% include_relative math-fonts.tex %}
 ```
@@ -104,6 +126,9 @@ and return
 ## Controlling overlays
 
 ### Overlay opacity example
+
+Overlays use opacity (transparency) to make material invisible: by adjusting the
+amount, part-visible content is possible.
 
 ```latex
 {% include_relative overlay-opacity.tex %}
@@ -113,11 +138,16 @@ and return
 
 ### Verbatim content
 
+The standard approach to verbatim content uses the `frame*` environment.
+
 ```latex
 {% include_relative verbatim-content.tex %}
 ```
 
 ### Demonstrating the class itself
+
+To show the `frame*` environment itself, a second name is safest: this is shown
+here using standard LaTeX commands.
 
 ```latex
 {% include_relative verbatim-alt-env.tex %}
@@ -126,6 +156,9 @@ and return
 ## Presentation structure
 
 ### Tracking total frames
+
+Various counters are available: the overall length of the presentation is common
+requirement.
 
 ```latex
 {% include_relative totalframes.tex %}

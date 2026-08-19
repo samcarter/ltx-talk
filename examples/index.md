@@ -22,13 +22,17 @@ runlatex.editorlines=20;
 
 <div style="float:right; width: 8em; padding:1em;border:solid thin black; background-color:#EFEFEF" markdown=1>
 
-  [frame layout](#frame-layout)
-
   [Lists](#lists)
 
-  [Math](#math)
+  [Presentation design](#presentation-design)
 
-  [Something](#something)
+  [Math mode](#math-mode)
+
+  [Controlling overlays](#controlling-overlays)
+
+  [Verbatim material](#verbatim-material)
+
+  [Presentation structure](#presentation-structure)
 
  </div>
 

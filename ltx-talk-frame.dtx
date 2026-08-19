@@ -782,7 +782,7 @@
 \cs_new_protected:Npn \@@_frame_process:nn #1#2
   {
     \int_gincr:N \g_@@_frame_int
-    \bool_if:NT \g_@@_appendix_bool
+    \bool_if:NT \l_@@_appendix_bool
       { \int_gincr:N \g_@@_appendixframe_int }
     \bool_set_true:N \l_@@_frame_bool
     \str_if_empty:NF \l_@@_frame_name_str

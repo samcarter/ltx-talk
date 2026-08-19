@@ -393,7 +393,7 @@
 %    \begin{macrocode}
 \NewDocumentCommand \appendixmarker { }
   {
-    \bool_if:NTF \g_@@_appendix_bool
+    \bool_if:NTF \l_@@_appendix_bool
       { \cs_gset_eq:NN \contentsline \@@_saved_contentline:nnnn }
       { \cs_gset_eq:NN \contentsline \use_none:nnnn }
   }
@@ -896,9 +896,9 @@
 %
 % \subsection{Supplementary material}
 %
-% \begin{variable}{\g_@@_appendix_bool}
+% \begin{variable}{\l_@@_appendix_bool}
 %    \begin{macrocode}
-\bool_new:N \g_@@_appendix_bool
+\bool_new:N \l_@@_appendix_bool
 %    \end{macrocode}
 % \end{variable}
 %
@@ -908,7 +908,7 @@
 \NewDocumentCommand \appendix { D <> { all } }
   {
     \@@_if_overlay:nT {#1}
-      { \bool_gset_true:N \g_@@_appendix_bool }
+      { \bool_set_true:N \l_@@_appendix_bool }
     \addtocontents { toc } { \appendixmarker }
     \cs_gset_eq:NN \contentsline \use_none:nnnn
   }

@@ -159,29 +159,30 @@
 %   The business end of the slide starts in vertical mode, and opens the
 %   surrounding vertical box. Immediately inside is a horizontal box
 %   which will contain any tagging-related whatsits. Once that is done,
-%   back to vertical mode for the user content.
+%   back to vertical mode for the user content. The use of \texttt{:Nw}
+%   rather than \texttt{:n} boxes here is 
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_auxii:n #1
   {
     \@@_slide_init:
     \vbox_set:Nw \l_@@_slide_box
-      \hbox:n
-        {
-          \bool_if:NTF \g_@@_frame_tag_bool
-            { \@@_slide_tag_on_begin: }
-            { \@@_slide_tag_off_begin: }
-          \vbox:n
-            {
-              \bool_if:NTF \l_@@_frame_verb_bool
-                { \@@_slide_auxiii:n }
-                { \use:n }
-                  {#1}
-              \tl_use:N \g_@@_onslide_tl
-            }
-          \bool_if:NTF \g_@@_frame_tag_bool
-            { \@@_slide_tag_on_end: }
-            { \@@_slide_tag_off_end: }
-        }
+      \hbox_set:Nw \l_@@_slide_box
+        \bool_if:NTF \g_@@_frame_tag_bool
+          { \@@_slide_tag_on_begin: }
+          { \@@_slide_tag_off_begin: }
+        \vbox_set:Nw \l_@@_slide_box
+          \bool_if:NTF \l_@@_frame_verb_bool
+            { \@@_slide_auxiii:n }
+            { \use:n }
+              {#1}
+           \tl_use:N \g_@@_onslide_tl
+          \vbox_set_end:
+        \box_use_drop:N \l_@@_slide_box
+        \bool_if:NTF \g_@@_frame_tag_bool
+          { \@@_slide_tag_on_end: }
+          { \@@_slide_tag_off_end: }
+      \hbox_set_end:
+      \box_use_drop:N \l_@@_slide_box
     \vbox_set_end:
     \@@_slide_output:
   }

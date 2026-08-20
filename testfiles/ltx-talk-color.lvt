@@ -20,7 +20,7 @@
 \end{frame}
 
 \begin{frame}
-  test\textcolor<2->{test}
+  test\textcolor<2->{red}{test}
 \end{frame}
 
 \end{document}

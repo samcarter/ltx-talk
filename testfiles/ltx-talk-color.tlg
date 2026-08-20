@@ -316,8 +316,12 @@ Completed box being shipped out [3]
 .....\hbox(6.31815+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
 ......\vbox(6.31815+0.0)x448.92128
-.......\hbox(6.31815+0.0)x448.92128, glue set 215.9745fil
+.......\hbox(6.31815+0.0)x448.92128, glue set 207.48837fil
 ........\hbox(0.0+0.0)x0.0
+........\T1/lmss/m/n/10.95 t
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 s
+........\T1/lmss/m/n/10.95 t
 ........\T1/lmss/m/n/10.95 t
 ........\T1/lmss/m/n/10.95 e
 ........\T1/lmss/m/n/10.95 s
@@ -358,12 +362,6 @@ Completed box being shipped out [3]
 ...\marks4{e+,9,2,}
 ...\pdfrunninglinkon
 .\kern 0.0
-! LaTeX Error: Unknown color 'test'.
-For immediate help type H <return>.
- ...                                              
-l. ...\end
-         {frame}
-LaTeX has been asked to use a color named 'test', but this has never been defined.
 Completed box being shipped out [4]
 \vbox(206.56702+448.92128)x405.10403
 .\hbox(0.0+0.0)x0.0
@@ -432,7 +430,7 @@ Completed box being shipped out [4]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(6.31815+0.0)x448.92128
 ......\vbox(6.31815+0.0)x448.92128
-.......\hbox(6.31815+0.0)x448.92128, glue set 215.9745fil
+.......\hbox(6.31815+0.0)x448.92128, glue set 207.48837fil
 ........\write1{\new@label@record{mcid-10}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{10}{tagmcid}{\__property_code_tagmcid: }}}
 ........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
 ........\hbox(0.0+0.0)x0.0
@@ -440,7 +438,11 @@ Completed box being shipped out [4]
 ........\T1/lmss/m/n/10.95 e
 ........\T1/lmss/m/n/10.95 s
 ........\T1/lmss/m/n/10.95 t
-........\pdfcolorstack 0 push {0 g 0 G}
+........\pdfcolorstack 0 push {1.0 0.0 0.0 rg 1.0 0.0 0.0 RG}
+........\T1/lmss/m/n/10.95 t
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 s
+........\T1/lmss/m/n/10.95 t
 ........\pdfcolorstack 0 pop
 ........\pdfliteral page{EMC}
 ........\penalty 10000

@@ -204,6 +204,37 @@
 % \end{macro}
 % \end{macro}
 %
+% \begin{macro}{\@@_slide_tag:n}
+%   Wraps some content in tagging for a frame: we may have multiple of these
+%   in one logical frame, but that is non-standard.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide_tag:n #1
+  {
+    \tag_struct_begin:n { tag = frame }
+    \int_gset:Nn \g_@@_frame_struct_int { \tag_get:n { struct_num } }
+    \bool_gset_true:N \g_@@_frame_tag_bool
+    #1
+    \tag_struct_end:
+  }
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\@@_slide_notag:n}
+%   The alternative: turn off tagging and suppress the function that would
+%   tag the frame title.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide_notag:n #1
+  {
+    \tag_mc_begin:n { artifact }
+    \tag_suspend:n { frame }
+    \bool_gset_false:N \g_@@_frame_tag_bool
+    #1
+    \par
+    \tag_resume:n { frame }
+    \tag_mc_end:
+  }
+%    \end{macrocode}
+% \end{macro}
+%
 % The very last frame will not be recorded by the above, so we have to add to
 % the hook at the very end of the run.
 %    \begin{macrocode}
@@ -836,37 +867,6 @@
 \cs_generate_variant:Nn \@@_frame_save:nn { e }
 %    \end{macrocode}
 % \end{macro}
-% \end{macro}
-%
-% \begin{macro}{\@@_slide_tag:n}
-%   Wraps some content in tagging for a frame: we may have multiple of these
-%   in one logical frame, but that is non-standard.
-%    \begin{macrocode}
-\cs_new_protected:Npn \@@_slide_tag:n #1
-  {
-    \tag_struct_begin:n { tag = frame }
-    \int_gset:Nn \g_@@_frame_struct_int { \tag_get:n { struct_num } }
-    \bool_gset_true:N \g_@@_frame_tag_bool
-    #1
-    \tag_struct_end:
-  }
-%    \end{macrocode}
-% \end{macro}
-% \begin{macro}{\@@_slide_notag:n}
-%   The alternative: turn off tagging and suppress the function that would
-%   tag the frame title.
-%    \begin{macrocode}
-\cs_new_protected:Npn \@@_slide_notag:n #1
-  {
-    \tag_mc_begin:n { artifact }
-    \tag_suspend:n { frame }
-    \bool_gset_false:N \g_@@_frame_tag_bool
-    #1
-    \par
-    \tag_resume:n { frame }
-    \tag_mc_end:
-  }
-%    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}{frame, frame*}

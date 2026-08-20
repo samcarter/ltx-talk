@@ -113,8 +113,8 @@
 \property_new:nnnn { slides } { now } { 1 } { \int_use:N \g_@@_slide_int }
 %    \end{macrocode}
 %
-% \begin{macro}{\@@_slide:nn, \@@_slide_aux:nn}
-% \begin{macro}{\@@_slide_aux:n}
+% \begin{macro}{\@@_slide:nn, \@@_slide_auxi:nn}
+% \begin{macro}{\@@_slide_auxii:n, \@@_slide_auxiii:n}
 %   Each slide is parsed inside simple set up, the only complexity being if we
 %   are handling fragile frames. There, all \cs{obeyedline} in the grabbed
 %   tokens need to be turned back into |^^M| before rescanning: this ensures
@@ -143,54 +143,49 @@
       \int_gzero:N \g_@@_slide_int
       \RenewCommandCopy \frame \@@_latexe_frame:n
       \bool_do_while:Nn \g_@@_slide_continue_bool
-        { \@@_slide_aux:nn {#1} {#2} }
+        { \@@_slide_auxi:nn {#1} {#2} }
       \property_record:ee { frame . \int_use:N \g_@@_frame_int }
         { slides }
     \group_end:
   }
-%    \end{macrocode}
-%   At the start of each slide, we are in vertical mode. That is switched back
-%   to horizontal mode before we deal with any tagging whatsits, then back to
-%   vertical mode once this is sorted.
-%    \begin{macrocode}
-\cs_new_protected:Npn \@@_slide_aux:nn #1#2
+\cs_new_protected:Npn \@@_slide_auxi:nn #1#2
   {
     \int_gincr:N \g_@@_slide_int
     \bool_gset_false:N \g_@@_slide_continue_bool
     \@@_if_overlay:nT {#1}
-      {
-        \@@_slide_begin:
-        \hbox:n
-          {
-            \tl_gclear:N \g_@@_onslide_tl
-            \bool_set_eq:NN \l_@@_slide_continue_bool
-              \g_@@_slide_continue_bool
-            \@@_if_overlay:VTF \l_@@_frame_tagging_str
-              {
-                \bool_gset_eq:NN \g_@@_slide_continue_bool
-                  \l_@@_slide_continue_bool
-                \@@_slide_tag:n
-              }
-              {
-                \bool_gset_eq:NN \g_@@_slide_continue_bool
-                  \l_@@_slide_continue_bool
-                \@@_slide_notag:n
-              }
-                {
-                  \vbox:n
-                    {
-                      \bool_if:NTF \l_@@_frame_verb_bool
-                        { \@@_slide_aux:n }
-                        { \use:n }
-                          {#2}
-                      \tl_use:N \g_@@_onslide_tl
-                    }
-                }
-          }
-        \@@_slide_end:
-      }
+      { \@@_slide_auxii:n {#2} }
   }
-\cs_new_protected:Npn \@@_slide_aux:n #1
+%    \end{macrocode}
+%   The business end of the slide starts in vertical mode, and opens the
+%   surrounding vertical box. Immediately inside is a horizontal box
+%   which will contain any tagging-related whatsits. Once that is done,
+%   back to vertical mode for the user content.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide_auxii:n #1
+  {
+    \@@_slide_init:
+    \vbox_set:Nw \l_@@_slide_box
+      \hbox:n
+        {
+          \bool_if:NTF \g_@@_frame_tag_bool
+            { \@@_slide_tag_on_begin: }
+            { \@@_slide_tag_off_begin: }
+          \vbox:n
+            {
+              \bool_if:NTF \l_@@_frame_verb_bool
+                { \@@_slide_auxiii:n }
+                { \use:n }
+                  {#1}
+              \tl_use:N \g_@@_onslide_tl
+            }
+          \bool_if:NTF \g_@@_frame_tag_bool
+            { \@@_slide_tag_on_end: }
+            { \@@_slide_tag_off_end: }
+        }
+    \vbox_set_end:
+    \@@_slide_output:
+  }
+\cs_new_protected:Npn \@@_slide_auxiii:n #1
   {
     \group_begin:
       \cs_set:Npn \obeyedline { ^^J }
@@ -203,73 +198,35 @@
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}
-%
-% \begin{macro}{\@@_slide_tag:n}
-%   Wraps some content in tagging for a frame: we may have multiple of these
-%   in one logical frame, but that is non-standard.
+% \begin{macro}{\@@_slide_init:}
+%   Collects up some key initialization in one place; we set up a single
+%   tagging boolean here, which needs some shuffling of the global overlay
+%   state.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_slide_tag:n #1
+\cs_new_protected:Npn \@@_slide_init:
   {
-    \tag_struct_begin:n { tag = frame }
-    \int_gset:Nn \g_@@_frame_struct_int { \tag_get:n { struct_num } }
-    \bool_gset_true:N \g_@@_frame_tag_bool
-    #1
-    \tag_struct_end:
-  }
-%    \end{macrocode}
-% \end{macro}
-% \begin{macro}{\@@_slide_notag:n}
-%   The alternative: turn off tagging and suppress the function that would
-%   tag the frame title.
-%    \begin{macrocode}
-\cs_new_protected:Npn \@@_slide_notag:n #1
-  {
-    \tag_mc_begin:n { artifact }
-    \tag_suspend:n { frame }
-    \bool_gset_false:N \g_@@_frame_tag_bool
-    #1
-    \par
-    \tag_resume:n { frame }
-    \tag_mc_end:
-  }
-%    \end{macrocode}
-% \end{macro}
-%
-% The very last frame will not be recorded by the above, so we have to add to
-% the hook at the very end of the run.
-%    \begin{macrocode}
-\AddToHook { enddocument / afterlastpage }
-  {
-    \property_record:ee { frame . \int_use:N \g_@@_frame_int }
-      { slides }
-  }
-%    \end{macrocode}
-%
-% \begin{variable}{\g_@@_frame_struct_int}
-%  The tagging structure number for the slide: needed by the content placed
-%  outside of the current box (for example the frame title).
-%    \begin{macrocode}
-\int_new:N \g_@@_frame_struct_int
-%    \end{macrocode}
-% \end{variable}
-%
-% \begin{macro}{\@@_slide_begin:, \@@_slide_end:}
-%   Start and end the box holding all of the slide: we are in vertical mode
-%   here, and need to swap back to horizontal mode above to deal with
-%   whatsits.
-%    \begin{macrocode}
-\cs_new_protected:Npn \@@_slide_begin:
-  {
+    \tl_gclear:N \g_@@_onslide_tl
     \int_gzero:N \g_@@_pauses_int
     \tl_gclear:N \g_@@_frame_title_tl
     \tl_gclear:N \g_@@_frame_subtitle_tl
     \box_gclear:N \g_@@_footnote_box
     \@@_cnt_save:
-    \vbox_set:Nw \l_@@_slide_box
+    \bool_set_eq:NN \l_@@_slide_continue_bool
+      \g_@@_slide_continue_bool
+    \@@_if_overlay:VTF \l_@@_frame_tagging_str
+      { \bool_gset_true:N \g_@@_frame_tag_bool }
+      { \bool_gset_false:N \g_@@_frame_tag_bool }
+    \bool_gset_eq:NN \g_@@_slide_continue_bool
+      \l_@@_slide_continue_bool
   }
-\cs_new_protected:Npn \@@_slide_end:
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\@@_slide_output:}
+%   Send the slide content to the main vertical list, after adding any
+%   footnotes.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide_output:
   {
-    \vbox_set_end:
     \bool_if:NT \g_@@_slide_continue_bool
       { \@@_cnt_restore: }
     \vbox_to_ht:nn { \textheight }
@@ -322,6 +279,57 @@
   }
 %    \end{macrocode}
 % \end{macro}
+%
+% \begin{macro}{\@@_slide_tag_on_begin:, \@@_slide_tag_on_end:}
+%   Wraps some content in tagging for a frame: we may have multiple of these
+%   in one logical frame, but that is non-standard.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide_tag_on_begin:
+  {
+    \tag_struct_begin:n { tag = frame }
+    \int_gset:Nn \g_@@_frame_struct_int { \tag_get:n { struct_num } }
+  }
+\cs_new_protected:Npn \@@_slide_tag_on_end:
+  {
+    \tag_struct_end:
+  }
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\@@_slide_tag_off_begin:, \@@_slide_tag_off_end:}
+%   The alternative: turn off tagging and suppress the function that would
+%   tag the frame title.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide_tag_off_begin:
+  {
+    \tag_mc_begin:n { artifact }
+    \tag_suspend:n { frame }
+  }
+\cs_new_protected:Npn \@@_slide_tag_off_end:
+  {
+    \par
+    \tag_resume:n { frame }
+    \tag_mc_end:
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% The very last frame will not be recorded by the above, so we have to add to
+% the hook at the very end of the run.
+%    \begin{macrocode}
+\AddToHook { enddocument / afterlastpage }
+  {
+    \property_record:ee { frame . \int_use:N \g_@@_frame_int }
+      { slides }
+  }
+%    \end{macrocode}
+%
+% \begin{variable}{\g_@@_frame_struct_int}
+%  The tagging structure number for the slide: needed by the content placed
+%  outside of the current box (for example the frame title).
+%    \begin{macrocode}
+\int_new:N \g_@@_frame_struct_int
+%    \end{macrocode}
+% \end{variable}
 %
 % \subsection{Counters}
 %

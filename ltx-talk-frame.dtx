@@ -115,14 +115,14 @@
 %
 % \begin{macro}{\@@_slide:nn, \@@_slide_aux:nn}
 % \begin{macro}{\@@_slide_aux:n}
-%  Each slide is parsed inside simple set up, the only complexity being if we
-%  are handling fragile frames. There, all \cs{obeyedline} in the grabbed
-%  tokens need to be turned back into |^^M| before rescanning: this ensures
-%  that any verbatim grabbing in the frame still works. The strange business
-%  with setting the continuation boolean is needed as otherwise we get an
-%  infinite loop if there is an overlay specification for the frame itself.
-%  Tagging should not of itself force slide continuation, so the global
-%  boolean is reset for the tagged slide.
+%   Each slide is parsed inside simple set up, the only complexity being if we
+%   are handling fragile frames. There, all \cs{obeyedline} in the grabbed
+%   tokens need to be turned back into |^^M| before rescanning: this ensures
+%   that any verbatim grabbing in the frame still works. The strange business
+%   with setting the continuation boolean is needed as otherwise we get an
+%   infinite loop if there is an overlay specification for the frame itself.
+%   Tagging should not of itself force slide continuation, so the global
+%   boolean is reset for the tagged slide.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide:nn #1#2
   { 

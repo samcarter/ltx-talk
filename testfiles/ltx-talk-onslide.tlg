@@ -113,9 +113,9 @@ Completed box being shipped out [1]
 ........\glue(\rightskip) 0.0 plus 1.0fil
 .......\pdfcolorstack 1 pop
 .......\penalty 0
+.......\pdfcolorstack 1 pop
 .......\glue 3.0 plus 2.0 minus 2.5
 ......\pdfliteral page{EMC}
-......\pdfcolorstack 1 pop
 .....\marks4{b-,1,-1,}
 .....\marks4{b+,1,-1,}
 .....\marks4{e-,1,2,}

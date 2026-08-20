@@ -455,15 +455,15 @@ Completed box being shipped out [4]
 ........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 s
 ........\TU/NewCMSans10-Regular.otf(0)/m/n/10.95 t
 ........\pdfcolorstack 0 push {0 g 0 G}
+........\pdfcolorstack 0 pop
 ........\penalty 10000
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\pdfcolorstack 0 pop
 .....\glue 0.0 plus 0.5fil
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
 ...\hbox(0.0+448.92128)x448.92128, direction TLT

@@ -292,11 +292,11 @@ Completed box being shipped out [1]
 ........\T1/lmss/m/n/10.95 i
 ........\T1/lmss/m/n/10.95 z
 ........\T1/lmss/m/n/10.95 e
+........\pdfcolorstack 1 pop
 ........\penalty 10000
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 ......\pdfliteral page{EMC}
-......\pdfcolorstack 1 pop
 .....\marks4{b-,1,-1,}
 .....\marks4{b+,1,-1,}
 .....\marks4{e-,1,2,}
@@ -615,11 +615,11 @@ Completed box being shipped out [2]
 ........\T1/lmss/m/n/10.95 i
 ........\T1/lmss/m/n/10.95 z
 ........\T1/lmss/m/n/10.95 e
+........\pdfcolorstack 1 pop
 ........\penalty 10000
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 ......\pdfliteral page{EMC}
-......\pdfcolorstack 1 pop
 .....\marks4{b-,4,-1,}
 .....\marks4{b+,4,-1,}
 .....\marks4{e-,4,2,}
@@ -935,11 +935,11 @@ Completed box being shipped out [3]
 ........\T1/lmss/m/n/10.95 i
 ........\T1/lmss/m/n/10.95 z
 ........\T1/lmss/m/n/10.95 e
+........\pdfcolorstack 1 pop
 ........\penalty 10000
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 ......\pdfliteral page{EMC}
-......\pdfcolorstack 1 pop
 .....\marks4{b-,7,-1,}
 .....\marks4{b+,7,-1,}
 .....\marks4{e-,7,2,}
@@ -1253,11 +1253,11 @@ Completed box being shipped out [4]
 ........\T1/lmss/m/n/10.95 i
 ........\T1/lmss/m/n/10.95 z
 ........\T1/lmss/m/n/10.95 e
+........\pdfcolorstack 1 pop
 ........\penalty 10000
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 ......\pdfliteral page{EMC}
-......\pdfcolorstack 1 pop
 .....\marks4{b-,10,-1,}
 .....\marks4{b+,10,-1,}
 .....\marks4{e-,10,2,}

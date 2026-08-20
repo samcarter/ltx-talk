@@ -160,8 +160,8 @@ Completed box being shipped out [1]
 .........\penalty 10000
 .........\glue(\parfillskip) 0.0 plus 1.0fil
 .........\glue(\rightskip) 0.0 plus 1.0fil
+.......\pdfcolorstack 1 pop
 ......\pdfliteral page{EMC}
-......\pdfcolorstack 1 pop
 .....\marks4{b-,1,-1,}
 .....\marks4{b+,1,-1,}
 .....\marks4{e-,1,2,}
@@ -561,11 +561,11 @@ Completed box being shipped out [3]
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\penalty 0
+........\pdfcolorstack 1 pop
 ........\penalty 10000
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 ......\pdfliteral page{EMC}
-......\pdfcolorstack 1 pop
 .....\marks4{b-,11,-1,}
 .....\marks4{b+,11,-1,}
 .....\marks4{e-,11,2,}

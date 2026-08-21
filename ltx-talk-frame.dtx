@@ -193,6 +193,8 @@
       \hbox_set_end:
       \box_use_drop:N \l_@@_slide_box
     \vbox_set_end:
+    \bool_if:NT \g_@@_slide_continue_bool
+      { \@@_cnt_restore: }
     \@@_slide_output:
   }
 \cs_new_protected:Npn \@@_slide_auxiv:n #1
@@ -240,8 +242,6 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_output:
   {
-    \bool_if:NT \g_@@_slide_continue_bool
-      { \@@_cnt_restore: }
     \vbox_to_ht:nn { \textheight }
       {
         \use:c { @@_slide_align_ \l_@@_frame_alignment_tl :n }

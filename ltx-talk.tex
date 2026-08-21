@@ -624,11 +624,16 @@ the text is simply thrown away. In particular, it occupies no space.
 If the \meta{overlay spec} is present, the \meta{text} is shown
 (\enquote{uncovered}) only on the specified slides. On other slides, the text
 still occupies space and it is still typeset, but it is not shown or only shown
-as if transparent. For details on how to specify whether the text is invisible
-or just transparent see Section~\ref{sec:opacity}.
+as if transparent.
 \begin{verbatim}
   \uncover<3->{Text shown from slide 3 on.}
 \end{verbatim}
+To adjust the transparency, use
+\begin{alltt}
+  \cs{EditInstance}\{hidden\}\{std\}\{opacity = \meta{value}\}},
+\end{alltt}
+where \meta{value} ranges from~$0$ (totally invisible) to $1$ (completely
+visible).
 
 \DescribeMacro{\visible}
 \begin{syntax}

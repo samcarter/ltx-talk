@@ -401,10 +401,10 @@
     parentequation
   }
 \seq_map_inline:Nn \g_@@_cnt_reset_seq
-    {
-      \int_new:c { g_@@_saved_ #1 _int }
-      \int_gset_eq:cc { g_@@_saved_ #1 _int } { c@ #1 }
-    }
+  {
+    \int_new:c { g_@@_saved_ #1 _int }
+    \int_gset_eq:cc { g_@@_saved_ #1 _int } { c@ #1 }
+  }
 %    \end{macrocode}
 % \end{variable}
 %

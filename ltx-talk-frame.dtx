@@ -178,6 +178,7 @@
            \tl_use:N \g_@@_onslide_tl
         \vbox_set_end:
         \box_use_drop:N \l_@@_slide_box
+        \par
         \bool_if:NTF \g_@@_frame_tag_bool
           { \@@_slide_tag_on_end: }
           { \@@_slide_tag_off_end: }
@@ -307,7 +308,6 @@
   }
 \cs_new_protected:Npn \@@_slide_tag_off_end:
   {
-    \par
     \tag_resume:n { frame }
     \tag_mc_end:
   }

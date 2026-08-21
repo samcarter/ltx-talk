@@ -66,6 +66,8 @@ Completed box being shipped out [1]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(74.00424+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,1,-1,}
+......\marks4{b+,1,-1,}
 ......\vbox(74.00424+0.0)x448.92128
 .......\hbox(7.60422+2.12914)x448.92128, glue set 133.1729fil
 ........\hbox(0.0+0.0)x0.0
@@ -297,10 +299,8 @@ Completed box being shipped out [1]
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 ......\pdfliteral page{EMC}
-.....\marks4{b-,1,-1,}
-.....\marks4{b+,1,-1,}
-.....\marks4{e-,1,2,}
-.....\marks4{e+,1,2,}
+......\marks4{e-,1,2,}
+......\marks4{e+,1,2,}
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
@@ -391,6 +391,8 @@ Completed box being shipped out [2]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(74.00424+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,4,-1,}
+......\marks4{b+,4,-1,}
 ......\vbox(74.00424+0.0)x448.92128
 .......\hbox(7.60422+2.12914)x448.92128, glue set 133.1729fil
 ........\hbox(0.0+0.0)x0.0
@@ -620,10 +622,8 @@ Completed box being shipped out [2]
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 ......\pdfliteral page{EMC}
-.....\marks4{b-,4,-1,}
-.....\marks4{b+,4,-1,}
-.....\marks4{e-,4,2,}
-.....\marks4{e+,4,2,}
+......\marks4{e-,4,2,}
+......\marks4{e+,4,2,}
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
@@ -713,6 +713,8 @@ Completed box being shipped out [3]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(74.00424+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,7,-1,}
+......\marks4{b+,7,-1,}
 ......\vbox(74.00424+0.0)x448.92128
 .......\hbox(7.60422+2.12914)x448.92128, glue set 133.1729fil
 ........\hbox(0.0+0.0)x0.0
@@ -940,10 +942,8 @@ Completed box being shipped out [3]
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 ......\pdfliteral page{EMC}
-.....\marks4{b-,7,-1,}
-.....\marks4{b+,7,-1,}
-.....\marks4{e-,7,2,}
-.....\marks4{e+,7,2,}
+......\marks4{e-,7,2,}
+......\marks4{e+,7,2,}
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
@@ -1033,6 +1033,8 @@ Completed box being shipped out [4]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(74.00424+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,10,-1,}
+......\marks4{b+,10,-1,}
 ......\vbox(74.00424+0.0)x448.92128
 .......\hbox(7.60422+2.12914)x448.92128, glue set 133.1729fil
 ........\hbox(0.0+0.0)x0.0
@@ -1258,10 +1260,8 @@ Completed box being shipped out [4]
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 ......\pdfliteral page{EMC}
-.....\marks4{b-,10,-1,}
-.....\marks4{b+,10,-1,}
-.....\marks4{e-,10,2,}
-.....\marks4{e+,10,2,}
+......\marks4{e-,10,2,}
+......\marks4{e+,10,2,}
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
@@ -1718,6 +1718,8 @@ Completed box being shipped out [6]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(132.40427+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,23,-1,}
+......\marks4{b+,23,-1,}
 ......\vbox(132.40427+0.0)x448.92128
 .......\penalty 0
 .......\glue 3.0 plus 3.0 minus 2.5
@@ -2121,10 +2123,8 @@ Completed box being shipped out [6]
 .......\penalty 0
 .......\glue 3.0 plus 2.0 minus 2.5
 ......\pdfliteral page{EMC}
-.....\marks4{b-,23,-1,}
-.....\marks4{b+,23,-1,}
-.....\marks4{e-,23,2,}
-.....\marks4{e+,23,2,}
+......\marks4{e-,23,2,}
+......\marks4{e+,23,2,}
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
@@ -2214,6 +2214,8 @@ Completed box being shipped out [7]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(132.40427+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,26,-1,}
+......\marks4{b+,26,-1,}
 ......\vbox(132.40427+0.0)x448.92128
 .......\penalty 0
 .......\glue 3.0 plus 3.0 minus 2.5
@@ -2615,10 +2617,8 @@ Completed box being shipped out [7]
 .......\penalty 0
 .......\glue 3.0 plus 2.0 minus 2.5
 ......\pdfliteral page{EMC}
-.....\marks4{b-,26,-1,}
-.....\marks4{b+,26,-1,}
-.....\marks4{e-,26,2,}
-.....\marks4{e+,26,2,}
+......\marks4{e-,26,2,}
+......\marks4{e+,26,2,}
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
@@ -2708,6 +2708,8 @@ Completed box being shipped out [8]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(132.40427+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,29,-1,}
+......\marks4{b+,29,-1,}
 ......\vbox(132.40427+0.0)x448.92128
 .......\penalty 0
 .......\glue 3.0 plus 3.0 minus 2.5
@@ -3107,10 +3109,8 @@ Completed box being shipped out [8]
 .......\penalty 0
 .......\glue 3.0 plus 2.0 minus 2.5
 ......\pdfliteral page{EMC}
-.....\marks4{b-,29,-1,}
-.....\marks4{b+,29,-1,}
-.....\marks4{e-,29,2,}
-.....\marks4{e+,29,2,}
+......\marks4{e-,29,2,}
+......\marks4{e+,29,2,}
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
@@ -3200,6 +3200,8 @@ Completed box being shipped out [9]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(132.40427+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,32,-1,}
+......\marks4{b+,32,-1,}
 ......\vbox(132.40427+0.0)x448.92128
 .......\penalty 0
 .......\glue 3.0 plus 3.0 minus 2.5
@@ -3597,10 +3599,8 @@ Completed box being shipped out [9]
 .......\penalty 0
 .......\glue 3.0 plus 2.0 minus 2.5
 ......\pdfliteral page{EMC}
-.....\marks4{b-,32,-1,}
-.....\marks4{b+,32,-1,}
-.....\marks4{e-,32,2,}
-.....\marks4{e+,32,2,}
+......\marks4{e-,32,2,}
+......\marks4{e+,32,2,}
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
@@ -3690,6 +3690,8 @@ Completed box being shipped out [10]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(132.40427+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,35,-1,}
+......\marks4{b+,35,-1,}
 ......\vbox(132.40427+0.0)x448.92128
 .......\penalty 0
 .......\glue 3.0 plus 3.0 minus 2.5
@@ -4079,10 +4081,8 @@ Completed box being shipped out [10]
 .......\penalty 0
 .......\glue 3.0 plus 2.0 minus 2.5
 ......\pdfliteral page{EMC}
-.....\marks4{b-,35,-1,}
-.....\marks4{b+,35,-1,}
-.....\marks4{e-,35,2,}
-.....\marks4{e+,35,2,}
+......\marks4{e-,35,2,}
+......\marks4{e+,35,2,}
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
@@ -4773,6 +4773,8 @@ Completed box being shipped out [12]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(46.80423+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,58,-1,}
+......\marks4{b+,58,-1,}
 ......\vbox(46.80423+0.0)x448.92128
 .......\penalty 0
 .......\glue 3.0 plus 3.0 minus 2.5
@@ -4924,10 +4926,8 @@ Completed box being shipped out [12]
 .......\penalty 0
 .......\glue 3.0 plus 2.0 minus 2.5
 ......\pdfliteral page{EMC}
-.....\marks4{b-,58,-1,}
-.....\marks4{b+,58,-1,}
-.....\marks4{e-,58,2,}
-.....\marks4{e+,58,2,}
+......\marks4{e-,58,2,}
+......\marks4{e+,58,2,}
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
@@ -5017,6 +5017,8 @@ Completed box being shipped out [13]
 .....\glue 0.0 plus 0.5fil
 .....\hbox(46.80423+0.0)x448.92128
 ......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,61,-1,}
+......\marks4{b+,61,-1,}
 ......\vbox(46.80423+0.0)x448.92128
 .......\penalty 0
 .......\glue 3.0 plus 3.0 minus 2.5
@@ -5166,10 +5168,8 @@ Completed box being shipped out [13]
 .......\penalty 0
 .......\glue 3.0 plus 2.0 minus 2.5
 ......\pdfliteral page{EMC}
-.....\marks4{b-,61,-1,}
-.....\marks4{b+,61,-1,}
-.....\marks4{e-,61,2,}
-.....\marks4{e+,61,2,}
+......\marks4{e-,61,2,}
+......\marks4{e+,61,2,}
 .....\glue 0.0 plus 0.5fil
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0

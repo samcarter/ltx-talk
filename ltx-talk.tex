@@ -356,6 +356,9 @@ The \env{frame} and \env{frame*} environments recognise the following options
   \item \opt{action-spec} Applies the \opt{action-spec} to all nested
     environments which take a suitable specification: see
     Section~\ref{sec:lists} for more details.
+  \item \opt{auto-break} and \item \opt{auto-break-coverage} Control automatic
+    breaking of frames into slides: see Section~\ref{sec:auto-break} for more
+    details.
   \item \opt{name} Sets the name of a frame for reuse: see
     Section~\ref{sec:reusing}.
   \item \opt{label} An alternative for \opt{name}, available for compatibility
@@ -1373,6 +1376,23 @@ set using the class option:
 When frames are automatically moved to the appendix, they are names
 \texttt{appendix.\meta{n}}, where \meta{n} is a serial number; these therefore
 can be accessed using \cs{reuseframe}.
+
+\subsection{Automatic frame breaking%
+  \label{sec:auto-break}}
+
+In the \emph{vast} majority of cases, frames should be split by the author when
+there is too much content to appear in one go. However, in the case of
+automatically-generated material, most commonly bibliographies, this may not be
+feasible. To allow for this, the frame option \opt{auto-break} is available.
+
+When auto-breaking is activated, \cls{ltx-talk} will split the content of the
+frame into different slides based on the vertical height. The split will be
+activated if the natural height of the content is greater than \cs{textheight},
+and each slide with use \opt{auto-break-coverage} percent of the
+\cs{textheight} for the split.
+
+Note that overlays are disabled when breaking is active, and that formal
+support here is specifically targetted at auto-generated content.
 
 \section{Creating alternative output formats%
   \label{sec:modes}}

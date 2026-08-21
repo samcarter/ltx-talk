@@ -1,0 +1,3310 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+Completed box being shipped out [1]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\pdfinterwordspaceon
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.1} xyz
+...\pdfdest struct22 name{page.1} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 18.45267fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,97,-1,}
+....\marks4{b+,97,-1,}
+....\hbox(10.00008+2.79997)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(10.00008+2.79997)x448.92128, glue set 319.39023fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\pdfliteral page{EMC}
+......\marks4{e-,97,2,}
+......\marks4{e+,97,2,}
+......\write1{\new@label@record{mcid-98}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{98}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/frametitle <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\marks4{b-,98,248,frametitle,,,}
+......\marks4{b+,98,248,frametitle,,,}
+......\T1/lmss/bx/n/14.4 S
+......\T1/lmss/bx/n/14.4 o
+......\T1/lmss/bx/n/14.4 m
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 t
+......\T1/lmss/bx/n/14.4 h
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 n
+......\T1/lmss/bx/n/14.4 g
+......\T1/lmss/bx/n/14.4 s
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 w
+......\kern-0.44
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 d
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 d
+......\pdfliteral page{EMC}
+......\marks4{e-,98,248,}
+......\marks4{e+,98,248,}
+......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,99,-1,}
+......\marks4{b+,99,-1,}
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,99,2,}
+....\marks4{e+,99,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\pdfcolorstack 0 push {0 g 0 G}
+....\pdfdest name{Doc-Start} xyz
+....\pdfdest struct22 name{Doc-Start} xyz
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 93.32504fil
+.....\glue 0.0 plus 0.5fil
+.....\hbox(139.98758+0.0)x448.92128
+......\vbox(139.98758+0.0)x448.92128, glue set - 0.12894
+.......\penalty 0
+.......\glue 3.0 plus 3.0 minus 2.5
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 7.81519fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x8.51663
+...........\write1{\new@label@record{mcid-1}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{1}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,1,9,itemlabel,,,}
+...........\marks4{b+,1,9,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.1} xyz
+.............\pdfdest struct29 name{enumi*.1} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,1,9,}
+...........\marks4{e+,1,9,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-2}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{2}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,2,12,text,,,}
+.......\marks4{b+,2,12,text,,,}
+.......\marks4{e-,2,12,}
+.......\marks4{e+,2,12,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 7.81519fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x8.51663
+...........\write1{\new@label@record{mcid-3}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{3}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,3,14,itemlabel,,,}
+...........\marks4{b+,3,14,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.2} xyz
+.............\pdfdest struct34 name{enumi*.2} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,3,14,}
+...........\marks4{e+,3,14,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-4}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{4}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,4,17,text,,,}
+.......\marks4{b+,4,17,text,,,}
+.......\marks4{e-,4,17,}
+.......\marks4{e+,4,17,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 7.81519fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x8.51663
+...........\write1{\new@label@record{mcid-5}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{5}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,5,19,itemlabel,,,}
+...........\marks4{b+,5,19,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.3} xyz
+.............\pdfdest struct39 name{enumi*.3} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,5,19,}
+...........\marks4{e+,5,19,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-6}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{6}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,6,22,text,,,}
+.......\marks4{b+,6,22,text,,,}
+.......\marks4{e-,6,22,}
+.......\marks4{e+,6,22,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 5.99579
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 7.81519fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x8.51663
+...........\write1{\new@label@record{mcid-7}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{7}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,7,24,itemlabel,,,}
+...........\marks4{b+,7,24,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.4} xyz
+.............\pdfdest struct44 name{enumi*.4} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,7,24,}
+...........\marks4{e+,7,24,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-8}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{8}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,8,27,text,,,}
+.......\marks4{b+,8,27,text,,,}
+.......\marks4{e-,8,27,}
+.......\marks4{e+,8,27,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 7.81519fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x8.51663
+...........\write1{\new@label@record{mcid-9}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{9}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,9,29,itemlabel,,,}
+...........\marks4{b+,9,29,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.5} xyz
+.............\pdfdest struct49 name{enumi*.5} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 5
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,9,29,}
+...........\marks4{e+,9,29,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-10}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{10}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,10,32,text,,,}
+.......\marks4{b+,10,32,text,,,}
+.......\marks4{e-,10,32,}
+.......\marks4{e+,10,32,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 7.81519fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x8.51663
+...........\write1{\new@label@record{mcid-11}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{11}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,11,34,itemlabel,,,}
+...........\marks4{b+,11,34,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.6} xyz
+.............\pdfdest struct54 name{enumi*.6} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 6
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,11,34,}
+...........\marks4{e+,11,34,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-12}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{12}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,12,37,text,,,}
+.......\marks4{b+,12,37,text,,,}
+.......\marks4{e-,12,37,}
+.......\marks4{e+,12,37,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 5.99579
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 7.81519fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x8.51663
+...........\write1{\new@label@record{mcid-13}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{13}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,13,39,itemlabel,,,}
+...........\marks4{b+,13,39,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.7} xyz
+.............\pdfdest struct59 name{enumi*.7} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 7
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,13,39,}
+...........\marks4{e+,13,39,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-14}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{14}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,14,42,text,,,}
+.......\marks4{b+,14,42,text,,,}
+.......\marks4{e-,14,42,}
+.......\marks4{e+,14,42,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 7.81519fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x8.51663
+...........\write1{\new@label@record{mcid-15}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{15}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,15,44,itemlabel,,,}
+...........\marks4{b+,15,44,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.8} xyz
+.............\pdfdest struct64 name{enumi*.8} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 8
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,15,44,}
+...........\marks4{e+,15,44,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-16}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{16}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,16,47,text,,,}
+.......\marks4{b+,16,47,text,,,}
+.......\marks4{e-,16,47,}
+.......\marks4{e+,16,47,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 7.81519fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x8.51663
+...........\write1{\new@label@record{mcid-17}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{17}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,17,49,itemlabel,,,}
+...........\marks4{b+,17,49,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.9} xyz
+.............\pdfdest struct69 name{enumi*.9} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 9
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,17,49,}
+...........\marks4{e+,17,49,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-18}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{18}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,18,52,text,,,}
+.......\marks4{b+,18,52,text,,,}
+.......\marks4{e-,18,52,}
+.......\marks4{e+,18,52,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,100,-1,}
+...\marks4{b+,100,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,100,2,}
+...\marks4{e+,100,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+.\kern 0.0
+Completed box being shipped out [2]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.2} xyz
+...\pdfdest struct22 name{page.2} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 18.45267fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,101,-1,}
+....\marks4{b+,101,-1,}
+....\hbox(10.00008+2.79997)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(10.00008+2.79997)x448.92128, glue set 319.39023fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\pdfliteral page{EMC}
+......\marks4{e-,101,2,}
+......\marks4{e+,101,2,}
+......\write1{\new@label@record{mcid-102}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{102}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/frametitle <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\marks4{b-,102,249,frametitle,,,}
+......\marks4{b+,102,249,frametitle,,,}
+......\T1/lmss/bx/n/14.4 S
+......\T1/lmss/bx/n/14.4 o
+......\T1/lmss/bx/n/14.4 m
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 t
+......\T1/lmss/bx/n/14.4 h
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 n
+......\T1/lmss/bx/n/14.4 g
+......\T1/lmss/bx/n/14.4 s
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 w
+......\kern-0.44
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 d
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 d
+......\pdfliteral page{EMC}
+......\marks4{e-,102,249,}
+......\marks4{e+,102,249,}
+......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,103,-1,}
+......\marks4{b+,103,-1,}
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,103,2,}
+....\marks4{e+,103,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 93.32504fil
+.....\glue 0.0 plus 0.5fil
+.....\hbox(139.98758+0.0)x448.92128
+......\vbox(139.98758+0.0)x448.92128, glue set - 0.11719
+.......\glue(\splittopskip) 2.39578
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-19}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{19}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,19,54,itemlabel,,,}
+...........\marks4{b+,19,54,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.10} xyz
+.............\pdfdest struct74 name{enumi*.10} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 0
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,19,54,}
+...........\marks4{e+,19,54,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-20}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{20}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,20,57,text,,,}
+.......\marks4{b+,20,57,text,,,}
+.......\marks4{e-,20,57,}
+.......\marks4{e+,20,57,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-21}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{21}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,21,59,itemlabel,,,}
+...........\marks4{b+,21,59,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.11} xyz
+.............\pdfdest struct80 name{enumi*.11} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,21,59,}
+...........\marks4{e+,21,59,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-22}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{22}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,22,62,text,,,}
+.......\marks4{b+,22,62,text,,,}
+.......\marks4{e-,22,62,}
+.......\marks4{e+,22,62,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-23}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{23}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,23,64,itemlabel,,,}
+...........\marks4{b+,23,64,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.12} xyz
+.............\pdfdest struct85 name{enumi*.12} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,23,64,}
+...........\marks4{e+,23,64,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-24}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{24}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,24,67,text,,,}
+.......\marks4{b+,24,67,text,,,}
+.......\marks4{e-,24,67,}
+.......\marks4{e+,24,67,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 5.99579
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-25}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{25}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,25,69,itemlabel,,,}
+...........\marks4{b+,25,69,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.13} xyz
+.............\pdfdest struct90 name{enumi*.13} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,25,69,}
+...........\marks4{e+,25,69,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-26}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{26}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,26,72,text,,,}
+.......\marks4{b+,26,72,text,,,}
+.......\marks4{e-,26,72,}
+.......\marks4{e+,26,72,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-27}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{27}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,27,74,itemlabel,,,}
+...........\marks4{b+,27,74,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.14} xyz
+.............\pdfdest struct95 name{enumi*.14} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,27,74,}
+...........\marks4{e+,27,74,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-28}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{28}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,28,77,text,,,}
+.......\marks4{b+,28,77,text,,,}
+.......\marks4{e-,28,77,}
+.......\marks4{e+,28,77,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-29}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{29}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,29,79,itemlabel,,,}
+...........\marks4{b+,29,79,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.15} xyz
+.............\pdfdest struct100 name{enumi*.15} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 5
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,29,79,}
+...........\marks4{e+,29,79,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-30}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{30}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,30,82,text,,,}
+.......\marks4{b+,30,82,text,,,}
+.......\marks4{e-,30,82,}
+.......\marks4{e+,30,82,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 5.99579
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-31}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{31}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,31,84,itemlabel,,,}
+...........\marks4{b+,31,84,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.16} xyz
+.............\pdfdest struct105 name{enumi*.16} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 6
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,31,84,}
+...........\marks4{e+,31,84,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-32}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{32}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,32,87,text,,,}
+.......\marks4{b+,32,87,text,,,}
+.......\marks4{e-,32,87,}
+.......\marks4{e+,32,87,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-33}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{33}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,33,89,itemlabel,,,}
+...........\marks4{b+,33,89,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.17} xyz
+.............\pdfdest struct110 name{enumi*.17} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 7
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,33,89,}
+...........\marks4{e+,33,89,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-34}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{34}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,34,92,text,,,}
+.......\marks4{b+,34,92,text,,,}
+.......\marks4{e-,34,92,}
+.......\marks4{e+,34,92,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-35}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{35}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,35,94,itemlabel,,,}
+...........\marks4{b+,35,94,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.18} xyz
+.............\pdfdest struct115 name{enumi*.18} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 8
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,35,94,}
+...........\marks4{e+,35,94,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-36}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{36}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,36,97,text,,,}
+.......\marks4{b+,36,97,text,,,}
+.......\marks4{e-,36,97,}
+.......\marks4{e+,36,97,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,104,-1,}
+...\marks4{b+,104,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,104,2,}
+...\marks4{e+,104,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+Completed box being shipped out [3]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.3} xyz
+...\pdfdest struct22 name{page.3} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 18.45267fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,105,-1,}
+....\marks4{b+,105,-1,}
+....\hbox(10.00008+2.79997)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(10.00008+2.79997)x448.92128, glue set 319.39023fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\pdfliteral page{EMC}
+......\marks4{e-,105,2,}
+......\marks4{e+,105,2,}
+......\write1{\new@label@record{mcid-106}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{106}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/frametitle <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\marks4{b-,106,250,frametitle,,,}
+......\marks4{b+,106,250,frametitle,,,}
+......\T1/lmss/bx/n/14.4 S
+......\T1/lmss/bx/n/14.4 o
+......\T1/lmss/bx/n/14.4 m
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 t
+......\T1/lmss/bx/n/14.4 h
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 n
+......\T1/lmss/bx/n/14.4 g
+......\T1/lmss/bx/n/14.4 s
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 w
+......\kern-0.44
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 d
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 d
+......\pdfliteral page{EMC}
+......\marks4{e-,106,250,}
+......\marks4{e+,106,250,}
+......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,107,-1,}
+......\marks4{b+,107,-1,}
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,107,2,}
+....\marks4{e+,107,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 93.32504fil
+.....\glue 0.0 plus 0.5fil
+.....\hbox(139.98758+0.0)x448.92128
+......\vbox(139.98758+0.0)x448.92128, glue set - 0.11719
+.......\glue(\splittopskip) 2.39578
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-37}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{37}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,37,99,itemlabel,,,}
+...........\marks4{b+,37,99,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.19} xyz
+.............\pdfdest struct120 name{enumi*.19} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 9
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,37,99,}
+...........\marks4{e+,37,99,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-38}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{38}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,38,102,text,,,}
+.......\marks4{b+,38,102,text,,,}
+.......\marks4{e-,38,102,}
+.......\marks4{e+,38,102,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-39}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{39}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,39,104,itemlabel,,,}
+...........\marks4{b+,39,104,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.20} xyz
+.............\pdfdest struct126 name{enumi*.20} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 0
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,39,104,}
+...........\marks4{e+,39,104,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-40}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{40}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,40,107,text,,,}
+.......\marks4{b+,40,107,text,,,}
+.......\marks4{e-,40,107,}
+.......\marks4{e+,40,107,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-41}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{41}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,41,109,itemlabel,,,}
+...........\marks4{b+,41,109,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.21} xyz
+.............\pdfdest struct131 name{enumi*.21} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,41,109,}
+...........\marks4{e+,41,109,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-42}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{42}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,42,112,text,,,}
+.......\marks4{b+,42,112,text,,,}
+.......\marks4{e-,42,112,}
+.......\marks4{e+,42,112,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 5.99579
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-43}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{43}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,43,114,itemlabel,,,}
+...........\marks4{b+,43,114,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.22} xyz
+.............\pdfdest struct136 name{enumi*.22} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,43,114,}
+...........\marks4{e+,43,114,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-44}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{44}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,44,117,text,,,}
+.......\marks4{b+,44,117,text,,,}
+.......\marks4{e-,44,117,}
+.......\marks4{e+,44,117,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-45}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{45}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,45,119,itemlabel,,,}
+...........\marks4{b+,45,119,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.23} xyz
+.............\pdfdest struct141 name{enumi*.23} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,45,119,}
+...........\marks4{e+,45,119,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-46}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{46}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,46,122,text,,,}
+.......\marks4{b+,46,122,text,,,}
+.......\marks4{e-,46,122,}
+.......\marks4{e+,46,122,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-47}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{47}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,47,124,itemlabel,,,}
+...........\marks4{b+,47,124,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.24} xyz
+.............\pdfdest struct146 name{enumi*.24} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,47,124,}
+...........\marks4{e+,47,124,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-48}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{48}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,48,127,text,,,}
+.......\marks4{b+,48,127,text,,,}
+.......\marks4{e-,48,127,}
+.......\marks4{e+,48,127,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 5.99579
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-49}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{49}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,49,129,itemlabel,,,}
+...........\marks4{b+,49,129,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.25} xyz
+.............\pdfdest struct151 name{enumi*.25} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 5
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,49,129,}
+...........\marks4{e+,49,129,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-50}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{50}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,50,132,text,,,}
+.......\marks4{b+,50,132,text,,,}
+.......\marks4{e-,50,132,}
+.......\marks4{e+,50,132,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-51}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{51}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,51,134,itemlabel,,,}
+...........\marks4{b+,51,134,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.26} xyz
+.............\pdfdest struct156 name{enumi*.26} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 6
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,51,134,}
+...........\marks4{e+,51,134,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-52}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{52}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,52,137,text,,,}
+.......\marks4{b+,52,137,text,,,}
+.......\marks4{e-,52,137,}
+.......\marks4{e+,52,137,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-53}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{53}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,53,139,itemlabel,,,}
+...........\marks4{b+,53,139,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.27} xyz
+.............\pdfdest struct161 name{enumi*.27} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 7
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,53,139,}
+...........\marks4{e+,53,139,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-54}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{54}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,54,142,text,,,}
+.......\marks4{b+,54,142,text,,,}
+.......\marks4{e-,54,142,}
+.......\marks4{e+,54,142,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,108,-1,}
+...\marks4{b+,108,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,108,2,}
+...\marks4{e+,108,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+Completed box being shipped out [4]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.4} xyz
+...\pdfdest struct22 name{page.4} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 18.45267fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,109,-1,}
+....\marks4{b+,109,-1,}
+....\hbox(10.00008+2.79997)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(10.00008+2.79997)x448.92128, glue set 319.39023fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\pdfliteral page{EMC}
+......\marks4{e-,109,2,}
+......\marks4{e+,109,2,}
+......\write1{\new@label@record{mcid-110}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{110}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/frametitle <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\marks4{b-,110,251,frametitle,,,}
+......\marks4{b+,110,251,frametitle,,,}
+......\T1/lmss/bx/n/14.4 S
+......\T1/lmss/bx/n/14.4 o
+......\T1/lmss/bx/n/14.4 m
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 t
+......\T1/lmss/bx/n/14.4 h
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 n
+......\T1/lmss/bx/n/14.4 g
+......\T1/lmss/bx/n/14.4 s
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 w
+......\kern-0.44
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 d
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 d
+......\pdfliteral page{EMC}
+......\marks4{e-,110,251,}
+......\marks4{e+,110,251,}
+......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,111,-1,}
+......\marks4{b+,111,-1,}
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,111,2,}
+....\marks4{e+,111,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 93.32504fil
+.....\glue 0.0 plus 0.5fil
+.....\hbox(139.98758+0.0)x448.92128
+......\vbox(139.98758+0.0)x448.92128, glue set - 0.11719
+.......\glue(\splittopskip) 2.39578
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-55}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{55}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,55,144,itemlabel,,,}
+...........\marks4{b+,55,144,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.28} xyz
+.............\pdfdest struct166 name{enumi*.28} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 8
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,55,144,}
+...........\marks4{e+,55,144,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-56}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{56}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,56,147,text,,,}
+.......\marks4{b+,56,147,text,,,}
+.......\marks4{e-,56,147,}
+.......\marks4{e+,56,147,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-57}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{57}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,57,149,itemlabel,,,}
+...........\marks4{b+,57,149,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.29} xyz
+.............\pdfdest struct172 name{enumi*.29} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 9
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,57,149,}
+...........\marks4{e+,57,149,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-58}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{58}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,58,152,text,,,}
+.......\marks4{b+,58,152,text,,,}
+.......\marks4{e-,58,152,}
+.......\marks4{e+,58,152,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-59}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{59}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,59,154,itemlabel,,,}
+...........\marks4{b+,59,154,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.30} xyz
+.............\pdfdest struct177 name{enumi*.30} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 0
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,59,154,}
+...........\marks4{e+,59,154,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-60}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{60}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,60,157,text,,,}
+.......\marks4{b+,60,157,text,,,}
+.......\marks4{e-,60,157,}
+.......\marks4{e+,60,157,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 5.99579
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-61}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{61}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,61,159,itemlabel,,,}
+...........\marks4{b+,61,159,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.31} xyz
+.............\pdfdest struct182 name{enumi*.31} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,61,159,}
+...........\marks4{e+,61,159,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-62}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{62}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,62,162,text,,,}
+.......\marks4{b+,62,162,text,,,}
+.......\marks4{e-,62,162,}
+.......\marks4{e+,62,162,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-63}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{63}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,63,164,itemlabel,,,}
+...........\marks4{b+,63,164,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.32} xyz
+.............\pdfdest struct187 name{enumi*.32} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,63,164,}
+...........\marks4{e+,63,164,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-64}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{64}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,64,167,text,,,}
+.......\marks4{b+,64,167,text,,,}
+.......\marks4{e-,64,167,}
+.......\marks4{e+,64,167,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-65}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{65}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,65,169,itemlabel,,,}
+...........\marks4{b+,65,169,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.33} xyz
+.............\pdfdest struct192 name{enumi*.33} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,65,169,}
+...........\marks4{e+,65,169,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-66}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{66}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,66,172,text,,,}
+.......\marks4{b+,66,172,text,,,}
+.......\marks4{e-,66,172,}
+.......\marks4{e+,66,172,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 5.99579
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-67}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{67}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,67,174,itemlabel,,,}
+...........\marks4{b+,67,174,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.34} xyz
+.............\pdfdest struct197 name{enumi*.34} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,67,174,}
+...........\marks4{e+,67,174,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-68}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{68}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,68,177,text,,,}
+.......\marks4{b+,68,177,text,,,}
+.......\marks4{e-,68,177,}
+.......\marks4{e+,68,177,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-69}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{69}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,69,179,itemlabel,,,}
+...........\marks4{b+,69,179,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.35} xyz
+.............\pdfdest struct202 name{enumi*.35} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 5
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,69,179,}
+...........\marks4{e+,69,179,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-70}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{70}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,70,182,text,,,}
+.......\marks4{b+,70,182,text,,,}
+.......\marks4{e-,70,182,}
+.......\marks4{e+,70,182,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-71}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{71}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,71,184,itemlabel,,,}
+...........\marks4{b+,71,184,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.36} xyz
+.............\pdfdest struct207 name{enumi*.36} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 6
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,71,184,}
+...........\marks4{e+,71,184,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-72}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{72}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,72,187,text,,,}
+.......\marks4{b+,72,187,text,,,}
+.......\marks4{e-,72,187,}
+.......\marks4{e+,72,187,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,112,-1,}
+...\marks4{b+,112,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,112,2,}
+...\marks4{e+,112,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+Completed box being shipped out [5]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.5} xyz
+...\pdfdest struct22 name{page.5} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 18.45267fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,113,-1,}
+....\marks4{b+,113,-1,}
+....\hbox(10.00008+2.79997)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(10.00008+2.79997)x448.92128, glue set 319.39023fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\pdfliteral page{EMC}
+......\marks4{e-,113,2,}
+......\marks4{e+,113,2,}
+......\write1{\new@label@record{mcid-114}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{114}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/frametitle <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\marks4{b-,114,252,frametitle,,,}
+......\marks4{b+,114,252,frametitle,,,}
+......\T1/lmss/bx/n/14.4 S
+......\T1/lmss/bx/n/14.4 o
+......\T1/lmss/bx/n/14.4 m
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 t
+......\T1/lmss/bx/n/14.4 h
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 n
+......\T1/lmss/bx/n/14.4 g
+......\T1/lmss/bx/n/14.4 s
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 w
+......\kern-0.44
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 d
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 d
+......\pdfliteral page{EMC}
+......\marks4{e-,114,252,}
+......\marks4{e+,114,252,}
+......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,115,-1,}
+......\marks4{b+,115,-1,}
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,115,2,}
+....\marks4{e+,115,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 93.32504fil
+.....\glue 0.0 plus 0.5fil
+.....\hbox(139.98758+0.0)x448.92128
+......\vbox(139.98758+0.0)x448.92128, glue set - 0.11719
+.......\glue(\splittopskip) 2.39578
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-73}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{73}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,73,189,itemlabel,,,}
+...........\marks4{b+,73,189,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.37} xyz
+.............\pdfdest struct212 name{enumi*.37} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 7
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,73,189,}
+...........\marks4{e+,73,189,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-74}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{74}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,74,192,text,,,}
+.......\marks4{b+,74,192,text,,,}
+.......\marks4{e-,74,192,}
+.......\marks4{e+,74,192,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-75}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{75}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,75,194,itemlabel,,,}
+...........\marks4{b+,75,194,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.38} xyz
+.............\pdfdest struct218 name{enumi*.38} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 8
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,75,194,}
+...........\marks4{e+,75,194,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-76}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{76}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,76,197,text,,,}
+.......\marks4{b+,76,197,text,,,}
+.......\marks4{e-,76,197,}
+.......\marks4{e+,76,197,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-77}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{77}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,77,199,itemlabel,,,}
+...........\marks4{b+,77,199,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.39} xyz
+.............\pdfdest struct223 name{enumi*.39} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 9
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,77,199,}
+...........\marks4{e+,77,199,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-78}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{78}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,78,202,text,,,}
+.......\marks4{b+,78,202,text,,,}
+.......\marks4{e-,78,202,}
+.......\marks4{e+,78,202,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 5.99579
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-79}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{79}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,79,204,itemlabel,,,}
+...........\marks4{b+,79,204,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.40} xyz
+.............\pdfdest struct228 name{enumi*.40} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 0
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,79,204,}
+...........\marks4{e+,79,204,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-80}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{80}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,80,207,text,,,}
+.......\marks4{b+,80,207,text,,,}
+.......\marks4{e-,80,207,}
+.......\marks4{e+,80,207,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-81}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{81}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,81,209,itemlabel,,,}
+...........\marks4{b+,81,209,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.41} xyz
+.............\pdfdest struct233 name{enumi*.41} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 1
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,81,209,}
+...........\marks4{e+,81,209,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-82}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{82}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,82,212,text,,,}
+.......\marks4{b+,82,212,text,,,}
+.......\marks4{e-,82,212,}
+.......\marks4{e+,82,212,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-83}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{83}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,83,214,itemlabel,,,}
+...........\marks4{b+,83,214,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.42} xyz
+.............\pdfdest struct238 name{enumi*.42} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 2
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,83,214,}
+...........\marks4{e+,83,214,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-84}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{84}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,84,217,text,,,}
+.......\marks4{b+,84,217,text,,,}
+.......\marks4{e-,84,217,}
+.......\marks4{e+,84,217,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 5.99579
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-85}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{85}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,85,219,itemlabel,,,}
+...........\marks4{b+,85,219,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.43} xyz
+.............\pdfdest struct243 name{enumi*.43} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 3
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,85,219,}
+...........\marks4{e+,85,219,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-86}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{86}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,86,222,text,,,}
+.......\marks4{b+,86,222,text,,,}
+.......\marks4{e-,86,222,}
+.......\marks4{e+,86,222,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-87}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{87}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,87,224,itemlabel,,,}
+...........\marks4{b+,87,224,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.44} xyz
+.............\pdfdest struct248 name{enumi*.44} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,87,224,}
+...........\marks4{e+,87,224,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-88}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{88}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,88,227,text,,,}
+.......\marks4{b+,88,227,text,,,}
+.......\marks4{e-,88,227,}
+.......\marks4{e+,88,227,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-89}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{89}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,89,229,itemlabel,,,}
+...........\marks4{b+,89,229,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.45} xyz
+.............\pdfdest struct253 name{enumi*.45} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 5
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,89,229,}
+...........\marks4{e+,89,229,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-90}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{90}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,90,232,text,,,}
+.......\marks4{b+,90,232,text,,,}
+.......\marks4{e-,90,232,}
+.......\marks4{e+,90,232,}
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,116,-1,}
+...\marks4{b+,116,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,116,2,}
+...\marks4{e+,116,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+Underfull \vbox (badness 10000) detected at line 65
+\vbox(139.98758+0.0)x448.92128, glue set 15.63126
+.\glue(\splittopskip) 2.39578
+.\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+..\hbox(7.17827+0.0)x0.0
+...\glue -21.77576
+...\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\hbox(7.17827+0.0)x13.99162
+.....\write1{\new@label@record{mcid-91}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{91}{tagmcid}{\__property_code_tagmcid: }}}
+.....\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.....\marks4{b-,91,234,itemlabel,,,}
+.....\marks4{b+,91,234,itemlabel,,,}
+.....\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+.....\penalty 10000
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0, shifted -13.6
+.......\pdfdest name{enumi*.46} xyz
+.......\pdfdest struct258 name{enumi*.46} xyz
+.......\penalty 10000
+.....\kern 0.0
+.....\T1/lmss/m/n/10.95 4
+.....\T1/lmss/m/n/10.95 6
+.....\T1/lmss/m/n/10.95 .
+.....\pdfliteral page{EMC}
+.....\marks4{e-,91,234,}
+.....\marks4{e+,91,234,}
+.....\pdfcolorstack 0 pop
+...\glue 5.44394
+..\write1{\new@label@record{mcid-92}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{92}{tagmcid}{\__property_code_tagmcid: }}}
+..\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+..\penalty 0
+..\T1/lmss/m/n/10.95 G
+..\T1/lmss/m/n/10.95 e
+..\T1/lmss/m/n/10.95 t
+..\glue 3.65 plus 1.825 minus 1.21666
+..\T1/lmss/m/n/10.95 c
+..\T1/lmss/m/n/10.95 a
+..\T1/lmss/m/n/10.95 p
+..\kern0.30417
+..\T1/lmss/m/n/10.95 e
+..\pdfliteral page{EMC}
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0 plus 1.0fil
+.\marks4{b-,92,237,text,,,}
+.\marks4{b+,92,237,text,,,}
+.\marks4{e-,92,237,}
+.\marks4{e+,92,237,}
+.\penalty 0
+.\glue 3.0 plus 2.0 minus 3.0
+.\glue(\parskip) 0.0
+.\glue(\parskip) 0.0
+.\glue(\baselineskip) 3.86665
+.\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+..\hbox(7.17827+0.0)x0.0
+...\glue -21.77576
+...\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\hbox(7.17827+0.0)x13.99162
+.....\write1{\new@label@record{mcid-93}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{93}{tagmcid}{\__property_code_tagmcid: }}}
+.....\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.....\marks4{b-,93,239,itemlabel,,,}
+.....\marks4{b+,93,239,itemlabel,,,}
+.....\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+.....\penalty 10000
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0, shifted -13.6
+.......\pdfdest name{enumi*.47} xyz
+.......\pdfdest struct264 name{enumi*.47} xyz
+.......\penalty 10000
+.....\kern 0.0
+.....\T1/lmss/m/n/10.95 4
+.....\T1/lmss/m/n/10.95 7
+.....\T1/lmss/m/n/10.95 .
+.....\pdfliteral page{EMC}
+.....\marks4{e-,93,239,}
+.....\marks4{e+,93,239,}
+.....\pdfcolorstack 0 pop
+...\glue 5.44394
+..\write1{\new@label@record{mcid-94}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{94}{tagmcid}{\__property_code_tagmcid: }}}
+..\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+..\penalty 0
+..\T1/lmss/m/n/10.95 W
+..\kern-0.30418
+..\T1/lmss/m/n/10.95 e
+..\T1/lmss/m/n/10.95 a
+..\kern-0.30418
+..\T1/lmss/m/n/10.95 r
+..\glue 3.65 plus 1.825 minus 1.21666
+..\T1/lmss/m/n/10.95 c
+..\T1/lmss/m/n/10.95 a
+..\T1/lmss/m/n/10.95 p
+..\kern0.30417
+..\T1/lmss/m/n/10.95 e
+..\pdfliteral page{EMC}
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0 plus 1.0fil
+.\marks4{b-,94,242,text,,,}
+.\marks4{b+,94,242,text,,,}
+.\marks4{e-,94,242,}
+.\marks4{e+,94,242,}
+.\penalty 0
+.\glue 3.0 plus 2.0 minus 3.0
+.\glue(\parskip) 0.0
+.\glue(\parskip) 0.0
+.\glue(\baselineskip) 4.2926
+.\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+..\hbox(7.17827+0.0)x0.0
+...\glue -21.77576
+...\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\hbox(7.17827+0.0)x13.99162
+.....\write1{\new@label@record{mcid-95}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{95}{tagmcid}{\__property_code_tagmcid: }}}
+.....\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+.....\marks4{b-,95,244,itemlabel,,,}
+.....\marks4{b+,95,244,itemlabel,,,}
+.....\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+.....\penalty 10000
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0, shifted -13.6
+.......\pdfdest name{enumi*.48} xyz
+.......\pdfdest struct269 name{enumi*.48} xyz
+.......\penalty 10000
+.....\kern 0.0
+.....\T1/lmss/m/n/10.95 4
+.....\T1/lmss/m/n/10.95 8
+.....\T1/lmss/m/n/10.95 .
+.....\pdfliteral page{EMC}
+.....\marks4{e-,95,244,}
+.....\marks4{e+,95,244,}
+.....\pdfcolorstack 0 pop
+...\glue 5.44394
+..\write1{\new@label@record{mcid-96}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{96}{tagmcid}{\__property_code_tagmcid: }}}
+..\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+..\penalty 0
+..\T1/lmss/m/n/10.95 .
+..\kern 1.825
+..\T1/lmss/m/n/10.95 .
+..\kern 1.825
+..\T1/lmss/m/n/10.95 .
+..\kern 1.825
+..\pdfliteral page{EMC}
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0 plus 1.0fil
+.\marks4{b-,96,247,text,,,}
+.\marks4{b+,96,247,text,,,}
+.\marks4{e-,96,247,}
+.\marks4{e+,96,247,}
+.\penalty 0
+.\glue 3.0 plus 2.0 minus 2.5
+Completed box being shipped out [6]
+\vbox(206.56702+448.92128)x405.10403
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 78.96426fil
+..\kern 0.0
+..\kern -77.96053
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set 44.82098fil
+...\kern 0.0
+...\kern -43.81725
+...\kern -1.00374
+...\pdfdest name{page.6} xyz
+...\pdfdest struct22 name{page.6} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(206.56702+448.92128)x405.10403
+..\glue -77.96053
+..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+...\vbox(28.45274+0.0)x448.92128, glue set 18.45267fil
+....\glue 0.0 plus 1.0fil
+....\pdfrunninglinkoff
+....\pdfliteral page{/Artifact BMC}
+....\marks4{b-,117,-1,}
+....\marks4{b+,117,-1,}
+....\hbox(10.00008+2.79997)x448.92128
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(10.00008+2.79997)x448.92128, glue set 319.39023fil
+......\glue -28.45274
+......\glue 28.45274
+......\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+......\vadjust
+.......\glue 0.0
+.......\glue 0.0
+......\pdfliteral page{EMC}
+......\marks4{e-,117,2,}
+......\marks4{e+,117,2,}
+......\write1{\new@label@record{mcid-118}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{118}{tagmcid}{\__property_code_tagmcid: }}}
+......\pdfliteral shipout page{/frametitle <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+......\marks4{b-,118,253,frametitle,,,}
+......\marks4{b+,118,253,frametitle,,,}
+......\T1/lmss/bx/n/14.4 S
+......\T1/lmss/bx/n/14.4 o
+......\T1/lmss/bx/n/14.4 m
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 t
+......\T1/lmss/bx/n/14.4 h
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 n
+......\T1/lmss/bx/n/14.4 g
+......\T1/lmss/bx/n/14.4 s
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 w
+......\kern-0.44
+......\T1/lmss/bx/n/14.4 e
+......\glue 5.28 plus 2.63998 minus 1.76
+......\T1/lmss/bx/n/14.4 d
+......\T1/lmss/bx/n/14.4 i
+......\T1/lmss/bx/n/14.4 d
+......\pdfliteral page{EMC}
+......\marks4{e-,118,253,}
+......\marks4{e+,118,253,}
+......\pdfliteral page{/Artifact BMC}
+......\marks4{b-,119,-1,}
+......\marks4{b+,119,-1,}
+......\vadjust
+.......\glue 12.0 plus 4.0 minus 4.0
+.......\glue 0.0
+......\pdfcolorstack 0 pop
+......\glue 0.0 plus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page{EMC}
+....\marks4{e-,119,2,}
+....\marks4{e+,119,2,}
+....\pdfrunninglinkon
+...\glue 5.69054
+...\glue(\lineskip) 0.0
+...\vbox(233.31262+0.0)x448.92128
+....\hbox(0.0+0.0)x0.0
+....\write-{}
+....\glue(\topskip) 0.0
+....\vbox(233.31262+0.0)x448.92128, glue set 93.32504fil
+.....\glue 0.0 plus 0.5fil
+.....\hbox(139.98758+0.0)x448.92128
+......\vbox(139.98758+0.0)x448.92128, glue set 15.63126
+.......\glue(\splittopskip) 2.39578
+.......\hbox(7.60422+2.12914)x427.14552, glue set 193.20865fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-91}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{91}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,91,234,itemlabel,,,}
+...........\marks4{b+,91,234,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.46} xyz
+.............\pdfdest struct258 name{enumi*.46} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 6
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,91,234,}
+...........\marks4{e+,91,234,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-92}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{92}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 G
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 t
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,92,237,text,,,}
+.......\marks4{b+,92,237,text,,,}
+.......\marks4{e-,92,237,}
+.......\marks4{e+,92,237,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 3.86665
+.......\hbox(7.60422+2.12914)x427.14552, glue set 189.4678fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-93}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{93}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,93,239,itemlabel,,,}
+...........\marks4{b+,93,239,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.47} xyz
+.............\pdfdest struct264 name{enumi*.47} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 7
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,93,239,}
+...........\marks4{e+,93,239,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-94}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{94}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 W
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 e
+........\T1/lmss/m/n/10.95 a
+........\kern-0.30418
+........\T1/lmss/m/n/10.95 r
+........\glue 3.65 plus 1.825 minus 1.21666
+........\T1/lmss/m/n/10.95 c
+........\T1/lmss/m/n/10.95 a
+........\T1/lmss/m/n/10.95 p
+........\kern0.30417
+........\T1/lmss/m/n/10.95 e
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,94,242,text,,,}
+.......\marks4{b+,94,242,text,,,}
+.......\marks4{e-,94,242,}
+.......\marks4{e+,94,242,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 3.0
+.......\glue(\parskip) 0.0
+.......\glue(\parskip) 0.0
+.......\glue(\baselineskip) 4.2926
+.......\hbox(7.17827+0.0)x427.14552, glue set 206.27281fil, shifted 21.77576
+........\hbox(7.17827+0.0)x0.0
+.........\glue -21.77576
+.........\hbox(7.17827+0.0)x16.33182, glue set 2.3402fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\hbox(7.17827+0.0)x13.99162
+...........\write1{\new@label@record{mcid-95}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{95}{tagmcid}{\__property_code_tagmcid: }}}
+...........\pdfliteral shipout page{/itemlabel <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+...........\marks4{b-,95,244,itemlabel,,,}
+...........\marks4{b+,95,244,itemlabel,,,}
+...........\pdfcolorstack 0 push {0.2 0.2 0.7 rg 0.2 0.2 0.7 RG}
+...........\penalty 10000
+...........\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0, shifted -13.6
+.............\pdfdest name{enumi*.48} xyz
+.............\pdfdest struct269 name{enumi*.48} xyz
+.............\penalty 10000
+...........\kern 0.0
+...........\T1/lmss/m/n/10.95 4
+...........\T1/lmss/m/n/10.95 8
+...........\T1/lmss/m/n/10.95 .
+...........\pdfliteral page{EMC}
+...........\marks4{e-,95,244,}
+...........\marks4{e+,95,244,}
+...........\pdfcolorstack 0 pop
+.........\glue 5.44394
+........\write1{\new@label@record{mcid-96}{{tagabspage}{\__property_code_tagabspage: }{tagmcabs}{96}{tagmcid}{\__property_code_tagmcid: }}}
+........\pdfliteral shipout page{/text <</MCID \flag_height:n {__tag/mcid}\flag_raise:n {__tag/mcid} >> BDC}
+........\penalty 0
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\T1/lmss/m/n/10.95 .
+........\kern 1.825
+........\pdfliteral page{EMC}
+........\penalty 10000
+........\glue(\parfillskip) 0.0 plus 1.0fil
+........\glue(\rightskip) 0.0 plus 1.0fil
+.......\marks4{b-,96,247,text,,,}
+.......\marks4{b+,96,247,text,,,}
+.......\marks4{e-,96,247,}
+.......\marks4{e+,96,247,}
+.......\penalty 0
+.......\glue 3.0 plus 2.0 minus 2.5
+.....\glue 0.0 plus 0.5fil
+....\kern 0.0
+....\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\pdfrunninglinkoff
+...\pdfliteral page{/Artifact BMC}
+...\marks4{b-,120,-1,}
+...\marks4{b+,120,-1,}
+...\glue(\baselineskip) 17.07164
+...\hbox(0.0+448.92128)x448.92128
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+448.92128)x448.92128
+.....\glue -28.45274
+.....\glue 28.45274
+.....\vbox(0.0+448.92128)x448.92128
+......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
+.......\hbox(0.0+0.0)x0.0
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\glue 0.0
+....\pdfcolorstack 0 pop
+...\pdfliteral page{EMC}
+...\marks4{e-,120,2,}
+...\marks4{e+,120,2,}
+...\pdfrunninglinkon
+.\kern 0.0
+.\kern -655.4883
+.\hbox(0.0+0.0)x0.0
+.\kern 655.4883
+(ltx-talk-auto-break.aux)

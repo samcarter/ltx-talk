@@ -231,7 +231,9 @@
 %   Check if the mode is known and current. If we find an action but have no
 %   overlay details, they are filled in with a \verb|*|. Notice that if
 %   we get a hit here for the mode test, there is no overlay part: we therefore
-%   have a spec that excludes other modes.
+%   have a spec that excludes other modes. Also notice that if frame breaking
+%   is active we only look for overall mode specifications, not any further
+%   structure.
 %    \begin{macrocode}
 \cs_new_protected:Npe \@@_decode_mode:n #1
   {
@@ -243,8 +245,11 @@
           { \bool_set_true:N \exp_not:N \l_@@_decode_overlays_bool }
       }
       {
-        \exp_not:N \@@_decode_mode:w #1 \tl_to_str:n { : : }
-          \exp_not:N \q_stop
+        \exp_not:N \bool_if:NF \exp_not:N \l_@@_frame_break_bool
+          {
+            \exp_not:N \@@_decode_mode:w #1 \tl_to_str:n { : : }
+              \exp_not:N \q_stop
+          }
       }
   }
 \use:e

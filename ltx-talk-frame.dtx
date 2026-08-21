@@ -92,6 +92,13 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\g_@@_break_box, \l_@@_slide_box}
+%    \begin{macrocode}
+\box_new:N \g_@@_break_box
+\box_new:N \l_@@_break_box
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{variable}{\l_@@_slide_box}
 %    \begin{macrocode}
 \box_new:N \l_@@_slide_box
@@ -181,7 +188,14 @@
               {#1}
            \tl_use:N \g_@@_onslide_tl
         \vbox_set_end:
-        \@@_slide_auxiii:
+        \bool_lazy_and:nnTF
+          { \l_@@_frame_break_bool }
+          {
+            \dim_compare_p:nNn { \box_ht:N \l_@@_slide_box }
+              > \textheight
+          }
+          { \@@_slide_break: }
+          { \@@_slide_auxiii: }
   }
 \cs_new_protected:Npn \@@_slide_auxiii:
   {
@@ -232,6 +246,32 @@
       { \bool_gset_false:N \g_@@_frame_tag_bool }
     \bool_gset_eq:NN \g_@@_slide_continue_bool
       \l_@@_slide_continue_bool
+  }
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\@@_slide_break:}
+%   Breaking a slide requires we get the content out of the multiple layers
+%   required for tagging. That means first saving the inner box then splitting
+%   before closing up and finalising the first slide as normal. We then need
+%   a simple loop to chop up the rest of the content: we keep the box nesting
+%   the same for each slide in the output.
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_slide_break:
+  {
+    \box_set_eq:NN  \l_@@_break_box \l_@@_slide_box
+    \vbox_set_split_to_ht:NNn \l_@@_slide_box \l_@@_break_box
+      { \fp_to_dim:n { \l_@@_frame_break_fp * \textheight } }
+    \box_gset_eq:NN \g_@@_break_box \l_@@_break_box
+    \@@_slide_auxiii:
+    \box_set_eq:NN \l_@@_break_box \g_@@_break_box
+    \bool_do_until:nn { \box_if_empty_p:N \l_@@_break_box }
+      {
+        \vbox_set_split_to_ht:NNn \l_@@_slide_box \l_@@_break_box
+          { \fp_to_dim:n { \l_@@_frame_break_fp * \textheight } }
+        \vbox_set:Nn \l_@@_slide_box
+          { \hbox:n { \box_use_drop:N \l_@@_slide_box } }
+        \@@_slide_output: 
+      }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -408,6 +448,8 @@
 % \begin{variable}
 %   {
 %     \l_@@_action_spec_str   ,
+%     \l_@@_frame_break_bool  ,
+%     \l_@@_frame_break_fp   ,
 %     \l_@@_frame_name_str    ,
 %     \l_@@_frame_suppl_bool  ,
 %     \l_@@_frame_tagging_str
@@ -418,6 +460,10 @@
   {
     action-spec .str_set:N =
       \l_@@_action_spec_str ,
+    auto-break .bool_set:N =
+      \l_@@_frame_break_bool ,
+    auto-break-coverage .fp_set:N =
+      \l_@@_frame_break_fp ,
     label .meta:n =
       { name = {#1} } ,
     name .str_set:N =
@@ -436,6 +482,8 @@
 \keys_set:nn { talk / frame }
   {
     action-spec         =        ,
+    auto-break          = false  ,
+    auto-break-coverage = 0.85   ,
     name                =        ,
     supplementary-frame = false  ,
     tag-slides          = n      ,

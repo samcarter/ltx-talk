@@ -1,0 +1,67 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}[auto-break = true, auto-break-coverage = 0.6]
+  \frametitle{Some things we did}
+  \begin{enumerate}[<+->]
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+    \item Get cape
+    \item Wear cape
+    \item \dots
+  \end{enumerate}
+\end{frame}
+
+\end{document}

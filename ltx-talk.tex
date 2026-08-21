@@ -1213,6 +1213,20 @@ Environment version of the \cs{alert} command.
 
 \subsection{Block environments}
 
+\DescribeEnv{block}
+\begin{syntax}
+  \cs{begin}\{\texttt{block}\}\sarg{overlay spec}\marg{block title}
+\end{syntax}
+Inserts a block, like a definition or a theorem, with the title \meta{block
+title}. If the \meta{action specification} is present, the given actions are
+taken on the specified slides, see Section~\ref{sec:action-spec}. In the
+example, the definition is shown only from slide~3 onward.
+\begin{verbatim}
+  \begin{block}<3->{Definition}
+    A \alert{set} consists of elements.
+  \end{block}
+\end{verbatim}
+
 \subsection{Figures and tables}
 
 You can use the standard \LaTeX{} environments \env{figure} and \env{table}
@@ -1392,7 +1406,7 @@ and each slide with use \opt{auto-break-coverage} percent of the
 \cs{textheight} for the split.
 
 Note that overlays are disabled when breaking is active, and that formal
-support here is specifically targeted at auto-generated content.
+support here is specifically targetded at auto-generated content.
 
 \section{Creating alternative output formats%
   \label{sec:modes}}

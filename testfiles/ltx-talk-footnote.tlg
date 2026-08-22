@@ -601,6 +601,7 @@ Completed box being shipped out [2]
 .....\marks4{e-,31,21,}
 .....\marks4{e+,31,21,}
 .....\pdfcolorstack 1 pop
+....\write1{\new@label@record{frame.1}{{slides}{2}}}
 ....\kern -3.30003
 ....\hbox(0.0+3.30003)x0.0
 ....\glue -3.30003

@@ -982,6 +982,7 @@ Completed box being shipped out [4]
 .......\marks4{e-,22,25,}
 .......\marks4{e+,22,25,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.1}{{slides}{4}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil
@@ -1065,7 +1066,6 @@ Completed box being shipped out [5]
 ...\vbox(233.31262+0.0)x448.92128
 ....\hbox(0.0+0.0)x0.0
 ....\write-{}
-....\write1{\new@label@record{frame.1}{{slides}{4}}}
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 190.10422fil
 .....\glue 0.0 plus 0.5fil
@@ -1341,6 +1341,7 @@ Completed box being shipped out [6]
 .......\marks4{e-,33,38,}
 .......\marks4{e+,33,38,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.2}{{slides}{2}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil

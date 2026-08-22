@@ -1629,6 +1629,7 @@ Completed box being shipped out [5]
 .......\marks4{e-,20,24,}
 .......\marks4{e+,20,24,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.1}{{slides}{5}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil
@@ -1712,7 +1713,6 @@ Completed box being shipped out [6]
 ...\vbox(233.31262+0.0)x448.92128
 ....\hbox(0.0+0.0)x0.0
 ....\write-{}
-....\write1{\new@label@record{frame.1}{{slides}{5}}}
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 100.90836fil
 .....\glue 0.0 plus 0.5fil
@@ -4684,6 +4684,7 @@ Completed box being shipped out [11]
 .......\penalty 0
 .......\glue 3.0 plus 2.0 minus 2.5
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.2}{{slides}{6}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil
@@ -4767,7 +4768,6 @@ Completed box being shipped out [12]
 ...\vbox(233.31262+0.0)x448.92128
 ....\hbox(0.0+0.0)x0.0
 ....\write-{}
-....\write1{\new@label@record{frame.2}{{slides}{6}}}
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 186.50839fil
 .....\glue 0.0 plus 0.5fil
@@ -5447,6 +5447,7 @@ Completed box being shipped out [14]
 .......\penalty 0
 .......\glue 3.0 plus 2.0 minus 2.5
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.3}{{slides}{3}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil
@@ -5530,7 +5531,6 @@ Completed box being shipped out [15]
 ...\vbox(233.31262+0.0)x448.92128
 ....\hbox(0.0+0.0)x0.0
 ....\write-{}
-....\write1{\new@label@record{frame.3}{{slides}{3}}}
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 225.7084fil
 .....\glue 0.0 plus 0.5fil
@@ -5559,6 +5559,7 @@ Completed box being shipped out [15]
 .......\marks4{e-,72,95,}
 .......\marks4{e+,72,95,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.4}{{slides}{1}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil

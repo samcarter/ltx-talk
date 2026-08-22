@@ -466,6 +466,7 @@ Completed box being shipped out [2]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfcolorstack 1 pop
+....\write1{\new@label@record{frame.1}{{slides}{2}}}
 ....\glue -3.30003
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164

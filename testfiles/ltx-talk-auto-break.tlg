@@ -547,6 +547,7 @@ Completed box being shipped out [1]
 .......\marks4{e-,18,52,}
 .......\marks4{e+,18,52,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.1}{{slides}{1}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil
@@ -1124,6 +1125,7 @@ Completed box being shipped out [2]
 .......\marks4{e-,36,97,}
 .......\marks4{e+,36,97,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.1}{{slides}{1}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil
@@ -1700,6 +1702,7 @@ Completed box being shipped out [3]
 .......\marks4{e-,54,142,}
 .......\marks4{e+,54,142,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.1}{{slides}{1}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil
@@ -2276,6 +2279,7 @@ Completed box being shipped out [4]
 .......\marks4{e-,72,187,}
 .......\marks4{e+,72,187,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.1}{{slides}{1}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil
@@ -2852,6 +2856,7 @@ Completed box being shipped out [5]
 .......\marks4{e-,90,232,}
 .......\marks4{e+,90,232,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.1}{{slides}{1}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil
@@ -3277,6 +3282,7 @@ Completed box being shipped out [6]
 .......\penalty 0
 .......\glue 3.0 plus 2.0 minus 2.5
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.1}{{slides}{1}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil
@@ -3308,3 +3314,4 @@ Completed box being shipped out [6]
 .\hbox(0.0+0.0)x0.0
 .\kern 655.4883
 (ltx-talk-auto-break.aux)
+LaTeX Warning: There were multiply-defined labels.

@@ -90,6 +90,7 @@ Completed box being shipped out [1]
 .......\marks4{e-,1,7,}
 .......\marks4{e+,1,7,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.1}{{slides}{1}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil
@@ -174,7 +175,6 @@ Completed box being shipped out [2]
 ...\vbox(233.31262+0.0)x448.92128
 ....\hbox(0.0+0.0)x0.0
 ....\write-{}
-....\write1{\new@label@record{frame.1}{{slides}{1}}}
 ....\write1{\@writefile{toc}{\appendixmarker }}
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 225.7084fil
@@ -209,6 +209,7 @@ Completed box being shipped out [2]
 .......\marks4{e-,4,10,}
 .......\marks4{e+,4,10,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.3}{{slides}{1}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil

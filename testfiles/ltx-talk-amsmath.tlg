@@ -3372,6 +3372,7 @@ Completed box being shipped out [6]
 .......\marks4{e-,28,14,}
 .......\marks4{e+,28,14,}
 .....\glue 0.0 plus 0.5fil
+....\write1{\new@label@record{frame.1}{{slides}{6}}}
 ....\kern 0.0
 ....\hbox(0.0+0.0)x0.0
 ....\glue 0.0 plus 1.0fil

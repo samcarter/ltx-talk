@@ -153,8 +153,6 @@
       \RenewCommandCopy \frame \@@_latexe_frame:n
       \bool_do_while:Nn \g_@@_slide_continue_bool
         { \@@_slide_auxi:nn {#1} {#2} }
-      \property_record:ee { frame . \int_use:N \g_@@_frame_int }
-        { slides }
     \group_end:
   }
 \cs_new_protected:Npn \@@_slide_auxi:nn #1#2
@@ -291,6 +289,11 @@
             \vbox_unpack_drop:N \g_@@_footnote_box
           }
       }
+      \bool_if:NF \g_@@_slide_continue_bool
+        {
+          \property_record:ee { frame . \int_use:N \g_@@_frame_int }
+            { slides }
+        }
     \clearpage
   }
 %    \end{macrocode}
@@ -363,16 +366,6 @@
   }
 %    \end{macrocode}
 % \end{macro}
-%
-% The very last frame will not be recorded by the above, so we have to add to
-% the hook at the very end of the run.
-%    \begin{macrocode}
-\AddToHook { enddocument / afterlastpage }
-  {
-    \property_record:ee { frame . \int_use:N \g_@@_frame_int }
-      { slides }
-  }
-%    \end{macrocode}
 %
 % \begin{variable}{\g_@@_frame_struct_int}
 %  The tagging structure number for the slide: needed by the content placed

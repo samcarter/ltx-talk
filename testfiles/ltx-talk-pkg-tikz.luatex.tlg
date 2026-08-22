@@ -538,10 +538,11 @@ Completed box being shipped out [2]
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\write1{\new@label@record{frame.1}{{slides}{2}}}
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
-...\pdfliteral page <lua data reference ...>
-...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
 ...\hbox(0.0+448.92128)x448.92128, direction TLT
@@ -627,7 +628,6 @@ Completed box being shipped out [3]
 ...\glue(\lineskip) 0.0
 ...\vbox(233.31262+0.0)x448.92128, direction TLT
 ....\write-{}
-....\write1{\new@label@record{frame.1}{{slides}{2}}}
 ....\glue(\topskip) 0.0
 ....\vbox(233.31262+0.0)x448.92128, glue set 216.16937fil, direction TLT
 .....\glue 0.0 plus 0.5fil
@@ -712,10 +712,11 @@ Completed box being shipped out [3]
 ........\glue(\parfillskip) 0.0 plus 1.0fil
 ........\glue(\rightskip) 0.0 plus 1.0fil
 .....\glue 0.0 plus 0.5fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\write1{\new@label@record{frame.2}{{slides}{1}}}
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
-...\pdfliteral page <lua data reference ...>
-...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
 ...\hbox(0.0+448.92128)x448.92128, direction TLT

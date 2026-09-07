@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.6.2] - 2026-09-07
+
 ### Fixed
 
 - Undefined control sequence in creation of theorems (see issue
@@ -451,7 +453,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.6.1...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.6.2...HEAD
+[v0.6.2]: https://github.com/josephwright/ltx-talk/compare/v0.6.1...v0.6.2
 [v0.6.1]: https://github.com/josephwright/ltx-talk/compare/v0.6.0...v0.6.1
 [v0.6.0]: https://github.com/josephwright/ltx-talk/compare/v0.5.3...v0.6.0
 [v0.5.3]: https://github.com/josephwright/ltx-talk/compare/v0.5.2...v0.5.3

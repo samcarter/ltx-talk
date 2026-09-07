@@ -1,0 +1,28 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+
+\documentclass{ltx-talk}
+
+\START
+\newtheorem{thrm}{Theorem}
+\newtheorem{prop}[thrm]{Proposition}
+\OMIT
+
+\begin{document}
+
+\TIMO
+
+\showoutput
+
+\begin{frame}
+  \begin{thrm}
+    A
+  \end{thrm}
+
+  \begin{prop}
+    B
+  \end{prop}
+\end{frame}
+
+\end{document}

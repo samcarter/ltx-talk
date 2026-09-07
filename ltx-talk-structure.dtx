@@ -851,9 +851,9 @@
         \exp_not:N \stdnewtheorem
           \IfBooleanT #1 { * }
           { \exp_not:n {#2} }
-          \IfNoValueF {#3} { \exp:not:n { [ {#3} ] } }
+          \IfNoValueF {#3} { \exp_not:n { [ {#3} ] } }
           { \exp_not:n {#4} }
-          \IfNoValueF {#5} { \exp:not:n { [ {#5} ] } }
+          \IfNoValueF {#5} { \exp_not:n { [ {#5} ] } }
       }
     \NewEnvironmentCopy { std #2 } {#2}
     \RenewDocumentEnvironment {#2} { D <> { all } o }

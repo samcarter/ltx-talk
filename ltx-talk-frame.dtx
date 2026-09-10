@@ -35,8 +35,8 @@
 % \fi
 %
 % ^^A As we are dealing with a class, this has to be done manually
-% \def\filedate{2026-09-07}
-% \def\fileversion{v0.6.2}
+% \def\filedate{2026-09-10}
+% \def\fileversion{v0.6.3}
 %
 % \title{^^A
 %   \pkg{ltx-talk-frame} -- The structure of frames^^A
@@ -279,6 +279,7 @@
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_slide_output:
   {
+    \thispdfpagelabel { \int_use:N \g_@@_frame_int }
     \vbox_to_ht:nn { \textheight }
       {
         \use:c { @@_slide_align_ \l_@@_frame_alignment_tl :n }

@@ -17,7 +17,8 @@ Total frames 4
 [4
 ]
 -------- ltx-talk-appendix.toc (start) ---------
-(ltx-talk-appendix.toc) \contentsline {section}{First}{2}{section.1}%[nl]
+(ltx-talk-appendix.toc)
+\contentsline {section}{First}{2}{section.1}%[nl]
 \contentsline {section}{Second}{3}{section.2}%[nl]
 \appendixmarker[nl]
 \contentsline {section}{Appendix}{4}{section.3}%[nl]

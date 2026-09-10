@@ -98,6 +98,16 @@
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\l_@@_decode_mode_bool}
+%   Tracks whether the overlay applies purely on the basis of mode:
+%   needed to handle inclusion/exclusion of entire frame environment.
+%   Will be \texttt{true} even if the slide numbers mean the overlay
+%   does not otherwise apply.
+%    \begin{macrocode}
+\bool_new:N \l_@@_decode_mode_bool
+%    \end{macrocode}
+% \end{variable}
+%
 % \begin{variable}{\l_@@_decode_modes_bool}
 %   Tracks whether at least one mode was given with no overlays: this means
 %   that the specification selects only included modes.
@@ -165,12 +175,16 @@
     \bool_lazy_or:nnTF
       { \tl_if_blank_p:n {#1} }
       { \str_if_eq_p:nn {#1} { all } }
-      { \bool_set_true:N \l_@@_decode_overlays_bool }
+      {
+        \bool_set_true:N \l_@@_decode_mode_bool
+        \bool_set_true:N \l_@@_decode_overlays_bool
+      }
       {
         \str_set:Nn \l_@@_decode_arg_str {#1}
         \bool_set_false:N \l_@@_decode_actions_bool
         \bool_set_false:N \l_@@_decode_overlays_bool
         \bool_set_false:N \l_@@_decode_trailing_bool
+        \bool_set_false:N \l_@@_decode_mode_bool
         \bool_set_false:N \l_@@_decode_modes_bool
         \clist_clear:N \l_@@_decode_actions_clist
         \clist_clear:N \l_@@_decode_overlays_clist
@@ -203,7 +217,10 @@
         \bool_lazy_and:nnT
           { \str_if_empty_p:N \l_@@_decode_overlays_str }
           { ! \l_@@_decode_modes_bool }
-          { \bool_set_true:N \l_@@_decode_overlays_bool }
+          {
+            \bool_set_true:N \l_@@_decode_mode_bool
+            \bool_set_true:N \l_@@_decode_overlays_bool
+          }
       }
     \exp_args:Ne \@@_decode_mode:n
       { \tl_trim_spaces:n {#1} }
@@ -242,7 +259,10 @@
         \bool_set_true:N \exp_not:N \l_@@_decode_modes_bool
         \exp_not:N \str_if_eq:VnT
           \exp_not:N \l_@@_mode_str {#1}
-          { \bool_set_true:N \exp_not:N \l_@@_decode_overlays_bool }
+          {
+            \bool_set_true:N \exp_not:N \l_@@_decode_mode_bool
+            \bool_set_true:N \exp_not:N \l_@@_decode_overlays_bool
+          }
       }
       {
         \exp_not:N \bool_if:NF \exp_not:N \l_@@_frame_break_bool
@@ -347,11 +367,16 @@
 % \begin{macro}{\@@_decode_overlay_offset:nNn}
 %   The loop here needs to replace all |+| and |.| characters by the current
 %   automatic value, allowing for any offsets. Stepping the value assigned
-%   here is done in the outer loop (see above).
+%   here is done in the outer loop (see above). If the overlay spec is not
+%   simply~|0|, the current frame is active and is marked as such.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_decode_overlays:nn #1#2
   {
     \str_clear:c { l_@@_decode_ #1 _str }
+    \bool_lazy_and:nnT
+      { \str_if_eq_p:nn {#1} { overlays } }
+      { ! \str_if_eq_p:nn {#2} { 0 } }
+      { \bool_set_true:N \l_@@_decode_mode_bool }
     \@@_decode_overlays:nN {#1} #2 \q_recursion_tail \q_recursion_stop
     \@@_decode_check:n {#1}
   }

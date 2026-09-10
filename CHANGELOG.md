@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Frame number when some frames are excluded (see issue
+  [\#270](https://github.com/josephwright/ltx-talk/issues/270))
+
 ## [v0.6.2] - 2026-09-07
 
 ### Fixed

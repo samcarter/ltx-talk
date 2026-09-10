@@ -1,0 +1,25 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+\begin{document}
+
+\START
+
+\begin{frame}
+  Frame
+  \TYPE{FRAME: \theframe}
+\end{frame}
+
+\begin{frame}<handout>
+  Not here!
+\end{frame}
+
+\begin{frame}
+  Frame
+  \TYPE{FRAME: \theframe}
+\end{frame}
+
+\OMIT
+
+\end{document}

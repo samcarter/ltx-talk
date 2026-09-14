@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.6.4] - 2026-09-14
+
 ### Changed
 
 - Automatically apply opacity grouping to `tcolorbox` environments (see issue
@@ -465,7 +467,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.6.3...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.6.4...HEAD
+[v0.6.4]: https://github.com/josephwright/ltx-talk/compare/v0.6.3...v0.6.4
 [v0.6.3]: https://github.com/josephwright/ltx-talk/compare/v0.6.2...v0.6.3
 [v0.6.2]: https://github.com/josephwright/ltx-talk/compare/v0.6.1...v0.6.2
 [v0.6.1]: https://github.com/josephwright/ltx-talk/compare/v0.6.0...v0.6.1

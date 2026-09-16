@@ -8,6 +8,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Revert application opacity grouping to `tcolorbocx` environments (see issues
+  [\#272](https://github.com/josephwright/ltx-talk/issues/272) and
+  [\#274](https://github.com/josephwright/ltx-talk/issues/274))
+
 ## [v0.6.4] - 2026-09-14
 
 ### Changed

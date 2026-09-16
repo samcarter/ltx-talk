@@ -866,20 +866,6 @@
   }
 %    \end{macrocode}
 %
-% For \pkg{tcolorbox}, there is a build-in mechanism to apply a transparency
-% group.
-%    \begin{macrocode}
-\AddToHook { package / tcolorbox /after }
-  {
-    \tcbuselibrary { skins }
-    \tcbsetforeverylayer
-      {
-        at~begin~tikz = \begin { scope } [ transparency~group ] ,
-        at~end~tikz = \end { scope },
-      }
-  }
-%    \end{macrocode}
-%
 %    \begin{macrocode}
 %</class>
 %    \end{macrocode}

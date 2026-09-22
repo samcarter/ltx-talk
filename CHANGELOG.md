@@ -8,6 +8,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Wrap long frame titles (see issues
+  [\#187](https://github.com/josephwright/ltx-talk/issues/187))
+
 ## [v0.6.5] - 2026-09-16
 
 ### Fixed

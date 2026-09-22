@@ -121,14 +121,18 @@
 %
 % Like \cs{vcoffin_set:Nnn}, so should be an easy enough addition.
 %    \begin{macrocode}
-\cs_gset_protected:Npn \vbox_set_to_wd:Nnn #1#2#3
+\cs_gset_protected:Npn \vbox_set_to_wd:Nnn #1
+  { \__box_set_to_wd:NNnn #1 \tex_vbox:D }
+\cs_gset_protected:Npn \vbox_set_top_to_wd:Nnn #1
+  { \__box_set_to_wd:NNnn #1 \tex_vtop:D }
+\cs_gset_protected:Npn \__box_set_to_wd:NNnn #1#2#3#4
   {
-    \tex_setbox:D #1 \tex_vbox:D
+    \tex_setbox:D #1 #2
       {
-        \tex_hsize:D \__box_dim_eval:n {#2}
-        \color_group_begin: #3 \par \color_group_end:
+        \tex_hsize:D \__box_dim_eval:n {#3}
+        \color_group_begin: #4 \par \color_group_end:
       }
-    \box_wd:N #1 \__box_dim_eval:n {#2}
+    \box_wd:N #1 \__box_dim_eval:n {#3}
   }
 \cs_gset_protected:Npn \vbox_set_to_wd:Nnw #1#2
   {

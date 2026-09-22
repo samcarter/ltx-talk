@@ -1,0 +1,28 @@
+\input{regression-test}
+
+\DocumentMetadata{tagging = draft}
+\documentclass{ltx-talk}
+
+\begin{document}
+
+\START
+
+\showoutput
+
+\begin{frame}
+  \frametitle{A short title}
+  Content
+\end{frame}
+
+\begin{frame}
+  \frametitle{A short title\\But with a break}
+  Content
+\end{frame}
+
+\begin{frame}
+  \frametitle{A very long title that deliberately contains sufficient words
+    that it will need to be wrapped!}
+  Content
+\end{frame}
+
+\end{document}

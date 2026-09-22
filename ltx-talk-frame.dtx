@@ -607,17 +607,28 @@
       { \l_@@_header_ht_dim - \headsep }
       { \headsep }
     \skip_horizontal:n { \l_@@_header_left_skip }
-    \group_begin:
-      \tl_if_empty:NF \l_@@_header_fg_tl
-        { \color_select:V \l_@@_header_fg_tl }
-      \l_@@_header_font_tl
-      \bool_if:NT \l_@@_header_frametitle_bool
-        {
-          \ExpandArgs { nnV }
-            \UseInstance { frametitle } { header }
-              \g_@@_frame_title_tl
-        }
-    \group_end:
+    \vbox_set_to_wd:Nnn \l_@@_tmp_box
+      {
+          \paperwidth
+        - \l_@@_header_left_skip
+        - \l_@@_header_right_skip
+      }
+      {
+        \tl_if_empty:NF \l_@@_header_fg_tl
+          { \color_select:V \l_@@_header_fg_tl }
+        \l_@@_header_font_tl
+        \bool_if:NT \l_@@_header_frametitle_bool
+          {
+            \ExpandArgs { nnV }
+              \UseInstance { frametitle } { header }
+                \g_@@_frame_title_tl
+          }
+      }
+    \dim_compare:nNnT { \box_ht:N \l_@@_tmp_box + \box_dp:N \l_@@_tmp_box }
+      > \l_@@_header_ht_dim
+      { \msg_warning:nn { talk } { overheight-header } }
+    \box_use_drop:N \l_@@_tmp_box
+    \skip_horizontal:n { \l_@@_header_right_skip - \Gm@rmargin }
   }
 \DeclareInstance { header } { std } { talk } { }
 \AddToHook { begindocument }
@@ -1050,6 +1061,12 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+\msg_new:nnnn { talk } { overheight-header }
+  { Overheight~header~on~frame~ \int_use:N \g_@@_frame_int ! }
+  {
+    Typesetting~the~frame~header,~there~was~too~much~vertical~space~used.
+    You~likely~need~to~adjusst~the~overall~space~available~for~frame~titles.
+  }
 \msg_new:nnnn { talk } { unknown-frame-name }
   { Unknown~frame~name~"#1"! }
   {

@@ -118,18 +118,49 @@
     color         = \l_@@_frametitle_color_tl ,
     font          = \l_@@_frametitle_font_tl
   }
+%    \end{macrocode}
+%   Here, we want to be able to apply a color to the frame title but also
+%   to know where the baseline of the first line is. That means worrying about
+%   whatsits: first box up just the text, then add around it the spacing
+%   and color, before adjusting the box reference point.
+%    \begin{macrocode}
   {
     \noindent
-    \vspace { \l_@@_frametitle_before_skip }
-    \group_begin:
-      \tl_if_empty:NF \l_@@_frametitle_color_tl
-        { \color_select:V \l_@@_frametitle_color_tl }
-      \l_@@_frametitle_font_tl
-      \tl_if_blank:nF {#1}
-        { \@@_frame_title:n {#1} }
-      \par
-    \group_end:
-    \vspace { \l_@@_frametitle_after_skip }
+    \vbox_set_top:Nn \l_@@_tmp_box
+      {
+        \l_@@_frametitle_font_tl
+        \tl_if_blank:nF {#1}
+          { \@@_frame_title:n {#1} }
+      }
+    \use:e
+      {
+        \vbox_set:Nn \exp_not:N \l_@@_tmp_box
+          {
+            \exp_not:N \vspace
+              { \exp_not:N \l_@@_frametitle_before_skip }
+            \group_begin:
+              \tl_if_empty:NF \l_@@_frametitle_color_tl
+                {
+                  \color_select:n
+                    { \exp_not:V \l_@@_frametitle_color_tl }
+                }
+              \vbox_unpack:N \exp_not:N \l_@@_tmp_box
+            \group_end:
+            \exp_not:N \vspace
+              { \exp_not:N \l_@@_frametitle_after_skip }
+          }
+        \box_set_ht:Nn \exp_not:N \l_@@_tmp_box
+          {
+            \dim_eval:n
+              { \box_ht:N \l_@@_tmp_box + \l_@@_frametitle_before_skip }
+          }
+        \box_set_dp:Nn \exp_not:N \l_@@_tmp_box
+          {
+            \dim_eval:n
+              { \box_dp:N \l_@@_tmp_box + \l_@@_frametitle_after_skip }
+          }
+      }
+    \box_use_drop:N \l_@@_tmp_box
   }
 \DeclareInstance { frametitle } { header } { talk } { }
 \cs_new_protected:Npn \@@_frame_title:n #1

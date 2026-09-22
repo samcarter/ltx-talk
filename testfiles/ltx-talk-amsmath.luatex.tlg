@@ -1,7 +1,11 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+LaTeX Font Info:    Trying to load font information for TU+lmr-base on input line ....
+(../tulmr-base.fd
+File: tulmr-base.fd ....-..-.. v... LaTeX font definitions for Latin Modern in base mode
+)
 Completed box being shipped out [1]
-\vbox(206.56702+448.92128)x405.10403, direction TLT
+\vbox(206.56702+0.0)x405.10403, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
 ..\kern-72.26999
@@ -26,9 +30,9 @@ Completed box being shipped out [1]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\vbox(206.56702+0.0)x405.10403, direction TLT
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725, direction TLT
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
@@ -552,14 +556,14 @@ Completed box being shipped out [1]
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128, direction TLT
+...\hbox(0.0+0.0)x448.92128, direction TLT
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128, direction TLT
+....\hbox(0.0+0.0)x448.92128, direction TLT
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128, direction TLT
+.....\vbox(0.0+0.0)x448.92128, direction TLT
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
@@ -589,7 +593,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.4
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
 Completed box being shipped out [2]
-\vbox(206.56702+448.92128)x405.10403, direction TLT
+\vbox(206.56702+0.0)x405.10403, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
@@ -613,9 +617,9 @@ Completed box being shipped out [2]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\vbox(206.56702+0.0)x405.10403, direction TLT
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725, direction TLT
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
@@ -1127,14 +1131,14 @@ Completed box being shipped out [2]
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128, direction TLT
+...\hbox(0.0+0.0)x448.92128, direction TLT
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128, direction TLT
+....\hbox(0.0+0.0)x448.92128, direction TLT
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128, direction TLT
+.....\vbox(0.0+0.0)x448.92128, direction TLT
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
@@ -1163,7 +1167,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.4
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
 Completed box being shipped out [3]
-\vbox(206.56702+448.92128)x405.10403, direction TLT
+\vbox(206.56702+0.0)x405.10403, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
@@ -1187,9 +1191,9 @@ Completed box being shipped out [3]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\vbox(206.56702+0.0)x405.10403, direction TLT
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725, direction TLT
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
@@ -1701,14 +1705,14 @@ Completed box being shipped out [3]
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128, direction TLT
+...\hbox(0.0+0.0)x448.92128, direction TLT
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128, direction TLT
+....\hbox(0.0+0.0)x448.92128, direction TLT
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128, direction TLT
+.....\vbox(0.0+0.0)x448.92128, direction TLT
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
@@ -1737,7 +1741,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.4
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
 Completed box being shipped out [4]
-\vbox(206.56702+448.92128)x405.10403, direction TLT
+\vbox(206.56702+0.0)x405.10403, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
@@ -1761,9 +1765,9 @@ Completed box being shipped out [4]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\vbox(206.56702+0.0)x405.10403, direction TLT
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725, direction TLT
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
@@ -2275,14 +2279,14 @@ Completed box being shipped out [4]
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128, direction TLT
+...\hbox(0.0+0.0)x448.92128, direction TLT
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128, direction TLT
+....\hbox(0.0+0.0)x448.92128, direction TLT
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128, direction TLT
+.....\vbox(0.0+0.0)x448.92128, direction TLT
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
@@ -2311,7 +2315,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.4
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
 Completed box being shipped out [5]
-\vbox(206.56702+448.92128)x405.10403, direction TLT
+\vbox(206.56702+0.0)x405.10403, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
@@ -2335,9 +2339,9 @@ Completed box being shipped out [5]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\vbox(206.56702+0.0)x405.10403, direction TLT
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725, direction TLT
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
@@ -2849,14 +2853,14 @@ Completed box being shipped out [5]
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128, direction TLT
+...\hbox(0.0+0.0)x448.92128, direction TLT
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128, direction TLT
+....\hbox(0.0+0.0)x448.92128, direction TLT
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128, direction TLT
+.....\vbox(0.0+0.0)x448.92128, direction TLT
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
@@ -2885,7 +2889,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.4
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.5'
 Completed box being shipped out [6]
-\vbox(206.56702+448.92128)x405.10403, direction TLT
+\vbox(206.56702+0.0)x405.10403, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
@@ -2909,9 +2913,9 @@ Completed box being shipped out [6]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403, direction TLT
+.\vbox(206.56702+0.0)x405.10403, direction TLT
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725, direction TLT
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725, direction TLT
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
@@ -3426,14 +3430,14 @@ Completed box being shipped out [6]
 ....\glue 0.0
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128, direction TLT
+...\hbox(0.0+0.0)x448.92128, direction TLT
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128, direction TLT
+....\hbox(0.0+0.0)x448.92128, direction TLT
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128, direction TLT
+.....\vbox(0.0+0.0)x448.92128, direction TLT
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92126fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
@@ -3450,9 +3454,9 @@ Completed box being shipped out [6]
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 0
 .\kern0.0
-.\kern-655.4883
+.\kern-206.56702
 .\hbox(0.0+0.0)x0.0, direction TLT
-.\kern655.4883
+.\kern206.56702
 .\pdfliteral page <lua data reference ...>
 (ltx-talk-amsmath.aux)
 MathML statistic

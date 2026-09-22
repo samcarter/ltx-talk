@@ -151,7 +151,6 @@ Package: mhsetup ....-..-.. v... programming setup (MH)
 File: latex-lab-mathtools.ltx ....-..-.. 0.80e mathtools adaptions
 ) (../lua-unicode-math.sty
 Package: lua-unicode-math ....-..-.. v... Opentype Math support for LuaLaTeX
-\g__l_uni_math_font_count_int=\count...
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line ....
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
@@ -264,13 +263,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  TU/lmss/m/n --> TU/NewCMSans10-Regular.otf(1)/m/n on input line ....
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  TU/lmss/bx/n --> TU/NewCMSans10-Regular.otf(1)/b/n on input line ....
-! LaTeX Error: Inconsistent local/global assignment
-For immediate help type H <return>.
- ...                                              
-l. ...\cs_set_nopar:Npn
-                        \textsubscript@offset { 0.48ex }
-This is a coding error.
-Local assignment to a global variable '\g__l_uni_math_font_count_int'.
 Package fontspec Info: 
 (fontspec)             Font family 'NewCMSansMath-Regular.otf(0)' created for font 'NewCMSansMath-Regular.otf' with options [Script=Math,Renderer=Base].
 (fontspec)              

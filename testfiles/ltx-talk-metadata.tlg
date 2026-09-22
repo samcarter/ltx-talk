@@ -1,7 +1,7 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 Completed box being shipped out [1]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+1.16666)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\pdfinterwordspaceon
 .\hbox(0.0+0.0)x0.0
@@ -25,9 +25,9 @@ Completed box being shipped out [1]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+1.16666)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+1.16666)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -95,12 +95,12 @@ Completed box being shipped out [1]
 ...\marks4{b-,3,-1,}
 ...\marks4{b+,3,-1,}
 ...\glue(\baselineskip) 12.90503
-...\hbox(4.16661+448.92128)x448.92128
+...\hbox(4.16661+1.16666)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(4.16661+448.92128)x448.92128
+....\hbox(4.16661+1.16666)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(4.16661+448.92128)x448.92128
+.....\vbox(4.16661+1.16666)x448.92128
 ......\pdfcolorstack 0 push {0.0 g 0.0 G}
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -161,7 +161,7 @@ Completed box being shipped out [1]
 ...\pdfrunninglinkon
 .\kern 0.0
 .\kern 0.0
-.\kern -655.4883
+.\kern -207.73367
 .\hbox(0.0+0.0)x0.0
-.\kern 655.4883
+.\kern 207.73367
 (ltx-talk-metadata.aux)

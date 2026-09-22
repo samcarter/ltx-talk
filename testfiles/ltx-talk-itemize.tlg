@@ -2,7 +2,7 @@ This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line ....
 Completed box being shipped out [1]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\pdfinterwordspaceon
 .\hbox(0.0+0.0)x0.0
@@ -26,9 +26,9 @@ Completed box being shipped out [1]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -311,12 +311,12 @@ Completed box being shipped out [1]
 ...\marks4{b-,3,-1,}
 ...\marks4{b+,3,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -331,7 +331,7 @@ Completed box being shipped out [1]
 .\kern 0.0
 .\kern 0.0
 Completed box being shipped out [2]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -353,9 +353,9 @@ Completed box being shipped out [2]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -634,12 +634,12 @@ Completed box being shipped out [2]
 ...\marks4{b-,6,-1,}
 ...\marks4{b+,6,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -653,7 +653,7 @@ Completed box being shipped out [2]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [3]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -675,9 +675,9 @@ Completed box being shipped out [3]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -954,12 +954,12 @@ Completed box being shipped out [3]
 ...\marks4{b-,9,-1,}
 ...\marks4{b+,9,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -973,7 +973,7 @@ Completed box being shipped out [3]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [4]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -995,9 +995,9 @@ Completed box being shipped out [4]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -1272,12 +1272,12 @@ Completed box being shipped out [4]
 ...\marks4{b-,12,-1,}
 ...\marks4{b+,12,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -1291,7 +1291,7 @@ Completed box being shipped out [4]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [5]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -1313,9 +1313,9 @@ Completed box being shipped out [5]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -1639,12 +1639,12 @@ Completed box being shipped out [5]
 ...\marks4{b-,22,-1,}
 ...\marks4{b+,22,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -1658,7 +1658,7 @@ Completed box being shipped out [5]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [6]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -1680,9 +1680,9 @@ Completed box being shipped out [6]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -2135,12 +2135,12 @@ Completed box being shipped out [6]
 ...\marks4{b-,25,-1,}
 ...\marks4{b+,25,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -2154,7 +2154,7 @@ Completed box being shipped out [6]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [7]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -2176,9 +2176,9 @@ Completed box being shipped out [7]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -2629,12 +2629,12 @@ Completed box being shipped out [7]
 ...\marks4{b-,28,-1,}
 ...\marks4{b+,28,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -2648,7 +2648,7 @@ Completed box being shipped out [7]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [8]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -2670,9 +2670,9 @@ Completed box being shipped out [8]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -3121,12 +3121,12 @@ Completed box being shipped out [8]
 ...\marks4{b-,31,-1,}
 ...\marks4{b+,31,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -3140,7 +3140,7 @@ Completed box being shipped out [8]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [9]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -3162,9 +3162,9 @@ Completed box being shipped out [9]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -3611,12 +3611,12 @@ Completed box being shipped out [9]
 ...\marks4{b-,34,-1,}
 ...\marks4{b+,34,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -3630,7 +3630,7 @@ Completed box being shipped out [9]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [10]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -3652,9 +3652,9 @@ Completed box being shipped out [10]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -4093,12 +4093,12 @@ Completed box being shipped out [10]
 ...\marks4{b-,37,-1,}
 ...\marks4{b+,37,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -4112,7 +4112,7 @@ Completed box being shipped out [10]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [11]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -4134,9 +4134,9 @@ Completed box being shipped out [11]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -4694,12 +4694,12 @@ Completed box being shipped out [11]
 ...\marks4{b-,57,-1,}
 ...\marks4{b+,57,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -4713,7 +4713,7 @@ Completed box being shipped out [11]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [12]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -4735,9 +4735,9 @@ Completed box being shipped out [12]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -4938,12 +4938,12 @@ Completed box being shipped out [12]
 ...\marks4{b-,60,-1,}
 ...\marks4{b+,60,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -4957,7 +4957,7 @@ Completed box being shipped out [12]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [13]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -4979,9 +4979,9 @@ Completed box being shipped out [13]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -5180,12 +5180,12 @@ Completed box being shipped out [13]
 ...\marks4{b-,63,-1,}
 ...\marks4{b+,63,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -5199,7 +5199,7 @@ Completed box being shipped out [13]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [14]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -5221,9 +5221,9 @@ Completed box being shipped out [14]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -5457,12 +5457,12 @@ Completed box being shipped out [14]
 ...\marks4{b-,71,-1,}
 ...\marks4{b+,71,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -5476,7 +5476,7 @@ Completed box being shipped out [14]
 ...\pdfrunninglinkon
 .\kern 0.0
 Completed box being shipped out [15]
-\vbox(206.56702+448.92128)x405.10403
+\vbox(206.56702+0.0)x405.10403
 .\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
@@ -5498,9 +5498,9 @@ Completed box being shipped out [15]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(206.56702+448.92128)x405.10403
+.\vbox(206.56702+0.0)x405.10403
 ..\glue -77.96053
-..\vbox(284.52754+448.92128)x448.92128, shifted -43.81725
+..\vbox(284.52754+0.0)x448.92128, shifted -43.81725
 ...\vbox(28.45274+0.0)x448.92128, glue set 28.45274fil
 ....\glue 0.0 plus 1.0fil
 ....\pdfrunninglinkoff
@@ -5569,12 +5569,12 @@ Completed box being shipped out [15]
 ...\marks4{b-,74,-1,}
 ...\marks4{b+,74,-1,}
 ...\glue(\baselineskip) 17.07164
-...\hbox(0.0+448.92128)x448.92128
+...\hbox(0.0+0.0)x448.92128
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(0.0+448.92128)x448.92128
+....\hbox(0.0+0.0)x448.92128
 .....\glue -28.45274
 .....\glue 28.45274
-.....\vbox(0.0+448.92128)x448.92128
+.....\vbox(0.0+0.0)x448.92128
 ......\hbox(0.0+0.0)x448.92128, glue set 448.92128fil
 .......\hbox(0.0+0.0)x0.0
 .......\penalty 10000
@@ -5587,7 +5587,7 @@ Completed box being shipped out [15]
 ...\marks4{e+,74,2,}
 ...\pdfrunninglinkon
 .\kern 0.0
-.\kern -655.4883
+.\kern -206.56702
 .\hbox(0.0+0.0)x0.0
-.\kern 655.4883
+.\kern 206.56702
 (ltx-talk-itemize.aux)

@@ -151,7 +151,6 @@ Package: mhsetup ....-..-.. v... programming setup (MH)
 File: latex-lab-mathtools.ltx ....-..-.. 0.80e mathtools adaptions
 ) (../lua-unicode-math.sty
 Package: lua-unicode-math ....-..-.. v... Opentype Math support for LuaLaTeX
-\g__l_uni_math_font_count_int=\count...
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line ....
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'

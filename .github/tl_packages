@@ -15,7 +15,6 @@ alphalph
 amsfonts
 amsmath
 biblatex
-bookmark
 booktabs
 colortbl
 csquotes
@@ -34,13 +33,11 @@ kvoptions
 latex-lab
 lua-unicode-math
 lualatex-math
-luamml
 luapstricks
 mathtools
 mptopdf
 mwe
 newcomputermodern
-pdfmanagement
 pdftexcmds
 pgf
 psnfss
@@ -49,7 +46,6 @@ pstricks
 sansmathfonts
 show-pdf-tags
 siunitx
-tagpdf
 tcolorbox
 tikzducks
 tikzfill

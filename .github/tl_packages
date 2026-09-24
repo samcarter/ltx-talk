@@ -51,7 +51,6 @@ tikzducks
 tikzfill
 tools
 underscore
-unicode-math
 xcolor
 xkeyval
 # Indexing (needed to compile docs)

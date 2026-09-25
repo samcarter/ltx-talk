@@ -8,6 +8,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Internal adjustment to support font developers
+
 ## [v0.6.6] - 2026-09-22
 
 ### Changed

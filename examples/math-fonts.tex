@@ -2,6 +2,22 @@
 
 \documentclass{ltx-talk}
 
+% This example only makes sense for Unicode engines, so we check for that:
+% somewhat low-level check, but it works for our purposes.
+\ifnum0%
+  \ifdefined\directlua
+    1%
+  \else
+    \ifdefined\XeTeXversion
+      1%
+    \fi
+  \fi
+  = 1 %
+  \usepackage{fontspec}
+\else
+  \PackageError{ltx-talk-examples}{This example only works with Unicode engines!}{}
+\fi
+
 \IfFontExistsTF{Pennstander-Regular.otf}{
   \setmainfont{Pennstander-Regular.otf}
   \setmathfont{PennstanderMath-Regular.otf}

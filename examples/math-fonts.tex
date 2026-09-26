@@ -3,20 +3,13 @@
 \documentclass{ltx-talk}
 
 % This example only makes sense for Unicode engines, so we check for that:
-% somewhat low-level check, but it works for our purposes.
-\ifnum0%
-  \ifdefined\directlua
-    1%
-  \else
-    \ifdefined\XeTeXversion
-      1%
-    \fi
-  \fi
-  = 1 %
-  \usepackage{fontspec}
-\else
-  \PackageError{ltx-talk-examples}{This example only works with Unicode engines!}{}
-\fi
+% Use the built-in function.
+\ExplSynaxOn
+\cs_new_eq:NN \IfUnicodeEngineTF \sys_if_engine_unicode:TF
+\ExplSyntaxOff
+\IfUnicodeEngineTF
+  {\usepackage{fontspec}}
+  {\PackageError{ltx-talk-examples}{This example only works with Unicode engines!}{}}
 
 \IfFontExistsTF{Pennstander-Regular.otf}{
   \setmainfont{Pennstander-Regular.otf}

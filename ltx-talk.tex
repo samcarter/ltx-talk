@@ -1527,7 +1527,8 @@ very specialized development cases: you know if this applies to you!} This means
 that the interfaces \cs{setmainfont} and \cs{setsansfont} can be used to change
 the body font. This \emph{likely will change} in time: whilst \pkg{fontspec} is
 convenient for users, there are technical issues that mean that alternatives are
-being examined.
+being examined. As such, we \emph{strongly} recommend that you load
+\pkg{fontspec} explicitly if you make use of its functionality.
 
 Note that for Lua\TeX{}, the current font loading approach is using
 \pkg{lua-unicode-math} with the font then loaded directly. For some use cases,

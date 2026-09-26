@@ -8,6 +8,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ## [Unreleased]
 
+## [v0.6.7] - 2026-09-26
+
 ### Changed
 
 - Internal adjustment to support font developers
@@ -486,7 +488,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 - Initial release
 
-[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.6.6...HEAD
+[Unreleased]: https://github.com/josephwright/ltx-talk/compare/v0.6.7...HEAD
+[v0.6.7]: https://github.com/josephwright/ltx-talk/compare/v0.6.6...v0.6.7
 [v0.6.6]: https://github.com/josephwright/ltx-talk/compare/v0.6.5...v0.6.6
 [v0.6.5]: https://github.com/josephwright/ltx-talk/compare/v0.6.4...v0.6.5
 [v0.6.4]: https://github.com/josephwright/ltx-talk/compare/v0.6.3...v0.6.4

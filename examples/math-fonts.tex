@@ -2,14 +2,10 @@
 
 \documentclass{ltx-talk}
 
-% This example only makes sense for Unicode engines, so we check for that:
-% Use the built-in function.
-\ExplSyntaxOn
-\cs_new_eq:NN \IfUnicodeEngineTF \sys_if_engine_unicode:TF
-\ExplSyntaxOff
-\IfUnicodeEngineTF
-  {\usepackage{fontspec}}
-  {\PackageError{ltx-talk-examples}{This example only works with Unicode engines!}{}}
+% This example only makes sense for Unicode engines, so we check for that
+\usepackage{iftex}
+\RequireTUTeX
+\usepackage{fontspec}
 
 \IfFontExistsTF{Pennstander-Regular.otf}{
   \setmainfont{Pennstander-Regular.otf}
